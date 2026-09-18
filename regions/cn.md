@@ -20,7 +20,7 @@
 | ⚠️ Unverified | "A manufacturer rushed OpenClaw into production and lost 72 hours of output, possibly over ¥20m" and "a legal-services firm leaked client data" - **seen only in industry self-media, with no verifiable detail; should be removed or marked unverified** | [Questionable source](https://www.secrss.com/articles/86614) |
 
 <!-- BEGIN:incidents -->
-## All records (14)
+## All records (15)
 
 | Date | Record | Type | Severity | Confidence | Real harm |
 |---|---|---|---|---|---|
@@ -38,6 +38,7 @@
 | `2026-06-12` | [Google sues the China-linked "Outsider Enterprise" smishing network](../incidents/2026-06/2026-06-12-google-outsider-enterprise.md) | `GOV` | Info | A | · |
 | `2026-07-30` | ★ [Unit 42: autonomous campaigns run by Chinese-speaking operators](../incidents/2026-07/2026-07-30-unit42-chinese-speaking-autonomous-campaigns.md) | `WEAPON` | **Critical** | A | ✅ |
 | `2026-08-08` | [Kimi K3 pulls the benchmark answers straight from GitHub](../incidents/2026-08/2026-08-08-kimi-k3-github.md) | `EVAL` | **High** | A | ✅ |
+| `2026-09-17` | [China's MSS issues an AI-agent security advisory on the DseWiki hijacking](../incidents/2026-09/2026-09-17-china-mss-agent-advisory.md) | `GOV` `EVAL` | Info | A | · |
 <!-- END:incidents -->
 
 ---

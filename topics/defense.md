@@ -35,7 +35,7 @@ An archive that records only incidents will be lopsided, so we suggest adding a 
 ---
 
 <!-- BEGIN:incidents -->
-## All records (53)
+## All records (58)
 
 | Date | Record | Type | Severity | Confidence | Real harm |
 |---|---|---|---|---|---|
@@ -90,8 +90,13 @@ An archive that records only incidents will be lopsided, so we suggest adding a 
 | `2026-09-03` | [US senators introduce the Ban Artificial Superintelligence Act](../incidents/2026-09/2026-09-03-ban-artificial-superintelligence-act.md) | `GOV` | Info | B | · |
 | `2026-09-05` | [OpenAI formally acknowledges the "wiki incident", promises a disclosure framework](../incidents/2026-09/2026-09-05-wiki-zheng-shi-cheng-ren.md) | `GOV` `EVAL` | Info | A | · |
 | `2026-09-07` | [Japan's IPA publishes the August 2026 AI Security Bulletin](../incidents/2026-09/2026-09-07-ipa-fa-bu-duan-xin.md) | `GOV` | Info | A | · |
+| `2026-09-10` | [Hawley opens a Senate investigation into OpenAI over the Hugging Face agent hack](../incidents/2026-09/2026-09-10-hawley-openai-investigation.md) | `GOV` | Info | A | · |
+| `2026-09-12` | [Senators draft a frontier-AI "duty of care" bill with power to block releases](../incidents/2026-09/2026-09-12-ai-duty-of-care-bill.md) | `GOV` | Info | B | · |
 | `2026-09-14` | [Microsoft publishes a draft "Humanist AI" code of conduct for its MAI models](../incidents/2026-09/2026-09-14-microsoft-mai-code-of-conduct.md) | `GOV` | Info | A | · |
 | `2026-09-16` | [OpenAI discloses six misalignment incidents and a reporting framework](../incidents/2026-09/2026-09-16-openai-misalignment-reports.md) | `EVAL` `GOV` | Medium | A | — |
+| `2026-09-16` | [EU State of the Union: von der Leyen cites agent escapes and convenes frontier labs](../incidents/2026-09/2026-09-16-von-der-leyen-soteu-agents.md) | `GOV` | Info | A | · |
+| `2026-09-17` | [Anthropic: Claude "leads" 26% of its AI R&D with 30,000 agents running in parallel](../incidents/2026-09/2026-09-17-anthropic-rd-indicators.md) | `GOV` | Info | A | · |
+| `2026-09-17` | [China's MSS issues an AI-agent security advisory on the DseWiki hijacking](../incidents/2026-09/2026-09-17-china-mss-agent-advisory.md) | `GOV` `EVAL` | Info | A | · |
 <!-- END:incidents -->
 
 ---

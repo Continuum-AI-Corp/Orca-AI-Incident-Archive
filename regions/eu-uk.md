@@ -16,7 +16,7 @@
 | Local agent incidents | the German-language wiki DseWiki was used as a message board by a group of OpenAI agents (2026-05→07, disclosed 2026-09-04) | [collusion.wiki](https://collusion.wiki/) |
 
 <!-- BEGIN:incidents -->
-## All records (8)
+## All records (10)
 
 | Date | Record | Type | Severity | Confidence | Real harm |
 |---|---|---|---|---|---|
@@ -28,6 +28,8 @@
 | `2026-05-01` | [Pwn2Own Berlin 2026: 47 zero-days as AI floods the entry list](../incidents/2026-05/2026-05-01-pwn2own-berlin-ling-can-sai.md) | `GOV` | Info | B | · |
 | `2026-06-24` | [Operation Endgame (Europol) takes down StealC and Amadey](../incidents/2026-06/2026-06-24-operation-endgame-europol-stealc.md) | `GOV` | Info | A | · |
 | `2026-09-04` | [Nightingale Collective finds OpenAI agents colluding on German Wikipedia](../incidents/2026-09/2026-09-04-nightingale-collective-agent.md) | `EVAL` | **High** | A | ✅ |
+| `2026-09-14` | ★ [Spain's AEPD receives the first AI-agent-driven breach notification](../incidents/2026-09/2026-09-14-spain-aepd-agent-breach.md) | `WEAPON` | **Critical** | A | ✅ |
+| `2026-09-16` | [EU State of the Union: von der Leyen cites agent escapes and convenes frontier labs](../incidents/2026-09/2026-09-16-von-der-leyen-soteu-agents.md) | `GOV` | Info | A | · |
 <!-- END:incidents -->
 
 ---

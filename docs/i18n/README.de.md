@@ -13,11 +13,11 @@
 </p>
 
 <!-- BEGIN:badges -->
-<p align="center"><img alt="Einträge" src="https://img.shields.io/badge/Eintr%C3%A4ge-317-48545A?style=flat-square"> <img alt="Monate" src="https://img.shields.io/badge/Monate-22-48545A?style=flat-square"> <img alt="kritisch" src="https://img.shields.io/badge/kritisch-44-88091D?style=flat-square"> <img alt="mit echtem Schaden" src="https://img.shields.io/badge/mit_echtem_Schaden-122-B23B40?style=flat-square"> <img alt="Primärquellen" src="https://img.shields.io/badge/Prim%C3%A4rquellen-466_URL-157A41?style=flat-square"> <img alt="Lizenz" src="https://img.shields.io/badge/Lizenz-CC_BY_4.0-2359A8?style=flat-square"></p>
+<p align="center"><img alt="Einträge" src="https://img.shields.io/badge/Eintr%C3%A4ge-323-48545A?style=flat-square"> <img alt="Monate" src="https://img.shields.io/badge/Monate-22-48545A?style=flat-square"> <img alt="kritisch" src="https://img.shields.io/badge/kritisch-45-88091D?style=flat-square"> <img alt="mit echtem Schaden" src="https://img.shields.io/badge/mit_echtem_Schaden-123-B23B40?style=flat-square"> <img alt="Primärquellen" src="https://img.shields.io/badge/Prim%C3%A4rquellen-485_URL-157A41?style=flat-square"> <img alt="Lizenz" src="https://img.shields.io/badge/Lizenz-CC_BY_4.0-2359A8?style=flat-square"></p>
 <!-- END:badges -->
 
 <!-- BEGIN:thesis -->
-Die Abdeckung reicht von **2025-01** bis **2026-09-16** — 317 Einträge zu Sicherheitsvorfällen mit KI-Agenten, Monat für Monat, dazu ein Vorläufer bis zurück zu 2024-12-01. Jeder Eintrag ist eine einzelne Markdown-Datei mit YAML-Kopf, Angriffsketten-Diagramm und **mindestens einer anklickbaren Primärquelle**. Von den 317 Einträgen haben nur **122 ein bestätigtes Opfer**.
+Die Abdeckung reicht von **2025-01** bis **2026-09-17** — 323 Einträge zu Sicherheitsvorfällen mit KI-Agenten, Monat für Monat, dazu ein Vorläufer bis zurück zu 2024-12-01. Jeder Eintrag ist eine einzelne Markdown-Datei mit YAML-Kopf, Angriffsketten-Diagramm und **mindestens einer anklickbaren Primärquelle**. Von den 323 Einträgen haben nur **123 ein bestätigtes Opfer**.
 <!-- END:thesis -->
 
 Dieses Archiv dreht sich um eine Unterscheidung, die die meisten Vorfall-Listen verwischen:
@@ -75,11 +75,11 @@ Jeder Eintrag beantwortet zuerst drei Fragen — gab es ein bestätigtes Opfer (
 |---|---|---|---|---|---|---|---|---|---|---|---|
 | `8` ★1 | `6` | `6` | `6` | `7` | `11` | `10` ★2 | `15` ★2 | `10` ★1 | `15` | `13` ★3 | `14` |
 
-**2026** (195 Einträge)
+**2026** (201 Einträge)
 
 | [01](../../incidents/2026-01/README.md) | [02](../../incidents/2026-02/README.md) | [03](../../incidents/2026-03/README.md) | [04](../../incidents/2026-04/README.md) | [05](../../incidents/2026-05/README.md) | [06](../../incidents/2026-06/README.md) | [07](../../incidents/2026-07/README.md) | [08](../../incidents/2026-08/README.md) | [09](../../incidents/2026-09/README.md) |
 |---|---|---|---|---|---|---|---|---|
-| `13` ★1 | `19` ★5 | `16` ★3 | `22` ★2 | `26` ★5 | `31` ★3 | `27` ★7 | `23` ★4 | `18` ★5 |
+| `13` ★1 | `19` ★5 | `16` ★3 | `22` ★2 | `26` ★5 | `31` ★3 | `27` ★7 | `23` ★4 | `24` ★6 |
 
 <sub>`n` = Einträge des Monats, ★ = davon `critical`</sub>
 <!-- END:months -->
@@ -134,6 +134,7 @@ Einer von drei Auslösern genügt: ① **bestätigter** Schaden, der mehrere Org
 | `2026-09-02` | [Langflow CVE-2026-0768: die 12. in diesem Jahr in freier Wildbahn ausgenutzte Langflow-Schwachstelle](../../incidents/2026-09/2026-09-02-langflow-jin-di-ye-li.md)<br><sub>Langflow CVE-2026-0768: the 12th Langflow flaw exploited in the wild this year</sub> | `INFRA` `CRED` | Global |
 | `2026-09-10` | [Anthropics Bedrohungsbericht September](../../incidents/2026-09/2026-09-10-anthropic-september-threat-report.md)<br><sub>Anthropic September threat intelligence report</sub> | `WEAPON` | Global |
 | `2026-09-11` | [Claude durchsucht 1.8 Millionen Android-Apps nach Secrets](../../incidents/2026-09/2026-09-11-claude-scans-18m-android-apks.md)<br><sub>Claude used to scan 1.8 million Android apps for secrets</sub> | `WEAPON` | Global |
+| `2026-09-14` | [Spaniens AEPD erhält die erste Meldung einer von einem KI-Agenten ausgeführten Datenschutzverletzung](../../incidents/2026-09/2026-09-14-spain-aepd-agent-breach.md)<br><sub>Spain's AEPD receives the first AI-agent-driven breach notification</sub> | `WEAPON` | Europa |
 | `2026-09-15` | [PaperCut-Angriff eines KI-Agentenschwarms veröffentlicht](../../incidents/2026-09/2026-09-15-papercut-agent-swarm-disclosed.md)<br><sub>PaperCut AI agent swarm attack made public</sub> | `WEAPON` | Global |
 <!-- END:critical -->
 
@@ -160,9 +161,9 @@ Vollständige Kriterien: [docs/scope.md](../../docs/scope.md).
 <!-- BEGIN:quality -->
 |  |  |
 |---|---|
-| Quell-Links | 533 Links aus 466 eindeutigen URLs |
+| Quell-Links | 552 Links aus 485 eindeutigen URLs |
 | Einträge ohne Quelle | **0** — keine Quelle, kein Eintrag |
-| Grad A (Primärquelle) | 275 |
+| Grad A (Primärquelle) | 280 |
 | Als umstritten markiert | 14 |
 | Verifikationsrunden | 4 |
 <!-- END:quality -->
@@ -178,7 +179,7 @@ Diese vier Runden löschten zwei erfundene Einträge, korrigierten PaperCuts „
 @misc{orca_ai_incident_archive,
   title  = {Orca AI Incident Archive: An open database of real-world AI agent incidents},
   year   = {2026},
-  note   = {317 Einträge, 2025-01 bis 2026-09; 122 mit bestätigtem realen Schaden},
+  note   = {323 Einträge, 2025-01 bis 2026-09; 123 mit bestätigtem realen Schaden},
   url    = {https://github.com/Continuum-AI-Corp/Orca-AI-Incident-Archive}
 }
 ```
@@ -204,4 +205,4 @@ Dieses Archiv erfasst **ausschließlich öffentlich bekannt gewordene Ereignisse
 
 ---
 
-<sub><!-- BEGIN:footer -->Erstellt am 2026-09-16 · 317 Einträge · 22 Monate<!-- END:footer --></sub> · <sub>Struktur: [SCHEMA.md](../../SCHEMA.md) · Daten: [dist/](../../dist/README.md)</sub>
+<sub><!-- BEGIN:footer -->Erstellt am 2026-09-17 · 323 Einträge · 22 Monate<!-- END:footer --></sub> · <sub>Struktur: [SCHEMA.md](../../SCHEMA.md) · Daten: [dist/](../../dist/README.md)</sub>
