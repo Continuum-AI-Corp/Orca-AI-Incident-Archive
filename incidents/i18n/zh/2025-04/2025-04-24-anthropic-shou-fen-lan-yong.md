@@ -1,0 +1,70 @@
+---
+id: 2025-04-24-anthropic-shou-fen-lan-yong
+lang: zh
+source: incidents/2025-04/2025-04-24-anthropic-shou-fen-lan-yong.md
+title: "Anthropic 首份滥用报告"
+summary: |
+  《Detecting and Countering Malicious Uses of Claude: March 2025》：揭露 "influence-as-a-service" —— 一个专业服务用 Claude 编排 **100+ 社媒机器人人格**，由模型决定何时介入政治内容
+---
+
+# Anthropic 首份滥用报告
+
+<sub>Anthropic's first misuse report</sub>
+
+![severity: info](https://img.shields.io/badge/severity-info-6B7175?style=flat-square) ![confidence: A](https://img.shields.io/badge/confidence-A-157A41?style=flat-square) ![real harm: n/a](https://img.shields.io/badge/real_harm-n%2Fa-9AA8AD?style=flat-square) ![AI involvement: confirmed](https://img.shields.io/badge/AI_involvement-confirmed-1F9D55?style=flat-square) ![kind: report](https://img.shields.io/badge/kind-report-48545A?style=flat-square) ![type: WEAPON](https://img.shields.io/badge/type-WEAPON-B08528?style=flat-square)
+
+## 概要
+
+《Detecting and Countering Malicious Uses of Claude: March 2025》：揭露 "influence-as-a-service" —— 一个专业服务用 Claude 编排 **100+ 社媒机器人人格**，由模型决定何时介入政治内容
+
+## 攻击链
+
+```mermaid
+flowchart LR
+    E["攻击者 + 越狱话术"]:::entry
+    S0["LLM 编排器驱动子 agent 集群"]:::step
+    I["目标系统被攻陷"]:::impact
+    E --> S0 --> I
+    classDef entry  fill:#FBF3E0,stroke:#B08528,stroke-width:1px,color:#3A2C08;
+    classDef step   fill:#F1F4F5,stroke:#8FA0A6,stroke-width:1px,color:#182124;
+    classDef impact fill:#FBE7E9,stroke:#D1394B,stroke-width:1px,color:#4A1119;
+```
+
+## 来源
+
+| # | 来源 | 链接 |
+|---|---|---|
+| 1 | Anthropic 威胁情报页 | <https://www.anthropic.com/threat-intelligence> |
+
+## 元数据
+
+| 字段 | 值 |
+|---|---|
+| 日期 | `2025-04-24`（原文：2025-04-24，精度 `day`） |
+| 性质 | 威胁情报报告 `report` |
+| 类型 | [`WEAPON`](../../../../taxonomy/types.md#weapon) agent 被用作攻击工具 |
+| 严重度 | **信息** `info` |
+| 可信度 | **A** — 一手来源（厂商 / 受害方 / 执法 / 官方报告） |
+| 真实伤害 | 不适用 |
+| AI 参与 | 已确认 `confirmed` |
+| 地区 | [全球](../../../../regions/global.md) |
+| 档案编号 | `2025-04-24-anthropic-shou-fen-lan-yong` |
+
+<sub>**判定依据**：威胁情报报告，汇总多起事件，本身不作为单一事故计数，`severity` 记为 `info`。 分级口径见 [taxonomy/severity.md](../../../../taxonomy/severity.md) 与 [taxonomy/confidence.md](../../../../taxonomy/confidence.md)。</sub>
+
+## 相关
+
+**所属专题**：[攻击方 AI 能力演进](../../../../topics/offensive-ai.md)
+
+**同类条目**：
+
+- `2025-05-01` [Anthropic 记录 GTG-2002 活动起点](../../../2025-05/2025-05-01-anthropic-gtg-ji-lu-huo.md)<br>  <sub>Anthropic logs the start of GTG-2002 activity</sub>
+- `2025-05-01` [AI 驱动的撞库与自动化扫描规模化](../../../2025-05/2025-05-01-qu-dong-zhuang-ku-zi.md)<br>  <sub>AI-driven credential stuffing and scanning goes to scale</sub>
+- `2025-06-01` [Check Point「Skynet」样本](../../../2025-06/2025-06-01-check-point-skynet.md)<br>  <sub>Check Point's "Skynet" sample</sub>
+- `2025-06-01` [Anthropic 记录 GTG-1002 前身活动](../../../2025-06/2025-06-01-anthropic-gtg-ji-lu-shen.md)<br>  <sub>Anthropic logs the precursor to GTG-1002</sub>
+
+---
+
+[← English original](../../../2025-04/2025-04-24-anthropic-shou-fen-lan-yong.md) · [2025-04 index](../../../2025-04/README.md) · [All records](../../../README.md) · [Home](../../../../README.md)
+
+<sub>本条目属于 **Orca AI Incident Archive**，按 [CC BY 4.0](../../../../LICENSE) 授权。发现事实错误或缺少来源，请[提 issue 或 PR](../../../../CONTRIBUTING.md)——更正会写进条目的修订记录，不会静默覆盖。</sub>

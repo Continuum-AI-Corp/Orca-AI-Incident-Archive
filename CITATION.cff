@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+title: "Orca AI Incident Archive"
+message: "If you use this dataset, please cite it as below."
+type: dataset
+abstract: >-
+  An open, month-by-month database of real-world AI agent security incidents
+  from January 2025 onward. Every record carries a machine-readable YAML
+  header, at least one primary source link, and three fields that separate
+  demonstrated capability from actual damage: real_harm, ai_involvement and
+  kind.
+authors:
+  - name: "Orca AI Incident Archive contributors"
+license: CC-BY-4.0
+repository-code: "https://github.com/Continuum-AI-Corp/Orca-AI-Incident-Archive"
+url: "https://github.com/Continuum-AI-Corp/Orca-AI-Incident-Archive"
+version: "2026.09.16"
+date-released: "2026-09-16"
+keywords:
+  - ai-safety
+  - ai-agents
+  - security-incidents
+  - prompt-injection
+  - supply-chain-security
+  - incident-database

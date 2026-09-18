@@ -1,0 +1,70 @@
+name: validate
+
+on:
+  push:
+    paths:
+      - 'incidents/**'
+      - 'scripts/**'
+      - 'index.html'
+      - 'README.md'
+      - 'SCHEMA.md'
+      - 'CONTRIBUTING.md'
+      - 'docs/**'
+      - 'topics/**'
+      - 'regions/**'
+      - 'taxonomy/**'
+      - 'dist/**'
+      - 'assets/**'
+      - '.github/workflows/validate.yml'
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  schema:
+    name: frontmatter and internal links
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate schema
+        run: python scripts/validate.py
+
+  derived:
+    name: Derived files are up to date
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Rebuild
+        run: python scripts/build.py
+        env:
+          PYTHONHASHSEED: '0'
+      - name: Check for uncommitted differences
+        run: |
+          if [ -n "$(git status --porcelain)" ]; then
+            echo "::error::dist/ or the index files are out of sync with incidents/. Run python scripts/build.py locally and commit the result."
+            echo '--- git status ---'
+            git status --porcelain
+            echo '--- diff --stat ---'
+            git --no-pager diff --stat
+            echo '--- diff (first 200 lines) ---'
+            git --no-pager diff | head -200
+            exit 1
+          fi
+          echo "Derived files match the sources"
+
+  links:
+    name: Outbound links (advisory)
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Spot-check outbound links
+        run: python scripts/check_links.py --sample 60 --timeout 12

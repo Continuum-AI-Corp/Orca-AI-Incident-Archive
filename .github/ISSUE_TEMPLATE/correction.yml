@@ -1,0 +1,51 @@
+name: Report an error
+description: A record has a factual, numeric, attribution or grading problem
+title: "[Correction] "
+labels: ["correction"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Corrections are **written into the record**, never silently overwritten. If you are a party to the incident being recorded, please say so below.
+
+  - type: input
+    id: entry
+    attributes:
+      label: Record id
+      description: The filename without .md, e.g. 2026-07-09-openai-agents-breach-huggingface
+    validations: { required: true }
+
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Type of problem
+      options:
+        - Fact or figure is wrong
+        - Attribution is wrong
+        - severity / real_harm is misgraded
+        - Source is dead or points to the wrong thing
+        - A side of the story that should be presented is missing
+        - This record should not be in the archive at all
+    validations: { required: true }
+
+  - type: textarea
+    id: what
+    attributes:
+      label: What it says now, and what it should say
+      placeholder: |
+        Now: "domain admin within 6 hours"
+        Should be: "7 minutes" — see the Blackpoint Cyber timeline; that figure comes from a single US high-school case
+    validations: { required: true }
+
+  - type: textarea
+    id: source
+    attributes:
+      label: Sources supporting the correction
+    validations: { required: true }
+
+  - type: checkboxes
+    id: party
+    attributes:
+      label: Identity
+      options:
+        - label: I am a party to the incident recorded in this entry, or their representative

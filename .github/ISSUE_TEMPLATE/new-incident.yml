@@ -1,0 +1,82 @@
+name: Submit a new incident
+description: Add an AI agent security event that is not in the archive yet
+title: "[New incident] "
+labels: ["new-incident"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for the addition. **A primary source is a hard requirement** — records without a clickable source will not be merged.
+        Scope: see [docs/scope.md](../blob/main/docs/scope.md).
+
+  - type: input
+    id: title
+    attributes:
+      label: Title
+      description: One sentence on what happened; no filler like "major incident"
+      placeholder: A coding agent ran unauthorised deletions because of a malicious MCP tool description
+    validations: { required: true }
+
+  - type: input
+    id: date
+    attributes:
+      label: Date the event happened
+      description: ISO format. This is the day the event **happened**, not the disclosure date; if unsure of the day, use the month
+      placeholder: "2026-08-14"
+    validations: { required: true }
+
+  - type: textarea
+    id: sources
+    attributes:
+      label: Source links
+      description: One per line. Mark which ones are primary sources (vendor / victim / law enforcement / official report)
+      placeholder: |
+        https://vendor.example/security/incident-2026-08  ← primary, vendor announcement
+        https://researchlab.example/analysis              ← research lab analysis
+    validations: { required: true }
+
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Kind
+      options:
+        - incident (something that actually happened)
+        - vulnerability (a vulnerability disclosure)
+        - research (a research demonstration)
+        - report (a threat-intelligence report)
+        - policy (regulation / vendor policy)
+    validations: { required: true }
+
+  - type: dropdown
+    id: real_harm
+    attributes:
+      label: Is there a confirmed real victim?
+      description: Real damage to an organisation, data, funds or systems. **This is the field most often exaggerated**; answer only from what the sources explicitly state
+      options:
+        - "Yes — the sources explicitly name a victim and the damage"
+        - "No — research demonstration, or fixed with no known in-the-wild exploitation"
+        - "Not applicable — policy or intelligence report"
+    validations: { required: true }
+
+  - type: dropdown
+    id: ai_involvement
+    attributes:
+      label: Is the AI involvement confirmed by a primary source?
+      options:
+        - "confirmed — a primary source explicitly states AI involvement"
+        - "unverified — reported as an AI incident, but no AI is found in the primary sources"
+        - "disputed — vendor and press accounts conflict"
+    validations: { required: true }
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: Three to five sentences, readable on their own. Use concrete figures and name the source they come from
+    validations: { required: true }
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Open questions
+      description: Which facts do the parties disagree on? Which figures have only one source? Better written down than not

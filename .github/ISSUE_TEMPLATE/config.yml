@@ -1,0 +1,11 @@
+blank_issues_enabled: true
+contact_links:
+  - name: What belongs here
+    url: https://github.com/Continuum-AI-Corp/Orca-AI-Incident-Archive/blob/main/docs/scope.md
+    about: What we accept and what we do not - start here
+  - name: How severity is graded
+    url: https://github.com/Continuum-AI-Corp/Orca-AI-Incident-Archive/blob/main/taxonomy/severity.md
+    about: How severity / kind / real_harm are decided
+  - name: Data quality and known issues
+    url: https://github.com/Continuum-AI-Corp/Orca-AI-Incident-Archive/blob/main/docs/data-quality.md
+    about: Records still without a primary source, with disputed attribution or conflicting figures

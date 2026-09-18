@@ -1,0 +1,24 @@
+# LF everywhere. scripts/build.py always writes newline="\n";
+# without this, Windows autocrlf rewrites would make the CI
+# "derived files are up to date" check fail forever.
+* text=auto eol=lf
+
+*.md      text eol=lf
+*.py      text eol=lf
+*.yml     text eol=lf
+*.html    text eol=lf
+*.svg     text eol=lf
+*.json    text eol=lf
+*.csv     text eol=lf
+*.cff     text eol=lf
+
+# keep generated data out of the main language stats
+dist/*        linguist-generated=true
+assets/*.svg  linguist-generated=true
+incidents/**  linguist-documentation=true
+# translation layer: let linguist detect its language
+incidents/i18n/** -linguist-documentation
+
+*.png binary
+*.jpg binary
+*.pdf binary
