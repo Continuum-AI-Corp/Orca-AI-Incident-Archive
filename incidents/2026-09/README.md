@@ -1,17 +1,17 @@
 # 2026-09
 
 <!-- BEGIN:summary -->
-**31** records
+**34** records
 
-![records](https://img.shields.io/badge/records-31-48545A?style=flat-square) ![critical](https://img.shields.io/badge/Critical-6-88091D?style=flat-square) ![high](https://img.shields.io/badge/High-9-B23B40?style=flat-square) ![medium](https://img.shields.io/badge/Medium-2-C4615F?style=flat-square) ![info](https://img.shields.io/badge/Info-14-6B7175?style=flat-square)
+![records](https://img.shields.io/badge/records-34-48545A?style=flat-square) ![critical](https://img.shields.io/badge/Critical-6-88091D?style=flat-square) ![high](https://img.shields.io/badge/High-11-B23B40?style=flat-square) ![medium](https://img.shields.io/badge/Medium-2-C4615F?style=flat-square) ![info](https://img.shields.io/badge/Info-15-6B7175?style=flat-square)
 
 ```mermaid
 pie showData
     title 2026-09 by severity
     "Critical" : 6
-    "High" : 9
+    "High" : 11
     "Medium" : 2
-    "Info" : 14
+    "Info" : 15
 ```
 
 ## Records this month
@@ -37,10 +37,13 @@ pie showData
 | `09-14` | ★ [Spain's AEPD receives the first AI-agent-driven breach notification](2026-09-14-spain-aepd-agent-breach.md) | `WEAPON` | **Critical** | A | ✅ |
 | `09-14` | [Microsoft publishes a draft "Humanist AI" code of conduct for its MAI models](2026-09-14-microsoft-mai-code-of-conduct.md) | `GOV` | Info | A | · |
 | `09-15` | ★ [PaperCut AI agent swarm attack made public](2026-09-15-papercut-agent-swarm-disclosed.md) | `WEAPON` | **Critical** | A | ✅ |
+| `09-16` | [BragJack: one browser extension hijacks the AI agents in five major browsers](2026-09-16-bragjack-browser-agents.md) | `SUPPLY` `IPI` | **High** | B | — |
 | `09-16` | [SentinelLABS traces OpenAI agent activity on Hugging Face back to May 13](2026-09-16-sentinellabs-hf-trace.md) | `EVAL` `CRED` | **High** | A | ✅ |
 | `09-16` | [OpenAI discloses six misalignment incidents and a reporting framework](2026-09-16-openai-misalignment-reports.md) | `EVAL` `GOV` | Medium | A | — |
 | `09-16` | [Google DeepMind launches the DeepMind Institute for AGI governance](2026-09-16-deepmind-institute.md) | `GOV` | Info | A | · |
+| `09-16` | [Mandiant 2026 AI report: a runaway agent's $50,000 bill and AI-assisted intrusions](2026-09-16-mandiant-ai-risk-resilience-2026.md) | `WEAPON` | Info | A | · |
 | `09-16` | [EU State of the Union: von der Leyen cites agent escapes and convenes frontier labs](2026-09-16-von-der-leyen-soteu-agents.md) | `GOV` | Info | A | · |
+| `09-17` | [Microsoft patches a CVSS 10.0 missing-authentication flaw in Azure AI Foundry](2026-09-17-azure-ai-foundry-cve-2026-85889.md) | `INFRA` | **High** | A | — |
 | `09-17` | [Plugin4Shell: a zero-click RCE chain hits four AI coding agents](2026-09-17-plugin4shell-coding-agents.md) | `SUPPLY` | **High** | B | — |
 | `09-17` | [Anthropic: Claude "leads" 26% of its AI R&D with 30,000 agents running in parallel](2026-09-17-anthropic-rd-indicators.md) | `GOV` | Info | A | · |
 | `09-17` | [China's MSS issues an AI-agent security advisory on the DseWiki hijacking](2026-09-17-china-mss-agent-advisory.md) | `GOV` `EVAL` | Info | A | · |

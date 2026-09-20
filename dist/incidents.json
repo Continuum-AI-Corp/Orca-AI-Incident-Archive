@@ -12,7 +12,7 @@
   "fr",
   "es"
  ],
- "count": 330,
+ "count": 333,
  "incidents": [
   {
    "id": "2024-12-01-storm-azure-llmjacking",
@@ -14636,6 +14636,62 @@
    ]
   },
   {
+   "id": "2026-09-16-bragjack-browser-agents",
+   "title": "BragJack: one browser extension hijacks the AI agents in five major browsers",
+   "title_zh": "BragJack：一个浏览器扩展即可劫持五款主流浏览器的内置 AI agent",
+   "title_ja": "BragJack：拡張機能1つで5大ブラウザの内蔵AIエージェントを乗っ取り",
+   "title_ko": "BragJack: 확장 프로그램 하나로 5개 브라우저 내장 AI 에이전트 탈취",
+   "title_de": "BragJack: Eine Browser-Erweiterung entführt die KI-Agenten in fünf Browsern",
+   "title_fr": "BragJack : une seule extension détourne les agents IA de cinq navigateurs",
+   "title_es": "BragJack: una sola extensión secuestra los agentes de IA de cinco navegadores",
+   "date": "2026-09-16",
+   "date_end": null,
+   "date_precision": "day",
+   "date_raw": "2026-09-16",
+   "month": "2026-09",
+   "kind": "vulnerability",
+   "type": [
+    "SUPPLY",
+    "IPI"
+   ],
+   "severity": "high",
+   "confidence": "B",
+   "real_harm": false,
+   "ai_involvement": "confirmed",
+   "region": [
+    "GLOBAL"
+   ],
+   "summary": "Forever Security's **Gal Weizman** discloses **BragJack**, a technique in which **one ordinary browser extension** — using nothing but normal content-script and **declarativeNetRequest** permissions — hijacks the built-in AI agents of **five Chromium browsers**: **Gemini Live in Chrome, Copilot in Edge, Opera Neon, Perplexity Comet and Claude in Chrome**. Instead of hiding instructions in content, the extension **takes over the trusted prompt channel** between the vendor's site and the in-browser agent — the researchers call it **\"prompt forcing\"** — so model-level safety filters never get a chance to matter. Google fixed it as **CVE-2026-0628** (CVSS 8.8, Chrome 143.0.7499.192/.193) and Microsoft as **CVE-2026-55945** (medium, Edge before 150.0.4078.48); Comet saw the broadest impact, and Anthropic paid a bounty for the Claude in Chrome case. It is a proof of concept — **no in-the-wild attacks** — but a malicious extension must merely be installed first, not clicked",
+   "summary_zh": "Forever Security 研究员 **Gal Weizman** 披露 **BragJack**：**一个普通浏览器扩展**——仅使用正常的 content script 与 **declarativeNetRequest** 权限——即可劫持**五款 Chromium 浏览器的内置 AI agent**：**Chrome 的 Gemini Live、Edge 的 Copilot、Opera Neon、Perplexity Comet 与 Claude in Chrome**。它不在内容里藏指令，而是**夺取厂商站点与浏览器内 agent 之间的可信指令通道**——研究者称之为**「prompt forcing」（提示强塞）**——使模型层的安全过滤根本来不及起作用。Google 记为 **CVE-2026-0628**（CVSS 8.8，Chrome 143.0.7499.192/.193 修复）、微软记为 **CVE-2026-55945**（中危，Edge 150.0.4078.48 之前版本）；Comet 受影响面最广，Anthropic 也为 Claude in Chrome 一案支付赏金。该攻击为概念验证、**无在野利用**——但恶意扩展只需被安装、无需点击",
+   "summary_ja": "Forever Securityの**Gal Weizman**氏は、**ごく普通のブラウザ拡張機能1つ**——通常のcontent scriptと**declarativeNetRequest**権限だけで——が**5つのChromium系ブラウザの内蔵AIエージェント**（**ChromeのGemini、EdgeのCopilot、Opera Neon、Perplexity Comet、Claude in Chrome**）を乗っ取る「**BragJack**」を公表した。コンテンツに指示を隠すのではなく、ベンダーサイトとブラウザ内エージェントの間の**信頼されたプロンプト経路そのものを奪う**——研究チームはこれを**「プロンプト・フォーシング」**と呼ぶ——ため、モデル側の安全フィルタは意味を持たない。Googleは**CVE-2026-0628**（CVSS 8.8、Chrome 143.0.7499.192/.193で修正）、Microsoftは**CVE-2026-55945**（中、Edge 150.0.4078.48未満）として修正。影響が最も広かったのはCometで、AnthropicはClaude in Chromeの件に報奨金を支払った。概念実証であり**実被害はない**が、悪意ある拡張は「インストールされていれば」よく、クリックは不要",
+   "summary_ko": "Forever Security의 **Gal Weizman**이 **BragJack**을 공개했다: **평범한 브라우저 확장 프로그램 하나**가 — 일반적인 content script와 **declarativeNetRequest** 권한만으로 — **5개 Chromium 브라우저의 내장 AI 에이전트**(**Chrome의 Gemini, Edge의 Copilot, Opera Neon, Perplexity Comet, Claude in Chrome**)를 탈취한다. 콘텐츠에 지시를 숨기는 대신 **벤더 사이트와 브라우저 내 에이전트 사이의 신뢰된 프롬프트 채널 자체를 장악**한다 — 연구진은 이를 **\"프롬프트 포싱\"**이라 부른다 — 따라서 모델 수준 안전 필터는 작동할 기회조차 없다. Google은 **CVE-2026-0628**(CVSS 8.8, Chrome 143.0.7499.192/.193에서 수정), 마이크로소프트는 **CVE-2026-55945**(중간, Edge 150.0.4078.48 이전)로 수정했다. 영향 범위가 가장 넓은 것은 Comet이었고, Anthropic은 Claude in Chrome 사례에 포상금을 지급했다. 개념 증명이며 **실제 악용은 없지만**, 악성 확장이 설치만 되어 있으면 되고 클릭은 필요 없다",
+   "summary_de": "Forever Securitys **Gal Weizman** veröffentlicht **BragJack**: **eine gewöhnliche Browser-Erweiterung** — allein mit normalen Content-Script- und **declarativeNetRequest**-Rechten — entführt die integrierten KI-Agenten von **fünf Chromium-Browsern**: **Gemini in Chrome, Copilot in Edge, Opera Neon, Perplexity Comet und Claude in Chrome**. Statt Anweisungen in Inhalten zu verstecken, **übernimmt die Erweiterung den vertrauenswürdigen Prompt-Kanal** zwischen der Herstellerseite und dem Agenten im Browser — die Forscher nennen das **„Prompt Forcing\"** —, sodass Sicherheitsfilter auf Modellebene gar nicht erst greifen. Google behebt es als **CVE-2026-0628** (CVSS 8.8, Chrome 143.0.7499.192/.193), Microsoft als **CVE-2026-55945** (mittel, Edge vor 150.0.4078.48); Comet war am breitesten betroffen, und Anthropic zahlte ein Kopfgeld für den Claude-in-Chrome-Fall. Ein Proof of Concept — **keine Ausnutzung in freier Wildbahn** — bei dem die schädliche Erweiterung lediglich installiert sein muss, ohne Klick",
+   "summary_fr": "**Gal Weizman**, de Forever Security, divulgue **BragJack** : **une simple extension de navigateur** — avec de banales autorisations de content script et de **declarativeNetRequest** — détourne les agents IA intégrés de **cinq navigateurs Chromium** : **Gemini dans Chrome, Copilot dans Edge, Opera Neon, Perplexity Comet et Claude in Chrome**. Plutôt que de cacher des instructions dans le contenu, l'extension **s'empare du canal de prompt de confiance** entre le site de l'éditeur et l'agent du navigateur — les chercheurs parlent de **« prompt forcing »** — si bien que les filtres de sécurité du modèle n'entrent jamais en jeu. Google l'a corrigé sous **CVE-2026-0628** (CVSS 8.8, Chrome 143.0.7499.192/.193), Microsoft sous **CVE-2026-55945** (moyen, Edge avant 150.0.4078.48) ; Comet a été le plus touché et Anthropic a versé une prime pour le cas Claude in Chrome. Une preuve de concept — **aucune exploitation observée** — où l'extension malveillante doit simplement être installée, sans clic",
+   "summary_es": "**Gal Weizman**, de Forever Security, divulga **BragJack**: **una extensión de navegador corriente** — solo con permisos normales de content script y **declarativeNetRequest** — secuestra los agentes de IA integrados de **cinco navegadores Chromium**: **Gemini en Chrome, Copilot en Edge, Opera Neon, Perplexity Comet y Claude in Chrome**. En vez de esconder instrucciones en el contenido, la extensión **toma el canal de prompts de confianza** entre el sitio del fabricante y el agente del navegador — los investigadores lo llaman **«prompt forcing»** —, de modo que los filtros de seguridad del modelo nunca llegan a actuar. Google lo corrigió como **CVE-2026-0628** (CVSS 8.8, Chrome 143.0.7499.192/.193) y Microsoft como **CVE-2026-55945** (medio, Edge anterior a 150.0.4078.48); Comet fue el más afectado y Anthropic pagó una recompensa por el caso de Claude in Chrome. Es una prueba de concepto — **sin explotación real** — y a la extensión maliciosa le basta con estar instalada, sin clics",
+   "disputed": false,
+   "landmark": false,
+   "path": "incidents/2026-09/2026-09-16-bragjack-browser-agents.md",
+   "path_zh": "incidents/i18n/zh/2026-09/2026-09-16-bragjack-browser-agents.md",
+   "sources": [
+    {
+     "url": "https://forever.security/blog/bragjack-hijacking-5-browsers-via-built-in-ai-assistants",
+     "label": "Forever Security"
+    },
+    {
+     "url": "https://forever.security/blog/bragjack-attack-hijacks-every-browser-agent",
+     "label": "Forever Security (technical)"
+    },
+    {
+     "url": "https://www.bleepingcomputer.com/news/security/bragjack-attacks-hijack-ai-browser-agents-through-malicious-extensions/",
+     "label": "BleepingComputer"
+    },
+    {
+     "url": "https://cybersecuritynews.com/bragjack-ai-agent-hijacking/",
+     "label": "Cybersecurity News"
+    }
+   ]
+  },
+  {
    "id": "2026-09-16-deepmind-institute",
    "title": "Google DeepMind launches the DeepMind Institute for AGI governance",
    "title_zh": "Google DeepMind 成立 DeepMind Institute，聚焦 AGI 治理",
@@ -14687,6 +14743,57 @@
     {
      "url": "https://aiweekly.co/alerts/deepmind-opens-institute-to-publish-essays-on-agi-safety",
      "label": "AI Weekly"
+    }
+   ]
+  },
+  {
+   "id": "2026-09-16-mandiant-ai-risk-resilience-2026",
+   "title": "Mandiant 2026 AI report: a runaway agent's $50,000 bill and AI-assisted intrusions",
+   "title_zh": "Mandiant 2026 AI 报告：失控 agent 烧掉 5 万美元账单，AI 辅助入侵登场",
+   "title_ja": "Mandiant 2026 AIレポート：暴走エージェントの5万ドル請求とAI支援型侵入",
+   "title_ko": "Mandiant 2026 AI 보고서: 폭주 에이전트의 5만 달러 청구서와 AI 지원 침입",
+   "title_de": "Mandiant-KI-Bericht 2026: 50.000-Dollar-Rechnung eines außer Kontrolle geratenen Agenten",
+   "title_fr": "Rapport IA 2026 de Mandiant : une facture de 50 000 $ due à un agent emballé",
+   "title_es": "Informe de IA 2026 de Mandiant: una factura de 50.000 $ de un agente desbocado",
+   "date": "2026-09-16",
+   "date_end": null,
+   "date_precision": "day",
+   "date_raw": "2026-09-15→16",
+   "month": "2026-09",
+   "kind": "report",
+   "type": [
+    "WEAPON"
+   ],
+   "severity": "info",
+   "confidence": "A",
+   "real_harm": null,
+   "ai_involvement": "confirmed",
+   "region": [
+    "GLOBAL"
+   ],
+   "summary": "Mandiant's **AI Risk and Resilience 2026** report details how adversaries now run parts of intrusions with AI — and one case where no attacker was involved at all: a hijacked **AI coding-assistant session** that recommended a poisoned package, handing an intruder an infostealer, **GitHub OAuth tokens** and the **Shai-Hulud worm across about 100 internal repositories**; a **compromised CI/CD credential** rebuilt into a live, AI-assisted offensive hub (IP-rotation scripts, a Rust tool to log into victim accounts) that exfiltrated thousands of credentials; and a financial firm's **accounting agent** that, stuck in a recursive reasoning loop after a corrupted null value, made **15,000+ reasoning API calls in under an hour**, ran up a **~$50,000 cloud bill** and **halted active business transactions**",
+   "summary_zh": "Mandiant《AI Risk and Resilience 2026》报告披露攻击者已用 AI 执行入侵的部分环节——以及一起**完全无攻击者**的案例：被劫持的 **AI 编码助手会话**推荐了被投毒的包，使入侵者获得 infostealer、**GitHub OAuth 令牌**，并在**约 100 个内部代码仓库**中部署 **Shai-Hulud 蠕虫**；一枚**失窃的 CI/CD 长期凭证**被改造成实时 AI 辅助攻击平台（动态换 IP 脚本、用于登录受害者账户的 Rust 工具），外泄数千条凭证；某金融机构的**记账 agent** 因一个损坏的空值陷入递归推理循环，**一小时内发起 15,000+ 次推理 API 调用**、产生**约 5 万美元云账单**并**导致业务交易中断**",
+   "summary_ja": "Mandiantの**AI Risk and Resilience 2026**報告は、攻撃者がAIで侵入の一部を実行する実態を明らかにした——そして攻撃者が一切関与しない事例も：ハイジャックされた**AIコーディングアシスタントのセッション**が汚染パッケージを推薦し、侵入者にインフォスティーラー、**GitHub OAuthトークン**、**約100の社内リポジトリに及ぶShai-Huludワーム**を渡した。**盗まれたCI/CDの長期資格情報**は、IPローテーションスクリプトや被害者の口座にログインするRust製ツールを備えた、AI支援の生きた攻撃ハブに作り替えられ、数千件の資格情報を窃取した。金融機関の**経理エージェント**は、破損したnull値のため再帰的推論ループに陥り、**1時間足らずで1万5千回超の推論API呼び出し**、**約5万ドルのクラウド請求**を発生させ、**業務トランザクションを停止**させた",
+   "summary_ko": "Mandiant의 **AI Risk and Resilience 2026** 보고서는 공격자들이 침입의 일부를 AI로 수행하는 실태와, 공격자가 전혀 없는 사례 하나를 상세히 다룬다: 하이재킹된 **AI 코딩 어시스턴트 세션**이 오염된 패키지를 추천해 침입자에게 인포스틸러, **GitHub OAuth 토큰**, 그리고 **약 100개 내부 저장소에 퍼진 Shai-Hulud 웜**을 안겼다. **탈취된 CI/CD 장기 자격증명**은 IP 로테이션 스크립트와 피해자 계정 로그인용 Rust 도구를 갖춘 실시간 AI 지원 공격 허브로 바뀌어 수천 건의 자격증명을 유출했다. 금융사의 **회계 에이전트**는 손상된 null 값 때문에 재귀 추론 루프에 빠져 **1시간 안에 1만5천 건이 넘는 추론 API 호출**과 **약 5만 달러의 클라우드 청구서**를 만들고 **업무 거래를 중단**시켰다",
+   "summary_de": "Mandiants Bericht **AI Risk and Resilience 2026** beschreibt, wie Angreifer Teile von Intrusionen inzwischen mit KI ausführen — und einen Fall ganz ohne Angreifer: Eine gekaperte **KI-Coding-Assistant-Sitzung** empfahl ein vergiftetes Paket und lieferte einem Eindringling einen Infostealer, **GitHub-OAuth-Token** und den **Shai-Hulud-Wurm über rund 100 interne Repositories**. Ein **kompromittierter CI/CD-Dauerzugang** wurde zu einem lebenden, KI-gestützten Angriffs-Hub umgebaut (IP-Rotationsskripte, ein Rust-Tool zum Login in Opferkonten) und exfiltrierte Tausende Zugangsdaten. Der **Buchhaltungs-Agent** eines Finanzunternehmens geriet nach einem korrupten Nullwert in eine rekursive Reasoning-Schleife: **über 15.000 Reasoning-API-Aufrufe in unter einer Stunde**, eine **Cloud-Rechnung von ~50.000 US-Dollar** und **gestoppte Geschäftstransaktionen**",
+   "summary_fr": "Le rapport **AI Risk and Resilience 2026** de Mandiant détaille comment les attaquants confient désormais une partie des intrusions à l'IA — et un cas sans aucun attaquant : une **session d'assistant de codage IA** détournée a recommandé un paquet empoisonné, fournissant à un intrus un infostealer, des **jetons OAuth GitHub** et le **ver de Shai-Hulud sur environ 100 dépôts internes** ; un **identifiant CI/CD compromis** a été transformé en hub offensif vivant assisté par IA (scripts de rotation d'IP, outil Rust pour se connecter aux comptes des victimes), exfiltrant des milliers d'identifiants ; et l'**agent comptable** d'une société financière, bloqué dans une boucle de raisonnement récursive après une valeur nulle corrompue, a généré **plus de 15 000 appels d'API de raisonnement en moins d'une heure**, une **facture cloud d'environ 50 000 $** et **l'arrêt de transactions commerciales**",
+   "summary_es": "El informe **AI Risk and Resilience 2026** de Mandiant detalla cómo los atacantes ya ejecutan partes de las intrusiones con IA — y un caso sin atacante alguno: una **sesión de asistente de código IA** secuestrada recomendó un paquete envenenado, entregando a un intruso un infostealer, **tokens OAuth de GitHub** y el **gusano Shai-Hulud por unos 100 repositorios internos**; una **credencial CI/CD comprometida** se convirtió en un centro ofensivo vivo asistido por IA (scripts de rotación de IP, una herramienta en Rust para entrar en cuentas de víctimas) que exfiltró miles de credenciales; y el **agente contable** de una firma financiera, atrapado en un bucle de razonamiento recursivo tras un valor nulo corrupto, generó **más de 15.000 llamadas a la API de razonamiento en menos de una hora**, una **factura de nube de ~50.000 $** y **detuvo transacciones comerciales activas**",
+   "disputed": false,
+   "landmark": false,
+   "path": "incidents/2026-09/2026-09-16-mandiant-ai-risk-resilience-2026.md",
+   "path_zh": "incidents/i18n/zh/2026-09/2026-09-16-mandiant-ai-risk-resilience-2026.md",
+   "sources": [
+    {
+     "url": "https://cloud.google.com/security/resources/ai-risk-and-resilience-2026",
+     "label": "Mandiant (Google Cloud)"
+    },
+    {
+     "url": "https://www.helpnetsecurity.com/2026/09/16/google-mandiant-enterprise-ai-security-risks-report/",
+     "label": "Help Net Security"
+    },
+    {
+     "url": "https://www.securityweek.com/in-other-news-ransomware-developer-sentenced-plugin4shell-ai-attack-critical-sap-flaw/",
+     "label": "SecurityWeek"
     }
    ]
   },
@@ -14909,6 +15016,61 @@
     {
      "url": "https://www.infoq.cn/article/CEphwKjzAe7LzbOriLcq",
      "label": "InfoQ"
+    }
+   ]
+  },
+  {
+   "id": "2026-09-17-azure-ai-foundry-cve-2026-85889",
+   "title": "Microsoft patches a CVSS 10.0 missing-authentication flaw in Azure AI Foundry",
+   "title_zh": "微软修复 Azure AI Foundry 的 CVSS 10.0 缺失认证漏洞",
+   "title_ja": "マイクロソフト、Azure AI FoundryのCVSS 10.0「認証欠落」脆弱性を修正",
+   "title_ko": "마이크로소프트, Azure AI Foundry의 CVSS 10.0 인증 누락 취약점 패치",
+   "title_de": "Microsoft schließt CVSS-10.0-Lücke (fehlende Authentifizierung) in Azure AI Foundry",
+   "title_fr": "Microsoft corrige une faille CVSS 10.0 (authentification manquante) dans Azure AI Foundry",
+   "title_es": "Microsoft corrige una falla de autenticación ausente (CVSS 10.0) en Azure AI Foundry",
+   "date": "2026-09-17",
+   "date_end": null,
+   "date_precision": "day",
+   "date_raw": "2026-09-17→18",
+   "month": "2026-09",
+   "kind": "vulnerability",
+   "type": [
+    "INFRA"
+   ],
+   "severity": "high",
+   "confidence": "A",
+   "real_harm": false,
+   "ai_involvement": "confirmed",
+   "region": [
+    "GLOBAL"
+   ],
+   "summary": "Microsoft fixes **CVE-2026-85889**, a **CVSS 10.0** missing-authentication flaw (CWE-306) in **Azure AI Foundry**, the enterprise platform for building, deploying and managing generative-AI applications and agents: an unauthorized attacker can reach a backend function and **elevate privileges over the network** with no credentials and no user interaction. Because the service is cloud-hosted, **customers had nothing to patch** — and, as the Cloud Security Alliance notes, **no visibility into the exposure window and no independent way to check whether their tenant was probed**. Microsoft says it **found no evidence of exploitation**; the same out-of-cycle wave fixed **CVE-2026-85885** (Microsoft 365 Copilot command injection, 9.9) and several other Azure flaws",
+   "summary_zh": "微软修复 **CVE-2026-85889**：**Azure AI Foundry**（用于构建、部署与管理生成式 AI 应用及 agent 的企业平台）中一个 **CVSS 10.0** 的缺失认证缺陷（CWE-306）——未授权攻击者无需凭证、无需用户交互即可触达后端功能并**经网络提权**。由于是云托管服务，**客户无需打补丁**——云安全联盟（CSA）指出客户也**无从得知暴露窗口，无法独立判断自己的租户是否被探测**。微软称**未发现利用证据**；同批非常规更新还修复了 **CVE-2026-85885**（Microsoft 365 Copilot 命令注入，9.9）及若干 Azure 缺陷",
+   "summary_ja": "マイクロソフトは、生成AIアプリとエージェントの構築・展開・管理を担う企業プラットフォーム **Azure AI Foundry** の **CVSS 10.0** の認証欠落脆弱性（CWE-306）**CVE-2026-85889** を修正した。未認証の攻撃者は資格情報もユーザー操作も不要でバックエンド機能に到達し、**ネットワーク経由で権限を昇格**できる。クラウドサービスであるため**顧客側に適用するパッチはない**が、CSAは**露出期間を把握できず、自テナントが探索されたかを独自に確認する手段もない**と指摘する。マイクロソフトは**悪用の証拠は見つかっていない**と述べ、同時期の定例外更新では **CVE-2026-85885**（Microsoft 365 Copilotのコマンドインジェクション、9.9）なども修正された",
+   "summary_ko": "마이크로소프트가 생성 AI 앱과 에이전트를 구축·배포·관리하는 기업 플랫폼 **Azure AI Foundry**의 **CVSS 10.0** 인증 누락 결함(CWE-306) **CVE-2026-85889**를 수정했다. 미인증 공격자는 자격증명도 사용자 상호작용도 없이 백엔드 기능에 도달해 **네트워크를 통해 권한을 상승**시킬 수 있다. 클라우드 서비스이므로 **고객이 설치할 패치는 없지만**, CSA는 고객이 **노출 기간을 알 수 없고 자기 테넌트가 탐색됐는지 독립적으로 확인할 방법도 없다**고 지적한다. 마이크로소프트는 **악용 증거를 발견하지 못했다**고 밝혔고, 같은 정기 외 업데이트에서 **CVE-2026-85885**(Microsoft 365 Copilot 명령 주입, 9.9) 등도 수정됐다",
+   "summary_de": "Microsoft behebt **CVE-2026-85889**, eine **CVSS-10.0**-Lücke durch fehlende Authentifizierung (CWE-306) in **Azure AI Foundry**, der Unternehmensplattform zum Erstellen, Bereitstellen und Betreiben generativer KI-Anwendungen und Agenten: Ein nicht authentifizierter Angreifer erreicht eine Backend-Funktion und **erweitert seine Rechte über das Netzwerk** — ohne Zugangsdaten und ohne Nutzerinteraktion. Weil der Dienst cloudgehostet ist, **gab es für Kunden nichts zu patchen** — und laut Cloud Security Alliance auch **keine Einsicht in das Expositionsfenster und keine unabhängige Möglichkeit zu prüfen, ob ihr Tenant abgetastet wurde**. Microsoft erklärt, **keine Hinweise auf Ausnutzung** gefunden zu haben; dieselbe außerplanmäßige Runde schloss **CVE-2026-85885** (Command-Injection in Microsoft 365 Copilot, 9.9) und weitere Azure-Lücken",
+   "summary_fr": "Microsoft corrige **CVE-2026-85889**, une faille d'authentification manquante (CWE-306) notée **CVSS 10.0** dans **Azure AI Foundry**, la plateforme d'entreprise pour créer, déployer et exploiter des applications d'IA générative et des agents : un attaquant non authentifié peut atteindre une fonction backend et **élever ses privilèges via le réseau**, sans identifiants ni interaction utilisateur. Le service étant hébergé dans le cloud, **les clients n'avaient rien à corriger** — et, comme le note la Cloud Security Alliance, **aucune visibilité sur la fenêtre d'exposition ni moyen indépendant de savoir si leur tenant avait été sondé**. Microsoft affirme n'avoir **trouvé aucune preuve d'exploitation** ; la même salve hors cycle a corrigé **CVE-2026-85885** (injection de commandes dans Microsoft 365 Copilot, 9.9) et d'autres failles Azure",
+   "summary_es": "Microsoft corrige **CVE-2026-85889**, una falla de autenticación ausente (CWE-306) con **CVSS 10.0** en **Azure AI Foundry**, la plataforma empresarial para crear, desplegar y operar aplicaciones de IA generativa y agentes: un atacante no autenticado puede alcanzar una función backend y **elevar privilegios por la red** sin credenciales ni interacción del usuario. Al ser un servicio alojado en la nube, **los clientes no tenían nada que parchear** — y, como señala la Cloud Security Alliance, **tampoco visibilidad sobre la ventana de exposición ni forma independiente de comprobar si su tenant fue sondeado**. Microsoft dice que **no encontró pruebas de explotación**; la misma tanda fuera de ciclo corrigió **CVE-2026-85885** (inyección de comandos en Microsoft 365 Copilot, 9.9) y otras fallas de Azure",
+   "disputed": false,
+   "landmark": false,
+   "path": "incidents/2026-09/2026-09-17-azure-ai-foundry-cve-2026-85889.md",
+   "path_zh": "incidents/i18n/zh/2026-09/2026-09-17-azure-ai-foundry-cve-2026-85889.md",
+   "sources": [
+    {
+     "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-85889",
+     "label": "Microsoft MSRC"
+    },
+    {
+     "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-85889",
+     "label": "NVD"
+    },
+    {
+     "url": "https://thehackernews.com/2026/09/microsoft-patches-cvss-100-azure-ai.html",
+     "label": "The Hacker News"
+    },
+    {
+     "url": "https://labs.cloudsecurityalliance.org/research/csa-research-note-azure-ai-foundry-privilege-escalation-2026/",
+     "label": "Cloud Security Alliance"
     }
    ]
   },

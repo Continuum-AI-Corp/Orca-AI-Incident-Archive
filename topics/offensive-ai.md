@@ -60,7 +60,7 @@
 ---
 
 <!-- BEGIN:incidents -->
-## All records (45)
+## All records (46)
 
 | Date | Record | Type | Severity | Confidence | Real harm |
 |---|---|---|---|---|---|
@@ -108,6 +108,7 @@
 | `2026-09-11` | ★ [Claude used to scan 1.8 million Android apps for secrets](../incidents/2026-09/2026-09-11-claude-scans-18m-android-apks.md) | `WEAPON` | **Critical** | A | ✅ |
 | `2026-09-14` | ★ [Spain's AEPD receives the first AI-agent-driven breach notification](../incidents/2026-09/2026-09-14-spain-aepd-agent-breach.md) | `WEAPON` | **Critical** | A | ✅ |
 | `2026-09-15` | ★ [PaperCut AI agent swarm attack made public](../incidents/2026-09/2026-09-15-papercut-agent-swarm-disclosed.md) | `WEAPON` | **Critical** | A | ✅ |
+| `2026-09-16` | [Mandiant 2026 AI report: a runaway agent's $50,000 bill and AI-assisted intrusions](../incidents/2026-09/2026-09-16-mandiant-ai-risk-resilience-2026.md) | `WEAPON` | Info | A | · |
 | `2026-09-18` | [Researchers used Claude to hack OpenAI's internal systems in a bug-bounty chain](../incidents/2026-09/2026-09-18-hacktron-claude-openai-hack.md) | `WEAPON` `CRED` | **High** | A | — |
 <!-- END:incidents -->
 

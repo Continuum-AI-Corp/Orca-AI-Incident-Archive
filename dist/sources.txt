@@ -63,6 +63,7 @@ https://cloud.google.com/blog/ja/topics/threat-intelligence/ai-vulnerability-exp
 https://cloud.google.com/blog/topics/threat-intelligence/data-theft-salesforce-instances-via-salesloft-drift
 https://cloud.google.com/blog/topics/threat-intelligence/north-korea-threat-actor-targets-axios-npm-package/?hl=en
 https://cloud.google.com/blog/topics/threat-intelligence/prc-targets-us-medical-research
+https://cloud.google.com/security/resources/ai-risk-and-resilience-2026
 https://codewall.ai/blog/how-we-hacked-mckinseys-ai-platform
 https://collusion.wiki/
 https://composio.dev/blog/composio-may-2026-security-incident
@@ -74,6 +75,7 @@ https://cyberscoop.com/claude-chrome-extension-allows-plugins-to-hijack-ai/
 https://cyberscoop.com/near-autonomous-ai-attack-government-target-taiwan/
 https://cyberscoop.com/servicenow-fixes-critical-ai-vulnerability-cve-2025-12420/
 https://cybersecuritynews.com/anthropics-claude-oceanus-v1-p/
+https://cybersecuritynews.com/bragjack-ai-agent-hijacking/
 https://cybersecuritynews.com/clawdbot-chats-exposed/
 https://cybersecuritynews.com/cline-ai-agent-vulnerability/
 https://cybersecuritynews.com/gitlab-fixes-claude-ai-agent-flaw/
@@ -95,6 +97,8 @@ https://eu.36kr.com/en/p/3828243809981313
 https://finance.sina.com.cn/jjxw/2025-04-15/doc-inethkcn7574036.shtml
 https://finance.sina.com.cn/tech/digi/2026-09-17/doc-inisatuq9424977.shtml
 https://forest.watch.impress.co.jp/docs/news/2105656.html
+https://forever.security/blog/bragjack-attack-hijacks-every-browser-agent
+https://forever.security/blog/bragjack-hijacking-5-browsers-via-built-in-ai-assistants
 https://fortune.com/2025/07/23/ai-coding-tool-replit-wiped-database-called-it-a-catastrophic-failure/
 https://fortune.com/2026/03/26/anthropic-says-testing-mythos-powerful-new-ai-model-after-data-leak-reveals-its-existence-step-change-in-capabilities/
 https://freefable.org/
@@ -141,6 +145,7 @@ https://knowledge.dlapiper.com/dlapiperknowledge/globalemploymentlatestdevelopme
 https://krebsonsecurity.com/2026/06/hackers-used-metas-ai-support-bot-to-seize-instagram-accounts/
 https://labs.cloudsecurityalliance.org/research/csa-research-note-ai-browser-prompt-injection-20260630-csa-s/
 https://labs.cloudsecurityalliance.org/research/csa-research-note-aurora-ransomware-cursor-ai-abuse-20260901/
+https://labs.cloudsecurityalliance.org/research/csa-research-note-azure-ai-foundry-privilege-escalation-2026/
 https://labs.cloudsecurityalliance.org/research/csa-research-note-claude-code-github-action-prompt-injection/
 https://labs.cloudsecurityalliance.org/research/csa-research-note-claude-cowork-sharedroot-sandbox-escape-20/
 https://labs.cloudsecurityalliance.org/research/csa-research-note-gemini-cli-rce-cvss10-ai-tool-security-202/
@@ -158,6 +163,7 @@ https://microsoft.ai/news/mai-code-of-conduct/
 https://modal.com/blog/a-note-on-the-hugging-face-agent-incident
 https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-26118
 https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-42824
+https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-85889
 https://neuraltrust.ai/blog/grok-morse-code
 https://neuraltrust.ai/blog/openai-atlas-omnibox-prompt-injection
 https://news.china.com.cn/2026-09/17/content_118699807.shtml
@@ -166,6 +172,7 @@ https://noma.security/blog/gitlost-how-we-tricked-githubs-ai-agent-into-leaking-
 https://nvd.nist.gov/vuln/detail/CVE-2026-26118
 https://nvd.nist.gov/vuln/detail/CVE-2026-30615
 https://nvd.nist.gov/vuln/detail/CVE-2026-32882
+https://nvd.nist.gov/vuln/detail/CVE-2026-85889
 https://oddguan.com/blog/comment-and-control-prompt-injection-credential-theft-claude-code-gemini-cli-github-copilot/
 https://oecd.ai/en/incidents/2026-05-04-4a73
 https://openai.com/global-affairs/disrupting-malicious-uses-of-ai-october-2025/
@@ -265,6 +272,7 @@ https://thehackernews.com/2026/08/snowflake-github-actions-flaw-lets_0330881554.
 https://thehackernews.com/2026/09/chatgpt-flaw-let-planted-prompt-send.html
 https://thehackernews.com/2026/09/claude-opus-5-helped-researchers-take.html
 https://thehackernews.com/2026/09/malicious-git-configs-can-make-claude.html
+https://thehackernews.com/2026/09/microsoft-patches-cvss-100-azure-ai.html
 https://thehackernews.com/2026/09/openai-agents-linked-to-rubygems.html
 https://thehackernews.com/2026/09/openai-reveals-six-model-incidents.html
 https://thehackernews.com/2026/09/papercut-attacker-uses-hundreds-of-ai.html
@@ -319,6 +327,7 @@ https://www.bleepingcomputer.com/news/microsoft/microsoft-says-bug-causes-copilo
 https://www.bleepingcomputer.com/news/security/ai-powered-malware-hit-2-180-github-accounts-in-s1ngularity-attack/
 https://www.bleepingcomputer.com/news/security/amazon-ai-assisted-hacker-breached-600-fortigate-firewalls-in-5-weeks/
 https://www.bleepingcomputer.com/news/security/amazon-ai-coding-agent-hacked-to-inject-data-wiping-commands/
+https://www.bleepingcomputer.com/news/security/bragjack-attacks-hijack-ai-browser-agents-through-malicious-extensions/
 https://www.bleepingcomputer.com/news/security/critical-langflow-flaw-exploited-to-steal-openai-and-aws-keys/
 https://www.bleepingcomputer.com/news/security/cursor-codex-gemini-cli-antigravity-hit-by-sandbox-escapes/
 https://www.bleepingcomputer.com/news/security/fake-openai-repository-on-hugging-face-pushes-infostealer-malware/
@@ -378,6 +387,7 @@ https://www.hacktron.ai/blog/hacking-openai
 https://www.halborn.com/blog/post/explained-the-step-finance-hack-january-2026
 https://www.hawley.senate.gov/chairman-hawley-launches-investigation-into-openai-for-hacking-existential-risk-of-ai-products/
 https://www.hawley.senate.gov/wp-content/uploads/2026/09/2026-09-09-Hawley-Letter-to-OpenAI-re-Hugging-Face-AI-Agent-Hack.pdf
+https://www.helpnetsecurity.com/2026/09/16/google-mandiant-enterprise-ai-security-risks-report/
 https://www.helpnetsecurity.com/2026/09/18/plugin4shell-ai-coding-agents-vulnerability/
 https://www.hiddenlayer.com/research/echogram-the-hidden-vulnerability-undermining-ai-guardrails
 https://www.ibm.com/support/pages/node/7278927
@@ -446,6 +456,7 @@ https://www.securityweek.com/critical-ruflo-flaw-lets-attackers-spawn-rogue-ai-s
 https://www.securityweek.com/data-exposure-flaws-threaten-dify-ai-platform-powering-over-1-million-apps/
 https://www.securityweek.com/github-confirms-hack-impacting-3800-internal-repositories/
 https://www.securityweek.com/hackers-exploit-langflow-vulnerability-for-remote-code-execution/
+https://www.securityweek.com/in-other-news-ransomware-developer-sentenced-plugin4shell-ai-attack-critical-sap-flaw/
 https://www.securityweek.com/north-korean-hackers-blamed-for-mastra-npm-supply-chain-attack/
 https://www.sentinelone.com/labs/agents-at-large-tracing-illicit-openai-agent-activity-on-hugging-face/
 https://www.sentinelone.com/labs/macos-gaslight-rust-backdoor-turns-prompt-injection-on-the-analyst-not-the-sandbox/
