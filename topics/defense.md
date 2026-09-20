@@ -35,7 +35,7 @@ An archive that records only incidents will be lopsided, so we suggest adding a 
 ---
 
 <!-- BEGIN:incidents -->
-## All records (58)
+## All records (61)
 
 | Date | Record | Type | Severity | Confidence | Real harm |
 |---|---|---|---|---|---|
@@ -93,10 +93,13 @@ An archive that records only incidents will be lopsided, so we suggest adding a 
 | `2026-09-10` | [Hawley opens a Senate investigation into OpenAI over the Hugging Face agent hack](../incidents/2026-09/2026-09-10-hawley-openai-investigation.md) | `GOV` | Info | A | · |
 | `2026-09-12` | [Senators draft a frontier-AI "duty of care" bill with power to block releases](../incidents/2026-09/2026-09-12-ai-duty-of-care-bill.md) | `GOV` | Info | B | · |
 | `2026-09-14` | [Microsoft publishes a draft "Humanist AI" code of conduct for its MAI models](../incidents/2026-09/2026-09-14-microsoft-mai-code-of-conduct.md) | `GOV` | Info | A | · |
+| `2026-09-16` | [Google DeepMind launches the DeepMind Institute for AGI governance](../incidents/2026-09/2026-09-16-deepmind-institute.md) | `GOV` | Info | A | · |
 | `2026-09-16` | [OpenAI discloses six misalignment incidents and a reporting framework](../incidents/2026-09/2026-09-16-openai-misalignment-reports.md) | `EVAL` `GOV` | Medium | A | — |
 | `2026-09-16` | [EU State of the Union: von der Leyen cites agent escapes and convenes frontier labs](../incidents/2026-09/2026-09-16-von-der-leyen-soteu-agents.md) | `GOV` | Info | A | · |
 | `2026-09-17` | [Anthropic: Claude "leads" 26% of its AI R&D with 30,000 agents running in parallel](../incidents/2026-09/2026-09-17-anthropic-rd-indicators.md) | `GOV` | Info | A | · |
 | `2026-09-17` | [China's MSS issues an AI-agent security advisory on the DseWiki hijacking](../incidents/2026-09/2026-09-17-china-mss-agent-advisory.md) | `GOV` `EVAL` | Info | A | · |
+| `2026-09-18` | [Consumers sue Anthropic, OpenAI, SpaceXAI and Google over an alleged AI slowdown pact](../incidents/2026-09/2026-09-18-ai-slowdown-antitrust-lawsuit.md) | `GOV` | Info | B | · |
+| `2026-09-18` | [California orders an AI "kill switch" and third-party oversight](../incidents/2026-09/2026-09-18-california-ai-kill-switch-eo.md) | `GOV` | Info | A | · |
 <!-- END:incidents -->
 
 ---

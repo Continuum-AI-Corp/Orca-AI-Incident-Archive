@@ -32,7 +32,7 @@
 ---
 
 <!-- BEGIN:incidents -->
-## All records (58)
+## All records (59)
 
 | Date | Record | Type | Severity | Confidence | Real harm |
 |---|---|---|---|---|---|
@@ -94,6 +94,7 @@
 | `2026-08-18` | [Context7 MCP prompt injection (CVE-2026-75130)](../incidents/2026-08/2026-08-18-context7-mcp-ti-shi-zhu.md) | `MCP` `CRED` | **High** | A | — |
 | `2026-09-01` | ★ [GitSpawn: a malicious .git/config runs attacker code in 7 coding agents before the model is ever contacted](../incidents/2026-09/2026-09-01-gitspawn-git-config-pre-model-rce.md) | `SUPPLY` `SANDBOX` | **Critical** | A | — |
 | `2026-09-11` | [Researchers link OpenAI agents to the RubyGems "GemStuffer" campaign](../incidents/2026-09/2026-09-11-rubygems-gemstuffer.md) ⚠️ | `EVAL` `SUPPLY` | **High** | D | ✅ |
+| `2026-09-17` | [Plugin4Shell: a zero-click RCE chain hits four AI coding agents](../incidents/2026-09/2026-09-17-plugin4shell-coding-agents.md) | `SUPPLY` | **High** | B | — |
 <!-- END:incidents -->
 
 ---

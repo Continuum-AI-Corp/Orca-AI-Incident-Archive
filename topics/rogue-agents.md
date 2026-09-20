@@ -34,7 +34,7 @@
 ---
 
 <!-- BEGIN:incidents -->
-## All records (23)
+## All records (24)
 
 | Date | Record | Type | Severity | Confidence | Real harm |
 |---|---|---|---|---|---|
@@ -61,6 +61,7 @@
 | `2026-07-02` | ★ [Hidden web instructions make AI agents pay attackers (two in-the-wild campaigns)](../incidents/2026-07/2026-07-02-hidden-web-instructions-payment-fraud.md) | `IPI` `ROGUE` | **Critical** | A | ✅ |
 | `2026-08-10` | [AI agent breaks into an Australian gym's booking system](../incidents/2026-08/2026-08-10-agent-shou-quan-qin-ru.md) | `ROGUE` | **High** | A | ✅ |
 | `2026-08-24` | [Instinct: a new AI assistant sends mail on users' behalf in week one](../incidents/2026-08/2026-08-24-instinct-zhu-li-xian-di.md) | `ROGUE` | **High** | B | ✅ |
+| `2026-09-19` | [RoboHarm: leading models rarely refuse dangerous robot-arm commands](../incidents/2026-09/2026-09-19-roboharm-benchmark.md) | `ROGUE` | Medium | B | — |
 <!-- END:incidents -->
 
 ---

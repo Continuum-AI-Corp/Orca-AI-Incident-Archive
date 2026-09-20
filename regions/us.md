@@ -13,7 +13,7 @@
 | Industry self-regulation | "Pacing the Frontier", signed by 1,100+ people (2026-07-28); OpenAI slowing development and pausing RL for two weeks (2026-08-18); OpenAI's Critical assessment of Astra and the internal pause (2026-08-07) | [OpenAI](https://openai.com/index/responding-next-frontier-critical-cyber-capabilities/) |
 
 <!-- BEGIN:incidents -->
-## All records (27)
+## All records (30)
 
 | Date | Record | Type | Severity | Confidence | Real harm |
 |---|---|---|---|---|---|
@@ -44,6 +44,9 @@
 | `2026-09-03` | [US senators introduce the Ban Artificial Superintelligence Act](../incidents/2026-09/2026-09-03-ban-artificial-superintelligence-act.md) | `GOV` | Info | B | · |
 | `2026-09-10` | [Hawley opens a Senate investigation into OpenAI over the Hugging Face agent hack](../incidents/2026-09/2026-09-10-hawley-openai-investigation.md) | `GOV` | Info | A | · |
 | `2026-09-12` | [Senators draft a frontier-AI "duty of care" bill with power to block releases](../incidents/2026-09/2026-09-12-ai-duty-of-care-bill.md) | `GOV` | Info | B | · |
+| `2026-09-18` | [Consumers sue Anthropic, OpenAI, SpaceXAI and Google over an alleged AI slowdown pact](../incidents/2026-09/2026-09-18-ai-slowdown-antitrust-lawsuit.md) | `GOV` | Info | B | · |
+| `2026-09-18` | [California orders an AI "kill switch" and third-party oversight](../incidents/2026-09/2026-09-18-california-ai-kill-switch-eo.md) | `GOV` | Info | A | · |
+| `2026-09-18` | [Researchers used Claude to hack OpenAI's internal systems in a bug-bounty chain](../incidents/2026-09/2026-09-18-hacktron-claude-openai-hack.md) | `WEAPON` `CRED` | **High** | A | — |
 <!-- END:incidents -->
 
 ---

@@ -26,7 +26,7 @@ The role Langflow / LiteLLM / Flowise / OpenClaw play in 2026 is the one Fortine
 ---
 
 <!-- BEGIN:incidents -->
-## All records (80)
+## All records (81)
 
 | Date | Record | Type | Severity | Confidence | Real harm |
 |---|---|---|---|---|---|
@@ -110,6 +110,7 @@ The role Langflow / LiteLLM / Flowise / OpenClaw play in 2026 is the one Fortine
 | `2026-08-26` | [GitLab Duo's Claude agent can run arbitrary commands in CI](../incidents/2026-08/2026-08-26-gitlab-duo-claude-agent.md) | `INFRA` | **High** | A | — |
 | `2026-09-02` | ★ [Langflow CVE-2026-0768: the 12th Langflow flaw exploited in the wild this year](../incidents/2026-09/2026-09-02-langflow-jin-di-ye-li.md) | `INFRA` `CRED` | **Critical** | A | ✅ |
 | `2026-09-16` | [SentinelLABS traces OpenAI agent activity on Hugging Face back to May 13](../incidents/2026-09/2026-09-16-sentinellabs-hf-trace.md) | `EVAL` `CRED` | **High** | A | ✅ |
+| `2026-09-18` | [Researchers used Claude to hack OpenAI's internal systems in a bug-bounty chain](../incidents/2026-09/2026-09-18-hacktron-claude-openai-hack.md) | `WEAPON` `CRED` | **High** | A | — |
 <!-- END:incidents -->
 
 ---

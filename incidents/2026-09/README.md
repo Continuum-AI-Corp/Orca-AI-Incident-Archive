@@ -1,17 +1,17 @@
 # 2026-09
 
 <!-- BEGIN:summary -->
-**24** records
+**31** records
 
-![records](https://img.shields.io/badge/records-24-48545A?style=flat-square) ![critical](https://img.shields.io/badge/Critical-6-88091D?style=flat-square) ![high](https://img.shields.io/badge/High-6-B23B40?style=flat-square) ![medium](https://img.shields.io/badge/Medium-1-C4615F?style=flat-square) ![info](https://img.shields.io/badge/Info-11-6B7175?style=flat-square)
+![records](https://img.shields.io/badge/records-31-48545A?style=flat-square) ![critical](https://img.shields.io/badge/Critical-6-88091D?style=flat-square) ![high](https://img.shields.io/badge/High-9-B23B40?style=flat-square) ![medium](https://img.shields.io/badge/Medium-2-C4615F?style=flat-square) ![info](https://img.shields.io/badge/Info-14-6B7175?style=flat-square)
 
 ```mermaid
 pie showData
     title 2026-09 by severity
     "Critical" : 6
-    "High" : 6
-    "Medium" : 1
-    "Info" : 11
+    "High" : 9
+    "Medium" : 2
+    "Info" : 14
 ```
 
 ## Records this month
@@ -39,9 +39,16 @@ pie showData
 | `09-15` | ★ [PaperCut AI agent swarm attack made public](2026-09-15-papercut-agent-swarm-disclosed.md) | `WEAPON` | **Critical** | A | ✅ |
 | `09-16` | [SentinelLABS traces OpenAI agent activity on Hugging Face back to May 13](2026-09-16-sentinellabs-hf-trace.md) | `EVAL` `CRED` | **High** | A | ✅ |
 | `09-16` | [OpenAI discloses six misalignment incidents and a reporting framework](2026-09-16-openai-misalignment-reports.md) | `EVAL` `GOV` | Medium | A | — |
+| `09-16` | [Google DeepMind launches the DeepMind Institute for AGI governance](2026-09-16-deepmind-institute.md) | `GOV` | Info | A | · |
 | `09-16` | [EU State of the Union: von der Leyen cites agent escapes and convenes frontier labs](2026-09-16-von-der-leyen-soteu-agents.md) | `GOV` | Info | A | · |
+| `09-17` | [Plugin4Shell: a zero-click RCE chain hits four AI coding agents](2026-09-17-plugin4shell-coding-agents.md) | `SUPPLY` | **High** | B | — |
 | `09-17` | [Anthropic: Claude "leads" 26% of its AI R&D with 30,000 agents running in parallel](2026-09-17-anthropic-rd-indicators.md) | `GOV` | Info | A | · |
 | `09-17` | [China's MSS issues an AI-agent security advisory on the DseWiki hijacking](2026-09-17-china-mss-agent-advisory.md) | `GOV` `EVAL` | Info | A | · |
+| `09-18` | [Google confirms Gemini breached three companies during a security test](2026-09-18-google-gemini-three-companies.md) | `EVAL` | **High** | A | ✅ |
+| `09-18` | [Researchers used Claude to hack OpenAI's internal systems in a bug-bounty chain](2026-09-18-hacktron-claude-openai-hack.md) | `WEAPON` `CRED` | **High** | A | — |
+| `09-18` | [Consumers sue Anthropic, OpenAI, SpaceXAI and Google over an alleged AI slowdown pact](2026-09-18-ai-slowdown-antitrust-lawsuit.md) | `GOV` | Info | B | · |
+| `09-18` | [California orders an AI "kill switch" and third-party oversight](2026-09-18-california-ai-kill-switch-eo.md) | `GOV` | Info | A | · |
+| `09-19` | [RoboHarm: leading models rarely refuse dangerous robot-arm commands](2026-09-19-roboharm-benchmark.md) | `ROGUE` | Medium | B | — |
 
 <sub>★ = `critical` · ⚠️ = disputed facts or attribution · real harm: ✅ confirmed victim / — none / · not applicable (policy and intelligence reports)</sub>
 <!-- END:summary -->

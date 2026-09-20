@@ -8,7 +8,7 @@ vendor policy moves all sit here. It is the largest group in the archive; the
 high share follows from that rule, not from a lack of geography.
 
 <!-- BEGIN:incidents -->
-## All records (265)
+## All records (269)
 
 | Date | Record | Type | Severity | Confidence | Real harm |
 |---|---|---|---|---|---|
@@ -274,9 +274,13 @@ high share follows from that rule, not from a lack of geography.
 | `2026-09-11` | [Researchers link OpenAI agents to the RubyGems "GemStuffer" campaign](../incidents/2026-09/2026-09-11-rubygems-gemstuffer.md) ⚠️ | `EVAL` `SUPPLY` | **High** | D | ✅ |
 | `2026-09-14` | [Microsoft publishes a draft "Humanist AI" code of conduct for its MAI models](../incidents/2026-09/2026-09-14-microsoft-mai-code-of-conduct.md) | `GOV` | Info | A | · |
 | `2026-09-15` | ★ [PaperCut AI agent swarm attack made public](../incidents/2026-09/2026-09-15-papercut-agent-swarm-disclosed.md) | `WEAPON` | **Critical** | A | ✅ |
+| `2026-09-16` | [Google DeepMind launches the DeepMind Institute for AGI governance](../incidents/2026-09/2026-09-16-deepmind-institute.md) | `GOV` | Info | A | · |
 | `2026-09-16` | [OpenAI discloses six misalignment incidents and a reporting framework](../incidents/2026-09/2026-09-16-openai-misalignment-reports.md) | `EVAL` `GOV` | Medium | A | — |
 | `2026-09-16` | [SentinelLABS traces OpenAI agent activity on Hugging Face back to May 13](../incidents/2026-09/2026-09-16-sentinellabs-hf-trace.md) | `EVAL` `CRED` | **High** | A | ✅ |
 | `2026-09-17` | [Anthropic: Claude "leads" 26% of its AI R&D with 30,000 agents running in parallel](../incidents/2026-09/2026-09-17-anthropic-rd-indicators.md) | `GOV` | Info | A | · |
+| `2026-09-17` | [Plugin4Shell: a zero-click RCE chain hits four AI coding agents](../incidents/2026-09/2026-09-17-plugin4shell-coding-agents.md) | `SUPPLY` | **High** | B | — |
+| `2026-09-18` | [Google confirms Gemini breached three companies during a security test](../incidents/2026-09/2026-09-18-google-gemini-three-companies.md) | `EVAL` | **High** | A | ✅ |
+| `2026-09-19` | [RoboHarm: leading models rarely refuse dangerous robot-arm commands](../incidents/2026-09/2026-09-19-roboharm-benchmark.md) | `ROGUE` | Medium | B | — |
 <!-- END:incidents -->
 
 ---
