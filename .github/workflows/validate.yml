@@ -19,6 +19,9 @@ on:
   pull_request:
   workflow_dispatch:
 
+permissions:
+  contents: read
+
 jobs:
   schema:
     name: frontmatter and internal links
@@ -30,6 +33,8 @@ jobs:
           python-version: '3.12'
       - name: Validate schema
         run: python scripts/validate.py
+      - name: Security regression tests (offline)
+        run: python -m unittest discover -s scripts -p 'test_security.py'
 
   derived:
     name: Derived files are up to date

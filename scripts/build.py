@@ -25,6 +25,7 @@ from l10n import LANGS, TYPE_NAME, REGION_NAME, SEV_NAME, KIND_NAME, name, LABEL
 import charts
 import page_data
 from readme_i18n import README_L10N
+from export_safety import csv_row
 
 rows = load_all()
 MIRRORS = load_mirrors("zh")
@@ -278,7 +279,7 @@ buf = io.StringIO()
 w = csv.writer(buf, lineterminator="\n")
 w.writerow(CSV_COLS)
 for r in rows:
-    w.writerow([r["id"], r["date"], r.get("date_end") or "", r["date_precision"], r["_month"],
+    w.writerow(csv_row([r["id"], r["date"], r.get("date_end") or "", r["date_precision"], r["_month"],
                 r["title"]]
                + [(rec_field(r, "title", l) or "") for l in CSV_LANGS]
                + [r["kind"], ";".join(r["type"]), r["severity"], r["confidence"],
@@ -288,7 +289,7 @@ for r in rows:
                   str(r["summary"]).replace("\n", " ")]
                + [str(rec_field(r, "summary", l) or "").replace("\n", " ") for l in CSV_LANGS]
                + [";".join(s["url"] for s in r["sources"]), r["_path"],
-                  MIRRORS[r["id"]]["path"] if r["id"] in MIRRORS else ""])
+                  MIRRORS[r["id"]]["path"] if r["id"] in MIRRORS else ""]))
 W("dist/incidents.csv", buf.getvalue())
 
 W("dist/stats.json", json.dumps(OrderedDict([
