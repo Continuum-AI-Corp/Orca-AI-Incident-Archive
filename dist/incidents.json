@@ -14660,13 +14660,13 @@
    "region": [
     "GLOBAL"
    ],
-   "summary": "Google DeepMind launches the **DeepMind Institute** — led by **Demis Hassabis, Shane Legg and James Manyika** — opening with four essays that put **concrete AI policy mechanisms** on the table: Hassabis proposes a **US-led frontier AI standards body that reviews models up to 30 days before release** (initially voluntary, later required to deploy in the US, moving to **held-out tests** and potentially a **coordinated slowdown if risks escalate**), while safety researchers **Rohin Shah and Anca Dragan** argue for capping **\"opaque serial depth\"** — how much computation a model may do without emitting a readable reasoning trace",
-   "summary_zh": "Google DeepMind 成立 **DeepMind Institute**（由 **Hassabis、Shane Legg 与 James Manyika** 领导），开局发布四篇论文提出**具体的 AI 政策机制**：Hassabis 建议设立**美国主导的前沿 AI 标准机构，在模型发布前最多 30 天进行审查**（先自愿、后作为在美国部署的前提，转向**保留测试集**，并可能在风险升级时**协调减速**）；安全研究者 **Rohin Shah 与 Anca Dragan** 主张给**「不透明串行深度」**设上限——即模型在不输出可读推理轨迹的情况下可进行的计算量",
-   "summary_ja": "Google DeepMindが**DeepMind Institute**を設立（**Hassabis、Shane Legg、James Manyika**が率いる）。四本の論文で**具体的な政策メカニズム**を提示：Hassabisは**米国主導のフロンティアAI標準機関**を提案し、**リリース前最大30日の審査**（当初は任意、後に米国展開の要件、**held-outテスト**へ移行、リスク激化時には**協調的減速**も）を構想。安全研究者**Rohin ShahとAnca Dragan**は、可読な推論トレースを出さずにモデルが行える計算量＝**「不透明な直列深度」の上限設定**を主張した",
-   "summary_ko": "Google DeepMind가 **DeepMind Institute**를 출범시켰다(**Hassabis, Shane Legg, James Manyika** 주도). 네 편의 에세이로 **구체적 AI 정책 메커니즘**을 제시: Hassabis는 **미국 주도의 프런티어 AI 표준기구**를 제안하며 **출시 전 최대 30일 심사**(초기 자발적, 이후 미국 배포 요건, **비공개 held-out 테스트**, 리스크 고조 시 **조율된 감속**까지)를 구상했다. 안전 연구자 **Rohin Shah와 Anca Dragan**은 읽을 수 있는 추론 흔적 없이 모델이 수행할 수 있는 계산량인 **\"불투명 직렬 깊이\" 상한**을 주장했다",
-   "summary_de": "Google DeepMind gründet das **DeepMind Institute** — geleitet von **Demis Hassabis, Shane Legg und James Manyika** — und eröffnet mit vier Essays, die **konkrete KI-Politikmechanismen** auf den Tisch legen: Hassabis schlägt eine **US-geführte Frontier-KI-Standardsbehörde mit einer Prüfung bis zu 30 Tage vor dem Release** vor (zunächst freiwillig, später Pflicht für US-Deployment, mit **Held-out-Tests** und möglicher **koordinierter Verlangsamung** bei eskalierenden Risiken); die Sicherheitsforscher **Rohin Shah und Anca Dragan** fordern eine Obergrenze für **„opake serielle Tiefe\"** — wie viel Rechenleistung ein Modell ohne lesbaren Reasoning-Trace leisten darf",
-   "summary_fr": "Google DeepMind lance le **DeepMind Institute** — dirigé par **Demis Hassabis, Shane Legg et James Manyika** — avec quatre essais mettant sur la table des **mécanismes politiques concrets** : Hassabis propose un **organisme de normalisation de l'IA de pointe piloté par les États-Unis, examinant les modèles jusqu'à 30 jours avant leur sortie** (d'abord volontaire, puis exigé pour déployer aux États-Unis, avec des **tests tenus secrets** et un possible **ralentissement coordonné** si les risques s'aggravent) ; les chercheurs **Rohin Shah et Anca Dragan** plaident pour plafonner la **« profondeur sérielle opaque »** — le calcul qu'un modèle peut faire sans trace de raisonnement lisible",
-   "summary_es": "Google DeepMind lanza el **DeepMind Institute** —dirigido por **Demis Hassabis, Shane Legg y James Manyika**— con cuatro ensayos que ponen sobre la mesa **mecanismos concretos de política de IA**: Hassabis propone un **organismo de estándares de IA frontera liderado por EE. UU. que revise los modelos hasta 30 días antes del lanzamiento** (primero voluntario, después exigido para desplegar en EE. UU., con **pruebas reservadas** y un posible **frenado coordinado** si escalan los riesgos); los investigadores **Rohin Shah y Anca Dragan** abogan por limitar la **\"profundidad serial opaca\"**: el cálculo que un modelo puede hacer sin una traza de razonamiento legible",
+   "summary": "Google DeepMind launches the **DeepMind Institute** — led by **Demis Hassabis, Shane Legg and James Manyika** — opening with a founding essay and four further pieces that put **concrete AI policy mechanisms** on the table: Hassabis proposes a **US-led frontier AI standards body that reviews models up to 30 days before release** (initially voluntary, later required to deploy in the US, moving to **held-out tests** and potentially a **coordinated slowdown if risks escalate**), while safety researchers **Rohin Shah and Anca Dragan** argue for capping **\"opaque serial depth\"** — how much computation a model may do without emitting a readable reasoning trace",
+   "summary_zh": "Google DeepMind 成立 **DeepMind Institute**（由 **Hassabis、Shane Legg 与 James Manyika** 领导），开局发布一篇创始文章与四篇后续文章，提出**具体的 AI 政策机制**：Hassabis 建议设立**美国主导的前沿 AI 标准机构，在模型发布前最多 30 天进行审查**（先自愿、后作为在美国部署的前提，转向**保留测试集**，并可能在风险升级时**协调减速**）；安全研究者 **Rohin Shah 与 Anca Dragan** 主张给**「不透明串行深度」**设上限——即模型在不输出可读推理轨迹的情况下可进行的计算量",
+   "summary_ja": "Google DeepMindが**DeepMind Institute**を設立（**Hassabis、Shane Legg、James Manyika**が率いる）。創設論文1本と追加論文4本で**具体的な政策メカニズム**を提示：Hassabisは**米国主導のフロンティアAI標準機関**を提案し、**リリース前最大30日の審査**（当初は任意、後に米国展開の要件、**held-outテスト**へ移行、リスク激化時には**協調的減速**も）を構想。安全研究者**Rohin ShahとAnca Dragan**は、可読な推論トレースを出さずにモデルが行える計算量＝**「不透明な直列深度」の上限設定**を主張した",
+   "summary_ko": "Google DeepMind가 **DeepMind Institute**를 출범시켰다(**Hassabis, Shane Legg, James Manyika** 주도). 창립 에세이 1편과 추가 에세이 4편으로 **구체적 AI 정책 메커니즘**을 제시: Hassabis는 **미국 주도의 프런티어 AI 표준기구**를 제안하며 **출시 전 최대 30일 심사**(초기 자발적, 이후 미국 배포 요건, **비공개 held-out 테스트**, 리스크 고조 시 **조율된 감속**까지)를 구상했다. 안전 연구자 **Rohin Shah와 Anca Dragan**은 읽을 수 있는 추론 흔적 없이 모델이 수행할 수 있는 계산량인 **\"불투명 직렬 깊이\" 상한**을 주장했다",
+   "summary_de": "Google DeepMind gründet das **DeepMind Institute** — geleitet von **Demis Hassabis, Shane Legg und James Manyika** — und eröffnet mit einem Gründungsessay und vier weiteren Beiträgen, die **konkrete KI-Politikmechanismen** auf den Tisch legen: Hassabis schlägt eine **US-geführte Frontier-KI-Standardsbehörde mit einer Prüfung bis zu 30 Tage vor dem Release** vor (zunächst freiwillig, später Pflicht für US-Deployment, mit **Held-out-Tests** und möglicher **koordinierter Verlangsamung** bei eskalierenden Risiken); die Sicherheitsforscher **Rohin Shah und Anca Dragan** fordern eine Obergrenze für **„opake serielle Tiefe\"** — wie viel Rechenleistung ein Modell ohne lesbaren Reasoning-Trace leisten darf",
+   "summary_fr": "Google DeepMind lance le **DeepMind Institute** — dirigé par **Demis Hassabis, Shane Legg et James Manyika** — avec un essai fondateur et quatre autres textes mettant sur la table des **mécanismes politiques concrets** : Hassabis propose un **organisme de normalisation de l'IA de pointe piloté par les États-Unis, examinant les modèles jusqu'à 30 jours avant leur sortie** (d'abord volontaire, puis exigé pour déployer aux États-Unis, avec des **tests tenus secrets** et un possible **ralentissement coordonné** si les risques s'aggravent) ; les chercheurs **Rohin Shah et Anca Dragan** plaident pour plafonner la **« profondeur sérielle opaque »** — le calcul qu'un modèle peut faire sans trace de raisonnement lisible",
+   "summary_es": "Google DeepMind lanza el **DeepMind Institute** —dirigido por **Demis Hassabis, Shane Legg y James Manyika**— con un ensayo fundacional y cuatro textos más que ponen sobre la mesa **mecanismos concretos de política de IA**: Hassabis propone un **organismo de estándares de IA frontera liderado por EE. UU. que revise los modelos hasta 30 días antes del lanzamiento** (primero voluntario, después exigido para desplegar en EE. UU., con **pruebas reservadas** y un posible **frenado coordinado** si escalan los riesgos); los investigadores **Rohin Shah y Anca Dragan** abogan por limitar la **\"profundidad serial opaca\"**: el cálculo que un modelo puede hacer sin una traza de razonamiento legible",
    "disputed": false,
    "landmark": false,
    "path": "incidents/2026-09/2026-09-16-deepmind-institute.md",
@@ -14681,8 +14681,12 @@
      "label": "DeepMind Institute (site)"
     },
     {
-     "url": "https://www.explainx.ai/blog/google-deepmind-institute-agi-launch-2026",
-     "label": "ExplainX"
+     "url": "https://techcrunch.com/2026/09/17/google-deepmind-launches-institute-to-widen-the-agi-debate/",
+     "label": "TechCrunch"
+    },
+    {
+     "url": "https://aiweekly.co/alerts/deepmind-opens-institute-to-publish-essays-on-agi-safety",
+     "label": "AI Weekly"
     }
    ]
   },
@@ -14850,6 +14854,10 @@
     {
      "url": "https://www.euronews.com/my-europe/2026/09/16/eus-von-der-leyen-calls-for-pacing-frontier-ai-models",
      "label": "Euronews"
+    },
+    {
+     "url": "https://au.news.yahoo.com/curtailing-ai-illusion-eu-despite-094308427.html",
+     "label": "Yahoo News"
     }
    ]
   },
@@ -15186,13 +15194,13 @@
    "region": [
     "US"
    ],
-   "summary": "A three-person team at **Hacktron AI** used **Claude** (a cybersecurity build of Opus 4.8, then **Opus 5** the day it released) to chain two critical flaws in OpenAI's **bug-bounty program**: a memory bug in **libheif** reached through **Discourse**'s HEIF/HEIC image pipeline (already fixed upstream but **never assigned a CVE**, so the forum still ran the vulnerable version) gave server access, and a second flaw allowed **takeover of ChatGPT and Codex accounts, including OpenAI employees'** — one with Codex wired into OpenAI's GitHub org. OpenAI fixed the issues and paid **$6,500**; the researchers published the chain",
-   "summary_zh": "**Hacktron AI** 三人民队用 **Claude**（面向安全研究者的 Opus 4.8 版本，**Opus 5 发布当天换用**）在 OpenAI 的**漏洞赏金项目**中串联两个严重缺陷：经由 **Discourse** 的 HEIF/HEIC 图片管线触发 **libheif 内存缺陷**（上游早已修复但**从未分配 CVE**，论坛仍在跑有漏洞的版本）获得服务器权限；第二个缺陷使其**接管 ChatGPT 与 Codex 账号，包括 OpenAI 员工的账号**——其中一位员工的 Codex 接入了 OpenAI 的 GitHub 组织。OpenAI 已修复并支付 **6,500 美元**赏金；研究者公开了完整攻击链",
-   "summary_ja": "**Hacktron AI**の3人チームが**Claude**（セキュリティ研究者向けOpus 4.8、**Opus 5公開当日に切替**）を使い、OpenAIの**バグバウンティ**で2つの重大欠陥を連鎖させた：**Discourse**のHEIF/HEIC画像処理を経由した**libheifのメモリバグ**（上流では修正済みだが**CVE未採番**のためフォーラムは脆弱版のまま）でサーバー権限を取得し、2つ目の欠陥で**ChatGPTとCodexのアカウント（OpenAI従業員を含む）を乗っ取り**——1人はCodexがOpenAIのGitHub組織に接続されていた。OpenAIは修正し**6,500ドル**を支払い、研究者は攻撃チェーンを公開した",
-   "summary_ko": "**Hacktron AI** 3인 팀이 **Claude**(보안 연구자용 Opus 4.8, **Opus 5 공개 당일 교체**)로 OpenAI **버그바운티**에서 두 개의 치명적 결함을 연쇄했다: **Discourse**의 HEIF/HEIC 이미지 파이프라인을 통해 도달한 **libheif 메모리 버그**(업스트림에서 이미 수정됐지만 **CVE 미부여**로 포럼은 취약 버전 실행)로 서버 권한을 얻고, 두 번째 결함으로 **ChatGPT·Codex 계정(OpenAI 직원 포함)을 탈취**했다 — 한 직원의 Codex는 OpenAI GitHub 조직에 연결돼 있었다. OpenAI는 수정 후 **6,500달러**를 지급했고 연구진은 체인을 공개했다",
-   "summary_de": "Ein dreiköpfiges Team von **Hacktron AI** nutzte **Claude** (ein Cybersicherheits-Build von Opus 4.8, dann **Opus 5 am Erscheinungstag**) in OpenAIs **Bug-Bounty-Programm**, um zwei kritische Lücken zu verketten: ein Speicherfehler in **libheif**, erreichbar über **Discourses** HEIF/HEIC-Bildpipeline (upstream längst gefixt, aber **nie mit CVE versehen**, daher lief das Forum noch verwundbar), verschaffte Serverzugriff; eine zweite Lücke erlaubte die **Übernahme von ChatGPT- und Codex-Konten, auch von OpenAI-Mitarbeitern** — bei einem war Codex mit der OpenAI-GitHub-Organisation verbunden. OpenAI behob die Probleme und zahlte **6.500 US-Dollar**; die Forscher veröffentlichten die Kette",
-   "summary_fr": "Une équipe de trois personnes de **Hacktron AI** a utilisé **Claude** (une version cybersécurité d'Opus 4.8, puis **Opus 5 le jour de sa sortie**) dans le **programme de bug bounty** d'OpenAI pour enchaîner deux failles critiques : un bug mémoire dans **libheif**, atteint via la chaîne d'images HEIF/HEIC de **Discourse** (corrigé en amont mais **jamais doté d'un CVE**, le forum exécutait donc la version vulnérable), a donné accès au serveur ; une seconde faille a permis de **prendre le contrôle de comptes ChatGPT et Codex, y compris d'employés d'OpenAI** — l'un ayant Codex relié à l'organisation GitHub d'OpenAI. OpenAI a corrigé et versé **6 500 $** ; les chercheurs ont publié la chaîne",
-   "summary_es": "Un equipo de tres personas de **Hacktron AI** usó **Claude** (una versión de ciberseguridad de Opus 4.8 y, el día de su lanzamiento, **Opus 5**) en el **programa de bug bounty** de OpenAI para encadenar dos fallos críticos: un error de memoria en **libheif**, alcanzado por la tubería de imágenes HEIF/HEIC de **Discourse** (corregido aguas arriba pero **sin CVE asignado**, así que el foro seguía ejecutando la versión vulnerable), dio acceso al servidor; un segundo fallo permitió **tomar el control de cuentas de ChatGPT y Codex, incluidas las de empleados de OpenAI** — uno con Codex conectado a la organización de GitHub de OpenAI. OpenAI lo corrigió y pagó **6.500 $**; los investigadores publicaron la cadena",
+   "summary": "A three-person team at **Hacktron AI** used **Claude** (a cybersecurity build of Opus 4.8, then **Opus 5** the day it released) to chain two critical flaws in OpenAI's **bug-bounty program**: an image bug in **libheif** behind **Discourse**'s HEIF/HEIC pipeline — fixed upstream in **libheif 1.22.0 (May 2026)** and tracked as **CVE-2026-32882**, but still unpatched in the forum's Debian 12 image — gave server access, and a flaw in OpenAI's **shared sign-on** allowed **takeover of ChatGPT and Codex accounts, including OpenAI employees'** — one with Codex wired into OpenAI's GitHub org. OpenAI fixed the issues and paid **$6,500** on 1 September; the researchers published the chain",
+   "summary_zh": "**Hacktron AI** 三人民队用 **Claude**（面向安全研究者的 Opus 4.8 版本，**Opus 5 发布当天换用**）在 OpenAI 的**漏洞赏金项目**中串联两个严重缺陷：经由 **Discourse** 的 HEIF/HEIC 图片管线触发 **libheif 图片缺陷**——上游已于 2026 年 5 月在 **libheif 1.22.0** 修复并记作 **CVE-2026-32882**，但论坛所用的 Debian 12 镜像仍是未打补丁的旧版——获得服务器权限；再借 OpenAI **共用 SSO** 的缺陷**接管 ChatGPT 与 Codex 账号，包括 OpenAI 员工的账号**——其中一位员工的 Codex 接入了 OpenAI 的 GitHub 组织。OpenAI 已修复并于 **9 月 1 日**支付 **6,500 美元**赏金；研究者公开了完整攻击链",
+   "summary_ja": "**Hacktron AI**の3人チームが**Claude**（セキュリティ研究者向けOpus 4.8、**Opus 5公開当日に切替**）を使い、OpenAIの**バグバウンティ**で2つの重大欠陥を連鎖させた：**Discourse**のHEIF/HEIC画像処理を経由した**libheifの画像バグ**（上流では2026年5月に**libheif 1.22.0**で修正され**CVE-2026-32882**として追跡されているが、フォーラムのDebian 12イメージは未パッチの旧版のまま）でサーバー権限を取得し、続いてOpenAIの**共通SSO**の欠陥で**ChatGPTとCodexのアカウント（OpenAI従業員を含む）を乗っ取り**——1人はCodexがOpenAIのGitHub組織に接続されていた。OpenAIは修正し**9月1日**に**6,500ドル**を支払い、研究者は攻撃チェーンを公開した",
+   "summary_ko": "**Hacktron AI** 3인 팀이 **Claude**(보안 연구자용 Opus 4.8, **Opus 5 공개 당일 교체**)로 OpenAI **버그바운티**에서 두 개의 치명적 결함을 연쇄했다: **Discourse**의 HEIF/HEIC 이미지 파이프라인을 통해 도달한 **libheif 이미지 버그**——업스트림에서는 2026년 5월 **libheif 1.22.0**에서 수정돼 **CVE-2026-32882**로 추적되었지만, 포럼의 Debian 12 이미지는 여전히 패치되지 않은 구버전——으로 서버 권한을 얻고, 이어 OpenAI **공용 SSO** 결함으로 **ChatGPT·Codex 계정(OpenAI 직원 포함)을 탈취**했다 — 한 직원의 Codex는 OpenAI GitHub 조직에 연결돼 있었다. OpenAI는 수정 후 **9월 1일**에 **6,500달러**를 지급했고 연구진은 체인을 공개했다",
+   "summary_de": "Ein dreiköpfiges Team von **Hacktron AI** nutzte **Claude** (ein Cybersicherheits-Build von Opus 4.8, dann **Opus 5 am Erscheinungstag**) in OpenAIs **Bug-Bounty-Programm**, um zwei kritische Lücken zu verketten: ein Bildfehler in **libheif** hinter **Discourses** HEIF/HEIC-Pipeline — upstream im Mai 2026 in **libheif 1.22.0** behoben und als **CVE-2026-32882** geführt, aber im Debian-12-Image des Forums weiterhin ungepatcht — verschaffte Serverzugriff; eine Schwäche in OpenAIs **gemeinsamem SSO** erlaubte die **Übernahme von ChatGPT- und Codex-Konten, auch von OpenAI-Mitarbeitern** — bei einem war Codex mit der OpenAI-GitHub-Organisation verbunden. OpenAI behob die Probleme und zahlte am **1. September 6.500 US-Dollar**; die Forscher veröffentlichten die Kette",
+   "summary_fr": "Une équipe de trois personnes de **Hacktron AI** a utilisé **Claude** (une version cybersécurité d'Opus 4.8, puis **Opus 5 le jour de sa sortie**) dans le **programme de bug bounty** d'OpenAI pour enchaîner deux failles critiques : un bug d'image dans **libheif**, derrière la chaîne HEIF/HEIC de **Discourse** — corrigé en amont en mai 2026 dans **libheif 1.22.0** et suivi comme **CVE-2026-32882**, mais toujours non corrigé dans l'image Debian 12 du forum — a donné accès au serveur ; une faille dans le **SSO partagé** d'OpenAI a permis de **prendre le contrôle de comptes ChatGPT et Codex, y compris d'employés d'OpenAI** — l'un ayant Codex relié à l'organisation GitHub d'OpenAI. OpenAI a corrigé et versé **6 500 $** le **1er septembre** ; les chercheurs ont publié la chaîne",
+   "summary_es": "Un equipo de tres personas de **Hacktron AI** usó **Claude** (una versión de ciberseguridad de Opus 4.8 y, el día de su lanzamiento, **Opus 5**) en el **programa de bug bounty** de OpenAI para encadenar dos fallos críticos: un fallo de imagen en **libheif**, tras la tubería HEIF/HEIC de **Discourse** — corregido aguas arriba en mayo de 2026 en **libheif 1.22.0** y registrado como **CVE-2026-32882**, pero aún sin parche en la imagen Debian 12 del foro — dio acceso al servidor; un fallo en el **SSO compartido** de OpenAI permitió **tomar el control de cuentas de ChatGPT y Codex, incluidas las de empleados de OpenAI** — uno con Codex conectado a la organización de GitHub de OpenAI. OpenAI lo corrigió y pagó **6.500 $** el **1 de septiembre**; los investigadores publicaron la cadena",
    "disputed": false,
    "landmark": false,
    "path": "incidents/2026-09/2026-09-18-hacktron-claude-openai-hack.md",
@@ -15203,12 +15211,24 @@
      "label": "Hacktron AI"
     },
     {
+     "url": "https://thehackernews.com/2026/09/claude-opus-5-helped-researchers-take.html",
+     "label": "The Hacker News"
+    },
+    {
      "url": "https://techcrunch.com/2026/09/18/researchers-used-anthropics-claude-to-hack-into-openai/",
      "label": "TechCrunch"
     },
     {
      "url": "https://www.wsj.com/tech/ai/hackers-used-anthropics-claude-to-break-into-openai-b40ba883",
      "label": "WSJ"
+    },
+    {
+     "url": "https://github.com/discourse/discourse/security/advisories/GHSA-vhm9-85gw-x335",
+     "label": "Discourse advisory"
+    },
+    {
+     "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-32882",
+     "label": "NVD"
     }
    ]
   },

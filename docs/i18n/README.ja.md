@@ -13,7 +13,7 @@
 </p>
 
 <!-- BEGIN:badges -->
-<p align="center"><img alt="件数" src="https://img.shields.io/badge/%E4%BB%B6%E6%95%B0-330-48545A?style=flat-square"> <img alt="対象月数" src="https://img.shields.io/badge/%E5%AF%BE%E8%B1%A1%E6%9C%88%E6%95%B0-22-48545A?style=flat-square"> <img alt="重大" src="https://img.shields.io/badge/%E9%87%8D%E5%A4%A7-45-88091D?style=flat-square"> <img alt="実害あり" src="https://img.shields.io/badge/%E5%AE%9F%E5%AE%B3%E3%81%82%E3%82%8A-124-B23B40?style=flat-square"> <img alt="一次情報源" src="https://img.shields.io/badge/%E4%B8%80%E6%AC%A1%E6%83%85%E5%A0%B1%E6%BA%90-506_URL-157A41?style=flat-square"> <img alt="ライセンス" src="https://img.shields.io/badge/%E3%83%A9%E3%82%A4%E3%82%BB%E3%83%B3%E3%82%B9-CC_BY_4.0-2359A8?style=flat-square"></p>
+<p align="center"><img alt="件数" src="https://img.shields.io/badge/%E4%BB%B6%E6%95%B0-330-48545A?style=flat-square"> <img alt="対象月数" src="https://img.shields.io/badge/%E5%AF%BE%E8%B1%A1%E6%9C%88%E6%95%B0-22-48545A?style=flat-square"> <img alt="重大" src="https://img.shields.io/badge/%E9%87%8D%E5%A4%A7-45-88091D?style=flat-square"> <img alt="実害あり" src="https://img.shields.io/badge/%E5%AE%9F%E5%AE%B3%E3%81%82%E3%82%8A-124-B23B40?style=flat-square"> <img alt="一次情報源" src="https://img.shields.io/badge/%E4%B8%80%E6%AC%A1%E6%83%85%E5%A0%B1%E6%BA%90-511_URL-157A41?style=flat-square"> <img alt="ライセンス" src="https://img.shields.io/badge/%E3%83%A9%E3%82%A4%E3%82%BB%E3%83%B3%E3%82%B9-CC_BY_4.0-2359A8?style=flat-square"></p>
 <!-- END:badges -->
 
 <!-- BEGIN:thesis -->
@@ -161,7 +161,7 @@
 <!-- BEGIN:quality -->
 |  |  |
 |---|---|
-| 情報源リンク | 573 件 / ユニーク URL 506 件 |
+| 情報源リンク | 578 件 / ユニーク URL 511 件 |
 | 情報源なしのレコード | **0** — 情報源がなければ収録しない |
 | 評価 A（一次情報源） | 284 件 |
 | 争いありとしてマーク | 14 件 |

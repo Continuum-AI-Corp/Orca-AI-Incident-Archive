@@ -13,7 +13,7 @@
 </p>
 
 <!-- BEGIN:badges -->
-<p align="center"><img alt="records" src="https://img.shields.io/badge/records-330-48545A?style=flat-square"> <img alt="months" src="https://img.shields.io/badge/months-22-48545A?style=flat-square"> <img alt="critical" src="https://img.shields.io/badge/critical-45-88091D?style=flat-square"> <img alt="with real harm" src="https://img.shields.io/badge/with_real_harm-124-B23B40?style=flat-square"> <img alt="primary sources" src="https://img.shields.io/badge/primary_sources-506_URL-157A41?style=flat-square"> <img alt="license" src="https://img.shields.io/badge/license-CC_BY_4.0-2359A8?style=flat-square"></p>
+<p align="center"><img alt="records" src="https://img.shields.io/badge/records-330-48545A?style=flat-square"> <img alt="months" src="https://img.shields.io/badge/months-22-48545A?style=flat-square"> <img alt="critical" src="https://img.shields.io/badge/critical-45-88091D?style=flat-square"> <img alt="with real harm" src="https://img.shields.io/badge/with_real_harm-124-B23B40?style=flat-square"> <img alt="primary sources" src="https://img.shields.io/badge/primary_sources-511_URL-157A41?style=flat-square"> <img alt="license" src="https://img.shields.io/badge/license-CC_BY_4.0-2359A8?style=flat-square"></p>
 <!-- END:badges -->
 
 <!-- BEGIN:thesis -->
@@ -161,7 +161,7 @@ Full criteria: [docs/scope.md](docs/scope.md).
 <!-- BEGIN:quality -->
 |  |  |
 |---|---|
-| Source links | 573 links across 506 unique URLs |
+| Source links | 578 links across 511 unique URLs |
 | Records with no source | **0** — no source, no entry |
 | Grade A (primary source) | 284 |
 | Flagged as disputed | 14 |

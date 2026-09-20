@@ -13,7 +13,7 @@
 </p>
 
 <!-- BEGIN:badges -->
-<p align="center"><img alt="条目" src="https://img.shields.io/badge/%E6%9D%A1%E7%9B%AE-330-48545A?style=flat-square"> <img alt="覆盖月份" src="https://img.shields.io/badge/%E8%A6%86%E7%9B%96%E6%9C%88%E4%BB%BD-22-48545A?style=flat-square"> <img alt="严重" src="https://img.shields.io/badge/%E4%B8%A5%E9%87%8D-45-88091D?style=flat-square"> <img alt="真实伤害" src="https://img.shields.io/badge/%E7%9C%9F%E5%AE%9E%E4%BC%A4%E5%AE%B3-124-B23B40?style=flat-square"> <img alt="一手来源" src="https://img.shields.io/badge/%E4%B8%80%E6%89%8B%E6%9D%A5%E6%BA%90-506_URL-157A41?style=flat-square"> <img alt="授权" src="https://img.shields.io/badge/%E6%8E%88%E6%9D%83-CC_BY_4.0-2359A8?style=flat-square"></p>
+<p align="center"><img alt="条目" src="https://img.shields.io/badge/%E6%9D%A1%E7%9B%AE-330-48545A?style=flat-square"> <img alt="覆盖月份" src="https://img.shields.io/badge/%E8%A6%86%E7%9B%96%E6%9C%88%E4%BB%BD-22-48545A?style=flat-square"> <img alt="严重" src="https://img.shields.io/badge/%E4%B8%A5%E9%87%8D-45-88091D?style=flat-square"> <img alt="真实伤害" src="https://img.shields.io/badge/%E7%9C%9F%E5%AE%9E%E4%BC%A4%E5%AE%B3-124-B23B40?style=flat-square"> <img alt="一手来源" src="https://img.shields.io/badge/%E4%B8%80%E6%89%8B%E6%9D%A5%E6%BA%90-511_URL-157A41?style=flat-square"> <img alt="授权" src="https://img.shields.io/badge/%E6%8E%88%E6%9D%83-CC_BY_4.0-2359A8?style=flat-square"></p>
 <!-- END:badges -->
 
 <!-- BEGIN:thesis -->
@@ -161,7 +161,7 @@
 <!-- BEGIN:quality -->
 |  |  |
 |---|---|
-| 来源链接 | 573 条，506 个唯一 URL |
+| 来源链接 | 578 条，511 个唯一 URL |
 | 无来源条目 | **0** —— 没有来源的条目不进库 |
 | 可信度 A（一手源） | 284 条 |
 | 标记为争议 | 14 条 |

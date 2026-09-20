@@ -34,9 +34,9 @@ flowchart LR
 
 **她说了什么。** **9 月 16 日**在斯特拉斯堡向欧洲议会发表讲话时，冯德莱恩表示：「我将邀请主要前沿实验室，讨论我们如何支持行业正在进行的**掌控前沿步伐（pace the frontier）**的努力。」她复述了实验室自己的警告——「最先进公司的 CEO 们告诉我们，是时候在自我递归模型方面放慢速度了」——并称「正在开发的模型将带来我们从未想象过的黑客攻击能力」，而这些能力很快会落入「以非常不同方式看待世界的对手」手中。讲话**援引了 AI agent 逃出其运行环境并独立攻击其他系统的事例**，点名 Hugging Face 事件，且发生在一名 Anthropic 研究员辞职、指责两家公司都在向自我改进的超级智能赛跑的数天之后。
 
-**她宣布了什么。** 与前沿实验室会谈（未给日期与名单）；与「加拿大、英国等志同道合的伙伴」在**模型评估、验证、预警系统与 AI 安全**方面合作；并把 **AI Act** 定位为「约束所有在此提供的模型——无论美国还是中国」的工具，欧委会对先进模型的执法权已于 8 月生效。
+**她宣布了什么。** 与前沿实验室会谈（未给日期与名单）；与「加拿大、英国等志同道合的伙伴」在**模型评估、验证、预警系统与 AI 安全**方面合作；并把 **AI Act** 定位为让欧洲得以「塑造全球应对努力」的关键工具；其对最先进模型风险缓解措施的监督权已于 8 月生效。
 
-**各方反应。** 欧洲议会议员意见分裂：独立议员 Michael McNamara（爱尔兰）称该承诺是「口头功夫」，因为「许多最重要的 AI 开发者都在欧洲之外」；AI Act 联合报告人 Brando Benifei 则予以肯定。评论者还指出，欧洲仅占全球 AI 投资不足 5%，美国占 75–80%——这决定了这份邀请的分量。
+**各方反应。** 欧洲议会议员意见分裂：独立议员 Michael McNamara（爱尔兰）称该承诺是「口头功夫」，因为「许多最重要的 AI 开发者都在欧洲之外」；AI Act 联合报告人 Brando Benifei 则予以肯定，称「AI Act 让欧洲在 AI 安全上处于引领位置」、且「它约束所有在此提供的模型——无论美国还是中国」。评论者还指出，欧洲仅占全球 AI 投资不足 5%，美国占 75–80%——这决定了这份邀请的分量。
 
 ## 来源
 
@@ -45,6 +45,7 @@ flowchart LR
 | 1 | 欧盟委员会 | <https://ec.europa.eu/commission/presscorner/api/files/document/print/ov/speech_26_1868/SPEECH_26_1868_OV.pdf> |
 | 2 | Reuters | <https://www.reuters.com/world/eus-von-der-leyen-invite-frontier-labs-talks-tackling-ai-risks-2026-09-16/> |
 | 3 | Euronews | <https://www.euronews.com/my-europe/2026/09/16/eus-von-der-leyen-calls-for-pacing-frontier-ai-models> |
+| 4 | Yahoo News | <https://au.news.yahoo.com/curtailing-ai-illusion-eu-despite-094308427.html> |
 
 ## 元数据
 

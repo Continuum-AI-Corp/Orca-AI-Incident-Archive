@@ -13,7 +13,7 @@
 </p>
 
 <!-- BEGIN:badges -->
-<p align="center"><img alt="entrées" src="https://img.shields.io/badge/entr%C3%A9es-330-48545A?style=flat-square"> <img alt="mois" src="https://img.shields.io/badge/mois-22-48545A?style=flat-square"> <img alt="critiques" src="https://img.shields.io/badge/critiques-45-88091D?style=flat-square"> <img alt="préjudice réel" src="https://img.shields.io/badge/pr%C3%A9judice_r%C3%A9el-124-B23B40?style=flat-square"> <img alt="sources primaires" src="https://img.shields.io/badge/sources_primaires-506_URL-157A41?style=flat-square"> <img alt="licence" src="https://img.shields.io/badge/licence-CC_BY_4.0-2359A8?style=flat-square"></p>
+<p align="center"><img alt="entrées" src="https://img.shields.io/badge/entr%C3%A9es-330-48545A?style=flat-square"> <img alt="mois" src="https://img.shields.io/badge/mois-22-48545A?style=flat-square"> <img alt="critiques" src="https://img.shields.io/badge/critiques-45-88091D?style=flat-square"> <img alt="préjudice réel" src="https://img.shields.io/badge/pr%C3%A9judice_r%C3%A9el-124-B23B40?style=flat-square"> <img alt="sources primaires" src="https://img.shields.io/badge/sources_primaires-511_URL-157A41?style=flat-square"> <img alt="licence" src="https://img.shields.io/badge/licence-CC_BY_4.0-2359A8?style=flat-square"></p>
 <!-- END:badges -->
 
 <!-- BEGIN:thesis -->
@@ -161,7 +161,7 @@ Critères complets : [docs/scope.md](../../docs/scope.md).
 <!-- BEGIN:quality -->
 |  |  |
 |---|---|
-| Liens sources | 573 liens sur 506 URL uniques |
+| Liens sources | 578 liens sur 511 URL uniques |
 | Entrées sans source | **0** — pas de source, pas d'entrée |
 | Grade A (source primaire) | 284 |
 | Marquées comme contestées | 14 |

@@ -14,6 +14,7 @@ https://aibars.net/en/news/886927740790640640
 https://aidailypost.com/news/gpt-6-claude-turn-robot-arms
 https://aigovernance.com/news/instinct-ai-agent-sends-emails-autonomously-and-retains-data-after-disconnect
 https://aisle.com/blog/ai-cybersecurity-after-mythos-the-jagged-frontier
+https://aiweekly.co/alerts/deepmind-opens-institute-to-publish-essays-on-agi-safety
 https://alignment.openai.com/misalignment-reports/
 https://app.opencve.io/cve/CVE-2026-18252
 https://app.opencve.io/cve/CVE-2026-62830
@@ -26,6 +27,7 @@ https://arstechnica.com/security/2026/06/dozens-of-red-hat-packages-backdoored-t
 https://arxiv.org/abs/2601.04603v1
 https://arxiv.org/abs/2602.15001v2
 https://attack.mitre.org/campaigns/C0062/
+https://au.news.yahoo.com/curtailing-ai-illusion-eu-despite-094308427.html
 https://aws.amazon.com/jp/blogs/security/ai-augmented-threat-actor-accesses-fortigate-devices-at-scale/
 https://aws.amazon.com/security/security-bulletins/2026-075-aws/
 https://badhost.org/
@@ -113,6 +115,7 @@ https://github.com/advisories/GHSA-xrxf-jgv3-qmrm
 https://github.com/anthropics/mythos-5-incident-transcript
 https://github.com/aquasecurity/trivy/security/advisories/GHSA-69fq-xp46-6x23
 https://github.com/axios/axios/issues/10636
+https://github.com/discourse/discourse/security/advisories/GHSA-vhm9-85gw-x335
 https://github.com/invariantlabs-ai/mcp-injection-experiments
 https://github.com/modelcontextprotocol/typescript-sdk/security/advisories/GHSA-w48q-cv73-mx4w
 https://github.com/nrwl/nx-console/security/advisories/GHSA-c9j4-9m59-847w
@@ -162,6 +165,7 @@ https://noma.security/blog/forcedleak-agent-risks-exposed-in-salesforce-agentfor
 https://noma.security/blog/gitlost-how-we-tricked-githubs-ai-agent-into-leaking-private-repos/
 https://nvd.nist.gov/vuln/detail/CVE-2026-26118
 https://nvd.nist.gov/vuln/detail/CVE-2026-30615
+https://nvd.nist.gov/vuln/detail/CVE-2026-32882
 https://oddguan.com/blog/comment-and-control-prompt-injection-credential-theft-claude-code-gemini-cli-github-copilot/
 https://oecd.ai/en/incidents/2026-05-04-4a73
 https://openai.com/global-affairs/disrupting-malicious-uses-of-ai-october-2025/
@@ -225,6 +229,7 @@ https://techcrunch.com/2025/12/22/openai-says-ai-browsers-may-always-be-vulnerab
 https://techcrunch.com/2026/05/06/ai-evaluation-startup-braintrust-confirms-breach-tells-every-customer-to-rotate-sensitive-keys/
 https://techcrunch.com/2026/09/05/openai-confirms-wiki-incident-says-its-working-on-a-framework-for-more-disclosure/
 https://techcrunch.com/2026/09/09/viral-ai-assistant-instinct-now-has-its-own-email-address/
+https://techcrunch.com/2026/09/17/google-deepmind-launches-institute-to-widen-the-agi-debate/
 https://techcrunch.com/2026/09/18/researchers-used-anthropics-claude-to-hack-into-openai/
 https://techradar.com/pro/security/autonomous-ai-agent-hit-spanish-firm-with-vulnerability-scans-before-accessing-files-and-data
 https://techriskguru.com/p/techrisk-133-man-in-the-prompt-attack
@@ -258,6 +263,7 @@ https://thehackernews.com/2026/08/microsoft-copilot-personal-flaws-could.html
 https://thehackernews.com/2026/08/new-cryptographic-context-injection.html
 https://thehackernews.com/2026/08/snowflake-github-actions-flaw-lets_0330881554.html
 https://thehackernews.com/2026/09/chatgpt-flaw-let-planted-prompt-send.html
+https://thehackernews.com/2026/09/claude-opus-5-helped-researchers-take.html
 https://thehackernews.com/2026/09/malicious-git-configs-can-make-claude.html
 https://thehackernews.com/2026/09/openai-agents-linked-to-rubygems.html
 https://thehackernews.com/2026/09/openai-reveals-six-model-incidents.html
@@ -361,7 +367,6 @@ https://www.esecurityplanet.com/vulnerabilities/news-nvidia-nemoclaw-cve-2026-65
 https://www.esentire.com/security-advisories/nginx-ui-authentication-bypass-vulnerability-cve-2026-33032-exploited
 https://www.euronews.com/my-europe/2026/09/16/eus-von-der-leyen-calls-for-pacing-frontier-ai-models
 https://www.europol.europa.eu/media-press/newsroom/news/global-cyber-strike-disrupts-socgholish-amadey-and-stealc-malware-networks
-https://www.explainx.ai/blog/google-deepmind-institute-agi-launch-2026
 https://www.finra.org/rules-guidance/guidance/salesloft-drift-AI-supply-chain-attack
 https://www.gate.com/zh/news/detail/senate-committee-launches-investigation-into-openai-over-hugging-face-24168426
 https://www.gibsondunn.com/eu-ai-act-omnibus-agreement-postponed-high-risk-deadlines-and-other-key-changes/

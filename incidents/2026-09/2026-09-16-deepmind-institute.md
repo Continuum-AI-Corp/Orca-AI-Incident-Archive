@@ -21,34 +21,36 @@ ai_involvement: confirmed
 region: [GLOBAL]
 
 summary: |
-  Google DeepMind launches the **DeepMind Institute** — led by **Demis Hassabis, Shane Legg and James Manyika** — opening with four essays that put **concrete AI policy mechanisms** on the table: Hassabis proposes a **US-led frontier AI standards body that reviews models up to 30 days before release** (initially voluntary, later required to deploy in the US, moving to **held-out tests** and potentially a **coordinated slowdown if risks escalate**), while safety researchers **Rohin Shah and Anca Dragan** argue for capping **"opaque serial depth"** — how much computation a model may do without emitting a readable reasoning trace
+  Google DeepMind launches the **DeepMind Institute** — led by **Demis Hassabis, Shane Legg and James Manyika** — opening with a founding essay and four further pieces that put **concrete AI policy mechanisms** on the table: Hassabis proposes a **US-led frontier AI standards body that reviews models up to 30 days before release** (initially voluntary, later required to deploy in the US, moving to **held-out tests** and potentially a **coordinated slowdown if risks escalate**), while safety researchers **Rohin Shah and Anca Dragan** argue for capping **"opaque serial depth"** — how much computation a model may do without emitting a readable reasoning trace
 
 
 summary_zh: |
-  Google DeepMind 成立 **DeepMind Institute**（由 **Hassabis、Shane Legg 与 James Manyika** 领导），开局发布四篇论文提出**具体的 AI 政策机制**：Hassabis 建议设立**美国主导的前沿 AI 标准机构，在模型发布前最多 30 天进行审查**（先自愿、后作为在美国部署的前提，转向**保留测试集**，并可能在风险升级时**协调减速**）；安全研究者 **Rohin Shah 与 Anca Dragan** 主张给**「不透明串行深度」**设上限——即模型在不输出可读推理轨迹的情况下可进行的计算量
+  Google DeepMind 成立 **DeepMind Institute**（由 **Hassabis、Shane Legg 与 James Manyika** 领导），开局发布一篇创始文章与四篇后续文章，提出**具体的 AI 政策机制**：Hassabis 建议设立**美国主导的前沿 AI 标准机构，在模型发布前最多 30 天进行审查**（先自愿、后作为在美国部署的前提，转向**保留测试集**，并可能在风险升级时**协调减速**）；安全研究者 **Rohin Shah 与 Anca Dragan** 主张给**「不透明串行深度」**设上限——即模型在不输出可读推理轨迹的情况下可进行的计算量
 
 summary_ja: |
-  Google DeepMindが**DeepMind Institute**を設立（**Hassabis、Shane Legg、James Manyika**が率いる）。四本の論文で**具体的な政策メカニズム**を提示：Hassabisは**米国主導のフロンティアAI標準機関**を提案し、**リリース前最大30日の審査**（当初は任意、後に米国展開の要件、**held-outテスト**へ移行、リスク激化時には**協調的減速**も）を構想。安全研究者**Rohin ShahとAnca Dragan**は、可読な推論トレースを出さずにモデルが行える計算量＝**「不透明な直列深度」の上限設定**を主張した
+  Google DeepMindが**DeepMind Institute**を設立（**Hassabis、Shane Legg、James Manyika**が率いる）。創設論文1本と追加論文4本で**具体的な政策メカニズム**を提示：Hassabisは**米国主導のフロンティアAI標準機関**を提案し、**リリース前最大30日の審査**（当初は任意、後に米国展開の要件、**held-outテスト**へ移行、リスク激化時には**協調的減速**も）を構想。安全研究者**Rohin ShahとAnca Dragan**は、可読な推論トレースを出さずにモデルが行える計算量＝**「不透明な直列深度」の上限設定**を主張した
 
 summary_ko: |
-  Google DeepMind가 **DeepMind Institute**를 출범시켰다(**Hassabis, Shane Legg, James Manyika** 주도). 네 편의 에세이로 **구체적 AI 정책 메커니즘**을 제시: Hassabis는 **미국 주도의 프런티어 AI 표준기구**를 제안하며 **출시 전 최대 30일 심사**(초기 자발적, 이후 미국 배포 요건, **비공개 held-out 테스트**, 리스크 고조 시 **조율된 감속**까지)를 구상했다. 안전 연구자 **Rohin Shah와 Anca Dragan**은 읽을 수 있는 추론 흔적 없이 모델이 수행할 수 있는 계산량인 **"불투명 직렬 깊이" 상한**을 주장했다
+  Google DeepMind가 **DeepMind Institute**를 출범시켰다(**Hassabis, Shane Legg, James Manyika** 주도). 창립 에세이 1편과 추가 에세이 4편으로 **구체적 AI 정책 메커니즘**을 제시: Hassabis는 **미국 주도의 프런티어 AI 표준기구**를 제안하며 **출시 전 최대 30일 심사**(초기 자발적, 이후 미국 배포 요건, **비공개 held-out 테스트**, 리스크 고조 시 **조율된 감속**까지)를 구상했다. 안전 연구자 **Rohin Shah와 Anca Dragan**은 읽을 수 있는 추론 흔적 없이 모델이 수행할 수 있는 계산량인 **"불투명 직렬 깊이" 상한**을 주장했다
 
 summary_de: |
-  Google DeepMind gründet das **DeepMind Institute** — geleitet von **Demis Hassabis, Shane Legg und James Manyika** — und eröffnet mit vier Essays, die **konkrete KI-Politikmechanismen** auf den Tisch legen: Hassabis schlägt eine **US-geführte Frontier-KI-Standardsbehörde mit einer Prüfung bis zu 30 Tage vor dem Release** vor (zunächst freiwillig, später Pflicht für US-Deployment, mit **Held-out-Tests** und möglicher **koordinierter Verlangsamung** bei eskalierenden Risiken); die Sicherheitsforscher **Rohin Shah und Anca Dragan** fordern eine Obergrenze für **„opake serielle Tiefe"** — wie viel Rechenleistung ein Modell ohne lesbaren Reasoning-Trace leisten darf
+  Google DeepMind gründet das **DeepMind Institute** — geleitet von **Demis Hassabis, Shane Legg und James Manyika** — und eröffnet mit einem Gründungsessay und vier weiteren Beiträgen, die **konkrete KI-Politikmechanismen** auf den Tisch legen: Hassabis schlägt eine **US-geführte Frontier-KI-Standardsbehörde mit einer Prüfung bis zu 30 Tage vor dem Release** vor (zunächst freiwillig, später Pflicht für US-Deployment, mit **Held-out-Tests** und möglicher **koordinierter Verlangsamung** bei eskalierenden Risiken); die Sicherheitsforscher **Rohin Shah und Anca Dragan** fordern eine Obergrenze für **„opake serielle Tiefe"** — wie viel Rechenleistung ein Modell ohne lesbaren Reasoning-Trace leisten darf
 
 summary_fr: |
-  Google DeepMind lance le **DeepMind Institute** — dirigé par **Demis Hassabis, Shane Legg et James Manyika** — avec quatre essais mettant sur la table des **mécanismes politiques concrets** : Hassabis propose un **organisme de normalisation de l'IA de pointe piloté par les États-Unis, examinant les modèles jusqu'à 30 jours avant leur sortie** (d'abord volontaire, puis exigé pour déployer aux États-Unis, avec des **tests tenus secrets** et un possible **ralentissement coordonné** si les risques s'aggravent) ; les chercheurs **Rohin Shah et Anca Dragan** plaident pour plafonner la **« profondeur sérielle opaque »** — le calcul qu'un modèle peut faire sans trace de raisonnement lisible
+  Google DeepMind lance le **DeepMind Institute** — dirigé par **Demis Hassabis, Shane Legg et James Manyika** — avec un essai fondateur et quatre autres textes mettant sur la table des **mécanismes politiques concrets** : Hassabis propose un **organisme de normalisation de l'IA de pointe piloté par les États-Unis, examinant les modèles jusqu'à 30 jours avant leur sortie** (d'abord volontaire, puis exigé pour déployer aux États-Unis, avec des **tests tenus secrets** et un possible **ralentissement coordonné** si les risques s'aggravent) ; les chercheurs **Rohin Shah et Anca Dragan** plaident pour plafonner la **« profondeur sérielle opaque »** — le calcul qu'un modèle peut faire sans trace de raisonnement lisible
 
 summary_es: |
-  Google DeepMind lanza el **DeepMind Institute** —dirigido por **Demis Hassabis, Shane Legg y James Manyika**— con cuatro ensayos que ponen sobre la mesa **mecanismos concretos de política de IA**: Hassabis propone un **organismo de estándares de IA frontera liderado por EE. UU. que revise los modelos hasta 30 días antes del lanzamiento** (primero voluntario, después exigido para desplegar en EE. UU., con **pruebas reservadas** y un posible **frenado coordinado** si escalan los riesgos); los investigadores **Rohin Shah y Anca Dragan** abogan por limitar la **"profundidad serial opaca"**: el cálculo que un modelo puede hacer sin una traza de razonamiento legible
+  Google DeepMind lanza el **DeepMind Institute** —dirigido por **Demis Hassabis, Shane Legg y James Manyika**— con un ensayo fundacional y cuatro textos más que ponen sobre la mesa **mecanismos concretos de política de IA**: Hassabis propone un **organismo de estándares de IA frontera liderado por EE. UU. que revise los modelos hasta 30 días antes del lanzamiento** (primero voluntario, después exigido para desplegar en EE. UU., con **pruebas reservadas** y un posible **frenado coordinado** si escalan los riesgos); los investigadores **Rohin Shah y Anca Dragan** abogan por limitar la **"profundidad serial opaca"**: el cálculo que un modelo puede hacer sin una traza de razonamiento legible
 
 sources:
   - url: https://institute.deepmind.com/essays/introducing-the-deepmind-institute/
     label: DeepMind Institute
   - url: https://institute.deepmind.com/
     label: DeepMind Institute (site)
-  - url: https://www.explainx.ai/blog/google-deepmind-institute-agi-launch-2026
-    label: ExplainX
+  - url: https://techcrunch.com/2026/09/17/google-deepmind-launches-institute-to-widen-the-agi-debate/
+    label: TechCrunch
+  - url: https://aiweekly.co/alerts/deepmind-opens-institute-to-publish-essays-on-agi-safety
+    label: AI Weekly
 
 disputed: false
 landmark: false
@@ -62,7 +64,7 @@ scan_ref: "SCAN.md §6 2026-09"
 
 ## Summary
 
-Google DeepMind launches the **DeepMind Institute** — led by **Demis Hassabis, Shane Legg and James Manyika** — opening with four essays that put **concrete AI policy mechanisms** on the table: Hassabis proposes a **US-led frontier AI standards body that reviews models up to 30 days before release** (initially voluntary, later required to deploy in the US, moving to **held-out tests** and potentially a **coordinated slowdown if risks escalate**), while safety researchers **Rohin Shah and Anca Dragan** argue for capping **"opaque serial depth"** — how much computation a model may do without emitting a readable reasoning trace
+Google DeepMind launches the **DeepMind Institute** — led by **Demis Hassabis, Shane Legg and James Manyika** — opening with a founding essay and four further pieces that put **concrete AI policy mechanisms** on the table: Hassabis proposes a **US-led frontier AI standards body that reviews models up to 30 days before release** (initially voluntary, later required to deploy in the US, moving to **held-out tests** and potentially a **coordinated slowdown if risks escalate**), while safety researchers **Rohin Shah and Anca Dragan** argue for capping **"opaque serial depth"** — how much computation a model may do without emitting a readable reasoning trace
 
 ## Attack chain
 
@@ -79,11 +81,11 @@ flowchart LR
 
 ## Details
 
-**The launch.** Google and DeepMind launched the **DeepMind Institute** on **16 September**, opening with four essays on AGI-era policy. Its directors are DeepMind co-founder **Shane Legg** (also managing editor), Google executive **James Manyika**, and DeepMind chair **Demis Hassabis**.
+**The launch.** Google and DeepMind launched the **DeepMind Institute** on **16 September**, opening with a **founding essay signed by Shane Legg, James Manyika and Demis Hassabis and four further essays** on AGI-era policy; TechCrunch covered the launch on 17 September. Its directors are DeepMind co-founder **Shane Legg** (also managing editor), Google executive **James Manyika**, and DeepMind chair **Demis Hassabis**.
 
-**The proposals.** Hassabis proposes a **US-led frontier AI standards body** that would **review models up to 30 days before release** — initially voluntarily, later as a requirement to deploy in the US — moving to undisclosed **"held-out" tests**, and potentially a **coordinated slowdown if risks escalate**. Safety researchers **Rohin Shah** and **Anca Dragan** argue separately for capping **"opaque serial depth"**, the amount of computation a model can perform **without producing a readable reasoning trace**.
+**The proposals.** In **"A framework for frontier AI and the dawning of a new age"** — a framework he first put forward in July — Hassabis proposes a **US-led frontier AI standards body** that would **review models up to 30 days before release** (initially voluntarily, later a requirement to deploy in the US), moving to undisclosed **"held-out" tests**, and potentially a **coordinated slowdown if risks escalate**. In **"The case for reasoning transparency"**, safety researchers **Rohin Shah** and **Anca Dragan** argue for capping **"opaque serial depth"** — the amount of computation a model may perform **without producing a readable reasoning trace**.
 
-**Why it matters.** A major lab has moved from broad statements of concern to **named mechanisms and timelines**, which is the point at which AI governance starts becoming actual policy. The launch lands in the middle of the September slowdown debate — Amodei's "pace the frontier" essay (12 September), von der Leyen's State of the Union (16 September) and the consumer antitrust suit over the alleged slowdown pact (18 September) — and the proposals give that debate concrete, testable designs.
+**Why it matters.** A major lab has moved from broad statements of concern to **named mechanisms and timelines**, which is the point at which AI governance starts becoming actual policy. The founding essay carries its own disclaimers — the contributors "will not always agree … and will likely change their minds", and "DMI pieces … should not be read as Google's official view" — and the launch lands in the middle of the September slowdown debate (Amodei's "pace the frontier" essay, von der Leyen's State of the Union and the consumer antitrust suit), giving it concrete, testable designs.
 
 ## Sources
 
@@ -91,7 +93,8 @@ flowchart LR
 |---|---|---|
 | 1 | DeepMind Institute | <https://institute.deepmind.com/essays/introducing-the-deepmind-institute/> |
 | 2 | DeepMind Institute (site) | <https://institute.deepmind.com/> |
-| 3 | ExplainX | <https://www.explainx.ai/blog/google-deepmind-institute-agi-launch-2026> |
+| 3 | TechCrunch | <https://techcrunch.com/2026/09/17/google-deepmind-launches-institute-to-widen-the-agi-debate/> |
+| 4 | AI Weekly | <https://aiweekly.co/alerts/deepmind-opens-institute-to-publish-essays-on-agi-safety> |
 
 ## Metadata
 

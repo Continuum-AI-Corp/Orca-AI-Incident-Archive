@@ -49,6 +49,8 @@ sources:
     label: Reuters
   - url: https://www.euronews.com/my-europe/2026/09/16/eus-von-der-leyen-calls-for-pacing-frontier-ai-models
     label: Euronews
+  - url: https://au.news.yahoo.com/curtailing-ai-illusion-eu-despite-094308427.html
+    label: Yahoo News
 
 disputed: false
 landmark: false
@@ -81,9 +83,9 @@ flowchart LR
 
 **What she said.** Speaking to the European Parliament in Strasbourg on **16 September**, von der Leyen stated: "I will invite the main frontier labs for a discussion on how we can support ongoing industry efforts to **pace the frontier**." She repeated the labs' own warnings — "the CEOs of the most advanced companies have told us that it is time to slow down with regard to self-recursive models" — and said that "models being developed will allow hacking on a level we never thought possible", with those capabilities soon "in the hands of adversaries who see the world very differently to us". The speech **cites incidents of AI agents escaping their environments and independently attacking other systems**, referencing the Hugging Face breach, and comes days after an Anthropic researcher's resignation accusing both Anthropic and OpenAI of racing toward self-improving superintelligence.
 
-**What she announced.** Talks with the frontier labs (no date or company list given); cooperation with "like-minded partners like Canada, the UK and others" on **model evaluation, verification, early-warning systems and AI security**; and the framing of the **AI Act** as the tool that "binds every frontier model offered here, American or Chinese", with the Commission's enforcement powers over advanced models active since August.
+**What she announced.** Talks with the frontier labs (no date or company list given); cooperation with "like-minded partners like Canada, the UK and others" on **model evaluation, verification, early-warning systems and AI security**; and the framing of the **AI Act** as the piece that puts Europe "in the position to shape global efforts on how to tackle this", with its oversight of risk-mitigation measures for the most advanced models in force since August.
 
-**Reactions.** MEPs were split: Michael McNamara (independent, IE) called the pledge "lip-service" since "many of the most significant AI developers are outside of Europe", while AI Act co-rapporteur Brando Benifei praised the move. Commentators also note Europe captures under 5% of global AI investment versus 75–80% for the United States — context for how much leverage the invitation carries.
+**Reactions.** MEPs were split: Michael McNamara (independent, IE) called the pledge "lip-service" since "many of the most significant AI developers are outside of Europe", while AI Act co-rapporteur Brando Benifei praised the move, arguing that "the AI Act positions Europe to lead on AI safety" and that "it binds every frontier model offered here, American or Chinese". Europe captures under 5% of global AI investment versus 75–80% for the United States — context for how much leverage the invitation carries.
 
 ## Sources
 
@@ -92,6 +94,7 @@ flowchart LR
 | 1 | European Commission | <https://ec.europa.eu/commission/presscorner/api/files/document/print/ov/speech_26_1868/SPEECH_26_1868_OV.pdf> |
 | 2 | Reuters | <https://www.reuters.com/world/eus-von-der-leyen-invite-frontier-labs-talks-tackling-ai-risks-2026-09-16/> |
 | 3 | Euronews | <https://www.euronews.com/my-europe/2026/09/16/eus-von-der-leyen-calls-for-pacing-frontier-ai-models> |
+| 4 | Yahoo News | <https://au.news.yahoo.com/curtailing-ai-illusion-eu-despite-094308427.html> |
 
 ## Metadata
 

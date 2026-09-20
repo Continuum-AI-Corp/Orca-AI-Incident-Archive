@@ -13,7 +13,7 @@
 </p>
 
 <!-- BEGIN:badges -->
-<p align="center"><img alt="레코드" src="https://img.shields.io/badge/%EB%A0%88%EC%BD%94%EB%93%9C-330-48545A?style=flat-square"> <img alt="대상 개월" src="https://img.shields.io/badge/%EB%8C%80%EC%83%81_%EA%B0%9C%EC%9B%94-22-48545A?style=flat-square"> <img alt="심각" src="https://img.shields.io/badge/%EC%8B%AC%EA%B0%81-45-88091D?style=flat-square"> <img alt="실제 피해" src="https://img.shields.io/badge/%EC%8B%A4%EC%A0%9C_%ED%94%BC%ED%95%B4-124-B23B40?style=flat-square"> <img alt="1차 출처" src="https://img.shields.io/badge/1%EC%B0%A8_%EC%B6%9C%EC%B2%98-506_URL-157A41?style=flat-square"> <img alt="라이선스" src="https://img.shields.io/badge/%EB%9D%BC%EC%9D%B4%EC%84%A0%EC%8A%A4-CC_BY_4.0-2359A8?style=flat-square"></p>
+<p align="center"><img alt="레코드" src="https://img.shields.io/badge/%EB%A0%88%EC%BD%94%EB%93%9C-330-48545A?style=flat-square"> <img alt="대상 개월" src="https://img.shields.io/badge/%EB%8C%80%EC%83%81_%EA%B0%9C%EC%9B%94-22-48545A?style=flat-square"> <img alt="심각" src="https://img.shields.io/badge/%EC%8B%AC%EA%B0%81-45-88091D?style=flat-square"> <img alt="실제 피해" src="https://img.shields.io/badge/%EC%8B%A4%EC%A0%9C_%ED%94%BC%ED%95%B4-124-B23B40?style=flat-square"> <img alt="1차 출처" src="https://img.shields.io/badge/1%EC%B0%A8_%EC%B6%9C%EC%B2%98-511_URL-157A41?style=flat-square"> <img alt="라이선스" src="https://img.shields.io/badge/%EB%9D%BC%EC%9D%B4%EC%84%A0%EC%8A%A4-CC_BY_4.0-2359A8?style=flat-square"></p>
 <!-- END:badges -->
 
 <!-- BEGIN:thesis -->
@@ -161,7 +161,7 @@
 <!-- BEGIN:quality -->
 |  |  |
 |---|---|
-| 출처 링크 | 573개 / 고유 URL 506개 |
+| 출처 링크 | 578개 / 고유 URL 511개 |
 | 출처 없는 레코드 | **0** — 출처가 없으면 수록하지 않음 |
 | 등급 A(1차 출처) | 284건 |
 | 분쟁 표시 | 14건 |

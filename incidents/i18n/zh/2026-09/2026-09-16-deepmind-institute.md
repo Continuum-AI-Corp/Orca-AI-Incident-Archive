@@ -4,7 +4,7 @@ lang: zh
 source: incidents/2026-09/2026-09-16-deepmind-institute.md
 title: "Google DeepMind 成立 DeepMind Institute，聚焦 AGI 治理"
 summary: |
-  Google DeepMind 成立 **DeepMind Institute**（由 **Hassabis、Shane Legg 与 James Manyika** 领导），开局发布四篇论文提出**具体的 AI 政策机制**：Hassabis 建议设立**美国主导的前沿 AI 标准机构，在模型发布前最多 30 天进行审查**（先自愿、后作为在美国部署的前提，转向**保留测试集**，并可能在风险升级时**协调减速**）；安全研究者 **Rohin Shah 与 Anca Dragan** 主张给**「不透明串行深度」**设上限——即模型在不输出可读推理轨迹的情况下可进行的计算量
+  Google DeepMind 成立 **DeepMind Institute**（由 **Hassabis、Shane Legg 与 James Manyika** 领导），开局发布一篇创始文章与四篇后续文章，提出**具体的 AI 政策机制**：Hassabis 建议设立**美国主导的前沿 AI 标准机构，在模型发布前最多 30 天进行审查**（先自愿、后作为在美国部署的前提，转向**保留测试集**，并可能在风险升级时**协调减速**）；安全研究者 **Rohin Shah 与 Anca Dragan** 主张给**「不透明串行深度」**设上限——即模型在不输出可读推理轨迹的情况下可进行的计算量
 ---
 
 # Google DeepMind 成立 DeepMind Institute，聚焦 AGI 治理
@@ -15,7 +15,7 @@ summary: |
 
 ## 概要
 
-Google DeepMind 成立 **DeepMind Institute**（由 **Hassabis、Shane Legg 与 James Manyika** 领导），开局发布四篇论文提出**具体的 AI 政策机制**：Hassabis 建议设立**美国主导的前沿 AI 标准机构，在模型发布前最多 30 天进行审查**（先自愿、后作为在美国部署的前提，转向**保留测试集**，并可能在风险升级时**协调减速**）；安全研究者 **Rohin Shah 与 Anca Dragan** 主张给**「不透明串行深度」**设上限——即模型在不输出可读推理轨迹的情况下可进行的计算量
+Google DeepMind 成立 **DeepMind Institute**（由 **Hassabis、Shane Legg 与 James Manyika** 领导），开局发布一篇创始文章与四篇后续文章，提出**具体的 AI 政策机制**：Hassabis 建议设立**美国主导的前沿 AI 标准机构，在模型发布前最多 30 天进行审查**（先自愿、后作为在美国部署的前提，转向**保留测试集**，并可能在风险升级时**协调减速**）；安全研究者 **Rohin Shah 与 Anca Dragan** 主张给**「不透明串行深度」**设上限——即模型在不输出可读推理轨迹的情况下可进行的计算量
 
 ## 攻击链
 
@@ -32,11 +32,11 @@ flowchart LR
 
 ## 详情
 
-**成立。** Google 与 DeepMind 于 **9 月 16 日**成立 **DeepMind Institute**，开局发布四篇 AGI 时代政策论文。其负责人为 DeepMind 联合创始人 **Shane Legg**（兼任执行主编）、Google 高管 **James Manyika** 与 DeepMind 主席 **Demis Hassabis**。
+**成立。** Google 与 DeepMind 于 **9 月 16 日**成立 **DeepMind Institute**，开局发布**由 Shane Legg、James Manyika 与 Demis Hassabis 署名的创始文章，以及四篇后续文章**，聚焦 AGI 时代政策；TechCrunch 于 9 月 17 日报道。其负责人为 DeepMind 联合创始人 **Shane Legg**（兼任执行主编）、Google 高管 **James Manyika** 与 DeepMind 主席 **Demis Hassabis**。
 
-**两项主张。** Hassabis 提议设立**美国主导的前沿 AI 标准机构**，在模型**发布前最多 30 天**进行审查——先是自愿，之后作为在美国部署的前置要求——进而转向不公开的**「保留（held-out）」测试**，并可能在风险升级时启动**协调减速**。安全研究者 **Rohin Shah** 与 **Anca Dragan** 另行主张限制**「不透明串行深度」**：模型在**不产生可读推理轨迹**的情况下可执行的计算量。
+**两项主张。** 在《A framework for frontier AI and the dawning of a new age》中——这是他 7 月首次提出的框架——Hassabis 提议设立**美国主导的前沿 AI 标准机构**，在模型**发布前最多 30 天**进行审查（先自愿，之后作为在美国部署的前置要求），进而转向不公开的**「保留（held-out）」测试**，并可能在风险升级时启动**协调减速**。在《The case for reasoning transparency》中，安全研究者 **Rohin Shah** 与 **Anca Dragan** 主张限制**「不透明串行深度」**：模型在**不产生可读推理轨迹**的情况下可执行的计算量。
 
-**为什么重要。** 一家主要实验室从宽泛的担忧表述转向了**具名机制与时间表**——这正是 AI 治理开始变成实际政策的节点。此次成立恰逢 9 月减速辩论的核心时段——Amodei 的「pace the frontier」文章（9 月 12 日）、冯德莱恩国情咨文（9 月 16 日）与消费者对减速合谋的反垄断诉讼（9 月 18 日）——这些方案为辩论提供了具体、可检验的设计。
+**为什么重要。** 一家主要实验室从宽泛的担忧表述转向了**具名机制与时间表**——这正是 AI 治理开始变成实际政策的节点。创始文章自带免责声明——贡献者「不会总是意见一致……并可能改变看法」，「DMI 文章……不应被解读为谷歌的官方观点」——而发布恰逢 9 月减速辩论的核心时段（Amodei 的「pace the frontier」文章、冯德莱恩国情咨文与消费者反垄断诉讼），为辩论提供了具体、可检验的设计。
 
 ## 来源
 
@@ -44,7 +44,8 @@ flowchart LR
 |---|---|---|
 | 1 | DeepMind Institute | <https://institute.deepmind.com/essays/introducing-the-deepmind-institute/> |
 | 2 | DeepMind Institute（站点） | <https://institute.deepmind.com/> |
-| 3 | ExplainX | <https://www.explainx.ai/blog/google-deepmind-institute-agi-launch-2026> |
+| 3 | TechCrunch | <https://techcrunch.com/2026/09/17/google-deepmind-launches-institute-to-widen-the-agi-debate/> |
+| 4 | AI Weekly | <https://aiweekly.co/alerts/deepmind-opens-institute-to-publish-essays-on-agi-safety> |
 
 ## 元数据
 
