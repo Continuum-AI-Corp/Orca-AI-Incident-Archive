@@ -13,11 +13,11 @@
 </p>
 
 <!-- BEGIN:badges -->
-<p align="center"><img alt="条目" src="https://img.shields.io/badge/%E6%9D%A1%E7%9B%AE-335-48545A?style=flat-square"> <img alt="覆盖月份" src="https://img.shields.io/badge/%E8%A6%86%E7%9B%96%E6%9C%88%E4%BB%BD-22-48545A?style=flat-square"> <img alt="严重" src="https://img.shields.io/badge/%E4%B8%A5%E9%87%8D-45-88091D?style=flat-square"> <img alt="真实伤害" src="https://img.shields.io/badge/%E7%9C%9F%E5%AE%9E%E4%BC%A4%E5%AE%B3-125-B23B40?style=flat-square"> <img alt="一手来源" src="https://img.shields.io/badge/%E4%B8%80%E6%89%8B%E6%9D%A5%E6%BA%90-530_URL-157A41?style=flat-square"> <img alt="授权" src="https://img.shields.io/badge/%E6%8E%88%E6%9D%83-CC_BY_4.0-2359A8?style=flat-square"></p>
+<p align="center"><img alt="条目" src="https://img.shields.io/badge/%E6%9D%A1%E7%9B%AE-340-48545A?style=flat-square"> <img alt="覆盖月份" src="https://img.shields.io/badge/%E8%A6%86%E7%9B%96%E6%9C%88%E4%BB%BD-22-48545A?style=flat-square"> <img alt="严重" src="https://img.shields.io/badge/%E4%B8%A5%E9%87%8D-45-88091D?style=flat-square"> <img alt="真实伤害" src="https://img.shields.io/badge/%E7%9C%9F%E5%AE%9E%E4%BC%A4%E5%AE%B3-126-B23B40?style=flat-square"> <img alt="一手来源" src="https://img.shields.io/badge/%E4%B8%80%E6%89%8B%E6%9D%A5%E6%BA%90-548_URL-157A41?style=flat-square"> <img alt="授权" src="https://img.shields.io/badge/%E6%8E%88%E6%9D%83-CC_BY_4.0-2359A8?style=flat-square"></p>
 <!-- END:badges -->
 
 <!-- BEGIN:thesis -->
-收录范围从 **2025-01** 到 **2026-09-19**，按月整理 335 条与 AI agent 有关的安全事件（另含 1 条可追到 2024-12-01 的前序事件）。每条一个 Markdown 文件，带 YAML frontmatter、攻击链示意图和**至少一条可点开的来源**。335 条里只有 **125 条**有确认的受害方。
+收录范围从 **2025-01** 到 **2026-09-19**，按月整理 340 条与 AI agent 有关的安全事件（另含 1 条可追到 2024-12-01 的前序事件）。每条一个 Markdown 文件，带 YAML frontmatter、攻击链示意图和**至少一条可点开的来源**。340 条里只有 **126 条**有确认的受害方。
 <!-- END:thesis -->
 
 这个档案存在，是为了守住一个大多数事故清单都糊掉的区分：
@@ -75,11 +75,11 @@
 |---|---|---|---|---|---|---|---|---|---|---|---|
 | `8` ★1 | `6` | `6` | `6` | `7` | `11` | `10` ★2 | `15` ★2 | `10` ★1 | `15` | `13` ★3 | `14` |
 
-**2026**（213 条）
+**2026**（218 条）
 
 | [01](../../incidents/2026-01/README.md) | [02](../../incidents/2026-02/README.md) | [03](../../incidents/2026-03/README.md) | [04](../../incidents/2026-04/README.md) | [05](../../incidents/2026-05/README.md) | [06](../../incidents/2026-06/README.md) | [07](../../incidents/2026-07/README.md) | [08](../../incidents/2026-08/README.md) | [09](../../incidents/2026-09/README.md) |
 |---|---|---|---|---|---|---|---|---|
-| `13` ★1 | `19` ★5 | `16` ★3 | `22` ★2 | `26` ★5 | `31` ★3 | `27` ★7 | `23` ★4 | `36` ★6 |
+| `13` ★1 | `19` ★5 | `16` ★3 | `22` ★2 | `26` ★5 | `31` ★3 | `27` ★7 | `25` ★4 | `39` ★6 |
 
 <sub>`n` = 当月条目数，★ = 其中 `critical` 的条数</sub>
 <!-- END:months -->
@@ -161,9 +161,9 @@
 <!-- BEGIN:quality -->
 |  |  |
 |---|---|
-| 来源链接 | 597 条，530 个唯一 URL |
+| 来源链接 | 615 条，548 个唯一 URL |
 | 无来源条目 | **0** —— 没有来源的条目不进库 |
-| 可信度 A（一手源） | 287 条 |
+| 可信度 A（一手源） | 290 条 |
 | 标记为争议 | 14 条 |
 | 复核轮次 | 4 轮 |
 <!-- END:quality -->
@@ -179,7 +179,7 @@
 @misc{orca_ai_incident_archive,
   title  = {Orca AI Incident Archive: An open database of real-world AI agent incidents},
   year   = {2026},
-  note   = {335 条，2025-01 至 2026-09；125 条有确认的真实伤害},
+  note   = {340 条，2025-01 至 2026-09；126 条有确认的真实伤害},
   url    = {https://github.com/Continuum-AI-Corp/Orca-AI-Incident-Archive}
 }
 ```
@@ -205,4 +205,4 @@
 
 ---
 
-<sub><!-- BEGIN:footer -->构建于 2026-09-19 · 335 条 · 22 个月<!-- END:footer --></sub> · <sub>结构见 [SCHEMA.md](../../SCHEMA.md) · 数据在 [dist/](../../dist/README.md)</sub>
+<sub><!-- BEGIN:footer -->构建于 2026-09-19 · 340 条 · 22 个月<!-- END:footer --></sub> · <sub>结构见 [SCHEMA.md](../../SCHEMA.md) · 数据在 [dist/](../../dist/README.md)</sub>

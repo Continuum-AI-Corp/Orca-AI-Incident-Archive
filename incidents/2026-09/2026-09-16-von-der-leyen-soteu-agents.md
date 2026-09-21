@@ -71,7 +71,7 @@ In her **State of the Union** address, European Commission President Ursula von 
 ```mermaid
 flowchart LR
     E["Frontier-lab incidents and industry warnings"]:::entry
-    S0["Commission adopts the labs' own \"pace the frontier\" framing"]:::step
+    S0["Commission adopts the labs' own 'pace the frontier' framing"]:::step
     I["Frontier labs invited to talks; evaluation and verification cooperation planned"]:::impact
     E --> S0 --> I
     classDef entry  fill:#FBF3E0,stroke:#B08528,stroke-width:1px,color:#3A2C08;

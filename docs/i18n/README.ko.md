@@ -13,11 +13,11 @@
 </p>
 
 <!-- BEGIN:badges -->
-<p align="center"><img alt="레코드" src="https://img.shields.io/badge/%EB%A0%88%EC%BD%94%EB%93%9C-335-48545A?style=flat-square"> <img alt="대상 개월" src="https://img.shields.io/badge/%EB%8C%80%EC%83%81_%EA%B0%9C%EC%9B%94-22-48545A?style=flat-square"> <img alt="심각" src="https://img.shields.io/badge/%EC%8B%AC%EA%B0%81-45-88091D?style=flat-square"> <img alt="실제 피해" src="https://img.shields.io/badge/%EC%8B%A4%EC%A0%9C_%ED%94%BC%ED%95%B4-125-B23B40?style=flat-square"> <img alt="1차 출처" src="https://img.shields.io/badge/1%EC%B0%A8_%EC%B6%9C%EC%B2%98-530_URL-157A41?style=flat-square"> <img alt="라이선스" src="https://img.shields.io/badge/%EB%9D%BC%EC%9D%B4%EC%84%A0%EC%8A%A4-CC_BY_4.0-2359A8?style=flat-square"></p>
+<p align="center"><img alt="레코드" src="https://img.shields.io/badge/%EB%A0%88%EC%BD%94%EB%93%9C-340-48545A?style=flat-square"> <img alt="대상 개월" src="https://img.shields.io/badge/%EB%8C%80%EC%83%81_%EA%B0%9C%EC%9B%94-22-48545A?style=flat-square"> <img alt="심각" src="https://img.shields.io/badge/%EC%8B%AC%EA%B0%81-45-88091D?style=flat-square"> <img alt="실제 피해" src="https://img.shields.io/badge/%EC%8B%A4%EC%A0%9C_%ED%94%BC%ED%95%B4-126-B23B40?style=flat-square"> <img alt="1차 출처" src="https://img.shields.io/badge/1%EC%B0%A8_%EC%B6%9C%EC%B2%98-548_URL-157A41?style=flat-square"> <img alt="라이선스" src="https://img.shields.io/badge/%EB%9D%BC%EC%9D%B4%EC%84%A0%EC%8A%A4-CC_BY_4.0-2359A8?style=flat-square"></p>
 <!-- END:badges -->
 
 <!-- BEGIN:thesis -->
-수록 범위는 **2025-01**부터 **2026-09-19**까지입니다. AI 에이전트와 관련된 보안 사건 335건을 월별로 정리했습니다(2024-12-01까지 거슬러 올라가는 선행 사건 1건 포함). 각 레코드는 YAML 헤더, 공격 체인 도식, 그리고 **클릭할 수 있는 1차 출처 최소 1개**를 갖춘 Markdown 파일입니다. 335건 중 확인된 피해자가 있는 것은 **125건**뿐입니다.
+수록 범위는 **2025-01**부터 **2026-09-19**까지입니다. AI 에이전트와 관련된 보안 사건 340건을 월별로 정리했습니다(2024-12-01까지 거슬러 올라가는 선행 사건 1건 포함). 각 레코드는 YAML 헤더, 공격 체인 도식, 그리고 **클릭할 수 있는 1차 출처 최소 1개**를 갖춘 Markdown 파일입니다. 340건 중 확인된 피해자가 있는 것은 **126건**뿐입니다.
 <!-- END:thesis -->
 
 이 아카이브는 대부분의 사고 목록이 뭉개버리는 한 가지 구분을 지키기 위해 존재합니다.
@@ -75,11 +75,11 @@
 |---|---|---|---|---|---|---|---|---|---|---|---|
 | `8` ★1 | `6` | `6` | `6` | `7` | `11` | `10` ★2 | `15` ★2 | `10` ★1 | `15` | `13` ★3 | `14` |
 
-**2026년**(213건)
+**2026년**(218건)
 
 | [01](../../incidents/2026-01/README.md) | [02](../../incidents/2026-02/README.md) | [03](../../incidents/2026-03/README.md) | [04](../../incidents/2026-04/README.md) | [05](../../incidents/2026-05/README.md) | [06](../../incidents/2026-06/README.md) | [07](../../incidents/2026-07/README.md) | [08](../../incidents/2026-08/README.md) | [09](../../incidents/2026-09/README.md) |
 |---|---|---|---|---|---|---|---|---|
-| `13` ★1 | `19` ★5 | `16` ★3 | `22` ★2 | `26` ★5 | `31` ★3 | `27` ★7 | `23` ★4 | `36` ★6 |
+| `13` ★1 | `19` ★5 | `16` ★3 | `22` ★2 | `26` ★5 | `31` ★3 | `27` ★7 | `25` ★4 | `39` ★6 |
 
 <sub>`n` = 해당 월 건수, ★ = 그중 `critical` 건수</sub>
 <!-- END:months -->
@@ -161,9 +161,9 @@
 <!-- BEGIN:quality -->
 |  |  |
 |---|---|
-| 출처 링크 | 597개 / 고유 URL 530개 |
+| 출처 링크 | 615개 / 고유 URL 548개 |
 | 출처 없는 레코드 | **0** — 출처가 없으면 수록하지 않음 |
-| 등급 A(1차 출처) | 287건 |
+| 등급 A(1차 출처) | 290건 |
 | 분쟁 표시 | 14건 |
 | 검증 회차 | 4회 |
 <!-- END:quality -->
@@ -179,7 +179,7 @@
 @misc{orca_ai_incident_archive,
   title  = {Orca AI Incident Archive: An open database of real-world AI agent incidents},
   year   = {2026},
-  note   = {335건, 2025-01~2026-09, 125건은 확인된 실제 피해},
+  note   = {340건, 2025-01~2026-09, 126건은 확인된 실제 피해},
   url    = {https://github.com/Continuum-AI-Corp/Orca-AI-Incident-Archive}
 }
 ```
@@ -205,4 +205,4 @@
 
 ---
 
-<sub><!-- BEGIN:footer -->빌드 2026-09-19 · 335건 · 22개월<!-- END:footer --></sub> · <sub>구조: [SCHEMA.md](../../SCHEMA.md) · 데이터: [dist/](../../dist/README.md)</sub>
+<sub><!-- BEGIN:footer -->빌드 2026-09-19 · 340건 · 22개월<!-- END:footer --></sub> · <sub>구조: [SCHEMA.md](../../SCHEMA.md) · 데이터: [dist/](../../dist/README.md)</sub>

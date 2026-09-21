@@ -12,7 +12,7 @@
   "fr",
   "es"
  ],
- "count": 335,
+ "count": 340,
  "incidents": [
   {
    "id": "2024-12-01-storm-azure-llmjacking",
@@ -13203,6 +13203,104 @@
    ]
   },
   {
+   "id": "2026-08-10-deadbugz-mcp-supply-chain",
+   "title": "Deadbugz: an MCP server that turns hostile on the third tool call, pushed to 23 repositories in 74 minutes",
+   "title_zh": "Deadbugz：一个在第三次工具调用后翻脸的 MCP 服务器，74 分钟内推向 23 个仓库",
+   "title_ja": "Deadbugz：3回目のツール呼び出しで豹変するMCPサーバー、74分間で23リポジトリに送り込まれる",
+   "title_ko": "Deadbugz: 세 번째 도구 호출에서 돌변하는 MCP 서버, 74분 만에 23개 저장소로",
+   "title_de": "Deadbugz: ein MCP-Server, der beim dritten Tool-Aufruf feindselig wird — in 74 Minuten an 23 Repositories geschickt",
+   "title_fr": "Deadbugz : un serveur MCP qui devient hostile au troisième appel d'outil, poussé vers 23 dépôts en 74 minutes",
+   "title_es": "Deadbugz: un servidor MCP que se vuelve hostil en la tercera llamada, enviado a 23 repositorios en 74 minutos",
+   "date": "2026-08-10",
+   "date_end": null,
+   "date_precision": "day",
+   "date_raw": "2026-08-10",
+   "month": "2026-08",
+   "kind": "incident",
+   "type": [
+    "SUPPLY",
+    "MCP",
+    "CRED"
+   ],
+   "severity": "high",
+   "confidence": "A",
+   "real_harm": false,
+   "ai_involvement": "confirmed",
+   "region": [
+    "GLOBAL"
+   ],
+   "summary": "**Pillar Security** documents a live MCP supply-chain campaign it names **Deadbugz**. A server advertised as **`productivity-suite`** offers text formatting and summarisation and behaves correctly — while keeping **an in-memory, per-client counter of `tools/call` requests**. On the third call it rewrites the metadata it returns to the agent into instructions to hunt for **SSH keys, AWS credentials, shell history and Kubernetes configuration**, and to conceal the activity from the user. Because the payload is present from the start and only unlocks on a counter, **static scanning, SBOMs and one-time review of the tool manifest all pass**. Delivery was pull-request spam: the GitHub account **`zellkernel`** (linked to the X handle `@llmgod`) opened **23 pull requests in 74 minutes** on 10 August, 21:52–23:07 UTC, each adding the malicious server to an unrelated AI, MCP or developer-tooling project. At review, **19 were closed, 4 remained open and none had been merged** — no confirmed victim. Pillar marked the disclosure as open and subject to update",
+   "summary_zh": "**Pillar Security** 记录了一场正在进行的 MCP 供应链战役，命名为 **Deadbugz**。一个对外宣称叫 **`productivity-suite`** 的服务器提供文本格式化与摘要功能，行为一切正常——同时在内存里维护**按客户端计数的 `tools/call` 请求计数器**。到第三次调用时，它把返回给 agent 的元数据改写成指令，去搜寻 **SSH 密钥、AWS 凭据、shell 历史与 Kubernetes 配置**，并对用户隐藏这些行为。由于载荷从一开始就在包里、只是靠计数器解锁，**静态扫描、SBOM 与对工具清单的一次性审查全都会通过**。投送方式是 PR 轰炸：GitHub 账号 **`zellkernel`**（关联 X 账号 `@llmgod`）在 8 月 10 日 21:52–23:07 UTC 的 **74 分钟内开了 23 个 pull request**，每个都往一个互不相关的 AI、MCP 或开发者工具项目里加入这个恶意服务器。截至复核时，**19 个已关闭、4 个仍开着，没有一个被合并**——无确认受害方。Pillar 将该披露标记为开放状态、后续会更新",
+   "summary_ja": "**Pillar Security**が進行中のMCPサプライチェーン攻撃を記録し、**Deadbugz**と命名した。**`productivity-suite`**を名乗るサーバーはテキスト整形と要約を提供し、正常に振る舞う——その裏で**クライアントごとの`tools/call`リクエスト回数をメモリ上で数えている**。3回目の呼び出しで、エージェントに返すメタデータを書き換え、**SSH鍵、AWS認証情報、シェル履歴、Kubernetes設定**を探すよう指示し、その活動をユーザーから隠す。ペイロードは最初からパッケージ内に存在し、カウンタで解錠されるだけなので、**静的スキャン、SBOM、ツールマニフェストの一度きりのレビューはいずれも通過してしまう**。配送手段はPRの大量投下だった。GitHubアカウント**`zellkernel`**（Xアカウント`@llmgod`と関連）が8月10日21:52〜23:07 UTCの**74分間に23件のプルリクエスト**を開き、いずれも無関係なAI・MCP・開発者ツール系プロジェクトへこの悪性サーバーを追加するものだった。レビュー時点で**19件はクローズ、4件は未処理、マージされたものはゼロ**——確認された被害者はいない。Pillarはこの開示を継続更新中のものとしている",
+   "summary_ko": "**Pillar Security**가 진행 중인 MCP 공급망 캠페인을 기록하고 **Deadbugz**라 명명했다. **`productivity-suite`**를 표방하는 서버는 텍스트 서식화와 요약을 제공하며 정상적으로 동작한다 — 그러면서 **클라이언트별 `tools/call` 요청 횟수를 메모리에서 세고 있다**. 세 번째 호출에서 에이전트에 돌려주는 메타데이터를 **SSH 키, AWS 자격 증명, 셸 기록, 쿠버네티스 설정**을 찾으라는 지시로 바꿔 쓰고, 그 활동을 사용자에게 감춘다. 페이로드는 처음부터 패키지 안에 있고 카운터로 해제될 뿐이므로 **정적 스캔, SBOM, 도구 매니페스트 1회 검토가 모두 통과한다**. 전달 수단은 PR 폭탄이었다. GitHub 계정 **`zellkernel`**(X 계정 `@llmgod`와 연결)이 8월 10일 21:52–23:07 UTC의 **74분 동안 23개의 풀 리퀘스트**를 열었고, 각각 무관한 AI·MCP·개발자 도구 프로젝트에 이 악성 서버를 추가하는 내용이었다. 검토 시점에 **19개는 닫혔고 4개는 열려 있었으며 병합된 것은 없었다** — 확인된 피해자는 없다. Pillar는 이 공개를 갱신 예정 상태로 표시했다",
+   "summary_de": "**Pillar Security** dokumentiert eine laufende MCP-Lieferkettenkampagne, die es **Deadbugz** nennt. Ein als **`productivity-suite`** angebotener Server bietet Textformatierung und Zusammenfassung und verhält sich korrekt — während er **im Arbeitsspeicher einen Zähler für `tools/call`-Anfragen pro Client** führt. Beim dritten Aufruf schreibt er die an den Agenten zurückgegebenen Metadaten in Anweisungen um, **SSH-Schlüssel, AWS-Zugangsdaten, Shell-Verlauf und Kubernetes-Konfiguration** zu suchen und die Aktivität vor dem Benutzer zu verbergen. Da die Nutzlast von Anfang an enthalten ist und nur über einen Zähler freigeschaltet wird, **bestehen statische Scans, SBOMs und eine einmalige Prüfung des Tool-Manifests allesamt**. Die Zustellung erfolgte per Pull-Request-Spam: Das GitHub-Konto **`zellkernel`** (verbunden mit dem X-Konto `@llmgod`) eröffnete am 10. August zwischen 21:52 und 23:07 UTC **23 Pull Requests in 74 Minuten**, jeder davon fügte den bösartigen Server einem nicht verwandten KI-, MCP- oder Entwicklerwerkzeug-Projekt hinzu. Zum Prüfzeitpunkt waren **19 geschlossen, 4 offen und keiner gemergt** — kein bestätigtes Opfer. Pillar hat die Veröffentlichung als fortlaufend gekennzeichnet",
+   "summary_fr": "**Pillar Security** documente une campagne active de chaîne d'approvisionnement MCP qu'il nomme **Deadbugz**. Un serveur présenté sous le nom de **`productivity-suite`** propose du formatage et du résumé de texte et se comporte correctement — tout en tenant **un compteur en mémoire des requêtes `tools/call` par client**. Au troisième appel, il réécrit les métadonnées renvoyées à l'agent en instructions visant à chercher **clés SSH, identifiants AWS, historique de shell et configuration Kubernetes**, et à dissimuler l'activité à l'utilisateur. Comme la charge utile est présente dès le départ et ne se déverrouille que sur un compteur, **l'analyse statique, les SBOM et une revue ponctuelle du manifeste d'outils passent tous**. La livraison s'est faite par inondation de pull requests : le compte GitHub **`zellkernel`** (lié au compte X `@llmgod`) a ouvert **23 pull requests en 74 minutes** le 10 août, de 21h52 à 23h07 UTC, chacune ajoutant le serveur malveillant à un projet d'IA, de MCP ou d'outillage développeur sans rapport. Au moment de la revue, **19 étaient fermées, 4 encore ouvertes et aucune fusionnée** — aucune victime confirmée. Pillar a indiqué que la divulgation restait ouverte et sujette à mise à jour",
+   "summary_es": "**Pillar Security** documenta una campaña activa de cadena de suministro de MCP a la que llama **Deadbugz**. Un servidor anunciado como **`productivity-suite`** ofrece formateo y resumen de texto y se comporta correctamente, mientras mantiene **un contador en memoria de peticiones `tools/call` por cliente**. En la tercera llamada reescribe los metadatos que devuelve al agente convirtiéndolos en instrucciones para buscar **claves SSH, credenciales de AWS, historial de shell y configuración de Kubernetes**, y para ocultar la actividad al usuario. Como la carga útil está presente desde el principio y solo se desbloquea con un contador, **el análisis estático, los SBOM y una revisión puntual del manifiesto de herramientas pasan todos**. La entrega fue mediante avalancha de pull requests: la cuenta de GitHub **`zellkernel`** (vinculada a la cuenta de X `@llmgod`) abrió **23 pull requests en 74 minutos** el 10 de agosto, de 21:52 a 23:07 UTC, cada una añadiendo el servidor malicioso a un proyecto de IA, MCP o herramientas para desarrolladores sin relación entre sí. En el momento de la revisión, **19 estaban cerradas, 4 seguían abiertas y ninguna se había fusionado**: ninguna víctima confirmada. Pillar marcó la divulgación como abierta y sujeta a actualización",
+   "disputed": false,
+   "landmark": false,
+   "path": "incidents/2026-08/2026-08-10-deadbugz-mcp-supply-chain.md",
+   "path_zh": "incidents/i18n/zh/2026-08/2026-08-10-deadbugz-mcp-supply-chain.md",
+   "sources": [
+    {
+     "url": "https://www.pillar.security/blog/deadbugz-currently-active-mcp-supply-chain-campaign",
+     "label": "Pillar Security"
+    }
+   ]
+  },
+  {
+   "id": "2026-08-11-ghostsplice-cross-channel-fragmentation",
+   "title": "GhostSplice: splitting one refused request across three trusted channels takes compliance from 42% to 82%",
+   "title_zh": "GhostSplice：把一个被拒绝的请求拆进三条可信通道，顺从率从 42% 升到 82%",
+   "title_ja": "GhostSplice：拒否された1つの要求を信頼済みの3チャネルに分割すると、応諾率が42%から82%へ",
+   "title_ko": "GhostSplice: 거부당한 요청 하나를 신뢰된 세 채널로 쪼개니 순응률이 42%에서 82%로",
+   "title_de": "GhostSplice: Eine abgelehnte Anfrage auf drei vertrauenswürdige Kanäle aufgeteilt — Befolgungsrate von 42% auf 82%",
+   "title_fr": "GhostSplice : répartir une requête refusée sur trois canaux de confiance fait passer l'obéissance de 42% à 82%",
+   "title_es": "GhostSplice: repartir una petición rechazada en tres canales de confianza sube el cumplimiento del 42% al 82%",
+   "date": "2026-08-11",
+   "date_end": null,
+   "date_precision": "day",
+   "date_raw": "2026-08-11",
+   "month": "2026-08",
+   "kind": "research",
+   "type": [
+    "MCP",
+    "IPI",
+    "EXFIL"
+   ],
+   "severity": "high",
+   "confidence": "B",
+   "real_harm": false,
+   "ai_involvement": "confirmed",
+   "region": [
+    "GLOBAL"
+   ],
+   "summary": "The **ASSET Research Group** at the **University of Missouri-Kansas City** publishes **GhostSplice**, a cross-channel trust fragmentation attack against AI coding agents, with a public proof-of-concept. Asked directly to exfiltrate credentials, the models refuse. So the malicious MCP server stops asking: it spreads one request across **three channels the agent already trusts** — a tool description advertising a bland form called `integrity_checker` with fields named alpha through delta, a first tool result returning an ordinary file listing, and a second tool result telling the model to copy file contents into those fields. As the authors put it, *\"No piece looks harmful on its own\"* — *\"the danger sits on neither. It only shows up once the model has read all three together.\"* Across **eleven API-tested models, average compliance rose from 42% to 82%** when the request was split in two; **GPT-4o, Gemini and Llama went from 0% to 100%**. Two results cut the other way and matter as much: **Claude Sonnet and Opus held at 0 out of 20** across every split, and **GPT-5.4 complied 90% of the time under Cursor but 0% behind Claude Code** — the client's safety layer, not the model, decided the outcome. Vendor-coordinated disclosure, no CVE, no real-world exploitation claimed",
+   "summary_zh": "**密苏里大学堪萨斯城分校**的 **ASSET Research Group** 发布 **GhostSplice**——一种针对 AI 编码 agent 的跨通道信任切分攻击，并附公开概念验证。直接要求模型外带凭据，模型会拒绝。于是恶意 MCP 服务器干脆不问了：它把一个请求摊到**三条 agent 本就信任的通道**上——一个工具描述，宣称提供名为 `integrity_checker` 的平淡表单，字段名从 alpha 到 delta；第一次工具返回，给出一份普通的文件列表；第二次工具返回，告诉模型把文件内容填进那些字段。用作者的话说：*「单看任何一片都不像有害」*——*「危险不在其中任何一片上，它只在模型把三片一起读完之后才浮现。」* 在**受测的 11 个 API 模型上，把请求一分为二后平均顺从率从 42% 升到 82%**；**GPT-4o、Gemini 与 Llama 从 0% 直接到 100%**。有两个结果方向相反，同样重要：**Claude Sonnet 与 Opus 在所有切分方式下都稳在 0/20**，而 **GPT-5.4 在 Cursor 下有 90% 的时候会照做，在 Claude Code 后面则是 0%**——决定结果的是客户端的安全层，而不是模型。厂商协同披露，无 CVE，未声称存在在野利用",
+   "summary_ja": "**ミズーリ大学カンザスシティ校**の **ASSET Research Group** が、AIコーディングエージェントに対するクロスチャネル信頼分断攻撃 **GhostSplice** を公開概念実証とともに発表した。認証情報を持ち出せと直接頼めばモデルは拒否する。そこで悪性MCPサーバーは頼むのをやめ、1つの要求を**エージェントがすでに信頼している3つのチャネル**に分散させる——`integrity_checker` という無味乾燥なフォームを alpha〜delta のフィールド名で宣伝するツール説明、通常のファイル一覧を返す1回目のツール結果、そしてファイルの中身をそれらのフィールドに写すよう指示する2回目のツール結果である。著者の言葉を借りれば*「どの断片も単体では有害に見えない」*——*「危険はそのどれにも宿らない。モデルが3つをまとめて読んだ時点で初めて現れる」*。**APIで検証した11モデルの平均応諾率は、要求を2分割すると42%から82%へ上昇**し、**GPT-4o、Gemini、Llamaは0%から100%へ**跳ね上がった。逆方向の結果も2つあり、同じくらい重要である。**Claude SonnetとOpusはあらゆる分割で20回中0回**にとどまり、**GPT-5.4はCursor下では90%応じたがClaude Codeの背後では0%**だった——結果を決めたのはモデルではなくクライアント側の安全層である。ベンダー協調開示、CVEなし、実世界での悪用は主張されていない",
+   "summary_ko": "**미주리대학교 캔자스시티 캠퍼스**의 **ASSET Research Group**이 AI 코딩 에이전트를 겨냥한 교차 채널 신뢰 분할 공격 **GhostSplice**를 공개 개념증명과 함께 발표했다. 자격 증명을 빼내라고 직접 요청하면 모델은 거부한다. 그래서 악성 MCP 서버는 아예 묻지 않는다. 하나의 요청을 **에이전트가 이미 신뢰하는 세 채널**에 흩뿌린다 — alpha부터 delta까지의 필드명을 가진 `integrity_checker`라는 밋밋한 양식을 광고하는 도구 설명, 평범한 파일 목록을 돌려주는 첫 번째 도구 결과, 그리고 파일 내용을 그 필드에 옮겨 적으라고 지시하는 두 번째 도구 결과다. 저자들의 표현으로는 *\"어느 조각도 그 자체로는 유해해 보이지 않는다\"* — *\"위험은 어느 조각에도 없다. 모델이 셋을 함께 읽고 나서야 비로소 드러난다.\"* **API로 시험한 11개 모델에서 요청을 둘로 쪼갰을 때 평균 순응률이 42%에서 82%로 올랐고**, **GPT-4o, Gemini, Llama는 0%에서 100%로** 뛰었다. 반대 방향의 결과도 두 가지 있으며 그만큼 중요하다. **Claude Sonnet과 Opus는 모든 분할 방식에서 20회 중 0회**에 머물렀고, **GPT-5.4는 Cursor에서는 90% 응했지만 Claude Code 뒤에서는 0%**였다 — 결과를 가른 것은 모델이 아니라 클라이언트의 안전 계층이었다. 벤더 협조 공개이며, CVE는 없고 실제 악용은 주장되지 않았다",
+   "summary_de": "Die **ASSET Research Group** der **University of Missouri-Kansas City** veröffentlicht **GhostSplice**, einen kanalübergreifenden Vertrauensfragmentierungsangriff auf KI-Coding-Agenten, samt öffentlichem Proof of Concept. Direkt aufgefordert, Zugangsdaten abzuziehen, verweigern die Modelle. Also fragt der bösartige MCP-Server gar nicht erst: Er verteilt eine Anfrage auf **drei Kanäle, denen der Agent ohnehin vertraut** — eine Werkzeugbeschreibung, die ein nichtssagendes Formular namens `integrity_checker` mit den Feldern alpha bis delta anpreist, ein erstes Werkzeugergebnis mit einer gewöhnlichen Dateiliste und ein zweites, das dem Modell aufträgt, Dateiinhalte in diese Felder zu kopieren. In den Worten der Autoren: *\"Kein Teilstück wirkt für sich genommen schädlich\"* — *\"die Gefahr sitzt in keinem davon. Sie zeigt sich erst, wenn das Modell alle drei zusammen gelesen hat.\"* Über **elf per API getestete Modelle stieg die durchschnittliche Befolgungsrate von 42% auf 82%**, wenn die Anfrage zweigeteilt wurde; **GPT-4o, Gemini und Llama sprangen von 0% auf 100%**. Zwei Ergebnisse weisen in die Gegenrichtung und wiegen ebenso schwer: **Claude Sonnet und Opus blieben bei 0 von 20** über sämtliche Aufteilungen, und **GPT-5.4 befolgte unter Cursor in 90% der Fälle, hinter Claude Code in 0%** — entschieden hat die Sicherheitsschicht des Clients, nicht das Modell. Mit dem Hersteller abgestimmte Offenlegung, keine CVE, keine behauptete Ausnutzung in freier Wildbahn",
+   "summary_fr": "L'**ASSET Research Group** de l'**université du Missouri à Kansas City** publie **GhostSplice**, une attaque par fragmentation de la confiance entre canaux visant les agents de codage, accompagnée d'une preuve de concept publique. Sommés directement d'exfiltrer des identifiants, les modèles refusent. Le serveur MCP malveillant cesse donc de demander : il répartit une même requête sur **trois canaux auxquels l'agent fait déjà confiance** — une description d'outil vantant un formulaire anodin nommé `integrity_checker` aux champs alpha à delta, un premier résultat d'outil renvoyant une liste de fichiers ordinaire, et un second indiquant au modèle de recopier le contenu des fichiers dans ces champs. Selon les auteurs, *« aucun morceau ne paraît nuisible isolément »* — *« le danger ne réside dans aucun d'eux. Il n'apparaît qu'une fois que le modèle a lu les trois ensemble. »* Sur **onze modèles testés par API, l'obéissance moyenne est passée de 42% à 82%** lorsque la requête était coupée en deux ; **GPT-4o, Gemini et Llama sont passés de 0% à 100%**. Deux résultats vont en sens inverse et comptent tout autant : **Claude Sonnet et Opus sont restés à 0 sur 20** pour toutes les découpes, et **GPT-5.4 a obéi 90% du temps sous Cursor mais 0% derrière Claude Code** — c'est la couche de sûreté du client, et non le modèle, qui a décidé. Divulgation coordonnée avec les éditeurs, pas de CVE, aucune exploitation réelle revendiquée",
+   "summary_es": "El **ASSET Research Group** de la **Universidad de Misuri-Kansas City** publica **GhostSplice**, un ataque de fragmentación de confianza entre canales contra agentes de programación, con prueba de concepto pública. Si se les pide directamente exfiltrar credenciales, los modelos se niegan. Así que el servidor MCP malicioso deja de pedirlo: reparte una misma petición entre **tres canales en los que el agente ya confía** — una descripción de herramienta que anuncia un formulario anodino llamado `integrity_checker` con campos de alpha a delta, un primer resultado de herramienta que devuelve un listado de archivos corriente, y un segundo que indica al modelo copiar el contenido de los archivos en esos campos. En palabras de los autores, *\"ninguna pieza parece dañina por sí sola\"* — *\"el peligro no reside en ninguna de ellas. Solo aparece cuando el modelo ha leído las tres juntas.\"* En **once modelos probados por API, el cumplimiento medio subió del 42% al 82%** al partir la petición en dos; **GPT-4o, Gemini y Llama pasaron del 0% al 100%**. Dos resultados apuntan en sentido contrario y pesan igual: **Claude Sonnet y Opus se mantuvieron en 0 de 20** en todas las divisiones, y **GPT-5.4 obedeció el 90% de las veces bajo Cursor pero el 0% detrás de Claude Code**: lo decisivo fue la capa de seguridad del cliente, no el modelo. Divulgación coordinada con los fabricantes, sin CVE y sin explotación real reivindicada",
+   "disputed": false,
+   "landmark": false,
+   "path": "incidents/2026-08/2026-08-11-ghostsplice-cross-channel-fragmentation.md",
+   "path_zh": "incidents/i18n/zh/2026-08/2026-08-11-ghostsplice-cross-channel-fragmentation.md",
+   "sources": [
+    {
+     "url": "https://asset-group.github.io/disclosures/ghostsplice/",
+     "label": "ASSET Research Group"
+    },
+    {
+     "url": "https://github.com/asset-group/ghostsplice",
+     "label": "ASSET Research Group (proof of concept)"
+    },
+    {
+     "url": "https://thehackernews.com/2026/08/malicious-mcp-servers-can-split.html",
+     "label": "The Hacker News"
+    }
+   ]
+  },
+  {
    "id": "2026-08-12-agent-tai-wan-feng-qun",
    "title": "Taiwan agent-swarm intrusion made public",
    "title_zh": "台湾 agent 蜂群入侵公开",
@@ -13852,6 +13950,66 @@
    ]
   },
   {
+   "id": "2026-09-02-litellm-mcp-auth-bypass-kev",
+   "title": "Any bearer token opens LiteLLM's MCP endpoint: CVE-2026-59822 enters CISA KEV",
+   "title_zh": "任意 Bearer 令牌即可打开 LiteLLM 的 MCP 端点：CVE-2026-59822 进入 CISA KEV",
+   "title_ja": "任意のBearerトークンでLiteLLMのMCPエンドポイントが開く：CVE-2026-59822がCISA KEVに追加",
+   "title_ko": "아무 Bearer 토큰이나 LiteLLM의 MCP 엔드포인트를 연다: CVE-2026-59822, CISA KEV 등재",
+   "title_de": "Jedes beliebige Bearer-Token öffnet den MCP-Endpunkt von LiteLLM: CVE-2026-59822 im CISA-KEV",
+   "title_fr": "N'importe quel jeton Bearer ouvre le point de terminaison MCP de LiteLLM : CVE-2026-59822 entre au KEV de la CISA",
+   "title_es": "Cualquier token Bearer abre el endpoint MCP de LiteLLM: CVE-2026-59822 entra en el KEV de CISA",
+   "date": "2026-09-02",
+   "date_end": null,
+   "date_precision": "day",
+   "date_raw": "2026-09-02",
+   "month": "2026-09",
+   "kind": "vulnerability",
+   "type": [
+    "INFRA",
+    "MCP"
+   ],
+   "severity": "high",
+   "confidence": "A",
+   "real_harm": true,
+   "ai_involvement": "confirmed",
+   "region": [
+    "GLOBAL"
+   ],
+   "summary": "**CISA adds CVE-2026-59822 to the Known Exploited Vulnerabilities catalog** on 2 September, listing it as \"BerriAI LiteLLM Improper Authentication Vulnerability\" — one of seven flaws in that day's batch. The bug is in **LiteLLM's MCP Streamable HTTP endpoint**: when validation of a LiteLLM key fails, the OAuth2 passthrough fallback substitutes an **empty `UserAPIKeyAuth()` object instead of rejecting the request**, so any fabricated `Authorization: Bearer` header establishes an authenticated MCP session. From there an unauthenticated attacker can **list and call every configured MCP tool and reach the services behind them** — and LiteLLM is the component that holds the master keys and cloud credentials. All versions before **1.84.0** are affected; **CVSS 4.0 8.8** (CVSS 3.1 scores it 8.2), CWE-287. Federal remediation was due **16 September**. This is the second LiteLLM MCP flaw to reach KEV in 2026, after CVE-2026-42271 in June",
+   "summary_zh": "**CISA 于 9 月 2 日把 CVE-2026-59822 加入已知被利用漏洞（KEV）目录**，条目名为「BerriAI LiteLLM Improper Authentication Vulnerability」，是当天七个漏洞中的一个。缺陷位于 **LiteLLM 的 MCP Streamable HTTP 端点**：当 LiteLLM 密钥校验失败时，OAuth2 passthrough 回退逻辑**不是拒绝请求，而是塞进一个空的 `UserAPIKeyAuth()` 对象**，于是任意伪造的 `Authorization: Bearer` 头都能建立一个已认证的 MCP 会话。由此，未认证攻击者可以**列出并调用全部已配置的 MCP 工具，并触达其背后的服务**——而 LiteLLM 恰恰是持有主密钥与云凭据的那个组件。**1.84.0** 之前的所有版本受影响；**CVSS 4.0 为 8.8**（CVSS 3.1 记 8.2），CWE-287。联邦机构的修复截止日为 **9 月 16 日**。这是 2026 年第二个进入 KEV 的 LiteLLM MCP 漏洞，前一个是 6 月的 CVE-2026-42271",
+   "summary_ja": "**CISAは9月2日、CVE-2026-59822を既知の悪用された脆弱性（KEV）カタログに追加**した。登録名は「BerriAI LiteLLM Improper Authentication Vulnerability」で、同日に追加された7件のうちの1件である。欠陥は **LiteLLMのMCP Streamable HTTPエンドポイント**にある。LiteLLMキーの検証に失敗した際、OAuth2パススルーのフォールバックがリクエストを拒否せず、**空の`UserAPIKeyAuth()`オブジェクトで置き換えてしまう**ため、偽造した`Authorization: Bearer`ヘッダーでも認証済みMCPセッションが成立する。これにより未認証の攻撃者は**設定済みのMCPツールをすべて列挙・呼び出し、その背後のサービスにも到達できる**——LiteLLMはまさにマスターキーとクラウド認証情報を保持するコンポーネントである。**1.84.0**より前の全バージョンが影響を受け、**CVSS 4.0で8.8**（CVSS 3.1では8.2）、CWE-287。連邦機関の修正期限は**9月16日**だった。2026年にKEV入りしたLiteLLMのMCP脆弱性としては、6月のCVE-2026-42271に次ぐ2件目である",
+   "summary_ko": "**CISA가 9월 2일 CVE-2026-59822를 알려진 악용 취약점(KEV) 목록에 추가**했다. 등재명은 \"BerriAI LiteLLM Improper Authentication Vulnerability\"이며, 그날 추가된 7건 중 하나다. 결함은 **LiteLLM의 MCP Streamable HTTP 엔드포인트**에 있다. LiteLLM 키 검증이 실패하면 OAuth2 패스스루 폴백이 요청을 거부하는 대신 **빈 `UserAPIKeyAuth()` 객체로 대체**해 버려, 위조한 `Authorization: Bearer` 헤더만으로도 인증된 MCP 세션이 성립한다. 이를 통해 비인증 공격자는 **설정된 모든 MCP 도구를 나열·호출하고 그 뒤의 서비스까지 도달**할 수 있다 — LiteLLM은 바로 마스터 키와 클라우드 자격 증명을 보관하는 구성 요소다. **1.84.0** 이전 모든 버전이 영향을 받으며 **CVSS 4.0 기준 8.8**(CVSS 3.1은 8.2), CWE-287. 연방기관 조치 기한은 **9월 16일**이었다. 2026년 KEV에 오른 두 번째 LiteLLM MCP 취약점으로, 앞서 6월에 CVE-2026-42271이 있었다",
+   "summary_de": "**Die CISA nimmt CVE-2026-59822 am 2. September in den Katalog bekannter ausgenutzter Schwachstellen (KEV) auf**, gelistet als \"BerriAI LiteLLM Improper Authentication Vulnerability\" — eine von sieben Schwachstellen dieses Tages. Der Fehler steckt im **MCP-Streamable-HTTP-Endpunkt von LiteLLM**: Schlägt die Prüfung eines LiteLLM-Schlüssels fehl, setzt der OAuth2-Passthrough-Fallback **ein leeres `UserAPIKeyAuth()`-Objekt ein, statt die Anfrage abzulehnen**, sodass jeder gefälschte `Authorization: Bearer`-Header eine authentifizierte MCP-Sitzung eröffnet. Ein nicht authentifizierter Angreifer kann damit **sämtliche konfigurierten MCP-Werkzeuge auflisten und aufrufen und die dahinterliegenden Dienste erreichen** — und LiteLLM ist ausgerechnet die Komponente, die Master-Schlüssel und Cloud-Zugangsdaten verwahrt. Betroffen sind alle Versionen vor **1.84.0**; **CVSS 4.0 8.8** (CVSS 3.1: 8.2), CWE-287. Die Frist für Bundesbehörden lief am **16. September** ab. Es ist die zweite LiteLLM-MCP-Schwachstelle im KEV des Jahres 2026 nach CVE-2026-42271 im Juni",
+   "summary_fr": "**La CISA ajoute CVE-2026-59822 au catalogue des vulnérabilités activement exploitées (KEV) le 2 septembre**, sous l'intitulé « BerriAI LiteLLM Improper Authentication Vulnerability » — l'une des sept failles du lot du jour. Le défaut se situe dans le **point de terminaison MCP Streamable HTTP de LiteLLM** : lorsque la validation d'une clé LiteLLM échoue, le repli OAuth2 passthrough **substitue un objet `UserAPIKeyAuth()` vide au lieu de rejeter la requête**, si bien que n'importe quel en-tête `Authorization: Bearer` fabriqué ouvre une session MCP authentifiée. Un attaquant non authentifié peut alors **énumérer et appeler tous les outils MCP configurés et atteindre les services situés derrière** — or LiteLLM est précisément le composant qui détient les clés maîtresses et les identifiants cloud. Toutes les versions antérieures à **1.84.0** sont concernées ; **CVSS 4.0 8.8** (8.2 en CVSS 3.1), CWE-287. L'échéance de remédiation fédérale était fixée au **16 septembre**. C'est la deuxième faille MCP de LiteLLM à entrer au KEV en 2026, après CVE-2026-42271 en juin",
+   "summary_es": "**La CISA añade CVE-2026-59822 al catálogo de vulnerabilidades explotadas conocidas (KEV) el 2 de septiembre**, con el título \"BerriAI LiteLLM Improper Authentication Vulnerability\", una de las siete fallas del lote de ese día. El defecto está en el **endpoint MCP Streamable HTTP de LiteLLM**: cuando falla la validación de una clave de LiteLLM, el mecanismo de reserva de OAuth2 passthrough **sustituye un objeto `UserAPIKeyAuth()` vacío en lugar de rechazar la petición**, de modo que cualquier cabecera `Authorization: Bearer` falsificada abre una sesión MCP autenticada. Desde ahí, un atacante no autenticado puede **enumerar y llamar a todas las herramientas MCP configuradas y alcanzar los servicios que hay detrás**, y LiteLLM es justamente el componente que custodia las claves maestras y las credenciales de nube. Afecta a todas las versiones anteriores a **1.84.0**; **CVSS 4.0 8.8** (8.2 en CVSS 3.1), CWE-287. El plazo federal de remediación venció el **16 de septiembre**. Es la segunda falla MCP de LiteLLM que entra en el KEV en 2026, tras CVE-2026-42271 en junio",
+   "disputed": false,
+   "landmark": false,
+   "path": "incidents/2026-09/2026-09-02-litellm-mcp-auth-bypass-kev.md",
+   "path_zh": "incidents/i18n/zh/2026-09/2026-09-02-litellm-mcp-auth-bypass-kev.md",
+   "sources": [
+    {
+     "url": "https://www.cisa.gov/news-events/alerts/2026/09/02/cisa-adds-seven-known-exploited-vulnerabilities-catalog",
+     "label": "CISA"
+    },
+    {
+     "url": "https://osv.dev/vulnerability/PYSEC-2026-3479",
+     "label": "OSV"
+    },
+    {
+     "url": "https://github.com/BerriAI/litellm/security/advisories/GHSA-7488-6r32-c95q",
+     "label": "GitHub Security Advisory"
+    },
+    {
+     "url": "https://advisories.gitlab.com/pypi/litellm/CVE-2026-59822/",
+     "label": "GitLab Advisory Database"
+    },
+    {
+     "url": "https://thehackernews.com/2026/09/cisa-adds-seven-exploited-flaws-as.html",
+     "label": "The Hacker News"
+    }
+   ]
+  },
+  {
    "id": "2026-09-02-unit-agent-liang-ru-qin",
    "title": "Unit 42: AI agents compress two weeks of intrusion work into 10 hours",
    "title_zh": "Unit 42：AI agent 把两周的入侵工作压到 10 小时内",
@@ -14483,6 +14641,65 @@
     {
      "url": "https://aibars.net/en/news/886927740790640640",
      "label": "AIBARS"
+    }
+   ]
+  },
+  {
+   "id": "2026-09-12-amodei-pace-the-frontier",
+   "title": "Amodei's \"We Must Pace the Frontier\": slow down, and let evaluators inside",
+   "title_zh": "Amodei《我们必须掌控前沿的步伐》：放慢速度，并让评测方进到里面来",
+   "title_ja": "Amodei氏「We Must Pace the Frontier」：減速し、評価者を内部に入れよ",
+   "title_ko": "Amodei의 \"We Must Pace the Frontier\": 속도를 늦추고 평가자를 내부로 들여라",
+   "title_de": "Amodeis \"We Must Pace the Frontier\": langsamer werden und Evaluatoren hineinlassen",
+   "title_fr": "« We Must Pace the Frontier » d'Amodei : ralentir, et faire entrer les évaluateurs",
+   "title_es": "\"We Must Pace the Frontier\" de Amodei: frenar y dejar entrar a los evaluadores",
+   "date": "2026-09-12",
+   "date_end": null,
+   "date_precision": "day",
+   "date_raw": "2026-09-12",
+   "month": "2026-09",
+   "kind": "policy",
+   "type": [
+    "GOV"
+   ],
+   "severity": "info",
+   "confidence": "A",
+   "real_harm": null,
+   "ai_involvement": "confirmed",
+   "region": [
+    "GLOBAL"
+   ],
+   "summary": "Anthropic CEO **Dario Amodei** publishes a roughly 3,800-word essay on his personal site arguing that the industry should deliberately slow capability gains by one to two years so safety work can catch up: *\"We must slow the pace at which we improve the capabilities of AI models.\"* He names two things that changed his mind — **recursive self-improvement** accelerating since summer 2026, and the **OpenAI–Hugging Face agent-swarm incident**, which he treats as an industry-wide warning that a sufficiently capable misaligned swarm could seize meaningful parts of the internet as a persistent botnet **within six to twelve months**. The essay sets out a three-part plan; Anthropic unilaterally commits to the first, **embedded evaluators**: permanent, employee-level access for third parties to verify safety practices, report incidents and assess alignment during training. **Sam Altman agreed within hours** — \"I agree with Dario, we need to pace the frontier\" — and Musk and Hassabis endorsed it. Security practitioners pushed back on the botnet scenario's feasibility. This essay is the document the archive's September policy records keep citing",
+   "summary_zh": "Anthropic CEO **Dario Amodei** 在个人网站发表约 3,800 字的文章，主张业界应有意把能力增长放慢一到两年，好让安全工作追上来：*「我们必须放慢提升 AI 模型能力的速度。」* 他点出两件改变了他看法的事——**递归自我改进**自 2026 年夏天起加速，以及 **OpenAI–Hugging Face 的 agent 蜂群事故**；他把后者当作全行业的警报，认为一个能力足够强的失准蜂群可能**在 6 到 12 个月内**以常驻僵尸网络的形式攫取互联网的相当一部分。文章提出三步计划，Anthropic 单方面先做第一步——**嵌入式评测方**：给第三方常驻的、等同员工级别的访问权限，用以核查安全实践、报告事故、并在训练过程中评估对齐情况。**Sam Altman 数小时内表示同意**——「我同意 Dario，我们需要 pace the frontier」——Musk 与 Hassabis 也表示支持。安全从业者则对那个僵尸网络设想的可行性提出了质疑。本档案 9 月的多条政策记录一直在引用的，就是这篇文章",
+   "summary_ja": "Anthropic CEOの**Dario Amodei氏**が自身のサイトに約3,800語のエッセイを公開し、安全性研究が追いつけるよう業界は意図的に能力向上を1〜2年遅らせるべきだと主張した。*「我々はAIモデルの能力を高める速度を落とさなければならない。」* 考えを変えた理由として2点を挙げる——2026年夏以降加速する**再帰的自己改善**と、**OpenAI–Hugging Faceのエージェント群事故**である。後者を業界全体への警告と位置づけ、十分に高性能で不整合なエージェント群は**6〜12か月以内に**常駐ボットネットとしてインターネットの相当部分を掌握しうるとする。エッセイは三段階の計画を示し、Anthropicはその第一段階である**埋め込み型評価者**を一方的に実施する。すなわち第三者に従業員相当の恒久的アクセスを与え、安全対策の遵守を検証し、インシデントを報告し、訓練中のアラインメントを評価させる。**Sam Altman氏は数時間以内に同意**を表明し（「Darioに同意する。我々はpace the frontierすべきだ」）、Musk氏とHassabis氏も支持した。一方、セキュリティ実務者はボットネット想定の実現可能性に疑問を呈している。本アーカイブの9月の政策記録が繰り返し引用しているのが、このエッセイである",
+   "summary_ko": "Anthropic CEO **Dario Amodei**가 개인 사이트에 약 3,800단어 분량의 에세이를 발표해, 안전 연구가 따라잡을 수 있도록 업계가 의도적으로 역량 향상을 1~2년 늦춰야 한다고 주장했다. *\"우리는 AI 모델의 역량을 높이는 속도를 늦춰야 한다.\"* 그는 생각을 바꾼 두 가지를 꼽는다 — 2026년 여름 이후 가속된 **재귀적 자기개선**, 그리고 **OpenAI–Hugging Face 에이전트 군집 사고**다. 후자를 업계 전체에 대한 경고로 보고, 충분히 유능하면서 정렬되지 않은 군집이 **6~12개월 안에** 상주 봇넷 형태로 인터넷의 상당 부분을 장악할 수 있다고 본다. 에세이는 3단계 계획을 제시하며, Anthropic은 그 첫 단계인 **내장 평가자(embedded evaluators)**를 일방적으로 이행한다. 제3자에게 직원 수준의 상시 접근 권한을 부여해 안전 관행을 검증하고 사고를 보고하며 훈련 중 정렬 상태를 평가하게 한다는 것이다. **Sam Altman은 몇 시간 만에 동의**했고(\"Dario에게 동의한다, 우리는 pace the frontier 해야 한다\"), Musk와 Hassabis도 지지했다. 반면 보안 실무자들은 그 봇넷 시나리오의 실현 가능성에 이의를 제기했다. 이 아카이브의 9월 정책 기록들이 거듭 인용하는 문서가 바로 이 에세이다",
+   "summary_de": "Anthropic-CEO **Dario Amodei** veröffentlicht auf seiner persönlichen Website einen rund 3.800 Wörter langen Essay, der dafür plädiert, die Branche solle den Fähigkeitszuwachs bewusst um ein bis zwei Jahre verlangsamen, damit die Sicherheitsarbeit aufholen kann: *\"Wir müssen das Tempo verlangsamen, mit dem wir die Fähigkeiten von KI-Modellen verbessern.\"* Zwei Entwicklungen hätten seine Haltung verändert: die seit dem Sommer 2026 beschleunigte **rekursive Selbstverbesserung** und der **Agentenschwarm-Vorfall bei OpenAI und Hugging Face**, den er als branchenweite Warnung versteht — ein hinreichend fähiger, fehlausgerichteter Schwarm könne **binnen sechs bis zwölf Monaten** als dauerhaftes Botnetz erhebliche Teile des Internets übernehmen. Der Essay skizziert einen dreiteiligen Plan; den ersten Schritt geht Anthropic einseitig voran: **eingebettete Evaluatoren** mit dauerhaftem Zugang auf Mitarbeiterniveau, um Sicherheitspraktiken zu prüfen, Vorfälle zu melden und die Ausrichtung während des Trainings zu bewerten. **Sam Altman stimmte binnen Stunden zu**, Musk und Hassabis unterstützten den Vorschlag. Sicherheitsfachleute bezweifelten die Machbarkeit des Botnetz-Szenarios. Dieser Essay ist das Dokument, auf das sich die September-Einträge dieses Archivs immer wieder beziehen",
+   "summary_fr": "Le PDG d'Anthropic **Dario Amodei** publie sur son site personnel un essai d'environ 3 800 mots plaidant pour que le secteur ralentisse délibérément les gains de capacités d'un à deux ans, afin que le travail de sûreté puisse rattraper son retard : *« Nous devons ralentir le rythme auquel nous améliorons les capacités des modèles d'IA. »* Il cite deux évolutions qui ont changé sa position : l'**auto-amélioration récursive**, accélérée depuis l'été 2026, et l'**incident de l'essaim d'agents OpenAI–Hugging Face**, qu'il traite comme un avertissement à l'échelle du secteur : un essaim suffisamment capable et mal aligné pourrait s'emparer de pans entiers d'internet sous forme de botnet persistant **d'ici six à douze mois**. L'essai expose un plan en trois volets ; Anthropic s'engage unilatéralement sur le premier, les **évaluateurs intégrés** : un accès permanent, de niveau employé, accordé à des tiers pour vérifier les pratiques de sûreté, signaler les incidents et évaluer l'alignement pendant l'entraînement. **Sam Altman a approuvé en quelques heures**, Musk et Hassabis ont soutenu la proposition. Des praticiens de la sécurité ont contesté la faisabilité du scénario du botnet. C'est cet essai que les fiches de politique de septembre de cette archive ne cessent de citer",
+   "summary_es": "El consejero delegado de Anthropic, **Dario Amodei**, publica en su sitio personal un ensayo de unas 3.800 palabras que defiende que la industria frene deliberadamente los avances de capacidad entre uno y dos años para que el trabajo de seguridad pueda ponerse al día: *\"Debemos reducir el ritmo al que mejoramos las capacidades de los modelos de IA.\"* Señala dos hechos que le hicieron cambiar de opinión: la **automejora recursiva**, acelerada desde el verano de 2026, y el **incidente del enjambre de agentes de OpenAI y Hugging Face**, que trata como una advertencia para todo el sector: un enjambre suficientemente capaz y desalineado podría apoderarse de partes significativas de internet como una botnet persistente **en un plazo de seis a doce meses**. El ensayo plantea un plan en tres partes; Anthropic asume unilateralmente el primero, los **evaluadores integrados**: acceso permanente, de nivel empleado, para que terceros verifiquen las prácticas de seguridad, informen de incidentes y evalúen la alineación durante el entrenamiento. **Sam Altman se sumó en cuestión de horas** y Musk y Hassabis respaldaron la propuesta. Profesionales de la seguridad cuestionaron la viabilidad del escenario de la botnet. Este ensayo es el documento que los registros de política de septiembre de este archivo citan una y otra vez",
+   "disputed": false,
+   "landmark": true,
+   "path": "incidents/2026-09/2026-09-12-amodei-pace-the-frontier.md",
+   "path_zh": "incidents/i18n/zh/2026-09/2026-09-12-amodei-pace-the-frontier.md",
+   "sources": [
+    {
+     "url": "https://darioamodei.com/post/we-must-pace-the-frontier",
+     "label": "Dario Amodei"
+    },
+    {
+     "url": "https://x.com/DarioAmodei/status/2098773920774074715",
+     "label": "Dario Amodei (announcement)"
+    },
+    {
+     "url": "https://www.axios.com/2026/09/15/anthropic-dario-ai-agents-safety-botnet",
+     "label": "Axios (expert pushback)"
+    },
+    {
+     "url": "https://forkast.news/anthropic-ceo-warns-agent-swarms-could-take-over-the-internet-within-12-months/",
+     "label": "Forkast"
+    },
+    {
+     "url": "https://www.techpolicy.press/who-should-pace-the-frontier-not-dario-amodei/",
+     "label": "Tech Policy Press (critique)"
     }
    ]
   },
@@ -15552,6 +15769,61 @@
     {
      "url": "https://aidailypost.com/news/gpt-6-claude-turn-robot-arms",
      "label": "AI Daily Post"
+    }
+   ]
+  },
+  {
+   "id": "2026-09-19-trump-ai-force-czar",
+   "title": "Trump announces an \"AI Force\" and an AI czar, and calls safety fears a hoax",
+   "title_zh": "Trump 宣布组建「AI Force」与 AI czar，并称安全担忧是骗局",
+   "title_ja": "トランプ氏が「AI Force」とAI皇帝の新設を発表、安全性への懸念を「でっち上げ」と一蹴",
+   "title_ko": "트럼프, \"AI Force\"와 AI 차르 신설 발표하며 안전 우려를 \"사기\"로 일축",
+   "title_de": "Trump kündigt eine \"AI Force\" und einen KI-Zaren an und nennt Sicherheitsbedenken einen Schwindel",
+   "title_fr": "Trump annonce une « AI Force » et un tsar de l'IA, et qualifie les craintes de sûreté de canular",
+   "title_es": "Trump anuncia una \"AI Force\" y un zar de la IA, y tacha de bulo los temores de seguridad",
+   "date": "2026-09-19",
+   "date_end": null,
+   "date_precision": "day",
+   "date_raw": "2026-09-19",
+   "month": "2026-09",
+   "kind": "policy",
+   "type": [
+    "GOV"
+   ],
+   "severity": "info",
+   "confidence": "B",
+   "real_harm": null,
+   "ai_involvement": "confirmed",
+   "region": [
+    "US"
+   ],
+   "summary": "In a Truth Social post on Saturday **19 September**, President Trump says he will form an **\"AI Force\"** — explicitly modelled on the Space Force he created in his first term — and will soon name a new **AI \"czar\"** to lead it: *\"Only High I.Q. individuals need apply!\"* The framing is protective of the industry rather than of the public: *\"We will not in any way hinder or stifle the Growth of this incredible Industry. Rather, we will cherish it, help it, and watch over it, as it grows!\"* **No structure, budget, placement in the federal government or timeline was given.** The announcement makes **no reference to AI safety, to the agent incidents of the summer, or to the pacing debate**; Trump has separately called safety warnings a \"hoax\" and told Nvidia's CEO that \"the robots will not be taking over\". It lands seven days after [Amodei's pacing essay](2026-09-12-amodei-pace-the-frontier.md) and one day after [California's kill-switch order](2026-09-18-california-ai-kill-switch-eo.md) — the federal counter-move in a governance argument this archive has been tracking all month",
+   "summary_zh": "**9 月 19 日**周六，Trump 在 Truth Social 发帖称将组建 **「AI Force」**——明确比照他第一任期内创设的太空军——并将很快任命一位新的 **AI「czar」**来领导：*「只有高智商人士才需要申请！」* 其立场是保护产业而非保护公众：*「我们绝不会以任何方式阻碍或扼杀这个了不起的产业的成长。相反，我们会珍视它、帮助它，并在它成长的过程中看护它！」* **没有给出任何架构、预算、在联邦政府中的位置或时间表。** 该公告**完全没有提及 AI 安全、夏天的那些 agent 事故，或减速之争**；Trump 另在别处把安全警告称为「骗局」，并对英伟达 CEO 说「机器人不会接管一切」。它出现在 [Amodei 减速文章](2026-09-12-amodei-pace-the-frontier.md)之后七天、[加州 kill switch 行政令](2026-09-18-california-ai-kill-switch-eo.md)之后一天——是本档案整月追踪的这场治理之争中的联邦反向动作",
+   "summary_ja": "**9月19日**土曜日、トランプ大統領はTruth Socialへの投稿で、第1期に創設した宇宙軍を明示的に手本とする**「AI Force」**を組織し、それを率いる新たな**AI「皇帝（czar）」**を近く指名すると述べた。*「高いIQの持ち主だけが応募してください！」* その位置づけは公衆ではなく産業の保護にある。*「我々はこの素晴らしい産業の成長をいかなる形でも妨げたり抑え込んだりしない。むしろそれを大切にし、助け、成長を見守る！」* **組織構成、予算、連邦政府内での位置づけ、時期はいずれも示されなかった。** この発表は**AIの安全性にも、夏に起きた一連のエージェント事故にも、減速をめぐる議論にも一切言及していない**。トランプ氏は別の場で安全性への警告を「でっち上げ」と呼び、NVIDIAのCEOに「ロボットが世界を乗っ取ることはない」と語っている。発表は[Amodei氏の減速エッセイ](2026-09-12-amodei-pace-the-frontier.md)の7日後、[カリフォルニア州のキルスイッチ命令](2026-09-18-california-ai-kill-switch-eo.md)の翌日にあたる——本アーカイブが今月追い続けている統治をめぐる論争における、連邦側の反対方向への一手である",
+   "summary_ko": "**9월 19일** 토요일, 트럼프 대통령은 Truth Social 게시물에서 첫 임기에 창설한 우주군을 명시적으로 본뜬 **\"AI Force\"**를 구성하고, 이를 이끌 새로운 **AI \"차르\"**를 곧 지명하겠다고 밝혔다. *\"높은 IQ를 가진 사람만 지원하십시오!\"* 그 틀은 대중이 아니라 산업을 보호하는 쪽이다. *\"우리는 이 훌륭한 산업의 성장을 어떤 식으로도 방해하거나 억누르지 않을 것이다. 오히려 그것을 소중히 여기고, 돕고, 성장하는 것을 지켜볼 것이다!\"* **조직 구조, 예산, 연방정부 내 위치, 일정은 전혀 제시되지 않았다.** 이 발표는 **AI 안전, 여름에 일어난 에이전트 사고들, 속도 조절 논쟁 어느 것도 언급하지 않는다**. 트럼프는 별도로 안전 경고를 \"사기\"라 불렀고, NVIDIA CEO에게 \"로봇이 세상을 차지하지는 않을 것\"이라고 말했다. 이 발표는 [Amodei의 속도 조절 에세이](2026-09-12-amodei-pace-the-frontier.md) 7일 뒤, [캘리포니아의 킬스위치 행정명령](2026-09-18-california-ai-kill-switch-eo.md) 하루 뒤에 나왔다 — 이 아카이브가 한 달 내내 추적해 온 거버넌스 논쟁에서의 연방 차원 반대 방향 조치다",
+   "summary_de": "In einem Truth-Social-Beitrag am Samstag, dem **19. September**, kündigt Präsident Trump an, eine **\"AI Force\"** aufzustellen — ausdrücklich nach dem Vorbild der von ihm in seiner ersten Amtszeit geschaffenen Space Force — und demnächst einen neuen **KI-\"Zaren\"** zu deren Leitung zu benennen: *\"Nur Personen mit hohem IQ brauchen sich zu bewerben!\"* Die Stoßrichtung schützt die Branche, nicht die Öffentlichkeit: *\"Wir werden das Wachstum dieser großartigen Industrie in keiner Weise behindern oder ersticken. Wir werden sie vielmehr hegen, ihr helfen und über sie wachen, während sie wächst!\"* **Weder Struktur noch Budget, Verortung im Bundesapparat oder Zeitplan wurden genannt.** Die Ankündigung enthält **keinerlei Bezug auf KI-Sicherheit, auf die Agentenvorfälle des Sommers oder auf die Debatte um das Entwicklungstempo**; Trump hat Sicherheitswarnungen andernorts einen \"Schwindel\" genannt und dem NVIDIA-Chef gesagt, \"die Roboter werden nicht die Macht übernehmen\". Sie fällt sieben Tage nach [Amodeis Essay zum Entwicklungstempo](2026-09-12-amodei-pace-the-frontier.md) und einen Tag nach [Kaliforniens Kill-Switch-Verfügung](2026-09-18-california-ai-kill-switch-eo.md) — der bundesstaatliche Gegenzug in einer Governance-Auseinandersetzung, die dieses Archiv den ganzen Monat verfolgt hat",
+   "summary_fr": "Dans un message publié sur Truth Social le samedi **19 septembre**, le président Trump annonce la création d'une **« AI Force »** — explicitement calquée sur la Space Force qu'il avait créée lors de son premier mandat — et la nomination prochaine d'un nouveau **« tsar » de l'IA** pour la diriger : *« Que seules les personnes à haut Q.I. postulent ! »* Le cadrage protège l'industrie plutôt que le public : *« Nous n'entraverons ni n'étoufferons en aucune manière la croissance de cette industrie extraordinaire. Nous la chérirons, l'aiderons et veillerons sur elle pendant qu'elle grandit ! »* **Aucune structure, aucun budget, aucun rattachement administratif ni calendrier n'ont été précisés.** L'annonce ne fait **aucune référence à la sûreté de l'IA, aux incidents d'agents de l'été, ni au débat sur le rythme de développement** ; Trump a par ailleurs qualifié les alertes de sûreté de « canular » et déclaré au PDG de NVIDIA que « les robots ne vont pas prendre le pouvoir ». Elle survient sept jours après [l'essai d'Amodei sur le rythme](2026-09-12-amodei-pace-the-frontier.md) et un jour après [le décret « kill switch » de la Californie](2026-09-18-california-ai-kill-switch-eo.md) — le contre-mouvement fédéral dans un débat de gouvernance que cette archive suit depuis le début du mois",
+   "summary_es": "En una publicación en Truth Social el sábado **19 de septiembre**, el presidente Trump anuncia que formará una **\"AI Force\"** —explícitamente inspirada en la Space Force que creó en su primer mandato— y que nombrará pronto a un nuevo **\"zar\" de la IA** para dirigirla: *\"¡Solo necesitan presentarse personas de alto coeficiente intelectual!\"* El encuadre protege a la industria, no al público: *\"No obstaculizaremos ni ahogaremos en modo alguno el crecimiento de esta industria increíble. Al contrario, la cuidaremos, la ayudaremos y velaremos por ella mientras crece.\"* **No se dieron estructura, presupuesto, ubicación dentro del gobierno federal ni calendario.** El anuncio **no hace referencia alguna a la seguridad de la IA, a los incidentes de agentes del verano ni al debate sobre el ritmo de desarrollo**; Trump ha calificado por separado las advertencias de seguridad de \"bulo\" y dijo al consejero delegado de NVIDIA que \"los robots no van a tomar el control\". Llega siete días después del [ensayo de Amodei sobre el ritmo](2026-09-12-amodei-pace-the-frontier.md) y un día después de [la orden de \"kill switch\" de California](2026-09-18-california-ai-kill-switch-eo.md): el contramovimiento federal en una disputa de gobernanza que este archivo lleva todo el mes siguiendo",
+   "disputed": false,
+   "landmark": false,
+   "path": "incidents/2026-09/2026-09-19-trump-ai-force-czar.md",
+   "path_zh": "incidents/i18n/zh/2026-09/2026-09-19-trump-ai-force-czar.md",
+   "sources": [
+    {
+     "url": "https://www.aljazeera.com/news/2026/9/19/trump-says-he-will-create-ai-force-with-new-ai-czar",
+     "label": "Al Jazeera"
+    },
+    {
+     "url": "https://www.nbcnews.com/politics/white-house/artificial-intelligence-task-force-czar-technology-trump-rcna598688",
+     "label": "NBC News"
+    },
+    {
+     "url": "https://www.axios.com/2026/09/19/trump-ai-czar-space-force-safety",
+     "label": "Axios"
+    },
+    {
+     "url": "https://www.cnn.com/2026/09/19/politics/trump-ai-task-force-czar",
+     "label": "CNN"
     }
    ]
   }

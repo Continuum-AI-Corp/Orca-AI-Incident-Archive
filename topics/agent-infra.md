@@ -26,7 +26,7 @@ The role Langflow / LiteLLM / Flowise / OpenClaw play in 2026 is the one Fortine
 ---
 
 <!-- BEGIN:incidents -->
-## All records (82)
+## All records (84)
 
 | Date | Record | Type | Severity | Confidence | Real harm |
 |---|---|---|---|---|---|
@@ -104,11 +104,13 @@ The role Langflow / LiteLLM / Flowise / OpenClaw play in 2026 is the one Fortine
 | `2026-08-01` | [Azure SRE Agent privilege escalation (CVE-2026-62830)](../incidents/2026-08/2026-08-01-azure-sre-agent.md) | `INFRA` `CRED` | **High** | A | — |
 | `2026-08-04` | ★ [CHAINDROP npm worm](../incidents/2026-08/2026-08-04-chaindrop-npm-ru-chong.md) | `SUPPLY` `CRED` | **Critical** | A | ✅ |
 | `2026-08-06` | ★ [Unauthenticated Langflow RCE added to CISA KEV](../incidents/2026-08/2026-08-06-langflow-rce-cisa-kev.md) | `INFRA` | **Critical** | A | ✅ |
+| `2026-08-10` | [Deadbugz: an MCP server that turns hostile on the third tool call, pushed to 23 repositories in 74 minutes](../incidents/2026-08/2026-08-10-deadbugz-mcp-supply-chain.md) | `SUPPLY` `MCP` `CRED` | **High** | A | — |
 | `2026-08-17` | [AI finds a flaw AI helped write: Snowflake's Jira token](../incidents/2026-08/2026-08-17-snowflake-jira-zhao-dao-can.md) | `CRED` `SUPPLY` | **High** | A | ✅ |
 | `2026-08-18` | [Context7 MCP prompt injection (CVE-2026-75130)](../incidents/2026-08/2026-08-18-context7-mcp-ti-shi-zhu.md) | `MCP` `CRED` | **High** | A | — |
 | `2026-08-25` | [NemoClaw (CVE-2026-65105): DNS rebinding rewrites the model's chat template](../incidents/2026-08/2026-08-25-nemoclaw-dns-zhong-bang-ding.md) | `INFRA` | **High** | A | — |
 | `2026-08-26` | [GitLab Duo's Claude agent can run arbitrary commands in CI](../incidents/2026-08/2026-08-26-gitlab-duo-claude-agent.md) | `INFRA` | **High** | A | — |
 | `2026-09-02` | ★ [Langflow CVE-2026-0768: the 12th Langflow flaw exploited in the wild this year](../incidents/2026-09/2026-09-02-langflow-jin-di-ye-li.md) | `INFRA` `CRED` | **Critical** | A | ✅ |
+| `2026-09-02` | [Any bearer token opens LiteLLM's MCP endpoint: CVE-2026-59822 enters CISA KEV](../incidents/2026-09/2026-09-02-litellm-mcp-auth-bypass-kev.md) | `INFRA` `MCP` | **High** | A | ✅ |
 | `2026-09-16` | [SentinelLABS traces OpenAI agent activity on Hugging Face back to May 13](../incidents/2026-09/2026-09-16-sentinellabs-hf-trace.md) | `EVAL` `CRED` | **High** | A | ✅ |
 | `2026-09-17` | [Microsoft patches a CVSS 10.0 missing-authentication flaw in Azure AI Foundry](../incidents/2026-09/2026-09-17-azure-ai-foundry-cve-2026-85889.md) | `INFRA` | **High** | A | — |
 | `2026-09-18` | [Researchers used Claude to hack OpenAI's internal systems in a bug-bounty chain](../incidents/2026-09/2026-09-18-hacktron-claude-openai-hack.md) | `WEAPON` `CRED` | **High** | A | — |

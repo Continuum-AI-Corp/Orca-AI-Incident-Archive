@@ -68,7 +68,7 @@ Four consumers file a **class-action complaint in San Francisco federal court** 
 
 ```mermaid
 flowchart LR
-    E["Public \"pace the frontier\" exchange and endorsements"]:::entry
+    E["Public 'pace the frontier' exchange and endorsements"]:::entry
     S0["Class-action alleges an output-restraining agreement (Sherman Act §1)"]:::step
     I["Safety coordination becomes an antitrust question; treble damages sought"]:::impact
     E --> S0 --> I

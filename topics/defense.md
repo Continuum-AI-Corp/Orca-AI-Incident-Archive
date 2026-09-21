@@ -35,7 +35,7 @@ An archive that records only incidents will be lopsided, so we suggest adding a 
 ---
 
 <!-- BEGIN:incidents -->
-## All records (61)
+## All records (63)
 
 | Date | Record | Type | Severity | Confidence | Real harm |
 |---|---|---|---|---|---|
@@ -92,6 +92,7 @@ An archive that records only incidents will be lopsided, so we suggest adding a 
 | `2026-09-07` | [Japan's IPA publishes the August 2026 AI Security Bulletin](../incidents/2026-09/2026-09-07-ipa-fa-bu-duan-xin.md) | `GOV` | Info | A | · |
 | `2026-09-10` | [Hawley opens a Senate investigation into OpenAI over the Hugging Face agent hack](../incidents/2026-09/2026-09-10-hawley-openai-investigation.md) | `GOV` | Info | A | · |
 | `2026-09-12` | [Senators draft a frontier-AI "duty of care" bill with power to block releases](../incidents/2026-09/2026-09-12-ai-duty-of-care-bill.md) | `GOV` | Info | B | · |
+| `2026-09-12` | [Amodei's "We Must Pace the Frontier": slow down, and let evaluators inside](../incidents/2026-09/2026-09-12-amodei-pace-the-frontier.md) | `GOV` | Info | A | · |
 | `2026-09-14` | [Microsoft publishes a draft "Humanist AI" code of conduct for its MAI models](../incidents/2026-09/2026-09-14-microsoft-mai-code-of-conduct.md) | `GOV` | Info | A | · |
 | `2026-09-16` | [Google DeepMind launches the DeepMind Institute for AGI governance](../incidents/2026-09/2026-09-16-deepmind-institute.md) | `GOV` | Info | A | · |
 | `2026-09-16` | [OpenAI discloses six misalignment incidents and a reporting framework](../incidents/2026-09/2026-09-16-openai-misalignment-reports.md) | `EVAL` `GOV` | Medium | A | — |
@@ -100,6 +101,7 @@ An archive that records only incidents will be lopsided, so we suggest adding a 
 | `2026-09-17` | [China's MSS issues an AI-agent security advisory on the DseWiki hijacking](../incidents/2026-09/2026-09-17-china-mss-agent-advisory.md) | `GOV` `EVAL` | Info | A | · |
 | `2026-09-18` | [Consumers sue Anthropic, OpenAI, SpaceXAI and Google over an alleged AI slowdown pact](../incidents/2026-09/2026-09-18-ai-slowdown-antitrust-lawsuit.md) | `GOV` | Info | B | · |
 | `2026-09-18` | [California orders an AI "kill switch" and third-party oversight](../incidents/2026-09/2026-09-18-california-ai-kill-switch-eo.md) | `GOV` | Info | A | · |
+| `2026-09-19` | [Trump announces an "AI Force" and an AI czar, and calls safety fears a hoax](../incidents/2026-09/2026-09-19-trump-ai-force-czar.md) | `GOV` | Info | B | · |
 <!-- END:incidents -->
 
 ---

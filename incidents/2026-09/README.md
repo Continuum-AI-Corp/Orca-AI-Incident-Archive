@@ -1,17 +1,17 @@
 # 2026-09
 
 <!-- BEGIN:summary -->
-**36** records
+**39** records
 
-![records](https://img.shields.io/badge/records-36-48545A?style=flat-square) ![critical](https://img.shields.io/badge/Critical-6-88091D?style=flat-square) ![high](https://img.shields.io/badge/High-13-B23B40?style=flat-square) ![medium](https://img.shields.io/badge/Medium-2-C4615F?style=flat-square) ![info](https://img.shields.io/badge/Info-15-6B7175?style=flat-square)
+![records](https://img.shields.io/badge/records-39-48545A?style=flat-square) ![critical](https://img.shields.io/badge/Critical-6-88091D?style=flat-square) ![high](https://img.shields.io/badge/High-14-B23B40?style=flat-square) ![medium](https://img.shields.io/badge/Medium-2-C4615F?style=flat-square) ![info](https://img.shields.io/badge/Info-17-6B7175?style=flat-square)
 
 ```mermaid
 pie showData
     title 2026-09 by severity
     "Critical" : 6
-    "High" : 13
+    "High" : 14
     "Medium" : 2
-    "Info" : 15
+    "Info" : 17
 ```
 
 ## Records this month
@@ -21,6 +21,7 @@ pie showData
 | `09-01` | ★ [GitSpawn: a malicious .git/config runs attacker code in 7 coding agents before the model is ever contacted](2026-09-01-gitspawn-git-config-pre-model-rce.md) | `SUPPLY` `SANDBOX` | **Critical** | A | — |
 | `09-01` | ["88% of organisations hit a confirmed or suspected AI agent security incident this year"](2026-09-01-agent-zu-zhi-guo-qu.md) | `GOV` | Info | C | · |
 | `09-02` | ★ [Langflow CVE-2026-0768: the 12th Langflow flaw exploited in the wild this year](2026-09-02-langflow-jin-di-ye-li.md) | `INFRA` `CRED` | **Critical** | A | ✅ |
+| `09-02` | [Any bearer token opens LiteLLM's MCP endpoint: CVE-2026-59822 enters CISA KEV](2026-09-02-litellm-mcp-auth-bypass-kev.md) | `INFRA` `MCP` | **High** | A | ✅ |
 | `09-02` | [Unit 42: AI agents compress two weeks of intrusion work into 10 hours](2026-09-02-unit-agent-liang-ru-qin.md) | `WEAPON` | Info | A | · |
 | `09-03` | [Japan: AI voice clone impersonates a CEO, ¥4.5bn lost](2026-09-03-yu-yin-ke-long-mao.md) | `OTHER` | **High** | A | ✅ |
 | `09-03` | [US senators introduce the Ban Artificial Superintelligence Act](2026-09-03-ban-artificial-superintelligence-act.md) | `GOV` | Info | B | · |
@@ -34,6 +35,7 @@ pie showData
 | `09-11` | ★ [Claude used to scan 1.8 million Android apps for secrets](2026-09-11-claude-scans-18m-android-apks.md) | `WEAPON` | **Critical** | A | ✅ |
 | `09-11` | [Researchers link OpenAI agents to the RubyGems "GemStuffer" campaign](2026-09-11-rubygems-gemstuffer.md) ⚠️ | `EVAL` `SUPPLY` | **High** | D | ✅ |
 | `09-12` | [Senators draft a frontier-AI "duty of care" bill with power to block releases](2026-09-12-ai-duty-of-care-bill.md) | `GOV` | Info | B | · |
+| `09-12` | [Amodei's "We Must Pace the Frontier": slow down, and let evaluators inside](2026-09-12-amodei-pace-the-frontier.md) | `GOV` | Info | A | · |
 | `09-14` | ★ [Spain's AEPD receives the first AI-agent-driven breach notification](2026-09-14-spain-aepd-agent-breach.md) | `WEAPON` | **Critical** | A | ✅ |
 | `09-14` | [Microsoft publishes a draft "Humanist AI" code of conduct for its MAI models](2026-09-14-microsoft-mai-code-of-conduct.md) | `GOV` | Info | A | · |
 | `09-15` | ★ [PaperCut AI agent swarm attack made public](2026-09-15-papercut-agent-swarm-disclosed.md) | `WEAPON` | **Critical** | A | ✅ |
@@ -54,6 +56,7 @@ pie showData
 | `09-18` | [Consumers sue Anthropic, OpenAI, SpaceXAI and Google over an alleged AI slowdown pact](2026-09-18-ai-slowdown-antitrust-lawsuit.md) | `GOV` | Info | B | · |
 | `09-18` | [California orders an AI "kill switch" and third-party oversight](2026-09-18-california-ai-kill-switch-eo.md) | `GOV` | Info | A | · |
 | `09-19` | [RoboHarm: leading models rarely refuse dangerous robot-arm commands](2026-09-19-roboharm-benchmark.md) | `ROGUE` | Medium | B | — |
+| `09-19` | [Trump announces an "AI Force" and an AI czar, and calls safety fears a hoax](2026-09-19-trump-ai-force-czar.md) | `GOV` | Info | B | · |
 
 <sub>★ = `critical` · ⚠️ = disputed facts or attribution · real harm: ✅ confirmed victim / — none / · not applicable (policy and intelligence reports)</sub>
 <!-- END:summary -->

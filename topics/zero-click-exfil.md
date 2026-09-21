@@ -29,7 +29,7 @@ The same pattern was replicated 13 times over 15 months, across 6 vendors. **Thi
 ---
 
 <!-- BEGIN:incidents -->
-## All records (48)
+## All records (49)
 
 | Date | Record | Type | Severity | Confidence | Real harm |
 |---|---|---|---|---|---|
@@ -76,6 +76,7 @@ The same pattern was replicated 13 times over 15 months, across 6 vendors. **Thi
 | `2026-06-24` | [BioShocking: dumb the agent down first, then take the password](../incidents/2026-06/2026-06-24-bioshocking-agent-xian-jiao-sha.md) | `IPI` `CRED` | Medium | A | — |
 | `2026-07-02` | ★ [Hidden web instructions make AI agents pay attackers (two in-the-wild campaigns)](../incidents/2026-07/2026-07-02-hidden-web-instructions-payment-fraud.md) | `IPI` `ROGUE` | **Critical** | A | ✅ |
 | `2026-07-07` | [GitLost: GitHub Agentic Workflows leak private repositories](../incidents/2026-07/2026-07-07-gitlost-github-agentic-workflows.md) | `IPI` `EXFIL` | Medium | A | — |
+| `2026-08-11` | [GhostSplice: splitting one refused request across three trusted channels takes compliance from 42% to 82%](../incidents/2026-08/2026-08-11-ghostsplice-cross-channel-fragmentation.md) | `MCP` `IPI` `EXFIL` | **High** | B | — |
 | `2026-08-18` | [CoSnitch (CVE-2026-24301)](../incidents/2026-08/2026-08-18-cosnitch.md) | `IPI` `EXFIL` | **High** | A | — |
 | `2026-08-19` | [Grok "cryptographic context injection": encrypted instructions, plaintext data](../incidents/2026-08/2026-08-19-grok-mi-ma-xue-wen.md) | `IPI` `EXFIL` | **High** | A | — |
 | `2026-09-08` | [ChatGPT sandbox flaw pipes a victim's Gmail data into the attacker's account](../incidents/2026-09/2026-09-08-chatgpt-gmail-sha-xiang-que.md) | `EXFIL` | **High** | A | ✅ |

@@ -32,7 +32,7 @@
 ---
 
 <!-- BEGIN:incidents -->
-## All records (60)
+## All records (63)
 
 | Date | Record | Type | Severity | Confidence | Real harm |
 |---|---|---|---|---|---|
@@ -90,9 +90,12 @@
 | `2026-07-30` | [RufRoot (CVE-2026-59726): perfect CVSS, summons a rogue AI swarm](../incidents/2026-07/2026-07-30-rufroot-man-fen-zhao-huan.md) | `MCP` `INFRA` | **High** | A | — |
 | `2026-08-04` | ★ [CHAINDROP npm worm](../incidents/2026-08/2026-08-04-chaindrop-npm-ru-chong.md) | `SUPPLY` `CRED` | **Critical** | A | ✅ |
 | `2026-08-05` | [AWS Transform MCP arbitrary file write](../incidents/2026-08/2026-08-05-aws-transform-mcp.md) | `MCP` | **High** | A | — |
+| `2026-08-10` | [Deadbugz: an MCP server that turns hostile on the third tool call, pushed to 23 repositories in 74 minutes](../incidents/2026-08/2026-08-10-deadbugz-mcp-supply-chain.md) | `SUPPLY` `MCP` `CRED` | **High** | A | — |
+| `2026-08-11` | [GhostSplice: splitting one refused request across three trusted channels takes compliance from 42% to 82%](../incidents/2026-08/2026-08-11-ghostsplice-cross-channel-fragmentation.md) | `MCP` `IPI` `EXFIL` | **High** | B | — |
 | `2026-08-17` | [AI finds a flaw AI helped write: Snowflake's Jira token](../incidents/2026-08/2026-08-17-snowflake-jira-zhao-dao-can.md) | `CRED` `SUPPLY` | **High** | A | ✅ |
 | `2026-08-18` | [Context7 MCP prompt injection (CVE-2026-75130)](../incidents/2026-08/2026-08-18-context7-mcp-ti-shi-zhu.md) | `MCP` `CRED` | **High** | A | — |
 | `2026-09-01` | ★ [GitSpawn: a malicious .git/config runs attacker code in 7 coding agents before the model is ever contacted](../incidents/2026-09/2026-09-01-gitspawn-git-config-pre-model-rce.md) | `SUPPLY` `SANDBOX` | **Critical** | A | — |
+| `2026-09-02` | [Any bearer token opens LiteLLM's MCP endpoint: CVE-2026-59822 enters CISA KEV](../incidents/2026-09/2026-09-02-litellm-mcp-auth-bypass-kev.md) | `INFRA` `MCP` | **High** | A | ✅ |
 | `2026-09-11` | [Researchers link OpenAI agents to the RubyGems "GemStuffer" campaign](../incidents/2026-09/2026-09-11-rubygems-gemstuffer.md) ⚠️ | `EVAL` `SUPPLY` | **High** | D | ✅ |
 | `2026-09-16` | [BragJack: one browser extension hijacks the AI agents in five major browsers](../incidents/2026-09/2026-09-16-bragjack-browser-agents.md) | `SUPPLY` `IPI` | **High** | B | — |
 | `2026-09-17` | [Plugin4Shell: a zero-click RCE chain hits four AI coding agents](../incidents/2026-09/2026-09-17-plugin4shell-coding-agents.md) | `SUPPLY` | **High** | B | — |

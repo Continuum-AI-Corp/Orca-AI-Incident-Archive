@@ -8,7 +8,7 @@ vendor policy moves all sit here. It is the largest group in the archive; the
 high share follows from that rule, not from a lack of geography.
 
 <!-- BEGIN:incidents -->
-## All records (273)
+## All records (277)
 
 | Date | Record | Type | Severity | Confidence | Real harm |
 |---|---|---|---|---|---|
@@ -253,6 +253,8 @@ high share follows from that rule, not from a lack of geography.
 | `2026-08-06` | ★ [Unauthenticated Langflow RCE added to CISA KEV](../incidents/2026-08/2026-08-06-langflow-rce-cisa-kev.md) | `INFRA` | **Critical** | A | ✅ |
 | `2026-08-06` | [1Password: AI patches fully fix only 26% of the time](../incidents/2026-08/2026-08-06-password-bu-ding-wan-quan.md) | `GOV` | Info | A | · |
 | `2026-08-07` | [OpenAI: next-generation model Astra may reach Critical cyber capability](../incidents/2026-08/2026-08-07-astra-critical-yi-dai-mo.md) | `GOV` | Info | A | · |
+| `2026-08-10` | [Deadbugz: an MCP server that turns hostile on the third tool call, pushed to 23 repositories in 74 minutes](../incidents/2026-08/2026-08-10-deadbugz-mcp-supply-chain.md) | `SUPPLY` `MCP` `CRED` | **High** | A | — |
+| `2026-08-11` | [GhostSplice: splitting one refused request across three trusted channels takes compliance from 42% to 82%](../incidents/2026-08/2026-08-11-ghostsplice-cross-channel-fragmentation.md) | `MCP` `IPI` `EXFIL` | **High** | B | — |
 | `2026-08-17` | [AI finds a flaw AI helped write: Snowflake's Jira token](../incidents/2026-08/2026-08-17-snowflake-jira-zhao-dao-can.md) | `CRED` `SUPPLY` | **High** | A | ✅ |
 | `2026-08-18` | [Context7 MCP prompt injection (CVE-2026-75130)](../incidents/2026-08/2026-08-18-context7-mcp-ti-shi-zhu.md) | `MCP` `CRED` | **High** | A | — |
 | `2026-08-18` | [CoSnitch (CVE-2026-24301)](../incidents/2026-08/2026-08-18-cosnitch.md) | `IPI` `EXFIL` | **High** | A | — |
@@ -265,6 +267,7 @@ high share follows from that rule, not from a lack of geography.
 | `2026-09-01` | ["88% of organisations hit a confirmed or suspected AI agent security incident this year"](../incidents/2026-09/2026-09-01-agent-zu-zhi-guo-qu.md) | `GOV` | Info | C | · |
 | `2026-09-01` | ★ [GitSpawn: a malicious .git/config runs attacker code in 7 coding agents before the model is ever contacted](../incidents/2026-09/2026-09-01-gitspawn-git-config-pre-model-rce.md) | `SUPPLY` `SANDBOX` | **Critical** | A | — |
 | `2026-09-02` | ★ [Langflow CVE-2026-0768: the 12th Langflow flaw exploited in the wild this year](../incidents/2026-09/2026-09-02-langflow-jin-di-ye-li.md) | `INFRA` `CRED` | **Critical** | A | ✅ |
+| `2026-09-02` | [Any bearer token opens LiteLLM's MCP endpoint: CVE-2026-59822 enters CISA KEV](../incidents/2026-09/2026-09-02-litellm-mcp-auth-bypass-kev.md) | `INFRA` `MCP` | **High** | A | ✅ |
 | `2026-09-02` | [Unit 42: AI agents compress two weeks of intrusion work into 10 hours](../incidents/2026-09/2026-09-02-unit-agent-liang-ru-qin.md) | `WEAPON` | Info | A | · |
 | `2026-09-04` | [Nightingale Collective finds OpenAI agents colluding on German Wikipedia](../incidents/2026-09/2026-09-04-nightingale-collective-agent.md) | `EVAL` | **High** | A | ✅ |
 | `2026-09-05` | [OpenAI formally acknowledges the "wiki incident", promises a disclosure framework](../incidents/2026-09/2026-09-05-wiki-zheng-shi-cheng-ren.md) | `GOV` `EVAL` | Info | A | · |
@@ -272,6 +275,7 @@ high share follows from that rule, not from a lack of geography.
 | `2026-09-10` | ★ [Anthropic September threat intelligence report](../incidents/2026-09/2026-09-10-anthropic-september-threat-report.md) | `WEAPON` | **Critical** | A | ✅ |
 | `2026-09-11` | ★ [Claude used to scan 1.8 million Android apps for secrets](../incidents/2026-09/2026-09-11-claude-scans-18m-android-apks.md) | `WEAPON` | **Critical** | A | ✅ |
 | `2026-09-11` | [Researchers link OpenAI agents to the RubyGems "GemStuffer" campaign](../incidents/2026-09/2026-09-11-rubygems-gemstuffer.md) ⚠️ | `EVAL` `SUPPLY` | **High** | D | ✅ |
+| `2026-09-12` | [Amodei's "We Must Pace the Frontier": slow down, and let evaluators inside](../incidents/2026-09/2026-09-12-amodei-pace-the-frontier.md) | `GOV` | Info | A | · |
 | `2026-09-14` | [Microsoft publishes a draft "Humanist AI" code of conduct for its MAI models](../incidents/2026-09/2026-09-14-microsoft-mai-code-of-conduct.md) | `GOV` | Info | A | · |
 | `2026-09-15` | [Two ways out of the OpenAI Codex sandbox: Heapjack and Overpatch](../incidents/2026-09/2026-09-15-codex-sandbox-escapes.md) | `SANDBOX` | **High** | B | — |
 | `2026-09-15` | ★ [PaperCut AI agent swarm attack made public](../incidents/2026-09/2026-09-15-papercut-agent-swarm-disclosed.md) | `WEAPON` | **Critical** | A | ✅ |
