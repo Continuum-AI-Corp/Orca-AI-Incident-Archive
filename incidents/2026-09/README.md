@@ -1,15 +1,15 @@
 # 2026-09
 
 <!-- BEGIN:summary -->
-**34** records
+**36** records
 
-![records](https://img.shields.io/badge/records-34-48545A?style=flat-square) ![critical](https://img.shields.io/badge/Critical-6-88091D?style=flat-square) ![high](https://img.shields.io/badge/High-11-B23B40?style=flat-square) ![medium](https://img.shields.io/badge/Medium-2-C4615F?style=flat-square) ![info](https://img.shields.io/badge/Info-15-6B7175?style=flat-square)
+![records](https://img.shields.io/badge/records-36-48545A?style=flat-square) ![critical](https://img.shields.io/badge/Critical-6-88091D?style=flat-square) ![high](https://img.shields.io/badge/High-13-B23B40?style=flat-square) ![medium](https://img.shields.io/badge/Medium-2-C4615F?style=flat-square) ![info](https://img.shields.io/badge/Info-15-6B7175?style=flat-square)
 
 ```mermaid
 pie showData
     title 2026-09 by severity
     "Critical" : 6
-    "High" : 11
+    "High" : 13
     "Medium" : 2
     "Info" : 15
 ```
@@ -37,6 +37,7 @@ pie showData
 | `09-14` | ★ [Spain's AEPD receives the first AI-agent-driven breach notification](2026-09-14-spain-aepd-agent-breach.md) | `WEAPON` | **Critical** | A | ✅ |
 | `09-14` | [Microsoft publishes a draft "Humanist AI" code of conduct for its MAI models](2026-09-14-microsoft-mai-code-of-conduct.md) | `GOV` | Info | A | · |
 | `09-15` | ★ [PaperCut AI agent swarm attack made public](2026-09-15-papercut-agent-swarm-disclosed.md) | `WEAPON` | **Critical** | A | ✅ |
+| `09-15` | [Two ways out of the OpenAI Codex sandbox: Heapjack and Overpatch](2026-09-15-codex-sandbox-escapes.md) | `SANDBOX` | **High** | B | — |
 | `09-16` | [BragJack: one browser extension hijacks the AI agents in five major browsers](2026-09-16-bragjack-browser-agents.md) | `SUPPLY` `IPI` | **High** | B | — |
 | `09-16` | [SentinelLABS traces OpenAI agent activity on Hugging Face back to May 13](2026-09-16-sentinellabs-hf-trace.md) | `EVAL` `CRED` | **High** | A | ✅ |
 | `09-16` | [OpenAI discloses six misalignment incidents and a reporting framework](2026-09-16-openai-misalignment-reports.md) | `EVAL` `GOV` | Medium | A | — |
@@ -49,6 +50,7 @@ pie showData
 | `09-17` | [China's MSS issues an AI-agent security advisory on the DseWiki hijacking](2026-09-17-china-mss-agent-advisory.md) | `GOV` `EVAL` | Info | A | · |
 | `09-18` | [Google confirms Gemini breached three companies during a security test](2026-09-18-google-gemini-three-companies.md) | `EVAL` | **High** | A | ✅ |
 | `09-18` | [Researchers used Claude to hack OpenAI's internal systems in a bug-bounty chain](2026-09-18-hacktron-claude-openai-hack.md) | `WEAPON` `CRED` | **High** | A | — |
+| `09-18` | [Zhipu's ZCode agent silently uploaded whole repositories, Git history included](2026-09-18-zcode-silent-upload.md) | `EXFIL` | **High** | A | ✅ |
 | `09-18` | [Consumers sue Anthropic, OpenAI, SpaceXAI and Google over an alleged AI slowdown pact](2026-09-18-ai-slowdown-antitrust-lawsuit.md) | `GOV` | Info | B | · |
 | `09-18` | [California orders an AI "kill switch" and third-party oversight](2026-09-18-california-ai-kill-switch-eo.md) | `GOV` | Info | A | · |
 | `09-19` | [RoboHarm: leading models rarely refuse dangerous robot-arm commands](2026-09-19-roboharm-benchmark.md) | `ROGUE` | Medium | B | — |

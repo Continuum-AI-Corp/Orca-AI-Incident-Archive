@@ -3,6 +3,7 @@ https://0din.ai/blog/clone-this-repo-and-i-own-your-machine
 https://1password.com/blog/why-ai-generated-patches-still-require-human-review
 https://1password.com/files/resources/frontier-models-vulnerability-patches-flawed.pdf
 https://9to5google.com/2026/09/19/google-confirms-gemini-hacked-into-three-companies-during-cybersecurity-test-months-ago/
+https://accomplish.ai/blog/escaping-the-openai-codex-sandbox-twice/
 https://adnanthekhan.com/posts/clinejection/#pre-publication
 https://adversa.ai/blog/ai-coding-agent-incidents/
 https://adversa.ai/blog/cryptographic-context-injection-grok-data-theft/
@@ -167,6 +168,8 @@ https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-85889
 https://neuraltrust.ai/blog/grok-morse-code
 https://neuraltrust.ai/blog/openai-atlas-omnibox-prompt-injection
 https://news.china.com.cn/2026-09/17/content_118699807.shtml
+https://news.qq.com/rain/a/20260920A05HHD00
+https://news.qq.com/rain/a/20260921A02ESY00
 https://noma.security/blog/forcedleak-agent-risks-exposed-in-salesforce-agentforce
 https://noma.security/blog/gitlost-how-we-tricked-githubs-ai-agent-into-leaking-private-repos/
 https://nvd.nist.gov/vuln/detail/CVE-2026-26118
@@ -297,6 +300,7 @@ https://www-cdn.anthropic.com/d7dd50dd1185f59be051b307150d877f2b82bd2c.pdf
 https://www-cdn.anthropic.com/e50be2e51e7695dc4b1366a37a245a597377d3b5/Anthropic-Detecting-and-countering-091026.pdf
 https://www.404media.co/hacker-plants-computer-wiping-commands-in-amazons-ai-coding-agent/
 https://www.404media.co/hackers-simply-asked-meta-ai-to-give-them-access-to-high-profile-instagram-accounts-it-worked/
+https://www.51cto.com/article/856105.html
 https://www.abc.net.au/news/2026-08-10/ai-assistant-hacks-gym-website-aus-cyber-attack/107007986
 https://www.aepd.es/prensa-y-comunicacion/blog/primera-notiviacion-brecha-datos-personales-causada-por-ataque-ejecutado-mediante-agente-ia
 https://www.aibase.com/news/16138
@@ -333,6 +337,7 @@ https://www.bleepingcomputer.com/news/security/cursor-codex-gemini-cli-antigravi
 https://www.bleepingcomputer.com/news/security/fake-openai-repository-on-hugging-face-pushes-infostealer-malware/
 https://www.bleepingcomputer.com/news/security/hackers-abused-claude-to-extract-secrets-from-18m-android-apps/
 https://www.bleepingcomputer.com/news/security/new-bioshocking-attack-manipulates-ai-browser-into-data-theft/
+https://www.bleepingcomputer.com/news/security/researchers-escape-openai-codex-sandbox-to-run-commands-on-host/
 https://www.bleepingcomputer.com/news/security/spain-reports-first-alleged-ai-powered-data-theft-attack/
 https://www.bleepingcomputer.com/news/security/transunion-suffers-data-breach-impacting-over-44-million-people/
 https://www.bloomberg.com/jp/news/articles/2026-04-10/TD95ABT9NJMP00
@@ -377,6 +382,7 @@ https://www.esentire.com/security-advisories/nginx-ui-authentication-bypass-vuln
 https://www.euronews.com/my-europe/2026/09/16/eus-von-der-leyen-calls-for-pacing-frontier-ai-models
 https://www.europol.europa.eu/media-press/newsroom/news/global-cyber-strike-disrupts-socgholish-amadey-and-stealc-malware-networks
 https://www.finra.org/rules-guidance/guidance/salesloft-drift-AI-supply-chain-attack
+https://www.freebuf.com/articles/501972.html
 https://www.gate.com/zh/news/detail/senate-committee-launches-investigation-into-openai-over-hugging-face-24168426
 https://www.gibsondunn.com/eu-ai-act-omnibus-agreement-postponed-high-risk-deadlines-and-other-key-changes/
 https://www.globenewswire.com/news-release/2025/10/22/3171164/0/en/Operant-AI-Discovers-Shadow-Escape-The-First-Zero-Click-Agentic-Attack-via-MCP.html
@@ -424,6 +430,7 @@ https://www.oligo.security/blog/critical-rce-vulnerability-in-anthropic-mcp-insp
 https://www.oligo.security/blog/shadowray-attack-ai-workloads-actively-exploited-in-the-wild
 https://www.operant.ai/art-kubed/shadow-escape
 https://www.orcarouter.ai/blog/gemini-3-5-flash-vandalism-reports
+https://www.oschina.net/news/502589
 https://www.ox.security/blog/malicious-chrome-extensions-steal-chatgpt-deepseek-conversations/
 https://www.permissionprotocol.com/agent-incident-tracker
 https://www.picussecurity.com/resource/blog/cve-2026-33032-mcpwn-how-a-missing-middleware-call-in-nginx-ui-hands-attackers-full-web-server-takeover
@@ -450,6 +457,7 @@ https://www.scworld.com/news/cursor-vulnerability-enables-stealthy-rce-via-indir
 https://www.scworld.com/news/how-ai-coding-assistants-could-be-compromised-via-rules-file
 https://www.secrss.com/articles/76168
 https://www.secrss.com/articles/86614
+https://www.secrss.com/articles/94149
 https://www.securityweek.com/ai-firm-braintrust-prompts-api-key-rotation-after-data-breach/
 https://www.securityweek.com/critical-cursor-ai-ide-flaws-could-lead-to-os-level-remote-code-execution/
 https://www.securityweek.com/critical-ruflo-flaw-lets-attackers-spawn-rogue-ai-swarms/amp/

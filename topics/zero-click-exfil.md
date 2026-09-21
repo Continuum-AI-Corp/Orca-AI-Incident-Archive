@@ -29,7 +29,7 @@ The same pattern was replicated 13 times over 15 months, across 6 vendors. **Thi
 ---
 
 <!-- BEGIN:incidents -->
-## All records (47)
+## All records (48)
 
 | Date | Record | Type | Severity | Confidence | Real harm |
 |---|---|---|---|---|---|
@@ -80,6 +80,7 @@ The same pattern was replicated 13 times over 15 months, across 6 vendors. **Thi
 | `2026-08-19` | [Grok "cryptographic context injection": encrypted instructions, plaintext data](../incidents/2026-08/2026-08-19-grok-mi-ma-xue-wen.md) | `IPI` `EXFIL` | **High** | A | — |
 | `2026-09-08` | [ChatGPT sandbox flaw pipes a victim's Gmail data into the attacker's account](../incidents/2026-09/2026-09-08-chatgpt-gmail-sha-xiang-que.md) | `EXFIL` | **High** | A | ✅ |
 | `2026-09-16` | [BragJack: one browser extension hijacks the AI agents in five major browsers](../incidents/2026-09/2026-09-16-bragjack-browser-agents.md) | `SUPPLY` `IPI` | **High** | B | — |
+| `2026-09-18` | [Zhipu's ZCode agent silently uploaded whole repositories, Git history included](../incidents/2026-09/2026-09-18-zcode-silent-upload.md) | `EXFIL` | **High** | A | ✅ |
 <!-- END:incidents -->
 
 ---

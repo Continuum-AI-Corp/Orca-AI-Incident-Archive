@@ -12,7 +12,7 @@
   "fr",
   "es"
  ],
- "count": 333,
+ "count": 335,
  "incidents": [
   {
    "id": "2024-12-01-storm-azure-llmjacking",
@@ -14589,6 +14589,57 @@
    ]
   },
   {
+   "id": "2026-09-15-codex-sandbox-escapes",
+   "title": "Two ways out of the OpenAI Codex sandbox: Heapjack and Overpatch",
+   "title_zh": "OpenAI Codex 沙箱的两种逃逸：Heapjack 与 Overpatch",
+   "title_ja": "OpenAI Codexサンドボックスからの2つの脱出：HeapjackとOverpatch",
+   "title_ko": "OpenAI Codex 샌드박스 탈출 두 가지: Heapjack과 Overpatch",
+   "title_de": "Zwei Wege aus der OpenAI-Codex-Sandbox: Heapjack und Overpatch",
+   "title_fr": "Deux façons de sortir du bac à sable d'OpenAI Codex : Heapjack et Overpatch",
+   "title_es": "Dos formas de salir del sandbox de OpenAI Codex: Heapjack y Overpatch",
+   "date": "2026-09-15",
+   "date_end": null,
+   "date_precision": "day",
+   "date_raw": "2026-09-15",
+   "month": "2026-09",
+   "kind": "research",
+   "type": [
+    "SANDBOX"
+   ],
+   "severity": "high",
+   "confidence": "B",
+   "real_harm": false,
+   "ai_involvement": "confirmed",
+   "region": [
+    "GLOBAL"
+   ],
+   "summary": "**Oren Yomtov (Accomplish AI)** discloses two ways out of the **OpenAI Codex** sandbox, reported on **12 August** and fixed within eight days. **Heapjack**: Codex Desktop installs an unsandboxed native `node_repl` tool whose trusted and untrusted V8 contexts **share one memory heap**, so the untrusted side reads the trust token from a heap snapshot, forges a request onto the pipe to the native parent and gets **unsandboxed command execution from read-only mode** — no approval prompt, nothing on screen; open someone's repository, ask a question, and its author can run code on your machine. **Overpatch**: Codex CLI's `apply_patch` grants write access to the parent folder of every path in a patch, so naming `/tmp` widens the grant to the whole disk and one appended line to `.zshrc` runs in the next terminal. Fixed in Codex Desktop **26.818.21641** and Codex CLI **0.149.0**",
+   "summary_zh": "**Oren Yomtov（Accomplish AI）**披露 **OpenAI Codex** 沙箱的两种逃逸方式，均于 **8 月 12 日**上报、8 天内修复。**Heapjack**：Codex Desktop 会安装一个未沙箱化的原生 `node_repl` 工具，其可信与不可信两个 V8 上下文**共享同一内存堆**——不可信代码从堆快照中读出信任令牌，伪造请求写入通往原生父进程的管道，从而**在 read-only（最严格）模式下取得未沙箱化的命令执行**：无审批提示、界面无任何显示；打开别人的仓库、问一个问题，仓库作者就能在你的机器上执行代码。**Overpatch**：Codex CLI 的 `apply_patch` 会为补丁中每个路径的父目录授予写权限——命名 `/tmp` 即把授权扩大到整个磁盘，再经软链向 `.zshrc` 追加一行，下个终端就会执行。修复版本：Codex Desktop **26.818.21641**、Codex CLI **0.149.0**",
+   "summary_ja": "**Oren Yomtov氏（Accomplish AI）**が**OpenAI Codex**サンドボックスの2つの脱出経路を公表。いずれも**8月12日**に報告され、8日以内に修正された。**Heapjack**：Codex Desktopはサンドボックス外のネイティブ`node_repl`ツールを導入し、信頼済み／未信頼の2つのV8コンテキストが**同一ヒープを共有**。未信頼側はヒープスナップショットから信頼トークンを読み取り、ネイティブ親プロセスへのパイプに偽のリクエストを書き込み、**read-only（最厳格モード）からサンドボックス外のコマンド実行**を得る——承認プロンプトも画面表示もなし。他人のリポジトリを開いて質問するだけで、作者があなたのマシンでコードを実行できる。**Overpatch**：Codex CLIの`apply_patch`はパッチ内の各パスの親フォルダに書き込み権限を与えるため、`/tmp`と名付けるだけでディスク全体に権限が広がり、`.zshrc`への1行追記が次のターミナルで実行される。修正版：Codex Desktop **26.818.21641**、Codex CLI **0.149.0**",
+   "summary_ko": "**Oren Yomtov(Accomplish AI)**가 **OpenAI Codex** 샌드박스를 빠져나가는 두 가지 방법을 공개했다. 둘 다 **8월 12일**에 보고돼 8일 안에 수정됐다. **Heapjack**: Codex Desktop은 샌드박스 밖 네이티브 `node_repl` 도구를 설치하는데, 신뢰/비신뢰 두 V8 컨텍스트가 **하나의 메모리 힙을 공유**한다. 비신뢰 측은 힙 스냅샷에서 신뢰 토큰을 읽어 네이티브 부모 프로세스로 가는 파이프에 위조 요청을 쓰고, **read-only(가장 엄격한 모드)에서 샌드박스 밖 명령 실행**을 얻는다 — 승인 프롬프트도, 화면 표시도 없다. 남의 저장소를 열고 질문만 해도 작성자가 당신 컴퓨터에서 코드를 실행할 수 있다. **Overpatch**: Codex CLI의 `apply_patch`는 패치에 적힌 각 경로의 상위 폴더에 쓰기 권한을 부여하므로 `/tmp`라고 쓰면 권한이 디스크 전체로 확대되고, `.zshrc`에 한 줄만 덧붙이면 다음 터미널에서 실행된다. 수정 버전: Codex Desktop **26.818.21641**, Codex CLI **0.149.0**",
+   "summary_de": "**Oren Yomtov (Accomplish AI)** veröffentlicht zwei Wege aus der **OpenAI-Codex-Sandbox**, gemeldet am **12. August** und binnen acht Tagen behoben. **Heapjack**: Codex Desktop installiert ein nicht sandboxed natives `node_repl`-Tool, dessen vertrauenswürdiger und nicht vertrauenswürdiger V8-Kontext **einen Heap teilen** — die nicht vertrauenswürdige Seite liest das Vertrauens-Token aus einem Heap-Snapshot, schreibt eine gefälschte Anfrage in die Pipe zum nativen Elternprozess und erhält **unsandboxed Befehlsausführung aus dem read-only-Modus** — ohne Genehmigungsdialog, ohne sichtbare Anzeige; ein fremdes Repository öffnen und eine Frage stellen genügt, damit dessen Autor Code auf dem eigenen Rechner ausführt. **Overpatch**: Das `apply_patch` der Codex CLI gewährt Schreibzugriff auf den Elternordner jedes im Patch genannten Pfads — `/tmp` zu nennen erweitert die Freigabe auf die ganze Festplatte, und eine angehängte Zeile in `.zshrc` läuft im nächsten Terminal. Behoben in Codex Desktop **26.818.21641** und Codex CLI **0.149.0**",
+   "summary_fr": "**Oren Yomtov (Accomplish AI)** divulgue deux façons de sortir du bac à sable d'**OpenAI Codex**, signalées le **12 août** et corrigées en huit jours. **Heapjack** : Codex Desktop installe un outil natif `node_repl` hors bac à sable dont les contextes V8 de confiance et non fiables **partagent un même tas mémoire** ; le côté non fiable lit le jeton de confiance dans un instantané du tas, écrit une requête forgée dans le tuyau vers le processus parent natif et obtient **l'exécution de commandes hors bac à sable depuis le mode read-only** — sans invite d'approbation ni affichage ; ouvrir le dépôt de quelqu'un et poser une question suffit à ce que son auteur exécute du code sur votre machine. **Overpatch** : l'`apply_patch` de la CLI Codex accorde l'écriture au dossier parent de chaque chemin du patch — nommer `/tmp` étend l'autorisation à tout le disque, et une ligne ajoutée à `.zshrc` s'exécute au terminal suivant. Corrigé dans Codex Desktop **26.818.21641** et Codex CLI **0.149.0**",
+   "summary_es": "**Oren Yomtov (Accomplish AI)** divulga dos formas de salir del sandbox de **OpenAI Codex**, reportadas el **12 de agosto** y corregidas en ocho días. **Heapjack**: Codex Desktop instala una herramienta nativa `node_repl` fuera del sandbox cuyos contextos V8 de confianza y no confiable **comparten un mismo montón de memoria**: el lado no confiable lee el token de confianza de una instantánea del montón, escribe una petición falsificada en la tubería hacia el proceso padre nativo y logra **ejecución de comandos fuera del sandbox desde el modo read-only** — sin aviso de aprobación ni nada en pantalla; basta abrir el repositorio de otra persona y hacerle una pregunta para que su autor ejecute código en tu máquina. **Overpatch**: el `apply_patch` de la CLI de Codex concede escritura a la carpeta padre de cada ruta del parche — nombrar `/tmp` amplía el permiso a todo el disco y una línea añadida a `.zshrc` se ejecuta en el siguiente terminal. Corregido en Codex Desktop **26.818.21641** y Codex CLI **0.149.0**",
+   "disputed": false,
+   "landmark": false,
+   "path": "incidents/2026-09/2026-09-15-codex-sandbox-escapes.md",
+   "path_zh": "incidents/i18n/zh/2026-09/2026-09-15-codex-sandbox-escapes.md",
+   "sources": [
+    {
+     "url": "https://accomplish.ai/blog/escaping-the-openai-codex-sandbox-twice/",
+     "label": "Accomplish"
+    },
+    {
+     "url": "https://www.bleepingcomputer.com/news/security/researchers-escape-openai-codex-sandbox-to-run-commands-on-host/",
+     "label": "BleepingComputer"
+    },
+    {
+     "url": "https://www.51cto.com/article/856105.html",
+     "label": "51CTO"
+    }
+   ]
+  },
+  {
    "id": "2026-09-15-papercut-agent-swarm-disclosed",
    "title": "PaperCut AI agent swarm attack made public",
    "title_zh": "PaperCut AI agent 蜂群攻击公开",
@@ -15391,6 +15442,65 @@
     {
      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-32882",
      "label": "NVD"
+    }
+   ]
+  },
+  {
+   "id": "2026-09-18-zcode-silent-upload",
+   "title": "Zhipu's ZCode agent silently uploaded whole repositories, Git history included",
+   "title_zh": "智谱 ZCode 静默上传完整代码仓库，含 Git 历史",
+   "title_ja": "智譜のZCode、リポジトリ全体をGit履歴ごと無断アップロード",
+   "title_ko": "즈푸 ZCode, Git 기록 포함 저장소 전체를 몰래 업로드",
+   "title_de": "Zhipus ZCode lud heimlich ganze Repositories samt Git-Historie hoch",
+   "title_fr": "ZCode (Zhipu) a téléversé en silence des dépôts entiers, historique Git compris",
+   "title_es": "ZCode de Zhipu subió en silencio repositorios completos, incluida la historia de Git",
+   "date": "2026-09-18",
+   "date_end": null,
+   "date_precision": "day",
+   "date_raw": "2026-09-18→21",
+   "month": "2026-09",
+   "kind": "incident",
+   "type": [
+    "EXFIL"
+   ],
+   "severity": "high",
+   "confidence": "A",
+   "real_harm": true,
+   "ai_involvement": "confirmed",
+   "region": [
+    "CN"
+   ],
+   "summary": "Users discover that **Zhipu's AI coding agent ZCode** silently packages the **entire workspace and uploads it**: a developer's forensic write-up finds a **313 MB encrypted archive** in the hidden `~/.zcode` directory holding roughly **42,000 files, 86.6% of them `.git` history** — so deleted keys, configs and business traces travel with it. The encryption key is delivered by the server and kept only in the cloud, and **no setting turns the upload off**. Zhipu apologises the same day, blaming the default-on **codebase-indexing** feature and saying the data exists only long enough to generate a repo wiki and is then destroyed; a customer, **Chengming Technology**, disputes that, says it still detected uploads after the fix, and demands written answers — including whether data left the country — by **10 October**. Zhipu has since open-sourced ZCode and reports rectification complete in v3.14.0",
+   "summary_zh": "用户发现**智谱 AI 编程 agent ZCode** 会静默打包**整个工作区并上传**：一位开发者的取证记录在隐藏目录 `~/.zcode` 中找到 **313MB 加密压缩包**，内含约 **4.2 万个文件、其中 86.6% 是 `.git` 历史**——已删除的密钥、配置与业务痕迹一并被打包带走；加密密钥由服务端下发、仅存于云端，**没有任何设置能关闭上传**。智谱当日致歉，将原因归于默认开启的**「代码库索引」**功能，称数据只为生成仓库 Wiki 而短暂存在、随后即销毁；客户**太原承明科技**对此提出异议，称修复后仍检测到上传行为，并要求智谱在 **10 月 10 日前**书面答复——包括数据是否出境。此后智谱已开源 ZCode，并称 v3.14.0 已完成整改",
+   "summary_ja": "ユーザーは、**智譜（Zhipu）のAIコーディングエージェントZCode**が**ワークスペース全体を無断でパッケージしてアップロード**していることを発見した。開発者のフォレンジック記録は、隠しディレクトリ`~/.zcode`内に**313MBの暗号化アーカイブ**（約**4.2万ファイル、うち86.6%が`.git`履歴**）を見つけた——削除済みの鍵や設定、業務の痕跡も一緒に持ち出される。暗号鍵はサーバーから配信されクラウドにのみ保管され、**アップロードを止める設定は存在しない**。智譜は同日謝罪し、デフォルト有効の**「コードベース・インデックス」**機能が原因と説明、データはリポジトリWiki生成のためだけに存在し後に破棄されるとした。顧客の**太原承明科技**はこれを争い、修正後もアップロードを検知したと述べ、データが国外に出たかを含め**10月10日**までの書面回答を要求。智譜はその後ZCodeをオープンソース化し、v3.14.0で整改完了と発表した",
+   "summary_ko": "사용자들은 **즈푸(Zhipu)의 AI 코딩 에이전트 ZCode**가 **작업 공간 전체를 몰래 묶어 업로드**한다는 사실을 발견했다. 한 개발자의 포렌식 분석은 숨겨진 `~/.zcode` 디렉터리에서 **313MB 암호화 압축 파일**(약 **4만2천 개 파일, 그중 86.6%가 `.git` 기록**)을 찾아냈다 — 삭제된 키·설정·업무 흔적까지 함께 빠져나간다. 암호화 키는 서버가 내려주고 클라우드에만 보관되며, **업로드를 끄는 설정은 없다**. 즈푸는 같은 날 사과하며 기본 활성화된 **'코드베이스 인덱싱'** 기능 탓이라 설명하고, 데이터는 저장소 위키 생성에만 쓰인 뒤 파기된다고 밝혔다. 고객사 **타이위안 청밍커지**는 이에 반박하며 수정 후에도 업로드가 탐지됐다고 주장하고, 데이터의 국외 이전 여부 등을 포함해 **10월 10일**까지 서면 답변을 요구했다. 즈푸는 이후 ZCode를 오픈소스화하고 v3.14.0에서 개선 완료를 발표했다",
+   "summary_de": "Nutzer entdecken, dass **Zhipus KI-Coding-Agent ZCode** den **gesamten Arbeitsbereich still verpackt und hochlädt**: Eine forensische Analyse eines Entwicklers findet im versteckten Verzeichnis `~/.zcode` ein **313 MB großes verschlüsseltes Archiv** mit rund **42.000 Dateien, davon 86,6% `.git`-Historie** — gelöschte Schlüssel, Konfigurationen und Geschäftsspuren reisen mit. Der Schlüssel wird vom Server geliefert und nur in der Cloud gehalten, und **keine Einstellung schaltet den Upload ab**. Zhipu entschuldigt sich am selben Tag, macht die standardmäßig aktive **Codebase-Indizierung** verantwortlich und erklärt, die Daten dienten nur der Erzeugung eines Repo-Wikis und würden danach vernichtet; der Kunde **Chengming Technology** bestreitet das, will auch nach dem Fix Uploads erkannt haben und verlangt bis zum **10. Oktober** schriftliche Antworten — auch dazu, ob Daten ins Ausland gingen. Zhipu hat ZCode inzwischen quelloffen gemacht und meldet die Behebung in v3.14.0 als abgeschlossen",
+   "summary_fr": "Des utilisateurs découvrent que **l'agent de codage IA ZCode de Zhipu** empaquette en silence **tout l'espace de travail et le téléverse** : l'analyse forensique d'un développeur trouve dans le répertoire caché `~/.zcode` une **archive chiffrée de 313 Mo** contenant environ **42 000 fichiers, dont 86,6 % d'historique `.git`** — clés supprimées, configurations et traces métier partent avec. La clé est fournie par le serveur et conservée uniquement dans le cloud, et **aucun réglage ne désactive l'envoi**. Zhipu s'excuse le jour même, imputant l'envoi à la fonction **indexation de base de code** activée par défaut, et affirme que les données ne servent qu'à générer un wiki de dépôt avant d'être détruites ; le client **Chengming Technology** conteste, dit avoir encore détecté des envois après le correctif, et exige des réponses écrites — y compris sur un éventuel transfert transfrontalier — avant le **10 octobre**. Zhipu a depuis ouvert le code de ZCode et annonce la correction achevée en v3.14.0",
+   "summary_es": "Los usuarios descubren que **el agente de código IA ZCode de Zhipu** empaqueta en silencio **todo el espacio de trabajo y lo sube**: el análisis forense de un desarrollador encuentra en el directorio oculto `~/.zcode` un **archivo cifrado de 313 MB** con unos **42.000 archivos, el 86,6% de ellos historial `.git`** — claves borradas, configuraciones y rastros de negocio viajan con él. La clave la entrega el servidor y solo se guarda en la nube, y **ningún ajuste desactiva la subida**. Zhipu se disculpa ese mismo día, atribuyéndolo a la función de **indexación de código** activada por defecto, y dice que los datos solo sirven para generar un wiki del repositorio y luego se destruyen; el cliente **Chengming Technology** lo disputa, afirma que aún detectó subidas tras el arreglo y exige respuestas por escrito —incluida la posible transferencia transfronteriza— antes del **10 de octubre**. Desde entonces Zhipu liberó el código de ZCode y declara la corrección completa en la v3.14.0",
+   "disputed": false,
+   "landmark": false,
+   "path": "incidents/2026-09/2026-09-18-zcode-silent-upload.md",
+   "path_zh": "incidents/i18n/zh/2026-09/2026-09-18-zcode-silent-upload.md",
+   "sources": [
+    {
+     "url": "https://www.secrss.com/articles/94149",
+     "label": "Global Times"
+    },
+    {
+     "url": "https://news.qq.com/rain/a/20260921A02ESY00",
+     "label": "The Paper"
+    },
+    {
+     "url": "https://news.qq.com/rain/a/20260920A05HHD00",
+     "label": "TechWeb"
+    },
+    {
+     "url": "https://www.freebuf.com/articles/501972.html",
+     "label": "FreeBuf"
+    },
+    {
+     "url": "https://www.oschina.net/news/502589",
+     "label": "OSChina"
     }
    ]
   },
