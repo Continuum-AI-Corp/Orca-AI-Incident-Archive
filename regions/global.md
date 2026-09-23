@@ -8,7 +8,7 @@ vendor policy moves all sit here. It is the largest group in the archive; the
 high share follows from that rule, not from a lack of geography.
 
 <!-- BEGIN:incidents -->
-## All records (277)
+## All records (291)
 
 | Date | Record | Type | Severity | Confidence | Real harm |
 |---|---|---|---|---|---|
@@ -244,6 +244,7 @@ high share follows from that rule, not from a lack of geography.
 | `2026-07-30` | [RufRoot (CVE-2026-59726): perfect CVSS, summons a rogue AI swarm](../incidents/2026-07/2026-07-30-rufroot-man-fen-zhao-huan.md) | `MCP` `INFRA` | **High** | A | — |
 | `2026-07-30` | ★ [Unit 42: autonomous campaigns run by Chinese-speaking operators](../incidents/2026-07/2026-07-30-unit42-chinese-speaking-autonomous-campaigns.md) | `WEAPON` | **Critical** | A | ✅ |
 | `2026-07-31` | [N-able N-central zero-day exploited in the wild](../incidents/2026-07/2026-07-31-able-central-ling-ye-li.md) | `OTHER` | **High** | A | ✅ |
+| `2026-07-31` | [Exposed by Design: a dynamic audit of 414 internet-facing MCP servers finds 68 vulnerabilities](../incidents/2026-07/2026-07-31-exposed-by-design-mcp-servers.md) | `MCP` `INFRA` | Medium | B | — |
 | `2026-08-01` | [Azure SRE Agent privilege escalation (CVE-2026-62830)](../incidents/2026-08/2026-08-01-azure-sre-agent.md) | `INFRA` `CRED` | **High** | A | — |
 | `2026-08-03` | [CrowdStrike 2026 threat hunting report](../incidents/2026-08/2026-08-03-crowdstrike-wei-xie-shou-lie.md) | `GOV` | Info | A | · |
 | `2026-08-04` | [Four-party disclosure of unsanctioned agent behaviour during evaluations](../incidents/2026-08/2026-08-04-agent-si-fang-lian-he.md) | `EVAL` | Info | A | · |
@@ -263,19 +264,29 @@ high share follows from that rule, not from a lack of geography.
 | `2026-08-25` | [NemoClaw (CVE-2026-65105): DNS rebinding rewrites the model's chat template](../incidents/2026-08/2026-08-25-nemoclaw-dns-zhong-bang-ding.md) | `INFRA` | **High** | A | — |
 | `2026-08-26` | [GitLab Duo's Claude agent can run arbitrary commands in CI](../incidents/2026-08/2026-08-26-gitlab-duo-claude-agent.md) | `INFRA` | **High** | A | — |
 | `2026-08-26` | ★ [Trail of Bits: VMs won't contain cyber-capable agents](../incidents/2026-08/2026-08-26-trailofbits-vm-cannot-contain-networked-agents.md) | `EVAL` `SANDBOX` | **Critical** | A | — |
+| `2026-08-27` | [GuardBreaker: a Russia-aligned group plants a nuclear-weapon request in its malware to derail AI analysis](../incidents/2026-08/2026-08-27-guardbreaker-uac-0099.md) | `WEAPON` | Medium | A | — |
 | `2026-08-28` | ★ [PaperCut AI agent swarm campaign begins](../incidents/2026-08/2026-08-28-papercut-agent-swarm-campaign-begins.md) | `WEAPON` | **Critical** | A | ✅ |
 | `2026-09-01` | ["88% of organisations hit a confirmed or suspected AI agent security incident this year"](../incidents/2026-09/2026-09-01-agent-zu-zhi-guo-qu.md) | `GOV` | Info | C | · |
+| `2026-09-01` | [Forescout ports a WAGO PLC exploit with Claude Code: $535.74, 8h32m, one bricked controller](../incidents/2026-09/2026-09-01-forescout-ai-plc-exploit-port.md) | `WEAPON` | Medium | A | — |
 | `2026-09-01` | ★ [GitSpawn: a malicious .git/config runs attacker code in 7 coding agents before the model is ever contacted](../incidents/2026-09/2026-09-01-gitspawn-git-config-pre-model-rce.md) | `SUPPLY` `SANDBOX` | **Critical** | A | — |
+| `2026-09-01` | [OWASP publishes the Agent Control Standard and formally announces the 2026 LLM Top 10](../incidents/2026-09/2026-09-01-owasp-agent-control-standard.md) | `GOV` | Info | A | · |
 | `2026-09-02` | ★ [Langflow CVE-2026-0768: the 12th Langflow flaw exploited in the wild this year](../incidents/2026-09/2026-09-02-langflow-jin-di-ye-li.md) | `INFRA` `CRED` | **Critical** | A | ✅ |
 | `2026-09-02` | [Any bearer token opens LiteLLM's MCP endpoint: CVE-2026-59822 enters CISA KEV](../incidents/2026-09/2026-09-02-litellm-mcp-auth-bypass-kev.md) | `INFRA` `MCP` | **High** | A | ✅ |
 | `2026-09-02` | [Unit 42: AI agents compress two weeks of intrusion work into 10 hours](../incidents/2026-09/2026-09-02-unit-agent-liang-ru-qin.md) | `WEAPON` | Info | A | · |
 | `2026-09-04` | [Nightingale Collective finds OpenAI agents colluding on German Wikipedia](../incidents/2026-09/2026-09-04-nightingale-collective-agent.md) | `EVAL` | **High** | A | ✅ |
 | `2026-09-05` | [OpenAI formally acknowledges the "wiki incident", promises a disclosure framework](../incidents/2026-09/2026-09-05-wiki-zheng-shi-cheng-ren.md) | `GOV` `EVAL` | Info | A | · |
 | `2026-09-08` | [ChatGPT sandbox flaw pipes a victim's Gmail data into the attacker's account](../incidents/2026-09/2026-09-08-chatgpt-gmail-sha-xiang-que.md) | `EXFIL` | **High** | A | ✅ |
+| `2026-09-08` | [Infostealers turn to AI-agent data: collection rules now target Claude, Cursor and Codex](../incidents/2026-09/2026-09-08-gen-digital-infostealers-ai-agent-data.md) | `CRED` `EXFIL` | Medium | A | — |
+| `2026-09-08` | [GTIG AI threat tracker: from prompting to autonomy](../incidents/2026-09/2026-09-08-gtig-prompting-to-autonomy.md) | `WEAPON` | Info | A | · |
+| `2026-09-08` | [DeepSeek Harness CVE-2026-82533: a sandboxed agent disables its own sandbox with one command](../incidents/2026-09/2026-09-08-ox-deepseek-harness-cve-2026-82533.md) | `SANDBOX` `INFRA` | **High** | A | — |
+| `2026-09-09` | [Workflow identity hijacking: Noma Labs turns an ordinary support email into privileged data access](../incidents/2026-09/2026-09-09-noma-workflow-identity-hijacking.md) | `INFRA` `EXFIL` | Medium | A | — |
+| `2026-09-09` | [Reuters: OpenAI's agents left unsanctioned messages on at least 10 more sites](../incidents/2026-09/2026-09-09-openai-agents-more-undisclosed-sites.md) | `ROGUE` `EVAL` | Medium | B | — |
+| `2026-09-09` | [Wiz: nearly 1 in 10 exposed LiteLLM gateways accept the example admin key sk-1234](../incidents/2026-09/2026-09-09-wiz-litellm-default-key-off-guard.md) | `INFRA` `CRED` | **High** | A | — |
 | `2026-09-10` | ★ [Anthropic September threat intelligence report](../incidents/2026-09/2026-09-10-anthropic-september-threat-report.md) | `WEAPON` | **Critical** | A | ✅ |
 | `2026-09-11` | ★ [Claude used to scan 1.8 million Android apps for secrets](../incidents/2026-09/2026-09-11-claude-scans-18m-android-apks.md) | `WEAPON` | **Critical** | A | ✅ |
 | `2026-09-11` | [Researchers link OpenAI agents to the RubyGems "GemStuffer" campaign](../incidents/2026-09/2026-09-11-rubygems-gemstuffer.md) ⚠️ | `EVAL` `SUPPLY` | **High** | D | ✅ |
 | `2026-09-12` | [Amodei's "We Must Pace the Frontier": slow down, and let evaluators inside](../incidents/2026-09/2026-09-12-amodei-pace-the-frontier.md) | `GOV` | Info | A | · |
+| `2026-09-14` | [Bifrost AI gateway: one unauthenticated MCP registration runs commands as the gateway user](../incidents/2026-09/2026-09-14-bifrost-ai-gateway-cve-2026-90898.md) | `INFRA` `MCP` | **High** | A | — |
 | `2026-09-14` | [Microsoft publishes a draft "Humanist AI" code of conduct for its MAI models](../incidents/2026-09/2026-09-14-microsoft-mai-code-of-conduct.md) | `GOV` | Info | A | · |
 | `2026-09-15` | [Two ways out of the OpenAI Codex sandbox: Heapjack and Overpatch](../incidents/2026-09/2026-09-15-codex-sandbox-escapes.md) | `SANDBOX` | **High** | B | — |
 | `2026-09-15` | ★ [PaperCut AI agent swarm attack made public](../incidents/2026-09/2026-09-15-papercut-agent-swarm-disclosed.md) | `WEAPON` | **Critical** | A | ✅ |
@@ -283,12 +294,15 @@ high share follows from that rule, not from a lack of geography.
 | `2026-09-16` | [Google DeepMind launches the DeepMind Institute for AGI governance](../incidents/2026-09/2026-09-16-deepmind-institute.md) | `GOV` | Info | A | · |
 | `2026-09-16` | [Mandiant 2026 AI report: a runaway agent's $50,000 bill and AI-assisted intrusions](../incidents/2026-09/2026-09-16-mandiant-ai-risk-resilience-2026.md) | `WEAPON` | Info | A | · |
 | `2026-09-16` | [OpenAI discloses six misalignment incidents and a reporting framework](../incidents/2026-09/2026-09-16-openai-misalignment-reports.md) | `EVAL` `GOV` | Medium | A | — |
+| `2026-09-16` | [RatHat: AI-driven Android malware walks operators through infected devices](../incidents/2026-09/2026-09-16-rathat-ai-android-malware.md) | `WEAPON` `CRED` | **High** | A | ✅ |
 | `2026-09-16` | [SentinelLABS traces OpenAI agent activity on Hugging Face back to May 13](../incidents/2026-09/2026-09-16-sentinellabs-hf-trace.md) | `EVAL` `CRED` | **High** | A | ✅ |
 | `2026-09-17` | [Anthropic: Claude "leads" 26% of its AI R&D with 30,000 agents running in parallel](../incidents/2026-09/2026-09-17-anthropic-rd-indicators.md) | `GOV` | Info | A | · |
 | `2026-09-17` | [Microsoft patches a CVSS 10.0 missing-authentication flaw in Azure AI Foundry](../incidents/2026-09/2026-09-17-azure-ai-foundry-cve-2026-85889.md) | `INFRA` | **High** | A | — |
 | `2026-09-17` | [Plugin4Shell: a zero-click RCE chain hits four AI coding agents](../incidents/2026-09/2026-09-17-plugin4shell-coding-agents.md) | `SUPPLY` | **High** | B | — |
 | `2026-09-18` | [Google confirms Gemini breached three companies during a security test](../incidents/2026-09/2026-09-18-google-gemini-three-companies.md) | `EVAL` | **High** | A | ✅ |
 | `2026-09-19` | [RoboHarm: leading models rarely refuse dangerous robot-arm commands](../incidents/2026-09/2026-09-19-roboharm-benchmark.md) | `ROGUE` | Medium | B | — |
+| `2026-09-21` | [UN panel's first thematic brief: the OpenAI-Hugging Face incident as a loss-of-control warning](../incidents/2026-09/2026-09-21-un-panel-ai-agents-misalignment-brief.md) | `GOV` | Info | A | · |
+| `2026-09-22` | [ClosedQuorum: a Windows implant that lets four LLMs vote on its next move](../incidents/2026-09/2026-09-22-closedquorum-ai-c2-implant.md) | `WEAPON` | **High** | A | — |
 <!-- END:incidents -->
 
 ---

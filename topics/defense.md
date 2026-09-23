@@ -1,6 +1,6 @@
 # Topic · Defense-side progress (for contrast)
 
-![records](https://img.shields.io/badge/records-51-48545A?style=flat-square) ![type](https://img.shields.io/badge/type-GOV-B08528?style=flat-square)
+![records](https://img.shields.io/badge/records-65-48545A?style=flat-square) ![type](https://img.shields.io/badge/type-GOV-B08528?style=flat-square)
 
 > The prose on this page is taken from the archive's original research report; the "All records" table below is compiled automatically from the frontmatter in `incidents/`, and the two are updated together.
 
@@ -35,7 +35,7 @@ An archive that records only incidents will be lopsided, so we suggest adding a 
 ---
 
 <!-- BEGIN:incidents -->
-## All records (63)
+## All records (65)
 
 | Date | Record | Type | Severity | Confidence | Real harm |
 |---|---|---|---|---|---|
@@ -87,6 +87,7 @@ An archive that records only incidents will be lopsided, so we suggest adding a 
 | `2026-08-07` | [OpenAI: next-generation model Astra may reach Critical cyber capability](../incidents/2026-08/2026-08-07-astra-critical-yi-dai-mo.md) | `GOV` | Info | A | · |
 | `2026-08-18` | [OpenAI slows development and pauses RL training for two weeks](../incidents/2026-08/2026-08-18-rl-xuan-bu-fang-man.md) | `GOV` | Info | A | · |
 | `2026-09-01` | ["88% of organisations hit a confirmed or suspected AI agent security incident this year"](../incidents/2026-09/2026-09-01-agent-zu-zhi-guo-qu.md) | `GOV` | Info | C | · |
+| `2026-09-01` | [OWASP publishes the Agent Control Standard and formally announces the 2026 LLM Top 10](../incidents/2026-09/2026-09-01-owasp-agent-control-standard.md) | `GOV` | Info | A | · |
 | `2026-09-03` | [US senators introduce the Ban Artificial Superintelligence Act](../incidents/2026-09/2026-09-03-ban-artificial-superintelligence-act.md) | `GOV` | Info | B | · |
 | `2026-09-05` | [OpenAI formally acknowledges the "wiki incident", promises a disclosure framework](../incidents/2026-09/2026-09-05-wiki-zheng-shi-cheng-ren.md) | `GOV` `EVAL` | Info | A | · |
 | `2026-09-07` | [Japan's IPA publishes the August 2026 AI Security Bulletin](../incidents/2026-09/2026-09-07-ipa-fa-bu-duan-xin.md) | `GOV` | Info | A | · |
@@ -102,6 +103,7 @@ An archive that records only incidents will be lopsided, so we suggest adding a 
 | `2026-09-18` | [Consumers sue Anthropic, OpenAI, SpaceXAI and Google over an alleged AI slowdown pact](../incidents/2026-09/2026-09-18-ai-slowdown-antitrust-lawsuit.md) | `GOV` | Info | B | · |
 | `2026-09-18` | [California orders an AI "kill switch" and third-party oversight](../incidents/2026-09/2026-09-18-california-ai-kill-switch-eo.md) | `GOV` | Info | A | · |
 | `2026-09-19` | [Trump announces an "AI Force" and an AI czar, and calls safety fears a hoax](../incidents/2026-09/2026-09-19-trump-ai-force-czar.md) | `GOV` | Info | B | · |
+| `2026-09-21` | [UN panel's first thematic brief: the OpenAI-Hugging Face incident as a loss-of-control warning](../incidents/2026-09/2026-09-21-un-panel-ai-agents-misalignment-brief.md) | `GOV` | Info | A | · |
 <!-- END:incidents -->
 
 ---

@@ -1,16 +1,16 @@
 # 2026-07
 
 <!-- BEGIN:summary -->
-**27** records
+**28** records
 
-![records](https://img.shields.io/badge/records-27-48545A?style=flat-square) ![critical](https://img.shields.io/badge/Critical-7-88091D?style=flat-square) ![high](https://img.shields.io/badge/High-9-B23B40?style=flat-square) ![medium](https://img.shields.io/badge/Medium-3-C4615F?style=flat-square) ![info](https://img.shields.io/badge/Info-8-6B7175?style=flat-square)
+![records](https://img.shields.io/badge/records-28-48545A?style=flat-square) ![critical](https://img.shields.io/badge/Critical-7-88091D?style=flat-square) ![high](https://img.shields.io/badge/High-9-B23B40?style=flat-square) ![medium](https://img.shields.io/badge/Medium-4-C4615F?style=flat-square) ![info](https://img.shields.io/badge/Info-8-6B7175?style=flat-square)
 
 ```mermaid
 pie showData
     title 2026-07 by severity
     "Critical" : 7
     "High" : 9
-    "Medium" : 3
+    "Medium" : 4
     "Info" : 8
 ```
 
@@ -45,6 +45,7 @@ pie showData
 | `07-30` | ★ [Unit 42: autonomous campaigns run by Chinese-speaking operators](2026-07-30-unit42-chinese-speaking-autonomous-campaigns.md) | `WEAPON` | **Critical** | A | ✅ |
 | `07-30` | [RufRoot (CVE-2026-59726): perfect CVSS, summons a rogue AI swarm](2026-07-30-rufroot-man-fen-zhao-huan.md) | `MCP` `INFRA` | **High** | A | — |
 | `07-31` | [N-able N-central zero-day exploited in the wild](2026-07-31-able-central-ling-ye-li.md) | `OTHER` | **High** | A | ✅ |
+| `07-31` | [Exposed by Design: a dynamic audit of 414 internet-facing MCP servers finds 68 vulnerabilities](2026-07-31-exposed-by-design-mcp-servers.md) | `MCP` `INFRA` | Medium | B | — |
 
 <sub>★ = `critical` · ⚠️ = disputed facts or attribution · real harm: ✅ confirmed victim / — none / · not applicable (policy and intelligence reports)</sub>
 <!-- END:summary -->

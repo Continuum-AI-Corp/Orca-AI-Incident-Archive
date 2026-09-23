@@ -1,6 +1,6 @@
 # Topic · Agent supply-chain poisoning (SUPPLY)
 
-![records](https://img.shields.io/badge/records-57-48545A?style=flat-square) ![type](https://img.shields.io/badge/type-SUPPLY_MCP-B08528?style=flat-square)
+![records](https://img.shields.io/badge/records-65-48545A?style=flat-square) ![type](https://img.shields.io/badge/type-SUPPLY_MCP-B08528?style=flat-square)
 
 > The prose on this page is taken from the archive's original research report; the "All records" table below is compiled automatically from the frontmatter in `incidents/`, and the two are updated together.
 
@@ -32,7 +32,7 @@
 ---
 
 <!-- BEGIN:incidents -->
-## All records (63)
+## All records (65)
 
 | Date | Record | Type | Severity | Confidence | Real harm |
 |---|---|---|---|---|---|
@@ -88,6 +88,7 @@
 | `2026-06-18` | [ClickFix malvertising abuses claude.ai shared conversations](../incidents/2026-06/2026-06-18-clickfix-claude-ai-e-yi-guang.md) | `SUPPLY` | **High** | A | ✅ |
 | `2026-07-01` | [AWS Kiro: ask it to summarise a web page, get RCE (CVE-2026-10591)](../incidents/2026-07/2026-07-01-aws-kiro-rce.md) | `MCP` `SANDBOX` | **High** | A | — |
 | `2026-07-30` | [RufRoot (CVE-2026-59726): perfect CVSS, summons a rogue AI swarm](../incidents/2026-07/2026-07-30-rufroot-man-fen-zhao-huan.md) | `MCP` `INFRA` | **High** | A | — |
+| `2026-07-31` | [Exposed by Design: a dynamic audit of 414 internet-facing MCP servers finds 68 vulnerabilities](../incidents/2026-07/2026-07-31-exposed-by-design-mcp-servers.md) | `MCP` `INFRA` | Medium | B | — |
 | `2026-08-04` | ★ [CHAINDROP npm worm](../incidents/2026-08/2026-08-04-chaindrop-npm-ru-chong.md) | `SUPPLY` `CRED` | **Critical** | A | ✅ |
 | `2026-08-05` | [AWS Transform MCP arbitrary file write](../incidents/2026-08/2026-08-05-aws-transform-mcp.md) | `MCP` | **High** | A | — |
 | `2026-08-10` | [Deadbugz: an MCP server that turns hostile on the third tool call, pushed to 23 repositories in 74 minutes](../incidents/2026-08/2026-08-10-deadbugz-mcp-supply-chain.md) | `SUPPLY` `MCP` `CRED` | **High** | A | — |
@@ -97,6 +98,7 @@
 | `2026-09-01` | ★ [GitSpawn: a malicious .git/config runs attacker code in 7 coding agents before the model is ever contacted](../incidents/2026-09/2026-09-01-gitspawn-git-config-pre-model-rce.md) | `SUPPLY` `SANDBOX` | **Critical** | A | — |
 | `2026-09-02` | [Any bearer token opens LiteLLM's MCP endpoint: CVE-2026-59822 enters CISA KEV](../incidents/2026-09/2026-09-02-litellm-mcp-auth-bypass-kev.md) | `INFRA` `MCP` | **High** | A | ✅ |
 | `2026-09-11` | [Researchers link OpenAI agents to the RubyGems "GemStuffer" campaign](../incidents/2026-09/2026-09-11-rubygems-gemstuffer.md) ⚠️ | `EVAL` `SUPPLY` | **High** | D | ✅ |
+| `2026-09-14` | [Bifrost AI gateway: one unauthenticated MCP registration runs commands as the gateway user](../incidents/2026-09/2026-09-14-bifrost-ai-gateway-cve-2026-90898.md) | `INFRA` `MCP` | **High** | A | — |
 | `2026-09-16` | [BragJack: one browser extension hijacks the AI agents in five major browsers](../incidents/2026-09/2026-09-16-bragjack-browser-agents.md) | `SUPPLY` `IPI` | **High** | B | — |
 | `2026-09-17` | [Plugin4Shell: a zero-click RCE chain hits four AI coding agents](../incidents/2026-09/2026-09-17-plugin4shell-coding-agents.md) | `SUPPLY` | **High** | B | — |
 <!-- END:incidents -->

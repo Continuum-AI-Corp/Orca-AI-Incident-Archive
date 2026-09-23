@@ -1,15 +1,16 @@
 # 2026-08
 
 <!-- BEGIN:summary -->
-**25** records
+**26** records
 
-![records](https://img.shields.io/badge/records-25-48545A?style=flat-square) ![critical](https://img.shields.io/badge/Critical-4-88091D?style=flat-square) ![high](https://img.shields.io/badge/High-13-B23B40?style=flat-square) ![low](https://img.shields.io/badge/Low-1-8C6A6A?style=flat-square) ![info](https://img.shields.io/badge/Info-7-6B7175?style=flat-square)
+![records](https://img.shields.io/badge/records-26-48545A?style=flat-square) ![critical](https://img.shields.io/badge/Critical-4-88091D?style=flat-square) ![high](https://img.shields.io/badge/High-13-B23B40?style=flat-square) ![medium](https://img.shields.io/badge/Medium-1-C4615F?style=flat-square) ![low](https://img.shields.io/badge/Low-1-8C6A6A?style=flat-square) ![info](https://img.shields.io/badge/Info-7-6B7175?style=flat-square)
 
 ```mermaid
 pie showData
     title 2026-08 by severity
     "Critical" : 4
     "High" : 13
+    "Medium" : 1
     "Low" : 1
     "Info" : 7
 ```
@@ -42,6 +43,7 @@ pie showData
 | `08-25` | [NemoClaw (CVE-2026-65105): DNS rebinding rewrites the model's chat template](2026-08-25-nemoclaw-dns-zhong-bang-ding.md) | `INFRA` | **High** | A | — |
 | `08-26` | ★ [Trail of Bits: VMs won't contain cyber-capable agents](2026-08-26-trailofbits-vm-cannot-contain-networked-agents.md) | `EVAL` `SANDBOX` | **Critical** | A | — |
 | `08-26` | [GitLab Duo's Claude agent can run arbitrary commands in CI](2026-08-26-gitlab-duo-claude-agent.md) | `INFRA` | **High** | A | — |
+| `08-27` | [GuardBreaker: a Russia-aligned group plants a nuclear-weapon request in its malware to derail AI analysis](2026-08-27-guardbreaker-uac-0099.md) | `WEAPON` | Medium | A | — |
 | `08-28` | ★ [PaperCut AI agent swarm campaign begins](2026-08-28-papercut-agent-swarm-campaign-begins.md) | `WEAPON` | **Critical** | A | ✅ |
 
 <sub>★ = `critical` · ⚠️ = disputed facts or attribution · real harm: ✅ confirmed victim / — none / · not applicable (policy and intelligence reports)</sub>

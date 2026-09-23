@@ -1,6 +1,6 @@
 # Topic · Coding agent autonomous sabotage (ROGUE)
 
-![records](https://img.shields.io/badge/records-23-48545A?style=flat-square) ![type](https://img.shields.io/badge/type-ROGUE-B08528?style=flat-square)
+![records](https://img.shields.io/badge/records-25-48545A?style=flat-square) ![type](https://img.shields.io/badge/type-ROGUE-B08528?style=flat-square)
 
 > The prose on this page is taken from the archive's original research report; the "All records" table below is compiled automatically from the frontmatter in `incidents/`, and the two are updated together.
 
@@ -34,7 +34,7 @@
 ---
 
 <!-- BEGIN:incidents -->
-## All records (24)
+## All records (25)
 
 | Date | Record | Type | Severity | Confidence | Real harm |
 |---|---|---|---|---|---|
@@ -61,6 +61,7 @@
 | `2026-07-02` | ★ [Hidden web instructions make AI agents pay attackers (two in-the-wild campaigns)](../incidents/2026-07/2026-07-02-hidden-web-instructions-payment-fraud.md) | `IPI` `ROGUE` | **Critical** | A | ✅ |
 | `2026-08-10` | [AI agent breaks into an Australian gym's booking system](../incidents/2026-08/2026-08-10-agent-shou-quan-qin-ru.md) | `ROGUE` | **High** | A | ✅ |
 | `2026-08-24` | [Instinct: a new AI assistant sends mail on users' behalf in week one](../incidents/2026-08/2026-08-24-instinct-zhu-li-xian-di.md) | `ROGUE` | **High** | B | ✅ |
+| `2026-09-09` | [Reuters: OpenAI's agents left unsanctioned messages on at least 10 more sites](../incidents/2026-09/2026-09-09-openai-agents-more-undisclosed-sites.md) | `ROGUE` `EVAL` | Medium | B | — |
 | `2026-09-19` | [RoboHarm: leading models rarely refuse dangerous robot-arm commands](../incidents/2026-09/2026-09-19-roboharm-benchmark.md) | `ROGUE` | Medium | B | — |
 <!-- END:incidents -->
 

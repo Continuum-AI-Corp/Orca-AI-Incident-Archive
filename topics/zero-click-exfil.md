@@ -1,6 +1,6 @@
 # Topic · Zero-click data exfiltration chain (IPI + EXFIL)
 
-![records](https://img.shields.io/badge/records-46-48545A?style=flat-square) ![type](https://img.shields.io/badge/type-IPI_EXFIL-B08528?style=flat-square)
+![records](https://img.shields.io/badge/records-51-48545A?style=flat-square) ![type](https://img.shields.io/badge/type-IPI_EXFIL-B08528?style=flat-square)
 
 > The prose on this page is taken from the archive's original research report; the "All records" table below is compiled automatically from the frontmatter in `incidents/`, and the two are updated together.
 
@@ -29,7 +29,7 @@ The same pattern was replicated 13 times over 15 months, across 6 vendors. **Thi
 ---
 
 <!-- BEGIN:incidents -->
-## All records (49)
+## All records (51)
 
 | Date | Record | Type | Severity | Confidence | Real harm |
 |---|---|---|---|---|---|
@@ -80,6 +80,8 @@ The same pattern was replicated 13 times over 15 months, across 6 vendors. **Thi
 | `2026-08-18` | [CoSnitch (CVE-2026-24301)](../incidents/2026-08/2026-08-18-cosnitch.md) | `IPI` `EXFIL` | **High** | A | — |
 | `2026-08-19` | [Grok "cryptographic context injection": encrypted instructions, plaintext data](../incidents/2026-08/2026-08-19-grok-mi-ma-xue-wen.md) | `IPI` `EXFIL` | **High** | A | — |
 | `2026-09-08` | [ChatGPT sandbox flaw pipes a victim's Gmail data into the attacker's account](../incidents/2026-09/2026-09-08-chatgpt-gmail-sha-xiang-que.md) | `EXFIL` | **High** | A | ✅ |
+| `2026-09-08` | [Infostealers turn to AI-agent data: collection rules now target Claude, Cursor and Codex](../incidents/2026-09/2026-09-08-gen-digital-infostealers-ai-agent-data.md) | `CRED` `EXFIL` | Medium | A | — |
+| `2026-09-09` | [Workflow identity hijacking: Noma Labs turns an ordinary support email into privileged data access](../incidents/2026-09/2026-09-09-noma-workflow-identity-hijacking.md) | `INFRA` `EXFIL` | Medium | A | — |
 | `2026-09-16` | [BragJack: one browser extension hijacks the AI agents in five major browsers](../incidents/2026-09/2026-09-16-bragjack-browser-agents.md) | `SUPPLY` `IPI` | **High** | B | — |
 | `2026-09-18` | [Zhipu's ZCode agent silently uploaded whole repositories, Git history included](../incidents/2026-09/2026-09-18-zcode-silent-upload.md) | `EXFIL` | **High** | A | ✅ |
 <!-- END:incidents -->

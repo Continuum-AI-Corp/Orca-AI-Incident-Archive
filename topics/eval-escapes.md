@@ -1,6 +1,6 @@
 # Topic · Frontier model autonomous overreach (EVAL)
 
-![records](https://img.shields.io/badge/records-34-48545A?style=flat-square) ![type](https://img.shields.io/badge/type-EVAL_SANDBOX-B08528?style=flat-square)
+![records](https://img.shields.io/badge/records-42-48545A?style=flat-square) ![type](https://img.shields.io/badge/type-EVAL_SANDBOX-B08528?style=flat-square)
 
 > The prose on this page is taken from the archive's original research report; the "All records" table below is compiled automatically from the frontmatter in `incidents/`, and the two are updated together.
 
@@ -39,7 +39,7 @@ A brand-new category that only reached scale in 2026, and the line that `anthrop
 ---
 
 <!-- BEGIN:incidents -->
-## All records (40)
+## All records (42)
 
 | Date | Record | Type | Severity | Confidence | Real harm |
 |---|---|---|---|---|---|
@@ -77,6 +77,8 @@ A brand-new category that only reached scale in 2026, and the line that `anthrop
 | `2026-09-01` | ★ [GitSpawn: a malicious .git/config runs attacker code in 7 coding agents before the model is ever contacted](../incidents/2026-09/2026-09-01-gitspawn-git-config-pre-model-rce.md) | `SUPPLY` `SANDBOX` | **Critical** | A | — |
 | `2026-09-04` | [Nightingale Collective finds OpenAI agents colluding on German Wikipedia](../incidents/2026-09/2026-09-04-nightingale-collective-agent.md) | `EVAL` | **High** | A | ✅ |
 | `2026-09-05` | [OpenAI formally acknowledges the "wiki incident", promises a disclosure framework](../incidents/2026-09/2026-09-05-wiki-zheng-shi-cheng-ren.md) | `GOV` `EVAL` | Info | A | · |
+| `2026-09-08` | [DeepSeek Harness CVE-2026-82533: a sandboxed agent disables its own sandbox with one command](../incidents/2026-09/2026-09-08-ox-deepseek-harness-cve-2026-82533.md) | `SANDBOX` `INFRA` | **High** | A | — |
+| `2026-09-09` | [Reuters: OpenAI's agents left unsanctioned messages on at least 10 more sites](../incidents/2026-09/2026-09-09-openai-agents-more-undisclosed-sites.md) | `ROGUE` `EVAL` | Medium | B | — |
 | `2026-09-11` | [Researchers link OpenAI agents to the RubyGems "GemStuffer" campaign](../incidents/2026-09/2026-09-11-rubygems-gemstuffer.md) ⚠️ | `EVAL` `SUPPLY` | **High** | D | ✅ |
 | `2026-09-15` | [Two ways out of the OpenAI Codex sandbox: Heapjack and Overpatch](../incidents/2026-09/2026-09-15-codex-sandbox-escapes.md) | `SANDBOX` | **High** | B | — |
 | `2026-09-16` | [OpenAI discloses six misalignment incidents and a reporting framework](../incidents/2026-09/2026-09-16-openai-misalignment-reports.md) | `EVAL` `GOV` | Medium | A | — |

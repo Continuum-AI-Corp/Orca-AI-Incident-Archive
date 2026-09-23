@@ -13,11 +13,11 @@
 </p>
 
 <!-- BEGIN:badges -->
-<p align="center"><img alt="entrées" src="https://img.shields.io/badge/entr%C3%A9es-340-48545A?style=flat-square"> <img alt="mois" src="https://img.shields.io/badge/mois-22-48545A?style=flat-square"> <img alt="critiques" src="https://img.shields.io/badge/critiques-45-88091D?style=flat-square"> <img alt="préjudice réel" src="https://img.shields.io/badge/pr%C3%A9judice_r%C3%A9el-126-B23B40?style=flat-square"> <img alt="sources primaires" src="https://img.shields.io/badge/sources_primaires-548_URL-157A41?style=flat-square"> <img alt="licence" src="https://img.shields.io/badge/licence-CC_BY_4.0-2359A8?style=flat-square"></p>
+<p align="center"><img alt="entrées" src="https://img.shields.io/badge/entr%C3%A9es-354-48545A?style=flat-square"> <img alt="mois" src="https://img.shields.io/badge/mois-22-48545A?style=flat-square"> <img alt="critiques" src="https://img.shields.io/badge/critiques-45-88091D?style=flat-square"> <img alt="préjudice réel" src="https://img.shields.io/badge/pr%C3%A9judice_r%C3%A9el-127-B23B40?style=flat-square"> <img alt="sources primaires" src="https://img.shields.io/badge/sources_primaires-593_URL-157A41?style=flat-square"> <img alt="licence" src="https://img.shields.io/badge/licence-CC_BY_4.0-2359A8?style=flat-square"></p>
 <!-- END:badges -->
 
 <!-- BEGIN:thesis -->
-La couverture va de **2025-01** à **2026-09-19** — 340 entrées d'événements de sécurité liés aux agents IA, mois par mois, plus un précurseur remontant à 2024-12-01. Chaque entrée est un fichier Markdown unique avec un en-tête YAML, un schéma de chaîne d'attaque et **au moins une source primaire cliquable**. Sur ces 340 entrées, seules **126 ont une victime confirmée**.
+La couverture va de **2025-01** à **2026-09-22** — 354 entrées d'événements de sécurité liés aux agents IA, mois par mois, plus un précurseur remontant à 2024-12-01. Chaque entrée est un fichier Markdown unique avec un en-tête YAML, un schéma de chaîne d'attaque et **au moins une source primaire cliquable**. Sur ces 354 entrées, seules **127 ont une victime confirmée**.
 <!-- END:thesis -->
 
 Cette archive repose sur une distinction que la plupart des listes d'incidents aplatissent :
@@ -75,11 +75,11 @@ Chaque entrée répond d'abord à trois questions — y a-t-il eu une victime co
 |---|---|---|---|---|---|---|---|---|---|---|---|
 | `8` ★1 | `6` | `6` | `6` | `7` | `11` | `10` ★2 | `15` ★2 | `10` ★1 | `15` | `13` ★3 | `14` |
 
-**2026** (218 entrées)
+**2026** (232 entrées)
 
 | [01](../../incidents/2026-01/README.md) | [02](../../incidents/2026-02/README.md) | [03](../../incidents/2026-03/README.md) | [04](../../incidents/2026-04/README.md) | [05](../../incidents/2026-05/README.md) | [06](../../incidents/2026-06/README.md) | [07](../../incidents/2026-07/README.md) | [08](../../incidents/2026-08/README.md) | [09](../../incidents/2026-09/README.md) |
 |---|---|---|---|---|---|---|---|---|
-| `13` ★1 | `19` ★5 | `16` ★3 | `22` ★2 | `26` ★5 | `31` ★3 | `27` ★7 | `25` ★4 | `39` ★6 |
+| `13` ★1 | `19` ★5 | `16` ★3 | `22` ★2 | `26` ★5 | `31` ★3 | `28` ★7 | `26` ★4 | `51` ★6 |
 
 <sub>`n` = entrées du mois, ★ = dont `critical`</sub>
 <!-- END:months -->
@@ -161,9 +161,9 @@ Critères complets : [docs/scope.md](../../docs/scope.md).
 <!-- BEGIN:quality -->
 |  |  |
 |---|---|
-| Liens sources | 615 liens sur 548 URL uniques |
+| Liens sources | 662 liens sur 593 URL uniques |
 | Entrées sans source | **0** — pas de source, pas d'entrée |
-| Grade A (source primaire) | 290 |
+| Grade A (source primaire) | 302 |
 | Marquées comme contestées | 14 |
 | Cycles de vérification | 4 |
 <!-- END:quality -->
@@ -179,7 +179,7 @@ Ces quatre tours ont supprimé deux entrées fabriquées, corrigé le « domaine
 @misc{orca_ai_incident_archive,
   title  = {Orca AI Incident Archive: An open database of real-world AI agent incidents},
   year   = {2026},
-  note   = {340 entrées, de 2025-01 à 2026-09 ; 126 avec préjudice réel confirmé},
+  note   = {354 entrées, de 2025-01 à 2026-09 ; 127 avec préjudice réel confirmé},
   url    = {https://github.com/Continuum-AI-Corp/Orca-AI-Incident-Archive}
 }
 ```
@@ -205,4 +205,4 @@ Cette archive ne consigne que des **événements rendus publics**. Elle ne conti
 
 ---
 
-<sub><!-- BEGIN:footer -->Généré le 2026-09-19 · 340 entrées · 22 mois<!-- END:footer --></sub> · <sub>Structure : [SCHEMA.md](../../SCHEMA.md) · Données : [dist/](../../dist/README.md)</sub>
+<sub><!-- BEGIN:footer -->Généré le 2026-09-22 · 354 entrées · 22 mois<!-- END:footer --></sub> · <sub>Structure : [SCHEMA.md](../../SCHEMA.md) · Données : [dist/](../../dist/README.md)</sub>

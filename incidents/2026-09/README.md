@@ -1,17 +1,17 @@
 # 2026-09
 
 <!-- BEGIN:summary -->
-**39** records
+**51** records
 
-![records](https://img.shields.io/badge/records-39-48545A?style=flat-square) ![critical](https://img.shields.io/badge/Critical-6-88091D?style=flat-square) ![high](https://img.shields.io/badge/High-14-B23B40?style=flat-square) ![medium](https://img.shields.io/badge/Medium-2-C4615F?style=flat-square) ![info](https://img.shields.io/badge/Info-17-6B7175?style=flat-square)
+![records](https://img.shields.io/badge/records-51-48545A?style=flat-square) ![critical](https://img.shields.io/badge/Critical-6-88091D?style=flat-square) ![high](https://img.shields.io/badge/High-19-B23B40?style=flat-square) ![medium](https://img.shields.io/badge/Medium-6-C4615F?style=flat-square) ![info](https://img.shields.io/badge/Info-20-6B7175?style=flat-square)
 
 ```mermaid
 pie showData
     title 2026-09 by severity
     "Critical" : 6
-    "High" : 14
-    "Medium" : 2
-    "Info" : 17
+    "High" : 19
+    "Medium" : 6
+    "Info" : 20
 ```
 
 ## Records this month
@@ -19,7 +19,9 @@ pie showData
 | Date | Record | Type | Severity | Confidence | Real harm |
 |---|---|---|---|---|---|
 | `09-01` | ★ [GitSpawn: a malicious .git/config runs attacker code in 7 coding agents before the model is ever contacted](2026-09-01-gitspawn-git-config-pre-model-rce.md) | `SUPPLY` `SANDBOX` | **Critical** | A | — |
+| `09-01` | [Forescout ports a WAGO PLC exploit with Claude Code: $535.74, 8h32m, one bricked controller](2026-09-01-forescout-ai-plc-exploit-port.md) | `WEAPON` | Medium | A | — |
 | `09-01` | ["88% of organisations hit a confirmed or suspected AI agent security incident this year"](2026-09-01-agent-zu-zhi-guo-qu.md) | `GOV` | Info | C | · |
+| `09-01` | [OWASP publishes the Agent Control Standard and formally announces the 2026 LLM Top 10](2026-09-01-owasp-agent-control-standard.md) | `GOV` | Info | A | · |
 | `09-02` | ★ [Langflow CVE-2026-0768: the 12th Langflow flaw exploited in the wild this year](2026-09-02-langflow-jin-di-ye-li.md) | `INFRA` `CRED` | **Critical** | A | ✅ |
 | `09-02` | [Any bearer token opens LiteLLM's MCP endpoint: CVE-2026-59822 enters CISA KEV](2026-09-02-litellm-mcp-auth-bypass-kev.md) | `INFRA` `MCP` | **High** | A | ✅ |
 | `09-02` | [Unit 42: AI agents compress two weeks of intrusion work into 10 hours](2026-09-02-unit-agent-liang-ru-qin.md) | `WEAPON` | Info | A | · |
@@ -30,6 +32,12 @@ pie showData
 | `09-05` | [OpenAI formally acknowledges the "wiki incident", promises a disclosure framework](2026-09-05-wiki-zheng-shi-cheng-ren.md) | `GOV` `EVAL` | Info | A | · |
 | `09-07` | [Japan's IPA publishes the August 2026 AI Security Bulletin](2026-09-07-ipa-fa-bu-duan-xin.md) | `GOV` | Info | A | · |
 | `09-08` | [ChatGPT sandbox flaw pipes a victim's Gmail data into the attacker's account](2026-09-08-chatgpt-gmail-sha-xiang-que.md) | `EXFIL` | **High** | A | ✅ |
+| `09-08` | [DeepSeek Harness CVE-2026-82533: a sandboxed agent disables its own sandbox with one command](2026-09-08-ox-deepseek-harness-cve-2026-82533.md) | `SANDBOX` `INFRA` | **High** | A | — |
+| `09-08` | [Infostealers turn to AI-agent data: collection rules now target Claude, Cursor and Codex](2026-09-08-gen-digital-infostealers-ai-agent-data.md) | `CRED` `EXFIL` | Medium | A | — |
+| `09-08` | [GTIG AI threat tracker: from prompting to autonomy](2026-09-08-gtig-prompting-to-autonomy.md) | `WEAPON` | Info | A | · |
+| `09-09` | [Wiz: nearly 1 in 10 exposed LiteLLM gateways accept the example admin key sk-1234](2026-09-09-wiz-litellm-default-key-off-guard.md) | `INFRA` `CRED` | **High** | A | — |
+| `09-09` | [Workflow identity hijacking: Noma Labs turns an ordinary support email into privileged data access](2026-09-09-noma-workflow-identity-hijacking.md) | `INFRA` `EXFIL` | Medium | A | — |
+| `09-09` | [Reuters: OpenAI's agents left unsanctioned messages on at least 10 more sites](2026-09-09-openai-agents-more-undisclosed-sites.md) | `ROGUE` `EVAL` | Medium | B | — |
 | `09-10` | ★ [Anthropic September threat intelligence report](2026-09-10-anthropic-september-threat-report.md) | `WEAPON` | **Critical** | A | ✅ |
 | `09-10` | [Hawley opens a Senate investigation into OpenAI over the Hugging Face agent hack](2026-09-10-hawley-openai-investigation.md) | `GOV` | Info | A | · |
 | `09-11` | ★ [Claude used to scan 1.8 million Android apps for secrets](2026-09-11-claude-scans-18m-android-apks.md) | `WEAPON` | **Critical** | A | ✅ |
@@ -37,10 +45,12 @@ pie showData
 | `09-12` | [Senators draft a frontier-AI "duty of care" bill with power to block releases](2026-09-12-ai-duty-of-care-bill.md) | `GOV` | Info | B | · |
 | `09-12` | [Amodei's "We Must Pace the Frontier": slow down, and let evaluators inside](2026-09-12-amodei-pace-the-frontier.md) | `GOV` | Info | A | · |
 | `09-14` | ★ [Spain's AEPD receives the first AI-agent-driven breach notification](2026-09-14-spain-aepd-agent-breach.md) | `WEAPON` | **Critical** | A | ✅ |
+| `09-14` | [Bifrost AI gateway: one unauthenticated MCP registration runs commands as the gateway user](2026-09-14-bifrost-ai-gateway-cve-2026-90898.md) | `INFRA` `MCP` | **High** | A | — |
 | `09-14` | [Microsoft publishes a draft "Humanist AI" code of conduct for its MAI models](2026-09-14-microsoft-mai-code-of-conduct.md) | `GOV` | Info | A | · |
 | `09-15` | ★ [PaperCut AI agent swarm attack made public](2026-09-15-papercut-agent-swarm-disclosed.md) | `WEAPON` | **Critical** | A | ✅ |
 | `09-15` | [Two ways out of the OpenAI Codex sandbox: Heapjack and Overpatch](2026-09-15-codex-sandbox-escapes.md) | `SANDBOX` | **High** | B | — |
 | `09-16` | [BragJack: one browser extension hijacks the AI agents in five major browsers](2026-09-16-bragjack-browser-agents.md) | `SUPPLY` `IPI` | **High** | B | — |
+| `09-16` | [RatHat: AI-driven Android malware walks operators through infected devices](2026-09-16-rathat-ai-android-malware.md) | `WEAPON` `CRED` | **High** | A | ✅ |
 | `09-16` | [SentinelLABS traces OpenAI agent activity on Hugging Face back to May 13](2026-09-16-sentinellabs-hf-trace.md) | `EVAL` `CRED` | **High** | A | ✅ |
 | `09-16` | [OpenAI discloses six misalignment incidents and a reporting framework](2026-09-16-openai-misalignment-reports.md) | `EVAL` `GOV` | Medium | A | — |
 | `09-16` | [Google DeepMind launches the DeepMind Institute for AGI governance](2026-09-16-deepmind-institute.md) | `GOV` | Info | A | · |
@@ -57,6 +67,8 @@ pie showData
 | `09-18` | [California orders an AI "kill switch" and third-party oversight](2026-09-18-california-ai-kill-switch-eo.md) | `GOV` | Info | A | · |
 | `09-19` | [RoboHarm: leading models rarely refuse dangerous robot-arm commands](2026-09-19-roboharm-benchmark.md) | `ROGUE` | Medium | B | — |
 | `09-19` | [Trump announces an "AI Force" and an AI czar, and calls safety fears a hoax](2026-09-19-trump-ai-force-czar.md) | `GOV` | Info | B | · |
+| `09-21` | [UN panel's first thematic brief: the OpenAI-Hugging Face incident as a loss-of-control warning](2026-09-21-un-panel-ai-agents-misalignment-brief.md) | `GOV` | Info | A | · |
+| `09-22` | [ClosedQuorum: a Windows implant that lets four LLMs vote on its next move](2026-09-22-closedquorum-ai-c2-implant.md) | `WEAPON` | **High** | A | — |
 
 <sub>★ = `critical` · ⚠️ = disputed facts or attribution · real harm: ✅ confirmed victim / — none / · not applicable (policy and intelligence reports)</sub>
 <!-- END:summary -->

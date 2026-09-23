@@ -1,6 +1,6 @@
 # Topic · Offensive AI capability evolution (WEAPON)
 
-![records](https://img.shields.io/badge/records-43-48545A?style=flat-square) ![type](https://img.shields.io/badge/type-WEAPON-B08528?style=flat-square)
+![records](https://img.shields.io/badge/records-51-48545A?style=flat-square) ![type](https://img.shields.io/badge/type-WEAPON-B08528?style=flat-square)
 
 > The prose on this page is taken from the archive's original research report; the "All records" table below is compiled automatically from the frontmatter in `incidents/`, and the two are updated together.
 
@@ -60,7 +60,7 @@
 ---
 
 <!-- BEGIN:incidents -->
-## All records (46)
+## All records (51)
 
 | Date | Record | Type | Severity | Confidence | Real harm |
 |---|---|---|---|---|---|
@@ -102,14 +102,19 @@
 | `2026-07-30` | ★ [Hermes Agent attacks Thailand's Ministry of Finance unattended](../incidents/2026-07/2026-07-30-hermes-agent-thailand-finance-ministry.md) | `WEAPON` | **Critical** | A | ✅ |
 | `2026-07-30` | ★ [Unit 42: autonomous campaigns run by Chinese-speaking operators](../incidents/2026-07/2026-07-30-unit42-chinese-speaking-autonomous-campaigns.md) | `WEAPON` | **Critical** | A | ✅ |
 | `2026-08-12` | [Taiwan agent-swarm intrusion made public](../incidents/2026-08/2026-08-12-agent-tai-wan-feng-qun.md) | `WEAPON` | Low | A | ✅ |
+| `2026-08-27` | [GuardBreaker: a Russia-aligned group plants a nuclear-weapon request in its malware to derail AI analysis](../incidents/2026-08/2026-08-27-guardbreaker-uac-0099.md) | `WEAPON` | Medium | A | — |
 | `2026-08-28` | ★ [PaperCut AI agent swarm campaign begins](../incidents/2026-08/2026-08-28-papercut-agent-swarm-campaign-begins.md) | `WEAPON` | **Critical** | A | ✅ |
+| `2026-09-01` | [Forescout ports a WAGO PLC exploit with Claude Code: $535.74, 8h32m, one bricked controller](../incidents/2026-09/2026-09-01-forescout-ai-plc-exploit-port.md) | `WEAPON` | Medium | A | — |
 | `2026-09-02` | [Unit 42: AI agents compress two weeks of intrusion work into 10 hours](../incidents/2026-09/2026-09-02-unit-agent-liang-ru-qin.md) | `WEAPON` | Info | A | · |
+| `2026-09-08` | [GTIG AI threat tracker: from prompting to autonomy](../incidents/2026-09/2026-09-08-gtig-prompting-to-autonomy.md) | `WEAPON` | Info | A | · |
 | `2026-09-10` | ★ [Anthropic September threat intelligence report](../incidents/2026-09/2026-09-10-anthropic-september-threat-report.md) | `WEAPON` | **Critical** | A | ✅ |
 | `2026-09-11` | ★ [Claude used to scan 1.8 million Android apps for secrets](../incidents/2026-09/2026-09-11-claude-scans-18m-android-apks.md) | `WEAPON` | **Critical** | A | ✅ |
 | `2026-09-14` | ★ [Spain's AEPD receives the first AI-agent-driven breach notification](../incidents/2026-09/2026-09-14-spain-aepd-agent-breach.md) | `WEAPON` | **Critical** | A | ✅ |
 | `2026-09-15` | ★ [PaperCut AI agent swarm attack made public](../incidents/2026-09/2026-09-15-papercut-agent-swarm-disclosed.md) | `WEAPON` | **Critical** | A | ✅ |
 | `2026-09-16` | [Mandiant 2026 AI report: a runaway agent's $50,000 bill and AI-assisted intrusions](../incidents/2026-09/2026-09-16-mandiant-ai-risk-resilience-2026.md) | `WEAPON` | Info | A | · |
+| `2026-09-16` | [RatHat: AI-driven Android malware walks operators through infected devices](../incidents/2026-09/2026-09-16-rathat-ai-android-malware.md) | `WEAPON` `CRED` | **High** | A | ✅ |
 | `2026-09-18` | [Researchers used Claude to hack OpenAI's internal systems in a bug-bounty chain](../incidents/2026-09/2026-09-18-hacktron-claude-openai-hack.md) | `WEAPON` `CRED` | **High** | A | — |
+| `2026-09-22` | [ClosedQuorum: a Windows implant that lets four LLMs vote on its next move](../incidents/2026-09/2026-09-22-closedquorum-ai-c2-implant.md) | `WEAPON` | **High** | A | — |
 <!-- END:incidents -->
 
 ---
