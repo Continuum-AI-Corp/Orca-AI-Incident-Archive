@@ -15,7 +15,7 @@ An incident can belong to several types at once — real attack chains are compo
 | <a id="exfil"></a>`EXFIL` | Data exfiltration | Data exfiltration | 28 | Data actually **leaves** the trust boundary. A demo that gets only as far as "it can read" does not count; there must be an outbound channel. |
 | <a id="rogue"></a>`ROGUE` | Rogue agent action | Rogue agent action | 25 | **No attacker.** The agent takes a destructive action on its own while carrying out a normal task. |
 | <a id="sandbox"></a>`SANDBOX` | Sandbox escape | Sandbox escape | 24 | The agent breaks through **the execution boundary set for it** (container, VM, approval gate, read-only mount). |
-| <a id="eval"></a>`EVAL` | Evaluation-environment breakout | Evaluation-environment breakout | 20 | The breakout happens **inside an evaluation or training environment** and is disclosed by the developer itself. A new category that only reached scale in 2026. |
+| <a id="eval"></a>`EVAL` | Evaluation-environment breakout | Evaluation-environment breakout | 22 | The breakout happens **inside an evaluation or training environment** and is disclosed by the developer itself. A new category that only reached scale in 2026. |
 
 ## Typical attack chains
 

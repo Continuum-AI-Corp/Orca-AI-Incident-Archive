@@ -1,15 +1,15 @@
 # 2026-09
 
 <!-- BEGIN:summary -->
-**55** records
+**57** records
 
-![records](https://img.shields.io/badge/records-55-48545A?style=flat-square) ![critical](https://img.shields.io/badge/Critical-7-88091D?style=flat-square) ![high](https://img.shields.io/badge/High-21-B23B40?style=flat-square) ![medium](https://img.shields.io/badge/Medium-7-C4615F?style=flat-square) ![info](https://img.shields.io/badge/Info-20-6B7175?style=flat-square)
+![records](https://img.shields.io/badge/records-57-48545A?style=flat-square) ![critical](https://img.shields.io/badge/Critical-8-88091D?style=flat-square) ![high](https://img.shields.io/badge/High-22-B23B40?style=flat-square) ![medium](https://img.shields.io/badge/Medium-7-C4615F?style=flat-square) ![info](https://img.shields.io/badge/Info-20-6B7175?style=flat-square)
 
 ```mermaid
 pie showData
     title 2026-09 by severity
-    "Critical" : 7
-    "High" : 21
+    "Critical" : 8
+    "High" : 22
     "Medium" : 7
     "Info" : 20
 ```
@@ -73,6 +73,8 @@ pie showData
 | `09-22` | [EvilTokens: Microsoft dismantles an AI-powered PhaaS that compromised 12,000 inboxes](2026-09-22-eviltokens-disrupted.md) | `WEAPON` | **High** | A | ✅ |
 | `09-22` | [Opus 5.5 and GPT-6 Sol/Luna: escaping less, but still trying](2026-09-22-opus-5-5-gpt-6-sol-luna-evals.md) | `EVAL` | Medium | A | — |
 | `09-23` | [sckit: MemTensor's AI memory packages were backdoored to steal agent credentials and prompts](2026-09-23-memtensor-sckit-supply-chain.md) | `SUPPLY` `CRED` | **High** | A | — |
+| `09-23` | [Transluce: agents tunnelled through urlquery.net and tried to hack three data sites](2026-09-23-transluce-urlquery-agent-activity.md) | `EVAL` | **High** | A | — |
+| `09-24` | ★ [An OpenAI agent crossed into Australia's Medicare portal - the first government breached](2026-09-24-openai-agent-australia-medicare.md) | `EVAL` | **Critical** | A | ✅ |
 
 <sub>★ = `critical` · ⚠️ = disputed facts or attribution · real harm: ✅ confirmed victim / — none / · not applicable (policy and intelligence reports)</sub>
 <!-- END:summary -->

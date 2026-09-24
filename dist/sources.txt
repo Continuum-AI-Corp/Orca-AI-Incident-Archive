@@ -34,6 +34,7 @@ https://arxiv.org/abs/2608.00150
 https://asset-group.github.io/disclosures/ghostsplice/
 https://attack.mitre.org/campaigns/C0062/
 https://au.news.yahoo.com/curtailing-ai-illusion-eu-despite-094308427.html
+https://australiancybersecuritymagazine.com.au/openai-agent-breached-australian-medicare-statistics-portal-prime-minister-says/
 https://avd.aliyun.com/detail?id=AVD-2026-90898
 https://aws.amazon.com/jp/blogs/security/ai-augmented-threat-actor-accesses-fortigate-devices-at-scale/
 https://aws.amazon.com/security/security-bulletins/2026-075-aws/
@@ -318,6 +319,7 @@ https://thehackernews.com/2026/09/infostealer-logs-expose-replayable-ai.html
 https://thehackernews.com/2026/09/malicious-git-configs-can-make-claude.html
 https://thehackernews.com/2026/09/microsoft-patches-cvss-100-azure-ai.html
 https://thehackernews.com/2026/09/nearly-1-in-10-exposed-litellm-gateways.html
+https://thehackernews.com/2026/09/openai-agent-bypassed-australian.html
 https://thehackernews.com/2026/09/openai-agents-linked-to-rubygems.html
 https://thehackernews.com/2026/09/openai-reveals-six-model-incidents.html
 https://thehackernews.com/2026/09/papercut-attacker-uses-hundreds-of-ai.html
@@ -326,6 +328,7 @@ https://thehackernews.com/2026/09/russia-aligned-uac-0099-plants-nuclear.html
 https://thenewstack.io/agentjacking-sentry-mcp-attack/
 https://theori.io/ko/blog/2026-h1-hot-security-issue-case
 https://therecord.media/irregular-ai-security-company-incidents
+https://transluce.org/agent-activity
 https://unit42.paloaltonetworks.com/agent-session-smuggling-in-agent2agent-systems/
 https://unit42.paloaltonetworks.com/ai-agent-prompt-injection/
 https://unit42.paloaltonetworks.com/autonomous-ai-cyber-attack-campaign/
@@ -438,6 +441,7 @@ https://www.esentire.com/security-advisories/nginx-ui-authentication-bypass-vuln
 https://www.euronews.com/my-europe/2026/09/16/eus-von-der-leyen-calls-for-pacing-frontier-ai-models
 https://www.europol.europa.eu/media-press/newsroom/news/global-cyber-strike-disrupts-socgholish-amadey-and-stealc-malware-networks
 https://www.finra.org/rules-guidance/guidance/salesloft-drift-AI-supply-chain-attack
+https://www.forbes.com.au/news/innovation/openai-agent-hacked-medicare-portal-pm-says/
 https://www.forescout.com/blog/can-ai-create-plc-attacks-yes-but-it%E2%80%99s-not-that-easy-yet/
 https://www.freebuf.com/articles/501972.html
 https://www.gate.com/zh/news/detail/senate-committee-launches-investigation-into-openai-over-hugging-face-24168426
@@ -486,6 +490,7 @@ https://www.morphisec.com/blog/when-your-ai-coding-assistant-becomes-the-attack-
 https://www.n-able.com/blog/n-central-security-update-august-2-2026
 https://www.nbcnews.com/politics/white-house/artificial-intelligence-task-force-czar-technology-trump-rcna598688
 https://www.newsguardtech.com/special-reports/anthropic-ai-chatbot-claude-russia-iran-propaganda/
+https://www.nine.com.au/australia-news/openai-hack-australian-government-website-medicare-portal-explained-everything-you-need-to-know-20260924-p6102a.html
 https://www.oasis.security/blog/claude-ai-prompt-injection-data-exfiltration-vulnerability
 https://www.oasis.security/resources/reports/claude-ai-prompt-injection-vulnerability-technical-report
 https://www.okta.com/blog/threat-intelligence/signing_in_without_actually_signing_in/

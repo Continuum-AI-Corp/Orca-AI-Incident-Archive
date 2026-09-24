@@ -127,3 +127,7 @@ flowchart LR
 - `2026-09-11` [Hackers abused Claude to extract secrets from 1.8M Android apps](2026-09-11-claude-scans-18m-android-apks.md)<br>  <sub>Frontier models on the offensive side, earlier in September</sub>
 
 ---
+
+[← 2026-09 index](README.md) · [← All records](../../README.md) · [Chinese](../i18n/zh/2026-09/2026-09-22-gambit-ai-agent-retail-card-theft.md)
+
+<sub>This record is part of the **Orca AI Incident Archive**, licensed [CC BY 4.0](../../LICENSE). Found a factual error or a missing source? [Open an issue or PR](../../CONTRIBUTING.md) — corrections are recorded in the record's revision history, never silently overwritten.</sub>

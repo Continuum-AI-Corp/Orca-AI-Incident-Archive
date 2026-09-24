@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 336" width="900" height="336" role="img" font-family="ui-sans-serif,-apple-system,'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif">
 <rect width="900" height="336" fill="#FFFFFF"/>
-<text x="16" y="18" font-size="13" font-weight="700" fill="#141A1C">Distribution by type (a record can carry several, so totals exceed 358)</text>
+<text x="16" y="18" font-size="13" font-weight="700" fill="#141A1C">Distribution by type (a record can carry several, so totals exceed 360)</text>
 <text x="16" y="47" font-size="11" fill="#141A1C" font-family="ui-monospace,'SF Mono','Cascadia Mono','Consolas',monospace" font-weight="600">GOV</text>
 <text x="199" y="47" font-size="10.5" text-anchor="end" fill="#7A868C">Governance &amp; policy</text>
 <rect x="210" y="37" width="628.0" height="13" rx="3" fill="#B08528"/>
@@ -47,7 +47,7 @@
 <text x="448.9" y="267.5" font-size="10.5" fill="#48545A" font-family="ui-monospace,'SF Mono','Cascadia Mono','Consolas',monospace">24</text>
 <text x="16" y="289" font-size="11" fill="#141A1C" font-family="ui-monospace,'SF Mono','Cascadia Mono','Consolas',monospace" font-weight="600">EVAL</text>
 <text x="199" y="289" font-size="10.5" text-anchor="end" fill="#7A868C">Evaluation-environment breakout</text>
-<rect x="210" y="279" width="193.2" height="13" rx="3" fill="#B08528"/>
-<text x="410.2" y="289.5" font-size="10.5" fill="#48545A" font-family="ui-monospace,'SF Mono','Cascadia Mono','Consolas',monospace">20</text>
+<rect x="210" y="279" width="212.6" height="13" rx="3" fill="#B08528"/>
+<text x="429.6" y="289.5" font-size="10.5" fill="#48545A" font-family="ui-monospace,'SF Mono','Cascadia Mono','Consolas',monospace">22</text>
 <text x="16" y="323" font-size="10" fill="#7A868C">Top three: GOV 65 · CRED 56 · WEAPON 53. GOV runs high because the archive also records regulatory and vendor policy moves (kind=policy, excluded from incident counts)</text>
 </svg>
