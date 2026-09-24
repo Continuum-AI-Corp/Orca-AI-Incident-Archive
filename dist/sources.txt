@@ -202,6 +202,7 @@ https://news.un.org/en/story/2026/09/1168380
 https://noma.security/blog/forcedleak-agent-risks-exposed-in-salesforce-agentforce
 https://noma.security/blog/gitlost-how-we-tricked-githubs-ai-agent-into-leaking-private-repos/
 https://noma.security/noma-labs/workflow-identity-hijacking-the-silent-backdoor-in-ai-workflows
+https://nvd.nist.gov/vuln/detail/CVE-2026-18875
 https://nvd.nist.gov/vuln/detail/CVE-2026-26118
 https://nvd.nist.gov/vuln/detail/CVE-2026-30615
 https://nvd.nist.gov/vuln/detail/CVE-2026-32882
@@ -459,6 +460,7 @@ https://www.helpnetsecurity.com/2026/09/16/google-mandiant-enterprise-ai-securit
 https://www.helpnetsecurity.com/2026/09/18/plugin4shell-ai-coding-agents-vulnerability/
 https://www.hiddenlayer.com/research/echogram-the-hidden-vulnerability-undermining-ai-guardrails
 https://www.ibm.com/support/pages/node/7278927
+https://www.ibm.com/support/pages/node/7288641
 https://www.implicator.ai/moltbook-left-every-ai-agents-api-keys-in-an-open-database-security-researcher-finds/
 https://www.infoq.cn/article/CEphwKjzAe7LzbOriLcq
 https://www.infosecurity-magazine.com/news/abuse-cursor-agent-ransomware/

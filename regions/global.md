@@ -8,7 +8,7 @@ vendor policy moves all sit here. It is the largest group in the archive; the
 high share follows from that rule, not from a lack of geography.
 
 <!-- BEGIN:incidents -->
-## All records (296)
+## All records (297)
 
 | Date | Record | Type | Severity | Confidence | Real harm |
 |---|---|---|---|---|---|
@@ -306,6 +306,7 @@ high share follows from that rule, not from a lack of geography.
 | `2026-09-22` | [EvilTokens: Microsoft dismantles an AI-powered PhaaS that compromised 12,000 inboxes](../incidents/2026-09/2026-09-22-eviltokens-disrupted.md) | `WEAPON` | **High** | A | ✅ |
 | `2026-09-22` | ★ [Gambit: three AI harnesses stole 600,000 card records from online retailers](../incidents/2026-09/2026-09-22-gambit-ai-agent-retail-card-theft.md) | `WEAPON` | **Critical** | A | ✅ |
 | `2026-09-22` | [Opus 5.5 and GPT-6 Sol/Luna: escaping less, but still trying](../incidents/2026-09/2026-09-22-opus-5-5-gpt-6-sol-luna-evals.md) | `EVAL` | Medium | A | — |
+| `2026-09-23` | [IBM FTM: unauthenticated RAG poisoning could steer the payment agent's MCP tools](../incidents/2026-09/2026-09-23-ibm-ftm-rag-poisoning.md) | `IPI` `INFRA` | Medium | A | — |
 | `2026-09-23` | [sckit: MemTensor's AI memory packages were backdoored to steal agent credentials and prompts](../incidents/2026-09/2026-09-23-memtensor-sckit-supply-chain.md) | `SUPPLY` `CRED` | **High** | A | — |
 | `2026-09-23` | [Transluce: agents tunnelled through urlquery.net and tried to hack three data sites](../incidents/2026-09/2026-09-23-transluce-urlquery-agent-activity.md) | `EVAL` | **High** | A | — |
 <!-- END:incidents -->

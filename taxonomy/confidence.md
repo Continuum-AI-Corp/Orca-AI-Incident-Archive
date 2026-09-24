@@ -4,7 +4,7 @@ The grade rates **source quality**, not incident severity. Grade D does not mean
 
 | Grade | Records | Criterion |
 |---|---|---|
-| ![A](https://img.shields.io/badge/confidence-A-157A41?style=flat-square) **A** | 308 | Primary source: a vendor advisory, an affected party's disclosure, a law-enforcement filing, an official report PDF |
+| ![A](https://img.shields.io/badge/confidence-A-157A41?style=flat-square) **A** | 309 | Primary source: a vendor advisory, an affected party's disclosure, a law-enforcement filing, an official report PDF |
 | ![B](https://img.shields.io/badge/confidence-B-2359A8?style=flat-square) **B** | 47 | Reporting by a research organisation or mainstream media, with checkable technical detail |
 | ![C](https://img.shields.io/badge/confidence-C-9A6008?style=flat-square) **C** | 2 | Seen only in second-hand retellings, with no primary source |
 | ![D](https://img.shields.io/badge/confidence-D-A82B39?style=flat-square) **D** | 3 | Key facts or attribution are disputed; all sides must be presented side by side |
