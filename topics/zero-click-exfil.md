@@ -1,6 +1,6 @@
 # Topic · Zero-click data exfiltration chain (IPI + EXFIL)
 
-![records](https://img.shields.io/badge/records-52-48545A?style=flat-square) ![type](https://img.shields.io/badge/type-IPI_EXFIL-B08528?style=flat-square)
+![records](https://img.shields.io/badge/records-53-48545A?style=flat-square) ![type](https://img.shields.io/badge/type-IPI_EXFIL-B08528?style=flat-square)
 
 > The prose on this page is taken from the archive's original research report; the "All records" table below is compiled automatically from the frontmatter in `incidents/`, and the two are updated together.
 
@@ -29,7 +29,7 @@ The same pattern was replicated 13 times over 15 months, across 6 vendors. **Thi
 ---
 
 <!-- BEGIN:incidents -->
-## All records (52)
+## All records (53)
 
 | Date | Record | Type | Severity | Confidence | Real harm |
 |---|---|---|---|---|---|
@@ -84,6 +84,7 @@ The same pattern was replicated 13 times over 15 months, across 6 vendors. **Thi
 | `2026-09-09` | [Workflow identity hijacking: Noma Labs turns an ordinary support email into privileged data access](../incidents/2026-09/2026-09-09-noma-workflow-identity-hijacking.md) | `INFRA` `EXFIL` | Medium | A | — |
 | `2026-09-16` | [BragJack: one browser extension hijacks the AI agents in five major browsers](../incidents/2026-09/2026-09-16-bragjack-browser-agents.md) | `SUPPLY` `IPI` | **High** | B | — |
 | `2026-09-18` | [Zhipu's ZCode agent silently uploaded whole repositories, Git history included](../incidents/2026-09/2026-09-18-zcode-silent-upload.md) | `EXFIL` | **High** | A | ✅ |
+| `2026-09-23` | [Dark Sourcery: attackers poison chatbot answers across 374 companies](../incidents/2026-09/2026-09-23-dark-sourcery-chatbot-poisoning.md) | `IPI` | **High** | B | ✅ |
 | `2026-09-23` | [IBM FTM: unauthenticated RAG poisoning could steer the payment agent's MCP tools](../incidents/2026-09/2026-09-23-ibm-ftm-rag-poisoning.md) | `IPI` `INFRA` | Medium | A | — |
 <!-- END:incidents -->
 

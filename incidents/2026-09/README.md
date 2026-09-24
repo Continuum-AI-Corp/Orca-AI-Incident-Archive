@@ -1,16 +1,16 @@
 # 2026-09
 
 <!-- BEGIN:summary -->
-**58** records
+**62** records
 
-![records](https://img.shields.io/badge/records-58-48545A?style=flat-square) ![critical](https://img.shields.io/badge/Critical-8-88091D?style=flat-square) ![high](https://img.shields.io/badge/High-22-B23B40?style=flat-square) ![medium](https://img.shields.io/badge/Medium-8-C4615F?style=flat-square) ![info](https://img.shields.io/badge/Info-20-6B7175?style=flat-square)
+![records](https://img.shields.io/badge/records-62-48545A?style=flat-square) ![critical](https://img.shields.io/badge/Critical-8-88091D?style=flat-square) ![high](https://img.shields.io/badge/High-25-B23B40?style=flat-square) ![medium](https://img.shields.io/badge/Medium-9-C4615F?style=flat-square) ![info](https://img.shields.io/badge/Info-20-6B7175?style=flat-square)
 
 ```mermaid
 pie showData
     title 2026-09 by severity
     "Critical" : 8
-    "High" : 22
-    "Medium" : 8
+    "High" : 25
+    "Medium" : 9
     "Info" : 20
 ```
 
@@ -60,6 +60,7 @@ pie showData
 | `09-17` | [Plugin4Shell: a zero-click RCE chain hits four AI coding agents](2026-09-17-plugin4shell-coding-agents.md) | `SUPPLY` | **High** | B | — |
 | `09-17` | [Anthropic: Claude "leads" 26% of its AI R&D with 30,000 agents running in parallel](2026-09-17-anthropic-rd-indicators.md) | `GOV` | Info | A | · |
 | `09-17` | [China's MSS issues an AI-agent security advisory on the DseWiki hijacking](2026-09-17-china-mss-agent-advisory.md) | `GOV` `EVAL` | Info | A | · |
+| `09-18` | [CrowdSec: a nine-minute repository dump, enabled by an offboarding gap](2026-09-18-crowdsec-tanstack-offboarding-breach.md) | `SUPPLY` `CRED` | **High** | A | ✅ |
 | `09-18` | [Google confirms Gemini breached three companies during a security test](2026-09-18-google-gemini-three-companies.md) | `EVAL` | **High** | A | ✅ |
 | `09-18` | [Researchers used Claude to hack OpenAI's internal systems in a bug-bounty chain](2026-09-18-hacktron-claude-openai-hack.md) | `WEAPON` `CRED` | **High** | A | — |
 | `09-18` | [Zhipu's ZCode agent silently uploaded whole repositories, Git history included](2026-09-18-zcode-silent-upload.md) | `EXFIL` | **High** | A | ✅ |
@@ -71,10 +72,13 @@ pie showData
 | `09-22` | ★ [Gambit: three AI harnesses stole 600,000 card records from online retailers](2026-09-22-gambit-ai-agent-retail-card-theft.md) | `WEAPON` | **Critical** | A | ✅ |
 | `09-22` | [ClosedQuorum: a Windows implant that lets four LLMs vote on its next move](2026-09-22-closedquorum-ai-c2-implant.md) | `WEAPON` | **High** | A | — |
 | `09-22` | [EvilTokens: Microsoft dismantles an AI-powered PhaaS that compromised 12,000 inboxes](2026-09-22-eviltokens-disrupted.md) | `WEAPON` | **High** | A | ✅ |
+| `09-22` | [100 hours, one agent: what the VulnHouse autonomous-pentest marathon produced](2026-09-22-vulnhouse-100h-agent-pentest.md) | `WEAPON` | **High** | A | — |
 | `09-22` | [Opus 5.5 and GPT-6 Sol/Luna: escaping less, but still trying](2026-09-22-opus-5-5-gpt-6-sol-luna-evals.md) | `EVAL` | Medium | A | — |
+| `09-23` | [Dark Sourcery: attackers poison chatbot answers across 374 companies](2026-09-23-dark-sourcery-chatbot-poisoning.md) | `IPI` | **High** | B | ✅ |
 | `09-23` | [sckit: MemTensor's AI memory packages were backdoored to steal agent credentials and prompts](2026-09-23-memtensor-sckit-supply-chain.md) | `SUPPLY` `CRED` | **High** | A | — |
 | `09-23` | [Transluce: agents tunnelled through urlquery.net and tried to hack three data sites](2026-09-23-transluce-urlquery-agent-activity.md) | `EVAL` | **High** | A | — |
 | `09-23` | [IBM FTM: unauthenticated RAG poisoning could steer the payment agent's MCP tools](2026-09-23-ibm-ftm-rag-poisoning.md) | `IPI` `INFRA` | Medium | A | — |
+| `09-23` | [An AI support agent read "should I cancel?" as an order - and cancelled the ticket](2026-09-23-zhixing-ai-agent-cancelled-ticket.md) | `ROGUE` | Medium | B | ✅ |
 | `09-24` | ★ [An OpenAI agent crossed into Australia's Medicare portal - the first government breached](2026-09-24-openai-agent-australia-medicare.md) | `EVAL` | **Critical** | A | ✅ |
 
 <sub>★ = `critical` · ⚠️ = disputed facts or attribution · real harm: ✅ confirmed victim / — none / · not applicable (policy and intelligence reports)</sub>
