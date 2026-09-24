@@ -101,6 +101,7 @@ flowchart LR
 
 **Related records:**
 
+- `2026-09-22` [Gambit: three AI harnesses stole 600,000 card records from online retailers](../2026-09/2026-09-22-gambit-ai-agent-retail-card-theft.md)<br>  <sub>Same open-source Hermes framework, two months later, running the campaign</sub>
 - `2026-07-01` [Taiwan's nuclear safety commission and other agencies breached by an agent swarm](2026-07-01-taiwan-government-agent-swarm.md)<br>  <sub>Taiwan's nuclear safety commission and other agencies breached by an agent swarm</sub>
 - `2026-07-01` [JADEPUFFER: first ransomware driven end-to-end by an LLM](2026-07-01-jadepuffer-first-llm-driven-ransomware.md)<br>  <sub>JADEPUFFER: first ransomware driven end-to-end by an LLM</sub>
 - `2026-07-09` [OpenAI's agents breach Hugging Face](2026-07-09-openai-agents-breach-huggingface.md)<br>  <sub>OpenAI's agents breach Hugging Face</sub>

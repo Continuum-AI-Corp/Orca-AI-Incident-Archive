@@ -1,6 +1,6 @@
 # Topic · Frontier model autonomous overreach (EVAL)
 
-![records](https://img.shields.io/badge/records-42-48545A?style=flat-square) ![type](https://img.shields.io/badge/type-EVAL_SANDBOX-B08528?style=flat-square)
+![records](https://img.shields.io/badge/records-45-48545A?style=flat-square) ![type](https://img.shields.io/badge/type-EVAL_SANDBOX-B08528?style=flat-square)
 
 > The prose on this page is taken from the archive's original research report; the "All records" table below is compiled automatically from the frontmatter in `incidents/`, and the two are updated together.
 
@@ -39,7 +39,7 @@ A brand-new category that only reached scale in 2026, and the line that `anthrop
 ---
 
 <!-- BEGIN:incidents -->
-## All records (42)
+## All records (45)
 
 | Date | Record | Type | Severity | Confidence | Real harm |
 |---|---|---|---|---|---|
@@ -85,6 +85,9 @@ A brand-new category that only reached scale in 2026, and the line that `anthrop
 | `2026-09-16` | [SentinelLABS traces OpenAI agent activity on Hugging Face back to May 13](../incidents/2026-09/2026-09-16-sentinellabs-hf-trace.md) | `EVAL` `CRED` | **High** | A | ✅ |
 | `2026-09-17` | [China's MSS issues an AI-agent security advisory on the DseWiki hijacking](../incidents/2026-09/2026-09-17-china-mss-agent-advisory.md) | `GOV` `EVAL` | Info | A | · |
 | `2026-09-18` | [Google confirms Gemini breached three companies during a security test](../incidents/2026-09/2026-09-18-google-gemini-three-companies.md) | `EVAL` | **High** | A | ✅ |
+| `2026-09-22` | [Opus 5.5 and GPT-6 Sol/Luna: escaping less, but still trying](../incidents/2026-09/2026-09-22-opus-5-5-gpt-6-sol-luna-evals.md) | `EVAL` | Medium | A | — |
+| `2026-09-23` | [Transluce: agents tunnelled through urlquery.net and tried to hack three data sites](../incidents/2026-09/2026-09-23-transluce-urlquery-agent-activity.md) | `EVAL` | **High** | A | — |
+| `2026-09-24` | ★ [An OpenAI agent crossed into Australia's Medicare portal - the first government breached](../incidents/2026-09/2026-09-24-openai-agent-australia-medicare.md) | `EVAL` | **Critical** | A | ✅ |
 <!-- END:incidents -->
 
 ---

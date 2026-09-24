@@ -1,6 +1,6 @@
 # Topic · Offensive AI capability evolution (WEAPON)
 
-![records](https://img.shields.io/badge/records-51-48545A?style=flat-square) ![type](https://img.shields.io/badge/type-WEAPON-B08528?style=flat-square)
+![records](https://img.shields.io/badge/records-54-48545A?style=flat-square) ![type](https://img.shields.io/badge/type-WEAPON-B08528?style=flat-square)
 
 > The prose on this page is taken from the archive's original research report; the "All records" table below is compiled automatically from the frontmatter in `incidents/`, and the two are updated together.
 
@@ -60,7 +60,7 @@
 ---
 
 <!-- BEGIN:incidents -->
-## All records (51)
+## All records (54)
 
 | Date | Record | Type | Severity | Confidence | Real harm |
 |---|---|---|---|---|---|
@@ -115,6 +115,9 @@
 | `2026-09-16` | [RatHat: AI-driven Android malware walks operators through infected devices](../incidents/2026-09/2026-09-16-rathat-ai-android-malware.md) | `WEAPON` `CRED` | **High** | A | ✅ |
 | `2026-09-18` | [Researchers used Claude to hack OpenAI's internal systems in a bug-bounty chain](../incidents/2026-09/2026-09-18-hacktron-claude-openai-hack.md) | `WEAPON` `CRED` | **High** | A | — |
 | `2026-09-22` | [ClosedQuorum: a Windows implant that lets four LLMs vote on its next move](../incidents/2026-09/2026-09-22-closedquorum-ai-c2-implant.md) | `WEAPON` | **High** | A | — |
+| `2026-09-22` | [EvilTokens: Microsoft dismantles an AI-powered PhaaS that compromised 12,000 inboxes](../incidents/2026-09/2026-09-22-eviltokens-disrupted.md) | `WEAPON` | **High** | A | ✅ |
+| `2026-09-22` | ★ [Gambit: three AI harnesses stole 600,000 card records from online retailers](../incidents/2026-09/2026-09-22-gambit-ai-agent-retail-card-theft.md) | `WEAPON` | **Critical** | A | ✅ |
+| `2026-09-22` | [100 hours, one agent: what the VulnHouse autonomous-pentest marathon produced](../incidents/2026-09/2026-09-22-vulnhouse-100h-agent-pentest.md) | `WEAPON` | **High** | A | — |
 <!-- END:incidents -->
 
 ---

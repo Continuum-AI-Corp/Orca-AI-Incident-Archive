@@ -20,7 +20,7 @@
 | ⚠️ Unverified | "A manufacturer rushed OpenClaw into production and lost 72 hours of output, possibly over ¥20m" and "a legal-services firm leaked client data" - **seen only in industry self-media, with no verifiable detail; should be removed or marked unverified** | [Questionable source](https://www.secrss.com/articles/86614) |
 
 <!-- BEGIN:incidents -->
-## All records (18)
+## All records (20)
 
 | Date | Record | Type | Severity | Confidence | Real harm |
 |---|---|---|---|---|---|
@@ -42,6 +42,8 @@
 | `2026-09-16` | [RatHat: AI-driven Android malware walks operators through infected devices](../incidents/2026-09/2026-09-16-rathat-ai-android-malware.md) | `WEAPON` `CRED` | **High** | A | ✅ |
 | `2026-09-17` | [China's MSS issues an AI-agent security advisory on the DseWiki hijacking](../incidents/2026-09/2026-09-17-china-mss-agent-advisory.md) | `GOV` `EVAL` | Info | A | · |
 | `2026-09-18` | [Zhipu's ZCode agent silently uploaded whole repositories, Git history included](../incidents/2026-09/2026-09-18-zcode-silent-upload.md) | `EXFIL` | **High** | A | ✅ |
+| `2026-09-22` | [100 hours, one agent: what the VulnHouse autonomous-pentest marathon produced](../incidents/2026-09/2026-09-22-vulnhouse-100h-agent-pentest.md) | `WEAPON` | **High** | A | — |
+| `2026-09-23` | [An AI support agent read "should I cancel?" as an order - and cancelled the ticket](../incidents/2026-09/2026-09-23-zhixing-ai-agent-cancelled-ticket.md) | `ROGUE` | Medium | B | ✅ |
 <!-- END:incidents -->
 
 ---

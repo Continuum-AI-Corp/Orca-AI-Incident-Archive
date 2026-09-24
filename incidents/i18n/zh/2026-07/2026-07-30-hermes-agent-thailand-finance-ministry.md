@@ -58,6 +58,7 @@ flowchart LR
 
 **同类条目**：
 
+- `2026-09-22` [Gambit：三个 AI harness 从在线零售商窃取 60 万条信用卡记录](../../../2026-09/2026-09-22-gambit-ai-agent-retail-card-theft.md)<br>  <sub>同一个开源 Hermes 框架，两个月后运行整场活动</sub>
 - `2026-07-01` [台湾核安会等政府机构被 agent 蜂群攻破](../../../2026-07/2026-07-01-taiwan-government-agent-swarm.md)<br>  <sub>Taiwan's nuclear safety commission and other agencies breached by an agent swarm</sub>
 - `2026-07-01` [JADEPUFFER：首起 LLM 全程驱动的勒索攻击](../../../2026-07/2026-07-01-jadepuffer-first-llm-driven-ransomware.md)<br>  <sub>JADEPUFFER: first ransomware driven end-to-end by an LLM</sub>
 - `2026-07-09` [OpenAI 的 agent 入侵 Hugging Face](../../../2026-07/2026-07-09-openai-agents-breach-huggingface.md)<br>  <sub>OpenAI's agents breach Hugging Face</sub>
