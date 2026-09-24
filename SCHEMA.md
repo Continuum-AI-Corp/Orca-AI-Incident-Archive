@@ -105,6 +105,10 @@ Constraints are enforced by [`scripts/validate.py`](scripts/validate.py); CI run
 | `dist/incidents.csv` | flattened, one row per record, `type` / `region` joined with `;`; one `title_<lang>` / `summary_<lang>` column per language and a `path_zh` column |
 | `dist/stats.json` | counts per dimension |
 
+> [!IMPORTANT]
+> `dist/incidents.json` is also a live API. OrcaRouter's `/incident-archive` page fetches `main`'s copy on every visit and at every build, and rejects the whole file if it breaks the page's contract — the page then silently serves an older snapshot, and its builds fail. [`scripts/downstream_contract.py`](scripts/downstream_contract.py) checks that contract in CI.
+> Adding records, correcting facts and adding sources are always fine. A new `schema_version`, a new `kind` / `severity` / `confidence` / `ai_involvement` value, a new `type` code, renamed fields or moved record files have to land on OrcaRouter's side first.
+
 ---
 
 [← Back to home](README.md) · [Contributing](CONTRIBUTING.md)

@@ -7,6 +7,7 @@
 - [ ] Every new or changed record has **clickable sources**, at least one of them primary
 - [ ] The frontmatter is complete per [SCHEMA.md](../blob/main/SCHEMA.md) and `python scripts/validate.py` passes
 - [ ] `python scripts/build.py` has been run; `dist/` and the index pages are in sync
+- [ ] `python scripts/downstream_contract.py` passes — `dist/incidents.json` still loads in OrcaRouter-O2
 - [ ] Factual changes state **what it said, what it says now, and the evidence** below
 - [ ] Disputed facts use `disputed: true` and present all sides **side by side** in the body, never just one
 

@@ -45,11 +45,12 @@ are also logged in [`docs/data-quality.md`](docs/data-quality.md).
 5. Run the checks locally:
 
 ```bash
-python scripts/validate.py          # frontmatter and link format
-python scripts/build.py             # regenerate dist/ and the indexes
+python scripts/validate.py              # frontmatter and link format
+python scripts/build.py                 # regenerate dist/ and the indexes
+python scripts/downstream_contract.py   # dist/incidents.json still loads in OrcaRouter-O2
 ```
 
-CI runs the same checks on every push.
+CI runs the same checks on every push. `dist/incidents.json` is also read live by a downstream site, so its shape is frozen — see [SCHEMA.md](SCHEMA.md#export).
 
 ## Editing an existing record
 
