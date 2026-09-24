@@ -1,7 +1,7 @@
 # All records by month
 
 <!-- BEGIN:index -->
-**354** records across **22** months.
+**358** records across **22** months.
 
 | Month | Records | critical | high | with real harm |
 |---|---|---|---|---|
@@ -26,8 +26,8 @@
 | [2026-06](2026-06/README.md) | 31 | 3 | 10 | 9 |
 | [2026-07](2026-07/README.md) | 28 | 7 | 9 | 9 |
 | [2026-08](2026-08/README.md) | 26 | 4 | 13 | 8 |
-| [2026-09](2026-09/README.md) | 51 | 6 | 19 | 15 |
-| **Total** | **354** | **45** | **139** | **127** |
+| [2026-09](2026-09/README.md) | 55 | 7 | 21 | 17 |
+| **Total** | **358** | **46** | **141** | **129** |
 <!-- END:index -->
 
 ---

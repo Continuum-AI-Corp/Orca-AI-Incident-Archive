@@ -1,6 +1,6 @@
 # Topic · Agent supply-chain poisoning (SUPPLY)
 
-![records](https://img.shields.io/badge/records-65-48545A?style=flat-square) ![type](https://img.shields.io/badge/type-SUPPLY_MCP-B08528?style=flat-square)
+![records](https://img.shields.io/badge/records-66-48545A?style=flat-square) ![type](https://img.shields.io/badge/type-SUPPLY_MCP-B08528?style=flat-square)
 
 > The prose on this page is taken from the archive's original research report; the "All records" table below is compiled automatically from the frontmatter in `incidents/`, and the two are updated together.
 
@@ -32,7 +32,7 @@
 ---
 
 <!-- BEGIN:incidents -->
-## All records (65)
+## All records (66)
 
 | Date | Record | Type | Severity | Confidence | Real harm |
 |---|---|---|---|---|---|
@@ -101,6 +101,7 @@
 | `2026-09-14` | [Bifrost AI gateway: one unauthenticated MCP registration runs commands as the gateway user](../incidents/2026-09/2026-09-14-bifrost-ai-gateway-cve-2026-90898.md) | `INFRA` `MCP` | **High** | A | — |
 | `2026-09-16` | [BragJack: one browser extension hijacks the AI agents in five major browsers](../incidents/2026-09/2026-09-16-bragjack-browser-agents.md) | `SUPPLY` `IPI` | **High** | B | — |
 | `2026-09-17` | [Plugin4Shell: a zero-click RCE chain hits four AI coding agents](../incidents/2026-09/2026-09-17-plugin4shell-coding-agents.md) | `SUPPLY` | **High** | B | — |
+| `2026-09-23` | [sckit: MemTensor's AI memory packages were backdoored to steal agent credentials and prompts](../incidents/2026-09/2026-09-23-memtensor-sckit-supply-chain.md) | `SUPPLY` `CRED` | **High** | A | — |
 <!-- END:incidents -->
 
 ---

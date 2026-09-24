@@ -13,11 +13,11 @@
 </p>
 
 <!-- BEGIN:badges -->
-<p align="center"><img alt="件数" src="https://img.shields.io/badge/%E4%BB%B6%E6%95%B0-354-48545A?style=flat-square"> <img alt="対象月数" src="https://img.shields.io/badge/%E5%AF%BE%E8%B1%A1%E6%9C%88%E6%95%B0-22-48545A?style=flat-square"> <img alt="重大" src="https://img.shields.io/badge/%E9%87%8D%E5%A4%A7-45-88091D?style=flat-square"> <img alt="実害あり" src="https://img.shields.io/badge/%E5%AE%9F%E5%AE%B3%E3%81%82%E3%82%8A-127-B23B40?style=flat-square"> <img alt="一次情報源" src="https://img.shields.io/badge/%E4%B8%80%E6%AC%A1%E6%83%85%E5%A0%B1%E6%BA%90-593_URL-157A41?style=flat-square"> <img alt="ライセンス" src="https://img.shields.io/badge/%E3%83%A9%E3%82%A4%E3%82%BB%E3%83%B3%E3%82%B9-CC_BY_4.0-2359A8?style=flat-square"></p>
+<p align="center"><img alt="件数" src="https://img.shields.io/badge/%E4%BB%B6%E6%95%B0-358-48545A?style=flat-square"> <img alt="対象月数" src="https://img.shields.io/badge/%E5%AF%BE%E8%B1%A1%E6%9C%88%E6%95%B0-22-48545A?style=flat-square"> <img alt="重大" src="https://img.shields.io/badge/%E9%87%8D%E5%A4%A7-46-88091D?style=flat-square"> <img alt="実害あり" src="https://img.shields.io/badge/%E5%AE%9F%E5%AE%B3%E3%81%82%E3%82%8A-129-B23B40?style=flat-square"> <img alt="一次情報源" src="https://img.shields.io/badge/%E4%B8%80%E6%AC%A1%E6%83%85%E5%A0%B1%E6%BA%90-607_URL-157A41?style=flat-square"> <img alt="ライセンス" src="https://img.shields.io/badge/%E3%83%A9%E3%82%A4%E3%82%BB%E3%83%B3%E3%82%B9-CC_BY_4.0-2359A8?style=flat-square"></p>
 <!-- END:badges -->
 
 <!-- BEGIN:thesis -->
-収録範囲は **2025-01** から **2026-09-22** まで。AI エージェントに関わるセキュリティ事象 354 件を月単位で整理しています（ほかに 2024-12-01 まで遡れる前史 1 件）。各レコードは YAML ヘッダー、攻撃連鎖図、そして**クリックできる一次情報源を必ず 1 つ以上**持つ Markdown ファイルです。354 件のうち、確認された被害者がいるのは **127 件**だけです。
+収録範囲は **2025-01** から **2026-09-23** まで。AI エージェントに関わるセキュリティ事象 358 件を月単位で整理しています（ほかに 2024-12-01 まで遡れる前史 1 件）。各レコードは YAML ヘッダー、攻撃連鎖図、そして**クリックできる一次情報源を必ず 1 つ以上**持つ Markdown ファイルです。358 件のうち、確認された被害者がいるのは **129 件**だけです。
 <!-- END:thesis -->
 
 このアーカイブは、多くの事故リストが混同してしまう一点の区別のために存在します。
@@ -75,11 +75,11 @@
 |---|---|---|---|---|---|---|---|---|---|---|---|
 | `8` ★1 | `6` | `6` | `6` | `7` | `11` | `10` ★2 | `15` ★2 | `10` ★1 | `15` | `13` ★3 | `14` |
 
-**2026年**（232 件）
+**2026年**（236 件）
 
 | [01](../../incidents/2026-01/README.md) | [02](../../incidents/2026-02/README.md) | [03](../../incidents/2026-03/README.md) | [04](../../incidents/2026-04/README.md) | [05](../../incidents/2026-05/README.md) | [06](../../incidents/2026-06/README.md) | [07](../../incidents/2026-07/README.md) | [08](../../incidents/2026-08/README.md) | [09](../../incidents/2026-09/README.md) |
 |---|---|---|---|---|---|---|---|---|
-| `13` ★1 | `19` ★5 | `16` ★3 | `22` ★2 | `26` ★5 | `31` ★3 | `28` ★7 | `26` ★4 | `51` ★6 |
+| `13` ★1 | `19` ★5 | `16` ★3 | `22` ★2 | `26` ★5 | `31` ★3 | `28` ★7 | `26` ★4 | `55` ★7 |
 
 <sub>`n` = その月の件数、★ = うち `critical` の件数</sub>
 <!-- END:months -->
@@ -136,6 +136,7 @@
 | `2026-09-11` | [Claudeが180万件のAndroidアプリをスキャンしてシークレットを探索](../../incidents/2026-09/2026-09-11-claude-scans-18m-android-apks.md)<br><sub>Claude used to scan 1.8 million Android apps for secrets</sub> | `WEAPON` | グローバル |
 | `2026-09-14` | [スペインAEPD、AIエージェントによる初のデータ侵害届出を受領](../../incidents/2026-09/2026-09-14-spain-aepd-agent-breach.md)<br><sub>Spain's AEPD receives the first AI-agent-driven breach notification</sub> | `WEAPON` | 欧州 |
 | `2026-09-15` | [PaperCutへのAIエージェント群集攻撃が公表される](../../incidents/2026-09/2026-09-15-papercut-agent-swarm-disclosed.md)<br><sub>PaperCut AI agent swarm attack made public</sub> | `WEAPON` | グローバル |
+| `2026-09-22` | [Gambit：3つのAIハーネスがオンライン小売業者から60万件のカード記録を窃取](../../incidents/2026-09/2026-09-22-gambit-ai-agent-retail-card-theft.md)<br><sub>Gambit: three AI harnesses stole 600,000 card records from online retailers</sub> | `WEAPON` | グローバル |
 <!-- END:critical -->
 
 ## 何をレコードとするか
@@ -161,9 +162,9 @@
 <!-- BEGIN:quality -->
 |  |  |
 |---|---|
-| 情報源リンク | 662 件 / ユニーク URL 593 件 |
+| 情報源リンク | 676 件 / ユニーク URL 607 件 |
 | 情報源なしのレコード | **0** — 情報源がなければ収録しない |
-| 評価 A（一次情報源） | 302 件 |
+| 評価 A（一次情報源） | 306 件 |
 | 争いありとしてマーク | 14 件 |
 | 検証回数 | 4 回 |
 <!-- END:quality -->
@@ -179,7 +180,7 @@
 @misc{orca_ai_incident_archive,
   title  = {Orca AI Incident Archive: An open database of real-world AI agent incidents},
   year   = {2026},
-  note   = {354 件、2025-01〜2026-09、うち 127 件に確認された実害},
+  note   = {358 件、2025-01〜2026-09、うち 129 件に確認された実害},
   url    = {https://github.com/Continuum-AI-Corp/Orca-AI-Incident-Archive}
 }
 ```
@@ -205,4 +206,4 @@
 
 ---
 
-<sub><!-- BEGIN:footer -->ビルド 2026-09-22 · 354 件 · 22 ヶ月<!-- END:footer --></sub> · <sub>構造：[SCHEMA.md](../../SCHEMA.md) · データ：[dist/](../../dist/README.md)</sub>
+<sub><!-- BEGIN:footer -->ビルド 2026-09-23 · 358 件 · 22 ヶ月<!-- END:footer --></sub> · <sub>構造：[SCHEMA.md](../../SCHEMA.md) · データ：[dist/](../../dist/README.md)</sub>

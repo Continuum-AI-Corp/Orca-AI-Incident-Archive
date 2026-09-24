@@ -1,6 +1,6 @@
 # Topic · Agent infrastructure exposure (INFRA)
 
-![records](https://img.shields.io/badge/records-91-48545A?style=flat-square) ![type](https://img.shields.io/badge/type-INFRA_CRED-B08528?style=flat-square)
+![records](https://img.shields.io/badge/records-92-48545A?style=flat-square) ![type](https://img.shields.io/badge/type-INFRA_CRED-B08528?style=flat-square)
 
 > The prose on this page is taken from the archive's original research report; the "All records" table below is compiled automatically from the frontmatter in `incidents/`, and the two are updated together.
 
@@ -26,7 +26,7 @@ The role Langflow / LiteLLM / Flowise / OpenClaw play in 2026 is the one Fortine
 ---
 
 <!-- BEGIN:incidents -->
-## All records (91)
+## All records (92)
 
 | Date | Record | Type | Severity | Confidence | Real harm |
 |---|---|---|---|---|---|
@@ -121,6 +121,7 @@ The role Langflow / LiteLLM / Flowise / OpenClaw play in 2026 is the one Fortine
 | `2026-09-16` | [SentinelLABS traces OpenAI agent activity on Hugging Face back to May 13](../incidents/2026-09/2026-09-16-sentinellabs-hf-trace.md) | `EVAL` `CRED` | **High** | A | ✅ |
 | `2026-09-17` | [Microsoft patches a CVSS 10.0 missing-authentication flaw in Azure AI Foundry](../incidents/2026-09/2026-09-17-azure-ai-foundry-cve-2026-85889.md) | `INFRA` | **High** | A | — |
 | `2026-09-18` | [Researchers used Claude to hack OpenAI's internal systems in a bug-bounty chain](../incidents/2026-09/2026-09-18-hacktron-claude-openai-hack.md) | `WEAPON` `CRED` | **High** | A | — |
+| `2026-09-23` | [sckit: MemTensor's AI memory packages were backdoored to steal agent credentials and prompts](../incidents/2026-09/2026-09-23-memtensor-sckit-supply-chain.md) | `SUPPLY` `CRED` | **High** | A | — |
 <!-- END:incidents -->
 
 ---

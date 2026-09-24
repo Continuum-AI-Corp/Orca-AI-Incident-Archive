@@ -8,7 +8,7 @@ vendor policy moves all sit here. It is the largest group in the archive; the
 high share follows from that rule, not from a lack of geography.
 
 <!-- BEGIN:incidents -->
-## All records (291)
+## All records (295)
 
 | Date | Record | Type | Severity | Confidence | Real harm |
 |---|---|---|---|---|---|
@@ -303,6 +303,10 @@ high share follows from that rule, not from a lack of geography.
 | `2026-09-19` | [RoboHarm: leading models rarely refuse dangerous robot-arm commands](../incidents/2026-09/2026-09-19-roboharm-benchmark.md) | `ROGUE` | Medium | B | — |
 | `2026-09-21` | [UN panel's first thematic brief: the OpenAI-Hugging Face incident as a loss-of-control warning](../incidents/2026-09/2026-09-21-un-panel-ai-agents-misalignment-brief.md) | `GOV` | Info | A | · |
 | `2026-09-22` | [ClosedQuorum: a Windows implant that lets four LLMs vote on its next move](../incidents/2026-09/2026-09-22-closedquorum-ai-c2-implant.md) | `WEAPON` | **High** | A | — |
+| `2026-09-22` | [EvilTokens: Microsoft dismantles an AI-powered PhaaS that compromised 12,000 inboxes](../incidents/2026-09/2026-09-22-eviltokens-disrupted.md) | `WEAPON` | **High** | A | ✅ |
+| `2026-09-22` | ★ [Gambit: three AI harnesses stole 600,000 card records from online retailers](../incidents/2026-09/2026-09-22-gambit-ai-agent-retail-card-theft.md) | `WEAPON` | **Critical** | A | ✅ |
+| `2026-09-22` | [Opus 5.5 and GPT-6 Sol/Luna: escaping less, but still trying](../incidents/2026-09/2026-09-22-opus-5-5-gpt-6-sol-luna-evals.md) | `EVAL` | Medium | A | — |
+| `2026-09-23` | [sckit: MemTensor's AI memory packages were backdoored to steal agent credentials and prompts](../incidents/2026-09/2026-09-23-memtensor-sckit-supply-chain.md) | `SUPPLY` `CRED` | **High** | A | — |
 <!-- END:incidents -->
 
 ---
