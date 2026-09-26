@@ -8,7 +8,7 @@ vendor policy moves all sit here. It is the largest group in the archive; the
 high share follows from that rule, not from a lack of geography.
 
 <!-- BEGIN:incidents -->
-## All records (299)
+## All records (305)
 
 | Date | Record | Type | Severity | Confidence | Real harm |
 |---|---|---|---|---|---|
@@ -302,7 +302,10 @@ high share follows from that rule, not from a lack of geography.
 | `2026-09-18` | [CrowdSec: a nine-minute repository dump, enabled by an offboarding gap](../incidents/2026-09/2026-09-18-crowdsec-tanstack-offboarding-breach.md) | `SUPPLY` `CRED` | **High** | A | ✅ |
 | `2026-09-18` | [Google confirms Gemini breached three companies during a security test](../incidents/2026-09/2026-09-18-google-gemini-three-companies.md) | `EVAL` | **High** | A | ✅ |
 | `2026-09-19` | [RoboHarm: leading models rarely refuse dangerous robot-arm commands](../incidents/2026-09/2026-09-19-roboharm-benchmark.md) | `ROGUE` | Medium | B | — |
+| `2026-09-20` | [Tencent BrowserSkill: any 32-character extension origin can pose as the browser client and feed the agent forged pages](../incidents/2026-09/2026-09-20-tencent-browserskill-origin-bypass.md) | `IPI` `INFRA` | Medium | A | — |
+| `2026-09-21` | [MaxKB: the agent dispatch path lets a user denied a tool still call it and read its credentials](../incidents/2026-09/2026-09-21-maxkb-tool-permission-bypass.md) | `INFRA` `CRED` | Medium | A | — |
 | `2026-09-21` | [UN panel's first thematic brief: the OpenAI-Hugging Face incident as a loss-of-control warning](../incidents/2026-09/2026-09-21-un-panel-ai-agents-misalignment-brief.md) | `GOV` | Info | A | · |
+| `2026-09-22` | [CARBONATO: a Docker botnet installs Hermes Agent and loots AI API keys over Telegram](../incidents/2026-09/2026-09-22-carbonato-docker-hermes-agent-botnet.md) | `WEAPON` `INFRA` `CRED` | **High** | A | ✅ |
 | `2026-09-22` | [ClosedQuorum: a Windows implant that lets four LLMs vote on its next move](../incidents/2026-09/2026-09-22-closedquorum-ai-c2-implant.md) | `WEAPON` | **High** | A | — |
 | `2026-09-22` | [EvilTokens: Microsoft dismantles an AI-powered PhaaS that compromised 12,000 inboxes](../incidents/2026-09/2026-09-22-eviltokens-disrupted.md) | `WEAPON` | **High** | A | ✅ |
 | `2026-09-22` | ★ [Gambit: three AI harnesses stole 600,000 card records from online retailers](../incidents/2026-09/2026-09-22-gambit-ai-agent-retail-card-theft.md) | `WEAPON` | **Critical** | A | ✅ |
@@ -311,6 +314,9 @@ high share follows from that rule, not from a lack of geography.
 | `2026-09-23` | [IBM FTM: unauthenticated RAG poisoning could steer the payment agent's MCP tools](../incidents/2026-09/2026-09-23-ibm-ftm-rag-poisoning.md) | `IPI` `INFRA` | Medium | A | — |
 | `2026-09-23` | [sckit: MemTensor's AI memory packages were backdoored to steal agent credentials and prompts](../incidents/2026-09/2026-09-23-memtensor-sckit-supply-chain.md) | `SUPPLY` `CRED` | **High** | A | — |
 | `2026-09-23` | [Transluce: agents tunnelled through urlquery.net and tried to hack three data sites](../incidents/2026-09/2026-09-23-transluce-urlquery-agent-activity.md) | `EVAL` | **High** | A | — |
+| `2026-09-24` | [Manus: a JSFuck-obfuscated email beat the agent's filter, executed a payload and exposed connected app tokens](../incidents/2026-09/2026-09-24-manus-email-prompt-injection-rce.md) | `IPI` `CRED` | **High** | B | — |
+| `2026-09-24` | [SalesBleed: three Agentforce flaws turn a single web lead into zero-click CRM exfiltration and agent-impersonated phishing](../incidents/2026-09/2026-09-24-salesbleed-agentforce-zero-click-exfil.md) | `IPI` `EXFIL` | **High** | A | — |
+| `2026-09-25` | [Zammad: crafted text in an AI Agent field bypasses the sanitizer and runs commands on the server](../incidents/2026-09/2026-09-25-zammad-ai-agent-template-rce.md) | `IPI` `INFRA` | Medium | A | — |
 <!-- END:incidents -->
 
 ---

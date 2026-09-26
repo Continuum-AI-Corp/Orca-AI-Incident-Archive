@@ -1,26 +1,26 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 336" width="900" height="336" role="img" font-family="ui-sans-serif,-apple-system,'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif">
 <rect width="900" height="336" fill="#FFFFFF"/>
-<text x="16" y="18" font-size="13" font-weight="700" fill="#141A1C">Distribution by type (a record can carry several, so totals exceed 365)</text>
+<text x="16" y="18" font-size="13" font-weight="700" fill="#141A1C">Distribution by type (a record can carry several, so totals exceed 372)</text>
 <text x="16" y="47" font-size="11" fill="#141A1C" font-family="ui-monospace,'SF Mono','Cascadia Mono','Consolas',monospace" font-weight="600">GOV</text>
 <text x="199" y="47" font-size="10.5" text-anchor="end" fill="#7A868C">Governance &amp; policy</text>
 <rect x="210" y="37" width="628.0" height="13" rx="3" fill="#B08528"/>
 <text x="845.0" y="47.5" font-size="10.5" fill="#48545A" font-family="ui-monospace,'SF Mono','Cascadia Mono','Consolas',monospace">65</text>
 <text x="16" y="69" font-size="11" fill="#141A1C" font-family="ui-monospace,'SF Mono','Cascadia Mono','Consolas',monospace" font-weight="600">CRED</text>
 <text x="199" y="69" font-size="10.5" text-anchor="end" fill="#7A868C">Credential abuse</text>
-<rect x="210" y="59" width="550.7" height="13" rx="3" fill="#B08528"/>
-<text x="767.7" y="69.5" font-size="10.5" fill="#48545A" font-family="ui-monospace,'SF Mono','Cascadia Mono','Consolas',monospace">57</text>
+<rect x="210" y="59" width="589.4" height="13" rx="3" fill="#B08528"/>
+<text x="806.4" y="69.5" font-size="10.5" fill="#48545A" font-family="ui-monospace,'SF Mono','Cascadia Mono','Consolas',monospace">61</text>
 <text x="16" y="91" font-size="11" fill="#141A1C" font-family="ui-monospace,'SF Mono','Cascadia Mono','Consolas',monospace" font-weight="600">WEAPON</text>
 <text x="199" y="91" font-size="10.5" text-anchor="end" fill="#7A868C">Agent as a weapon</text>
-<rect x="210" y="81" width="521.7" height="13" rx="3" fill="#B08528"/>
-<text x="738.7" y="91.5" font-size="10.5" fill="#48545A" font-family="ui-monospace,'SF Mono','Cascadia Mono','Consolas',monospace">54</text>
+<rect x="210" y="81" width="531.4" height="13" rx="3" fill="#B08528"/>
+<text x="748.4" y="91.5" font-size="10.5" fill="#48545A" font-family="ui-monospace,'SF Mono','Cascadia Mono','Consolas',monospace">55</text>
 <text x="16" y="113" font-size="11" fill="#141A1C" font-family="ui-monospace,'SF Mono','Cascadia Mono','Consolas',monospace" font-weight="600">IPI</text>
 <text x="199" y="113" font-size="10.5" text-anchor="end" fill="#7A868C">Indirect prompt injection</text>
-<rect x="210" y="103" width="454.1" height="13" rx="3" fill="#B08528"/>
-<text x="671.1" y="113.5" font-size="10.5" fill="#48545A" font-family="ui-monospace,'SF Mono','Cascadia Mono','Consolas',monospace">47</text>
+<rect x="210" y="103" width="492.7" height="13" rx="3" fill="#B08528"/>
+<text x="709.7" y="113.5" font-size="10.5" fill="#48545A" font-family="ui-monospace,'SF Mono','Cascadia Mono','Consolas',monospace">51</text>
 <text x="16" y="135" font-size="11" fill="#141A1C" font-family="ui-monospace,'SF Mono','Cascadia Mono','Consolas',monospace" font-weight="600">INFRA</text>
 <text x="199" y="135" font-size="10.5" text-anchor="end" fill="#7A868C">Infrastructure exposure</text>
-<rect x="210" y="125" width="396.1" height="13" rx="3" fill="#B08528"/>
-<text x="613.1" y="135.5" font-size="10.5" fill="#48545A" font-family="ui-monospace,'SF Mono','Cascadia Mono','Consolas',monospace">41</text>
+<rect x="210" y="125" width="444.4" height="13" rx="3" fill="#B08528"/>
+<text x="661.4" y="135.5" font-size="10.5" fill="#48545A" font-family="ui-monospace,'SF Mono','Cascadia Mono','Consolas',monospace">46</text>
 <text x="16" y="157" font-size="11" fill="#141A1C" font-family="ui-monospace,'SF Mono','Cascadia Mono','Consolas',monospace" font-weight="600">SUPPLY</text>
 <text x="199" y="157" font-size="10.5" text-anchor="end" fill="#7A868C">Supply-chain poisoning</text>
 <rect x="210" y="147" width="367.1" height="13" rx="3" fill="#B08528"/>
@@ -31,8 +31,8 @@
 <text x="516.5" y="179.5" font-size="10.5" fill="#48545A" font-family="ui-monospace,'SF Mono','Cascadia Mono','Consolas',monospace">31</text>
 <text x="16" y="201" font-size="11" fill="#141A1C" font-family="ui-monospace,'SF Mono','Cascadia Mono','Consolas',monospace" font-weight="600">EXFIL</text>
 <text x="199" y="201" font-size="10.5" text-anchor="end" fill="#7A868C">Data exfiltration</text>
-<rect x="210" y="191" width="270.5" height="13" rx="3" fill="#B08528"/>
-<text x="487.5" y="201.5" font-size="10.5" fill="#48545A" font-family="ui-monospace,'SF Mono','Cascadia Mono','Consolas',monospace">28</text>
+<rect x="210" y="191" width="280.2" height="13" rx="3" fill="#B08528"/>
+<text x="497.2" y="201.5" font-size="10.5" fill="#48545A" font-family="ui-monospace,'SF Mono','Cascadia Mono','Consolas',monospace">29</text>
 <text x="16" y="223" font-size="11" fill="#141A1C" font-family="ui-monospace,'SF Mono','Cascadia Mono','Consolas',monospace" font-weight="600">ROGUE</text>
 <text x="199" y="223" font-size="10.5" text-anchor="end" fill="#7A868C">Rogue agent action</text>
 <rect x="210" y="213" width="251.2" height="13" rx="3" fill="#B08528"/>
@@ -49,5 +49,5 @@
 <text x="199" y="289" font-size="10.5" text-anchor="end" fill="#7A868C">Evaluation-environment breakout</text>
 <rect x="210" y="279" width="212.6" height="13" rx="3" fill="#B08528"/>
 <text x="429.6" y="289.5" font-size="10.5" fill="#48545A" font-family="ui-monospace,'SF Mono','Cascadia Mono','Consolas',monospace">22</text>
-<text x="16" y="323" font-size="10" fill="#7A868C">Top three: GOV 65 · CRED 57 · WEAPON 54. GOV runs high because the archive also records regulatory and vendor policy moves (kind=policy, excluded from incident counts)</text>
+<text x="16" y="323" font-size="10" fill="#7A868C">Top three: GOV 65 · CRED 61 · WEAPON 55. GOV runs high because the archive also records regulatory and vendor policy moves (kind=policy, excluded from incident counts)</text>
 </svg>
