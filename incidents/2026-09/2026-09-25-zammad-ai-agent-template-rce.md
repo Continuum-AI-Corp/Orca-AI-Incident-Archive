@@ -8,7 +8,7 @@ title_de: "Zammad: Präparierter Text in einem AI-Agent-Feld umgeht den Filter u
 title_fr: "Zammad : un texte façonné dans un champ d'AI Agent contourne l'assainissement et exécute des commandes sur le serveur"
 title_es: "Zammad: un texto manipulado en un campo de AI Agent burla el saneamiento y ejecuta comandos en el servidor"
 date: 2026-09-25
-date_raw: "2026-09-25 (NVD, GHSA)"
+date_raw: "GHSA 2026-08-04 / NVD 2026-09-25"
 date_precision: day
 
 kind: vulnerability
@@ -79,6 +79,8 @@ flowchart LR
 
 **The advisory.** Zammad's GitHub security advisory **GHSA-gp3x-9xm8-rcj6**, *"AI Agent template sanitizer bypass leads to remote code execution,"* covers Zammad before 7.1.2. NVD's synchronised text: *"a security filter that protects Zammad's AI Agent configuration can be bypassed by entering specially crafted text into one of an AI Agent's fields. An administrator with permission to create or edit AI Agents could exploit this to run arbitrary commands on the server that hosts Zammad, potentially reading, modifying, or destroying all data stored on that server. No interaction from other users is needed; the malicious code runs automatically the next time the affected AI Agent processes a ticket. This issue is fixed in version 7.1.2."* CVSS 4.0 base **8.6** with `PR:H` (high privileges required) and full confidentiality/integrity/availability impact; weaknesses **CWE-20** (improper input validation), **CWE-94** (code injection) and **CWE-1336** (template engine injection).
 
+**On the dates.** The GitHub advisory was published on **4 August 2026**; NVD synchronised it on **25 September 2026**, which is how this sweep picked it up. The record is dated to the NVD publication, following the archive's practice of dating CVE entries to the point they enter the CVE record.
+
 **Why the archive records it.** Two CVEs published the same week (25 September) target the same new surface from opposite ends — CVE-2026-84462 in Zammad's helpdesk AI Agent and CVE-2026-94111 in a browser agent's daemon. In both, the thing being attacked is not the model but the **plumbing that defines what the agent is**: its fields, templates, filters and transports. Zammad is the sharper case, because the store is persistent and self-triggering: the payload sits in the agent definition and fires on the next ticket, with no user interaction — an agent-configuration injection that behaves like stored XSS but lands as server command execution.
 
 **Grading.** `vulnerability` / `real_harm: false` — disclosed by the maintainer, fixed in 7.1.2, no known exploitation. Severity `medium` under the archive's ladder despite CVSS 8.6: the flaw requires an administrator who can already create or edit AI Agents, and the archive reserves `high` for CVSS 9+ or confirmed damage. Confidence **A**: the maintainer's advisory plus the NVD record.
@@ -94,7 +96,7 @@ flowchart LR
 
 | Field | Value |
 |---|---|
-| Date | `2026-09-25` (raw: NVD / GHSA 2026-09-25, precision `day`) |
+| Date | `2026-09-25` (raw: GHSA 2026-08-04 / NVD 2026-09-25, precision `day`) |
 | Kind | Vulnerability disclosure `vulnerability` |
 | Type | [`IPI`](../../taxonomy/types.md#ipi) [`INFRA`](../../taxonomy/types.md#infra) |
 | Severity | **Medium** `medium` |
