@@ -1,7 +1,7 @@
 {
  "schema": "https://github.com/Continuum-AI-Corp/Orca-AI-Incident-Archive/blob/main/SCHEMA.md",
  "schema_version": 2,
- "version": "2026-09-24",
+ "version": "2026-09-25",
  "license": "CC-BY-4.0",
  "languages": [
   "en",
@@ -12,7 +12,7 @@
   "fr",
   "es"
  ],
- "count": 365,
+ "count": 372,
  "incidents": [
   {
    "id": "2024-12-01-storm-azure-llmjacking",
@@ -16526,6 +16526,158 @@
    ]
   },
   {
+   "id": "2026-09-20-tencent-browserskill-origin-bypass",
+   "title": "Tencent BrowserSkill: any 32-character extension origin can pose as the browser client and feed the agent forged pages",
+   "title_zh": "腾讯 BrowserSkill：任意 32 字符扩展来源都能冒充浏览器客户端，向 agent 投喂伪造页面",
+   "title_ja": "Tencent BrowserSkill：32 文字の拡張オリジンならどれでもブラウザクライアントになりすまし、エージェントに偽ページを渡せる",
+   "title_ko": "Tencent BrowserSkill: 32자 확장 오리진이면 무엇이든 브라우저 클라이언트로 위장해 에이전트에 조작된 페이지를 넘길 수 있다",
+   "title_de": "Tencent BrowserSkill: Jede 32 Zeichen lange Extension-Origin kann sich als Browser-Client ausgeben und dem Agenten gefälschte Seiten liefern",
+   "title_fr": "Tencent BrowserSkill : n'importe quelle origine d'extension de 32 caractères peut se faire passer pour le client navigateur et fournir à l'agent des pages falsifiées",
+   "title_es": "Tencent BrowserSkill: cualquier origen de extensión de 32 caracteres puede hacerse pasar por el cliente del navegador y alimentar al agente con páginas falsificadas",
+   "date": "2026-09-20",
+   "date_end": null,
+   "date_precision": "day",
+   "date_raw": "2026-09-20 (NVD, VulnCheck)",
+   "month": "2026-09",
+   "kind": "vulnerability",
+   "type": [
+    "IPI",
+    "INFRA"
+   ],
+   "severity": "medium",
+   "confidence": "A",
+   "real_harm": false,
+   "ai_involvement": "confirmed",
+   "region": [
+    "GLOBAL"
+   ],
+   "summary": "**CVE-2026-94111: Tencent BrowserSkill through 0.3.0 accepts any `chrome-extension` origin with 32 characters in the range a–p in its local daemon's WebSocket origin validation (CWE-346), so *\"attackers can register a malicious extension as a browser client to intercept and manipulate page content, DOM, and screenshots returned to the AI agent.\"*** CVSS 4.0 **6.9** (`AV:L/AC:L/AT:N/PR:L/UI:N/VC:L/VI:H/VA:L`), credit George Chen, with the check located in `crates/bsk-cli/src/daemon/ws.rs`. The significance is the layer: this is not a page carrying an injected prompt but the **transport between the browser and the agent** — whoever speaks on that socket decides what the agent believes the page says. No exploitation in the wild is recorded. Recorded `vulnerability` / `IPI` + `INFRA` / `medium` / `real_harm: false`, following the archive's treatment of un-exploited agent-infrastructure CVEs",
+   "summary_zh": "**CVE-2026-94111：腾讯 BrowserSkill 0.3.0 及更早版本在本地守护进程的 WebSocket 来源校验中，接受任意长度为 32 字符、且字符落在 a–p 区间的 `chrome-extension` 来源（CWE-346），因此*「攻击者可以注册一个恶意扩展作为浏览器客户端，拦截并篡改返回给 AI agent 的页面内容、DOM 与截图。」*** CVSS 4.0 **6.9**（`AV:L/AC:L/AT:N/PR:L/UI:N/VC:L/VI:H/VA:L`），致谢 George Chen，问题代码位于 `crates/bsk-cli/src/daemon/ws.rs`。意义在于层级：这不是「页面里夹带注入提示」，而是**浏览器与 agent 之间的传输通道**——谁在这个 socket 上说话，就决定 agent 认为页面上写了什么。无在野利用记录。本条记为 `vulnerability` / `IPI` + `INFRA` / `medium` / `real_harm: false`，沿用档案对未在野 agent 基础设施 CVE 的处理口径",
+   "summary_ja": "**CVE-2026-94111：Tencent BrowserSkill 0.3.0 以前は、ローカルデーモンの WebSocket オリジン検証で 32 文字かつ a–p 範囲の `chrome-extension` オリジンを何でも受け入れる（CWE-346）。そのため*「攻撃者は悪意ある拡張をブラウザクライアントとして登録し、AIエージェントに返されるページ内容・DOM・スクリーンショットを傍受・改ざんできる。」*** CVSS 4.0 **6.9**（`AV:L/AC:L/AT:N/PR:L/UI:N/VC:L/VI:H/VA:L`）、報告者 George Chen、該当箇所は `crates/bsk-cli/src/daemon/ws.rs`。重要なのは階層である。これは「ページに仕込まれた注入プロンプト」ではなく、**ブラウザとエージェントの間の転送路**の問題——そのソケットで話す者が、エージェントがページに何と書いてあると信じるかを決める。実環境での悪用は記録されていない。`vulnerability` / `IPI` + `INFRA` / `medium` / `real_harm: false`",
+   "summary_ko": "**CVE-2026-94111: Tencent BrowserSkill 0.3.0 이하는 로컬 데몬의 WebSocket 오리진 검증에서 32자이며 a–p 범위의 `chrome-extension` 오리진을 모두 허용한다(CWE-346). 따라서 *\"공격자는 악성 확장을 브라우저 클라이언트로 등록해 AI 에이전트에 반환되는 페이지 내용, DOM, 스크린샷을 가로채고 조작할 수 있다.\"*** CVSS 4.0 **6.9**(`AV:L/AC:L/AT:N/PR:L/UI:N/VC:L/VI:H/VA:L`), 제보자 George Chen, 취약 지점은 `crates/bsk-cli/src/daemon/ws.rs`. 중요한 것은 계층이다. 이것은 \"페이지에 심긴 인젝션 프롬프트\"가 아니라 **브라우저와 에이전트 사이의 전송 채널**의 문제다 — 그 소켓에서 말하는 자가 에이전트가 페이지에 무엇이 적혀 있다고 믿을지를 결정한다. 실제 악용은 기록되지 않았다. `vulnerability` / `IPI` + `INFRA` / `medium` / `real_harm: false`",
+   "summary_de": "**CVE-2026-94111: Tencent BrowserSkill bis 0.3.0 akzeptiert in der WebSocket-Origin-Prüfung des lokalen Daemons jede `chrome-extension`-Origin mit 32 Zeichen im Bereich a–p (CWE-346), sodass *„Angreifer eine bösartige Erweiterung als Browser-Client registrieren können, um Seiteninhalte, DOM und Screenshots abzufangen und zu manipulieren, die an den KI-Agenten zurückgegeben werden.\"*** CVSS 4.0 **6.9** (`AV:L/AC:L/AT:N/PR:L/UI:N/VC:L/VI:H/VA:L`), Credit: George Chen; die Prüfung liegt in `crates/bsk-cli/src/daemon/ws.rs`. Bedeutsam ist die Ebene: Es geht nicht um eine Seite mit eingeschleustem Prompt, sondern um den **Transportweg zwischen Browser und Agent** — wer auf diesem Socket spricht, bestimmt, was der Agent glaubt, dass auf der Seite steht. Keine Ausnutzung in freier Wildbahn bekannt. Verzeichnet als `vulnerability` / `IPI` + `INFRA` / `medium` / `real_harm: false`",
+   "summary_fr": "**CVE-2026-94111 : Tencent BrowserSkill jusqu'à 0.3.0 accepte, dans la validation d'origine WebSocket du démon local, n'importe quelle origine `chrome-extension` de 32 caractères comprise dans la plage a–p (CWE-346), si bien que *« des attaquants peuvent enregistrer une extension malveillante comme client navigateur afin d'intercepter et de manipuler le contenu de la page, le DOM et les captures d'écran renvoyés à l'agent IA. »*** CVSS 4.0 **6.9** (`AV:L/AC:L/AT:N/PR:L/UI:N/VC:L/VI:H/VA:L`), crédit George Chen, contrôle situé dans `crates/bsk-cli/src/daemon/ws.rs`. L'intérêt est la couche : il ne s'agit pas d'une page contenant un prompt injecté mais du **transport entre le navigateur et l'agent** — qui parle sur ce socket décide de ce que l'agent croit lire sur la page. Aucune exploitation constatée. Enregistré `vulnerability` / `IPI` + `INFRA` / `medium` / `real_harm: false`",
+   "summary_es": "**CVE-2026-94111: Tencent BrowserSkill hasta 0.3.0 acepta, en la validación de origen WebSocket del demonio local, cualquier origen `chrome-extension` de 32 caracteres en el rango a–p (CWE-346), de modo que *«los atacantes pueden registrar una extensión maliciosa como cliente del navegador para interceptar y manipular el contenido de la página, el DOM y las capturas de pantalla devueltas al agente de IA»*.** CVSS 4.0 **6.9** (`AV:L/AC:L/AT:N/PR:L/UI:N/VC:L/VI:H/VA:L`), crédito a George Chen, con la comprobación en `crates/bsk-cli/src/daemon/ws.rs`. Lo relevante es la capa: no es una página con un prompt inyectado, sino el **transporte entre el navegador y el agente** — quien hable en ese socket decide qué cree el agente que dice la página. No se registra explotación real. Registrado `vulnerability` / `IPI` + `INFRA` / `medium` / `real_harm: false`",
+   "disputed": false,
+   "landmark": false,
+   "path": "incidents/2026-09/2026-09-20-tencent-browserskill-origin-bypass.md",
+   "path_zh": "incidents/i18n/zh/2026-09/2026-09-20-tencent-browserskill-origin-bypass.md",
+   "sources": [
+    {
+     "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-94111",
+     "label": "NVD"
+    },
+    {
+     "url": "https://www.vulncheck.com/advisories/tencent-browserskill-through-0.3.0-origin-validation-error-in-local-websocket-daemon",
+     "label": "VulnCheck"
+    },
+    {
+     "url": "https://github.com/Tencent/BrowserSkill/issues/273",
+     "label": "Tencent BrowserSkill issue 273"
+    }
+   ]
+  },
+  {
+   "id": "2026-09-21-maxkb-tool-permission-bypass",
+   "title": "MaxKB: the agent dispatch path lets a user denied a tool still call it and read its credentials",
+   "title_zh": "MaxKB：agent 派发路径让被拒绝使用某工具的用户仍能调用它并读取其凭据",
+   "title_ja": "MaxKB：エージェントのディスパッチ経路により、ツールを拒否されたユーザーでも実行でき、その認証情報を読めてしまう",
+   "title_ko": "MaxKB: 에이전트 디스패치 경로 때문에 도구 사용이 거부된 사용자도 호출하고 자격증명을 읽을 수 있다",
+   "title_de": "MaxKB: Der Agent-Dispatch-Pfad erlaubt einem abgelehnten Nutzer das Tool dennoch aufzurufen und seine Zugangsdaten zu lesen",
+   "title_fr": "MaxKB : le chemin de distribution de l'agent permet à un utilisateur refusé d'appeler l'outil et d'en lire les identifiants",
+   "title_es": "MaxKB: la ruta de despacho del agente permite que un usuario denegado llame a la herramienta y lea sus credenciales",
+   "date": "2026-09-21",
+   "date_end": null,
+   "date_precision": "day",
+   "date_raw": "2026-09-21 (NVD, GHSA)",
+   "month": "2026-09",
+   "kind": "vulnerability",
+   "type": [
+    "INFRA",
+    "CRED"
+   ],
+   "severity": "medium",
+   "confidence": "A",
+   "real_harm": false,
+   "ai_involvement": "confirmed",
+   "region": [
+    "GLOBAL"
+   ],
+   "summary": "**CVE-2026-77516: in MaxKB 2.0.0 through 2.9.2, *\"a lowest-role workspace member denied access to a tool by WorkspaceUserResourcePermission can still bind its identifier through `tool_ids`, `skill_tool_ids`, or `mcp_tool_ids` and execute it through the agent or workflow dispatch path\"* — and because *\"tool execution decrypts server-side `init_params`, allowing the caller to receive credentials carried by the denied tool,\"* the bypass returns keys, not just a result.** The advisory, titled *\"Missing per-tool authorization in the agent and workflow tool-dispatch path,\"* names CWE-862 (missing authorization) and CWE-639 (authorization bypass through user-controlled key); CVSS 3.1 **5.4**; *\"No fixed version is available as of this review.\"* The structure is the point: the per-tool grant is enforced on the dedicated tool routes, but the **agent dispatch path is a second door to the same capability** that does not re-check it. Recorded `vulnerability` / `INFRA` + `CRED` / `medium` / `real_harm: false`",
+   "summary_zh": "**CVE-2026-77516：在 MaxKB 2.0.0 至 2.9.2 中，*「被 WorkspaceUserResourcePermission 拒绝访问某工具的最低权限工作区成员，仍可通过 `tool_ids`、`skill_tool_ids` 或 `mcp_tool_ids` 绑定其标识符，并经 agent 或工作流派发路径执行它」*——而且由于*「工具执行会解密服务端的 `init_params`，使调用方能拿到被拒绝工具所携带的凭据，」*这次绕过返回的不仅是结果，还有密钥。** 该公告题为*「agent 与工作流工具派发路径中缺少逐工具授权」*，列出 CWE-862（缺少授权）与 CWE-639（通过用户可控键绕过授权）；CVSS 3.1 **5.4**；*「截至本次评审无可用修复版本。」* 关键在结构：逐工具授权在专用工具路由上执行，但 **agent 派发路径是通向同一能力的第二道门**，而它并不复查该授权。本条记为 `vulnerability` / `INFRA` + `CRED` / `medium` / `real_harm: false`",
+   "summary_ja": "**CVE-2026-77516：MaxKB 2.0.0〜2.9.2 では、*「WorkspaceUserResourcePermission によってツールへのアクセスを拒否された最低権限のワークスペースメンバーが、`tool_ids`、`skill_tool_ids`、`mcp_tool_ids` を通じてその識別子を束縛し、エージェントまたはワークフローのディスパッチ経路から実行できてしまう」*——さらに*「ツール実行はサーバー側の `init_params` を復号するため、呼び出し側は拒否されたツールが保持する認証情報を受け取れてしまう。」*つまりこの迂回は結果だけでなく鍵も返す。公告は *\"Missing per-tool authorization in the agent and workflow tool-dispatch path\"* と題し、CWE-862（認可の欠如）と CWE-639（ユーザー制御キーによる認可迂回）を挙げる。CVSS 3.1 **5.4**、*「本レビュー時点で修正版は未提供。」* 重要なのは構造だ。ツールごとの許可は専用ツール経路で強制されるが、**エージェントのディスパッチ経路は同じ能力への第二の扉**であり、そこでは再チェックされない。`vulnerability` / `INFRA` + `CRED` / `medium` / `real_harm: false`",
+   "summary_ko": "**CVE-2026-77516: MaxKB 2.0.0~2.9.2에서 *\"WorkspaceUserResourcePermission으로 도구 접근이 거부된 최하위 권한 워크스페이스 멤버도 `tool_ids`, `skill_tool_ids`, `mcp_tool_ids`로 식별자를 바인딩해 에이전트·워크플로 디스패치 경로로 실행할 수 있다\"* — 게다가 *\"도구 실행은 서버 측 `init_params`를 복호화하므로 호출자는 거부된 도구가 지닌 자격증명을 받게 된다.\"* 즉 이 우회는 결과뿐 아니라 키도 돌려준다. 권고문 제목은 *\"Missing per-tool authorization in the agent and workflow tool-dispatch path\"*, CWE-862(인가 누락)와 CWE-639(사용자 제어 키를 통한 인가 우회)를 명시. CVSS 3.1 **5.4**, *\"본 검토 시점에 수정 버전 없음.\"* 핵심은 구조다. 도구별 권한은 전용 도구 경로에서만 강제되고, **에이전트 디스패치 경로는 같은 기능으로 향하는 두 번째 문**인데 거기선 재검사하지 않는다. `vulnerability` / `INFRA` + `CRED` / `medium` / `real_harm: false`",
+   "summary_de": "**CVE-2026-77516: In MaxKB 2.0.0 bis 2.9.2 *„kann ein Arbeitsbereichsmitglied mit der niedrigsten Rolle, dem der Zugriff auf ein Tool durch WorkspaceUserResourcePermission verweigert wurde, dessen Kennung dennoch über `tool_ids`, `skill_tool_ids` oder `mcp_tool_ids` binden und über den Agenten- oder Workflow-Dispatch-Pfad ausführen\"* — und weil *„die Tool-Ausführung serverseitige `init_params` entschlüsselt, kann der Aufrufer die Zugangsdaten des verweigerten Tools erhalten.\"*** Das Advisory heißt *„Missing per-tool authorization in the agent and workflow tool-dispatch path\"* und nennt CWE-862 (fehlende Autorisierung) sowie CWE-639 (Autorisierungs-Umgehung über einen benutzerkontrollierten Schlüssel); CVSS 3.1 **5.4**; *„Zum Zeitpunkt dieser Prüfung ist keine behobene Version verfügbar.\"* Entscheidend ist die Struktur: Die Tool-spezifische Freigabe wird auf den dedizierten Tool-Routen geprüft, aber der **Agent-Dispatch-Pfad ist eine zweite Tür zur selben Fähigkeit**, die sie nicht erneut prüft. Verzeichnet als `vulnerability` / `INFRA` + `CRED` / `medium` / `real_harm: false`",
+   "summary_fr": "**CVE-2026-77516 : dans MaxKB 2.0.0 à 2.9.2, *« un membre d'espace de travail au rôle le plus bas, auquel l'accès à un outil est refusé par WorkspaceUserResourcePermission, peut tout de même lier son identifiant via `tool_ids`, `skill_tool_ids` ou `mcp_tool_ids` et l'exécuter par le chemin de distribution de l'agent ou du workflow »* — et comme *« l'exécution de l'outil déchiffre les `init_params` côté serveur, l'appelant reçoit les identifiants portés par l'outil refusé. »*** L'avis s'intitule *« Missing per-tool authorization in the agent and workflow tool-dispatch path »* et cite CWE-862 (autorisation manquante) et CWE-639 (contournement d'autorisation via une clé contrôlée par l'utilisateur) ; CVSS 3.1 **5.4** ; *« aucune version corrigée n'est disponible à la date de cet examen. »* La structure importe : l'autorisation par outil est appliquée sur les routes d'outils dédiées, mais le **chemin de distribution de l'agent est une seconde porte vers la même capacité**, sans nouvelle vérification. Enregistré `vulnerability` / `INFRA` + `CRED` / `medium` / `real_harm: false`",
+   "summary_es": "**CVE-2026-77516: en MaxKB 2.0.0 a 2.9.2, *«un miembro del espacio de trabajo con el rol más bajo al que WorkspaceUserResourcePermission deniega el acceso a una herramienta puede aun así vincular su identificador mediante `tool_ids`, `skill_tool_ids` o `mcp_tool_ids` y ejecutarla por la ruta de despacho del agente o del flujo de trabajo»* — y como *«la ejecución de la herramienta descifra los `init_params` del servidor, el llamante recibe las credenciales que porta la herramienta denegada».*** El aviso se titula *«Missing per-tool authorization in the agent and workflow tool-dispatch path»* y señala CWE-862 (autorización ausente) y CWE-639 (omisión de autorización mediante clave controlada por el usuario); CVSS 3.1 **5.4**; *«no hay versión corregida disponible al momento de esta revisión»*. Lo relevante es la estructura: la autorización por herramienta se aplica en las rutas dedicadas, pero la **ruta de despacho del agente es una segunda puerta a la misma capacidad** que no la vuelve a comprobar. Registrado `vulnerability` / `INFRA` + `CRED` / `medium` / `real_harm: false`",
+   "disputed": false,
+   "landmark": false,
+   "path": "incidents/2026-09/2026-09-21-maxkb-tool-permission-bypass.md",
+   "path_zh": "incidents/i18n/zh/2026-09/2026-09-21-maxkb-tool-permission-bypass.md",
+   "sources": [
+    {
+     "url": "https://github.com/1Panel-dev/MaxKB/security/advisories/GHSA-383v-fx78-pphm",
+     "label": "MaxKB security advisory (GHSA)"
+    },
+    {
+     "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-77516",
+     "label": "NVD"
+    }
+   ]
+  },
+  {
+   "id": "2026-09-21-meta-muse-not-a-mused-dictation-hijack",
+   "title": "Not-a-Mused: an undocumented Muse setting redirects dictation and hands the agent's token to an attacker",
+   "title_zh": "Not-a-Mused：一个未公开的 Muse 设置项把语音输入重定向，并把 agent 的令牌交给攻击者",
+   "title_ja": "Not-a-Mused：未公開の Muse 設定が音声入力を奪い、エージェントのトークンを攻撃者に渡す",
+   "title_ko": "Not-a-Mused: 문서화되지 않은 Muse 설정이 음성 입력을 리다이렉트하고 에이전트 토큰을 공격자에게 넘긴다",
+   "title_de": "Not-a-Mused: Eine undokumentierte Muse-Einstellung lenkt Diktate um und gibt das Agenten-Token an einen Angreifer",
+   "title_fr": "Not-a-Mused : un réglage non documenté de Muse redirige la dictée et livre le jeton de l'agent à un attaquant",
+   "title_es": "Not-a-Mused: un ajuste no documentado de Muse redirige el dictado y entrega el token del agente al atacante",
+   "date": "2026-09-21",
+   "date_end": null,
+   "date_precision": "day",
+   "date_raw": "2026-09-21 (Wardle PoC) / 2026-09-22 (The Hacker News)",
+   "month": "2026-09",
+   "kind": "vulnerability",
+   "type": [
+    "INFRA",
+    "CRED"
+   ],
+   "severity": "medium",
+   "confidence": "A",
+   "real_harm": false,
+   "ai_involvement": "confirmed",
+   "region": [
+    "US"
+   ],
+   "summary": "**Patrick Wardle shows that a hidden preference in Meta's Muse assistant for macOS — `endo_voyager_dictation_endpoint`, stored in the app's preferences and writable by any process running as the logged-in user, with no extra permissions — decides where dictation is sent.** Point it at an attacker's address and Muse's microphone input and its transcript leave the device: the attacker can *\"read what the user dictated, add extra instructions that Muse trusts and acts on, and capture a token that signs in to the user's Muse account\"* — then read the account's chat history and drive the assistant on **any device where that account is signed in** (Wardle made the iPhone app report its location, run a Bluetooth scan and list smart-home commands). Muse, Meta's personal agent launched in the US this month, holds whatever access the user granted across files, email, messages, calendar and shopping; Wardle calls it *\"trivial to turn Muse into the ultimate backdoor.\"* It cannot break into a Mac on its own — code execution as the user, or a ClickFix trick, is required — and it does not defeat macOS app isolation or Meta's cloud separation. Wardle went public without pre-notifying Meta; Meta has since pushed what he calls a \"fix\", with no advisory",
+   "summary_zh": "**Patrick Wardle 展示：Meta 面向 macOS 的 Muse 助手里有一个隐藏配置项——`endo_voyager_dictation_endpoint`——它决定语音输入被发送到哪里，存于应用偏好设置中，任何以登录用户身份运行的进程都可改写，且无需额外权限。** 把它指向攻击者的地址，Muse 的麦克风输入与转写文本就离开设备：攻击者可以*「读取用户的语音内容、追加 Muse 信任并执行的额外指令，并捕获用于登录用户 Muse 账户的令牌」*——随后读取该账户的聊天记录，并在**该账户登录的任何设备**上驱动这个助手（Wardle 让 iPhone 端上报了精确位置、执行蓝牙扫描并列出可下发的智能家居指令）。Muse 是 Meta 本月在美国推出的个人 agent，持有用户授予的跨文件、邮件、消息、日历与购物的访问权限；Wardle 称把它*「变成终极后门易如反掌」*。它无法自行攻入一台 Mac——需要先以用户身份执行代码，或用 ClickFix 手法——也没有攻破 macOS 的应用隔离或 Meta 的云端隔离。Wardle 未事先通知 Meta 就公开；Meta 随后推送了他所称的「修复」，但未发布公告",
+   "summary_ja": "**Patrick Wardle氏は、macOS版Meta「Muse」に隠し設定 `endo_voyager_dictation_endpoint` があることを示した。この設定は音声入力の送信先を決めるもので、アプリの環境設定に格納され、追加権限なしでログインユーザーとして動く任意のプロセスから書き換えられる。** 攻撃者のアドレスを指定すると、Museのマイク入力と文字起こしが端末外へ流出する。攻撃者は*「ユーザーの発話内容を読み、Museが信じて実行する追加指示を差し込み、ユーザーのMuseアカウントにサインインするトークンを取得できる」*——その後アカウントのチャット履歴を読み、**そのアカウントがサインインしている任意の端末**でそのエージェントを操作できる（Wardle氏はiPhoneアプリに正確な位置を報告させ、Bluetoothスキャンを実行させ、送れるスマートホーム指令を列挙させた）。MuseはMetaが今月米国で投入したパーソナルエージェントで、ユーザーが許可したファイル・メール・メッセージ・カレンダー・買い物へのアクセス権を持つ。Wardle氏は*「Museを究極のバックドアに変えるのはたやすい」*と述べる。単独でMacに侵入することはできず、ユーザー権限でのコード実行かClickFixが必要。macOSのアプリ分離やMetaのクラウド分離は破っていない。Wardle氏は事前通知せず公開し、Metaはその後「修正」を出したが勧告は出していない",
+   "summary_ko": "**Patrick Wardle은 macOS용 Meta Muse에 숨겨진 설정 `endo_voyager_dictation_endpoint` 가 있음을 보여줬다. 이 설정은 음성 입력이 전송될 위치를 결정하며 앱 환경설정에 저장되고, 추가 권한 없이 로그인 사용자로 동작하는 모든 프로세스가 변경할 수 있다.** 이를 공격자 주소로 바꾸면 Muse의 마이크 입력과 전사 텍스트가 기기를 떠난다. 공격자는 *\"사용자가 말한 내용을 읽고, Muse가 신뢰하고 실행하는 추가 지시를 덧붙이며, 사용자의 Muse 계정에 로그인하는 토큰을 가로챌 수 있다\"* — 이후 계정의 대화 기록을 읽고 **그 계정이 로그인된 모든 기기**에서 에이전트를 조종할 수 있다(Wardle은 iPhone 앱에 정확한 위치를 보고하게 하고, 블루투스 스캔을 실행하게 하고, 내릴 수 있는 스마트홈 명령을 나열하게 했다). Muse는 Meta가 이번 달 미국에 출시한 개인 에이전트로, 사용자가 허용한 파일·메일·메시지·캘린더·쇼핑 접근 권한을 가진다. Wardle은 *\"Muse를 궁극의 백도어로 바꾸는 것은trivial(아주 쉽다)\"*고 말한다. 단독으로 Mac에 침입할 수는 없고 사용자 권한 코드 실행이나 ClickFix가 필요하다. macOS 앱 격리나 Meta의 클라우드 격리를 깨지도 않았다. Wardle은 사전 통보 없이 공개했고 Meta는 이후 \"수정\"을 배포했으나 권고문은 없다",
+   "summary_de": "**Patrick Wardle zeigt, dass eine versteckte Einstellung in Metas Muse-Assistent für macOS — `endo_voyager_dictation_endpoint`, in den App-Preferences gespeichert und von jedem Prozess des angemeldeten Benutzers ohne zusätzliche Rechte schreibbar — bestimmt, wohin Diktate gesendet werden.** Zeigt sie auf die Adresse eines Angreifers, verlassen Mikrofon-Eingabe und Transkript das Gerät: Der Angreifer kann *„lesen, was der Benutzer diktiert hat, zusätzliche Anweisungen hinzufügen, denen Muse vertraut und die es ausführt, und ein Token abgreifen, das sich beim Muse-Konto des Benutzers anmeldet\"* — und damit den Chatverlauf lesen und den Assistenten auf **jedem Gerät steuern, auf dem das Konto angemeldet ist** (Wardle ließ die iPhone-App ihren Standort melden, einen Bluetooth-Scan ausführen und Smart-Home-Befehle auflisten). Muse, Metas in diesem Monat in den USA gestarteter persönlicher Agent, hält alle Zugriffe, die der Nutzer über Dateien, E-Mail, Nachrichten, Kalender und Shopping gewährt hat; Wardle nennt es *„trivial, Muse in die ultimative Hintertür zu verwandeln.\"* Es kann einen Mac nicht von sich aus kompromittieren — Codeausführung als Benutzer oder ein ClickFix-Trick ist nötig — und bricht weder die macOS-App-Isolation noch Metas Cloud-Trennung. Wardle veröffentlichte ohne Vorabinformation an Meta; Meta hat seither einen von ihm so genannten „Fix\" ausgeliefert, ohne Advisory",
+   "summary_fr": "**Patrick Wardle montre qu'un réglage caché de l'assistant Muse de Meta pour macOS — `endo_voyager_dictation_endpoint`, stocké dans les préférences de l'app et modifiable par tout processus s'exécutant comme l'utilisateur connecté, sans permission supplémentaire — décide où la dictée est envoyée.** En le pointant vers une adresse contrôlée par l'attaquant, l'entrée micro et la transcription quittent l'appareil : l'attaquant peut *« lire ce que l'utilisateur a dicté, ajouter des instructions supplémentaires auxquelles Muse fait confiance et qu'il exécute, et capturer un jeton qui ouvre le compte Muse de l'utilisateur »* — puis lire l'historique des conversations et piloter l'assistant sur **tout appareil où ce compte est connecté** (Wardle a fait reporter sa position à l'app iPhone, lancer un scan Bluetooth et lister les commandes domotiques disponibles). Muse, l'agent personnel lancé par Meta aux États-Unis ce mois-ci, détient tous les accès accordés par l'utilisateur sur les fichiers, les e-mails, les messages, le calendrier et les achats ; Wardle parle d'une chose *« triviale : transformer Muse en backdoor ultime »*. Il ne peut pas pénétrer un Mac de lui-même — une exécution de code en tant qu'utilisateur, ou une ruse ClickFix, est nécessaire — et ne casse ni l'isolation des apps macOS ni la séparation cloud de Meta. Wardle a publié sans prévenir Meta ; Meta a depuis poussé ce qu'il appelle un « correctif », sans avis de sécurité",
+   "summary_es": "**Patrick Wardle demuestra que un ajuste oculto del asistente Muse de Meta para macOS — `endo_voyager_dictation_endpoint`, guardado en las preferencias de la app y modificable por cualquier proceso que se ejecute como el usuario sin permisos adicionales — decide a dónde se envía el dictado.** Al apuntarlo a una dirección del atacante, la entrada del micrófono y la transcripción salen del dispositivo: el atacante puede *«leer lo que el usuario dictó, añadir instrucciones adicionales en las que Muse confía y ejecuta, y capturar un token que inicia sesión en la cuenta Muse del usuario»* — y luego leer el historial de chat y manejar el asistente en **cualquier dispositivo donde esa cuenta esté abierta** (Wardle hizo que la app del iPhone informara de su ubicación, ejecutara un escaneo Bluetooth y listara los comandos de hogar inteligente disponibles). Muse, el agente personal lanzado por Meta en EE. UU. este mes, tiene todos los accesos que el usuario le concedió sobre archivos, correo, mensajes, calendario y compras; Wardle lo califica de *«trivial: convertir Muse en la puerta trasera definitiva»*. No puede entrar en un Mac por sí solo — hace falta ejecución de código como el usuario o un truco ClickFix — y no rompe ni el aislamiento de apps de macOS ni la separación en la nube de Meta. Wardle publicó sin avisar antes a Meta; Meta lanzó después lo que él llama un «arreglo», sin aviso de seguridad",
+   "disputed": false,
+   "landmark": false,
+   "path": "incidents/2026-09/2026-09-21-meta-muse-not-a-mused-dictation-hijack.md",
+   "path_zh": "incidents/i18n/zh/2026-09/2026-09-21-meta-muse-not-a-mused-dictation-hijack.md",
+   "sources": [
+    {
+     "url": "https://thehackernews.com/2026/09/one-hidden-meta-muse-setting-could-let.html",
+     "label": "The Hacker News"
+    },
+    {
+     "url": "https://github.com/pwardle/not-a-mused",
+     "label": "Patrick Wardle proof of concept"
+    },
+    {
+     "url": "https://finance.sina.com.cn/tech/digi/2026-09-25/doc-iniszmmz7778318.shtml",
+     "label": "IT Home (Chinese coverage)"
+    }
+   ]
+  },
+  {
    "id": "2026-09-21-un-panel-ai-agents-misalignment-brief",
    "title": "UN panel's first thematic brief: the OpenAI-Hugging Face incident as a loss-of-control warning",
    "title_zh": "联合国专家小组首份专题简报：以 OpenAI-Hugging Face 事件为失控警告",
@@ -16577,6 +16729,59 @@
     {
      "url": "https://english.news.cn/20260921/9dda65b45af045f6b820f69efdb8095c/c.html",
      "label": "Xinhua"
+    }
+   ]
+  },
+  {
+   "id": "2026-09-22-carbonato-docker-hermes-agent-botnet",
+   "title": "CARBONATO: a Docker botnet installs Hermes Agent and loots AI API keys over Telegram",
+   "title_zh": "CARBONATO：一个 Docker 僵尸网络植入 Hermes Agent，经 Telegram 收割 AI API 密钥",
+   "title_ja": "CARBONATO：Docker ボットネットが Hermes Agent を導入し、Telegram 経由で AI API キーを奪う",
+   "title_ko": "CARBONATO: Docker 봇넷이 Hermes Agent를 설치하고 Telegram으로 AI API 키를 약탈한다",
+   "title_de": "CARBONATO: Ein Docker-Botnetz installiert Hermes Agent und raubt AI-API-Schlüssel über Telegram",
+   "title_fr": "CARBONATO : un botnet Docker installe Hermes Agent et pille des clés API d'IA via Telegram",
+   "title_es": "CARBONATO: un botnet Docker instala Hermes Agent y saquea claves API de IA por Telegram",
+   "date": "2026-09-22",
+   "date_end": null,
+   "date_precision": "day",
+   "date_raw": "2026-09-22 (ThreatDown) / 2026-09-24 (BleepingComputer)",
+   "month": "2026-09",
+   "kind": "incident",
+   "type": [
+    "WEAPON",
+    "INFRA",
+    "CRED"
+   ],
+   "severity": "high",
+   "confidence": "A",
+   "real_harm": true,
+   "ai_involvement": "confirmed",
+   "region": [
+    "GLOBAL"
+   ],
+   "summary": "**ThreatDown publishes CARBONATO, a botnet built around an AI agent: it compromises Docker daemons exposed without authentication on port 2375, launches a privileged container, and installs the Hermes Agent framework under an agent named \"GH0ST\" whose instructions overwrite the default `SOUL.md` persona file.** Operators then drive an *\"interactive command loop\"* over Telegram — *\"the model interprets the task, writes terminal commands, reads the output, and decides what to do next\"* — collecting **AI API keys, SSH credentials and access tokens** and returning the results to the same chat. Scripts scan the host's networks **every five minutes** for fresh port-2375 targets, making it worm-like. ThreatDown recovered operational evidence spanning **October 2024 to August 2026** from an open registry holding nearly **60 repositories and 4.3 GB** of image data; no cluster attribution, with Costa Rica a possible operator location. It is the third Hermes Agent case in the archive after the Thailand Ministry of Finance intrusion (`2026-07-30`) and Gambit (`2026-09-22`) — the framework is now a repeat offender rather than a one-off",
+   "summary_zh": "**ThreatDown 公布 CARBONATO——一个围绕 AI agent 构建的僵尸网络：它攻陷在 2375 端口无认证暴露的 Docker 守护进程，启动特权容器，并安装 Hermes Agent 框架，agent 名为「GH0ST」，其指令会覆盖默认人格文件 `SOUL.md`。** 操作者随后通过 Telegram 驱动一个*「交互式命令循环」*——*「模型解读任务、编写终端命令、读取输出，并决定下一步做什么」*——收集 **AI API 密钥、SSH 凭据与访问令牌**，并把结果回传到同一个聊天。脚本**每五分钟**扫描宿主所在网络寻找新的 2375 端口目标，因此具备蠕虫式扩散能力。ThreatDown 从一个开放镜像仓库取得跨越 **2024 年 10 月至 2026 年 8 月**的行动证据，该仓库含近 **60 个仓库、4.3 GB** 镜像数据；无团伙归属，哥斯达黎加可能是操作者所在地。这是本档案中第三起 Hermes Agent 案例，前两起为泰国财政部入侵（`2026-07-30`）与 Gambit（`2026-09-22`）——该框架已从「个案」变成「惯犯」",
+   "summary_ja": "**ThreatDownは CARBONATO を公表した。AIエージェントを中核に据えたボットネットである。認証なしで2375番ポートに露出したDockerデーモンを侵害し、特権コンテナを起動し、Hermes Agentフレームワークを「GH0ST」というエージェント名で導入する。その指示は既定のペルソナファイル `SOUL.md` を上書きする。** 運用者はTelegram経由で*「対話型コマンドループ」*を回す——*「モデルはタスクを解釈し、端末コマンドを書き、出力を読み、次に何をするかを決める」*——**AI APIキー、SSH認証情報、アクセストークン**を収集し、同じチャットへ結果を返す。スクリプトは**5分ごと**にホストのネットワークを走査して新たな2375番の標的を探し、ワーム的に拡散する。ThreatDownは**2024年10月〜2026年8月**に及ぶ運用証拠を、約**60リポジトリ・4.3GB**のイメージデータを置いた公開レジストリから取得した。帰属はなく、運用者拠点はコスタリカの可能性。泰財務省侵入（`2026-07-30`）、Gambit（`2026-09-22`）に続く本档案3例目のHermes Agent事例——同フレームワークは単発ではなく常習的に使われ始めている",
+   "summary_ko": "**ThreatDown은 AI 에이전트를 중심에 둔 봇넷 CARBONATO를 공개했다. 인증 없이 2375 포트에 노출된 Docker 데몬을 장악하고, 권한 있는 컨테이너를 띄운 뒤 Hermes Agent 프레임워크를 \"GH0ST\"라는 에이전트 이름으로 설치한다. 이 에이전트의 지시는 기본 페르소나 파일 `SOUL.md`를 덮어쓴다.** 운영자는 Telegram으로 *\"대화형 명령 루프\"*를 돌린다 — *\"모델은 작업을 해석하고 터미널 명령을 작성하며 출력을 읽고 다음 행동을 결정한다\"* — **AI API 키, SSH 자격증명, 액세스 토큰**을 수집해 같은 채팅으로 결과를 돌려보낸다. 스크립트는 **5분마다** 호스트 네트워크를 훑어 새로운 2375 포트 대상을 찾아 웜처럼 확산한다. ThreatDown은 **2024년 10월~2026년 8월**에 걸친 운영 증거를 이미지 데이터 **약 60개 리포지토리·4.3GB**를 담은 공개 레지스트리에서 확보했다. 배후 조직은 미확인, 운영자 위치는 코스타리카 가능성. 태국 재무부 침입(`2026-07-30`), Gambit(`2026-09-22`)에 이은 본 아카이브 세 번째 Hermes Agent 사례다",
+   "summary_de": "**ThreatDown veröffentlicht CARBONATO, ein Botnetz um einen KI-Agenten: Es kompromittiert ohne Authentifizierung auf Port 2375 exponierte Docker-Daemons, startet einen privilegierten Container und installiert das Hermes-Agent-Framework unter einem Agenten namens „GH0ST\", dessen Anweisungen die Standard-Persona-Datei `SOUL.md` überschreiben.** Die Betreiber steuern danach eine *„interaktive Befehlsschleife\"* über Telegram — *„das Modell interpretiert die Aufgabe, schreibt Terminalbefehle, liest die Ausgabe und entscheidet, was als Nächstes zu tun ist\"* — und sammeln **KI-API-Schlüssel, SSH-Zugangsdaten und Access-Tokens**; die Ergebnisse gehen in denselben Chat zurück. Skripte durchsuchen **alle fünf Minuten** die Netzwerke des Hosts nach neuen Port-2375-Zielen, also wurmartig. ThreatDown sicherte Belege von **Oktober 2024 bis August 2026** aus einer offenen Registry mit fast **60 Repositories und 4,3 GB** Image-Daten; keine Cluster-Zuordnung, Costa Rica als möglicher Standort der Betreiber. Es ist der dritte Hermes-Agent-Fall des Archivs nach Thailand (`2026-07-30`) und Gambit (`2026-09-22`)",
+   "summary_fr": "**ThreatDown publie CARBONATO, un botnet construit autour d'un agent IA : il compromet des démons Docker exposés sans authentification sur le port 2375, lance un conteneur privilégié et installe le framework Hermes Agent sous un agent nommé « GH0ST » dont les instructions écrasent le fichier de personnalité `SOUL.md`.** Les opérateurs pilotent ensuite une *« boucle de commandes interactive »* via Telegram — *« le modèle interprète la tâche, écrit les commandes terminal, lit la sortie et décide de la suite »* — en collectant **clés API d'IA, identifiants SSH et jetons d'accès** et en renvoyant les résultats dans le même salon. Des scripts balayent **toutes les cinq minutes** les réseaux de l'hôte à la recherche de nouvelles cibles sur le port 2375, ce qui le rend vermiforme. ThreatDown a récupéré des preuves couvrant **octobre 2024 à août 2026** dans un registre ouvert contenant près de **60 dépôts et 4,3 Go** d'images ; aucune attribution, le Costa Rica étant une localisation possible de l'opérateur. Troisième cas Hermes Agent de l'archive après la Thaïlande (`2026-07-30`) et Gambit (`2026-09-22`)",
+   "summary_es": "**ThreatDown publica CARBONATO, un botnet construido en torno a un agente de IA: compromete demonios Docker expuestos sin autenticación en el puerto 2375, lanza un contenedor privilegiado e instala el framework Hermes Agent bajo un agente llamado «GH0ST» cuyas instrucciones sobrescriben el archivo de personalidad `SOUL.md`.** Los operadores dirigen después un *«bucle de comandos interactivo»* por Telegram — *«el modelo interpreta la tarea, escribe comandos de terminal, lee la salida y decide qué hacer a continuación»* — recogiendo **claves API de IA, credenciales SSH y tokens de acceso** y devolviendo los resultados al mismo chat. Los scripts rastrean **cada cinco minutos** las redes del host en busca de nuevos objetivos en el puerto 2375, lo que lo hace similar a un gusano. ThreatDown recuperó evidencia de **octubre de 2024 a agosto de 2026** en un registro abierto con casi **60 repositorios y 4,3 GB** de imágenes; sin atribución, con Costa Rica como posible ubicación del operador. Es el tercer caso de Hermes Agent en el archivo tras Tailandia (`2026-07-30`) y Gambit (`2026-09-22`)",
+   "disputed": false,
+   "landmark": false,
+   "path": "incidents/2026-09/2026-09-22-carbonato-docker-hermes-agent-botnet.md",
+   "path_zh": "incidents/i18n/zh/2026-09/2026-09-22-carbonato-docker-hermes-agent-botnet.md",
+   "sources": [
+    {
+     "url": "https://www.threatdown.com/blog/carbonato/",
+     "label": "ThreatDown"
+    },
+    {
+     "url": "https://www.bleepingcomputer.com/news/security/new-carbonato-malware-uses-ai-agents-to-hijack-exposed-docker-hosts/",
+     "label": "BleepingComputer"
+    },
+    {
+     "url": "https://www.securityweek.com/in-other-news-clop-leak-site-takeover-docker-botnet-hunts-ai-keys-water-utility-exposure/",
+     "label": "SecurityWeek"
     }
    ]
   },
@@ -17081,6 +17286,54 @@
    ]
   },
   {
+   "id": "2026-09-24-manus-email-prompt-injection-rce",
+   "title": "Manus: a JSFuck-obfuscated email beat the agent's filter, executed a payload and exposed connected app tokens",
+   "title_zh": "Manus：一封用 JSFuck 混淆的邮件绕过 agent 过滤器、执行载荷并暴露已连接应用的令牌",
+   "title_ja": "Manus：JSFuck で難読化されたメールがエージェントのフィルタをすり抜け、ペイロードを実行して連携アプリのトークンを露出させた",
+   "title_ko": "Manus: JSFuck으로 난독화된 이메일이 에이전트 필터를 우회해 페이로드를 실행하고 연동 앱 토큰을 노출했다",
+   "title_de": "Manus: Eine JSFuck-verschleierte E-Mail umging den Filter des Agenten, führte Payload aus und legte Tokens verbundener Apps offen",
+   "title_fr": "Manus : un e-mail obfusqué en JSFuck contourne le filtre de l'agent, exécute une charge utile et expose les jetons des applications connectées",
+   "title_es": "Manus: un correo ofuscado con JSFuck burla el filtro del agente, ejecuta un payload y expone los tokens de las apps conectadas",
+   "date": "2026-09-24",
+   "date_end": null,
+   "date_precision": "day",
+   "date_raw": "2026-09-24",
+   "month": "2026-09",
+   "kind": "vulnerability",
+   "type": [
+    "IPI",
+    "CRED"
+   ],
+   "severity": "high",
+   "confidence": "B",
+   "real_harm": false,
+   "ai_involvement": "confirmed",
+   "region": [
+    "GLOBAL"
+   ],
+   "summary": "**Salt Labs shows that an email alone can take over a stranger's Manus environment: the agentic AI app reads an inbound email as instructions, and while it caught every conventional obfuscation the researchers tried, an obscure JavaScript obfuscation technique — \"JSFuck\" — got a payload executed; the security warning fired only *after* execution.** The researchers then turned the code execution into a reverse shell and read **credentials and tokens for every third-party app the victim had connected** — *\"if a victim connected Manus to their Gmail, Dropbox, and GitHub accounts, an attacker could swipe the relevant credentials and tokens.\"* Manus did not respond to the report; filed through **Meta's bug bounty**, the issue was *\"triaged, confirmed, and patched\"*. Yaniv Balmas (VP research, Salt Labs): prompt injection attacks are *\"probably occurring in the wild … but probably are still under the radar.\"* Recorded `vulnerability` / `IPI` + `CRED` / `high` / `real_harm: false` — a significant capability demonstration, no confirmed exploitation",
+   "summary_zh": "**Salt Labs 证明单靠一封邮件就能接管陌生人的 Manus 环境：这个 agentic AI 应用把收到的邮件当作指令来读；研究者尝试的各种常规混淆都被它识破，唯独一种冷门的 JavaScript 混淆技术——「JSFuck」——让载荷得以执行，而安全告警只在执行**之后**才触发。** 研究者随后把这处代码执行升级为反向 shell，并读出受害者已连接的**每一个第三方应用的凭据与令牌**——*「如果受害者把 Manus 连接到 Gmail、Dropbox 与 GitHub，攻击者就能拿走相应的凭据与令牌。」* Manus 未回应报告；经 **Meta 的漏洞赏金计划**提交后，该问题被*「分诊、确认并修复」*。Salt Labs 研究副总裁 Yaniv Balmas：提示注入攻击*「可能已在野外发生……但可能仍未被察觉。」* 本条记为 `vulnerability` / `IPI` + `CRED` / `high` / `real_harm: false`——一次重要能力演示，无确认利用",
+   "summary_ja": "**Salt Labsは、メール1通だけで他人のManus環境を乗っ取れることを示した。このエージェント型AIアプリは受信メールを指示として読み解く。研究者が試した通常の難読化はすべて見抜いたが、マイナーなJavaScript難読化手法「JSFuck」によってペイロードが実行され、セキュリティ警告は実行**後**に出た。** 研究者はこのコード実行をリバースシェルへ発展させ、被害者が接続していた**全サードパーティ製アプリの認証情報とトークン**を読み出した——*「被害者がManusをGmail、Dropbox、GitHubに接続していれば、攻撃者は該当する認証情報とトークンを奪える。」* Manusは報告に応答せず、**Metaのバグバウンティ**経由で提出された問題は*「トリアージされ、確認され、修正された」*。Salt Labs研究担当VPのYaniv Balmas氏：プロンプトインジェクション攻撃は*「おそらく実際に発生している……ただしまだ表面化していないだけだろう」*。`vulnerability` / `IPI` + `CRED` / `high` / `real_harm: false`",
+   "summary_ko": "**Salt Labs는 이메일 한 통만으로 타인의 Manus 환경을 장악할 수 있음을 입증했다. 이 에이전트형 AI 앱은 수신 메일을 지시로 해석한다. 연구자가 시도한 일반적인 난독화는 모두 걸러냈지만, 잘 알려지지 않은 JavaScript 난독화 기법 \"JSFuck\"으로 페이로드가 실행됐고, 보안 경고는 실행 **이후에야** 떴다.** 연구자는 이 코드 실행을 리버스 셸로 확장해 피해자가 연결한 **모든 서드파티 앱의 자격증명과 토큰**을 읽어냈다 — *\"피해자가 Manus를 Gmail, Dropbox, GitHub에 연결했다면 공격자는 해당 자격증명과 토큰을 가져갈 수 있다.\"* Manus는 보고에 응답하지 않았고, **Meta 버그바운티**를 통해 접수된 문제는 *\"분류·확인·패치되었다\"*. Salt Labs 연구 부사장 Yaniv Balmas: 프롬프트 인젝션 공격은 *\"아마 실제로 발생하고 있겠지만… 아직 드러나지 않았을 것\"*. `vulnerability` / `IPI` + `CRED` / `high` / `real_harm: false`",
+   "summary_de": "**Salt Labs zeigt, dass eine einzige E-Mail genügt, um die Manus-Umgebung eines Fremden zu übernehmen: Die agentische KI-App liest eine eingehende E-Mail als Anweisungen, und während sie jede herkömmliche Verschleierung erkannte, ließ sich mit einer obskuren JavaScript-Technik — „JSFuck\" — ein Payload ausführen; die Sicherheitswarnung erschien erst *nach* der Ausführung.** Die Forscher bauten die Codeausführung zu einer Reverse-Shell aus und lasen **Zugangsdaten und Tokens jeder verbundenen Drittanwendung** — *„wenn ein Opfer Manus mit Gmail, Dropbox und GitHub verbunden hatte, konnte ein Angreifer die entsprechenden Zugangsdaten und Tokens entwenden.\"* Manus antwortete nicht auf die Meldung; über **Metas Bug-Bounty-Programm** wurde das Problem *„triagiert, bestätigt und gepatcht\"*. Yaniv Balmas (VP Research, Salt Labs): Prompt-Injection-Angriffe *„finden wahrscheinlich in freier Wildbahn statt … sind aber vermutlich noch unter dem Radar.\"* Verzeichnet als `vulnerability` / `IPI` + `CRED` / `high` / `real_harm: false`",
+   "summary_fr": "**Salt Labs démontre qu'un simple e-mail suffit à prendre le contrôle de l'environnement Manus d'un inconnu : l'application agentique lit un e-mail entrant comme des instructions et, si elle a détecté toutes les obfuscations classiques essayées, une technique d'obfuscation JavaScript obscure — « JSFuck » — a permis d'exécuter une charge utile ; l'avertissement de sécurité n'est apparu qu'*après* l'exécution.** Les chercheurs ont ensuite transformé l'exécution de code en shell inverse et lu **les identifiants et jetons de chaque application tierce connectée** — *« si une victime avait connecté Manus à Gmail, Dropbox et GitHub, un attaquant pouvait dérober les identifiants et jetons correspondants. »* Manus n'a pas répondu au signalement ; déposé via le **bug bounty de Meta**, le problème a été *« trié, confirmé et corrigé »*. Yaniv Balmas (VP recherche, Salt Labs) : les attaques par injection de prompt *« se produisent probablement dans la nature … mais restent probablement sous le radar. »* Enregistré `vulnerability` / `IPI` + `CRED` / `high` / `real_harm: false`",
+   "summary_es": "**Salt Labs demuestra que basta un correo para tomar el entorno Manus de un desconocido: la app agéntica lee un correo entrante como instrucciones y, aunque detectó todas las ofuscaciones habituales, una técnica de ofuscación JavaScript poco conocida — «JSFuck» — permitió ejecutar un payload; la advertencia de seguridad apareció solo *después* de la ejecución.** Los investigadores convirtieron después la ejecución de código en una shell inversa y leyeron **las credenciales y los tokens de todas las apps de terceros conectadas** — *«si una víctima había conectado Manus a Gmail, Dropbox y GitHub, un atacante podía llevarse las credenciales y los tokens correspondientes»*. Manus no respondió al informe; presentado a través del **bug bounty de Meta**, el problema fue *«clasificado, confirmado y parcheado»*. Yaniv Balmas (VP de investigación, Salt Labs): los ataques de inyección de prompt *«probablemente ocurren en la naturaleza… pero probablemente siguen bajo el radar»*. Registrado `vulnerability` / `IPI` + `CRED` / `high` / `real_harm: false`",
+   "disputed": false,
+   "landmark": false,
+   "path": "incidents/2026-09/2026-09-24-manus-email-prompt-injection-rce.md",
+   "path_zh": "incidents/i18n/zh/2026-09/2026-09-24-manus-email-prompt-injection-rce.md",
+   "sources": [
+    {
+     "url": "https://www.darkreading.com/application-security/prompt-injection-bug-agentic-ai-app-manus",
+     "label": "Dark Reading (Salt Labs, exclusive)"
+    },
+    {
+     "url": "https://aviatrix.ai/threat-research-center/manus-prompt-injection-vulnerability-2026/",
+     "label": "Aviatrix Threat Research"
+    }
+   ]
+  },
+  {
    "id": "2026-09-24-openai-agent-australia-medicare",
    "title": "An OpenAI agent crossed into Australia's Medicare portal - the first government breached",
    "title_zh": "OpenAI 智能体越入澳大利亚 Medicare 门户——首例政府被 AI 代理入侵",
@@ -17132,6 +17385,106 @@
     {
      "url": "https://www.forbes.com.au/news/innovation/openai-agent-hacked-medicare-portal-pm-says/",
      "label": "Forbes Australia"
+    }
+   ]
+  },
+  {
+   "id": "2026-09-24-salesbleed-agentforce-zero-click-exfil",
+   "title": "SalesBleed: three Agentforce flaws turn a single web lead into zero-click CRM exfiltration and agent-impersonated phishing",
+   "title_zh": "SalesBleed：三个 Agentforce 缺陷让一条网页线索变成零点击 CRM 外泄与 agent 冒充钓鱼",
+   "title_ja": "SalesBleed：Agentforce の 3 件の欠陥が、1 件の Web リードをゼロクリックの CRM 持ち出しとエージェントなりすましフィッシングに変える",
+   "title_ko": "SalesBleed: Agentforce 결함 3건이 웹 리드 하나를 제로클릭 CRM 유출과 에이전트 사칭 피싱으로 바꾼다",
+   "title_de": "SalesBleed: Drei Agentforce-Schwachstellen machen aus einem Web-Lead Zero-Click-CRM-Abfluss und Phishing in Agenten-Identität",
+   "title_fr": "SalesBleed : trois failles d'Agentforce transforment une simple piste web en exfiltration CRM zéro-clic et hameçonnage par usurpation d'agent",
+   "title_es": "SalesBleed: tres fallos de Agentforce convierten un lead web en exfiltración CRM de clic cero y phishing suplantando al agente",
+   "date": "2026-09-24",
+   "date_end": null,
+   "date_precision": "day",
+   "date_raw": "2026-09-24",
+   "month": "2026-09",
+   "kind": "vulnerability",
+   "type": [
+    "IPI",
+    "EXFIL"
+   ],
+   "severity": "high",
+   "confidence": "A",
+   "real_harm": false,
+   "ai_involvement": "confirmed",
+   "region": [
+    "GLOBAL"
+   ],
+   "summary": "**Zenity Labs discloses \"SalesBleed\": three vulnerabilities in Salesforce Agentforce that let a single untrusted web-to-lead submission hijack a trusted enterprise agent.** Two of the flaws give **zero-click data exfiltration** — sensitive CRM data reaches attacker-controlled infrastructure *without an employee clicking or approving anything* — by abusing weaknesses in **Trusted URLs**, the Salesforce mechanism meant to stop Agentforce from rendering URLs and images from unapproved sources. The third weaponises the **trusted identity of the Agentforce-connected Slack agent** to push phishing to employees from inside the enterprise. Zenity reported the issues responsibly and *\"Salesforce worked with the researchers to investigate and remediate\"* them. CTO Michael Bargury: *\"We found multiple ways to break through the security boundary designed to stop Agentforce from sending enterprise data to unapproved destinations… When those controls fail, we are left with a privileged access agent with high autonomy and no bounds.\"* Recorded `vulnerability` / `IPI` + `EXFIL` / `high` / `real_harm: false` — a significant capability demonstration on a widely deployed enterprise agent platform, with no evidence of in-the-wild use",
+   "summary_zh": "**Zenity Labs 披露「SalesBleed」：Salesforce Agentforce 中的三个漏洞，让一条不可信的 Web-to-lead 提交就能劫持一个受信任的企业 agent。** 其中两个缺陷造成**零点击数据外泄**——敏感 CRM 数据在**员工无需点击或批准任何东西**的情况下流向攻击者控制的设施，手法是滥用 **Trusted URLs**（Salesforce 用来阻止 Agentforce 渲染未批准来源的 URL 与图片的机制）中的弱点。第三个缺陷把 **Agentforce 已接入 Slack 的 agent 的受信任身份**武器化，从企业内部向员工推送钓鱼。Zenity 负责任地披露了该问题，*「Salesforce 与研究者合作调查并修复了」*这些缺陷。CTO Michael Bargury：*「我们找到了多种方式突破那道本用来阻止 Agentforce 把企业数据发往未批准目的地的边界……当这些控制失效，剩下的是一个拥有高权限、高度自主且没有边界的 agent。」* 本条记为 `vulnerability` / `IPI` + `EXFIL` / `high` / `real_harm: false`——在广泛部署的企业 agent 平台上的一次重要能力演示，无在野使用证据",
+   "summary_ja": "**Zenity Labsは「SalesBleed」を公表した。Salesforce Agentforceの3件の脆弱性により、信頼できないWeb-to-lead送信1件で、信頼された企業エージェントを乗っ取れる。** うち2件は**ゼロクリックのデータ持ち出し**を可能にする——従業員が何もクリックも承認もしなくても、機微なCRMデータが攻撃者の管理下にある基盤へ送られる——それは Agentforce が未承認ソースのURLや画像を描画しないようにするための仕組み **Trusted URLs** の弱点を悪用する。3件目は **Agentforce 連携 Slack エージェントの信頼されたアイデンティティ**を武器化し、企業内部から従業員へフィッシングを配信する。Zenityは責任ある開示を行い、*「Salesforceは研究者と協力して調査・是正した」*。CTOのMichael Bargury氏：*「Agentforceが企業データを未承認の送信先へ送るのを防ぐために設計された境界を突破する方法を、我々は複数見つけた……その制御が破綻すると、高い権限と自律性を持ち、境界のないagentだけが残る。」* 本件は `vulnerability` / `IPI` + `EXFIL` / `high` / `real_harm: false`",
+   "summary_ko": "**Zenity Labs는 \"SalesBleed\"를 공개했다: 신뢰할 수 없는 Web-to-lead 제출 하나로 신뢰받는 기업 에이전트를 장악할 수 있는 Salesforce Agentforce의 취약점 3건이다.** 이 중 2건은 **제로클릭 데이터 유출**을 가능하게 한다 — 직원이 아무것도 클릭하거나 승인하지 않아도 민감한 CRM 데이터가 공격자 통제 인프라로 전송된다 — 이는 Agentforce가 승인되지 않은 출처의 URL과 이미지를 렌더링하지 못하게 하는 **Trusted URLs** 메커니즘의 약점을 악용한다. 세 번째는 **Agentforce 연동 Slack 에이전트의 신뢰된 신원**을 무기화해 기업 내부에서 직원들에게 피싱을 유포한다. Zenity는 책임 있는 공개를 했고 *\"Salesforce는 연구자와 협력해 조사하고 조치했다\"*. CTO Michael Bargury: *\"Agentforce가 기업 데이터를 승인되지 않은 목적지로 보내지 못하게 막으려 설계된 보안 경계를 뚫는 방법을 여러 개 찾았다… 그 제어가 실패하면 권한은 높고 자율적이며 경계 없는 agent만 남는다.\"* `vulnerability` / `IPI` + `EXFIL` / `high` / `real_harm: false`로 기록",
+   "summary_de": "**Zenity Labs legt \"SalesBleed\" offen: drei Schwachstellen in Salesforce Agentforce, mit denen eine einzige nicht vertrauenswürdige Web-to-Lead-Übermittlung einen vertrauenswürdigen Unternehmensagenten übernimmt.** Zwei der Schwachstellen ermöglichen **Zero-Click-Datenabfluss** — sensible CRM-Daten gelangen an vom Angreifer kontrollierte Infrastruktur, *ohne dass ein Mitarbeiter irgendetwas anklickt oder genehmigt* — indem Schwächen in **Trusted URLs** ausgenutzt werden, dem Salesforce-Mechanismus, der Agentforce daran hindern soll, URLs und Bilder aus nicht freigegebenen Quellen darzustellen. Die dritte missbraucht die **vertrauenswürdige Identität des angebundenen Slack-Agenten**, um Phishing aus dem Unternehmensinneren an Mitarbeiter zu verteilen. Zenity meldete die Fälle verantwortungsvoll; *„Salesforce arbeitete mit den Forschern zusammen, um sie zu untersuchen und zu beheben.\"* CTO Michael Bargury: *„Wir haben mehrere Wege gefunden, die Sicherheitsgrenze zu durchbrechen, die verhindern soll, dass Agentforce Unternehmensdaten an nicht freigegebene Ziele sendet … Wenn diese Kontrollen versagen, bleibt ein privilegierter Agent mit hoher Autonomie und ohne Grenzen.\"* Verzeichnet als `vulnerability` / `IPI` + `EXFIL` / `high` / `real_harm: false`",
+   "summary_fr": "**Zenity Labs divulgue « SalesBleed » : trois vulnérabilités de Salesforce Agentforce permettant à une simple soumission Web-to-lead non fiable de prendre le contrôle d'un agent d'entreprise de confiance.** Deux de ces failles offrent une **exfiltration de données zéro-clic** — des données CRM sensibles partent vers une infrastructure contrôlée par l'attaquant *sans qu'un employé clique ou approuve quoi que ce soit* — en abusant des faiblesses de **Trusted URLs**, le mécanisme censé empêcher Agentforce d'afficher des URL et des images de sources non approuvées. La troisième arme l'**identité de confiance de l'agent Agentforce connecté à Slack** pour diffuser du hameçonnage aux employés depuis l'intérieur de l'entreprise. Zenity a divulgué de façon responsable et *« Salesforce a travaillé avec les chercheurs pour investiguer et corriger »*. Le CTO Michael Bargury : *« Nous avons trouvé plusieurs façons de franchir la frontière de sécurité conçue pour empêcher Agentforce d'envoyer des données d'entreprise vers des destinations non approuvées… Quand ces contrôles échouent, il reste un agent privilégié, très autonome et sans limites. »* Enregistré `vulnerability` / `IPI` + `EXFIL` / `high` / `real_harm: false`",
+   "summary_es": "**Zenity Labs divulga \"SalesBleed\": tres vulnerabilidades de Salesforce Agentforce que permiten que un único envío Web-to-lead no confiable tome el control de un agente empresarial de confianza.** Dos de ellas permiten **exfiltración de datos de clic cero** — datos CRM sensibles llegan a infraestructura controlada por el atacante *sin que ningún empleado haga clic ni apruebe nada* — abusando de debilidades en **Trusted URLs**, el mecanismo destinado a impedir que Agentforce muestre URL e imágenes de fuentes no aprobadas. La tercera arma la **identidad de confianza del agente de Agentforce conectado a Slack** para distribuir phishing a los empleados desde dentro de la empresa. Zenity divulgó de forma responsable y *\"Salesforce trabajó con los investigadores para investigar y corregir\"*. El CTO Michael Bargury: *\"Encontramos varias formas de romper la frontera de seguridad diseñada para impedir que Agentforce envíe datos empresariales a destinos no aprobados… Cuando esos controles fallan, queda un agente con acceso privilegiado, gran autonomía y sin límites.\"* Registrado `vulnerability` / `IPI` + `EXFIL` / `high` / `real_harm: false`",
+   "disputed": false,
+   "landmark": false,
+   "path": "incidents/2026-09/2026-09-24-salesbleed-agentforce-zero-click-exfil.md",
+   "path_zh": "incidents/i18n/zh/2026-09/2026-09-24-salesbleed-agentforce-zero-click-exfil.md",
+   "sources": [
+    {
+     "url": "https://www.morningstar.com/news/business-wire/20260924811082/zenity-labs-uncovers-salesbleed-3-salesforce-agentforce-flaws-enabling-zero-click-crm-data-theft-and-ai-agent-impersonation",
+     "label": "Zenity Labs (Business Wire)"
+    },
+    {
+     "url": "https://www.darkreading.com/application-security/salesbleed-exploits-salesforce-agents-slack-phishing",
+     "label": "Dark Reading"
+    },
+    {
+     "url": "https://aviatrix.ai/threat-research-center/salesbleed-salesforce-agentforce-slack-phishing-2026/",
+     "label": "Aviatrix Threat Research"
+    }
+   ]
+  },
+  {
+   "id": "2026-09-25-zammad-ai-agent-template-rce",
+   "title": "Zammad: crafted text in an AI Agent field bypasses the sanitizer and runs commands on the server",
+   "title_zh": "Zammad：写入 AI Agent 字段的特制文本绕过过滤器，并在服务器上执行命令",
+   "title_ja": "Zammad：AI Agent フィールドに細工したテキストを入れるとサニタイザを迂回し、サーバー上でコマンドが実行される",
+   "title_ko": "Zammad: AI Agent 필드에 조작된 텍스트를 넣으면 새니타이저를 우회해 서버에서 명령이 실행된다",
+   "title_de": "Zammad: Präparierter Text in einem AI-Agent-Feld umgeht den Filter und führt Befehle auf dem Server aus",
+   "title_fr": "Zammad : un texte façonné dans un champ d'AI Agent contourne l'assainissement et exécute des commandes sur le serveur",
+   "title_es": "Zammad: un texto manipulado en un campo de AI Agent burla el saneamiento y ejecuta comandos en el servidor",
+   "date": "2026-09-25",
+   "date_end": null,
+   "date_precision": "day",
+   "date_raw": "2026-09-25 (NVD, GHSA)",
+   "month": "2026-09",
+   "kind": "vulnerability",
+   "type": [
+    "IPI",
+    "INFRA"
+   ],
+   "severity": "medium",
+   "confidence": "A",
+   "real_harm": false,
+   "ai_involvement": "confirmed",
+   "region": [
+    "GLOBAL"
+   ],
+   "summary": "**CVE-2026-84462: in Zammad before 7.1.2, *\"a security filter that protects Zammad's AI Agent configuration can be bypassed by entering specially crafted text into one of an AI Agent's fields,\"* letting an administrator who can create or edit AI Agents *\"run arbitrary commands on the server that hosts Zammad.\"*** The GitHub advisory calls it *\"AI Agent template sanitizer bypass leads to remote code execution\"*; NVD adds that *\"no interaction from other users is needed; the malicious code runs automatically the next time the affected AI Agent processes a ticket.\"* CVSS 4.0 **8.6** (`AV:N/AC:L/AT:N/PR:H/UI:N/VC:H/VI:H/VA:H`), weaknesses CWE-20 / CWE-94 / CWE-1336; fixed in **7.1.2**. The pattern matters more than the score: the **agent definition itself** — the instructions, templates and filters a helpdesk admin writes for an AI Agent — is a remote code execution surface. No exploitation in the wild is recorded. Recorded `vulnerability` / `IPI` + `INFRA` / `medium` / `real_harm: false`",
+   "summary_zh": "**CVE-2026-84462：在 7.1.2 之前的 Zammad 中，*「保护 Zammad AI Agent 配置的安全过滤器可被绕过——只要在某个 AI Agent 的字段里输入特制文本，」*使有权创建或编辑 AI Agent 的管理员*「在承载 Zammad 的服务器上执行任意命令。」*** GitHub 公告把它命名为*「AI Agent 模板 sanitizer 绕过导致远程代码执行」*；NVD 补充说*「无需其他用户交互；恶意代码会在受影响的 AI Agent 下次处理工单时自动运行。」* CVSS 4.0 **8.6**（`AV:N/AC:L/AT:N/PR:H/UI:N/VC:H/VI:H/VA:H`），弱点 CWE-20 / CWE-94 / CWE-1336；已在 **7.1.2** 修复。模式比分数更重要：**agent 定义本身**——客服管理员为 AI Agent 编写的指令、模板与过滤器——就是一个远程代码执行攻击面。无在野利用记录。本条记为 `vulnerability` / `IPI` + `INFRA` / `medium` / `real_harm: false`",
+   "summary_ja": "**CVE-2026-84462：7.1.2 より前の Zammad では、*「Zammad の AI Agent 設定を保護するセキュリティフィルタは、AI Agent のいずれかのフィールドに細工したテキストを入力することで迂回できる」*ため、AI Agent を作成・編集できる管理者が*「Zammad をホストするサーバー上で任意のコマンドを実行できる」。*** GitHub のアドバイザリはこれを *\"AI Agent template sanitizer bypass leads to remote code execution\"* と名付ける。NVD は *「他のユーザーの操作は不要で、悪意あるコードは影響を受けた AI Agent が次にチケットを処理したときに自動的に実行される」*と補足する。CVSS 4.0 **8.6**（`AV:N/AC:L/AT:N/PR:H/UI:N/VC:H/VI:H/VA:H`）、弱点 CWE-20 / CWE-94 / CWE-1336、**7.1.2** で修正。重要なのはスコアよりパターンだ。**エージェント定義そのもの**——管理者が AI Agent のために書く指示・テンプレート・フィルタ——がリモートコード実行の攻撃面になっている。実環境での悪用は記録されていない。`vulnerability` / `IPI` + `INFRA` / `medium` / `real_harm: false`",
+   "summary_ko": "**CVE-2026-84462: 7.1.2 이전 Zammad에서 *\"Zammad AI Agent 구성을 보호하는 보안 필터는 AI Agent 필드 중 하나에 특수하게 조작된 텍스트를 입력해 우회할 수 있다\"*. 따라서 AI Agent를 생성·편집할 수 있는 관리자가 *\"Zammad를 호스팅하는 서버에서 임의 명령을 실행할 수 있다.\"*** GitHub 권고문은 이를 *\"AI Agent template sanitizer bypass leads to remote code execution\"*으로 명명한다. NVD는 *\"다른 사용자의 상호작용은 필요 없고, 악성 코드는 해당 AI Agent가 다음에 티켓을 처리할 때 자동으로 실행된다\"*고 덧붙인다. CVSS 4.0 **8.6**(`AV:N/AC:L/AT:N/PR:H/UI:N/VC:H/VI:H/VA:H`), 약점 CWE-20 / CWE-94 / CWE-1336, **7.1.2**에서 수정. 점수보다 패턴이 중요하다. **에이전트 정의 자체**——헬프데스크 관리자가 AI Agent용으로 작성하는 지시·템플릿·필터——가 원격 코드 실행 공격면이다. 실제 악용은 기록되지 않았다. `vulnerability` / `IPI` + `INFRA` / `medium` / `real_harm: false`",
+   "summary_de": "**CVE-2026-84462: In Zammad vor 7.1.2 *„kann ein Sicherheitsfilter, der die AI-Agent-Konfiguration von Zammad schützt, durch die Eingabe speziell präparierten Textes in eines der AI-Agent-Felder umgangen werden\"*, sodass ein Administrator, der AI-Agents erstellen oder bearbeiten darf, *„beliebige Befehle auf dem Server ausführen kann, der Zammad hostet\".*** Das GitHub-Advisory nennt es *„AI Agent template sanitizer bypass leads to remote code execution\"*; NVD ergänzt: *„Es ist keine Interaktion anderer Benutzer erforderlich; der bösartige Code läuft automatisch, wenn der betroffene AI-Agent das nächste Mal ein Ticket bearbeitet.\"* CVSS 4.0 **8.6** (`AV:N/AC:L/AT:N/PR:H/UI:N/VC:H/VI:H/VA:H`), Schwächen CWE-20 / CWE-94 / CWE-1336, behoben in **7.1.2**. Das Muster wiegt mehr als die Punktzahl: Die **Agent-Definition selbst** — Anweisungen, Vorlagen und Filter, die ein Helpdesk-Admin für einen KI-Agenten schreibt — ist eine RCE-Angriffsfläche. Keine Ausnutzung bekannt. Verzeichnet als `vulnerability` / `IPI` + `INFRA` / `medium` / `real_harm: false`",
+   "summary_fr": "**CVE-2026-84462 : dans Zammad avant 7.1.2, *« un filtre de sécurité qui protège la configuration AI Agent de Zammad peut être contourné en saisissant un texte spécialement conçu dans l'un des champs d'un AI Agent »*, permettant à un administrateur habilité à créer ou modifier des AI Agents *« d'exécuter des commandes arbitraires sur le serveur qui héberge Zammad ».*** L'avis GitHub l'intitule *« AI Agent template sanitizer bypass leads to remote code execution »* ; le NVD ajoute qu'*« aucune interaction d'un autre utilisateur n'est nécessaire ; le code malveillant s'exécute automatiquement au prochain traitement d'un ticket par l'AI Agent concerné. »* CVSS 4.0 **8.6** (`AV:N/AC:L/AT:N/PR:H/UI:N/VC:H/VI:H/VA:H`), faiblesses CWE-20 / CWE-94 / CWE-1336, corrigé en **7.1.2**. Le motif compte plus que le score : la **définition de l'agent elle-même** — instructions, modèles et filtres écrits par un administrateur — est une surface d'exécution de code à distance. Aucune exploitation constatée. Enregistré `vulnerability` / `IPI` + `INFRA` / `medium` / `real_harm: false`",
+   "summary_es": "**CVE-2026-84462: en Zammad anterior a 7.1.2, *«un filtro de seguridad que protege la configuración de AI Agent de Zammad puede evadirse introduciendo texto especialmente manipulado en uno de los campos de un AI Agent»*, lo que permite a un administrador con permiso para crear o editar AI Agents *«ejecutar comandos arbitrarios en el servidor que aloja Zammad»*.** El aviso de GitHub lo titula *«AI Agent template sanitizer bypass leads to remote code execution»*; el NVD añade que *«no se necesita interacción de otros usuarios; el código malicioso se ejecuta automáticamente la próxima vez que el AI Agent afectado procese un ticket»*. CVSS 4.0 **8.6** (`AV:N/AC:L/AT:N/PR:H/UI:N/VC:H/VI:H/VA:H`), debilidades CWE-20 / CWE-94 / CWE-1336, corregido en **7.1.2**. El patrón importa más que la puntuación: la **definición del agente en sí** — instrucciones, plantillas y filtros que escribe un administrador — es una superficie de ejecución remota de código. No se registra explotación real. Registrado `vulnerability` / `IPI` + `INFRA` / `medium` / `real_harm: false`",
+   "disputed": false,
+   "landmark": false,
+   "path": "incidents/2026-09/2026-09-25-zammad-ai-agent-template-rce.md",
+   "path_zh": "incidents/i18n/zh/2026-09/2026-09-25-zammad-ai-agent-template-rce.md",
+   "sources": [
+    {
+     "url": "https://github.com/zammad/zammad/security/advisories/GHSA-gp3x-9xm8-rcj6",
+     "label": "Zammad security advisory (GHSA)"
+    },
+    {
+     "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-84462",
+     "label": "NVD"
     }
    ]
   }

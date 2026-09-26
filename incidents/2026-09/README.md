@@ -1,16 +1,16 @@
 # 2026-09
 
 <!-- BEGIN:summary -->
-**62** records
+**69** records
 
-![records](https://img.shields.io/badge/records-62-48545A?style=flat-square) ![critical](https://img.shields.io/badge/Critical-8-88091D?style=flat-square) ![high](https://img.shields.io/badge/High-25-B23B40?style=flat-square) ![medium](https://img.shields.io/badge/Medium-9-C4615F?style=flat-square) ![info](https://img.shields.io/badge/Info-20-6B7175?style=flat-square)
+![records](https://img.shields.io/badge/records-69-48545A?style=flat-square) ![critical](https://img.shields.io/badge/Critical-8-88091D?style=flat-square) ![high](https://img.shields.io/badge/High-28-B23B40?style=flat-square) ![medium](https://img.shields.io/badge/Medium-13-C4615F?style=flat-square) ![info](https://img.shields.io/badge/Info-20-6B7175?style=flat-square)
 
 ```mermaid
 pie showData
     title 2026-09 by severity
     "Critical" : 8
-    "High" : 25
-    "Medium" : 9
+    "High" : 28
+    "Medium" : 13
     "Info" : 20
 ```
 
@@ -68,8 +68,12 @@ pie showData
 | `09-18` | [California orders an AI "kill switch" and third-party oversight](2026-09-18-california-ai-kill-switch-eo.md) | `GOV` | Info | A | · |
 | `09-19` | [RoboHarm: leading models rarely refuse dangerous robot-arm commands](2026-09-19-roboharm-benchmark.md) | `ROGUE` | Medium | B | — |
 | `09-19` | [Trump announces an "AI Force" and an AI czar, and calls safety fears a hoax](2026-09-19-trump-ai-force-czar.md) | `GOV` | Info | B | · |
+| `09-20` | [Tencent BrowserSkill: any 32-character extension origin can pose as the browser client and feed the agent forged pages](2026-09-20-tencent-browserskill-origin-bypass.md) | `IPI` `INFRA` | Medium | A | — |
+| `09-21` | [MaxKB: the agent dispatch path lets a user denied a tool still call it and read its credentials](2026-09-21-maxkb-tool-permission-bypass.md) | `INFRA` `CRED` | Medium | A | — |
+| `09-21` | [Not-a-Mused: an undocumented Muse setting redirects dictation and hands the agent's token to an attacker](2026-09-21-meta-muse-not-a-mused-dictation-hijack.md) | `INFRA` `CRED` | Medium | A | — |
 | `09-21` | [UN panel's first thematic brief: the OpenAI-Hugging Face incident as a loss-of-control warning](2026-09-21-un-panel-ai-agents-misalignment-brief.md) | `GOV` | Info | A | · |
 | `09-22` | ★ [Gambit: three AI harnesses stole 600,000 card records from online retailers](2026-09-22-gambit-ai-agent-retail-card-theft.md) | `WEAPON` | **Critical** | A | ✅ |
+| `09-22` | [CARBONATO: a Docker botnet installs Hermes Agent and loots AI API keys over Telegram](2026-09-22-carbonato-docker-hermes-agent-botnet.md) | `WEAPON` `INFRA` `CRED` | **High** | A | ✅ |
 | `09-22` | [ClosedQuorum: a Windows implant that lets four LLMs vote on its next move](2026-09-22-closedquorum-ai-c2-implant.md) | `WEAPON` | **High** | A | — |
 | `09-22` | [EvilTokens: Microsoft dismantles an AI-powered PhaaS that compromised 12,000 inboxes](2026-09-22-eviltokens-disrupted.md) | `WEAPON` | **High** | A | ✅ |
 | `09-22` | [100 hours, one agent: what the VulnHouse autonomous-pentest marathon produced](2026-09-22-vulnhouse-100h-agent-pentest.md) | `WEAPON` | **High** | A | — |
@@ -80,6 +84,9 @@ pie showData
 | `09-23` | [IBM FTM: unauthenticated RAG poisoning could steer the payment agent's MCP tools](2026-09-23-ibm-ftm-rag-poisoning.md) | `IPI` `INFRA` | Medium | A | — |
 | `09-23` | [An AI support agent read "should I cancel?" as an order - and cancelled the ticket](2026-09-23-zhixing-ai-agent-cancelled-ticket.md) | `ROGUE` | Medium | B | ✅ |
 | `09-24` | ★ [An OpenAI agent crossed into Australia's Medicare portal - the first government breached](2026-09-24-openai-agent-australia-medicare.md) | `EVAL` | **Critical** | A | ✅ |
+| `09-24` | [Manus: a JSFuck-obfuscated email beat the agent's filter, executed a payload and exposed connected app tokens](2026-09-24-manus-email-prompt-injection-rce.md) | `IPI` `CRED` | **High** | B | — |
+| `09-24` | [SalesBleed: three Agentforce flaws turn a single web lead into zero-click CRM exfiltration and agent-impersonated phishing](2026-09-24-salesbleed-agentforce-zero-click-exfil.md) | `IPI` `EXFIL` | **High** | A | — |
+| `09-25` | [Zammad: crafted text in an AI Agent field bypasses the sanitizer and runs commands on the server](2026-09-25-zammad-ai-agent-template-rce.md) | `IPI` `INFRA` | Medium | A | — |
 
 <sub>★ = `critical` · ⚠️ = disputed facts or attribution · real harm: ✅ confirmed victim / — none / · not applicable (policy and intelligence reports)</sub>
 <!-- END:summary -->

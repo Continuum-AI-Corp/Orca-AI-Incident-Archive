@@ -1,6 +1,6 @@
 # Topic · Agent infrastructure exposure (INFRA)
 
-![records](https://img.shields.io/badge/records-94-48545A?style=flat-square) ![type](https://img.shields.io/badge/type-INFRA_CRED-B08528?style=flat-square)
+![records](https://img.shields.io/badge/records-100-48545A?style=flat-square) ![type](https://img.shields.io/badge/type-INFRA_CRED-B08528?style=flat-square)
 
 > The prose on this page is taken from the archive's original research report; the "All records" table below is compiled automatically from the frontmatter in `incidents/`, and the two are updated together.
 
@@ -26,7 +26,7 @@ The role Langflow / LiteLLM / Flowise / OpenClaw play in 2026 is the one Fortine
 ---
 
 <!-- BEGIN:incidents -->
-## All records (94)
+## All records (100)
 
 | Date | Record | Type | Severity | Confidence | Real harm |
 |---|---|---|---|---|---|
@@ -122,8 +122,14 @@ The role Langflow / LiteLLM / Flowise / OpenClaw play in 2026 is the one Fortine
 | `2026-09-17` | [Microsoft patches a CVSS 10.0 missing-authentication flaw in Azure AI Foundry](../incidents/2026-09/2026-09-17-azure-ai-foundry-cve-2026-85889.md) | `INFRA` | **High** | A | — |
 | `2026-09-18` | [CrowdSec: a nine-minute repository dump, enabled by an offboarding gap](../incidents/2026-09/2026-09-18-crowdsec-tanstack-offboarding-breach.md) | `SUPPLY` `CRED` | **High** | A | ✅ |
 | `2026-09-18` | [Researchers used Claude to hack OpenAI's internal systems in a bug-bounty chain](../incidents/2026-09/2026-09-18-hacktron-claude-openai-hack.md) | `WEAPON` `CRED` | **High** | A | — |
+| `2026-09-20` | [Tencent BrowserSkill: any 32-character extension origin can pose as the browser client and feed the agent forged pages](../incidents/2026-09/2026-09-20-tencent-browserskill-origin-bypass.md) | `IPI` `INFRA` | Medium | A | — |
+| `2026-09-21` | [MaxKB: the agent dispatch path lets a user denied a tool still call it and read its credentials](../incidents/2026-09/2026-09-21-maxkb-tool-permission-bypass.md) | `INFRA` `CRED` | Medium | A | — |
+| `2026-09-21` | [Not-a-Mused: an undocumented Muse setting redirects dictation and hands the agent's token to an attacker](../incidents/2026-09/2026-09-21-meta-muse-not-a-mused-dictation-hijack.md) | `INFRA` `CRED` | Medium | A | — |
+| `2026-09-22` | [CARBONATO: a Docker botnet installs Hermes Agent and loots AI API keys over Telegram](../incidents/2026-09/2026-09-22-carbonato-docker-hermes-agent-botnet.md) | `WEAPON` `INFRA` `CRED` | **High** | A | ✅ |
 | `2026-09-23` | [IBM FTM: unauthenticated RAG poisoning could steer the payment agent's MCP tools](../incidents/2026-09/2026-09-23-ibm-ftm-rag-poisoning.md) | `IPI` `INFRA` | Medium | A | — |
 | `2026-09-23` | [sckit: MemTensor's AI memory packages were backdoored to steal agent credentials and prompts](../incidents/2026-09/2026-09-23-memtensor-sckit-supply-chain.md) | `SUPPLY` `CRED` | **High** | A | — |
+| `2026-09-24` | [Manus: a JSFuck-obfuscated email beat the agent's filter, executed a payload and exposed connected app tokens](../incidents/2026-09/2026-09-24-manus-email-prompt-injection-rce.md) | `IPI` `CRED` | **High** | B | — |
+| `2026-09-25` | [Zammad: crafted text in an AI Agent field bypasses the sanitizer and runs commands on the server](../incidents/2026-09/2026-09-25-zammad-ai-agent-template-rce.md) | `IPI` `INFRA` | Medium | A | — |
 <!-- END:incidents -->
 
 ---
