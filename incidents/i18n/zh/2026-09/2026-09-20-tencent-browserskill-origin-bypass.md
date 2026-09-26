@@ -33,7 +33,7 @@ flowchart LR
 
 ## 详情
 
-**公告内容。** VulnCheck 的条目（2026 年 9 月 20 日，严重度 *medium*，致谢 George Chen）给出完整表述：*「腾讯 BrowserSkill 0.3.0 及更早版本在本地守护进程的 WebSocket 来源校验中存在一处认证绕过缺陷，它接受任意长度为 32 字符、字符落在 a–p 区间的 chrome-extension 来源。攻击者可以注册一个恶意扩展作为浏览器客户端，以拦截并篡改返回给 AI agent 的页面内容、DOM 与截图。」* CVSS 4.0 基础分 **6.9**，向量 `AV:L/AC:L/AT:N/PR:L/UI:N/VC:L/VI:H/VA:L/SC:N/SI:N/SA:N`，弱点 **CWE-346**（来源校验错误）。NVD 与之一致；参考链接指向 GitHub issue 273 与 `crates/bsk-cli/src/daemon/ws.rs#L36-L57`。上游 issue（**2026 年 9 月 17 日**提交，仍未关闭）提供了背景：该守护进程是默认 **52800** 端口上的 WebSocket 服务，它让*「任何驱动它的 AI agent」*完全控制用户真实且已登录的浏览器——读取页面、截图、填写表单——而 `origin_allowed()` 只检查 `Origin` 头的**形状**，*「从不检查它到底是哪个扩展」*。无在野利用记录。
+**公告内容。** VulnCheck 的条目（2026 年 9 月 20 日，严重度 *medium*，致谢 George Chen）给出完整表述：*「腾讯 BrowserSkill 0.3.0 及更早版本在本地守护进程的 WebSocket 来源校验中存在一处认证绕过缺陷，它接受任意长度为 32 字符、字符落在 a–p 区间的 chrome-extension 来源。攻击者可以注册一个恶意扩展作为浏览器客户端，以拦截并篡改返回给 AI agent 的页面内容、DOM 与截图。」* CVSS 4.0 基础分 **6.9**，向量 `AV:L/AC:L/AT:N/PR:L/UI:N/VC:L/VI:H/VA:L/SC:N/SI:N/SA:N`，弱点 **CWE-346**（来源校验错误）。NVD 与之一致；参考链接指向 GitHub issue 273 与 `crates/bsk-cli/src/daemon/ws.rs#L36-L57`。上游 issue（**2026 年 9 月 17 日**提交，仍未关闭）提供了背景：该守护进程是默认 **52800** 端口上的 WebSocket 服务，它让*「任何驱动它的 AI agent」*完全控制用户真实且已登录的浏览器——读取页面、截图、填写表单——而 `origin_allowed()` 只检查 `Origin` 头的**形状**，*「从不检查它到底是哪个扩展」*。报告者于 **2026 年 9 月 20 日**复查当前 `main` 后指出 `origin_allowed()` 未改动，`ws.rs:38-44` 处的 `TODO(M10/M12)` 仍在——即报告发出九天后，这道「只校验形状」的闸门仍然有效。无在野利用记录。
 
 **为什么层级重要。** 浏览器 agent 的能力取决于它*看到*什么：浏览器 agent 技术栈把页面内容、DOM 与截图变成 agent 唯一的感官输入，而本地守护进程就是承载这些输入的管道。当管道的来源校验只要「32 个字符且在固定字符区间内」就放行，一个扩展——用户最随意、量最大地安装的东西之一——就成了 agent 的眼睛。这是位于内容之下一层的间接提示注入：攻击者不需要把文本弄到 agent 会读的页面上，因为他们可以替换掉投递页面的那条通道。
 
