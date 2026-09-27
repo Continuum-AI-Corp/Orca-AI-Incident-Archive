@@ -15,7 +15,7 @@ summary: |
 
 ## 概要
 
-**Salt Labs 证明单靠一封邮件就能接管陌生人的 Manus 环境：这个 agentic AI 应用把收到的邮件当作指令来读；研究者尝试的各种常规混淆都被它识破，唯独一种冷门的 JavaScript 混淆技术——「JSFuck」——让载荷得以执行，而安全告警只在执行**之后**才触发。** 研究者随后把这处代码执行升级为反向 shell，并读出受害者已连接的**每一个第三方应用的凭据与令牌**——*「如果受害者把 Manus 连接到 Gmail、Dropbox 与 GitHub，攻击者就能拿走相应的凭据与令牌。」* Manus 未回应报告；经 **Meta 的漏洞赏金计划**提交后，该问题被*「分诊、确认并修复」*。Salt Labs 研究副总裁 Yaniv Balmas：提示注入攻击*「可能已在野外发生……但可能仍未被察觉。」* 本条记为 `vulnerability` / `IPI` + `CRED` / `high` / `real_harm: false`——一次重要能力演示，无确认利用。
+**Salt Labs 证明单靠一封邮件就能接管陌生人的 Manus 环境：这个 agentic AI 应用把收到的邮件当作指令来读；研究者尝试的各种常规混淆都被它识破，唯独一种冷门的 JavaScript 混淆技术——「JSFuck」——让载荷得以执行，而安全告警只在执行**之后**才触发。** 研究者随后把这处代码执行升级为反向 shell，并读出受害者已连接的**每一个第三方应用的凭据与令牌**——*「如果受害者把 Manus 连接到 Gmail、Dropbox 与 GitHub，攻击者就能拿走相应的凭据与令牌。」* Manus 未回应报告；经 **Meta 的漏洞赏金计划**提交后，该问题被*「分诊、确认并修复」*。Salt Labs 研究副总裁 Yaniv Balmas：提示注入攻击*「可能已在野外发生……但可能仍未被察觉。」* 本条记为 `vulnerability` / `IPI` + `CRED` / `high` / `real_harm: false`——一次重要能力演示，无确认利用
 
 ## 攻击链
 

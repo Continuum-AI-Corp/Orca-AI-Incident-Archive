@@ -15,7 +15,7 @@ summary: |
 
 ## 概要
 
-**CVE-2026-77516：在 MaxKB 2.0.0 至 2.9.2 中，*「被 WorkspaceUserResourcePermission 拒绝访问某工具的最低权限工作区成员，仍可通过 `tool_ids`、`skill_tool_ids` 或 `mcp_tool_ids` 绑定其标识符，并经 agent 或工作流派发路径执行它」*——而且由于*「工具执行会解密服务端的 `init_params`，使调用方能拿到被拒绝工具所携带的凭据，」*这次绕过返回的不仅是结果，还有密钥。** 该公告题为*「agent 与工作流工具派发路径中缺少逐工具授权」*，列出 CWE-862（缺少授权）与 CWE-639（通过用户可控键绕过授权）；CVSS 3.1 **5.4**；*「截至本次评审无可用修复版本。」* 关键在结构：逐工具授权在专用工具路由上执行，但 **agent 派发路径是通向同一能力的第二道门**，而它并不复查该授权。本条记为 `vulnerability` / `INFRA` + `CRED` / `medium` / `real_harm: false`。
+**CVE-2026-77516：在 MaxKB 2.0.0 至 2.9.2 中，*「被 WorkspaceUserResourcePermission 拒绝访问某工具的最低权限工作区成员，仍可通过 `tool_ids`、`skill_tool_ids` 或 `mcp_tool_ids` 绑定其标识符，并经 agent 或工作流派发路径执行它」*——而且由于*「工具执行会解密服务端的 `init_params`，使调用方能拿到被拒绝工具所携带的凭据，」*这次绕过返回的不仅是结果，还有密钥。** 该公告题为*「agent 与工作流工具派发路径中缺少逐工具授权」*，列出 CWE-862（缺少授权）与 CWE-639（通过用户可控键绕过授权）；CVSS 3.1 **5.4**；*「截至本次评审无可用修复版本。」* 关键在结构：逐工具授权在专用工具路由上执行，但 **agent 派发路径是通向同一能力的第二道门**，而它并不复查该授权。本条记为 `vulnerability` / `INFRA` + `CRED` / `medium` / `real_harm: false`
 
 ## 攻击链
 

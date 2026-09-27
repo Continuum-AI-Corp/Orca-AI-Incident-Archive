@@ -15,7 +15,7 @@ summary: |
 
 ## 概要
 
-**CVE-2026-84462：在 7.1.2 之前的 Zammad 中，*「保护 Zammad AI Agent 配置的安全过滤器可被绕过——只要在某个 AI Agent 的字段里输入特制文本，」*使有权创建或编辑 AI Agent 的管理员*「在承载 Zammad 的服务器上执行任意命令。」*** GitHub 公告把它命名为*「AI Agent 模板 sanitizer 绕过导致远程代码执行」*；NVD 补充说*「无需其他用户交互；恶意代码会在受影响的 AI Agent 下次处理工单时自动运行。」* CVSS 4.0 **8.6**（`AV:N/AC:L/AT:N/PR:H/UI:N/VC:H/VI:H/VA:H`），弱点 CWE-20 / CWE-94 / CWE-1336；已在 **7.1.2** 修复。模式比分数更重要：**agent 定义本身**——客服管理员为 AI Agent 编写的指令、模板与过滤器——就是一个远程代码执行攻击面。无在野利用记录。本条记为 `vulnerability` / `IPI` + `INFRA` / `medium` / `real_harm: false`。
+**CVE-2026-84462：在 7.1.2 之前的 Zammad 中，*「保护 Zammad AI Agent 配置的安全过滤器可被绕过——只要在某个 AI Agent 的字段里输入特制文本，」*使有权创建或编辑 AI Agent 的管理员*「在承载 Zammad 的服务器上执行任意命令。」*** GitHub 公告把它命名为*「AI Agent 模板 sanitizer 绕过导致远程代码执行」*；NVD 补充说*「无需其他用户交互；恶意代码会在受影响的 AI Agent 下次处理工单时自动运行。」* CVSS 4.0 **8.6**（`AV:N/AC:L/AT:N/PR:H/UI:N/VC:H/VI:H/VA:H`），弱点 CWE-20 / CWE-94 / CWE-1336；已在 **7.1.2** 修复。模式比分数更重要：**agent 定义本身**——客服管理员为 AI Agent 编写的指令、模板与过滤器——就是一个远程代码执行攻击面。无在野利用记录。本条记为 `vulnerability` / `IPI` + `INFRA` / `medium` / `real_harm: false`
 
 ## 攻击链
 
