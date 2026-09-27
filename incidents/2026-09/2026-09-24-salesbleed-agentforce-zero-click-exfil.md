@@ -83,7 +83,7 @@ flowchart LR
 
 **Why the entry point matters.** The entire chain starts from a form anyone on the internet can fill in. That is the indirect-prompt-injection pattern in its purest enterprise form: the attacker never touches an employee, never sends an email, never needs a credential. The lead is *content*, the agent is the *interpreter*, and the agent's own permissions are the *payload delivery mechanism* — which is what makes the second-order step possible: phishing that arrives through the Slack identity employees already trust, not through a look-alike domain.
 
-**Vendor response and grading.** Zenity disclosed responsibly and Salesforce worked with the researchers to investigate and remediate; no exploitation in the wild is reported, so `real_harm: false`. The archive grades it `high` on the "significant capability demonstration" limb of its severity ladder: zero-click exfiltration plus trusted-identity impersonation through a platform deployed across a large enterprise base. It is the archive's first **Agentforce** entry, and it extends the zero-click exfiltration lineage (EchoLeak, BragJack) from mail/browser surfaces to the CRM-and-chat surface where enterprise agents actually hold permissions.
+**Vendor response and grading.** Zenity disclosed responsibly and Salesforce worked with the researchers to investigate and remediate; no exploitation in the wild is reported, so `real_harm: false`. The archive grades it `high` on the "significant capability demonstration" limb of its severity ladder: zero-click exfiltration plus trusted-identity impersonation through a platform deployed across a large enterprise base. It is the archive's second Agentforce entry — a year after ForcedLeak (`2025-09-25`), where a public Web-to-Lead form plus a US$5 expired CSP allow-listed domain was enough to pull CRM data with no interaction — and it extends the zero-click exfiltration lineage (EchoLeak, BragJack) from mail/browser surfaces to the CRM-and-chat surface where enterprise agents actually hold permissions.
 
 ## Sources
 
@@ -117,6 +117,7 @@ flowchart LR
 
 - `2026-09-16` [BragJack: one browser extension hijacks the AI agents in five major browsers](2026-09-16-bragjack-browser-agents.md)<br>  <sub>Same class of problem one layer down — the agent's input channel, not its output boundary</sub>
 - `2026-09-09` [Workflow identity hijacking: Noma Labs turns an ordinary support email into privileged data access](2026-09-09-noma-workflow-identity-hijacking.md)<br>  <sub>When the agent acts with permissions nobody granted the sender</sub>
+- `2025-09-25` [ForcedLeak (Salesforce Agentforce)](../2025-09/2025-09-25-forcedleak-salesforce-agentforce.md)<br>  <sub>The earlier Agentforce zero-click exfiltration — an expired CSP allow-listed domain rather than a Trusted URLs bypass</sub>
 - `2025-06-11` [EchoLeak](../2025-06/2025-06-11-echoleak.md)<br>  <sub>The zero-click exfiltration template this lineage starts from</sub>
 
 ---

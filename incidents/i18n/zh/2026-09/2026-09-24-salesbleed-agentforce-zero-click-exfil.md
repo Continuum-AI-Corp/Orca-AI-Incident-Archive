@@ -37,7 +37,7 @@ flowchart LR
 
 **为什么入口很重要。** 整条链的起点是一张任何互联网用户都能填写的表单。这是间接提示注入在企业环境里最纯粹的形式：攻击者不接触任何员工、不发邮件、不需要任何凭据。线索是*内容*，agent 是*解释器*，而 agent 自己的权限就是*载荷投递机制*——正因如此才会有第二阶结果：钓鱼消息通过员工本就信任的 Slack 身份送达，而不是通过一个仿冒域名。
 
-**厂商响应与定级。** Zenity 负责任地披露，Salesforce 与研究者合作调查并修复；无在野利用报告，故 `real_harm: false`。档案按严重程度阶梯中的「重要能力演示」一项评为 `high`：在一个大型企业客户基数上部署的平台里，实现了零点击外泄加受信任身份冒充。这是本档案首个 **Agentforce** 条目，并把零点击外泄谱系（EchoLeak、BragJack）从邮件／浏览器攻击面延伸到 CRM 与聊天这一企业 agent 真正持有权限的攻击面。
+**厂商响应与定级。** Zenity 负责任地披露，Salesforce 与研究者合作调查并修复；无在野利用报告，故 `real_harm: false`。档案按严重程度阶梯中的「重要能力演示」一项评为 `high`：在一个大型企业客户基数上部署的平台里，实现了零点击外泄加受信任身份冒充。这是本档案第二个 Agentforce 条目——距 ForcedLeak（`2025-09-25`，一张公开 Web-to-Lead 表单 + 花 5 美元买下的过期 CSP 白名单域名即可零交互拖走 CRM 数据）一年之后；它把零点击外泄谱系（EchoLeak、BragJack）从邮件／浏览器攻击面延伸到 CRM 与聊天这一企业 agent 真正持有权限的攻击面。
 
 ## 来源
 
@@ -71,6 +71,7 @@ flowchart LR
 
 - `2026-09-16` [BragJack：一个浏览器扩展劫持五大浏览器里的 AI agent](2026-09-16-bragjack-browser-agents.md)<br>  <sub>同一类问题，位置低一层——在 agent 的输入通道而非输出边界</sub>
 - `2026-09-09` [工作流身份劫持：Noma Labs 把一封普通支持邮件变成特权数据访问](2026-09-09-noma-workflow-identity-hijacking.md)<br>  <sub>当 agent 以没人授予给发送方的权限行动时</sub>
+- `2025-09-25` [ForcedLeak（Salesforce Agentforce）](../2025-09/2025-09-25-forcedleak-salesforce-agentforce.md)<br>  <sub>更早的 Agentforce 零点击外泄——靠过期 CSP 白名单域名，而非绕过 Trusted URLs</sub>
 - `2025-06-11` [EchoLeak](../2025-06/2025-06-11-echoleak.md)<br>  <sub>这一谱系起点处的零点击外泄模板</sub>
 
 ---
