@@ -1,5 +1,5 @@
 ---
-id: 2026-09-20-tencent-browserskill-origin-bypass
+id: 2026-09-17-tencent-browserskill-origin-bypass
 title: "Tencent BrowserSkill: any 32-character extension origin can pose as the browser client and feed the agent forged pages"
 title_zh: "腾讯 BrowserSkill：任意 32 字符扩展来源都能冒充浏览器客户端，向 agent 投喂伪造页面"
 title_ja: "Tencent BrowserSkill：32 文字の拡張オリジンならどれでもブラウザクライアントになりすまし、エージェントに偽ページを渡せる"
@@ -7,8 +7,8 @@ title_ko: "Tencent BrowserSkill: 32자 확장 오리진이면 무엇이든 브�
 title_de: "Tencent BrowserSkill: Jede 32 Zeichen lange Extension-Origin kann sich als Browser-Client ausgeben und dem Agenten gefälschte Seiten liefern"
 title_fr: "Tencent BrowserSkill : n'importe quelle origine d'extension de 32 caractères peut se faire passer pour le client navigateur et fournir à l'agent des pages falsifiées"
 title_es: "Tencent BrowserSkill: cualquier origen de extensión de 32 caracteres puede hacerse pasar por el cliente del navegador y alimentar al agente con páginas falsificadas"
-date: 2026-09-20
-date_raw: "2026-09-20 (NVD, VulnCheck)"
+date: 2026-09-17
+date_raw: "2026-09-17 (upstream issue 273) / 2026-09-20 (VulnCheck, NVD)"
 date_precision: day
 
 kind: vulnerability
@@ -79,11 +79,11 @@ flowchart LR
 
 ## Details
 
-**The advisory.** VulnCheck's entry (dated 20 September 2026, severity *medium*, credit George Chen) carries the full text: *"Tencent BrowserSkill through 0.3.0 contains an authentication bypass vulnerability in the local daemon WebSocket origin validation that accepts any chrome-extension origin with 32 characters in range a-p. Attackers can register a malicious extension as a browser client to intercept and manipulate page content, DOM, and screenshots returned to the AI agent."* CVSS 4.0 base **6.9**, vector `AV:L/AC:L/AT:N/PR:L/UI:N/VC:L/VI:H/VA:L/SC:N/SI:N/SA:N`, weakness **CWE-346** (origin validation error). NVD mirrors it; the references point at GitHub issue 273 and `crates/bsk-cli/src/daemon/ws.rs#L36-L57`. The upstream issue, opened on **17 September 2026** and still open, supplies the context: the daemon is a WebSocket server on default port **52800** that gives *"any AI agent driving it"* full control of the user's real, already-logged-in browser — reading pages, taking screenshots, filling forms — and `origin_allowed()` checks the *shape* of the `Origin` header *"but never checks which extension it actually is"*. The reporter re-checked current `main` on **20 September 2026** and reported `origin_allowed()` unchanged, with the `TODO(M10/M12)` at `ws.rs:38-44` still present - the shape-only gate was still live nine days after the report. No exploitation in the wild is recorded.
+**The advisory.** VulnCheck's entry (dated 20 September 2026, severity *medium*, credit George Chen) carries the full text: *"Tencent BrowserSkill through 0.3.0 contains an authentication bypass vulnerability in the local daemon WebSocket origin validation that accepts any chrome-extension origin with 32 characters in range a-p. Attackers can register a malicious extension as a browser client to intercept and manipulate page content, DOM, and screenshots returned to the AI agent."* CVSS 4.0 base **6.9**, vector `AV:L/AC:L/AT:N/PR:L/UI:N/VC:L/VI:H/VA:L/SC:N/SI:N/SA:N`, weakness **CWE-346** (origin validation error). NVD mirrors it; the references point at GitHub issue 273 and `crates/bsk-cli/src/daemon/ws.rs#L36-L57`. The upstream issue, opened on **17 September 2026** and still open, supplies the context: the daemon is a WebSocket server on default port **52800** that gives *"any AI agent driving it"* full control of the user's real, already-logged-in browser — reading pages, taking screenshots, filling forms — and `origin_allowed()` checks the *shape* of the `Origin` header *"but never checks which extension it actually is"*. On **20 September** a second contributor re-checked `main` (commit `fa953dc6`, 18 September) and found `origin_allowed()` unchanged, with the `TODO(M10/M12)` at `ws.rs:38-44` still present; the archive's own check of tag `ext-v0.3.1` and of `main` at `8cbcc49` (26 September) finds the function still unchanged — nine days after the report, the shape-only gate is still live. The same comment narrows the impact. `tool.*` requests cannot be sent *from* the WebSocket peer, and the daemon gives a foreign extension no way to read the user's logged-in sites (an extension holding its own `<all_urls>` permission would not need the daemon for that). What it can do is register as a browser: if it is the browser a session binds to — on a cold start before the genuine extension reconnects, or after a daemon restart — the daemon sends it the agent's `tool.*` requests and it can return *"fabricated DOM, page content, and screenshots that the agent treats as ground truth"*; if both extensions are registered and no browser is selected, the session fails to start instead, a denial of service. No exploitation in the wild is recorded.
 
 **Why the layer matters.** Browser agents are judged by what they can *see*: a browser-agent stack turns page content, DOM and screenshots into the agent's only sensory input, and the local daemon is the pipe that carries it. When the pipe's origin check accepts a 32-character string in a fixed character range, an extension — one of the few things users install casually and in volume — becomes the agent's eyes. That is indirect prompt injection one level below the content: the attacker does not need to get text onto a page the agent reads, because they can replace the channel that delivers the page.
 
-**Context and grading.** BrowserSkill is Tencent's open-source browser-agent CLI; the issue affects versions up to and including 0.3.0 and is tracked upstream as an open issue. Recorded `vulnerability` / `medium` / `real_harm: false` under the archive's ladder — a moderate, local, low-privilege flaw with no known exploitation (`high` would need CVSS 9+ or confirmed damage), dated to NVD publication (20 September 2026). Confidence **A**: the NVD record, an independent advisory, and the vendor repository's own issue.
+**Context and grading.** BrowserSkill is Tencent's open-source browser-agent CLI; the issue affects versions up to and including 0.3.0 and is tracked upstream as an open issue. Recorded `vulnerability` / `medium` / `real_harm: false` under the archive's ladder — a moderate, local, low-privilege flaw with no known exploitation (`high` would need CVSS 9+ or confirmed damage), dated to the public upstream issue (17 September 2026); VulnCheck and NVD published the CVE on 20 September. Confidence **A**: the upstream issue in Tencent's own repository, VulnCheck's advisory as the assigning CNA, and the NVD record.
 
 ## Sources
 
@@ -97,17 +97,17 @@ flowchart LR
 
 | Field | Value |
 |---|---|
-| Date | `2026-09-20` (raw: NVD / VulnCheck 2026-09-20, precision `day`) |
+| Date | `2026-09-17` (raw: upstream issue 2026-09-17 / VulnCheck and NVD 2026-09-20, precision `day`) |
 | Kind | Vulnerability disclosure `vulnerability` |
 | Type | [`IPI`](../../taxonomy/types.md#ipi) [`INFRA`](../../taxonomy/types.md#infra) |
 | Severity | **Medium** `medium` |
-| Confidence | **A** — NVD, an independent advisory and the upstream issue |
+| Confidence | **A** — upstream issue, VulnCheck (CNA) advisory and the NVD record |
 | Real harm | No |
 | AI involvement | Confirmed `confirmed` |
 | Region | [Global](../../regions/global.md) |
-| Archive ID | `2026-09-20-tencent-browserskill-origin-bypass` |
+| Archive ID | `2026-09-17-tencent-browserskill-origin-bypass` |
 
-<sub>**Why this classification:** the exposed asset is the agent's local runtime plumbing (`INFRA`) and the effect is that external, attacker-controlled input reaches the agent as trusted observation (`IPI`) — without a poisoned page ever being involved. `real_harm: false` (no known exploitation) and `medium` per the severity ladder: CVSS 6.9, local, low privileges, no confirmed damage; `high` would require CVSS 9+ or confirmed harm. Grading criteria: [severity.md](../../taxonomy/severity.md) and [confidence.md](../../taxonomy/confidence.md).</sub>
+<sub>**Why this classification:** the exposed asset is the agent's local runtime plumbing (`INFRA`) and the effect is that external, attacker-controlled input reaches the agent as trusted observation (`IPI`) — without a poisoned page ever being involved. `real_harm: false` (no known exploitation) and `medium` per the severity ladder: CVSS 6.9, local, low privileges, no confirmed damage; `high` would require CVSS 9+ or confirmed harm. Dated to the public upstream issue (17 September 2026), not to the CVE listing. Grading criteria: [severity.md](../../taxonomy/severity.md) and [confidence.md](../../taxonomy/confidence.md).</sub>
 
 ## Related
 
@@ -121,6 +121,6 @@ flowchart LR
 
 ---
 
-[← 2026-09 index](README.md) · [← All records](../../README.md) · [Chinese](../i18n/zh/2026-09/2026-09-20-tencent-browserskill-origin-bypass.md)
+[← 2026-09 index](README.md) · [← All records](../../README.md) · [Chinese](../i18n/zh/2026-09/2026-09-17-tencent-browserskill-origin-bypass.md)
 
 <sub>This record is part of the **Orca AI Incident Archive**, licensed [CC BY 4.0](../../LICENSE). Found a factual error or a missing source? [Open an issue or PR](../../CONTRIBUTING.md) — corrections are recorded in the record's revision history, never silently overwritten.</sub>

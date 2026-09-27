@@ -5,9 +5,9 @@ An incident can belong to several types at once — real attack chains are compo
 | Code | Name | English | Records | Classification notes |
 |---|---|---|---|---|
 | <a id="gov"></a>`GOV` | Governance & policy | Governance & policy | 65 | Regulation, legislation, law enforcement, vendor policy and defensive-side moves. Records with `kind: policy` mostly live here and are **excluded from incident counts**. |
-| <a id="cred"></a>`CRED` | Credential abuse | Credential abuse | 61 | Credentials read, carried out or abused by an agent. The difference from `EXFIL` is that what is lost is the **key**, not the data. |
+| <a id="cred"></a>`CRED` | Credential abuse | Credential abuse | 60 | Credentials read, carried out or abused by an agent. The difference from `EXFIL` is that what is lost is the **key**, not the data. |
 | <a id="weapon"></a>`WEAPON` | Agent used as a weapon | Agent used as a weapon | 55 | A human **deliberately** uses an agent as an attack tool. The difference from `ROGUE` is whether there is a hostile operator. |
-| <a id="ipi"></a>`IPI` | Indirect prompt injection | Indirect prompt injection | 51 | **External content** the agent reads is executed as instructions. The deciding factor is that the injection source is outside the user's control (email, issue, web page, document, dataset). |
+| <a id="ipi"></a>`IPI` | Indirect prompt injection | Indirect prompt injection | 49 | **External content** the agent reads is executed as instructions. The deciding factor is that the injection source is outside the user's control (email, issue, web page, document, dataset). |
 | <a id="infra"></a>`INFRA` | Agent infrastructure exposure | Agent infrastructure exposure | 46 | The agent's **runtime infrastructure** is exposed: inference services, vector stores, orchestration platforms, agent gateways. |
 | <a id="supply"></a>`SUPPLY` | Supply-chain poisoning | Supply-chain poisoning | 38 | The attack happens on the agent's **dependency chain**: packages, models, plugins, extensions, repositories and the agent's own config files. |
 | <a id="mcp"></a>`MCP` | MCP & tool-chain | MCP & tool-chain | 31 | The problem is in the **MCP server, the tool description or the tool-approval mechanism** itself, not in the business system being called. |

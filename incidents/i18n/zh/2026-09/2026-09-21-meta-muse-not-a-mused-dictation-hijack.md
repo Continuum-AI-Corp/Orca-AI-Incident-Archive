@@ -4,7 +4,7 @@ lang: zh
 source: incidents/2026-09/2026-09-21-meta-muse-not-a-mused-dictation-hijack.md
 title: "Not-a-Mused：一个未公开的 Muse 设置项把语音输入重定向，并把 agent 的令牌交给攻击者"
 summary: |
-  **Patrick Wardle 展示：Meta 面向 macOS 的 Muse 助手里有一个隐藏配置项——`endo_voyager_dictation_endpoint`——它决定语音输入被发送到哪里，存于应用偏好设置中，任何以登录用户身份运行的进程都可改写，且无需额外权限。** 把它指向攻击者的地址，Muse 的麦克风输入与转写文本就离开设备：攻击者可以*「读取用户的语音内容、追加 Muse 信任并执行的额外指令，并捕获用于登录用户 Muse 账户的令牌」*——随后读取该账户的聊天记录，并在**该账户登录的任何设备**上驱动这个助手（Wardle 让 iPhone 端上报了精确位置、执行蓝牙扫描并列出可下发的智能家居指令）。Muse 是 Meta 本月在美国推出的个人 agent，持有用户授予的跨文件、邮件、消息、日历与购物的访问权限；Wardle 称把它*「变成终极后门易如反掌」*。它无法自行攻入一台 Mac——需要先以用户身份执行代码，或用 ClickFix 手法——也没有攻破 macOS 的应用隔离或 Meta 的云端隔离。Wardle 未事先通知 Meta 就公开；Meta 随后推送了他所称的「修复」，但未发布公告
+  **Patrick Wardle 展示：Meta 面向 macOS 的 Muse 助手里有一个隐藏配置项——`endo_voyager_dictation_endpoint`——它决定语音输入被发送到哪里，存于应用偏好设置中，任何以登录用户身份运行的进程都可改写，且无需额外权限。** 把它指向攻击者的地址，Muse 的麦克风输入与转写文本就离开设备：攻击者可以*「读取用户的语音内容、追加 Muse 信任并执行的额外指令，并捕获用于登录用户 Muse 账户的令牌」*——随后读取该账户的聊天记录，并在**该账户登录的任何设备**上驱动这个助手（Wardle 让 iPhone 端上报了精确位置、执行蓝牙扫描并列出可下发的智能家居指令）。Muse 是 Meta 本月在美国推出的个人 agent，持有用户授予的跨文件、邮件、消息、日历与购物的访问权限；Wardle 称把它*「变成终极后门易如反掌」*。它无法自行攻入一台 Mac——需要先以用户身份执行代码，或用 ClickFix 手法——也没有攻破 macOS 的应用隔离或 Meta 的云端隔离。Wardle 未事先通知 Meta 就公开；次日 Meta 的 David Singleton 表示已为 Mac 应用发布热修复，并称这是*「本地提权攻击，而非远程利用」*，对用户的实际风险*「相当低」*。Meta 未发布安全公告
 ---
 
 # Not-a-Mused：一个未公开的 Muse 设置项把语音输入重定向，并把 agent 的令牌交给攻击者
@@ -15,7 +15,7 @@ summary: |
 
 ## 概要
 
-**Patrick Wardle 展示：Meta 面向 macOS 的 Muse 助手里有一个隐藏配置项——`endo_voyager_dictation_endpoint`——它决定语音输入被发送到哪里，存于应用偏好设置中，任何以登录用户身份运行的进程都可改写，且无需额外权限。** 把它指向攻击者的地址，Muse 的麦克风输入与转写文本就离开设备：攻击者可以*「读取用户的语音内容、追加 Muse 信任并执行的额外指令，并捕获用于登录用户 Muse 账户的令牌」*——随后读取该账户的聊天记录，并在**该账户登录的任何设备**上驱动这个助手（Wardle 让 iPhone 端上报了精确位置、执行蓝牙扫描并列出可下发的智能家居指令）。Muse 是 Meta 本月在美国推出的个人 agent，持有用户授予的跨文件、邮件、消息、日历与购物的访问权限；Wardle 称把它*「变成终极后门易如反掌」*。它无法自行攻入一台 Mac——需要先以用户身份执行代码，或用 ClickFix 手法——也没有攻破 macOS 的应用隔离或 Meta 的云端隔离。Wardle 未事先通知 Meta 就公开；Meta 随后推送了他所称的「修复」，但未发布公告
+**Patrick Wardle 展示：Meta 面向 macOS 的 Muse 助手里有一个隐藏配置项——`endo_voyager_dictation_endpoint`——它决定语音输入被发送到哪里，存于应用偏好设置中，任何以登录用户身份运行的进程都可改写，且无需额外权限。** 把它指向攻击者的地址，Muse 的麦克风输入与转写文本就离开设备：攻击者可以*「读取用户的语音内容、追加 Muse 信任并执行的额外指令，并捕获用于登录用户 Muse 账户的令牌」*——随后读取该账户的聊天记录，并在**该账户登录的任何设备**上驱动这个助手（Wardle 让 iPhone 端上报了精确位置、执行蓝牙扫描并列出可下发的智能家居指令）。Muse 是 Meta 本月在美国推出的个人 agent，持有用户授予的跨文件、邮件、消息、日历与购物的访问权限；Wardle 称把它*「变成终极后门易如反掌」*。它无法自行攻入一台 Mac——需要先以用户身份执行代码，或用 ClickFix 手法——也没有攻破 macOS 的应用隔离或 Meta 的云端隔离。Wardle 未事先通知 Meta 就公开；次日 Meta 的 David Singleton 表示已为 Mac 应用发布热修复，并称这是*「本地提权攻击，而非远程利用」*，对用户的实际风险*「相当低」*。Meta 未发布安全公告
 
 ## 攻击链
 
@@ -37,9 +37,9 @@ flowchart LR
 
 **为什么 agent 才是战利品。** macOS 通常会阻止一个应用读取另一个应用的文件、麦克风、摄像头或已保存的登录信息，因此普通恶意软件的能力有限。*「而一个能悄悄操纵 Muse 的攻击者，则得到用户允许该应用去做的一切」*——并且由于一个 Muse 账户可以在多台设备上登录，持有令牌的攻击者可以从任何地方下令：Wardle*「用它指挥自己 iPhone 上的 Muse 应用上报精确位置、执行附近设备的蓝牙扫描，并列出它可以下发的智能家居指令。」* 在他的测试中，助手只起草消息而没有自行发送。安全软件可能不会察觉，因为这些命令来自 Muse——*「一个正常签名过的应用。」*
 
-**它做不到什么，以及披露方式。** 它没有攻破 macOS 的应用隔离：*「Muse 是随被重定向的语音输入一起把令牌发出去的，攻击之所以成立，是让 Muse 用它本来就有的访问权限去行动。」* 它也没有表明 Meta 的云端隔离被攻破；缺陷位于 Mac 客户端。它*「无法自行攻入一台 Mac」*——需要以登录用户身份执行代码，可通过 ClickFix 手法达成。Wardle 刻意未先向 Meta 报告，选择了完全披露；Meta 随后推送了他所称的「修复」，The Hacker News*「无法确认」*其具体内容，且未发布安全公告。Wardle 称他在更多 AI 助手中发现了缺陷，将于 11 月在 Objective by the Sea 会议上公布。
+**它做不到什么，以及披露方式。** 它没有攻破 macOS 的应用隔离：*「Muse 是随被重定向的语音输入一起把令牌发出去的，攻击之所以成立，是让 Muse 用它本来就有的访问权限去行动。」* 它也没有表明 Meta 的云端隔离被攻破；缺陷位于 Mac 客户端。它*「无法自行攻入一台 Mac」*——需要以登录用户身份执行代码，可通过 ClickFix 手法达成。Wardle 刻意未先向 Meta 报告，选择了完全披露。Meta 在一天之内作出回应：Meta 超级智能实验室的 David Singleton 在社交媒体上表示，*「这是本地提权攻击，而非远程利用」*，*「因此对 Muse Mac 应用用户的实际风险相当低」*，并称*「我们已为该应用发布热修复以解决此问题」*（The Register，9 月 22 日更新）；IT之家报道称该热修复删除了那个调试用的语音配置项。The Hacker News 发稿时尚在该声明之前，*「无法确认」*改动的具体内容；Meta 至今未发布安全公告。双方判断并列如下：Wardle 称把 Muse *「变成终极后门易如反掌」*；Meta 则认为，由于恶意代码必须已在该 Mac 上运行，实际风险*「相当低」*。Wardle 称他在更多 AI 助手中发现了缺陷，将于 11 月在 Objective by the Sea 会议上公布。
 
-**背景与定级。** Muse 本月在美国推出，用户授予它跨文件、邮件、消息、日历、购物与智能家居的广泛权限——这正是档案把 **agent 客户端**视为 agent 基础设施的原因：助手把权限集中于一身，因此任何能操纵客户端的东西都会继承这些权限。记为 `vulnerability` / `INFRA` + `CRED` / `medium` / `real_harm: false`：这是一次单机上的受控演示，需要先有立足点，且无确认受害者，因此未进入 `high` 档。可信度 **A**：研究者公开发布的概念验证，加英文与中文的独立报道。
+**背景与定级。** Muse 本月在美国推出，用户授予它跨文件、邮件、消息、日历、购物与智能家居的广泛权限——这正是档案把 **agent 客户端**视为 agent 基础设施的原因：助手把权限集中于一身，因此任何能操纵客户端的东西都会继承这些权限。记为 `vulnerability` / `INFRA` + `CRED` / `medium` / `real_harm: false`：这是一次单机上的受控演示，需要先有立足点，且无确认受害者，因此未进入 `high` 档。可信度 **A**：研究者公开发布的概念验证、厂商自己的声明，加英文与中文的独立报道。
 
 ## 来源
 
@@ -47,17 +47,18 @@ flowchart LR
 |---|---|---|
 | 1 | The Hacker News（2026-09-22） | <https://thehackernews.com/2026/09/one-hidden-meta-muse-setting-could-let.html> |
 | 2 | Patrick Wardle——「not-a-mused」概念验证（2026-09-21） | <https://github.com/pwardle/not-a-mused> |
-| 3 | IT之家（中文报道，2026-09-25） | <https://finance.sina.com.cn/tech/digi/2026-09-25/doc-iniszmmz7778318.shtml> |
+| 3 | The Register（2026-09-21；9 月 22 日更新，含 Meta 声明） | <https://www.theregister.com/ai-and-ml/2026/09/21/meta-muse-ai-app-flaw-lets-local-malware-redirect-dictation-traffic/5297980> |
+| 4 | IT之家（中文报道，2026-09-25） | <https://finance.sina.com.cn/tech/digi/2026-09-25/doc-iniszmmz7778318.shtml> |
 
 ## 元数据
 
 | 字段 | 值 |
 |---|---|
-| 日期 | `2026-09-21`（原始：PoC 2026-09-21 / The Hacker News 2026-09-22，精度 `day`） |
+| 日期 | `2026-09-21`（原始：PoC 与 The Register 2026-09-21 / The Hacker News 与 Meta 热修复声明 2026-09-22，精度 `day`） |
 | 性质 | 漏洞披露 `vulnerability` |
 | 类型 | [`INFRA`](../../../../taxonomy/types.md#infra) [`CRED`](../../../../taxonomy/types.md#cred) |
 | 评级 | **Medium** `medium` |
-| 可信度 | **A**——研究者公开的概念验证加独立报道 |
+| 可信度 | **A**——研究者公开的概念验证、厂商声明加独立报道 |
 | 真实伤害 | 无——一次演示，无确认受害者 |
 | AI 参与 | 已确认 `confirmed` |
 | 地区 | [美国](../../../../regions/us.md)——Muse 在美国推出 |

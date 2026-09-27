@@ -1,7 +1,7 @@
 ---
-id: 2026-09-20-tencent-browserskill-origin-bypass
+id: 2026-09-17-tencent-browserskill-origin-bypass
 lang: zh
-source: incidents/2026-09/2026-09-20-tencent-browserskill-origin-bypass.md
+source: incidents/2026-09/2026-09-17-tencent-browserskill-origin-bypass.md
 title: "腾讯 BrowserSkill：任意 32 字符扩展来源都能冒充浏览器客户端，向 agent 投喂伪造页面"
 summary: |
   **CVE-2026-94111：腾讯 BrowserSkill 0.3.0 及更早版本在本地守护进程的 WebSocket 来源校验中，接受任意长度为 32 字符、且字符落在 a–p 区间的 `chrome-extension` 来源（CWE-346），因此*「攻击者可以注册一个恶意扩展作为浏览器客户端，拦截并篡改返回给 AI agent 的页面内容、DOM 与截图。」*** CVSS 4.0 **6.9**（`AV:L/AC:L/AT:N/PR:L/UI:N/VC:L/VI:H/VA:L`），致谢 George Chen，问题代码位于 `crates/bsk-cli/src/daemon/ws.rs`。意义在于层级：这不是「页面里夹带注入提示」，而是**浏览器与 agent 之间的传输通道**——谁在这个 socket 上说话，就决定 agent 认为页面上写了什么。无在野利用记录。本条记为 `vulnerability` / `IPI` + `INFRA` / `medium` / `real_harm: false`，沿用档案对未在野 agent 基础设施 CVE 的处理口径
@@ -33,11 +33,11 @@ flowchart LR
 
 ## 详情
 
-**公告内容。** VulnCheck 的条目（2026 年 9 月 20 日，严重度 *medium*，致谢 George Chen）给出完整表述：*「腾讯 BrowserSkill 0.3.0 及更早版本在本地守护进程的 WebSocket 来源校验中存在一处认证绕过缺陷，它接受任意长度为 32 字符、字符落在 a–p 区间的 chrome-extension 来源。攻击者可以注册一个恶意扩展作为浏览器客户端，以拦截并篡改返回给 AI agent 的页面内容、DOM 与截图。」* CVSS 4.0 基础分 **6.9**，向量 `AV:L/AC:L/AT:N/PR:L/UI:N/VC:L/VI:H/VA:L/SC:N/SI:N/SA:N`，弱点 **CWE-346**（来源校验错误）。NVD 与之一致；参考链接指向 GitHub issue 273 与 `crates/bsk-cli/src/daemon/ws.rs#L36-L57`。上游 issue（**2026 年 9 月 17 日**提交，仍未关闭）提供了背景：该守护进程是默认 **52800** 端口上的 WebSocket 服务，它让*「任何驱动它的 AI agent」*完全控制用户真实且已登录的浏览器——读取页面、截图、填写表单——而 `origin_allowed()` 只检查 `Origin` 头的**形状**，*「从不检查它到底是哪个扩展」*。报告者于 **2026 年 9 月 20 日**复查当前 `main` 后指出 `origin_allowed()` 未改动，`ws.rs:38-44` 处的 `TODO(M10/M12)` 仍在——即报告发出九天后，这道「只校验形状」的闸门仍然有效。无在野利用记录。
+**公告内容。** VulnCheck 的条目（2026 年 9 月 20 日，严重度 *medium*，致谢 George Chen）给出完整表述：*「腾讯 BrowserSkill 0.3.0 及更早版本在本地守护进程的 WebSocket 来源校验中存在一处认证绕过缺陷，它接受任意长度为 32 字符、字符落在 a–p 区间的 chrome-extension 来源。攻击者可以注册一个恶意扩展作为浏览器客户端，以拦截并篡改返回给 AI agent 的页面内容、DOM 与截图。」* CVSS 4.0 基础分 **6.9**，向量 `AV:L/AC:L/AT:N/PR:L/UI:N/VC:L/VI:H/VA:L/SC:N/SI:N/SA:N`，弱点 **CWE-346**（来源校验错误）。NVD 与之一致；参考链接指向 GitHub issue 273 与 `crates/bsk-cli/src/daemon/ws.rs#L36-L57`。上游 issue（**2026 年 9 月 17 日**提交，仍未关闭）提供了背景：该守护进程是默认 **52800** 端口上的 WebSocket 服务，它让*「任何驱动它的 AI agent」*完全控制用户真实且已登录的浏览器——读取页面、截图、填写表单——而 `origin_allowed()` 只检查 `Origin` 头的**形状**，*「从不检查它到底是哪个扩展」*。**9 月 20 日**，另一位贡献者复查了 `main`（提交 `fa953dc6`，9 月 18 日），指出 `origin_allowed()` 未改动，`ws.rs:38-44` 处的 `TODO(M10/M12)` 仍在；本档案自行核对了 `ext-v0.3.1` 标签与 `main` 的 `8cbcc49`（9 月 26 日），该函数依然未改——报告发出九天后，这道「只校验形状」的闸门仍然有效。同一条评论也收窄了影响范围：`tool.*` 请求无法*从* WebSocket 对端发起，守护进程也不会让外来扩展借它读取用户已登录的网站（自带 `<all_urls>` 权限的扩展本来就不需要守护进程）。外来扩展能做的是把自己注册成一个浏览器：如果会话恰好绑定到它——例如冷启动时正版扩展尚未重连，或守护进程重启之后——守护进程就会把 agent 的 `tool.*` 请求发给它，它便可以返回*「被 agent 当作事实依据的伪造 DOM、页面内容与截图」*；如果两个扩展同时在线且未指定浏览器，会话则直接无法启动，构成拒绝服务。无在野利用记录。
 
 **为什么层级重要。** 浏览器 agent 的能力取决于它*看到*什么：浏览器 agent 技术栈把页面内容、DOM 与截图变成 agent 唯一的感官输入，而本地守护进程就是承载这些输入的管道。当管道的来源校验只要「32 个字符且在固定字符区间内」就放行，一个扩展——用户最随意、量最大地安装的东西之一——就成了 agent 的眼睛。这是位于内容之下一层的间接提示注入：攻击者不需要把文本弄到 agent 会读的页面上，因为他们可以替换掉投递页面的那条通道。
 
-**背景与定级。** BrowserSkill 是腾讯开源的浏览器 agent CLI；问题影响 0.3.0 及更早版本，上游以未关闭 issue 的形式跟踪。按档案阶梯记为 `vulnerability` / `medium` / `real_harm: false`——一处中等、本地、低权限且无已知利用的缺陷（`high` 需 CVSS 9+ 或确认损害），日期取 NVD 发布日（2026-09-20）。可信度 **A**：NVD 记录、一份独立公告，以及厂商仓库自己的 issue。
+**背景与定级。** BrowserSkill 是腾讯开源的浏览器 agent CLI；问题影响 0.3.0 及更早版本，上游以未关闭 issue 的形式跟踪。按档案阶梯记为 `vulnerability` / `medium` / `real_harm: false`——一处中等、本地、低权限且无已知利用的缺陷（`high` 需 CVSS 9+ 或确认损害），日期取上游 issue 公开之日（2026-09-17）；VulnCheck 与 NVD 于 9 月 20 日发布 CVE。可信度 **A**：腾讯自家仓库里的上游 issue、作为 CNA 的 VulnCheck 公告，以及 NVD 记录。
 
 ## 来源
 
@@ -51,17 +51,17 @@ flowchart LR
 
 | 字段 | 值 |
 |---|---|
-| 日期 | `2026-09-20`（原始：NVD / VulnCheck 2026-09-20，精度 `day`） |
+| 日期 | `2026-09-17`（原始：上游 issue 2026-09-17 / VulnCheck 与 NVD 2026-09-20，精度 `day`） |
 | 性质 | 漏洞披露 `vulnerability` |
 | 类型 | [`IPI`](../../../../taxonomy/types.md#ipi) [`INFRA`](../../../../taxonomy/types.md#infra) |
 | 评级 | **Medium** `medium` |
-| 可信度 | **A**——NVD、一份独立公告与上游 issue |
+| 可信度 | **A**——上游 issue、VulnCheck（CNA）公告与 NVD 记录 |
 | 真实伤害 | 无 |
 | AI 参与 | 已确认 `confirmed` |
 | 地区 | [全球](../../../../regions/global.md) |
-| 档案 ID | `2026-09-20-tencent-browserskill-origin-bypass` |
+| 档案 ID | `2026-09-17-tencent-browserskill-origin-bypass` |
 
-<sub>**分类理由：** 被暴露的资产是 agent 的本地运行时管道（`INFRA`），其效果是攻击者可控的外部输入作为可信观测进入 agent（`IPI`）——全程不涉及被投毒的页面。`real_harm: false`（无已知利用）并按阶梯评 `medium`：CVSS 6.9、本地、低权限、无确认损害；`high` 需要 CVSS 9+ 或确认伤害。分级标准见 [severity.md](../../../../taxonomy/severity.md) 与 [confidence.md](../../../../taxonomy/confidence.md)。</sub>
+<sub>**分类理由：** 被暴露的资产是 agent 的本地运行时管道（`INFRA`），其效果是攻击者可控的外部输入作为可信观测进入 agent（`IPI`）——全程不涉及被投毒的页面。`real_harm: false`（无已知利用）并按阶梯评 `medium`：CVSS 6.9、本地、低权限、无确认损害；`high` 需要 CVSS 9+ 或确认伤害。日期取上游 issue 公开之日（2026 年 9 月 17 日），而非 CVE 收录日。分级标准见 [severity.md](../../../../taxonomy/severity.md) 与 [confidence.md](../../../../taxonomy/confidence.md)。</sub>
 
 ## 相关条目
 
@@ -75,6 +75,6 @@ flowchart LR
 
 ---
 
-[← 2026-09 索引](../../../2026-09/README.md) · [← 全库索引](../../../../README.md) · [English](../../../2026-09/2026-09-20-tencent-browserskill-origin-bypass.md)
+[← 2026-09 索引](../../../2026-09/README.md) · [← 全库索引](../../../../README.md) · [English](../../../2026-09/2026-09-17-tencent-browserskill-origin-bypass.md)
 
 <sub>本条目属于 **Orca AI Incident Archive**，按 [CC BY 4.0](../../../../LICENSE) 授权。发现事实错误或缺少来源，请[提 issue 或 PR](../../../../CONTRIBUTING.md)——更正会写进条目的修订记录，不会静默覆盖。</sub>

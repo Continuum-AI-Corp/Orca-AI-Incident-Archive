@@ -42,12 +42,16 @@ summary_es: |
   **Zenity Labs divulga "SalesBleed": tres vulnerabilidades de Salesforce Agentforce que permiten que un único envío Web-to-lead no confiable tome el control de un agente empresarial de confianza.** Dos de ellas permiten **exfiltración de datos de clic cero** — datos CRM sensibles llegan a infraestructura controlada por el atacante *sin que ningún empleado haga clic ni apruebe nada* — abusando de debilidades en **Trusted URLs**, el mecanismo destinado a impedir que Agentforce muestre URL e imágenes de fuentes no aprobadas. La tercera arma la **identidad de confianza del agente de Agentforce conectado a Slack** para distribuir phishing a los empleados desde dentro de la empresa. Zenity divulgó de forma responsable y *"Salesforce trabajó con los investigadores para investigar y corregir"*. El CTO Michael Bargury: *"Encontramos varias formas de romper la frontera de seguridad diseñada para impedir que Agentforce envíe datos empresariales a destinos no aprobados… Cuando esos controles fallan, queda un agente con acceso privilegiado, gran autonomía y sin límites."* Registrado `vulnerability` / `IPI` + `EXFIL` / `high` / `real_harm: false`
 
 sources:
+  - url: https://labs.zenity.io/post/salesbleed-0-click-data-exfiltration-on-agentforce
+    label: Zenity Labs (0-click exfiltration write-up)
+  - url: https://labs.zenity.io/post/salesbleed-hijacking-agentforce-in-slack-for-anonymous-phishing
+    label: Zenity Labs (Slack phishing write-up)
   - url: https://www.morningstar.com/news/business-wire/20260924811082/zenity-labs-uncovers-salesbleed-3-salesforce-agentforce-flaws-enabling-zero-click-crm-data-theft-and-ai-agent-impersonation
     label: Zenity Labs (Business Wire)
   - url: https://www.darkreading.com/application-security/salesbleed-exploits-salesforce-agents-slack-phishing
     label: Dark Reading
-  - url: https://aviatrix.ai/threat-research-center/salesbleed-salesforce-agentforce-slack-phishing-2026/
-    label: Aviatrix Threat Research
+  - url: https://www.securityweek.com/salesbleed-flaws-in-salesforce-agentforce-enabled-zero-click-data-exfiltration/
+    label: SecurityWeek
 
 disputed: false
 landmark: false
@@ -79,19 +83,21 @@ flowchart LR
 
 ## Details
 
-**The disclosure.** Zenity Labs announced SalesBleed on 24 September 2026: *"a set of three security vulnerabilities in Salesforce Agentforce that could allow a single untrusted lead to hijack trusted Agentforce agents, silently exfiltrate sensitive CRM data and turn an enterprise agent into a vehicle for delivering elaborate phishing attacks."* Two of the three enable zero-click exfiltration; the third *"allows attackers to weaponize the trusted identity of an Agentforce-connected Slack agent to distribute phishing messages to employees from inside the enterprise."* The technical root is in **Trusted URLs** — the control Salesforce provides precisely to stop agents from calling out to unapproved destinations — where the researchers *"found multiple weaknesses … that could be abused to send sensitive data to unapproved destinations."* Zenity describes those weaknesses concretely — *"including top-level domains the mechanism failed to recognize and character sequences that interfered with how URLs were parsed"* — and shows that they let injected instructions make Agentforce query Salesforce records and embed what it retrieved in image requests to an attacker-controlled server: *"the image requests automatically transmit the embedded CRM data, with no click or additional action from the employee."* In the demonstrated case Agentforce reported the content as blocked by the organisation's policies *after* the data had already been transmitted.
+**The disclosure.** Zenity Labs announced SalesBleed on 24 September 2026: *"a set of three security vulnerabilities in Salesforce Agentforce that could allow a single untrusted lead to hijack trusted Agentforce agents, silently exfiltrate sensitive CRM data and turn an enterprise agent into a vehicle for delivering elaborate phishing attacks."* Two of the three enable zero-click exfiltration; the third *"allows attackers to weaponize the trusted identity of an Agentforce-connected Slack agent to distribute phishing messages to employees from inside the enterprise."* The technical root is in **Trusted URLs** — the control Salesforce provides precisely to stop agents from calling out to unapproved destinations — where the researchers *"found multiple weaknesses … that could be abused to send sensitive data to unapproved destinations."* Zenity describes those weaknesses concretely — *"including top-level domains the mechanism failed to recognize and character sequences that interfered with how URLs were parsed"* — and shows that they let injected instructions make Agentforce query Salesforce records and embed what it retrieved in image requests to an attacker-controlled server: *"the image requests automatically transmit the embedded CRM data, with no click or additional action from the employee."* In the demonstrated case Agentforce reported the content as blocked by the organisation's policies *after* the data had already been transmitted. Zenity's technical write-up shows the exit in detail: the injected instructions have the agent query a couple of fields from the Accounts table, paste the values into the subdomain of an attacker-controlled hostname and print it as an image tag, so merely resolving the name leaks the data over DNS. The second zero-click path needs no image at all: for agents published to Slack, *"Slack automatically turns raw URLs into previews, and to build a preview it just crawls a link"*, which yields the same DNS leak.
 
 **Why the entry point matters.** The entire chain starts from a form anyone on the internet can fill in. That is the indirect-prompt-injection pattern in its purest enterprise form: the attacker never touches an employee, never sends an email, never needs a credential. The lead is *content*, the agent is the *interpreter*, and the agent's own permissions are the *payload delivery mechanism* — which is what makes the second-order step possible: phishing that arrives through the Slack identity employees already trust, not through a look-alike domain.
 
-**Vendor response and grading.** Zenity disclosed responsibly and Salesforce worked with the researchers to investigate and remediate; no exploitation in the wild is reported, so `real_harm: false`. The archive grades it `high` on the "significant capability demonstration" limb of its severity ladder: zero-click exfiltration plus trusted-identity impersonation through a platform deployed across a large enterprise base. It is the archive's second Agentforce entry — a year after ForcedLeak (`2025-09-25`), where a public Web-to-Lead form plus a US$5 expired CSP allow-listed domain was enough to pull CRM data with no interaction — and it extends the zero-click exfiltration lineage (EchoLeak, BragJack) from mail/browser surfaces to the CRM-and-chat surface where enterprise agents actually hold permissions.
+**Vendor response and grading.** Zenity reported the findings on 1 June; its disclosure timeline has Salesforce confirming the reports the next day and confirming the fixes on 18 August, which Zenity verified on 19 August (SecurityWeek: all three bugs addressed by 19 August). In a statement to Dark Reading, Salesforce acknowledged the vulnerabilities — which have no CVE numbers — said there is no evidence that real attackers have exploited them, changed the default for certain Agentforce actions in Slack to require user confirmation before sending messages, and replaced regex-based URL redaction with spec-conformant URL parsing routed through a single gateway. Hence `real_harm: false`. The archive grades it `high` on the "significant capability demonstration" limb of its severity ladder: zero-click exfiltration plus trusted-identity impersonation through a platform deployed across a large enterprise base. It is the archive's third Agentforce entry — after ForcedLeak (`2025-09-25`), where a public Web-to-Lead form plus a US$5 expired CSP allow-listed domain was enough to pull CRM data with no interaction, and PipeLeak (recorded with ShareLeak, `2026-04-15`), the same class of problem for which Salesforce assigned no CVE; Dark Reading reads SalesBleed as *"largely the same attack"* as ForcedLeak, done with *"simple workarounds to the URL filtering rules Salesforce implemented in response to last year's findings"* — and it extends the zero-click exfiltration lineage (EchoLeak, BragJack) from mail/browser surfaces to the CRM-and-chat surface where enterprise agents actually hold permissions.
 
 ## Sources
 
 | # | Source | Link |
 |---|---|---|
-| 1 | Zenity Labs disclosure (Business Wire, 24 Sep 2026) | <https://www.morningstar.com/news/business-wire/20260924811082/zenity-labs-uncovers-salesbleed-3-salesforce-agentforce-flaws-enabling-zero-click-crm-data-theft-and-ai-agent-impersonation> |
-| 2 | Dark Reading | <https://www.darkreading.com/application-security/salesbleed-exploits-salesforce-agents-slack-phishing> |
-| 3 | Aviatrix Threat Research Center | <https://aviatrix.ai/threat-research-center/salesbleed-salesforce-agentforce-slack-phishing-2026/> |
+| 1 | Zenity Labs — "SalesBleed: 0-Click Data Exfiltration in Agentforce" (24 Sep 2026) | <https://labs.zenity.io/post/salesbleed-0-click-data-exfiltration-on-agentforce> |
+| 2 | Zenity Labs — "SalesBleed: Anonymous Phishing via Agentforce in Slack" (24 Sep 2026) | <https://labs.zenity.io/post/salesbleed-hijacking-agentforce-in-slack-for-anonymous-phishing> |
+| 3 | Zenity Labs disclosure (Business Wire, 24 Sep 2026) | <https://www.morningstar.com/news/business-wire/20260924811082/zenity-labs-uncovers-salesbleed-3-salesforce-agentforce-flaws-enabling-zero-click-crm-data-theft-and-ai-agent-impersonation> |
+| 4 | Dark Reading (with Salesforce's statement) | <https://www.darkreading.com/application-security/salesbleed-exploits-salesforce-agents-slack-phishing> |
+| 5 | SecurityWeek (25 Sep 2026) | <https://www.securityweek.com/salesbleed-flaws-in-salesforce-agentforce-enabled-zero-click-data-exfiltration/> |
 
 ## Metadata
 
@@ -101,8 +107,8 @@ flowchart LR
 | Kind | Vulnerability disclosure `vulnerability` |
 | Type | [`IPI`](../../taxonomy/types.md#ipi) [`EXFIL`](../../taxonomy/types.md#exfil) |
 | Severity | **High** `high` |
-| Confidence | **A** — the disclosing researchers' own release plus independent reporting |
-| Real harm | No — responsibly disclosed and remediated, no known in-the-wild use |
+| Confidence | **A** — the disclosing researchers' technical write-ups and release, plus independent reporting (Dark Reading, SecurityWeek) |
+| Real harm | No — responsibly disclosed and fixed by 19 August 2026; Salesforce reports no evidence of exploitation |
 | AI involvement | Confirmed `confirmed` |
 | Region | [Global](../../regions/global.md) |
 | Archive ID | `2026-09-24-salesbleed-agentforce-zero-click-exfil` |
@@ -117,7 +123,8 @@ flowchart LR
 
 - `2026-09-16` [BragJack: one browser extension hijacks the AI agents in five major browsers](2026-09-16-bragjack-browser-agents.md)<br>  <sub>Same class of problem one layer down — the agent's input channel, not its output boundary</sub>
 - `2026-09-09` [Workflow identity hijacking: Noma Labs turns an ordinary support email into privileged data access](2026-09-09-noma-workflow-identity-hijacking.md)<br>  <sub>When the agent acts with permissions nobody granted the sender</sub>
-- `2025-09-25` [ForcedLeak (Salesforce Agentforce)](../2025-09/2025-09-25-forcedleak-salesforce-agentforce.md)<br>  <sub>The earlier Agentforce zero-click exfiltration — an expired CSP allow-listed domain rather than a Trusted URLs bypass</sub>
+- `2025-09-25` [ForcedLeak (Salesforce Agentforce)](../2025-09/2025-09-25-forcedleak-salesforce-agentforce.md)<br>  <sub>The first Agentforce zero-click exfiltration — an expired CSP allow-listed domain rather than a Trusted URLs bypass</sub>
+- `2026-04-15` [ShareLeak (CVE-2026-21520) and PipeLeak](../2026-04/2026-04-15-shareleak-pipeleak.md)<br>  <sub>PipeLeak: the second Agentforce case, for which Salesforce assigned no CVE and issued no advisory</sub>
 - `2025-06-11` [EchoLeak](../2025-06/2025-06-11-echoleak.md)<br>  <sub>The zero-click exfiltration template this lineage starts from</sub>
 
 ---

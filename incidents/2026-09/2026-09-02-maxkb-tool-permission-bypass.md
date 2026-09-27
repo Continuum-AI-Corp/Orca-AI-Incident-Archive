@@ -1,5 +1,5 @@
 ---
-id: 2026-09-21-maxkb-tool-permission-bypass
+id: 2026-09-02-maxkb-tool-permission-bypass
 title: "MaxKB: the agent dispatch path lets a user denied a tool still call it and read its credentials"
 title_zh: "MaxKB：agent 派发路径让被拒绝使用某工具的用户仍能调用它并读取其凭据"
 title_ja: "MaxKB：エージェントのディスパッチ経路により、ツールを拒否されたユーザーでも実行でき、その認証情報を読めてしまう"
@@ -7,7 +7,7 @@ title_ko: "MaxKB: 에이전트 디스패치 경로 때문에 도구 사용이 �
 title_de: "MaxKB: Der Agent-Dispatch-Pfad erlaubt einem abgelehnten Nutzer das Tool dennoch aufzurufen und seine Zugangsdaten zu lesen"
 title_fr: "MaxKB : le chemin de distribution de l'agent permet à un utilisateur refusé d'appeler l'outil et d'en lire les identifiants"
 title_es: "MaxKB: la ruta de despacho del agente permite que un usuario denegado llame a la herramienta y lea sus credenciales"
-date: 2026-09-21
+date: 2026-09-02
 date_raw: "GHSA 2026-09-02 / NVD 2026-09-21"
 date_precision: day
 
@@ -77,7 +77,7 @@ flowchart LR
 
 ## Details
 
-**The advisory.** MaxKB's GitHub security advisory **GHSA-383v-fx78-pphm**, *"Missing per-tool authorization in the agent and workflow tool-dispatch path (CWE-862 / CWE-639),"* covers versions 2.0.0 through 2.9.2 of the open-source enterprise AI assistant. NVD's synchronised description: *"a lowest-role workspace member denied access to a tool by WorkspaceUserResourcePermission can still bind its identifier through tool_ids, skill_tool_ids, or mcp_tool_ids and execute it through the agent or workflow dispatch path. The dispatch path does not reapply the per-tool grant enforced by dedicated tool routes, and tool execution decrypts server-side init_params, allowing the caller to receive credentials carried by the denied tool."* CVSS 3.1 base **5.4**; *"No fixed version is available as of this review."* The advisory maps the path in three stages: the application serializer binds the tool ids straight from request input with no per-tool check, `filter_authorized_ids` then passes every tool in the caller own workspace unconditionally (the cross-workspace gate is an enterprise-only hook absent from the community edition), and the tool node `execute` runs the tool with its server-side credentials - which is why no single route fixes it. The advisory also records the dynamic confirmation: *"Confirmed dynamically on v2.9.2: the member receives 403 on the tool's Debug route, yet runs the same tool through a workflow and receives the tool's decrypted secret."* The GitHub advisory was published on **2 September 2026** and NVD synchronised it on **21 September 2026**; the record is dated to the NVD publication.
+**The advisory.** MaxKB's GitHub security advisory **GHSA-383v-fx78-pphm**, *"Missing per-tool authorization in the agent and workflow tool-dispatch path (CWE-862 / CWE-639),"* covers versions 2.0.0 through 2.9.2 (community edition) of the open-source enterprise AI assistant. NVD's synchronised description: *"a lowest-role workspace member denied access to a tool by WorkspaceUserResourcePermission can still bind its identifier through tool_ids, skill_tool_ids, or mcp_tool_ids and execute it through the agent or workflow dispatch path. The dispatch path does not reapply the per-tool grant enforced by dedicated tool routes, and tool execution decrypts server-side init_params, allowing the caller to receive credentials carried by the denied tool."* CVSS 3.1 base **5.4**; *"No fixed version is available as of this review."* The advisory maps the path in three stages: the application serializer binds the tool ids straight from request input with no per-tool check, `filter_authorized_ids` then passes every tool in the caller's own workspace unconditionally (the cross-workspace gate is an enterprise-only hook absent from the community edition), and the tool node `execute` runs the tool with its server-side credentials — which is why no single route fixes it. The advisory also records the dynamic confirmation: *"Confirmed dynamically on v2.9.2: the member receives 403 on the tool's Debug route, yet runs the same tool through a workflow and receives the tool's decrypted secret."* The GitHub advisory was published on **2 September 2026** and NVD synchronised it on **21 September 2026**; the record is dated to the advisory's publication, with the NVD date kept in `date_raw`.
 
 **Why the archive records it.** This is the authorisation version of a pattern the archive keeps meeting: **the agent is a second path to the same capability**. The permission model was written for the route a human calls directly; the agent or workflow dispatch path reaches the same tool through a different door, and the per-tool grant is not reapplied there. Because the tool's `init_params` are decrypted server-side at execution time, the failure does not stop at "the agent did something it should not" — it hands back the credentials the tool was configured with, which is why this is also a `CRED` record. It sits close to Noma's workflow-identity finding (09-09), where the misalignment was also between an authorisation model and the path actually taken.
 
@@ -94,7 +94,7 @@ flowchart LR
 
 | Field | Value |
 |---|---|
-| Date | `2026-09-21` (raw: GHSA 2026-09-02 / NVD 2026-09-21, precision `day`) |
+| Date | `2026-09-02` (raw: GHSA 2026-09-02 / NVD 2026-09-21, precision `day`) |
 | Kind | Vulnerability disclosure `vulnerability` |
 | Type | [`INFRA`](../../taxonomy/types.md#infra) [`CRED`](../../taxonomy/types.md#cred) |
 | Severity | **Medium** `medium` |
@@ -102,9 +102,9 @@ flowchart LR
 | Real harm | No — no known exploitation |
 | AI involvement | Confirmed `confirmed` |
 | Region | [Global](../../regions/global.md) |
-| Archive ID | `2026-09-21-maxkb-tool-permission-bypass` |
+| Archive ID | `2026-09-02-maxkb-tool-permission-bypass` |
 
-<sub>**Why this classification:** the failure is in the agent platform's own dispatch path and permission enforcement (`INFRA`), and what it yields is the credentials the denied tool carries (`CRED`). It is not `IPI` — no external content steers the agent; the request itself names the tool. `medium` under the archive's ladder: CVSS 5.4, an authorisation bypass with no confirmed damage; `high` would need CVSS 9+ or confirmed harm. Grading criteria: [severity.md](../../taxonomy/severity.md) and [confidence.md](../../taxonomy/confidence.md).</sub>
+<sub>**Why this classification:** the failure is in the agent platform's own dispatch path and permission enforcement (`INFRA`), and what it yields is the credentials the denied tool carries (`CRED`). It is not `IPI` — no external content steers the agent; the request itself names the tool. `medium` under the archive's ladder: CVSS 5.4, an authorisation bypass with no confirmed damage; `high` would need CVSS 9+ or confirmed harm. Dated to the GitHub advisory (2 September 2026), not to the NVD listing. Grading criteria: [severity.md](../../taxonomy/severity.md) and [confidence.md](../../taxonomy/confidence.md).</sub>
 
 ## Related
 
@@ -113,11 +113,11 @@ flowchart LR
 **Related records:**
 
 - `2026-09-09` [Workflow identity hijacking: Noma Labs turns an ordinary support email into privileged data access](2026-09-09-noma-workflow-identity-hijacking.md)<br>  <sub>The same misalignment: an authorisation model that does not match the path taken</sub>
-- `2026-09-25` [Zammad: crafted text in an AI Agent field bypasses the sanitizer](2026-09-25-zammad-ai-agent-template-rce.md)<br>  <sub>The other September agent-platform flaw where the agent definition is the surface</sub>
+- `2026-08-04` [Zammad: crafted text in an AI Agent field bypasses the sanitizer](../2026-08/2026-08-04-zammad-ai-agent-template-rce.md)<br>  <sub>The other agent-platform flaw in this batch, where the agent definition is the surface</sub>
 - `2026-09-23` [IBM FTM: unauthenticated RAG poisoning could steer the payment agent's MCP tools](2026-09-23-ibm-ftm-rag-poisoning.md)<br>  <sub>Tool invocation reached by a path the permission model did not anticipate</sub>
 
 ---
 
-[← 2026-09 index](README.md) · [← All records](../../README.md) · [Chinese](../i18n/zh/2026-09/2026-09-21-maxkb-tool-permission-bypass.md)
+[← 2026-09 index](README.md) · [← All records](../../README.md) · [Chinese](../i18n/zh/2026-09/2026-09-02-maxkb-tool-permission-bypass.md)
 
 <sub>This record is part of the **Orca AI Incident Archive**, licensed [CC BY 4.0](../../LICENSE). Found a factual error or a missing source? [Open an issue or PR](../../CONTRIBUTING.md) — corrections are recorded in the record's revision history, never silently overwritten.</sub>

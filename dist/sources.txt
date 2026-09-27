@@ -36,8 +36,6 @@ https://attack.mitre.org/campaigns/C0062/
 https://au.news.yahoo.com/curtailing-ai-illusion-eu-despite-094308427.html
 https://australiancybersecuritymagazine.com.au/openai-agent-breached-australian-medicare-statistics-portal-prime-minister-says/
 https://avd.aliyun.com/detail?id=AVD-2026-90898
-https://aviatrix.ai/threat-research-center/manus-prompt-injection-vulnerability-2026/
-https://aviatrix.ai/threat-research-center/salesbleed-salesforce-agentforce-slack-phishing-2026/
 https://aws.amazon.com/jp/blogs/security/ai-augmented-threat-actor-accesses-fortigate-devices-at-scale/
 https://aws.amazon.com/security/security-bulletins/2026-075-aws/
 https://badhost.org/
@@ -157,6 +155,7 @@ https://github.com/modelcontextprotocol/typescript-sdk/security/advisories/GHSA-
 https://github.com/nrwl/nx-console/security/advisories/GHSA-c9j4-9m59-847w
 https://github.com/pwardle/not-a-mused
 https://github.com/robocurve/roboharm
+https://github.com/zammad/zammad/commit/e3b0c8df91ad2108c8305be23e8fe6f73fb9718d
 https://github.com/zammad/zammad/security/advisories/GHSA-gp3x-9xm8-rcj6
 https://hackread.com/agentflayer-0-click-exploit-chatgpt-connectors-steal-data/
 https://hackread.com/google-cvss-10-gemini-cli-vulnerability-github-rce/
@@ -194,6 +193,8 @@ https://labs.cloudsecurityalliance.org/research/csa-research-note-rathat-ai-andr
 https://labs.cloudsecurityalliance.org/wp-content/uploads/2026/09/CSA_research_note_crowdsec_tanstack_offboarding_breach_20260920-csa-styled.pdf
 https://labs.zenity.io/p/agentflayer-chatgpt-connectors-0click-attack-5b41
 https://labs.zenity.io/p/agentforger-part-1-chatgpt-cross-site-agent-forgery
+https://labs.zenity.io/post/salesbleed-0-click-data-exfiltration-on-agentforce
+https://labs.zenity.io/post/salesbleed-hijacking-agentforce-in-slack-for-anonymous-phishing
 https://learn.microsoft.com/ja-jp/microsoft-scout/overview
 https://malext.io/reports/PromptSnatcher/
 https://material.security/resources/the-composio-breach-one-token-10242-doors
@@ -441,7 +442,6 @@ https://www.csoonline.com/article/4020919/mcdonalds-ai-hiring-tools-password-123
 https://www.csoonline.com/article/4169407/malicious-hugging-face-model-masquerading-as-openai-release-hits-244k-downloads.html
 https://www.csoonline.com/article/4182707/meet-hades-the-malware-that-lies-to-ai-security-agents-2.html
 https://www.csoonline.com/article/4220203/chatgpt-flaw-lets-attackers-pull-gmail-data-across-accounts-via-a-hidden-channel.html
-https://www.darkreading.com/application-security/prompt-injection-bug-agentic-ai-app-manus
 https://www.darkreading.com/application-security/salesbleed-exploits-salesforce-agents-slack-phishing
 https://www.darkreading.com/application-security/trustfall-exposes-claude-code-execution-risk
 https://www.darkreading.com/cloud-security/microsoft-salesforce-patch-ai-agent-data-leak-flaws
@@ -565,6 +565,7 @@ https://www.securityweek.com/hackers-exploit-langflow-vulnerability-for-remote-c
 https://www.securityweek.com/in-other-news-clop-leak-site-takeover-docker-botnet-hunts-ai-keys-water-utility-exposure/
 https://www.securityweek.com/in-other-news-ransomware-developer-sentenced-plugin4shell-ai-attack-critical-sap-flaw/
 https://www.securityweek.com/north-korean-hackers-blamed-for-mastra-npm-supply-chain-attack/
+https://www.securityweek.com/salesbleed-flaws-in-salesforce-agentforce-enabled-zero-click-data-exfiltration/
 https://www.sentinelone.com/labs/agents-at-large-tracing-illicit-openai-agent-activity-on-hugging-face/
 https://www.sentinelone.com/labs/macos-gaslight-rust-backdoor-turns-prompt-injection-on-the-analyst-not-the-sandbox/
 https://www.sohu.com/a/1068905442_120747399
@@ -584,6 +585,7 @@ https://www.tenable.com/security/research/tra-2026-26
 https://www.thehindubusinessline.com/info-tech/openais-rogue-agents-used-at-least-10-more-sites-for-unauthorised-communications/article71450448.ece
 https://www.theregister.com/2025/08/28/transunion_support_app_breach/
 https://www.theregister.com/2025/11/04/openai_api_moonlights_as_malware/
+https://www.theregister.com/ai-and-ml/2026/09/21/meta-muse-ai-app-flaw-lets-local-malware-redirect-dictation-traffic/5297980
 https://www.theregister.com/security/2026/01/20/anthropic-quietly-fixed-flaws-in-its-git-mcp-server/4676059
 https://www.theregister.com/security/2026/05/04/five-eyes-warn-agentic-ai-is-too-dangerous-for-rapid-rollout/5229103
 https://www.theregister.com/security/2026/05/13/malware-crew-teampcp-open-sources-its-shai-hulud-worm-on-github/5239319

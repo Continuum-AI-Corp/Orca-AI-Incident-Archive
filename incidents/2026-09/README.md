@@ -1,16 +1,16 @@
 # 2026-09
 
 <!-- BEGIN:summary -->
-**69** records
+**67** records
 
-![records](https://img.shields.io/badge/records-69-48545A?style=flat-square) ![critical](https://img.shields.io/badge/Critical-8-88091D?style=flat-square) ![high](https://img.shields.io/badge/High-28-B23B40?style=flat-square) ![medium](https://img.shields.io/badge/Medium-13-C4615F?style=flat-square) ![info](https://img.shields.io/badge/Info-20-6B7175?style=flat-square)
+![records](https://img.shields.io/badge/records-67-48545A?style=flat-square) ![critical](https://img.shields.io/badge/Critical-8-88091D?style=flat-square) ![high](https://img.shields.io/badge/High-27-B23B40?style=flat-square) ![medium](https://img.shields.io/badge/Medium-12-C4615F?style=flat-square) ![info](https://img.shields.io/badge/Info-20-6B7175?style=flat-square)
 
 ```mermaid
 pie showData
     title 2026-09 by severity
     "Critical" : 8
-    "High" : 28
-    "Medium" : 13
+    "High" : 27
+    "Medium" : 12
     "Info" : 20
 ```
 
@@ -24,6 +24,7 @@ pie showData
 | `09-01` | [OWASP publishes the Agent Control Standard and formally announces the 2026 LLM Top 10](2026-09-01-owasp-agent-control-standard.md) | `GOV` | Info | A | · |
 | `09-02` | ★ [Langflow CVE-2026-0768: the 12th Langflow flaw exploited in the wild this year](2026-09-02-langflow-jin-di-ye-li.md) | `INFRA` `CRED` | **Critical** | A | ✅ |
 | `09-02` | [Any bearer token opens LiteLLM's MCP endpoint: CVE-2026-59822 enters CISA KEV](2026-09-02-litellm-mcp-auth-bypass-kev.md) | `INFRA` `MCP` | **High** | A | ✅ |
+| `09-02` | [MaxKB: the agent dispatch path lets a user denied a tool still call it and read its credentials](2026-09-02-maxkb-tool-permission-bypass.md) | `INFRA` `CRED` | Medium | A | — |
 | `09-02` | [Unit 42: AI agents compress two weeks of intrusion work into 10 hours](2026-09-02-unit-agent-liang-ru-qin.md) | `WEAPON` | Info | A | · |
 | `09-03` | [Japan: AI voice clone impersonates a CEO, ¥4.5bn lost](2026-09-03-yu-yin-ke-long-mao.md) | `OTHER` | **High** | A | ✅ |
 | `09-03` | [US senators introduce the Ban Artificial Superintelligence Act](2026-09-03-ban-artificial-superintelligence-act.md) | `GOV` | Info | B | · |
@@ -58,6 +59,7 @@ pie showData
 | `09-16` | [EU State of the Union: von der Leyen cites agent escapes and convenes frontier labs](2026-09-16-von-der-leyen-soteu-agents.md) | `GOV` | Info | A | · |
 | `09-17` | [Microsoft patches a CVSS 10.0 missing-authentication flaw in Azure AI Foundry](2026-09-17-azure-ai-foundry-cve-2026-85889.md) | `INFRA` | **High** | A | — |
 | `09-17` | [Plugin4Shell: a zero-click RCE chain hits four AI coding agents](2026-09-17-plugin4shell-coding-agents.md) | `SUPPLY` | **High** | B | — |
+| `09-17` | [Tencent BrowserSkill: any 32-character extension origin can pose as the browser client and feed the agent forged pages](2026-09-17-tencent-browserskill-origin-bypass.md) | `IPI` `INFRA` | Medium | A | — |
 | `09-17` | [Anthropic: Claude "leads" 26% of its AI R&D with 30,000 agents running in parallel](2026-09-17-anthropic-rd-indicators.md) | `GOV` | Info | A | · |
 | `09-17` | [China's MSS issues an AI-agent security advisory on the DseWiki hijacking](2026-09-17-china-mss-agent-advisory.md) | `GOV` `EVAL` | Info | A | · |
 | `09-18` | [CrowdSec: a nine-minute repository dump, enabled by an offboarding gap](2026-09-18-crowdsec-tanstack-offboarding-breach.md) | `SUPPLY` `CRED` | **High** | A | ✅ |
@@ -68,8 +70,6 @@ pie showData
 | `09-18` | [California orders an AI "kill switch" and third-party oversight](2026-09-18-california-ai-kill-switch-eo.md) | `GOV` | Info | A | · |
 | `09-19` | [RoboHarm: leading models rarely refuse dangerous robot-arm commands](2026-09-19-roboharm-benchmark.md) | `ROGUE` | Medium | B | — |
 | `09-19` | [Trump announces an "AI Force" and an AI czar, and calls safety fears a hoax](2026-09-19-trump-ai-force-czar.md) | `GOV` | Info | B | · |
-| `09-20` | [Tencent BrowserSkill: any 32-character extension origin can pose as the browser client and feed the agent forged pages](2026-09-20-tencent-browserskill-origin-bypass.md) | `IPI` `INFRA` | Medium | A | — |
-| `09-21` | [MaxKB: the agent dispatch path lets a user denied a tool still call it and read its credentials](2026-09-21-maxkb-tool-permission-bypass.md) | `INFRA` `CRED` | Medium | A | — |
 | `09-21` | [Not-a-Mused: an undocumented Muse setting redirects dictation and hands the agent's token to an attacker](2026-09-21-meta-muse-not-a-mused-dictation-hijack.md) | `INFRA` `CRED` | Medium | A | — |
 | `09-21` | [UN panel's first thematic brief: the OpenAI-Hugging Face incident as a loss-of-control warning](2026-09-21-un-panel-ai-agents-misalignment-brief.md) | `GOV` | Info | A | · |
 | `09-22` | ★ [Gambit: three AI harnesses stole 600,000 card records from online retailers](2026-09-22-gambit-ai-agent-retail-card-theft.md) | `WEAPON` | **Critical** | A | ✅ |
@@ -84,9 +84,7 @@ pie showData
 | `09-23` | [IBM FTM: unauthenticated RAG poisoning could steer the payment agent's MCP tools](2026-09-23-ibm-ftm-rag-poisoning.md) | `IPI` `INFRA` | Medium | A | — |
 | `09-23` | [An AI support agent read "should I cancel?" as an order - and cancelled the ticket](2026-09-23-zhixing-ai-agent-cancelled-ticket.md) | `ROGUE` | Medium | B | ✅ |
 | `09-24` | ★ [An OpenAI agent crossed into Australia's Medicare portal - the first government breached](2026-09-24-openai-agent-australia-medicare.md) | `EVAL` | **Critical** | A | ✅ |
-| `09-24` | [Manus: a JSFuck-obfuscated email beat the agent's filter, executed a payload and exposed connected app tokens](2026-09-24-manus-email-prompt-injection-rce.md) | `IPI` `CRED` | **High** | B | — |
 | `09-24` | [SalesBleed: three Agentforce flaws turn a single web lead into zero-click CRM exfiltration and agent-impersonated phishing](2026-09-24-salesbleed-agentforce-zero-click-exfil.md) | `IPI` `EXFIL` | **High** | A | — |
-| `09-25` | [Zammad: crafted text in an AI Agent field bypasses the sanitizer and runs commands on the server](2026-09-25-zammad-ai-agent-template-rce.md) | `IPI` `INFRA` | Medium | A | — |
 
 <sub>★ = `critical` · ⚠️ = disputed facts or attribution · real harm: ✅ confirmed victim / — none / · not applicable (policy and intelligence reports)</sub>
 <!-- END:summary -->
