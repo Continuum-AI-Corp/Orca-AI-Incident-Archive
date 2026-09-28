@@ -26,7 +26,7 @@
 | `2026-07-30` | ★ [Hermes Agent attacks Thailand's Ministry of Finance unattended](../incidents/2026-07/2026-07-30-hermes-agent-thailand-finance-ministry.md) | `WEAPON` | **Critical** | A | ✅ |
 | `2026-08-10` | [AI agent breaks into an Australian gym's booking system](../incidents/2026-08/2026-08-10-agent-shou-quan-qin-ru.md) | `ROGUE` | **High** | A | ✅ |
 | `2026-08-12` | [Taiwan agent-swarm intrusion made public](../incidents/2026-08/2026-08-12-agent-tai-wan-feng-qun.md) | `WEAPON` | Low | A | ✅ |
-| `2026-09-24` | ★ [An OpenAI agent crossed into Australia's Medicare portal - the first government breached](../incidents/2026-09/2026-09-24-openai-agent-australia-medicare.md) | `EVAL` | **Critical** | A | ✅ |
+| `2026-09-24` | ★ [An OpenAI agent crossed into Australia's Medicare portal - the first government breached](../incidents/2026-09/2026-09-24-openai-agent-australia-medicare.md) ⚠️ | `EVAL` | **Critical** | A | ✅ |
 <!-- END:incidents -->
 
 ---

@@ -1,16 +1,16 @@
 # 2026-09
 
 <!-- BEGIN:summary -->
-**67** records
+**72** records
 
-![records](https://img.shields.io/badge/records-67-48545A?style=flat-square) ![critical](https://img.shields.io/badge/Critical-8-88091D?style=flat-square) ![high](https://img.shields.io/badge/High-27-B23B40?style=flat-square) ![medium](https://img.shields.io/badge/Medium-12-C4615F?style=flat-square) ![info](https://img.shields.io/badge/Info-20-6B7175?style=flat-square)
+![records](https://img.shields.io/badge/records-72-48545A?style=flat-square) ![critical](https://img.shields.io/badge/Critical-8-88091D?style=flat-square) ![high](https://img.shields.io/badge/High-30-B23B40?style=flat-square) ![medium](https://img.shields.io/badge/Medium-14-C4615F?style=flat-square) ![info](https://img.shields.io/badge/Info-20-6B7175?style=flat-square)
 
 ```mermaid
 pie showData
     title 2026-09 by severity
     "Critical" : 8
-    "High" : 27
-    "Medium" : 12
+    "High" : 30
+    "Medium" : 14
     "Info" : 20
 ```
 
@@ -24,6 +24,7 @@ pie showData
 | `09-01` | [OWASP publishes the Agent Control Standard and formally announces the 2026 LLM Top 10](2026-09-01-owasp-agent-control-standard.md) | `GOV` | Info | A | · |
 | `09-02` | ★ [Langflow CVE-2026-0768: the 12th Langflow flaw exploited in the wild this year](2026-09-02-langflow-jin-di-ye-li.md) | `INFRA` `CRED` | **Critical** | A | ✅ |
 | `09-02` | [Any bearer token opens LiteLLM's MCP endpoint: CVE-2026-59822 enters CISA KEV](2026-09-02-litellm-mcp-auth-bypass-kev.md) | `INFRA` `MCP` | **High** | A | ✅ |
+| `09-02` | [MaxKB CVE-2026-77521: a prompt-injectable agent runs shell commands on the host (CVSS 10.0)](2026-09-02-maxkb-prompt-injection-command-execution.md) | `IPI` `INFRA` | **High** | A | — |
 | `09-02` | [MaxKB: the agent dispatch path lets a user denied a tool still call it and read its credentials](2026-09-02-maxkb-tool-permission-bypass.md) | `INFRA` `CRED` | Medium | A | — |
 | `09-02` | [Unit 42: AI agents compress two weeks of intrusion work into 10 hours](2026-09-02-unit-agent-liang-ru-qin.md) | `WEAPON` | Info | A | · |
 | `09-03` | [Japan: AI voice clone impersonates a CEO, ¥4.5bn lost](2026-09-03-yu-yin-ke-long-mao.md) | `OTHER` | **High** | A | ✅ |
@@ -70,6 +71,7 @@ pie showData
 | `09-18` | [California orders an AI "kill switch" and third-party oversight](2026-09-18-california-ai-kill-switch-eo.md) | `GOV` | Info | A | · |
 | `09-19` | [RoboHarm: leading models rarely refuse dangerous robot-arm commands](2026-09-19-roboharm-benchmark.md) | `ROGUE` | Medium | B | — |
 | `09-19` | [Trump announces an "AI Force" and an AI czar, and calls safety fears a hoax](2026-09-19-trump-ai-force-czar.md) | `GOV` | Info | B | · |
+| `09-20` | [An OpenAI training model tunnelled out of its sandbox over DNS; OpenAI paused its most capable models](2026-09-20-openai-dns-sandbox-escape-training-pause.md) | `EVAL` `SANDBOX` | **High** | A | — |
 | `09-21` | [Not-a-Mused: an undocumented Muse setting redirects dictation and hands the agent's token to an attacker](2026-09-21-meta-muse-not-a-mused-dictation-hijack.md) | `INFRA` `CRED` | Medium | A | — |
 | `09-21` | [UN panel's first thematic brief: the OpenAI-Hugging Face incident as a loss-of-control warning](2026-09-21-un-panel-ai-agents-misalignment-brief.md) | `GOV` | Info | A | · |
 | `09-22` | ★ [Gambit: three AI harnesses stole 600,000 card records from online retailers](2026-09-22-gambit-ai-agent-retail-card-theft.md) | `WEAPON` | **Critical** | A | ✅ |
@@ -82,9 +84,12 @@ pie showData
 | `09-23` | [sckit: MemTensor's AI memory packages were backdoored to steal agent credentials and prompts](2026-09-23-memtensor-sckit-supply-chain.md) | `SUPPLY` `CRED` | **High** | A | — |
 | `09-23` | [Transluce: agents tunnelled through urlquery.net and tried to hack three data sites](2026-09-23-transluce-urlquery-agent-activity.md) | `EVAL` | **High** | A | — |
 | `09-23` | [IBM FTM: unauthenticated RAG poisoning could steer the payment agent's MCP tools](2026-09-23-ibm-ftm-rag-poisoning.md) | `IPI` `INFRA` | Medium | A | — |
+| `09-23` | [x47.c: a Windows botnet-for-sale that drains AI API credit and uses Grok to choose how it hides](2026-09-23-x47c-botnet-grok-ai-api-drain.md) | `WEAPON` `CRED` | Medium | A | — |
 | `09-23` | [An AI support agent read "should I cancel?" as an order - and cancelled the ticket](2026-09-23-zhixing-ai-agent-cancelled-ticket.md) | `ROGUE` | Medium | B | ✅ |
-| `09-24` | ★ [An OpenAI agent crossed into Australia's Medicare portal - the first government breached](2026-09-24-openai-agent-australia-medicare.md) | `EVAL` | **Critical** | A | ✅ |
+| `09-24` | ★ [An OpenAI agent crossed into Australia's Medicare portal - the first government breached](2026-09-24-openai-agent-australia-medicare.md) ⚠️ | `EVAL` | **Critical** | A | ✅ |
 | `09-24` | [SalesBleed: three Agentforce flaws turn a single web lead into zero-click CRM exfiltration and agent-impersonated phishing](2026-09-24-salesbleed-agentforce-zero-click-exfil.md) | `IPI` `EXFIL` | **High** | A | — |
+| `09-25` | [OpenAI's agents posted 53 users' images to public image-hosting sites](2026-09-25-openai-agents-user-images-image-hosts.md) | `EVAL` `EXFIL` | **High** | A | ✅ |
+| `09-25` | [OpenAI's agents reached US government websites - SEC and Census data, and a failed hack of the Education Department](2026-09-25-openai-agents-us-government-sites.md) | `EVAL` `CRED` | Medium | A | — |
 
 <sub>★ = `critical` · ⚠️ = disputed facts or attribution · real harm: ✅ confirmed victim / — none / · not applicable (policy and intelligence reports)</sub>
 <!-- END:summary -->

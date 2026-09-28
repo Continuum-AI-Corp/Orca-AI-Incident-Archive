@@ -19,6 +19,7 @@ https://aigovernance.com/news/instinct-ai-agent-sends-emails-autonomously-and-re
 https://aisle.com/blog/ai-cybersecurity-after-mythos-the-jagged-frontier
 https://aiweekly.co/alerts/deepmind-opens-institute-to-publish-essays-on-agi-safety
 https://alignment.openai.com/misalignment-reports/
+https://alignment.openai.com/misalignment-reports/an-agent-used-dns-to-reach-an-external-chatbot/
 https://anthropic.com/claude-opus-5-5-system-card
 https://app.opencve.io/cve/CVE-2026-18252
 https://app.opencve.io/cve/CVE-2026-62830
@@ -137,6 +138,7 @@ https://gigazine.net/gsc_news/en/20260223-aws-ai-outage/
 https://github.blog/changelog/2026-02-13-github-agentic-workflows-are-now-in-technical-preview/
 https://github.blog/security/investigating-unauthorized-access-to-githubs-internal-repositories/
 https://github.com/1Panel-dev/MaxKB/security/advisories/GHSA-383v-fx78-pphm
+https://github.com/1Panel-dev/MaxKB/security/advisories/GHSA-f36j-f34j-h3rx
 https://github.com/BerriAI/litellm/security/advisories/GHSA-72m8-9m7m-h278
 https://github.com/BerriAI/litellm/security/advisories/GHSA-7488-6r32-c95q
 https://github.com/TanStack/router/security/advisories/GHSA-g7cv-rxg3-hmpx
@@ -220,6 +222,7 @@ https://nvd.nist.gov/vuln/detail/CVE-2026-26118
 https://nvd.nist.gov/vuln/detail/CVE-2026-30615
 https://nvd.nist.gov/vuln/detail/CVE-2026-32882
 https://nvd.nist.gov/vuln/detail/CVE-2026-77516
+https://nvd.nist.gov/vuln/detail/CVE-2026-77521
 https://nvd.nist.gov/vuln/detail/CVE-2026-84462
 https://nvd.nist.gov/vuln/detail/CVE-2026-85889
 https://nvd.nist.gov/vuln/detail/CVE-2026-94111
@@ -246,6 +249,7 @@ https://orca.security/resources/blog/roguepilot-github-copilot-vulnerability/
 https://osv.dev/vulnerability/PYSEC-2026-3479
 https://phoenix.security/trapdoor-supply-chain-ai-poisoning-npm-pypi-crates/
 https://ppc.land/comet-browser-faces-multiple-security-vulnerabilities-from-prompt-injection/
+https://qrator.net/blog/details/x47.c-botnet
 https://rafter.so/blog/incidents/ai-agent-security-timeline-2025-2026
 https://rebora.io/blog/spyder-and-maxss-chrome-extension-vulnerabilities-put-millions-at-risk
 https://red.anthropic.com/2026/attack-navigator/
@@ -294,10 +298,12 @@ https://techcrunch.com/2026/09/05/openai-confirms-wiki-incident-says-its-working
 https://techcrunch.com/2026/09/09/viral-ai-assistant-instinct-now-has-its-own-email-address/
 https://techcrunch.com/2026/09/17/google-deepmind-launches-institute-to-widen-the-agi-debate/
 https://techcrunch.com/2026/09/18/researchers-used-anthropics-claude-to-hack-into-openai/
+https://techcrunch.com/2026/09/25/unsecured-openai-agents-posted-53-user-images-on-the-internet-without-the-labs-knowledge/
 https://techradar.com/pro/security/autonomous-ai-agent-hit-spanish-firm-with-vulnerability-scans-before-accessing-files-and-data
 https://techriskguru.com/p/techrisk-133-man-in-the-prompt-attack
 https://tenetsecurity.ai/blog/agentjacking-coding-agents-with-fake-sentry-errors/
 https://the-decoder.com/gpt-6-astra-and-claude-fable-turn-robot-arms-into-slapstick-killer-robots-in-new-safety-benchmark/
+https://the-decoder.com/tens-of-thousands-of-security-probes-show-openais-hugging-face-incident-was-just-the-beginning/
 https://thehackernews.com/2025/01/deepseek-ai-database-exposed-over-1.html
 https://thehackernews.com/2025/02/malicious-ml-models-found-on-hugging.html
 https://thehackernews.com/2025/05/gitlab-duo-vulnerability-enabled.html
@@ -347,6 +353,7 @@ https://thehackernews.com/2026/09/russia-aligned-uac-0099-plants-nuclear.html
 https://thenewstack.io/agentjacking-sentry-mcp-attack/
 https://theori.io/ko/blog/2026-h1-hot-security-issue-case
 https://therecord.media/irregular-ai-security-company-incidents
+https://therecord.media/openai-australia-breach-cyber
 https://transluce.org/agent-activity
 https://unit42.paloaltonetworks.com/agent-session-smuggling-in-agent2agent-systems/
 https://unit42.paloaltonetworks.com/ai-agent-prompt-injection/
@@ -398,6 +405,7 @@ https://www.axios.com/2026/09/10/openai-hugging-face-senate-investigation-hawley
 https://www.axios.com/2026/09/15/anthropic-dario-ai-agents-safety-botnet
 https://www.axios.com/2026/09/19/trump-ai-czar-space-force-safety
 https://www.betterclaw.io/blog/openclaw-security-2026
+https://www.bleepingcomputer.com/news/artificial-intelligence/openais-ai-agents-accidentally-uploaded-user-provided-images-to-third-party-sites/
 https://www.bleepingcomputer.com/news/microsoft/microsoft-says-bug-causes-copilot-to-summarize-confidential-emails/
 https://www.bleepingcomputer.com/news/security/ai-powered-malware-hit-2-180-github-accounts-in-s1ngularity-attack/
 https://www.bleepingcomputer.com/news/security/amazon-ai-assisted-hacker-breached-600-fortigate-firewalls-in-5-weeks/
@@ -434,6 +442,7 @@ https://www.cnbc.com/2026/09/16/openai-6-new-instances-of-concerning-model-behav
 https://www.cnn.com/2025/05/16/business/a-rogue-employee-was-behind-groks-unprompted-white-genocide-mentions
 https://www.cnn.com/2026/08/13/tech/china-taiwan-ai-agent-cyberattack-intl-hnk
 https://www.cnn.com/2026/09/19/politics/trump-ai-task-force-czar
+https://www.cnn.com/2026/09/26/tech/openai-agents-rogue-government-websites
 https://www.codeintegrity.ai/blog/notion
 https://www.coindesk.com/business/2026/01/31/solana-based-defi-platform-step-finance-hit-by-usd30-million-treasury-hack-as-token-price-craters
 https://www.crowdstrike.com/en-us/blog/crowdstrike-2026-threat-hunting-report/
@@ -489,6 +498,7 @@ https://www.infoq.cn/article/CEphwKjzAe7LzbOriLcq
 https://www.infosecurity-magazine.com/news/abuse-cursor-agent-ransomware/
 https://www.infosecurity-magazine.com/news/indirect-prompt-injection-web/
 https://www.infosecurity-magazine.com/news/rathat-android-malware-ai-steal/
+https://www.infosecurity-magazine.com/news/x47c-botnet-ai-api-draining-18/
 https://www.ipa.go.jp/digital/ai/security/ai-security-bulletin.html
 https://www.irregular.com/research/assessing-gpt-5.6-sol
 https://www.ithome.com/1/003/876.htm
@@ -564,7 +574,9 @@ https://www.securityweek.com/github-confirms-hack-impacting-3800-internal-reposi
 https://www.securityweek.com/hackers-exploit-langflow-vulnerability-for-remote-code-execution/
 https://www.securityweek.com/in-other-news-clop-leak-site-takeover-docker-botnet-hunts-ai-keys-water-utility-exposure/
 https://www.securityweek.com/in-other-news-ransomware-developer-sentenced-plugin4shell-ai-attack-critical-sap-flaw/
+https://www.securityweek.com/new-x47-c-windows-botnet-weaponizes-xai-grok-ai-api-draining/
 https://www.securityweek.com/north-korean-hackers-blamed-for-mastra-npm-supply-chain-attack/
+https://www.securityweek.com/openai-says-its-models-engaged-with-us-government-websites-in-new-model-misbehavior-disclosure/
 https://www.securityweek.com/salesbleed-flaws-in-salesforce-agentforce-enabled-zero-click-data-exfiltration/
 https://www.sentinelone.com/labs/agents-at-large-tracing-illicit-openai-agent-activity-on-hugging-face/
 https://www.sentinelone.com/labs/macos-gaslight-rust-backdoor-turns-prompt-injection-on-the-analyst-not-the-sandbox/
@@ -577,6 +589,7 @@ https://www.sygnia.co/blog/inside-an-ai-assisted-cloud-attack/
 https://www.sysdig.com/blog/jadepuffer-agentic-ransomware-for-automated-database-extortion
 https://www.t-online.de/nachrichten/deutschland/innenpolitik/id_101262296/propaganda-offensive-gegen-deutschland-leak-enthuellt-russlands-vorgehen.html
 https://www.techpolicy.press/who-should-pace-the-frontier-not-dario-amodei/
+https://www.techspot.com/news/114003-openai-pauses-training-most-powerful-ai-models-after.html
 https://www.techtimes.com/articles/326762/20260905/openai-agents-colonized-german-wiki-via-get-exploit-weeks-before-hugging-face-breach.htm
 https://www.techtimes.com/articles/327387/20260912/thune-cruz-klobuchar-move-ai-safety-voluntary-pledge-legal-duty.htm
 https://www.tenable.com/blog/faq-cve-2025-54135-cve-2025-54136-vulnerabilities-in-cursor-curxecute-mcpoison

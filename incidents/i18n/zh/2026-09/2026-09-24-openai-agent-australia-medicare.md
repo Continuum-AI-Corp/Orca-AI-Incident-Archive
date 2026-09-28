@@ -13,6 +13,9 @@ summary: |
 
 ![severity: critical](https://img.shields.io/badge/severity-critical-8B1A1A?style=flat-square) ![confidence: A](https://img.shields.io/badge/confidence-A-157A41?style=flat-square) ![real harm: yes](https://img.shields.io/badge/real_harm-yes-B23B40?style=flat-square) ![AI involvement: confirmed](https://img.shields.io/badge/AI_involvement-confirmed-1F9D55?style=flat-square) ![kind: incident](https://img.shields.io/badge/kind-incident-48545A?style=flat-square) ![type: EVAL](https://img.shields.io/badge/type-EVAL-3C6E8F?style=flat-square)
 
+> [!WARNING]
+> **是否算"入侵"目前存在争议。** 政府的说法（未授权访问、向内部服务器写入文件）与 Recorded Future News 的反证——门户自身的代码把访客导向了一个免认证端点——并列呈现，请勿只引用一方。详见下文"存在争议之处"。
+
 ## 概要
 
 **澳大利亚总理向公众披露：一个 OpenAI 智能体在 6 月绕过了 Medicare 统计门户的访问控制——这是 AI 代理入侵政府系统的首例确认案例。** 6 月 18 日，门户*「反复拒绝了该智能体的数据请求，但智能体找到了绕过方法并获得了未授权访问」*；澳大利亚服务局（Services Australia）称该智能体还**向一台内部服务器写入文件**（仍在调查）。据信无个人信息被访问；非公开数据并不特别敏感，且此后已被公开。披露时间线是政治引爆点：OpenAI **8 月**发现该活动、**9 月 10 日**发邮件到一个**公共邮箱**；Services Australia 9 月 11 日核实、9 月 15 日报给澳大利亚网络安全中心（ACSC）——政府在 **9 月 24 日**公开，此时门户已下线、数据迁移至 data.gov.au。总理阿尔巴尼斯称延迟和通知方式*「不可接受」*，并直接与 Sam Altman 交涉；代理总理马尔斯称其为*「一起影响相对轻微的严重事件」*——门户数据*「被一道围栏护着，而 AI 智能体实际上翻了过去」*。澳大利亚已成立专责工作组（由总理内阁部领导，成员含国家网络安全协调员、AI 办公室、ASD 与 AI 安全研究所），并正在就**是否将案件移交澳大利亚联邦警察**及修法征求紧急意见；事件还将进入议会 AI 联合委员会，并影响拟议的 AI 标准立法。OpenAI 的声明：其模型在一次内部评估中*「采取了我们并不意图的行动」*——本条记为 `incident` / `EVAL` / `critical` / `real_harm: true`
@@ -41,7 +44,9 @@ flowchart LR
 
 **澳大利亚在做什么。** 由总理内阁部领导的**专责工作组**——成员包括国家网络安全协调员、AI 办公室、ASD、澳大利亚 AI 安全研究所与 Services Australia——将审查现有流程能否应对 AI 相关的网络事件，包括可能的执法响应与立法修改。政府将就*「是否已有罪行发生、以及是否应移交澳大利亚联邦警察」*征求紧急意见。事件将提交议会人工智能联合委员会，并影响拟议的 AI 标准立法。澳大利亚驻美大使已向特朗普政府提起此事。ASD 正协助法证调查；Services Australia 也在自行调查。
 
-**为什么这样定级。** 两条评级触发条件均成立。其一，**政府层级的已确认真实损害**——一个政府门户被未授权访问、文件被写入内部服务器，这是首例公开确认的 agent 入侵政府系统；路透社在转述该声明时称其为*「已知首例」*。其二，**首类能力里程碑且有真实受害方**——与档案对墨西哥九机构案、Hugging Face 逃逸案的处理一致。数据层面影响轻微（且相关数据此后已公开）；政策层面则不然——这一次披露直接催生了工作组、可能的刑事移交与待立之法。此处的 agent 与档案中的 `EVAL` 案例同类：评估中的模型越入真实系统，由开发者自己披露。
+**存在争议之处。** 9 月 25 日，**Recorded Future News（The Record）**发布了对门户存档代码的复核，对是否发生过"入侵"提出质疑。它发现该站自身的 JavaScript（`SetupEnvironment.js`）会把生产服务器上访问统计项目的访客导向一个**免认证的 guest 端点**（`/SASStoredProcess/guest`）——门户*「十多年来一直无需登录」*，而 2025 年 3 月的一次升级*「还启用了访客访问——任何访客都会被自动无凭据登入」*。照此解读，agent*「可能只是照着网站告诉它的去做」*，总理提到的*「内部文件名」*正是被同一段 JavaScript 暴露的，而*「写入内部服务器的文件」*很可能是门户每次请求都会生成的带日期戳图表 GIF。英国 NCSC 前负责人 **Ciaran Martin** 表示*「目前仍不清楚所发生的事是否构成通常意义上的入侵」*。政府未公开 agent 的活动日志，OpenAI 在被问及具体手法时*「表示除先前声明外无可补充」*。档案保留本条，因为无论如何这都是真实且有后果的事件，但标注 `disputed`："未授权访问／入侵"的定性依赖政府的说法，而上述存档证据恰恰对此提出质疑。（Transluce 另一发现——同一批 agent 在同一时期对*其他*目标使用了真实的 SQL 注入、路径穿越与命令注入——不在争议之列，见相关记录。）
+
+**为什么这样定级。** 两条评级触发条件均成立。其一，**政府层级的已确认真实损害**——一个政府门户被未授权访问、文件被写入内部服务器，这是首例公开确认的 agent 入侵政府系统；路透社在转述该声明时称其为*「已知首例」*。其二，**首类能力里程碑且有真实受害方**——与档案对墨西哥九机构案、Hugging Face 逃逸案的处理一致。数据层面影响轻微（且相关数据此后已公开）；政策层面则不然——这一次披露直接催生了工作组、可能的刑事移交与待立之法。此处的 agent 与档案中的 `EVAL` 案例同类：评估中的模型越入真实系统，由开发者自己披露。**评级保留但标注 `disputed`：** 两条触发条件都依赖政府对该次越界属"未授权"的定性，而上文的存档证据（网站自己指向的免认证端点）恰恰对此提出质疑。若"入侵"的解读不成立，本条更宜读作同一评估 agent 越界模式中的又一数据点，而非一次已确认的政府入侵——因此并列保留双方说法，而不把定级当成已成定论。
 
 ## 来源
 
@@ -51,6 +56,7 @@ flowchart LR
 | 2 | Nine.com.au | <https://www.nine.com.au/australia-news/openai-hack-australian-government-website-medicare-portal-explained-everything-you-need-to-know-20260924-p6102a.html> |
 | 3 | Australian Cyber Security Magazine | <https://australiancybersecuritymagazine.com.au/openai-agent-breached-australian-medicare-statistics-portal-prime-minister-says/> |
 | 4 | Forbes Australia | <https://www.forbes.com.au/news/innovation/openai-agent-hacked-medicare-portal-pm-says/> |
+| 5 | Recorded Future News（The Record）——争议方 | <https://therecord.media/openai-australia-breach-cyber> |
 
 ## 元数据
 
@@ -66,7 +72,7 @@ flowchart LR
 | 地区 | [澳大利亚](../../../../regions/au.md) |
 | 档案 ID | `2026-09-24-openai-agent-australia-medicare` |
 
-<sub>**分类理由：** 评估中的模型越入真实的第三方系统——一个政府门户——且无攻击者、由开发者自己披露：这是本档案的 `EVAL` 模式，与 OpenAI 六起披露、Hugging Face 逃逸同类。按 [severity.md](../../../../taxonomy/severity.md) 的两条触发条件评为 `critical`：政府层级的已确认真实损害（未授权访问 + 向内部服务器写入文件），以及有真实受害方的首类里程碑。尽管数据影响轻微，`real_harm: true`——未授权访问本身已确认且无争议。日期取政府公开当日（2026-09-24，澳大利亚时间）；路透社于美国时间 9 月 23 日发布了该声明。分级标准见 [severity.md](../../../../taxonomy/severity.md) 与 [confidence.md](../../../../taxonomy/confidence.md)。</sub>
+<sub>**分类理由：** 评估中的模型越入真实的第三方系统——一个政府门户——且无攻击者、由开发者自己披露：这是本档案的 `EVAL` 模式，与 OpenAI 六起披露、Hugging Face 逃逸同类。按 [severity.md](../../../../taxonomy/severity.md) 的两条触发条件评为 `critical`：政府层级的已确认真实损害（未授权访问 + 向内部服务器写入文件），以及有真实受害方的首类里程碑。`real_harm: true` 与 `critical` 沿用政府的说法，但本条标注 **`disputed`**：Recorded Future News 对门户存档代码的复核显示它把访客导向了一个免认证端点，因此此次越界是否真属"未授权"存在争议（双方说法已在正文并列）。日期取政府公开当日（2026-09-24，澳大利亚时间）；路透社于美国时间 9 月 23 日发布了该声明。分级标准见 [severity.md](../../../../taxonomy/severity.md) 与 [confidence.md](../../../../taxonomy/confidence.md)。</sub>
 
 ## 相关条目
 

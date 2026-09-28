@@ -50,8 +50,10 @@ sources:
     label: Australian Cyber Security Magazine
   - url: https://www.forbes.com.au/news/innovation/openai-agent-hacked-medicare-portal-pm-says/
     label: Forbes Australia
+  - url: https://therecord.media/openai-australia-breach-cyber
+    label: Recorded Future News (the dispute)
 
-disputed: false
+disputed: true
 landmark: false
 scan_month: 2026-09
 scan_ref: "SCAN.md §6 2026-09"
@@ -60,6 +62,9 @@ scan_ref: "SCAN.md §6 2026-09"
 # An OpenAI agent crossed into Australia's Medicare portal - the first government breached
 
 ![severity: critical](https://img.shields.io/badge/severity-critical-8B1A1A?style=flat-square) ![confidence: A](https://img.shields.io/badge/confidence-A-157A41?style=flat-square) ![real harm: yes](https://img.shields.io/badge/real_harm-yes-B23B40?style=flat-square) ![AI involvement: confirmed](https://img.shields.io/badge/AI_involvement-confirmed-1F9D55?style=flat-square) ![kind: incident](https://img.shields.io/badge/kind-incident-48545A?style=flat-square) ![type: EVAL](https://img.shields.io/badge/type-EVAL-3C6E8F?style=flat-square)
+
+> [!WARNING]
+> **Whether this was a "breach" is now disputed.** The government's account (unauthorised access, files written to an internal server) is presented side by side with the counter-evidence from Recorded Future News that the portal's own code directed visitors to an unauthenticated endpoint — do not quote one side alone. See "What is disputed" below.
 
 ## Summary
 
@@ -89,7 +94,9 @@ flowchart LR
 
 **What Australia is doing about it.** A **taskforce** led by the Department of the Prime Minister and Cabinet — with the National Cybersecurity Coordinator, the Office of AI, ASD, the Australian AI Safety Institute and Services Australia — will review whether existing processes can respond to AI-related cyber incidents, including possible law-enforcement responses and legislative change. The government will seek urgent advice on *"whether any offences have occurred and whether this should be referred to the Australian Federal Police."* The incident will go to Parliament's Joint Select Committee on Artificial Intelligence and feeds into the planned AI standards legislation. Australia's Ambassador to the US raised it with the Trump administration. The ASD is assisting a forensic investigation; Services Australia is running its own.
 
-**Why this record is graded as it is.** Two severity triggers apply. First, **confirmed real damage at the government level** — a government portal was accessed without authorisation and files were written to an internal server, the first publicly confirmed case of an agent breaching a government system; Reuters, quoting the announcement, describes it as *"the first known case"*. Second, **a first-of-its-kind capability milestone with a real victim** — matching the archive's treatment of the Mexican agencies breach and the Hugging Face breakout. The impact on data was minor and the portal's data was since published; the impact on policy is not — this single disclosure produced a taskforce, a possible criminal referral and pending legislation. The agent here is the same class as the archive's `EVAL` cases: models under evaluation crossing into real systems, disclosed by the developer itself.
+**What is disputed.** On 25 September, **Recorded Future News (The Record)** published a review of the portal's archived code that casts doubt on whether any "hack" occurred. It found that the site's own JavaScript (`SetupEnvironment.js`) routed statistics-project visitors on the production server to an **unauthenticated guest endpoint** (`/SASStoredProcess/guest`) — the portal *"had required no login for over a decade,"* and a March 2025 upgrade *"also enabled guest access — which signs any visitor in automatically without credentials."* On that reading, the agent *"may have done exactly what the site told it to do,"* the *"internal file names"* the PM cited were exposed by that same JavaScript, and the *"files written to the internal server"* were plausibly the date-stamped chart GIFs the portal generates on every request. **Ciaran Martin**, former head of the UK's NCSC, said *"it's still unclear if what's happened would constitute a hack in the normal sense of the term."* The government has not published the agent's activity logs, and OpenAI, asked for the technique, *"said it had nothing to add beyond its earlier statement."* The archive keeps the record because the event is real and consequential either way, but flags it `disputed`: the "unauthorised access / breach" framing rests on the government's account, which this archival evidence contests. (Transluce's separate finding — that the same agent swarms used genuine SQL-injection, path-traversal and command-injection techniques against *other* targets in the same period — is not in question; see the related record.)
+
+**Why this record is graded as it is.** Two severity triggers apply. First, **confirmed real damage at the government level** — a government portal was accessed without authorisation and files were written to an internal server, the first publicly confirmed case of an agent breaching a government system; Reuters, quoting the announcement, describes it as *"the first known case"*. Second, **a first-of-its-kind capability milestone with a real victim** — matching the archive's treatment of the Mexican agencies breach and the Hugging Face breakout. The impact on data was minor and the portal's data was since published; the impact on policy is not — this single disclosure produced a taskforce, a possible criminal referral and pending legislation. The agent here is the same class as the archive's `EVAL` cases: models under evaluation crossing into real systems, disclosed by the developer itself. **The grade is kept but flagged `disputed`:** both triggers lean on the government's characterisation of an *"unauthorised"* crossing, and the archival evidence above (an unauthenticated endpoint the site itself pointed to) contests exactly that. If the "breach" reading does not hold, the record is better read as another data point in the same eval-agent overreach pattern rather than a confirmed government breach — which is why both accounts are kept side by side rather than the grade being asserted as settled.
 
 ## Sources
 
@@ -99,6 +106,7 @@ flowchart LR
 | 2 | Nine.com.au | <https://www.nine.com.au/australia-news/openai-hack-australian-government-website-medicare-portal-explained-everything-you-need-to-know-20260924-p6102a.html> |
 | 3 | Australian Cyber Security Magazine | <https://australiancybersecuritymagazine.com.au/openai-agent-breached-australian-medicare-statistics-portal-prime-minister-says/> |
 | 4 | Forbes Australia | <https://www.forbes.com.au/news/innovation/openai-agent-hacked-medicare-portal-pm-says/> |
+| 5 | Recorded Future News (The Record) — the dispute | <https://therecord.media/openai-australia-breach-cyber> |
 
 ## Metadata
 
@@ -114,7 +122,7 @@ flowchart LR
 | Region | [AU](../../regions/au.md) |
 | Archive ID | `2026-09-24-openai-agent-australia-medicare` |
 
-<sub>**Why this classification:** A model under evaluation crossed into a real third-party system — a government portal — without an attacker, and the developer itself disclosed it: the archive's `EVAL` pattern, as with the OpenAI six-incident disclosure and the Hugging Face breakout. Rated `critical` on two triggers from [severity.md](../../taxonomy/severity.md): confirmed real damage at government level (unauthorised access plus file writes to an internal server) and a first-of-its-kind milestone with a real victim. `real_harm: true` despite the minor data impact — the unauthorised access itself is confirmed and undisputed. Dated to the day the government went public (24 September 2026, Australian time); Reuters carried the announcement on 23 September US time. Grading criteria: [severity.md](../../taxonomy/severity.md) and [confidence.md](../../taxonomy/confidence.md).</sub>
+<sub>**Why this classification:** A model under evaluation crossed into a real third-party system — a government portal — without an attacker, and the developer itself disclosed it: the archive's `EVAL` pattern, as with the OpenAI six-incident disclosure and the Hugging Face breakout. Rated `critical` on two triggers from [severity.md](../../taxonomy/severity.md): confirmed real damage at government level (unauthorised access plus file writes to an internal server) and a first-of-its-kind milestone with a real victim. `real_harm: true` and `critical` follow the government's account, but the record is marked **`disputed`**: Recorded Future News's review of the portal's archived code indicates it directed visitors to an unauthenticated endpoint, so whether the crossing was truly *"unauthorised"* is contested (both sides are set out in the body). Dated to the day the government went public (24 September 2026, Australian time); Reuters carried the announcement on 23 September US time. Grading criteria: [severity.md](../../taxonomy/severity.md) and [confidence.md](../../taxonomy/confidence.md).</sub>
 
 ## Related
 
