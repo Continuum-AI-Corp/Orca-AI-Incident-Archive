@@ -249,6 +249,7 @@ https://orca.security/resources/blog/roguepilot-github-copilot-vulnerability/
 https://osv.dev/vulnerability/PYSEC-2026-3479
 https://phoenix.security/trapdoor-supply-chain-ai-poisoning-npm-pypi-crates/
 https://ppc.land/comet-browser-faces-multiple-security-vulnerabilities-from-prompt-injection/
+https://qrator.net/blog/details/x47.c-botnet
 https://rafter.so/blog/incidents/ai-agent-security-timeline-2025-2026
 https://rebora.io/blog/spyder-and-maxss-chrome-extension-vulnerabilities-put-millions-at-risk
 https://red.anthropic.com/2026/attack-navigator/
@@ -497,6 +498,7 @@ https://www.infoq.cn/article/CEphwKjzAe7LzbOriLcq
 https://www.infosecurity-magazine.com/news/abuse-cursor-agent-ransomware/
 https://www.infosecurity-magazine.com/news/indirect-prompt-injection-web/
 https://www.infosecurity-magazine.com/news/rathat-android-malware-ai-steal/
+https://www.infosecurity-magazine.com/news/x47c-botnet-ai-api-draining-18/
 https://www.ipa.go.jp/digital/ai/security/ai-security-bulletin.html
 https://www.irregular.com/research/assessing-gpt-5.6-sol
 https://www.ithome.com/1/003/876.htm
@@ -572,6 +574,7 @@ https://www.securityweek.com/github-confirms-hack-impacting-3800-internal-reposi
 https://www.securityweek.com/hackers-exploit-langflow-vulnerability-for-remote-code-execution/
 https://www.securityweek.com/in-other-news-clop-leak-site-takeover-docker-botnet-hunts-ai-keys-water-utility-exposure/
 https://www.securityweek.com/in-other-news-ransomware-developer-sentenced-plugin4shell-ai-attack-critical-sap-flaw/
+https://www.securityweek.com/new-x47-c-windows-botnet-weaponizes-xai-grok-ai-api-draining/
 https://www.securityweek.com/north-korean-hackers-blamed-for-mastra-npm-supply-chain-attack/
 https://www.securityweek.com/openai-says-its-models-engaged-with-us-government-websites-in-new-model-misbehavior-disclosure/
 https://www.securityweek.com/salesbleed-flaws-in-salesforce-agentforce-enabled-zero-click-data-exfiltration/

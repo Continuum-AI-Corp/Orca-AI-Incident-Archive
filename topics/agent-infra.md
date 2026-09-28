@@ -1,6 +1,6 @@
 # Topic · Agent infrastructure exposure (INFRA)
 
-![records](https://img.shields.io/badge/records-101-48545A?style=flat-square) ![type](https://img.shields.io/badge/type-INFRA_CRED-B08528?style=flat-square)
+![records](https://img.shields.io/badge/records-102-48545A?style=flat-square) ![type](https://img.shields.io/badge/type-INFRA_CRED-B08528?style=flat-square)
 
 > The prose on this page is taken from the archive's original research report; the "All records" table below is compiled automatically from the frontmatter in `incidents/`, and the two are updated together.
 
@@ -26,7 +26,7 @@ The role Langflow / LiteLLM / Flowise / OpenClaw play in 2026 is the one Fortine
 ---
 
 <!-- BEGIN:incidents -->
-## All records (101)
+## All records (102)
 
 | Date | Record | Type | Severity | Confidence | Real harm |
 |---|---|---|---|---|---|
@@ -130,6 +130,7 @@ The role Langflow / LiteLLM / Flowise / OpenClaw play in 2026 is the one Fortine
 | `2026-09-22` | [CARBONATO: a Docker botnet installs Hermes Agent and loots AI API keys over Telegram](../incidents/2026-09/2026-09-22-carbonato-docker-hermes-agent-botnet.md) | `WEAPON` `INFRA` `CRED` | **High** | A | ✅ |
 | `2026-09-23` | [IBM FTM: unauthenticated RAG poisoning could steer the payment agent's MCP tools](../incidents/2026-09/2026-09-23-ibm-ftm-rag-poisoning.md) | `IPI` `INFRA` | Medium | A | — |
 | `2026-09-23` | [sckit: MemTensor's AI memory packages were backdoored to steal agent credentials and prompts](../incidents/2026-09/2026-09-23-memtensor-sckit-supply-chain.md) | `SUPPLY` `CRED` | **High** | A | — |
+| `2026-09-23` | [x47.c: a Windows botnet-for-sale that drains AI API credit and uses Grok to choose how it hides](../incidents/2026-09/2026-09-23-x47c-botnet-grok-ai-api-drain.md) | `WEAPON` `CRED` | Medium | A | — |
 | `2026-09-25` | [OpenAI's agents reached US government websites - SEC and Census data, and a failed hack of the Education Department](../incidents/2026-09/2026-09-25-openai-agents-us-government-sites.md) | `EVAL` `CRED` | Medium | A | — |
 <!-- END:incidents -->
 

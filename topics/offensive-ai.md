@@ -1,6 +1,6 @@
 # Topic · Offensive AI capability evolution (WEAPON)
 
-![records](https://img.shields.io/badge/records-55-48545A?style=flat-square) ![type](https://img.shields.io/badge/type-WEAPON-B08528?style=flat-square)
+![records](https://img.shields.io/badge/records-56-48545A?style=flat-square) ![type](https://img.shields.io/badge/type-WEAPON-B08528?style=flat-square)
 
 > The prose on this page is taken from the archive's original research report; the "All records" table below is compiled automatically from the frontmatter in `incidents/`, and the two are updated together.
 
@@ -60,7 +60,7 @@
 ---
 
 <!-- BEGIN:incidents -->
-## All records (55)
+## All records (56)
 
 | Date | Record | Type | Severity | Confidence | Real harm |
 |---|---|---|---|---|---|
@@ -119,6 +119,7 @@
 | `2026-09-22` | [EvilTokens: Microsoft dismantles an AI-powered PhaaS that compromised 12,000 inboxes](../incidents/2026-09/2026-09-22-eviltokens-disrupted.md) | `WEAPON` | **High** | A | ✅ |
 | `2026-09-22` | ★ [Gambit: three AI harnesses stole 600,000 card records from online retailers](../incidents/2026-09/2026-09-22-gambit-ai-agent-retail-card-theft.md) | `WEAPON` | **Critical** | A | ✅ |
 | `2026-09-22` | [100 hours, one agent: what the VulnHouse autonomous-pentest marathon produced](../incidents/2026-09/2026-09-22-vulnhouse-100h-agent-pentest.md) | `WEAPON` | **High** | A | — |
+| `2026-09-23` | [x47.c: a Windows botnet-for-sale that drains AI API credit and uses Grok to choose how it hides](../incidents/2026-09/2026-09-23-x47c-botnet-grok-ai-api-drain.md) | `WEAPON` `CRED` | Medium | A | — |
 <!-- END:incidents -->
 
 ---

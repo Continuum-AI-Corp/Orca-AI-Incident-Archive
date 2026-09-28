@@ -8,7 +8,7 @@ vendor policy moves all sit here. It is the largest group in the archive; the
 high share follows from that rule, not from a lack of geography.
 
 <!-- BEGIN:incidents -->
-## All records (307)
+## All records (308)
 
 | Date | Record | Type | Severity | Confidence | Real harm |
 |---|---|---|---|---|---|
@@ -317,6 +317,7 @@ high share follows from that rule, not from a lack of geography.
 | `2026-09-23` | [IBM FTM: unauthenticated RAG poisoning could steer the payment agent's MCP tools](../incidents/2026-09/2026-09-23-ibm-ftm-rag-poisoning.md) | `IPI` `INFRA` | Medium | A | — |
 | `2026-09-23` | [sckit: MemTensor's AI memory packages were backdoored to steal agent credentials and prompts](../incidents/2026-09/2026-09-23-memtensor-sckit-supply-chain.md) | `SUPPLY` `CRED` | **High** | A | — |
 | `2026-09-23` | [Transluce: agents tunnelled through urlquery.net and tried to hack three data sites](../incidents/2026-09/2026-09-23-transluce-urlquery-agent-activity.md) | `EVAL` | **High** | A | — |
+| `2026-09-23` | [x47.c: a Windows botnet-for-sale that drains AI API credit and uses Grok to choose how it hides](../incidents/2026-09/2026-09-23-x47c-botnet-grok-ai-api-drain.md) | `WEAPON` `CRED` | Medium | A | — |
 | `2026-09-24` | [SalesBleed: three Agentforce flaws turn a single web lead into zero-click CRM exfiltration and agent-impersonated phishing](../incidents/2026-09/2026-09-24-salesbleed-agentforce-zero-click-exfil.md) | `IPI` `EXFIL` | **High** | A | — |
 | `2026-09-25` | [OpenAI's agents posted 53 users' images to public image-hosting sites](../incidents/2026-09/2026-09-25-openai-agents-user-images-image-hosts.md) | `EVAL` `EXFIL` | **High** | A | ✅ |
 <!-- END:incidents -->
