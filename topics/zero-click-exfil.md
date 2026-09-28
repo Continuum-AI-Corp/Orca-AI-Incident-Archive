@@ -1,6 +1,6 @@
 # Topic · Zero-click data exfiltration chain (IPI + EXFIL)
 
-![records](https://img.shields.io/badge/records-55-48545A?style=flat-square) ![type](https://img.shields.io/badge/type-IPI_EXFIL-B08528?style=flat-square)
+![records](https://img.shields.io/badge/records-57-48545A?style=flat-square) ![type](https://img.shields.io/badge/type-IPI_EXFIL-B08528?style=flat-square)
 
 > The prose on this page is taken from the archive's original research report; the "All records" table below is compiled automatically from the frontmatter in `incidents/`, and the two are updated together.
 
@@ -29,7 +29,7 @@ The same pattern was replicated 13 times over 15 months, across 6 vendors. **Thi
 ---
 
 <!-- BEGIN:incidents -->
-## All records (55)
+## All records (57)
 
 | Date | Record | Type | Severity | Confidence | Real harm |
 |---|---|---|---|---|---|
@@ -79,6 +79,7 @@ The same pattern was replicated 13 times over 15 months, across 6 vendors. **Thi
 | `2026-08-11` | [GhostSplice: splitting one refused request across three trusted channels takes compliance from 42% to 82%](../incidents/2026-08/2026-08-11-ghostsplice-cross-channel-fragmentation.md) | `MCP` `IPI` `EXFIL` | **High** | B | — |
 | `2026-08-18` | [CoSnitch (CVE-2026-24301)](../incidents/2026-08/2026-08-18-cosnitch.md) | `IPI` `EXFIL` | **High** | A | — |
 | `2026-08-19` | [Grok "cryptographic context injection": encrypted instructions, plaintext data](../incidents/2026-08/2026-08-19-grok-mi-ma-xue-wen.md) | `IPI` `EXFIL` | **High** | A | — |
+| `2026-09-02` | [MaxKB CVE-2026-77521: a prompt-injectable agent runs shell commands on the host (CVSS 10.0)](../incidents/2026-09/2026-09-02-maxkb-prompt-injection-command-execution.md) | `IPI` `INFRA` | **High** | A | — |
 | `2026-09-08` | [ChatGPT sandbox flaw pipes a victim's Gmail data into the attacker's account](../incidents/2026-09/2026-09-08-chatgpt-gmail-sha-xiang-que.md) | `EXFIL` | **High** | A | ✅ |
 | `2026-09-08` | [Infostealers turn to AI-agent data: collection rules now target Claude, Cursor and Codex](../incidents/2026-09/2026-09-08-gen-digital-infostealers-ai-agent-data.md) | `CRED` `EXFIL` | Medium | A | — |
 | `2026-09-09` | [Workflow identity hijacking: Noma Labs turns an ordinary support email into privileged data access](../incidents/2026-09/2026-09-09-noma-workflow-identity-hijacking.md) | `INFRA` `EXFIL` | Medium | A | — |
@@ -88,6 +89,7 @@ The same pattern was replicated 13 times over 15 months, across 6 vendors. **Thi
 | `2026-09-23` | [Dark Sourcery: attackers poison chatbot answers across 374 companies](../incidents/2026-09/2026-09-23-dark-sourcery-chatbot-poisoning.md) | `IPI` | **High** | B | ✅ |
 | `2026-09-23` | [IBM FTM: unauthenticated RAG poisoning could steer the payment agent's MCP tools](../incidents/2026-09/2026-09-23-ibm-ftm-rag-poisoning.md) | `IPI` `INFRA` | Medium | A | — |
 | `2026-09-24` | [SalesBleed: three Agentforce flaws turn a single web lead into zero-click CRM exfiltration and agent-impersonated phishing](../incidents/2026-09/2026-09-24-salesbleed-agentforce-zero-click-exfil.md) | `IPI` `EXFIL` | **High** | A | — |
+| `2026-09-25` | [OpenAI's agents posted 53 users' images to public image-hosting sites](../incidents/2026-09/2026-09-25-openai-agents-user-images-image-hosts.md) | `EVAL` `EXFIL` | **High** | A | ✅ |
 <!-- END:incidents -->
 
 ---

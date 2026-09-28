@@ -1,6 +1,6 @@
 # Topic · Agent infrastructure exposure (INFRA)
 
-![records](https://img.shields.io/badge/records-99-48545A?style=flat-square) ![type](https://img.shields.io/badge/type-INFRA_CRED-B08528?style=flat-square)
+![records](https://img.shields.io/badge/records-101-48545A?style=flat-square) ![type](https://img.shields.io/badge/type-INFRA_CRED-B08528?style=flat-square)
 
 > The prose on this page is taken from the archive's original research report; the "All records" table below is compiled automatically from the frontmatter in `incidents/`, and the two are updated together.
 
@@ -26,7 +26,7 @@ The role Langflow / LiteLLM / Flowise / OpenClaw play in 2026 is the one Fortine
 ---
 
 <!-- BEGIN:incidents -->
-## All records (99)
+## All records (101)
 
 | Date | Record | Type | Severity | Confidence | Real harm |
 |---|---|---|---|---|---|
@@ -113,6 +113,7 @@ The role Langflow / LiteLLM / Flowise / OpenClaw play in 2026 is the one Fortine
 | `2026-08-26` | [GitLab Duo's Claude agent can run arbitrary commands in CI](../incidents/2026-08/2026-08-26-gitlab-duo-claude-agent.md) | `INFRA` | **High** | A | — |
 | `2026-09-02` | ★ [Langflow CVE-2026-0768: the 12th Langflow flaw exploited in the wild this year](../incidents/2026-09/2026-09-02-langflow-jin-di-ye-li.md) | `INFRA` `CRED` | **Critical** | A | ✅ |
 | `2026-09-02` | [Any bearer token opens LiteLLM's MCP endpoint: CVE-2026-59822 enters CISA KEV](../incidents/2026-09/2026-09-02-litellm-mcp-auth-bypass-kev.md) | `INFRA` `MCP` | **High** | A | ✅ |
+| `2026-09-02` | [MaxKB CVE-2026-77521: a prompt-injectable agent runs shell commands on the host (CVSS 10.0)](../incidents/2026-09/2026-09-02-maxkb-prompt-injection-command-execution.md) | `IPI` `INFRA` | **High** | A | — |
 | `2026-09-02` | [MaxKB: the agent dispatch path lets a user denied a tool still call it and read its credentials](../incidents/2026-09/2026-09-02-maxkb-tool-permission-bypass.md) | `INFRA` `CRED` | Medium | A | — |
 | `2026-09-08` | [Infostealers turn to AI-agent data: collection rules now target Claude, Cursor and Codex](../incidents/2026-09/2026-09-08-gen-digital-infostealers-ai-agent-data.md) | `CRED` `EXFIL` | Medium | A | — |
 | `2026-09-08` | [DeepSeek Harness CVE-2026-82533: a sandboxed agent disables its own sandbox with one command](../incidents/2026-09/2026-09-08-ox-deepseek-harness-cve-2026-82533.md) | `SANDBOX` `INFRA` | **High** | A | — |
@@ -129,6 +130,7 @@ The role Langflow / LiteLLM / Flowise / OpenClaw play in 2026 is the one Fortine
 | `2026-09-22` | [CARBONATO: a Docker botnet installs Hermes Agent and loots AI API keys over Telegram](../incidents/2026-09/2026-09-22-carbonato-docker-hermes-agent-botnet.md) | `WEAPON` `INFRA` `CRED` | **High** | A | ✅ |
 | `2026-09-23` | [IBM FTM: unauthenticated RAG poisoning could steer the payment agent's MCP tools](../incidents/2026-09/2026-09-23-ibm-ftm-rag-poisoning.md) | `IPI` `INFRA` | Medium | A | — |
 | `2026-09-23` | [sckit: MemTensor's AI memory packages were backdoored to steal agent credentials and prompts](../incidents/2026-09/2026-09-23-memtensor-sckit-supply-chain.md) | `SUPPLY` `CRED` | **High** | A | — |
+| `2026-09-25` | [OpenAI's agents reached US government websites - SEC and Census data, and a failed hack of the Education Department](../incidents/2026-09/2026-09-25-openai-agents-us-government-sites.md) | `EVAL` `CRED` | Medium | A | — |
 <!-- END:incidents -->
 
 ---

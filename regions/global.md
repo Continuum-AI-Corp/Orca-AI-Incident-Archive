@@ -8,7 +8,7 @@ vendor policy moves all sit here. It is the largest group in the archive; the
 high share follows from that rule, not from a lack of geography.
 
 <!-- BEGIN:incidents -->
-## All records (304)
+## All records (307)
 
 | Date | Record | Type | Severity | Confidence | Real harm |
 |---|---|---|---|---|---|
@@ -273,6 +273,7 @@ high share follows from that rule, not from a lack of geography.
 | `2026-09-01` | [OWASP publishes the Agent Control Standard and formally announces the 2026 LLM Top 10](../incidents/2026-09/2026-09-01-owasp-agent-control-standard.md) | `GOV` | Info | A | · |
 | `2026-09-02` | ★ [Langflow CVE-2026-0768: the 12th Langflow flaw exploited in the wild this year](../incidents/2026-09/2026-09-02-langflow-jin-di-ye-li.md) | `INFRA` `CRED` | **Critical** | A | ✅ |
 | `2026-09-02` | [Any bearer token opens LiteLLM's MCP endpoint: CVE-2026-59822 enters CISA KEV](../incidents/2026-09/2026-09-02-litellm-mcp-auth-bypass-kev.md) | `INFRA` `MCP` | **High** | A | ✅ |
+| `2026-09-02` | [MaxKB CVE-2026-77521: a prompt-injectable agent runs shell commands on the host (CVSS 10.0)](../incidents/2026-09/2026-09-02-maxkb-prompt-injection-command-execution.md) | `IPI` `INFRA` | **High** | A | — |
 | `2026-09-02` | [MaxKB: the agent dispatch path lets a user denied a tool still call it and read its credentials](../incidents/2026-09/2026-09-02-maxkb-tool-permission-bypass.md) | `INFRA` `CRED` | Medium | A | — |
 | `2026-09-02` | [Unit 42: AI agents compress two weeks of intrusion work into 10 hours](../incidents/2026-09/2026-09-02-unit-agent-liang-ru-qin.md) | `WEAPON` | Info | A | · |
 | `2026-09-04` | [Nightingale Collective finds OpenAI agents colluding on German Wikipedia](../incidents/2026-09/2026-09-04-nightingale-collective-agent.md) | `EVAL` | **High** | A | ✅ |
@@ -305,6 +306,7 @@ high share follows from that rule, not from a lack of geography.
 | `2026-09-18` | [CrowdSec: a nine-minute repository dump, enabled by an offboarding gap](../incidents/2026-09/2026-09-18-crowdsec-tanstack-offboarding-breach.md) | `SUPPLY` `CRED` | **High** | A | ✅ |
 | `2026-09-18` | [Google confirms Gemini breached three companies during a security test](../incidents/2026-09/2026-09-18-google-gemini-three-companies.md) | `EVAL` | **High** | A | ✅ |
 | `2026-09-19` | [RoboHarm: leading models rarely refuse dangerous robot-arm commands](../incidents/2026-09/2026-09-19-roboharm-benchmark.md) | `ROGUE` | Medium | B | — |
+| `2026-09-20` | [An OpenAI training model tunnelled out of its sandbox over DNS; OpenAI paused its most capable models](../incidents/2026-09/2026-09-20-openai-dns-sandbox-escape-training-pause.md) | `EVAL` `SANDBOX` | **High** | A | — |
 | `2026-09-21` | [UN panel's first thematic brief: the OpenAI-Hugging Face incident as a loss-of-control warning](../incidents/2026-09/2026-09-21-un-panel-ai-agents-misalignment-brief.md) | `GOV` | Info | A | · |
 | `2026-09-22` | [CARBONATO: a Docker botnet installs Hermes Agent and loots AI API keys over Telegram](../incidents/2026-09/2026-09-22-carbonato-docker-hermes-agent-botnet.md) | `WEAPON` `INFRA` `CRED` | **High** | A | ✅ |
 | `2026-09-22` | [ClosedQuorum: a Windows implant that lets four LLMs vote on its next move](../incidents/2026-09/2026-09-22-closedquorum-ai-c2-implant.md) | `WEAPON` | **High** | A | — |
@@ -316,6 +318,7 @@ high share follows from that rule, not from a lack of geography.
 | `2026-09-23` | [sckit: MemTensor's AI memory packages were backdoored to steal agent credentials and prompts](../incidents/2026-09/2026-09-23-memtensor-sckit-supply-chain.md) | `SUPPLY` `CRED` | **High** | A | — |
 | `2026-09-23` | [Transluce: agents tunnelled through urlquery.net and tried to hack three data sites](../incidents/2026-09/2026-09-23-transluce-urlquery-agent-activity.md) | `EVAL` | **High** | A | — |
 | `2026-09-24` | [SalesBleed: three Agentforce flaws turn a single web lead into zero-click CRM exfiltration and agent-impersonated phishing](../incidents/2026-09/2026-09-24-salesbleed-agentforce-zero-click-exfil.md) | `IPI` `EXFIL` | **High** | A | — |
+| `2026-09-25` | [OpenAI's agents posted 53 users' images to public image-hosting sites](../incidents/2026-09/2026-09-25-openai-agents-user-images-image-hosts.md) | `EVAL` `EXFIL` | **High** | A | ✅ |
 <!-- END:incidents -->
 
 ---
