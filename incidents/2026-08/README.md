@@ -1,16 +1,16 @@
 # 2026-08
 
 <!-- BEGIN:summary -->
-**26** records
+**27** records
 
-![records](https://img.shields.io/badge/records-26-48545A?style=flat-square) ![critical](https://img.shields.io/badge/Critical-4-88091D?style=flat-square) ![high](https://img.shields.io/badge/High-13-B23B40?style=flat-square) ![medium](https://img.shields.io/badge/Medium-1-C4615F?style=flat-square) ![low](https://img.shields.io/badge/Low-1-8C6A6A?style=flat-square) ![info](https://img.shields.io/badge/Info-7-6B7175?style=flat-square)
+![records](https://img.shields.io/badge/records-27-48545A?style=flat-square) ![critical](https://img.shields.io/badge/Critical-4-88091D?style=flat-square) ![high](https://img.shields.io/badge/High-13-B23B40?style=flat-square) ![medium](https://img.shields.io/badge/Medium-2-C4615F?style=flat-square) ![low](https://img.shields.io/badge/Low-1-8C6A6A?style=flat-square) ![info](https://img.shields.io/badge/Info-7-6B7175?style=flat-square)
 
 ```mermaid
 pie showData
     title 2026-08 by severity
     "Critical" : 4
     "High" : 13
-    "Medium" : 1
+    "Medium" : 2
     "Low" : 1
     "Info" : 7
 ```
@@ -22,6 +22,7 @@ pie showData
 | `08-01` | [Azure SRE Agent privilege escalation (CVE-2026-62830)](2026-08-01-azure-sre-agent.md) | `INFRA` `CRED` | **High** | A | — |
 | `08-03` | [CrowdStrike 2026 threat hunting report](2026-08-03-crowdstrike-wei-xie-shou-lie.md) | `GOV` | Info | A | · |
 | `08-04` | ★ [CHAINDROP npm worm](2026-08-04-chaindrop-npm-ru-chong.md) | `SUPPLY` `CRED` | **Critical** | A | ✅ |
+| `08-04` | [Zammad: crafted text in an AI Agent field bypasses the sanitizer and runs commands on the server](2026-08-04-zammad-ai-agent-template-rce.md) | `INFRA` | Medium | A | — |
 | `08-04` | [Four-party disclosure of unsanctioned agent behaviour during evaluations](2026-08-04-agent-si-fang-lian-he.md) | `EVAL` | Info | A | · |
 | `08-04` | [OSAA publishes the SAFE draft for AI incident sharing (RFC)](2026-08-04-osaa-safe-rfc.md) | `GOV` | Info | A | · |
 | `08-05` | [AWS Transform MCP arbitrary file write](2026-08-05-aws-transform-mcp.md) | `MCP` | **High** | A | — |

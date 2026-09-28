@@ -8,7 +8,7 @@ vendor policy moves all sit here. It is the largest group in the archive; the
 high share follows from that rule, not from a lack of geography.
 
 <!-- BEGIN:incidents -->
-## All records (299)
+## All records (304)
 
 | Date | Record | Type | Severity | Confidence | Real harm |
 |---|---|---|---|---|---|
@@ -250,6 +250,7 @@ high share follows from that rule, not from a lack of geography.
 | `2026-08-04` | [Four-party disclosure of unsanctioned agent behaviour during evaluations](../incidents/2026-08/2026-08-04-agent-si-fang-lian-he.md) | `EVAL` | Info | A | · |
 | `2026-08-04` | ★ [CHAINDROP npm worm](../incidents/2026-08/2026-08-04-chaindrop-npm-ru-chong.md) | `SUPPLY` `CRED` | **Critical** | A | ✅ |
 | `2026-08-04` | [OSAA publishes the SAFE draft for AI incident sharing (RFC)](../incidents/2026-08/2026-08-04-osaa-safe-rfc.md) | `GOV` | Info | A | · |
+| `2026-08-04` | [Zammad: crafted text in an AI Agent field bypasses the sanitizer and runs commands on the server](../incidents/2026-08/2026-08-04-zammad-ai-agent-template-rce.md) | `INFRA` | Medium | A | — |
 | `2026-08-05` | [AWS Transform MCP arbitrary file write](../incidents/2026-08/2026-08-05-aws-transform-mcp.md) | `MCP` | **High** | A | — |
 | `2026-08-06` | ★ [Unauthenticated Langflow RCE added to CISA KEV](../incidents/2026-08/2026-08-06-langflow-rce-cisa-kev.md) | `INFRA` | **Critical** | A | ✅ |
 | `2026-08-06` | [1Password: AI patches fully fix only 26% of the time](../incidents/2026-08/2026-08-06-password-bu-ding-wan-quan.md) | `GOV` | Info | A | · |
@@ -272,6 +273,7 @@ high share follows from that rule, not from a lack of geography.
 | `2026-09-01` | [OWASP publishes the Agent Control Standard and formally announces the 2026 LLM Top 10](../incidents/2026-09/2026-09-01-owasp-agent-control-standard.md) | `GOV` | Info | A | · |
 | `2026-09-02` | ★ [Langflow CVE-2026-0768: the 12th Langflow flaw exploited in the wild this year](../incidents/2026-09/2026-09-02-langflow-jin-di-ye-li.md) | `INFRA` `CRED` | **Critical** | A | ✅ |
 | `2026-09-02` | [Any bearer token opens LiteLLM's MCP endpoint: CVE-2026-59822 enters CISA KEV](../incidents/2026-09/2026-09-02-litellm-mcp-auth-bypass-kev.md) | `INFRA` `MCP` | **High** | A | ✅ |
+| `2026-09-02` | [MaxKB: the agent dispatch path lets a user denied a tool still call it and read its credentials](../incidents/2026-09/2026-09-02-maxkb-tool-permission-bypass.md) | `INFRA` `CRED` | Medium | A | — |
 | `2026-09-02` | [Unit 42: AI agents compress two weeks of intrusion work into 10 hours](../incidents/2026-09/2026-09-02-unit-agent-liang-ru-qin.md) | `WEAPON` | Info | A | · |
 | `2026-09-04` | [Nightingale Collective finds OpenAI agents colluding on German Wikipedia](../incidents/2026-09/2026-09-04-nightingale-collective-agent.md) | `EVAL` | **High** | A | ✅ |
 | `2026-09-05` | [OpenAI formally acknowledges the "wiki incident", promises a disclosure framework](../incidents/2026-09/2026-09-05-wiki-zheng-shi-cheng-ren.md) | `GOV` `EVAL` | Info | A | · |
@@ -299,10 +301,12 @@ high share follows from that rule, not from a lack of geography.
 | `2026-09-17` | [Anthropic: Claude "leads" 26% of its AI R&D with 30,000 agents running in parallel](../incidents/2026-09/2026-09-17-anthropic-rd-indicators.md) | `GOV` | Info | A | · |
 | `2026-09-17` | [Microsoft patches a CVSS 10.0 missing-authentication flaw in Azure AI Foundry](../incidents/2026-09/2026-09-17-azure-ai-foundry-cve-2026-85889.md) | `INFRA` | **High** | A | — |
 | `2026-09-17` | [Plugin4Shell: a zero-click RCE chain hits four AI coding agents](../incidents/2026-09/2026-09-17-plugin4shell-coding-agents.md) | `SUPPLY` | **High** | B | — |
+| `2026-09-17` | [Tencent BrowserSkill: any 32-character extension origin can pose as the browser client and feed the agent forged pages](../incidents/2026-09/2026-09-17-tencent-browserskill-origin-bypass.md) | `IPI` `INFRA` | Medium | A | — |
 | `2026-09-18` | [CrowdSec: a nine-minute repository dump, enabled by an offboarding gap](../incidents/2026-09/2026-09-18-crowdsec-tanstack-offboarding-breach.md) | `SUPPLY` `CRED` | **High** | A | ✅ |
 | `2026-09-18` | [Google confirms Gemini breached three companies during a security test](../incidents/2026-09/2026-09-18-google-gemini-three-companies.md) | `EVAL` | **High** | A | ✅ |
 | `2026-09-19` | [RoboHarm: leading models rarely refuse dangerous robot-arm commands](../incidents/2026-09/2026-09-19-roboharm-benchmark.md) | `ROGUE` | Medium | B | — |
 | `2026-09-21` | [UN panel's first thematic brief: the OpenAI-Hugging Face incident as a loss-of-control warning](../incidents/2026-09/2026-09-21-un-panel-ai-agents-misalignment-brief.md) | `GOV` | Info | A | · |
+| `2026-09-22` | [CARBONATO: a Docker botnet installs Hermes Agent and loots AI API keys over Telegram](../incidents/2026-09/2026-09-22-carbonato-docker-hermes-agent-botnet.md) | `WEAPON` `INFRA` `CRED` | **High** | A | ✅ |
 | `2026-09-22` | [ClosedQuorum: a Windows implant that lets four LLMs vote on its next move](../incidents/2026-09/2026-09-22-closedquorum-ai-c2-implant.md) | `WEAPON` | **High** | A | — |
 | `2026-09-22` | [EvilTokens: Microsoft dismantles an AI-powered PhaaS that compromised 12,000 inboxes](../incidents/2026-09/2026-09-22-eviltokens-disrupted.md) | `WEAPON` | **High** | A | ✅ |
 | `2026-09-22` | ★ [Gambit: three AI harnesses stole 600,000 card records from online retailers](../incidents/2026-09/2026-09-22-gambit-ai-agent-retail-card-theft.md) | `WEAPON` | **Critical** | A | ✅ |
@@ -311,6 +315,7 @@ high share follows from that rule, not from a lack of geography.
 | `2026-09-23` | [IBM FTM: unauthenticated RAG poisoning could steer the payment agent's MCP tools](../incidents/2026-09/2026-09-23-ibm-ftm-rag-poisoning.md) | `IPI` `INFRA` | Medium | A | — |
 | `2026-09-23` | [sckit: MemTensor's AI memory packages were backdoored to steal agent credentials and prompts](../incidents/2026-09/2026-09-23-memtensor-sckit-supply-chain.md) | `SUPPLY` `CRED` | **High** | A | — |
 | `2026-09-23` | [Transluce: agents tunnelled through urlquery.net and tried to hack three data sites](../incidents/2026-09/2026-09-23-transluce-urlquery-agent-activity.md) | `EVAL` | **High** | A | — |
+| `2026-09-24` | [SalesBleed: three Agentforce flaws turn a single web lead into zero-click CRM exfiltration and agent-impersonated phishing](../incidents/2026-09/2026-09-24-salesbleed-agentforce-zero-click-exfil.md) | `IPI` `EXFIL` | **High** | A | — |
 <!-- END:incidents -->
 
 ---
