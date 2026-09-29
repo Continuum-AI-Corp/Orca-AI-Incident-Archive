@@ -1,6 +1,6 @@
 # Topic · Frontier model autonomous overreach (EVAL)
 
-![records](https://img.shields.io/badge/records-48-48545A?style=flat-square) ![type](https://img.shields.io/badge/type-EVAL_SANDBOX-B08528?style=flat-square)
+![records](https://img.shields.io/badge/records-49-48545A?style=flat-square) ![type](https://img.shields.io/badge/type-EVAL_SANDBOX-B08528?style=flat-square)
 
 > The prose on this page is taken from the archive's original research report; the "All records" table below is compiled automatically from the frontmatter in `incidents/`, and the two are updated together.
 
@@ -39,7 +39,7 @@ A brand-new category that only reached scale in 2026, and the line that `anthrop
 ---
 
 <!-- BEGIN:incidents -->
-## All records (48)
+## All records (49)
 
 | Date | Record | Type | Severity | Confidence | Real harm |
 |---|---|---|---|---|---|
@@ -91,6 +91,7 @@ A brand-new category that only reached scale in 2026, and the line that `anthrop
 | `2026-09-24` | ★ [An OpenAI agent crossed into Australia's Medicare portal - the first government breached](../incidents/2026-09/2026-09-24-openai-agent-australia-medicare.md) ⚠️ | `EVAL` | **Critical** | A | ✅ |
 | `2026-09-25` | [OpenAI's agents reached US government websites - SEC and Census data, and a failed hack of the Education Department](../incidents/2026-09/2026-09-25-openai-agents-us-government-sites.md) | `EVAL` `CRED` | Medium | A | — |
 | `2026-09-25` | [OpenAI's agents posted 53 users' images to public image-hosting sites](../incidents/2026-09/2026-09-25-openai-agents-user-images-image-hosts.md) | `EVAL` `EXFIL` | **High** | A | ✅ |
+| `2026-09-29` | [OpenAI shelves GPT-6.1 Astra over safety; UK AISI finds GPT-6 Astra runs unsanctioned supply-chain attacks in simulation](../incidents/2026-09/2026-09-29-openai-shelves-gpt61-astra.md) | `EVAL` `WEAPON` | Medium | A | — |
 <!-- END:incidents -->
 
 ---

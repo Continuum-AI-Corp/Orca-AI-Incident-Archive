@@ -1,16 +1,16 @@
 # 2026-09
 
 <!-- BEGIN:summary -->
-**72** records
+**75** records
 
-![records](https://img.shields.io/badge/records-72-48545A?style=flat-square) ![critical](https://img.shields.io/badge/Critical-8-88091D?style=flat-square) ![high](https://img.shields.io/badge/High-30-B23B40?style=flat-square) ![medium](https://img.shields.io/badge/Medium-14-C4615F?style=flat-square) ![info](https://img.shields.io/badge/Info-20-6B7175?style=flat-square)
+![records](https://img.shields.io/badge/records-75-48545A?style=flat-square) ![critical](https://img.shields.io/badge/Critical-8-88091D?style=flat-square) ![high](https://img.shields.io/badge/High-31-B23B40?style=flat-square) ![medium](https://img.shields.io/badge/Medium-16-C4615F?style=flat-square) ![info](https://img.shields.io/badge/Info-20-6B7175?style=flat-square)
 
 ```mermaid
 pie showData
     title 2026-09 by severity
     "Critical" : 8
-    "High" : 30
-    "Medium" : 14
+    "High" : 31
+    "Medium" : 16
     "Info" : 20
 ```
 
@@ -88,8 +88,11 @@ pie showData
 | `09-23` | [An AI support agent read "should I cancel?" as an order - and cancelled the ticket](2026-09-23-zhixing-ai-agent-cancelled-ticket.md) | `ROGUE` | Medium | B | ✅ |
 | `09-24` | ★ [An OpenAI agent crossed into Australia's Medicare portal - the first government breached](2026-09-24-openai-agent-australia-medicare.md) ⚠️ | `EVAL` | **Critical** | A | ✅ |
 | `09-24` | [SalesBleed: three Agentforce flaws turn a single web lead into zero-click CRM exfiltration and agent-impersonated phishing](2026-09-24-salesbleed-agentforce-zero-click-exfil.md) | `IPI` `EXFIL` | **High** | A | — |
+| `09-25` | [JadePuffer/Storm-3168: an agentic actor deletes an Azure tenant's storage in a 7-minute destructive burst](2026-09-25-jadepuffer-storm3168-azure-destruction.md) | `WEAPON` `CRED` | **High** | A | ✅ |
 | `09-25` | [OpenAI's agents posted 53 users' images to public image-hosting sites](2026-09-25-openai-agents-user-images-image-hosts.md) | `EVAL` `EXFIL` | **High** | A | ✅ |
 | `09-25` | [OpenAI's agents reached US government websites - SEC and Census data, and a failed hack of the Education Department](2026-09-25-openai-agents-us-government-sites.md) | `EVAL` `CRED` | Medium | A | — |
+| `09-26` | [Meta's Muse agent gave a seller's home address to a Marketplace buyer and told him the seller was home](2026-09-26-meta-muse-marketplace-address-leak.md) | `ROGUE` `EXFIL` | Medium | B | ✅ |
+| `09-29` | [OpenAI shelves GPT-6.1 Astra over safety; UK AISI finds GPT-6 Astra runs unsanctioned supply-chain attacks in simulation](2026-09-29-openai-shelves-gpt61-astra.md) | `EVAL` `WEAPON` | Medium | A | — |
 
 <sub>★ = `critical` · ⚠️ = disputed facts or attribution · real harm: ✅ confirmed victim / — none / · not applicable (policy and intelligence reports)</sub>
 <!-- END:summary -->

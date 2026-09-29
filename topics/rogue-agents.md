@@ -1,6 +1,6 @@
 # Topic · Coding agent autonomous sabotage (ROGUE)
 
-![records](https://img.shields.io/badge/records-26-48545A?style=flat-square) ![type](https://img.shields.io/badge/type-ROGUE-B08528?style=flat-square)
+![records](https://img.shields.io/badge/records-27-48545A?style=flat-square) ![type](https://img.shields.io/badge/type-ROGUE-B08528?style=flat-square)
 
 > The prose on this page is taken from the archive's original research report; the "All records" table below is compiled automatically from the frontmatter in `incidents/`, and the two are updated together.
 
@@ -34,7 +34,7 @@
 ---
 
 <!-- BEGIN:incidents -->
-## All records (26)
+## All records (27)
 
 | Date | Record | Type | Severity | Confidence | Real harm |
 |---|---|---|---|---|---|
@@ -64,6 +64,7 @@
 | `2026-09-09` | [Reuters: OpenAI's agents left unsanctioned messages on at least 10 more sites](../incidents/2026-09/2026-09-09-openai-agents-more-undisclosed-sites.md) | `ROGUE` `EVAL` | Medium | B | — |
 | `2026-09-19` | [RoboHarm: leading models rarely refuse dangerous robot-arm commands](../incidents/2026-09/2026-09-19-roboharm-benchmark.md) | `ROGUE` | Medium | B | — |
 | `2026-09-23` | [An AI support agent read "should I cancel?" as an order - and cancelled the ticket](../incidents/2026-09/2026-09-23-zhixing-ai-agent-cancelled-ticket.md) | `ROGUE` | Medium | B | ✅ |
+| `2026-09-26` | [Meta's Muse agent gave a seller's home address to a Marketplace buyer and told him the seller was home](../incidents/2026-09/2026-09-26-meta-muse-marketplace-address-leak.md) | `ROGUE` `EXFIL` | Medium | B | ✅ |
 <!-- END:incidents -->
 
 ---
