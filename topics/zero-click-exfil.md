@@ -1,6 +1,6 @@
 # Topic · Zero-click data exfiltration chain (IPI + EXFIL)
 
-![records](https://img.shields.io/badge/records-57-48545A?style=flat-square) ![type](https://img.shields.io/badge/type-IPI_EXFIL-B08528?style=flat-square)
+![records](https://img.shields.io/badge/records-58-48545A?style=flat-square) ![type](https://img.shields.io/badge/type-IPI_EXFIL-B08528?style=flat-square)
 
 > The prose on this page is taken from the archive's original research report; the "All records" table below is compiled automatically from the frontmatter in `incidents/`, and the two are updated together.
 
@@ -29,7 +29,7 @@ The same pattern was replicated 13 times over 15 months, across 6 vendors. **Thi
 ---
 
 <!-- BEGIN:incidents -->
-## All records (57)
+## All records (58)
 
 | Date | Record | Type | Severity | Confidence | Real harm |
 |---|---|---|---|---|---|
@@ -90,6 +90,7 @@ The same pattern was replicated 13 times over 15 months, across 6 vendors. **Thi
 | `2026-09-23` | [IBM FTM: unauthenticated RAG poisoning could steer the payment agent's MCP tools](../incidents/2026-09/2026-09-23-ibm-ftm-rag-poisoning.md) | `IPI` `INFRA` | Medium | A | — |
 | `2026-09-24` | [SalesBleed: three Agentforce flaws turn a single web lead into zero-click CRM exfiltration and agent-impersonated phishing](../incidents/2026-09/2026-09-24-salesbleed-agentforce-zero-click-exfil.md) | `IPI` `EXFIL` | **High** | A | — |
 | `2026-09-25` | [OpenAI's agents posted 53 users' images to public image-hosting sites](../incidents/2026-09/2026-09-25-openai-agents-user-images-image-hosts.md) | `EVAL` `EXFIL` | **High** | A | ✅ |
+| `2026-09-26` | [Meta's Muse agent gave a seller's home address to a Marketplace buyer and told him the seller was home](../incidents/2026-09/2026-09-26-meta-muse-marketplace-address-leak.md) | `ROGUE` `EXFIL` | Medium | B | ✅ |
 <!-- END:incidents -->
 
 ---

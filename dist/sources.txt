@@ -116,6 +116,7 @@ https://eu.36kr.com/en/p/3828243809981313
 https://finance.sina.com.cn/jjxw/2025-04-15/doc-inethkcn7574036.shtml
 https://finance.sina.com.cn/tech/digi/2026-09-17/doc-inisatuq9424977.shtml
 https://finance.sina.com.cn/tech/digi/2026-09-25/doc-iniszmmz7778318.shtml
+https://finance.yahoo.com/technology/ai/articles/man-says-metas-ai-agent-134500315.html
 https://forest.watch.impress.co.jp/docs/news/2105656.html
 https://forever.security/blog/bragjack-attack-hijacks-every-browser-agent
 https://forever.security/blog/bragjack-hijacking-5-browsers-via-built-in-ai-assistants
@@ -123,6 +124,7 @@ https://forkast.news/anthropic-ceo-warns-agent-swarms-could-take-over-the-intern
 https://fortune.com/2025/07/23/ai-coding-tool-replit-wiped-database-called-it-a-catastrophic-failure/
 https://fortune.com/2026/03/26/anthropic-says-testing-mythos-powerful-new-ai-model-after-data-leak-reveals-its-existence-step-change-in-capabilities/
 https://freefable.org/
+https://futurism.com/artificial-intelligence/metas-muse-ai-giving-users-home-addresses
 https://gambit.security/blog-posts/autonomous-ai-agents-online-retailers-25-a-company
 https://gbhackers.com/hackers-use-morse-code-to-trick-grok-and-bankrbot/
 https://genai.owasp.org/2025/03/06/owasp-gen-ai-incident-exploit-round-up-jan-feb-2025/
@@ -302,6 +304,7 @@ https://techcrunch.com/2026/09/25/unsecured-openai-agents-posted-53-user-images-
 https://techradar.com/pro/security/autonomous-ai-agent-hit-spanish-firm-with-vulnerability-scans-before-accessing-files-and-data
 https://techriskguru.com/p/techrisk-133-man-in-the-prompt-attack
 https://tenetsecurity.ai/blog/agentjacking-coding-agents-with-fake-sentry-errors/
+https://the-decoder.com/gpt-6-1-astra-is-too-deceptive-for-release-marking-openais-most-dramatic-safety-intervention-yet/
 https://the-decoder.com/gpt-6-astra-and-claude-fable-turn-robot-arms-into-slapstick-killer-robots-in-new-safety-benchmark/
 https://the-decoder.com/tens-of-thousands-of-security-probes-show-openais-hugging-face-incident-was-just-the-beginning/
 https://thehackernews.com/2025/01/deepseek-ai-database-exposed-over-1.html
@@ -347,10 +350,12 @@ https://thehackernews.com/2026/09/one-hidden-meta-muse-setting-could-let.html
 https://thehackernews.com/2026/09/openai-agent-bypassed-australian.html
 https://thehackernews.com/2026/09/openai-agents-linked-to-rubygems.html
 https://thehackernews.com/2026/09/openai-reveals-six-model-incidents.html
+https://thehackernews.com/2026/09/openai-shelves-gpt-61-astra-after-tests.html
 https://thehackernews.com/2026/09/papercut-attacker-uses-hundreds-of-ai.html
 https://thehackernews.com/2026/09/researchers-use-claude-to-port-pre-auth.html
 https://thehackernews.com/2026/09/russia-aligned-uac-0099-plants-nuclear.html
 https://thenewstack.io/agentjacking-sentry-mcp-attack/
+https://thenextweb.com/news/meta-muse-facebook-marketplace-address-buyer-robb
 https://theori.io/ko/blog/2026-h1-hot-security-issue-case
 https://therecord.media/irregular-ai-security-company-incidents
 https://therecord.media/openai-australia-breach-cyber
@@ -379,6 +384,7 @@ https://www.abc.net.au/news/2026-08-10/ai-assistant-hacks-gym-website-aus-cyber-
 https://www.aepd.es/prensa-y-comunicacion/blog/primera-notiviacion-brecha-datos-personales-causada-por-ataque-ejecutado-mediante-agente-ia
 https://www.aibase.com/news/16138
 https://www.aisi.gov.uk/blog/boundary-point-jailbreaking-a-new-way-to-break-the-strongest-ai-defences
+https://www.aisi.gov.uk/blog/gpt-6-astra-performs-unsanctioned-supply-chain-attacks-in-simulations
 https://www.aisi.gov.uk/blog/incident-report-unsanctioned-agent-behaviour-during-cyber-testing
 https://www.aisi.gov.uk/blog/our-evaluation-of-claude-mythos-previews-cyber-capabilities
 https://www.aljazeera.com/news/2026/9/19/trump-says-he-will-create-ai-force-with-new-ai-czar
@@ -415,6 +421,7 @@ https://www.bleepingcomputer.com/news/security/critical-langflow-flaw-exploited-
 https://www.bleepingcomputer.com/news/security/cursor-codex-gemini-cli-antigravity-hit-by-sandbox-escapes/
 https://www.bleepingcomputer.com/news/security/fake-openai-repository-on-hugging-face-pushes-infostealer-malware/
 https://www.bleepingcomputer.com/news/security/hackers-abused-claude-to-extract-secrets-from-18m-android-apps/
+https://www.bleepingcomputer.com/news/security/jadepuffer-agentic-ai-attacks-target-azure-destroy-cloud-resources/
 https://www.bleepingcomputer.com/news/security/malicious-ai-agents-steal-600k-credit-cards-infect-100-plus-sites-with-skimmers/
 https://www.bleepingcomputer.com/news/security/new-bioshocking-attack-manipulates-ai-browser-into-data-theft/
 https://www.bleepingcomputer.com/news/security/new-carbonato-malware-uses-ai-agents-to-hijack-exposed-docker-hosts/
@@ -453,6 +460,7 @@ https://www.csoonline.com/article/4182707/meet-hades-the-malware-that-lies-to-ai
 https://www.csoonline.com/article/4220203/chatgpt-flaw-lets-attackers-pull-gmail-data-across-accounts-via-a-hidden-channel.html
 https://www.darkreading.com/application-security/salesbleed-exploits-salesforce-agents-slack-phishing
 https://www.darkreading.com/application-security/trustfall-exposes-claude-code-execution-risk
+https://www.darkreading.com/cloud-security/jadepuffer-ai-actor-compromises-azure-tenant-destructive-cloud-attack
 https://www.darkreading.com/cloud-security/microsoft-salesforce-patch-ai-agent-data-leak-flaws
 https://www.darkreading.com/cyberattacks-data-breaches/anthropic-ai-automate-data-extortion-campaign
 https://www.darkreading.com/cyberattacks-data-breaches/papercut-ai-swarm-attack-cyber-kill-chain
@@ -521,6 +529,7 @@ https://www.microsoft.com/en-us/security/blog/2026/06/18/autojack-single-page-rc
 https://www.microsoft.com/en-us/security/blog/2026/06/24/stealc-and-amadey-breaking-down-infostealers-and-the-cybercrime-services-that-deliver-them/
 https://www.microsoft.com/en-us/security/blog/2026/08/04/chaindrop-supply-chain-compromise-anatomy-self-propagating-worm/
 https://www.microsoft.com/en-us/security/blog/2026/09/22/unmasking-eviltokens-getting-to-the-root-of-device-code-phishing/
+https://www.microsoft.com/en-us/security/blog/2026/09/25/storm-3168-agentic-driven-cloud-attacks-using-compromised-service-principals/
 https://www.morningstar.com/news/business-wire/20260924811082/zenity-labs-uncovers-salesbleed-3-salesforce-agentforce-flaws-enabling-zero-click-crm-data-theft-and-ai-agent-impersonation
 https://www.morphisec.com/blog/when-your-ai-coding-assistant-becomes-the-attack-the-hades-supply-chain-campaign/
 https://www.n-able.com/blog/n-central-security-update-august-2-2026
@@ -646,6 +655,7 @@ https://www.wsgr.com/en/insights/openai-prevails-in-landmark-italian-ai-and-gdpr
 https://www.wsj.com/tech/ai/cyberattack-by-rogue-ai-swarm-stokes-fears-of-out-of-control-agents-473a0352
 https://www.wsj.com/tech/ai/gemini-hacked-three-companies-in-first-known-breakout-by-googles-ai-5c0baba2
 https://www.wsj.com/tech/ai/hackers-used-anthropics-claude-to-break-into-openai-b40ba883
+https://www.wsj.com/tech/ai/openai-chatgpt-model-release-cancel-safety-5a2f9f42
 https://www.zerodayinitiative.com/advisories/ZDI-26-305/
 https://www.zscaler.com/blogs/security-research/anthropic-claude-code-leak
 https://www1.xinhuanet.com/politics/20260917/6e61d306c6f543cba6a2d13dd374ab23/c.html
