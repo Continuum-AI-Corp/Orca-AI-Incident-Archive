@@ -82,6 +82,7 @@ https://codewall.ai/blog/how-we-hacked-mckinseys-ai-platform
 https://collusion.wiki/
 https://composio.dev/blog/composio-may-2026-security-incident
 https://copy.fail/
+https://csirt.divd.nl/2026/09/24/when-not-if/
 https://cyberandramen.net/2026/02/21/llms-in-the-kill-chain-inside-a-custom-mcp-targeting-fortigate-devices-across-continents/
 https://cyberinsider.com/ai-agents-steal-600000-credit-cards-in-attacks-on-online-retailers/
 https://cyberinsider.com/experiment-shows-ai-agents-can-escape-secure-vms-using-zero-days/
@@ -102,6 +103,7 @@ https://cybersecuritynews.com/openclaw-control-panels-exposed/
 https://cybersecuritynews.com/plugin4shell-zero-click-rce/
 https://dailyjus.com/legal-tech/2026/07/prompt-injection-are-invisible-instructions-the-next-ai-risk-in-disputes
 https://darioamodei.com/post/we-must-pace-the-frontier
+https://databreaches.net/2026/09/25/divd-dutch-institute-for-vulnerability-disclosure-investigating-agentic-ai-powered-attack/
 https://deploymentsafety.openai.com/gpt-5-2/cybersecurity
 https://deploymentsafety.openai.com/gpt-5-3-codex/disallowed-content-evaluations
 https://devops.com/teampcp-supply-chain-attack-leads-to-crowdsec-source-code-being-stolen/
@@ -416,6 +418,7 @@ https://www.bleepingcomputer.com/news/microsoft/microsoft-says-bug-causes-copilo
 https://www.bleepingcomputer.com/news/security/ai-powered-malware-hit-2-180-github-accounts-in-s1ngularity-attack/
 https://www.bleepingcomputer.com/news/security/amazon-ai-assisted-hacker-breached-600-fortigate-firewalls-in-5-weeks/
 https://www.bleepingcomputer.com/news/security/amazon-ai-coding-agent-hacked-to-inject-data-wiping-commands/
+https://www.bleepingcomputer.com/news/security/automated-ai-agent-used-to-breach-cybersecurity-nonprofit-divd/
 https://www.bleepingcomputer.com/news/security/bragjack-attacks-hijack-ai-browser-agents-through-malicious-extensions/
 https://www.bleepingcomputer.com/news/security/critical-langflow-flaw-exploited-to-steal-openai-and-aws-keys/
 https://www.bleepingcomputer.com/news/security/cursor-codex-gemini-cli-antigravity-hit-by-sandbox-escapes/

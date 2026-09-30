@@ -6,7 +6,7 @@ An incident can belong to several types at once — real attack chains are compo
 |---|---|---|---|---|
 | <a id="gov"></a>`GOV` | Governance & policy | Governance & policy | 65 | Regulation, legislation, law enforcement, vendor policy and defensive-side moves. Records with `kind: policy` mostly live here and are **excluded from incident counts**. |
 | <a id="cred"></a>`CRED` | Credential abuse | Credential abuse | 63 | Credentials read, carried out or abused by an agent. The difference from `EXFIL` is that what is lost is the **key**, not the data. |
-| <a id="weapon"></a>`WEAPON` | Agent used as a weapon | Agent used as a weapon | 58 | A human **deliberately** uses an agent as an attack tool. The difference from `ROGUE` is whether there is a hostile operator. |
+| <a id="weapon"></a>`WEAPON` | Agent used as a weapon | Agent used as a weapon | 59 | A human **deliberately** uses an agent as an attack tool. The difference from `ROGUE` is whether there is a hostile operator. |
 | <a id="ipi"></a>`IPI` | Indirect prompt injection | Indirect prompt injection | 50 | **External content** the agent reads is executed as instructions. The deciding factor is that the injection source is outside the user's control (email, issue, web page, document, dataset). |
 | <a id="infra"></a>`INFRA` | Agent infrastructure exposure | Agent infrastructure exposure | 47 | The agent's **runtime infrastructure** is exposed: inference services, vector stores, orchestration platforms, agent gateways. |
 | <a id="supply"></a>`SUPPLY` | Supply-chain poisoning | Supply-chain poisoning | 38 | The attack happens on the agent's **dependency chain**: packages, models, plugins, extensions, repositories and the agent's own config files. |

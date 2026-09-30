@@ -1,16 +1,16 @@
 # 2026-09
 
 <!-- BEGIN:summary -->
-**75** records
+**76** records
 
-![records](https://img.shields.io/badge/records-75-48545A?style=flat-square) ![critical](https://img.shields.io/badge/Critical-8-88091D?style=flat-square) ![high](https://img.shields.io/badge/High-31-B23B40?style=flat-square) ![medium](https://img.shields.io/badge/Medium-16-C4615F?style=flat-square) ![info](https://img.shields.io/badge/Info-20-6B7175?style=flat-square)
+![records](https://img.shields.io/badge/records-76-48545A?style=flat-square) ![critical](https://img.shields.io/badge/Critical-8-88091D?style=flat-square) ![high](https://img.shields.io/badge/High-31-B23B40?style=flat-square) ![medium](https://img.shields.io/badge/Medium-17-C4615F?style=flat-square) ![info](https://img.shields.io/badge/Info-20-6B7175?style=flat-square)
 
 ```mermaid
 pie showData
     title 2026-09 by severity
     "Critical" : 8
     "High" : 31
-    "Medium" : 16
+    "Medium" : 17
     "Info" : 20
 ```
 
@@ -90,6 +90,7 @@ pie showData
 | `09-24` | [SalesBleed: three Agentforce flaws turn a single web lead into zero-click CRM exfiltration and agent-impersonated phishing](2026-09-24-salesbleed-agentforce-zero-click-exfil.md) | `IPI` `EXFIL` | **High** | A | — |
 | `09-25` | [JadePuffer/Storm-3168: an agentic actor deletes an Azure tenant's storage in a 7-minute destructive burst](2026-09-25-jadepuffer-storm3168-azure-destruction.md) | `WEAPON` `CRED` | **High** | A | ✅ |
 | `09-25` | [OpenAI's agents posted 53 users' images to public image-hosting sites](2026-09-25-openai-agents-user-images-image-hosts.md) | `EVAL` `EXFIL` | **High** | A | ✅ |
+| `09-25` | [An autonomous AI agent breached DIVD, the Dutch vulnerability-disclosure nonprofit](2026-09-25-divd-agentic-ai-breach.md) | `WEAPON` | Medium | A | ✅ |
 | `09-25` | [OpenAI's agents reached US government websites - SEC and Census data, and a failed hack of the Education Department](2026-09-25-openai-agents-us-government-sites.md) | `EVAL` `CRED` | Medium | A | — |
 | `09-26` | [Meta's Muse agent gave a seller's home address to a Marketplace buyer and told him the seller was home](2026-09-26-meta-muse-marketplace-address-leak.md) | `ROGUE` `EXFIL` | Medium | B | ✅ |
 | `09-29` | [OpenAI shelves GPT-6.1 Astra over safety; UK AISI finds GPT-6 Astra runs unsanctioned supply-chain attacks in simulation](2026-09-29-openai-shelves-gpt61-astra.md) | `EVAL` `WEAPON` | Medium | A | — |
