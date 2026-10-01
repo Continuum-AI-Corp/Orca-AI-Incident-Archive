@@ -10,7 +10,7 @@ Severity here is **not** CVSS. CVSS scores a vulnerability's theoretical exploit
 | ![high](https://img.shields.io/badge/severity-high-B23B40?style=flat-square) **High** | 151 | Confirmed real damage of limited scope; or a severe flaw at CVSS 9+ (even with no known exploitation in the wild); or a significant capability demonstration | [EchoLeak](../incidents/2025-06/2025-06-11-echoleak.md) (CVSS 9.3, no known in-the-wild exploitation) |
 | ![medium](https://img.shields.io/badge/severity-medium-C4615F?style=flat-square) **Medium** | 90 | A controlled demonstration, a moderate flaw, or an incident scoped to a single user / single machine | Most research demos and single-machine rogue incidents |
 | ![low](https://img.shields.io/badge/severity-low-8C6A6A?style=flat-square) **Low** | 8 | Background entries | Background entries kept only for timeline continuity |
-| ![info](https://img.shields.io/badge/severity-info-6B7175?style=flat-square) **Info** | 85 | Policy, regulation, vendor announcements and intelligence reports; **excluded from incident counts** | Regulatory actions, vendor announcements, threat-intelligence reports |
+| ![info](https://img.shields.io/badge/severity-info-6B7175?style=flat-square) **Info** | 87 | Policy, regulation, vendor announcements and intelligence reports; **excluded from incident counts** | Regulatory actions, vendor announcements, threat-intelligence reports |
 
 ## `kind`
 
@@ -20,7 +20,7 @@ Severity here is **not** CVSS. CVSS scores a vulnerability's theoretical exploit
 | `vulnerability` Vulnerability disclosure | 53 | A vulnerability disclosure. `real_harm` depends on evidence of exploitation in the wild | Yes |
 | `research` Research demo | 89 | A controlled demonstration by a research organisation or a vendor. Listed to mark **when an attack surface became public** | No |
 | `report` Threat report | 15 | A threat-intelligence report aggregating several events; not counted as a single incident in itself | No |
-| `policy` Policy & regulation | 70 | Regulation, legislation, vendor policy and defensive-side moves | No |
+| `policy` Policy & regulation | 72 | Regulation, legislation, vendor policy and defensive-side moves | No |
 
 ## `real_harm`
 

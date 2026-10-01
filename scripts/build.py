@@ -165,6 +165,69 @@ for f in sorted(glob.glob(os.path.join(ROOT, "regions", "*.md"))):
     if splice(f"regions/{slug}.md", "incidents", facet_table(rs)):
         changed.append(f"regions/{slug}.md")
 
+# ----------------------------------------------- taxonomy count tables
+# The count columns in taxonomy/*.md are hand-written prose tables (badge +
+# name + count + description), so they can't be spliced wholesale. Instead
+# locate each row by a stable identifier and rewrite only its count cell,
+# keyed to the same counters that feed dist/stats.json. Fail loud (SystemExit)
+# if a row can't be uniquely located or its count cell isn't an integer, so a
+# format change surfaces in CI instead of silently corrupting a number.
+def sync_count_cells(relpath, col, mapping):
+    p = os.path.join(ROOT, relpath)
+    lines = io.open(p, encoding="utf-8").read().split("\n")
+    dirty = False
+    for ident, count in mapping.items():
+        rx = re.compile(ident)
+        hits = [i for i, ln in enumerate(lines) if ln.lstrip().startswith("|") and rx.search(ln)]
+        if len(hits) != 1:
+            raise SystemExit(f"[build] {relpath}: identifier {ident!r} matched {len(hits)} rows (want 1)")
+        i = hits[0]
+        cells = lines[i].split("|")
+        if col >= len(cells) or not cells[col].strip().isdigit():
+            raise SystemExit(f"[build] {relpath}: row {ident!r} has no integer count cell at column {col}")
+        new = f" {count} "
+        if cells[col] != new:
+            cells[col] = new
+            lines[i] = "|".join(cells)
+            dirty = True
+    if dirty:
+        io.open(p, "w", encoding="utf-8", newline="\n").write("\n".join(lines))
+        changed.append(relpath)
+
+
+sync_count_cells("taxonomy/severity.md", 2, {
+    r"badge/severity-critical-": sev["critical"], r"badge/severity-high-": sev["high"],
+    r"badge/severity-medium-": sev["medium"], r"badge/severity-low-": sev["low"],
+    r"badge/severity-info-": sev["info"],
+    r"`incident` Incident": kind["incident"], r"`vulnerability` Vulnerability": kind["vulnerability"],
+    r"`research` Research": kind["research"], r"`report` Threat report": kind["report"],
+    r"`policy` Policy": kind["policy"],
+    r"^\| `true` \|": harm["true"], r"^\| `false` \|": harm["false"], r"^\| `null` \|": harm["null"],
+    r"`confirmed` Confirmed": ai["confirmed"], r"`unverified` Unverified": ai["unverified"],
+    r"`disputed` Disputed": ai["disputed"], r"`not-applicable` Not applicable": ai["not-applicable"],
+})
+sync_count_cells("taxonomy/confidence.md", 2, {
+    r"badge/confidence-A-": gc["A"], r"badge/confidence-B-": gc["B"],
+    r"badge/confidence-C-": gc["C"], r"badge/confidence-D-": gc["D"],
+})
+sync_count_cells("taxonomy/types.md", 4, {
+    rf'id="{t.lower()}"': tc[t] for t in
+    ["GOV", "CRED", "WEAPON", "IPI", "INFRA", "SUPPLY", "MCP", "OTHER", "EXFIL", "ROGUE", "SANDBOX", "EVAL"]
+})
+
+# topics/README.md: the per-topic count column and the total in the intro line
+# are hand-written too; keep both in sync with the same facet counts.
+_topic_counts = {slug: len([r for r in rows if set(r["type"]) & set(types)])
+                 for slug, types in TOPIC_TYPES.items()}
+_tr = os.path.join(ROOT, "topics/README.md")
+_txt = io.open(_tr, encoding="utf-8").read()
+_new = re.sub(r"(reorganise the )\d+( records)", rf"\g<1>{TOTAL}\g<2>", _txt)
+if _new != _txt:
+    io.open(_tr, "w", encoding="utf-8", newline="\n").write(_new)
+    changed.append("topics/README.md")
+sync_count_cells("topics/README.md", 3,
+                 {rf"{re.escape(slug)}\.md\)": c for slug, c in _topic_counts.items()})
+
 # ---------------------------------------------------------- README x7
 CRIT_NR = sum(1 for r in CRIT if not r["real_harm"])
 FMT = dict(total=TOTAL, months=len(MONTHS), harm=harm["true"], first=FIRST, last=LAST,
