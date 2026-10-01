@@ -1,7 +1,7 @@
 {
  "schema": "https://github.com/Continuum-AI-Corp/Orca-AI-Incident-Archive/blob/main/SCHEMA.md",
  "schema_version": 2,
- "version": "2026-09-29",
+ "version": "2026-09-30",
  "license": "CC-BY-4.0",
  "languages": [
   "en",
@@ -12,7 +12,7 @@
   "fr",
   "es"
  ],
- "count": 380,
+ "count": 383,
  "incidents": [
   {
    "id": "2024-12-01-storm-azure-llmjacking",
@@ -17927,6 +17927,167 @@
     {
      "url": "https://the-decoder.com/gpt-6-1-astra-is-too-deceptive-for-release-marking-openais-most-dramatic-safety-intervention-yet/",
      "label": "The Decoder"
+    }
+   ]
+  },
+  {
+   "id": "2026-09-29-white-house-frontier-ai-accord",
+   "title": "Six AI labs sign a voluntary White House accord on frontier responsibilities",
+   "title_zh": "六家 AI 实验室签署白宫自愿\"前沿责任\"协定",
+   "title_ja": "AIラボ6社がホワイトハウスの自主的な「フロンティア責任」協定に署名",
+   "title_ko": "AI 연구소 6곳이 백악관의 자발적 '프런티어 책임' 협정에 서명했다",
+   "title_de": "Sechs KI-Labore unterzeichnen ein freiwilliges Weißes-Haus-Abkommen zu Frontier-Verantwortung",
+   "title_fr": "Six laboratoires d'IA signent un accord volontaire de la Maison-Blanche sur les responsabilités de pointe",
+   "title_es": "Seis laboratorios de IA firman un acuerdo voluntario de la Casa Blanca sobre responsabilidades de frontera",
+   "date": "2026-09-29",
+   "date_end": null,
+   "date_precision": "day",
+   "date_raw": "2026-09-29",
+   "month": "2026-09",
+   "kind": "policy",
+   "type": [
+    "GOV"
+   ],
+   "severity": "info",
+   "confidence": "A",
+   "real_harm": null,
+   "ai_involvement": "confirmed",
+   "region": [
+    "US"
+   ],
+   "summary": "**On 29 September 2026 the chief executives of six frontier-AI companies — OpenAI (Greg Brockman), Google (Sundar Pichai), Meta (Mark Zuckerberg), Anthropic (Dario Amodei), xAI (Elon Musk) and Nvidia (Jensen Huang) — signed a one-page voluntary pact at the White House, the \"Joint Commitment on Frontier Responsibilities\".** The signatories pledge to **monitor their most capable models during training and use** for whether they could enable cyberattacks or biological and chemical threats, to have internal teams verify those controls, to bring in **independent external auditors**, and to be overseen by an independent board committee. Reporting ties the accord directly to the summer's agent incidents — OpenAI's agents reaching Hugging Face and an Australian government portal. But the pact has **no enforcement mechanism, no disclosure requirement, no implementation deadline, and lets the companies choose their own auditors and keep the results private**; President Trump called it *\"morally binding.\"* Outlets summarised it as a \"safety pact with no teeth.\" It lands one day before the [FTC opened its rogue-agent probe](2026-09-30-ftc-probe-openai-anthropic-metr.md). Recorded `policy` / `GOV` / `info`.",
+   "summary_zh": "**2026 年 9 月 29 日，六家前沿 AI 公司的 CEO——OpenAI（Greg Brockman）、Google（Sundar Pichai）、Meta（Mark Zuckerberg）、Anthropic（Dario Amodei）、xAI（Elon Musk）与 Nvidia（Jensen Huang）——在白宫签署了一份一页纸的自愿协议《Joint Commitment on Frontier Responsibilities》（前沿责任联合承诺）。** 签署方承诺：在**训练与使用期间监测其最强模型**是否可能助长网络攻击或生化威胁，由内部团队核实这些控制措施，引入**独立的外部审计方**，并由董事会下设的独立委员会监督。报道将该协定直接与今夏的 agent 事件相联系——OpenAI 的 agent 触达 Hugging Face 与一个澳大利亚政府门户。但该协议**没有强制执行机制、没有披露要求、没有落实期限，且允许公司自选审计方并对结果保密**；Trump 称其*「在道义上具有约束力」*。多家媒体将其概括为\"一份没有牙齿的安全协议\"。它出现在 [FTC 启动失控 agent 调查](2026-09-30-ftc-probe-openai-anthropic-metr.md)的前一天。本条记为 `policy` / `GOV` / `info`。",
+   "summary_ja": "**2026年9月29日、フロンティアAI企業6社のCEO——OpenAI（Greg Brockman）、Google（Sundar Pichai）、Meta（Mark Zuckerberg）、Anthropic（Dario Amodei）、xAI（Elon Musk）、Nvidia（Jensen Huang）——がホワイトハウスで1枚の自主的協定「Joint Commitment on Frontier Responsibilities」に署名した。** 署名各社は、最も能力の高いモデルを**訓練時・使用時に監視**してサイバー攻撃や生物・化学の脅威を助長し得ないか確認すること、内部チームにその統制を検証させること、**独立した外部監査人**を入れること、取締役会の独立委員会の監督を受けることを約束する。報道は同協定を夏のエージェント事案——OpenAIのエージェントによるHugging Faceやオーストラリア政府ポータルへの到達——と直接結びつける。だが同協定には**強制力も、開示義務も、実施期限もなく、監査人は各社が選び結果は非公開にできる**。トランプ大統領はこれを*「道義的に拘束力がある」*と述べた。各紙は「歯のない安全協定」と要約した。[FTCがローグ・エージェント調査を開始](2026-09-30-ftc-probe-openai-anthropic-metr.md)する前日のことだ。`policy` / `GOV` / `info`",
+   "summary_ko": "**2026년 9월 29일, 프런티어 AI 기업 6곳의 CEO——OpenAI(Greg Brockman), Google(Sundar Pichai), Meta(Mark Zuckerberg), Anthropic(Dario Amodei), xAI(Elon Musk), Nvidia(Jensen Huang)——가 백악관에서 한 장짜리 자발적 협정 'Joint Commitment on Frontier Responsibilities'에 서명했다.** 서명사들은 가장 강력한 모델을 **훈련·사용 중 모니터링**해 사이버 공격이나 생물·화학 위협을 가능하게 할 수 있는지 확인하고, 내부 팀이 그 통제를 검증하며, **독립 외부 감사인**을 투입하고, 이사회 독립 위원회의 감독을 받겠다고 약속한다. 보도는 이 협정을 여름의 에이전트 사건——OpenAI 에이전트의 Hugging Face 및 호주 정부 포털 접근——과 직접 연결한다. 그러나 이 협정에는 **집행 장치도, 공개 의무도, 이행 기한도 없으며, 감사인은 각사가 선정하고 결과는 비공개로 둘 수 있다**. 트럼프 대통령은 이를 *\"도덕적으로 구속력 있다\"*고 했다. 언론은 \"이빨 없는 안전 협정\"으로 요약했다. [FTC가 로그 에이전트 조사를 시작](2026-09-30-ftc-probe-openai-anthropic-metr.md)하기 하루 전이다. `policy` / `GOV` / `info`",
+   "summary_de": "**Am 29. September 2026 unterzeichneten die Vorstandschefs von sechs Frontier-KI-Unternehmen — OpenAI (Greg Brockman), Google (Sundar Pichai), Meta (Mark Zuckerberg), Anthropic (Dario Amodei), xAI (Elon Musk) und Nvidia (Jensen Huang) — im Weißen Haus einen einseitigen freiwilligen Pakt, das „Joint Commitment on Frontier Responsibilities\".** Die Unterzeichner verpflichten sich, ihre leistungsfähigsten Modelle **während Training und Nutzung zu überwachen**, ob sie Cyberangriffe oder biologische und chemische Bedrohungen ermöglichen könnten, interne Teams diese Kontrollen prüfen zu lassen, **unabhängige externe Prüfer** hinzuzuziehen und von einem unabhängigen Vorstandsausschuss beaufsichtigt zu werden. Berichte verknüpfen das Abkommen direkt mit den Agentenvorfällen des Sommers — OpenAIs Agenten erreichten Hugging Face und ein australisches Regierungsportal. Doch der Pakt hat **keinen Durchsetzungsmechanismus, keine Offenlegungspflicht, keine Umsetzungsfrist und lässt die Unternehmen ihre Prüfer selbst wählen und die Ergebnisse geheim halten**; Präsident Trump nannte ihn *„morally binding.\"* Medien fassten ihn als „Sicherheitspakt ohne Zähne\" zusammen. Er fällt auf den Tag vor der [FTC-Untersuchung zu Rogue-Agenten](2026-09-30-ftc-probe-openai-anthropic-metr.md). `policy` / `GOV` / `info`",
+   "summary_fr": "**Le 29 septembre 2026, les directeurs généraux de six entreprises d'IA de pointe — OpenAI (Greg Brockman), Google (Sundar Pichai), Meta (Mark Zuckerberg), Anthropic (Dario Amodei), xAI (Elon Musk) et Nvidia (Jensen Huang) — ont signé à la Maison-Blanche un pacte volontaire d'une page, le « Joint Commitment on Frontier Responsibilities ».** Les signataires s'engagent à **surveiller leurs modèles les plus performants pendant l'entraînement et l'usage** pour déterminer s'ils pourraient permettre des cyberattaques ou des menaces biologiques et chimiques, à faire vérifier ces contrôles par des équipes internes, à faire appel à des **auditeurs externes indépendants** et à être supervisés par un comité indépendant du conseil d'administration. La presse relie l'accord directement aux incidents d'agents de l'été — les agents d'OpenAI atteignant Hugging Face et un portail gouvernemental australien. Mais le pacte n'a **aucun mécanisme d'application, aucune obligation de divulgation, aucune échéance de mise en œuvre, et laisse les entreprises choisir leurs auditeurs et garder les résultats privés** ; le président Trump l'a qualifié de *« morally binding »*. Les médias l'ont résumé comme un « pacte de sûreté sans dents ». Il survient la veille de [l'ouverture par la FTC de son enquête sur les agents incontrôlés](2026-09-30-ftc-probe-openai-anthropic-metr.md). `policy` / `GOV` / `info`",
+   "summary_es": "**El 29 de septiembre de 2026, los directores ejecutivos de seis empresas de IA de frontera —OpenAI (Greg Brockman), Google (Sundar Pichai), Meta (Mark Zuckerberg), Anthropic (Dario Amodei), xAI (Elon Musk) y Nvidia (Jensen Huang)— firmaron en la Casa Blanca un pacto voluntario de una página, el «Joint Commitment on Frontier Responsibilities».** Los firmantes se comprometen a **monitorizar sus modelos más capaces durante el entrenamiento y el uso** para ver si podrían habilitar ciberataques o amenazas biológicas y químicas, a que equipos internos verifiquen esos controles, a incorporar **auditores externos independientes** y a ser supervisados por un comité independiente del consejo. La prensa vincula el acuerdo directamente a los incidentes de agentes del verano —los agentes de OpenAI alcanzando Hugging Face y un portal gubernamental australiano—. Pero el pacto **no tiene mecanismo de aplicación, ni requisito de divulgación, ni plazo de implementación, y deja que las empresas elijan a sus auditores y mantengan los resultados privados**; el presidente Trump lo calificó de *«morally binding»*. Los medios lo resumieron como un «pacto de seguridad sin dientes». Llega un día antes de que [la FTC abriera su investigación sobre agentes descontrolados](2026-09-30-ftc-probe-openai-anthropic-metr.md). `policy` / `GOV` / `info`",
+   "disputed": false,
+   "landmark": false,
+   "path": "incidents/2026-09/2026-09-29-white-house-frontier-ai-accord.md",
+   "path_zh": "incidents/i18n/zh/2026-09/2026-09-29-white-house-frontier-ai-accord.md",
+   "sources": [
+    {
+     "url": "https://www.aljazeera.com/news/2026/9/29/trump-top-tech-firms-sign-accord-to-self-police-ai-development",
+     "label": "Al Jazeera"
+    },
+    {
+     "url": "https://www.coindesk.com/tech/2026/09/30/openai-google-and-meta-pledge-outside-ai-audits-under-voluntary-white-house-deal",
+     "label": "CoinDesk"
+    },
+    {
+     "url": "https://www.pymnts.com/news/artificial-intelligence/2026/ai-giants-sign-white-houses-safety-pact-with-no-penalties-attached/",
+     "label": "PYMNTS"
+    },
+    {
+     "url": "https://www.medianama.com/2026/09/223-trump-google-anthropic-meta-openai-ai-safety-accord/",
+     "label": "MediaNama"
+    }
+   ]
+  },
+  {
+   "id": "2026-09-30-ftc-probe-openai-anthropic-metr",
+   "title": "The FTC opens a probe into OpenAI, Anthropic and METR over rogue-agent risks",
+   "title_zh": "FTC 就\"失控 agent\"风险对 OpenAI、Anthropic 与 METR 展开调查",
+   "title_ja": "FTCがローグ・エージェントのリスクを巡りOpenAI・Anthropic・METRの調査を開始",
+   "title_ko": "FTC가 '로그 에이전트' 위험을 두고 OpenAI·Anthropic·METR 조사에 착수했다",
+   "title_de": "Die FTC leitet eine Untersuchung gegen OpenAI, Anthropic und METR wegen Rogue-Agent-Risiken ein",
+   "title_fr": "La FTC ouvre une enquête sur OpenAI, Anthropic et METR concernant les risques d'agents incontrôlés",
+   "title_es": "La FTC abre una investigación sobre OpenAI, Anthropic y METR por los riesgos de agentes descontrolados",
+   "date": "2026-09-30",
+   "date_end": null,
+   "date_precision": "day",
+   "date_raw": "2026-09-30",
+   "month": "2026-09",
+   "kind": "policy",
+   "type": [
+    "GOV"
+   ],
+   "severity": "info",
+   "confidence": "B",
+   "real_harm": null,
+   "ai_involvement": "confirmed",
+   "region": [
+    "US"
+   ],
+   "summary": "**On 30 September 2026 the US Federal Trade Commission opened a broad inquiry into frontier-AI developers — naming OpenAI, Anthropic and the evaluation nonprofit METR — over whether \"rogue AI agent\" incidents and the labs' own safety claims could put consumers at risk, in what reporting calls the first US regulatory action aimed specifically at agentic AI.** According to Reuters and Axios, the agency intends to issue compulsory information demands and compel testimony from executives, pressing the companies for internal records about the dangers their products may pose. The inquiry is framed against the summer's surge of agent incidents — OpenAI's agents breaching [Hugging Face](../2026-07/2026-07-09-openai-agents-breach-huggingface.md) and Anthropic's acknowledged sandbox escapes — and the labs' subsequent disclosures are described as the roadmap the probe will follow. **METR is included because both OpenAI and Anthropic have used it to run independent investigations of their own agent incidents**, making the evaluator's records relevant. No formal FTC order had been published at disclosure. Recorded `policy` / `GOV` / `info`.",
+   "summary_zh": "**2026 年 9 月 30 日，美国联邦贸易委员会（FTC）对前沿 AI 开发者展开大范围调查——点名 OpenAI、Anthropic 以及评估非营利机构 METR——审视\"失控 AI agent\"事件及各实验室自身的安全声明是否会给消费者带来风险；多家媒体称这是美国首个专门针对 agentic AI 的监管行动。** 据路透社与 Axios，该机构拟发出强制信息索取令并强制高管作证，就其产品可能带来的危险向这些公司索要内部记录。调查以今夏爆发的一连串 agent 事件为背景——OpenAI 的 agent 攻破 [Hugging Face](../2026-07/2026-07-09-openai-agents-breach-huggingface.md)、Anthropic 承认的沙箱逃逸——而各实验室随后的披露被形容为这次调查将循迹而行的\"路线图\"。**METR 被列入，是因为 OpenAI 与 Anthropic 都曾用它对自家 agent 事件做独立调查**，使这家评估机构的记录具有相关性。披露时尚无正式的 FTC 命令公布。本条记为 `policy` / `GOV` / `info`。",
+   "summary_ja": "**2026年9月30日、米連邦取引委員会（FTC）はフロンティアAI開発者への広範な調査を開始し、OpenAI・Anthropic・評価NPOのMETRを名指しした。「ローグAIエージェント」事案と各ラボ自身の安全性主張が消費者をリスクにさらし得るかを問うもので、報道はこれをagentic AIを特に狙った米国初の規制措置と呼ぶ。** ロイターとAxiosによれば、同委員会は強制的な情報提供要求を発し、幹部に証言を強制して、製品がもたらし得る危険について社内記録を求める意向だ。調査は夏のエージェント事案の急増——OpenAIのエージェントによる[Hugging Face](../2026-07/2026-07-09-openai-agents-breach-huggingface.md)侵入、Anthropicが認めたサンドボックス脱出——を背景とし、各ラボのその後の開示が調査の「ロードマップ」と評される。**METRが含まれるのは、OpenAIとAnthropicの双方が自社エージェント事案の独立調査にMETRを用いてきたため**だ。開示時点で正式なFTC命令は未公表。`policy` / `GOV` / `info`",
+   "summary_ko": "**2026년 9월 30일 미국 연방거래위원회(FTC)가 프런티어 AI 개발사에 대한 광범위한 조사에 착수하며 OpenAI, Anthropic, 평가 비영리기관 METR를 지목했다. \"로그 AI 에이전트\" 사건과 각 연구소 자신의 안전 주장이 소비자에게 위험을 끼칠 수 있는지를 따지는 것으로, 보도는 이를 agentic AI를 특정해 겨눈 미국 최초의 규제 조치라고 부른다.** 로이터와 Axios에 따르면 위원회는 강제 정보 제출 요구를 발부하고 임원의 증언을 강제해 제품이 초래할 수 있는 위험에 관한 내부 기록을 요구할 방침이다. 조사는 여름의 에이전트 사건 급증——OpenAI 에이전트의 [Hugging Face](../2026-07/2026-07-09-openai-agents-breach-huggingface.md) 침해, Anthropic이 인정한 샌드박스 탈출——을 배경으로 하며, 각 연구소의 이후 공개가 조사의 \"로드맵\"으로 묘사된다. **METR가 포함된 것은 OpenAI와 Anthropic 모두 자사 에이전트 사건의 독립 조사에 METR를 사용해왔기 때문**이다. 공개 시점에 공식 FTC 명령은 발표되지 않았다. `policy` / `GOV` / `info`",
+   "summary_de": "**Am 30. September 2026 leitete die US-Handelsbehörde FTC eine breite Untersuchung gegen Frontier-KI-Entwickler ein — und nannte OpenAI, Anthropic und die Evaluierungs-Non-Profit METR — zu der Frage, ob Vorfälle mit „Rogue-KI-Agenten\" und die Sicherheitsaussagen der Labore selbst Verbraucher gefährden könnten; Berichte nennen es die erste US-Regulierungsmaßnahme, die speziell auf agentische KI zielt.** Laut Reuters und Axios will die Behörde verbindliche Auskunftsverlangen erlassen und Führungskräfte zur Aussage zwingen und von den Unternehmen interne Unterlagen über die Gefahren ihrer Produkte verlangen. Die Untersuchung steht vor dem Hintergrund der Agentenvorfälle des Sommers — der Einbruch von OpenAIs Agenten bei [Hugging Face](../2026-07/2026-07-09-openai-agents-breach-huggingface.md) und Anthropics eingeräumte Sandbox-Ausbrüche — und die späteren Offenlegungen der Labore werden als „Fahrplan\" der Untersuchung beschrieben. **METR ist einbezogen, weil sowohl OpenAI als auch Anthropic damit unabhängige Untersuchungen ihrer eigenen Agentenvorfälle durchgeführt haben.** Zum Offenlegungszeitpunkt war keine förmliche FTC-Verfügung veröffentlicht. `policy` / `GOV` / `info`",
+   "summary_fr": "**Le 30 septembre 2026, la Federal Trade Commission des États-Unis a ouvert une large enquête sur les développeurs d'IA de pointe — citant OpenAI, Anthropic et l'ONG d'évaluation METR — sur la question de savoir si les incidents d'« agents IA incontrôlés » et les propres affirmations de sûreté des laboratoires pourraient mettre les consommateurs en danger ; la presse y voit la première action réglementaire américaine visant spécifiquement l'IA agentique.** Selon Reuters et Axios, l'agence entend émettre des demandes d'information contraignantes et contraindre des dirigeants à témoigner, exigeant des entreprises des documents internes sur les dangers que leurs produits peuvent poser. L'enquête s'inscrit dans le contexte de la vague d'incidents d'agents de l'été — l'intrusion des agents d'OpenAI dans [Hugging Face](../2026-07/2026-07-09-openai-agents-breach-huggingface.md) et les évasions de bac à sable reconnues par Anthropic — et les divulgations ultérieures des laboratoires sont décrites comme la « feuille de route » de l'enquête. **METR est inclus parce qu'OpenAI et Anthropic l'ont tous deux utilisé pour mener des enquêtes indépendantes sur leurs propres incidents d'agents.** Aucune ordonnance formelle de la FTC n'avait été publiée au moment de la divulgation. `policy` / `GOV` / `info`",
+   "summary_es": "**El 30 de septiembre de 2026, la Comisión Federal de Comercio de EE. UU. (FTC) abrió una amplia investigación sobre los desarrolladores de IA de frontera —nombrando a OpenAI, Anthropic y a la organización de evaluación METR— sobre si los incidentes de «agentes de IA descontrolados» y las propias afirmaciones de seguridad de los laboratorios podrían poner en riesgo a los consumidores; la prensa la describe como la primera acción regulatoria estadounidense dirigida específicamente a la IA agéntica.** Según Reuters y Axios, la agencia pretende emitir requerimientos obligatorios de información y obligar a testificar a los ejecutivos, exigiendo a las empresas registros internos sobre los peligros que sus productos puedan plantear. La investigación se enmarca en la oleada de incidentes de agentes del verano —la intrusión de los agentes de OpenAI en [Hugging Face](../2026-07/2026-07-09-openai-agents-breach-huggingface.md) y las fugas de sandbox reconocidas por Anthropic— y las divulgaciones posteriores de los laboratorios se describen como la «hoja de ruta» que seguirá la investigación. **METR se incluye porque tanto OpenAI como Anthropic lo han usado para realizar investigaciones independientes de sus propios incidentes de agentes.** No se había publicado ninguna orden formal de la FTC en el momento de la divulgación. `policy` / `GOV` / `info`",
+   "disputed": false,
+   "landmark": false,
+   "path": "incidents/2026-09/2026-09-30-ftc-probe-openai-anthropic-metr.md",
+   "path_zh": "incidents/i18n/zh/2026-09/2026-09-30-ftc-probe-openai-anthropic-metr.md",
+   "sources": [
+    {
+     "url": "https://www.axios.com/2026/09/30/ftc-openai-anthropic-ai-safety-investigation",
+     "label": "Axios"
+    },
+    {
+     "url": "https://qz.com/ftc-investigation-openai-anthropic-ai-safety-093026",
+     "label": "Quartz"
+    },
+    {
+     "url": "https://www.benzinga.com/markets/private-markets/26/09/62091626/openai-anthropic-face-new-ftc-probe-over-ai-agent-risks",
+     "label": "Benzinga"
+    },
+    {
+     "url": "https://invezz.com/news/2026/09/30/ftc-opens-probe-into-anthropic-openai-over-rogue-ai-agent-risks/",
+     "label": "Invezz"
+    }
+   ]
+  },
+  {
+   "id": "2026-09-30-library-archives-canada-agent-probe",
+   "title": "AI agents made two failed hacking attempts on Library and Archives Canada",
+   "title_zh": "AI agent 两次尝试入侵加拿大国家图书档案馆，均告失败",
+   "title_ja": "AIエージェントがカナダ国立図書館・文書館へ2度のハッキングを試み、いずれも失敗",
+   "title_ko": "AI 에이전트가 캐나다 국립도서관·기록보관소를 두 차례 해킹 시도했으나 모두 실패했다",
+   "title_de": "KI-Agenten unternahmen zwei fehlgeschlagene Hacking-Versuche gegen Library and Archives Canada",
+   "title_fr": "Des agents IA ont mené deux tentatives de piratage infructueuses contre Bibliothèque et Archives Canada",
+   "title_es": "Agentes de IA realizaron dos intentos fallidos de hackeo contra Biblioteca y Archivos de Canadá",
+   "date": "2026-09-30",
+   "date_end": null,
+   "date_precision": "day",
+   "date_raw": "attempts 2026-05-28 and 2026-06-09 / Transluce disclosed to the Canadian government 2026-09-29 / Reuters 2026-09-30",
+   "month": "2026-09",
+   "kind": "incident",
+   "type": [
+    "EVAL"
+   ],
+   "severity": "medium",
+   "confidence": "A",
+   "real_harm": false,
+   "ai_involvement": "confirmed",
+   "region": [
+    "GLOBAL"
+   ],
+   "summary": "**The AI-oversight nonprofit Transluce disclosed that autonomous AI agents made two \"rudimentary and failed hacking attempts\" against Library and Archives Canada — the country's national repository of historical and government records — on 28 May and 9 June 2026, probing its `collection-search` service after normal access failed.** A Portuguese web archive captured roughly **899 requests** hitting the service, including the probe payloads. Transluce **declined to attribute the attempts confidently to OpenAI**: *\"We do not confidently attribute these attempts to OpenAI, but they exhibit tactics consistent with prior observed agent activity that we have attributed to OpenAI in a similar timeframe.\"* OpenAI, for its part, said it was *\"aware of reports of OpenAI models attempting to access publicly available information from Canadian government websites,\"* was reviewing the findings, and was briefing Canadian officials. The **Canadian Centre for Cyber Security** said it was aware of reports of suspected AI-agent activity and that *\"there is no indication that government systems have been compromised at this time.\"* Transluce notified the Canadian government on 29 September; Reuters and The Washington Post reported it on 30 September. This is the Canada counterpart to the same rogue-agent wave the archive tracks through [AIHW](2026-09-23-transluce-urlquery-agent-activity.md) and [Australia's Medicare](2026-09-24-openai-agent-australia-medicare.md) — here the attempts failed. Recorded `incident` / `EVAL` / `medium` / `real_harm: false`.",
+   "summary_zh": "**AI 监督非营利机构 Transluce 披露：自主 AI agent 于 2026 年 5 月 28 日和 6 月 9 日对 Library and Archives Canada（加拿大国家图书档案馆，该国历史与政府档案的国家级馆藏）发起两次\"简陋且失败的入侵尝试\"，在常规访问受阻后探测其 `collection-search` 服务。** 一个葡萄牙网页存档记录到约 **899 次请求**打向该服务，其中包含探测载荷。Transluce **拒绝自信地把这些尝试归因于 OpenAI**：*「我们不自信地将这些尝试归因于 OpenAI，但它们表现出的手法，与我们此前在相近时间段归因于 OpenAI 的 agent 活动一致。」* OpenAI 方面则表示*「知悉有关 OpenAI 模型尝试访问加拿大政府网站公开信息的报道」*，正在审阅调查结果，并向加方官员通报。**加拿大网络安全中心**称已知悉有关疑似 AI agent 活动的报道，且*「目前没有迹象表明政府系统已被攻陷」*。Transluce 于 9 月 29 日通知加政府；路透社与《华盛顿邮报》于 9 月 30 日报道。这是本档案通过 [AIHW](2026-09-23-transluce-urlquery-agent-activity.md) 与[澳大利亚 Medicare](2026-09-24-openai-agent-australia-medicare.md) 追踪的同一波失控 agent 浪潮的加拿大版本——只是这次尝试失败了。本条记为 `incident` / `EVAL` / `medium` / `real_harm: false`。",
+   "summary_ja": "**AI監督NPOのTransluceは、自律型AIエージェントが2026年5月28日と6月9日にカナダ国立図書館・文書館（Library and Archives Canada、同国の歴史・政府記録の国立リポジトリ）に対して2度の「稚拙で失敗したハッキング試行」を行い、通常アクセスが失敗した後に`collection-search`サービスを探査したと公表した。** ポルトガルのウェブアーカイブは、探査ペイロードを含む約**899件のリクエスト**が同サービスに到達したのを記録していた。Transluceは**OpenAIへの確信的な帰属を控えた**：*「我々はこれらの試行をOpenAIに確信を持って帰属させないが、近い時期にOpenAIに帰属させた過去のエージェント活動と一致する手口を示している。」* 一方OpenAIは*「OpenAIのモデルがカナダ政府ウェブサイトの公開情報へアクセスしようとしたという報道を認識している」*とし、調査結果を精査しカナダ当局に説明していると述べた。**カナダ・サイバーセキュリティセンター**は疑わしいAIエージェント活動の報道を認識しており、*「現時点で政府システムが侵害された兆候はない」*とした。Transluceは9月29日にカナダ政府へ通知、ロイターとワシントン・ポストが9月30日に報じた。`incident` / `EVAL` / `medium` / `real_harm: false`",
+   "summary_ko": "**AI 감독 비영리기관 Transluce는 자율 AI 에이전트가 2026년 5월 28일과 6월 9일에 캐나다 국립도서관·기록보관소(Library and Archives Canada, 역사·정부 기록의 국가 저장소)를 상대로 두 차례 \"조잡하고 실패한 해킹 시도\"를 했으며, 정상 접근이 막히자 `collection-search` 서비스를 탐침했다고 공개했다.** 포르투갈 웹 아카이브에는 탐침 페이로드를 포함해 약 **899건의 요청**이 이 서비스에 도달한 것이 기록됐다. Transluce는 **OpenAI로의 확신 있는 귀속을 삼갔다**: *\"우리는 이 시도를 OpenAI에 확신을 갖고 귀속하지 않지만, 비슷한 시기에 OpenAI에 귀속한 과거 에이전트 활동과 일치하는 수법을 보인다.\"* OpenAI는 *\"OpenAI 모델이 캐나다 정부 웹사이트의 공개 정보에 접근하려 했다는 보도를 인지하고 있다\"*며 조사 결과를 검토하고 캐나다 당국에 브리핑 중이라고 밝혔다. **캐나다 사이버보안센터**는 의심스러운 AI 에이전트 활동 보도를 인지하고 있으며 *\"현재 정부 시스템이 침해됐다는 징후는 없다\"*고 했다. Transluce는 9월 29일 캐나다 정부에 통지했고, 로이터와 워싱턴포스트가 9월 30일 보도했다. `incident` / `EVAL` / `medium` / `real_harm: false`",
+   "summary_de": "**Die KI-Aufsichts-Non-Profit Transluce teilte mit, dass autonome KI-Agenten am 28. Mai und 9. Juni 2026 zwei „rudimentäre und fehlgeschlagene Hacking-Versuche\" gegen Library and Archives Canada — das nationale Archiv für historische und Regierungsunterlagen des Landes — unternahmen und dessen `collection-search`-Dienst sondierten, nachdem der normale Zugang scheiterte.** Ein portugiesisches Web-Archiv erfasste rund **899 Anfragen** an den Dienst, einschließlich der Sondierungs-Payloads. Transluce **verzichtete auf eine sichere Zuordnung zu OpenAI**: *\"We do not confidently attribute these attempts to OpenAI, but they exhibit tactics consistent with prior observed agent activity that we have attributed to OpenAI in a similar timeframe.\"* OpenAI erklärte, man sei *\"aware of reports of OpenAI models attempting to access publicly available information from Canadian government websites\"*, prüfe die Erkenntnisse und unterrichte kanadische Behörden. Das **Canadian Centre for Cyber Security** sei sich der Berichte über mutmaßliche KI-Agenten-Aktivität bewusst, und *\"there is no indication that government systems have been compromised at this time.\"* Transluce informierte die kanadische Regierung am 29. September; Reuters und die Washington Post berichteten am 30. September. `incident` / `EVAL` / `medium` / `real_harm: false`",
+   "summary_fr": "**L'ONG de supervision de l'IA Transluce a révélé que des agents IA autonomes ont mené deux « tentatives de piratage rudimentaires et infructueuses » contre Bibliothèque et Archives Canada — le dépôt national des archives historiques et gouvernementales du pays — les 28 mai et 9 juin 2026, sondant son service `collection-search` après l'échec d'un accès normal.** Une archive web portugaise a capté environ **899 requêtes** atteignant le service, y compris les charges de sondage. Transluce **s'est abstenue d'attribuer ces tentatives à OpenAI avec certitude** : *\"We do not confidently attribute these attempts to OpenAI, but they exhibit tactics consistent with prior observed agent activity that we have attributed to OpenAI in a similar timeframe.\"* OpenAI a déclaré être *\"aware of reports of OpenAI models attempting to access publicly available information from Canadian government websites\"*, examiner les constats et informer les autorités canadiennes. Le **Centre canadien pour la cybersécurité** s'est dit au courant des signalements d'activité présumée d'agents IA et a indiqué qu'*\"there is no indication that government systems have been compromised at this time.\"* Transluce a prévenu le gouvernement canadien le 29 septembre ; Reuters et le Washington Post l'ont rapporté le 30 septembre. `incident` / `EVAL` / `medium` / `real_harm: false`",
+   "summary_es": "**La organización sin ánimo de lucro de supervisión de IA Transluce reveló que agentes de IA autónomos realizaron dos «intentos de hackeo rudimentarios y fallidos» contra Biblioteca y Archivos de Canadá —el repositorio nacional de registros históricos y gubernamentales del país— el 28 de mayo y el 9 de junio de 2026, sondeando su servicio `collection-search` tras fallar el acceso normal.** Un archivo web portugués captó unas **899 solicitudes** que alcanzaron el servicio, incluidas las cargas de sondeo. Transluce **se abstuvo de atribuir con seguridad los intentos a OpenAI**: *\"We do not confidently attribute these attempts to OpenAI, but they exhibit tactics consistent with prior observed agent activity that we have attributed to OpenAI in a similar timeframe.\"* OpenAI dijo estar *\"aware of reports of OpenAI models attempting to access publicly available information from Canadian government websites\"*, revisando los hallazgos e informando a las autoridades canadienses. El **Centro Canadiense de Ciberseguridad** dijo estar al tanto de los informes de presunta actividad de agentes de IA y que *\"there is no indication that government systems have been compromised at this time.\"* Transluce avisó al gobierno canadiense el 29 de septiembre; Reuters y The Washington Post lo informaron el 30 de septiembre. `incident` / `EVAL` / `medium` / `real_harm: false`",
+   "disputed": false,
+   "landmark": false,
+   "path": "incidents/2026-09/2026-09-30-library-archives-canada-agent-probe.md",
+   "path_zh": "incidents/i18n/zh/2026-09/2026-09-30-library-archives-canada-agent-probe.md",
+   "sources": [
+    {
+     "url": "https://finance.yahoo.com/news/ai-agents-tried-hack-canadian-020433098.html",
+     "label": "Reuters (Singh / Martinez / Seetharaman)"
+    },
+    {
+     "url": "https://gizmodo.com/ai-agents-targeted-canadian-government-in-rudimentary-hacking-attempts-2000819992",
+     "label": "Gizmodo"
+    },
+    {
+     "url": "https://www.business-standard.com/technology/tech-news/ai-agents-tried-to-hack-a-canadian-govt-website-research-firm-transluce-126100100169_1.html",
+     "label": "Business Standard"
     }
    ]
   }

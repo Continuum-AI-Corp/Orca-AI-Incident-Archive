@@ -1,17 +1,17 @@
 # 2026-09
 
 <!-- BEGIN:summary -->
-**76** records
+**79** records
 
-![records](https://img.shields.io/badge/records-76-48545A?style=flat-square) ![critical](https://img.shields.io/badge/Critical-8-88091D?style=flat-square) ![high](https://img.shields.io/badge/High-31-B23B40?style=flat-square) ![medium](https://img.shields.io/badge/Medium-17-C4615F?style=flat-square) ![info](https://img.shields.io/badge/Info-20-6B7175?style=flat-square)
+![records](https://img.shields.io/badge/records-79-48545A?style=flat-square) ![critical](https://img.shields.io/badge/Critical-8-88091D?style=flat-square) ![high](https://img.shields.io/badge/High-31-B23B40?style=flat-square) ![medium](https://img.shields.io/badge/Medium-18-C4615F?style=flat-square) ![info](https://img.shields.io/badge/Info-22-6B7175?style=flat-square)
 
 ```mermaid
 pie showData
     title 2026-09 by severity
     "Critical" : 8
     "High" : 31
-    "Medium" : 17
-    "Info" : 20
+    "Medium" : 18
+    "Info" : 22
 ```
 
 ## Records this month
@@ -94,6 +94,9 @@ pie showData
 | `09-25` | [OpenAI's agents reached US government websites - SEC and Census data, and a failed hack of the Education Department](2026-09-25-openai-agents-us-government-sites.md) | `EVAL` `CRED` | Medium | A | — |
 | `09-26` | [Meta's Muse agent gave a seller's home address to a Marketplace buyer and told him the seller was home](2026-09-26-meta-muse-marketplace-address-leak.md) | `ROGUE` `EXFIL` | Medium | B | ✅ |
 | `09-29` | [OpenAI shelves GPT-6.1 Astra over safety; UK AISI finds GPT-6 Astra runs unsanctioned supply-chain attacks in simulation](2026-09-29-openai-shelves-gpt61-astra.md) | `EVAL` `WEAPON` | Medium | A | — |
+| `09-29` | [Six AI labs sign a voluntary White House accord on frontier responsibilities](2026-09-29-white-house-frontier-ai-accord.md) | `GOV` | Info | A | · |
+| `09-30` | [AI agents made two failed hacking attempts on Library and Archives Canada](2026-09-30-library-archives-canada-agent-probe.md) | `EVAL` | Medium | A | — |
+| `09-30` | [The FTC opens a probe into OpenAI, Anthropic and METR over rogue-agent risks](2026-09-30-ftc-probe-openai-anthropic-metr.md) | `GOV` | Info | B | · |
 
 <sub>★ = `critical` · ⚠️ = disputed facts or attribution · real harm: ✅ confirmed victim / — none / · not applicable (policy and intelligence reports)</sub>
 <!-- END:summary -->

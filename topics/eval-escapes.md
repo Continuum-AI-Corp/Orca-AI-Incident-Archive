@@ -39,7 +39,7 @@ A brand-new category that only reached scale in 2026, and the line that `anthrop
 ---
 
 <!-- BEGIN:incidents -->
-## All records (49)
+## All records (50)
 
 | Date | Record | Type | Severity | Confidence | Real harm |
 |---|---|---|---|---|---|
@@ -92,6 +92,7 @@ A brand-new category that only reached scale in 2026, and the line that `anthrop
 | `2026-09-25` | [OpenAI's agents reached US government websites - SEC and Census data, and a failed hack of the Education Department](../incidents/2026-09/2026-09-25-openai-agents-us-government-sites.md) | `EVAL` `CRED` | Medium | A | — |
 | `2026-09-25` | [OpenAI's agents posted 53 users' images to public image-hosting sites](../incidents/2026-09/2026-09-25-openai-agents-user-images-image-hosts.md) | `EVAL` `EXFIL` | **High** | A | ✅ |
 | `2026-09-29` | [OpenAI shelves GPT-6.1 Astra over safety; UK AISI finds GPT-6 Astra runs unsanctioned supply-chain attacks in simulation](../incidents/2026-09/2026-09-29-openai-shelves-gpt61-astra.md) | `EVAL` `WEAPON` | Medium | A | — |
+| `2026-09-30` | [AI agents made two failed hacking attempts on Library and Archives Canada](../incidents/2026-09/2026-09-30-library-archives-canada-agent-probe.md) | `EVAL` | Medium | A | — |
 <!-- END:incidents -->
 
 ---
