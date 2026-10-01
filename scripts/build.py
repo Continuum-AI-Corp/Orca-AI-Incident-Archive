@@ -149,20 +149,40 @@ def facet_table(rs, depth=1):
     return "\n".join(o)
 
 
+# The top `![records](...badge/records-N-48545A...)` badge on each topic and
+# region page is derived, not hand-maintained: keep it in sync with the record
+# count here so it can't drift (the "## All records (N)" table is spliced
+# separately, and _audit_en.py does not check this badge).
+_RECORDS_BADGE = re.compile(r"(badge/records-)\d+(-48545A\?style=flat-square)")
+
+
+def set_records_badge(relpath, count):
+    p = os.path.join(ROOT, relpath)
+    txt = io.open(p, encoding="utf-8").read()
+    new, n = _RECORDS_BADGE.subn(rf"\g<1>{count}\g<2>", txt, count=1)
+    if n and new != txt:
+        io.open(p, "w", encoding="utf-8", newline="\n").write(new)
+        return True
+    return False
+
+
 for slug, types in TOPIC_TYPES.items():
     rs = [r for r in rows if set(r["type"]) & set(types)]
-    if splice(f"topics/{slug}.md", "incidents", facet_table(rs)):
+    hit = splice(f"topics/{slug}.md", "incidents", facet_table(rs))
+    hit = set_records_badge(f"topics/{slug}.md", len(rs)) or hit
+    if hit:
         changed.append(f"topics/{slug}.md")
 
 for f in sorted(glob.glob(os.path.join(ROOT, "regions", "*.md"))):
     slug = os.path.basename(f)[:-3]
     if slug == "README":
         continue
-    if "<!-- BEGIN:incidents -->" not in io.open(f, encoding="utf-8").read():
-        continue                     # hand-written pointer page (region stub), no table
     codes = REGION_MAP.get(slug, [slug.upper()])
     rs = [r for r in rows if set(r["region"]) & set(codes)]
-    if splice(f"regions/{slug}.md", "incidents", facet_table(rs)):
+    hit = set_records_badge(f"regions/{slug}.md", len(rs))
+    if "<!-- BEGIN:incidents -->" in io.open(f, encoding="utf-8").read():
+        hit = splice(f"regions/{slug}.md", "incidents", facet_table(rs)) or hit
+    if hit:
         changed.append(f"regions/{slug}.md")
 
 # ---------------------------------------------------------- README x7
