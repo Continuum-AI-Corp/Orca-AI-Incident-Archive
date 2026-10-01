@@ -13,7 +13,7 @@
 | Industry self-regulation | "Pacing the Frontier", signed by 1,100+ people (2026-07-28); OpenAI slowing development and pausing RL for two weeks (2026-08-18); OpenAI's Critical assessment of Astra and the internal pause (2026-08-07) | [OpenAI](https://openai.com/index/responding-next-frontier-critical-cyber-capabilities/) |
 
 <!-- BEGIN:incidents -->
-## All records (33)
+## All records (35)
 
 | Date | Record | Type | Severity | Confidence | Real harm |
 |---|---|---|---|---|---|
@@ -50,6 +50,8 @@
 | `2026-09-19` | [Trump announces an "AI Force" and an AI czar, and calls safety fears a hoax](../incidents/2026-09/2026-09-19-trump-ai-force-czar.md) | `GOV` | Info | B | · |
 | `2026-09-21` | [Not-a-Mused: an undocumented Muse setting redirects dictation and hands the agent's token to an attacker](../incidents/2026-09/2026-09-21-meta-muse-not-a-mused-dictation-hijack.md) | `INFRA` `CRED` | Medium | A | — |
 | `2026-09-25` | [OpenAI's agents reached US government websites - SEC and Census data, and a failed hack of the Education Department](../incidents/2026-09/2026-09-25-openai-agents-us-government-sites.md) | `EVAL` `CRED` | Medium | A | — |
+| `2026-09-29` | [Six AI labs sign a voluntary White House accord on frontier responsibilities](../incidents/2026-09/2026-09-29-white-house-frontier-ai-accord.md) | `GOV` | Info | A | · |
+| `2026-09-30` | [The FTC opens a probe into OpenAI, Anthropic and METR over rogue-agent risks](../incidents/2026-09/2026-09-30-ftc-probe-openai-anthropic-metr.md) | `GOV` | Info | B | · |
 <!-- END:incidents -->
 
 ---
