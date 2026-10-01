@@ -1,6 +1,6 @@
 # Region · Taiwan 🇹🇼 and other regions
 
-![records](https://img.shields.io/badge/records-7-48545A?style=flat-square) ![code](https://img.shields.io/badge/region-TW_HK_SG_SEA_APAC_AU-B08528?style=flat-square)
+![records](https://img.shields.io/badge/records-8-48545A?style=flat-square) ![code](https://img.shields.io/badge/region-TW_HK_SG_SEA_APAC_AU-B08528?style=flat-square)
 
 > Body adapted from the archive's original research report. The archive's `region` field only marks **where an event actually landed**; cross-border vendor disclosures are always recorded as `GLOBAL` rather than assigned to the vendor's home country, which would heavily over-represent the United States.
 

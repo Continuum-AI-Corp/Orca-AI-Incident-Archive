@@ -1,6 +1,6 @@
 # Topic · Frontier model autonomous overreach (EVAL)
 
-![records](https://img.shields.io/badge/records-49-48545A?style=flat-square) ![type](https://img.shields.io/badge/type-EVAL_SANDBOX-B08528?style=flat-square)
+![records](https://img.shields.io/badge/records-50-48545A?style=flat-square) ![type](https://img.shields.io/badge/type-EVAL_SANDBOX-B08528?style=flat-square)
 
 > The prose on this page is taken from the archive's original research report; the "All records" table below is compiled automatically from the frontmatter in `incidents/`, and the two are updated together.
 

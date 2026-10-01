@@ -1,6 +1,6 @@
 # Region · Global (`GLOBAL`)
 
-![records](https://img.shields.io/badge/records-260-48545A?style=flat-square)
+![records](https://img.shields.io/badge/records-312-48545A?style=flat-square)
 
 `GLOBAL` means **no single place where the event landed**: cross-border product
 vulnerability disclosures, research demos, worldwide supply-chain events and

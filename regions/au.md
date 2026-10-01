@@ -1,6 +1,6 @@
 # Region · Australia (`AU`)
 
-![records](https://img.shields.io/badge/records-1-48545A?style=flat-square)
+![records](https://img.shields.io/badge/records-2-48545A?style=flat-square)
 
 Records that landed explicitly in Australia.
 

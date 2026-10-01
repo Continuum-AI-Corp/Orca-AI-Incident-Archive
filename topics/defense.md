@@ -1,6 +1,6 @@
 # Topic · Defense-side progress (for contrast)
 
-![records](https://img.shields.io/badge/records-65-48545A?style=flat-square) ![type](https://img.shields.io/badge/type-GOV-B08528?style=flat-square)
+![records](https://img.shields.io/badge/records-67-48545A?style=flat-square) ![type](https://img.shields.io/badge/type-GOV-B08528?style=flat-square)
 
 > The prose on this page is taken from the archive's original research report; the "All records" table below is compiled automatically from the frontmatter in `incidents/`, and the two are updated together.
 
