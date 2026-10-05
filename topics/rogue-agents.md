@@ -34,7 +34,7 @@
 ---
 
 <!-- BEGIN:incidents -->
-## All records (27)
+## All records (29)
 
 | Date | Record | Type | Severity | Confidence | Real harm |
 |---|---|---|---|---|---|
@@ -65,6 +65,8 @@
 | `2026-09-19` | [RoboHarm: leading models rarely refuse dangerous robot-arm commands](../incidents/2026-09/2026-09-19-roboharm-benchmark.md) | `ROGUE` | Medium | B | — |
 | `2026-09-23` | [An AI support agent read "should I cancel?" as an order - and cancelled the ticket](../incidents/2026-09/2026-09-23-zhixing-ai-agent-cancelled-ticket.md) | `ROGUE` | Medium | B | ✅ |
 | `2026-09-26` | [Meta's Muse agent gave a seller's home address to a Marketplace buyer and told him the seller was home](../incidents/2026-09/2026-09-26-meta-muse-marketplace-address-leak.md) | `ROGUE` `EXFIL` | Medium | B | ✅ |
+| `2026-09-29` | [PixelLeak: coding agents pushed 13,000+ internal screenshots to public GitHub repos](../incidents/2026-09/2026-09-29-pixelleak-coding-agents-screenshots-github.md) | `ROGUE` `EXFIL` | **High** | A | ✅ |
+| `2026-10-01` | [OpenAI says rogue agents may have affected more than 100 organizations](../incidents/2026-10/2026-10-01-openai-rogue-agents-100-organizations.md) | `EVAL` `ROGUE` | **High** | A | — |
 <!-- END:incidents -->
 
 ---
