@@ -232,6 +232,7 @@ https://nvd.nist.gov/vuln/detail/CVE-2026-77516
 https://nvd.nist.gov/vuln/detail/CVE-2026-77521
 https://nvd.nist.gov/vuln/detail/CVE-2026-84462
 https://nvd.nist.gov/vuln/detail/CVE-2026-85889
+https://nvd.nist.gov/vuln/detail/CVE-2026-90970
 https://nvd.nist.gov/vuln/detail/CVE-2026-94111
 https://oddguan.com/blog/comment-and-control-prompt-injection-credential-theft-claude-code-gemini-cli-github-copilot/
 https://oecd.ai/en/incidents/2026-05-04-4a73
@@ -258,6 +259,7 @@ https://phoenix.security/trapdoor-supply-chain-ai-poisoning-npm-pypi-crates/
 https://ppc.land/comet-browser-faces-multiple-security-vulnerabilities-from-prompt-injection/
 https://qrator.net/blog/details/x47.c-botnet
 https://qz.com/ftc-investigation-openai-anthropic-ai-safety-093026
+https://qz.com/openai-rogue-ai-agents-100-organizations-100226
 https://rafter.so/blog/incidents/ai-agent-security-timeline-2025-2026
 https://rebora.io/blog/spyder-and-maxss-chrome-extension-vulnerabilities-put-millions-at-risk
 https://red.anthropic.com/2026/attack-navigator/
@@ -278,6 +280,7 @@ https://santageai.com/news/2026/09/12/senate-ai-duty-of-care-bill
 https://securityaffairs.com/194081/hacking/difytap-four-bugs-put-over-1-million-ai-apps-at-risk.html
 https://securityaffairs.com/194822/ai/hidden-web-prompts-trick-ai-agents-into-sending-money.html
 https://securityaffairs.com/198270/hacking/hackers-target-langflow-in-cve-2026-0768-attacks/
+https://securityaffairs.com/200283/hacking/cve-2026-90970-critical-gitlab-ai-gateway-flaw-fixed.html
 https://securityboulevard.com/2026/01/vulnerability-in-anthropics-claude-code-shows-up-in-cowork/
 https://securityboulevard.com/2026/03/amazon-lost-6-3-million-orders-to-vibe-coding-your-soc-is-next/
 https://securitylabs.datadoghq.com/articles/shai-hulud-2.0-npm-worm/
@@ -309,6 +312,7 @@ https://techcrunch.com/2026/09/18/researchers-used-anthropics-claude-to-hack-int
 https://techcrunch.com/2026/09/25/unsecured-openai-agents-posted-53-user-images-on-the-internet-without-the-labs-knowledge/
 https://techradar.com/pro/security/autonomous-ai-agent-hit-spanish-firm-with-vulnerability-scans-before-accessing-files-and-data
 https://techriskguru.com/p/techrisk-133-man-in-the-prompt-attack
+https://techstartups.com/2026/10/02/openai-alerts-100-organizations-over-rogue-ai-agent-activity-after-hugging-face-breach/
 https://tenetsecurity.ai/blog/agentjacking-coding-agents-with-fake-sentry-errors/
 https://the-decoder.com/gpt-6-1-astra-is-too-deceptive-for-release-marking-openais-most-dramatic-safety-intervention-yet/
 https://the-decoder.com/gpt-6-astra-and-claude-fable-turn-robot-arms-into-slapstick-killer-robots-in-new-safety-benchmark/
@@ -360,6 +364,7 @@ https://thehackernews.com/2026/09/openai-shelves-gpt-61-astra-after-tests.html
 https://thehackernews.com/2026/09/papercut-attacker-uses-hundreds-of-ai.html
 https://thehackernews.com/2026/09/researchers-use-claude-to-port-pre-auth.html
 https://thehackernews.com/2026/09/russia-aligned-uac-0099-plants-nuclear.html
+https://thehackernews.com/2026/10/gitlab-patches-critical-self-hosted-ai.html
 https://thenewstack.io/agentjacking-sentry-mcp-attack/
 https://thenextweb.com/news/meta-muse-facebook-marketplace-address-buyer-robb
 https://theori.io/ko/blog/2026-h1-hot-security-issue-case
@@ -420,6 +425,7 @@ https://www.axios.com/2026/09/19/trump-ai-czar-space-force-safety
 https://www.axios.com/2026/09/30/ftc-openai-anthropic-ai-safety-investigation
 https://www.benzinga.com/markets/private-markets/26/09/62091626/openai-anthropic-face-new-ftc-probe-over-ai-agent-risks
 https://www.betterclaw.io/blog/openclaw-security-2026
+https://www.bitdefender.com/en-us/blog/hotforsecurity/pixelleak-ai-coding-agents-github-screenshots
 https://www.bleepingcomputer.com/news/artificial-intelligence/openais-ai-agents-accidentally-uploaded-user-provided-images-to-third-party-sites/
 https://www.bleepingcomputer.com/news/microsoft/microsoft-says-bug-causes-copilot-to-summarize-confidential-emails/
 https://www.bleepingcomputer.com/news/security/ai-powered-malware-hit-2-180-github-accounts-in-s1ngularity-attack/
@@ -501,6 +507,7 @@ https://www.gate.com/zh/news/detail/senate-committee-launches-investigation-into
 https://www.gendigital.com/blog/insights/research/infostealers-your-ai-agent
 https://www.gibsondunn.com/eu-ai-act-omnibus-agreement-postponed-high-risk-deadlines-and-other-key-changes/
 https://www.globenewswire.com/news-release/2025/10/22/3171164/0/en/Operant-AI-Discovers-Shadow-Escape-The-First-Zero-Click-Agentic-Attack-via-MCP.html
+https://www.glow.io/blogs/how-ai-agents-exposed-developer-screenshots-from-leading-tech-companies
 https://www.gov.ca.gov/2026/09/18/governor-newsom-issues-executive-order-to-accelerate-independent-oversight-and-advance-the-creation-of-an-ai-kill-switch/
 https://www.gov.ca.gov/wp-content/uploads/2026/09/FINAL-N-9-26-AI-EO-9.18.26-SIGNED.pdf
 https://www.govinfosecurity.com/anthropics-cowork-shipped-known-vulnerability-a-30553
@@ -510,6 +517,7 @@ https://www.hawley.senate.gov/chairman-hawley-launches-investigation-into-openai
 https://www.hawley.senate.gov/wp-content/uploads/2026/09/2026-09-09-Hawley-Letter-to-OpenAI-re-Hugging-Face-AI-Agent-Hack.pdf
 https://www.helpnetsecurity.com/2026/09/16/google-mandiant-enterprise-ai-security-risks-report/
 https://www.helpnetsecurity.com/2026/09/18/plugin4shell-ai-coding-agents-vulnerability/
+https://www.helpnetsecurity.com/2026/09/30/ai-coding-agents-github-screenshot-leak/
 https://www.hiddenlayer.com/research/echogram-the-hidden-vulnerability-undermining-ai-guardrails
 https://www.ibm.com/support/pages/node/7278927
 https://www.ibm.com/support/pages/node/7288641
@@ -652,6 +660,7 @@ https://www.varonis.com/blog/cosnitch
 https://www.varonis.com/blog/reprompt
 https://www.varonis.com/blog/searchleak
 https://www.vulncheck.com/advisories/tencent-browserskill-through-0.3.0-origin-validation-error-in-local-websocket-daemon
+https://www.washingtonpost.com/technology/2026/10/01/openai-says-rogue-agents-may-have-breached-more-than-100-organizations/
 https://www.washingtonpost.com/wp-intelligence/ai-tech-brief/2026/09/04/ai-tech-brief-new-agent-security-incident/
 https://www.welivesecurity.com/en/business-security/guardbreaker-derailing-ai-assisted-malware-analysis-code-comment/
 https://www.welivesecurity.com/en/ransomware/first-known-ai-powered-ransomware-uncovered-eset-research/

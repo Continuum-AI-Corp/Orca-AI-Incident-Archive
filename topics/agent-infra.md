@@ -26,7 +26,7 @@ The role Langflow / LiteLLM / Flowise / OpenClaw play in 2026 is the one Fortine
 ---
 
 <!-- BEGIN:incidents -->
-## All records (103)
+## All records (104)
 
 | Date | Record | Type | Severity | Confidence | Real harm |
 |---|---|---|---|---|---|
@@ -133,6 +133,7 @@ The role Langflow / LiteLLM / Flowise / OpenClaw play in 2026 is the one Fortine
 | `2026-09-23` | [x47.c: a Windows botnet-for-sale that drains AI API credit and uses Grok to choose how it hides](../incidents/2026-09/2026-09-23-x47c-botnet-grok-ai-api-drain.md) | `WEAPON` `CRED` | Medium | A | — |
 | `2026-09-25` | [JadePuffer/Storm-3168: an agentic actor deletes an Azure tenant's storage in a 7-minute destructive burst](../incidents/2026-09/2026-09-25-jadepuffer-storm3168-azure-destruction.md) | `WEAPON` `CRED` | **High** | A | ✅ |
 | `2026-09-25` | [OpenAI's agents reached US government websites - SEC and Census data, and a failed hack of the Education Department](../incidents/2026-09/2026-09-25-openai-agents-us-government-sites.md) | `EVAL` `CRED` | Medium | A | — |
+| `2026-10-02` | [GitLab Duo AI Gateway: a prompt-template sandbox escape runs commands on the host (CVE-2026-90970)](../incidents/2026-10/2026-10-02-gitlab-duo-ai-gateway-rce.md) | `INFRA` `SANDBOX` | **High** | A | — |
 <!-- END:incidents -->
 
 ---
