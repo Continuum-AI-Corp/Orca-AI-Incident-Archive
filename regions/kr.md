@@ -14,12 +14,13 @@
 | AI privacy | reports in 2026-05 that Gemini and ChatGPT reproduced real phone numbers and addresses without consent | [BigGo](https://finance.biggo.com/news/8qihJZ4B6tLPsnrZRDKo) |
 
 <!-- BEGIN:incidents -->
-## All records (2)
+## All records (3)
 
 | Date | Record | Type | Severity | Confidence | Real harm |
 |---|---|---|---|---|---|
 | `2025-04-01` | [DeepSeek pulled from app stores in South Korea](../incidents/2025-04/2025-04-01-deepseek-han-guo-jia.md) | `GOV` | Info | A | · |
 | `2026-02-01` | [Naver, Kakao and Karrot ban OpenClaw company-wide](../incidents/2026-02/2026-02-01-naver-kakao-karrot-openclaw.md) | `GOV` | Info | A | · |
+| `2026-10-06` | ★ [An open-source agentic pen-test tool (ARTEX) is tied to breaches at seven South Korean banks](../incidents/2026-10/2026-10-06-artex-ai-south-korea-banks.md) | `WEAPON` `EXFIL` | **Critical** | A | ✅ |
 <!-- END:incidents -->
 
 ---

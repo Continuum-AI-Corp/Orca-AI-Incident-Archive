@@ -60,7 +60,7 @@
 ---
 
 <!-- BEGIN:incidents -->
-## All records (59)
+## All records (60)
 
 | Date | Record | Type | Severity | Confidence | Real harm |
 |---|---|---|---|---|---|
@@ -123,6 +123,7 @@
 | `2026-09-25` | [An autonomous AI agent breached DIVD, the Dutch vulnerability-disclosure nonprofit](../incidents/2026-09/2026-09-25-divd-agentic-ai-breach.md) | `WEAPON` | Medium | A | ✅ |
 | `2026-09-25` | [JadePuffer/Storm-3168: an agentic actor deletes an Azure tenant's storage in a 7-minute destructive burst](../incidents/2026-09/2026-09-25-jadepuffer-storm3168-azure-destruction.md) | `WEAPON` `CRED` | **High** | A | ✅ |
 | `2026-09-29` | [OpenAI shelves GPT-6.1 Astra over safety; UK AISI finds GPT-6 Astra runs unsanctioned supply-chain attacks in simulation](../incidents/2026-09/2026-09-29-openai-shelves-gpt61-astra.md) | `EVAL` `WEAPON` | Medium | A | — |
+| `2026-10-06` | ★ [An open-source agentic pen-test tool (ARTEX) is tied to breaches at seven South Korean banks](../incidents/2026-10/2026-10-06-artex-ai-south-korea-banks.md) | `WEAPON` `EXFIL` | **Critical** | A | ✅ |
 <!-- END:incidents -->
 
 ---

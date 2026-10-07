@@ -8,7 +8,7 @@ vendor policy moves all sit here. It is the largest group in the archive; the
 high share follows from that rule, not from a lack of geography.
 
 <!-- BEGIN:incidents -->
-## All records (315)
+## All records (316)
 
 | Date | Record | Type | Severity | Confidence | Real harm |
 |---|---|---|---|---|---|
@@ -327,6 +327,7 @@ high share follows from that rule, not from a lack of geography.
 | `2026-09-30` | [AI agents made two failed hacking attempts on Library and Archives Canada](../incidents/2026-09/2026-09-30-library-archives-canada-agent-probe.md) | `EVAL` | Medium | A | — |
 | `2026-10-01` | [OpenAI says rogue agents may have affected more than 100 organizations](../incidents/2026-10/2026-10-01-openai-rogue-agents-100-organizations.md) | `EVAL` `ROGUE` | **High** | A | — |
 | `2026-10-02` | [GitLab Duo AI Gateway: a prompt-template sandbox escape runs commands on the host (CVE-2026-90970)](../incidents/2026-10/2026-10-02-gitlab-duo-ai-gateway-rce.md) | `INFRA` `SANDBOX` | **High** | A | — |
+| `2026-10-06` | [Cryptographic Context Injection: encrypted web instructions make GitHub Copilot CLI leak local secrets](../incidents/2026-10/2026-10-06-copilot-cli-cryptographic-context-injection.md) | `IPI` `EXFIL` | Medium | A | — |
 <!-- END:incidents -->
 
 ---

@@ -29,7 +29,7 @@ The same pattern was replicated 13 times over 15 months, across 6 vendors. **Thi
 ---
 
 <!-- BEGIN:incidents -->
-## All records (59)
+## All records (61)
 
 | Date | Record | Type | Severity | Confidence | Real harm |
 |---|---|---|---|---|---|
@@ -92,6 +92,8 @@ The same pattern was replicated 13 times over 15 months, across 6 vendors. **Thi
 | `2026-09-25` | [OpenAI's agents posted 53 users' images to public image-hosting sites](../incidents/2026-09/2026-09-25-openai-agents-user-images-image-hosts.md) | `EVAL` `EXFIL` | **High** | A | ✅ |
 | `2026-09-26` | [Meta's Muse agent gave a seller's home address to a Marketplace buyer and told him the seller was home](../incidents/2026-09/2026-09-26-meta-muse-marketplace-address-leak.md) | `ROGUE` `EXFIL` | Medium | B | ✅ |
 | `2026-09-29` | [PixelLeak: coding agents pushed 13,000+ internal screenshots to public GitHub repos](../incidents/2026-09/2026-09-29-pixelleak-coding-agents-screenshots-github.md) | `ROGUE` `EXFIL` | **High** | A | ✅ |
+| `2026-10-06` | ★ [An open-source agentic pen-test tool (ARTEX) is tied to breaches at seven South Korean banks](../incidents/2026-10/2026-10-06-artex-ai-south-korea-banks.md) | `WEAPON` `EXFIL` | **Critical** | A | ✅ |
+| `2026-10-06` | [Cryptographic Context Injection: encrypted web instructions make GitHub Copilot CLI leak local secrets](../incidents/2026-10/2026-10-06-copilot-cli-cryptographic-context-injection.md) | `IPI` `EXFIL` | Medium | A | — |
 <!-- END:incidents -->
 
 ---
