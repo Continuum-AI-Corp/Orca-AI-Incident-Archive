@@ -4,9 +4,11 @@ https://0din.ai/blog/clone-this-repo-and-i-own-your-machine
 https://1password.com/blog/why-ai-generated-patches-still-require-human-review
 https://1password.com/files/resources/frontier-models-vulnerability-patches-flawed.pdf
 https://9to5google.com/2026/09/19/google-confirms-gemini-hacked-into-three-companies-during-cybersecurity-test-months-ago/
+https://abcnews.com/Business/openai-reveals-hack-government-agency-australia/story?id=136945837
 https://accomplish.ai/blog/escaping-the-openai-codex-sandbox-twice/
 https://adnanthekhan.com/posts/clinejection/#pre-publication
 https://adversa.ai/blog/ai-coding-agent-incidents/
+https://adversa.ai/blog/cryptographic-context-injection-github-copilot/
 https://adversa.ai/blog/cryptographic-context-injection-grok-data-theft/
 https://adversa.ai/blog/openclaw-security-101-vulnerabilities-hardening-2026/
 https://adversa.ai/blog/opensource-ai-coding-agents-shell-injection-vulnerability/
@@ -95,6 +97,7 @@ https://cybersecuritynews.com/anthropics-claude-oceanus-v1-p/
 https://cybersecuritynews.com/bragjack-ai-agent-hijacking/
 https://cybersecuritynews.com/clawdbot-chats-exposed/
 https://cybersecuritynews.com/cline-ai-agent-vulnerability/
+https://cybersecuritynews.com/github-copilot-cli-vulnerability/
 https://cybersecuritynews.com/gitlab-fixes-claude-ai-agent-flaw/
 https://cybersecuritynews.com/hackers-exploit-copilot-studios-new-connected-agents-feature/
 https://cybersecuritynews.com/hackers-use-llm-agent-to-move-from-marimo-rce/
@@ -207,6 +210,7 @@ https://labs.zenity.io/post/salesbleed-hijacking-agentforce-in-slack-for-anonymo
 https://learn.microsoft.com/ja-jp/microsoft-scout/overview
 https://malext.io/reports/PromptSnatcher/
 https://material.security/resources/the-composio-breach-one-token-10242-doors
+https://mbiz.heraldcorp.com/article/10892497
 https://medium.com/vibe-coding/what-apples-leaked-claude-md-teaches-us-b8269e2ace51
 https://metr.org/blog/2026-08-31-security-update/
 https://microsoft.ai/code-of-conduct/
@@ -400,6 +404,7 @@ https://www.aisi.gov.uk/blog/incident-report-unsanctioned-agent-behaviour-during
 https://www.aisi.gov.uk/blog/our-evaluation-of-claude-mythos-previews-cyber-capabilities
 https://www.aljazeera.com/news/2026/9/19/trump-says-he-will-create-ai-force-with-new-ai-czar
 https://www.aljazeera.com/news/2026/9/29/trump-top-tech-firms-sign-accord-to-self-police-ai-development
+https://www.americanbanker.com/news/ai-linked-hacks-hit-korean-banks-through-loan-agent-sites
 https://www.anthropic.com/claude-opus-5-5
 https://www.anthropic.com/glasswing
 https://www.anthropic.com/institute/measuring-pace-of-ai-development
@@ -489,6 +494,7 @@ https://www.darkreading.com/vulnerabilities-threats/claudy-day-trio-flaws-claude
 https://www.darkreading.com/vulnerabilities-threats/rce-flaw-ai-coding-tool-supply-chain-risk
 https://www.digitalapplied.com/blog/context7-mcp-prompt-injection-cve-2026-75130
 https://www.digitaltrends.com/computing/ai-code-wreaked-havoc-with-amazon-outage-and-now-the-company-is-making-tight-rules/
+https://www.digitaltrends.com/computing/openai-reveals-another-australian-government-data-breach-caused-by-its-ai-agent/
 https://www.docker.com/blog/mcp-horror-stories-whatsapp-data-exfiltration-issue/
 https://www.elastic.co/security-labs/axios-one-rat-to-rule-them-all
 https://www.elastic.co/security-labs/coding-agent-launchagent-tunnel-detection
@@ -619,10 +625,12 @@ https://www.straiker.ai/blog/cyberspike-villager-cobalt-strike-ai-native-success
 https://www.sygnia.co/blog/inside-an-ai-assisted-cloud-attack/
 https://www.sysdig.com/blog/jadepuffer-agentic-ransomware-for-automated-database-extortion
 https://www.t-online.de/nachrichten/deutschland/innenpolitik/id_101262296/propaganda-offensive-gegen-deutschland-leak-enthuellt-russlands-vorgehen.html
+https://www.techlicious.com/blog/another-openai-hack-ai-agent-took-non-public-fire-data-in-australia/
 https://www.techpolicy.press/who-should-pace-the-frontier-not-dario-amodei/
 https://www.techspot.com/news/114003-openai-pauses-training-most-powerful-ai-models-after.html
 https://www.techtimes.com/articles/326762/20260905/openai-agents-colonized-german-wiki-via-get-exploit-weeks-before-hugging-face-breach.htm
 https://www.techtimes.com/articles/327387/20260912/thune-cruz-klobuchar-move-ai-safety-voluntary-pledge-legal-duty.htm
+https://www.techtimes.com/articles/328541/20261005/open-source-ai-agent-hacked-seven-south-korean-banks-exposing-65000-records.htm
 https://www.tenable.com/blog/faq-cve-2025-54135-cve-2025-54136-vulnerabilities-in-cursor-curxecute-mcpoison
 https://www.tenable.com/blog/the-trifecta-how-three-new-gemini-vulnerabilities-in-cloud-assist-search-model-and-browsing
 https://www.tenable.com/security/research/tra-2026-26
@@ -630,6 +638,7 @@ https://www.thehindubusinessline.com/info-tech/openais-rogue-agents-used-at-leas
 https://www.theregister.com/2025/08/28/transunion_support_app_breach/
 https://www.theregister.com/2025/11/04/openai_api_moonlights_as_malware/
 https://www.theregister.com/ai-and-ml/2026/09/21/meta-muse-ai-app-flaw-lets-local-malware-redirect-dictation-traffic/5297980
+https://www.theregister.com/ai-and-ml/2026/10/06/zombie-instructions-on-carefully-constructed-web-pages-could-trick-github-copilot-cli-into-sharing-secrets/5301206
 https://www.theregister.com/security/2026/01/20/anthropic-quietly-fixed-flaws-in-its-git-mcp-server/4676059
 https://www.theregister.com/security/2026/05/04/five-eyes-warn-agentic-ai-is-too-dangerous-for-rapid-rollout/5229103
 https://www.theregister.com/security/2026/05/13/malware-crew-teampcp-open-sources-its-shai-hulud-worm-on-github/5239319

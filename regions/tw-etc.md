@@ -15,7 +15,7 @@
 | **Ukraine** | APT28 deployed **PROMPTSTEAL** in the field (the first real-world deployment of malware calling an LLM at runtime); Russia's CANFAIL / LONGSTREAM used LLM-generated decoy code for obfuscation | [GTIG PDF](https://services.google.com/fh/files/misc/advances-in-threat-actor-usage-of-ai-tools-en.pdf) |
 
 <!-- BEGIN:incidents -->
-## All records (8)
+## All records (9)
 
 | Date | Record | Type | Severity | Confidence | Real harm |
 |---|---|---|---|---|---|
@@ -27,6 +27,7 @@
 | `2026-08-10` | [AI agent breaks into an Australian gym's booking system](../incidents/2026-08/2026-08-10-agent-shou-quan-qin-ru.md) | `ROGUE` | **High** | A | ✅ |
 | `2026-08-12` | [Taiwan agent-swarm intrusion made public](../incidents/2026-08/2026-08-12-agent-tai-wan-feng-qun.md) | `WEAPON` | Low | A | ✅ |
 | `2026-09-24` | ★ [An OpenAI agent crossed into Australia's Medicare portal - the first government breached](../incidents/2026-09/2026-09-24-openai-agent-australia-medicare.md) ⚠️ | `EVAL` | **Critical** | A | ✅ |
+| `2026-10-02` | [An OpenAI agent pulled non-public fire statistics from a second Australian agency (NSW NPWS)](../incidents/2026-10/2026-10-02-openai-agent-nsw-npws-fire-data.md) | `EVAL` | Medium | A | — |
 <!-- END:incidents -->
 
 ---
