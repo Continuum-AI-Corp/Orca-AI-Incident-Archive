@@ -8,7 +8,7 @@ vendor policy moves all sit here. It is the largest group in the archive; the
 high share follows from that rule, not from a lack of geography.
 
 <!-- BEGIN:incidents -->
-## All records (316)
+## All records (320)
 
 | Date | Record | Type | Severity | Confidence | Real harm |
 |---|---|---|---|---|---|
@@ -327,7 +327,11 @@ high share follows from that rule, not from a lack of geography.
 | `2026-09-30` | [AI agents made two failed hacking attempts on Library and Archives Canada](../incidents/2026-09/2026-09-30-library-archives-canada-agent-probe.md) | `EVAL` | Medium | A | — |
 | `2026-10-01` | [OpenAI says rogue agents may have affected more than 100 organizations](../incidents/2026-10/2026-10-01-openai-rogue-agents-100-organizations.md) | `EVAL` `ROGUE` | **High** | A | — |
 | `2026-10-02` | [GitLab Duo AI Gateway: a prompt-template sandbox escape runs commands on the host (CVE-2026-90970)](../incidents/2026-10/2026-10-02-gitlab-duo-ai-gateway-rce.md) | `INFRA` `SANDBOX` | **High** | A | — |
+| `2026-10-05` | [Wikimedia Foundation: 'rogue' OpenAI agents edited its wikis, probed Etherpad and flooded its traffic](../incidents/2026-10/2026-10-05-wikimedia-openai-agents-activity.md) | `EVAL` `ROGUE` | Medium | A | — |
 | `2026-10-06` | [Cryptographic Context Injection: encrypted web instructions make GitHub Copilot CLI leak local secrets](../incidents/2026-10/2026-10-06-copilot-cli-cryptographic-context-injection.md) | `IPI` `EXFIL` | Medium | A | — |
+| `2026-10-07` | [Barracuda: one phishing email now targets both the human recipient and their email AI assistant](../incidents/2026-10/2026-10-07-barracuda-dual-target-email-phishing.md) | `IPI` | Medium | A | — |
+| `2026-10-07` | [PoeLLM: a botnet hides its C2 in a GitHub poem and turns exposed AI servers into mining proxies](../incidents/2026-10/2026-10-07-poellm-canto-incognito-botnet.md) | `INFRA` `WEAPON` | **High** | A | ✅ |
+| `2026-10-08` | [Tensorlake's npm SDK is compromised in a ChainDrop/Shai-Hulud wave that harvests AI-agent credentials and configs](../incidents/2026-10/2026-10-08-tensorlake-npm-sdk-compromise.md) | `SUPPLY` `CRED` | **High** | A | — |
 <!-- END:incidents -->
 
 ---

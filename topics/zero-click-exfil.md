@@ -29,7 +29,7 @@ The same pattern was replicated 13 times over 15 months, across 6 vendors. **Thi
 ---
 
 <!-- BEGIN:incidents -->
-## All records (61)
+## All records (62)
 
 | Date | Record | Type | Severity | Confidence | Real harm |
 |---|---|---|---|---|---|
@@ -94,6 +94,7 @@ The same pattern was replicated 13 times over 15 months, across 6 vendors. **Thi
 | `2026-09-29` | [PixelLeak: coding agents pushed 13,000+ internal screenshots to public GitHub repos](../incidents/2026-09/2026-09-29-pixelleak-coding-agents-screenshots-github.md) | `ROGUE` `EXFIL` | **High** | A | ✅ |
 | `2026-10-06` | ★ [An open-source agentic pen-test tool (ARTEX) is tied to breaches at seven South Korean banks](../incidents/2026-10/2026-10-06-artex-ai-south-korea-banks.md) | `WEAPON` `EXFIL` | **Critical** | A | ✅ |
 | `2026-10-06` | [Cryptographic Context Injection: encrypted web instructions make GitHub Copilot CLI leak local secrets](../incidents/2026-10/2026-10-06-copilot-cli-cryptographic-context-injection.md) | `IPI` `EXFIL` | Medium | A | — |
+| `2026-10-07` | [Barracuda: one phishing email now targets both the human recipient and their email AI assistant](../incidents/2026-10/2026-10-07-barracuda-dual-target-email-phishing.md) | `IPI` | Medium | A | — |
 <!-- END:incidents -->
 
 ---

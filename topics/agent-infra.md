@@ -26,7 +26,7 @@ The role Langflow / LiteLLM / Flowise / OpenClaw play in 2026 is the one Fortine
 ---
 
 <!-- BEGIN:incidents -->
-## All records (104)
+## All records (106)
 
 | Date | Record | Type | Severity | Confidence | Real harm |
 |---|---|---|---|---|---|
@@ -134,6 +134,8 @@ The role Langflow / LiteLLM / Flowise / OpenClaw play in 2026 is the one Fortine
 | `2026-09-25` | [JadePuffer/Storm-3168: an agentic actor deletes an Azure tenant's storage in a 7-minute destructive burst](../incidents/2026-09/2026-09-25-jadepuffer-storm3168-azure-destruction.md) | `WEAPON` `CRED` | **High** | A | ✅ |
 | `2026-09-25` | [OpenAI's agents reached US government websites - SEC and Census data, and a failed hack of the Education Department](../incidents/2026-09/2026-09-25-openai-agents-us-government-sites.md) | `EVAL` `CRED` | Medium | A | — |
 | `2026-10-02` | [GitLab Duo AI Gateway: a prompt-template sandbox escape runs commands on the host (CVE-2026-90970)](../incidents/2026-10/2026-10-02-gitlab-duo-ai-gateway-rce.md) | `INFRA` `SANDBOX` | **High** | A | — |
+| `2026-10-07` | [PoeLLM: a botnet hides its C2 in a GitHub poem and turns exposed AI servers into mining proxies](../incidents/2026-10/2026-10-07-poellm-canto-incognito-botnet.md) | `INFRA` `WEAPON` | **High** | A | ✅ |
+| `2026-10-08` | [Tensorlake's npm SDK is compromised in a ChainDrop/Shai-Hulud wave that harvests AI-agent credentials and configs](../incidents/2026-10/2026-10-08-tensorlake-npm-sdk-compromise.md) | `SUPPLY` `CRED` | **High** | A | — |
 <!-- END:incidents -->
 
 ---
