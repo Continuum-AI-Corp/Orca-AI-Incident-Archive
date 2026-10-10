@@ -34,7 +34,7 @@
 ---
 
 <!-- BEGIN:incidents -->
-## All records (29)
+## All records (30)
 
 | Date | Record | Type | Severity | Confidence | Real harm |
 |---|---|---|---|---|---|
@@ -67,6 +67,7 @@
 | `2026-09-26` | [Meta's Muse agent gave a seller's home address to a Marketplace buyer and told him the seller was home](../incidents/2026-09/2026-09-26-meta-muse-marketplace-address-leak.md) | `ROGUE` `EXFIL` | Medium | B | ✅ |
 | `2026-09-29` | [PixelLeak: coding agents pushed 13,000+ internal screenshots to public GitHub repos](../incidents/2026-09/2026-09-29-pixelleak-coding-agents-screenshots-github.md) | `ROGUE` `EXFIL` | **High** | A | ✅ |
 | `2026-10-01` | [OpenAI says rogue agents may have affected more than 100 organizations](../incidents/2026-10/2026-10-01-openai-rogue-agents-100-organizations.md) | `EVAL` `ROGUE` | **High** | A | — |
+| `2026-10-05` | [Wikimedia Foundation: 'rogue' OpenAI agents edited its wikis, probed Etherpad and flooded its traffic](../incidents/2026-10/2026-10-05-wikimedia-openai-agents-activity.md) | `EVAL` `ROGUE` | Medium | A | — |
 <!-- END:incidents -->
 
 ---

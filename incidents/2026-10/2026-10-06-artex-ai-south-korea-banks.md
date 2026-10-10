@@ -48,6 +48,12 @@ sources:
     label: The Herald Business (exclusive)
   - url: https://www.techtimes.com/articles/328541/20261005/open-source-ai-agent-hacked-seven-south-korean-banks-exposing-65000-records.htm
     label: Tech Times
+  - url: https://www.crowdstrike.com/en-us/blog/unknown-threat-actor-uses-artex-to-target-south-korean-finance/
+    label: CrowdStrike (9 October follow-up)
+  - url: https://securityaffairs.com/200661/hacking/ai-driven-tool-artex-used-in-attacks-against-south-korean-banks.html
+    label: Security Affairs
+  - url: https://thehackernews.com/2026/10/artex-ai-pentesting-tool-used-in-data.html
+    label: The Hacker News (developer response)
 disputed: false
 landmark: false
 scan_month: 2026-10
@@ -84,6 +90,8 @@ flowchart LR
 
 **Why it is recorded, and how graded.** This is a **confirmed real-world breach of seven financial institutions** with tens of thousands of customers' personal data (including national ID numbers) taken — `real_harm: true`, and `critical` under the archive's multi-organisation-damage trigger. `WEAPON` (a human wielding an agentic pen-test tool as an attack weapon) + `EXFIL` (customer records extracted). Confidence `A` for the incident itself — acknowledged by the president and the Financial Security Institute and reported across major outlets — while the **ARTEX attribution is held as "traced/suspected, not formally confirmed"** in the text. The regulatory aftermath is notable: authorities **suspended a planned round of network-separation deregulation**, crediting the physical separation of core banking for limiting the damage.
 
+**Update (9 October 2026) — CrowdStrike analyses the operator's own working files.** CrowdStrike published a follow-up built on **open directories left exposed on attacker-controlled servers**, which it says provide *"direct insight into the threat actor's operational methodology and tooling."* Exposed on those servers were **Claude Code session histories, ARTEX configuration files and Claude memory files**; one directory held a `CLAUDE.md` at `38.244.50[.]120:18899/.claude/CLAUDE.md` containing *"a Chinese-language pentesting prompt that specified how the LLM should conduct pentesting activities."* The sessions show a **two-server setup** (a Hong Kong address as the operator's main infrastructure; `38.244.50[.]120` running the ARTEX instance behind the Korean attacks), with **DeepSeek v4.1-flash as the main model and GLM-5.3 (Zhipu AI) and Grok 4.6 used for additional sessions**, likely reached through a reseller (`xcai[.]pro`), plus nine proxy IPs listed in the report. CrowdStrike **does not link the activity to a specific group** and assesses with moderate confidence that the operator is **Chinese-speaking and financially motivated**; industry reporting still has not confirmed how many organisations were hit. The operator also queried the model about where stolen Korean data is typically sold and how to find Korean data-sale channels on Telegram; the session dumps surfaced what may be operator personal details, which are omitted here per Security Affairs' own caution. Separately, ARTEX's developer (Autumn-27) has **closed the source code and stopped updates**, saying the tool was built for learning and research and that these attacks are unrelated to the project. This update enriches the record with the same incident's follow-up primary analysis; the attribution stance is unchanged — tool use traced/suspected, operator assessed (not formally attributed).
+
 ## Sources
 
 | # | Source | Link |
@@ -91,6 +99,9 @@ flowchart LR
 | 1 | American Banker | <https://www.americanbanker.com/news/ai-linked-hacks-hit-korean-banks-through-loan-agent-sites> |
 | 2 | The Herald Business (exclusive) | <https://mbiz.heraldcorp.com/article/10892497> |
 | 3 | Tech Times | <https://www.techtimes.com/articles/328541/20261005/open-source-ai-agent-hacked-seven-south-korean-banks-exposing-65000-records.htm> |
+| 4 | CrowdStrike — "Unknown threat actor uses ARTEX to target South Korean finance" (9 October follow-up) | <https://www.crowdstrike.com/en-us/blog/unknown-threat-actor-uses-artex-to-target-south-korean-finance/> |
+| 5 | Security Affairs | <https://securityaffairs.com/200661/hacking/ai-driven-tool-artex-used-in-attacks-against-south-korean-banks.html> |
+| 6 | The Hacker News — ARTEX developer response | <https://thehackernews.com/2026/10/artex-ai-pentesting-tool-used-in-data.html> |
 
 ## Metadata
 
@@ -106,7 +117,7 @@ flowchart LR
 | Region | [South Korea](../../regions/kr.md) |
 | Archive ID | `2026-10-06-artex-ai-south-korea-banks` |
 
-<sub>**Why this classification:** A human-directed operation that used an open-source agentic pen-test tool against seven banks (`WEAPON`) and extracted customer records (`EXFIL`). `critical` under the multi-organisation confirmed-damage trigger — seven financial institutions, ~66,000 people's data including national IDs. `real_harm: true`. Confidence `A` for the breach (presidential and Financial Security Institute acknowledgement plus major-outlet reporting); the **ARTEX tool attribution is explicitly held as log-traced/suspected rather than formally confirmed**, and the operator is unattributed. Dated to the 6 October public disclosure; the campaign ran from ~28 September (kept in `date_raw`). Grading criteria: [severity.md](../../taxonomy/severity.md) and [confidence.md](../../taxonomy/confidence.md).</sub>
+<sub>**Why this classification:** A human-directed operation that used an open-source agentic pen-test tool against seven banks (`WEAPON`) and extracted customer records (`EXFIL`). `critical` under the multi-organisation confirmed-damage trigger — seven financial institutions, ~66,000 people's data including national IDs. `real_harm: true`. Confidence `A` for the breach (presidential and Financial Security Institute acknowledgement plus major-outlet reporting); the **ARTEX tool attribution is explicitly held as log-traced/suspected rather than formally confirmed**, and the operator is unattributed. Dated to the 6 October public disclosure; the campaign ran from ~28 September (kept in `date_raw`). Grading criteria: [severity.md](../../taxonomy/severity.md) and [confidence.md](../../taxonomy/confidence.md). Enriched on 10 October 2026 with CrowdStrike's 9 October follow-up analysis of the operator's exposed working files (see Details).</sub>
 
 ## Related
 

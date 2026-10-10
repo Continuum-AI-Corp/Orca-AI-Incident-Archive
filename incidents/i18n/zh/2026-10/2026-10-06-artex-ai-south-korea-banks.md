@@ -39,6 +39,8 @@ flowchart LR
 
 **为何收录、如何分级。** 这是对**七家金融机构的确认真实入侵**，数万客户个人数据（含身份证号）被窃——`real_harm: true`，并按本档案"多组织损害"触发条件评 `critical`。`WEAPON`（人以 agentic 渗透工具为攻击武器）+ `EXFIL`（客户记录被窃取）。可信度 `A` 针对事件本身——经总统与金融安全院承认、并由多家主流媒体报道——而**ARTEX 归因在正文中保留为"日志追踪／怀疑，未正式确认"**。监管后续值得注意：当局**暂停了一轮原定的网络隔离放松**，并归功于核心银行的物理隔离限制了损失。
 
+**更新（2026 年 10 月 9 日）——CrowdStrike 分析攻击者自己的工作文件。** CrowdStrike 基于**攻击者控制服务器上暴露的开放目录**发布了后续分析，称其*「直接揭示了威胁行为者的操作方法与工具」*。暴露内容包括 **Claude Code 会话历史、ARTEX 配置文件与 Claude 记忆文件**；其中一个目录在 `38.244.50[.]120:18899/.claude/CLAUDE.md` 存放了一份*「中文渗透测试提示词，规定了 LLM 应如何进行渗透活动」*。会话显示**双服务器架构**（香港地址为主基础设施；`38.244.50[.]120` 运行面向韩国攻击的 ARTEX 实例），**主模型为 DeepSeek v4.1-flash，另有 GLM-5.3（智谱）与 Grok 4.6 用于额外会话**，可能经转售商（`xcai[.]pro`）接入，报告中还列出九个代理 IP。CrowdStrike **未将活动关联到具体组织**，以中等置信度评估操作员为**讲中文、财务动机**；行业报道仍未确认受害机构数量。操作者还曾询问模型韩国被盗数据通常在哪里出售、如何找到韩国 Telegram 数据交易渠道；会话转储中出现疑似操作者个人信息的细节，按 Security Affairs 自身的提示与档案惯例此处不予收录。另外，ARTEX 的开发者（Autumn-27）已**关闭源码并停止更新**，称该工具为学习与研究而建、这些攻击与项目无关。本次更新以同一事件的后续一手分析充实本条；归因立场不变——工具关联为追踪／怀疑，操作者为评估性认定（未正式归因）。
+
 ## 来源
 
 | # | 来源 | 链接 |
@@ -46,6 +48,9 @@ flowchart LR
 | 1 | American Banker | <https://www.americanbanker.com/news/ai-linked-hacks-hit-korean-banks-through-loan-agent-sites> |
 | 2 | The Herald Business（独家） | <https://mbiz.heraldcorp.com/article/10892497> |
 | 3 | Tech Times | <https://www.techtimes.com/articles/328541/20261005/open-source-ai-agent-hacked-seven-south-korean-banks-exposing-65000-records.htm> |
+| 4 | CrowdStrike——《Unknown threat actor uses ARTEX to target South Korean finance》（10 月 9 日跟进） | <https://www.crowdstrike.com/en-us/blog/unknown-threat-actor-uses-artex-to-target-south-korean-finance/> |
+| 5 | Security Affairs | <https://securityaffairs.com/200661/hacking/ai-driven-tool-artex-used-in-attacks-against-south-korean-banks.html> |
+| 6 | The Hacker News——ARTEX 开发者回应 | <https://thehackernews.com/2026/10/artex-ai-pentesting-tool-used-in-data.html> |
 
 ## 元数据
 

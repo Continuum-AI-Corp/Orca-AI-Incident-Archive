@@ -31,6 +31,7 @@ https://appomni.com/ao-labs/bodysnatcher-agentic-ai-security-vulnerability-in-se
 https://arstechnica.com/ai/2026/06/meta-ai-support-chatbot-gave-hackers-access-to-notable-instagram-accounts/
 https://arstechnica.com/information-technology/2026/05/millions-of-ai-agents-imperiled-by-critical-vulnerability-in-open-source-package/
 https://arstechnica.com/security/2026/06/dozens-of-red-hat-packages-backdoored-through-its-offical-npm-channel/
+https://arstechnica.com/security/2026/10/openai-agents-tried-to-hack-wikipedia-tools-and-flooded-it-with-traffic/
 https://arxiv.org/abs/2601.04603v1
 https://arxiv.org/abs/2602.15001v2
 https://arxiv.org/abs/2608.00150
@@ -45,6 +46,7 @@ https://badhost.org/
 https://baijiahao.baidu.com/s?id=1877097087157468477
 https://beam.ai/agentic-insights/ai-agent-security-breaches-2026-lessons
 https://bestsec.net/
+https://blog.barracuda.com/2026/10/07/email-attacks-target-both-humans-ai-assistants
 https://blog.checkpoint.com/executive-insights/hexstrike-ai-when-llms-meet-zero-day-exploitation/
 https://blog.frontier.security/chinese-model-kimi-k3-breaks-uk-ai-safety-institute-benchmark-evaluations/
 https://blog.google/innovation-and-ai/products/gemini-app/next-evolution-gemini-app/
@@ -92,6 +94,7 @@ https://cybernews.com/chatgpt-ai-humanoid-robot-shot-human/
 https://cybernews.com/security/openais-rogue-agents-used-at-least-10-more-sites/
 https://cyberscoop.com/claude-chrome-extension-allows-plugins-to-hijack-ai/
 https://cyberscoop.com/near-autonomous-ai-attack-government-target-taiwan/
+https://cyberscoop.com/poellm-malware-botnet-poem-lumen-black-lotus-labs/
 https://cyberscoop.com/servicenow-fixes-critical-ai-vulnerability-cve-2025-12420/
 https://cybersecuritynews.com/anthropics-claude-oceanus-v1-p/
 https://cybersecuritynews.com/bragjack-ai-agent-hijacking/
@@ -165,6 +168,7 @@ https://github.com/modelcontextprotocol/typescript-sdk/security/advisories/GHSA-
 https://github.com/nrwl/nx-console/security/advisories/GHSA-c9j4-9m59-847w
 https://github.com/pwardle/not-a-mused
 https://github.com/robocurve/roboharm
+https://github.com/tensorlakeai/tensorlake/issues/1014
 https://github.com/zammad/zammad/commit/e3b0c8df91ad2108c8305be23e8fe6f73fb9718d
 https://github.com/zammad/zammad/security/advisories/GHSA-gp3x-9xm8-rcj6
 https://gizmodo.com/ai-agents-targeted-canadian-government-in-rudimentary-hacking-attempts-2000819992
@@ -285,6 +289,7 @@ https://securityaffairs.com/194081/hacking/difytap-four-bugs-put-over-1-million-
 https://securityaffairs.com/194822/ai/hidden-web-prompts-trick-ai-agents-into-sending-money.html
 https://securityaffairs.com/198270/hacking/hackers-target-langflow-in-cve-2026-0768-attacks/
 https://securityaffairs.com/200283/hacking/cve-2026-90970-critical-gitlab-ai-gateway-flaw-fixed.html
+https://securityaffairs.com/200661/hacking/ai-driven-tool-artex-used-in-attacks-against-south-korean-banks.html
 https://securityboulevard.com/2026/01/vulnerability-in-anthropics-claude-code-shows-up-in-cowork/
 https://securityboulevard.com/2026/03/amazon-lost-6-3-million-orders-to-vibe-coding-your-soc-is-next/
 https://securitylabs.datadoghq.com/articles/shai-hulud-2.0-npm-worm/
@@ -300,6 +305,7 @@ https://slowmist.medium.com/threat-intelligence-trapdoor-analysis-a-cross-ecosys
 https://socket.dev/blog/gemstuffer
 https://socket.dev/blog/memtensor-compromise
 https://socket.dev/blog/slopsquatting-how-ai-hallucinations-are-fueling-a-new-class-of-supply-chain-attacks
+https://socket.dev/blog/tensorlake-compromise
 https://socket.dev/blog/unauthorized-ai-agent-execution-code-published-to-openvsx-in-aqua-trivy-vs-code-extension
 https://socradar.io/blog/mexican-government-breach-claude-chatgpt/
 https://socradar.io/blog/sharedroot-sandbox-escape-claude-cowork/
@@ -368,7 +374,11 @@ https://thehackernews.com/2026/09/openai-shelves-gpt-61-astra-after-tests.html
 https://thehackernews.com/2026/09/papercut-attacker-uses-hundreds-of-ai.html
 https://thehackernews.com/2026/09/researchers-use-claude-to-port-pre-auth.html
 https://thehackernews.com/2026/09/russia-aligned-uac-0099-plants-nuclear.html
+https://thehackernews.com/2026/10/artex-ai-pentesting-tool-used-in-data.html
 https://thehackernews.com/2026/10/gitlab-patches-critical-self-hosted-ai.html
+https://thehackernews.com/2026/10/poellm-malware-infects-3400-servers-to.html
+https://thehackernews.com/2026/10/tensorlake-npm-package-compromised-to.html
+https://thehackernews.com/2026/10/threatsday-ransomware-affiliate.html
 https://thenewstack.io/agentjacking-sentry-mcp-attack/
 https://thenextweb.com/news/meta-muse-facebook-marketplace-address-buyer-robb
 https://theori.io/ko/blog/2026-h1-hot-security-issue-case
@@ -386,6 +396,7 @@ https://venturebeat.com/infrastructure/anthropic-launches-claude-for-chrome-in-l
 https://venturebeat.com/security/claude-mexico-breach-four-blind-domains-security-stack
 https://venturebeat.com/security/microsoft-salesforce-copilot-agentforce-prompt-injection-cve-agent-remediation-playbook
 https://vercel.com/kb/bulletin/vercel-april-2026-security-incident
+https://wikimediafoundation.org/news/2026/10/05/openai-rogue-agent-activities-found-on-wikimedia-projects/
 https://www-cdn.anthropic.com/4263b940cabb546aa0e3283f35b686f4f3b2ff47.pdf
 https://www-cdn.anthropic.com/b2a76c6f6992465c09a6f2fce282f6c0cea8c200.pdf
 https://www-cdn.anthropic.com/d00db56fa754a1b115b6dd7cb2e3c342ee809620.pdf
@@ -398,6 +409,7 @@ https://www.51cto.com/article/856105.html
 https://www.abc.net.au/news/2026-08-10/ai-assistant-hacks-gym-website-aus-cyber-attack/107007986
 https://www.aepd.es/prensa-y-comunicacion/blog/primera-notiviacion-brecha-datos-personales-causada-por-ataque-ejecutado-mediante-agente-ia
 https://www.aibase.com/news/16138
+https://www.aikido.dev/blog/tensorlake-npm-package-compromised
 https://www.aisi.gov.uk/blog/boundary-point-jailbreaking-a-new-way-to-break-the-strongest-ai-defences
 https://www.aisi.gov.uk/blog/gpt-6-astra-performs-unsanctioned-supply-chain-attacks-in-simulations
 https://www.aisi.gov.uk/blog/incident-report-unsanctioned-agent-behaviour-during-cyber-testing
@@ -476,6 +488,7 @@ https://www.codeintegrity.ai/blog/notion
 https://www.coindesk.com/business/2026/01/31/solana-based-defi-platform-step-finance-hit-by-usd30-million-treasury-hack-as-token-price-craters
 https://www.coindesk.com/tech/2026/09/30/openai-google-and-meta-pledge-outside-ai-audits-under-voluntary-white-house-deal
 https://www.crowdstrike.com/en-us/blog/crowdstrike-2026-threat-hunting-report/
+https://www.crowdstrike.com/en-us/blog/unknown-threat-actor-uses-artex-to-target-south-korean-finance/
 https://www.csa.gov.sg/alerts-and-advisories/advisories/ad-2026-009/
 https://www.csoonline.com/article/4020919/mcdonalds-ai-hiring-tools-password-123456-exposes-data-of-64m-applicants.html
 https://www.csoonline.com/article/4169407/malicious-hugging-face-model-masquerading-as-openai-release-hits-244k-downloads.html
@@ -530,6 +543,7 @@ https://www.ibm.com/support/pages/node/7288641
 https://www.implicator.ai/moltbook-left-every-ai-agents-api-keys-in-an-open-database-security-researcher-finds/
 https://www.infoq.cn/article/CEphwKjzAe7LzbOriLcq
 https://www.infosecurity-magazine.com/news/abuse-cursor-agent-ransomware/
+https://www.infosecurity-magazine.com/news/attackers-hide-ai-prompt/
 https://www.infosecurity-magazine.com/news/indirect-prompt-injection-web/
 https://www.infosecurity-magazine.com/news/rathat-android-malware-ai-steal/
 https://www.infosecurity-magazine.com/news/x47c-botnet-ai-api-draining-18/
@@ -545,6 +559,7 @@ https://www.latimes.com/world-nation/story/2026-09-19/lawsuit-says-anthropic-ope
 https://www.legitsecurity.com/blog/camoleak-critical-github-copilot-vulnerability-leaks-private-source-code
 https://www.legitsecurity.com/blog/remote-prompt-injection-in-gitlab-duo
 https://www.linuxfoundation.org/blog/proposing-the-safe-working-group-an-open-community-effort-to-improve-ai-security
+https://www.lumen.com/blog/en-us/canto-incognito-tracking-the-poellm-malware
 https://www.macrumors.com/2026/05/22/google-search-disregard/
 https://www.medianama.com/2026/09/223-trump-google-anthropic-meta-openai-ai-safety-accord/
 https://www.microsoft.com/en-us/security/blog/2025/11/03/sesameop-novel-backdoor-uses-openai-assistants-api-for-command-and-control/
@@ -621,6 +636,7 @@ https://www.sohu.com/a/1068905442_120747399
 https://www.stepsecurity.io/blog/binding-gyp-npm-supply-chain-attack-spreads-like-worm
 https://www.stepsecurity.io/blog/mini-shai-hulud-is-back-a-self-spreading-supply-chain-attack-hits-the-npm-ecosystem
 https://www.stepsecurity.io/blog/sckit-supply-chain-worm-hits-memtensor-npm-pypi-scopes
+https://www.stepsecurity.io/blog/tensorlake-npm-compromised-hostage-token-worm
 https://www.straiker.ai/blog/cyberspike-villager-cobalt-strike-ai-native-successor
 https://www.sygnia.co/blog/inside-an-ai-assisted-cloud-attack/
 https://www.sysdig.com/blog/jadepuffer-agentic-ransomware-for-automated-database-extortion
