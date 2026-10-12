@@ -3,6 +3,7 @@ http://www.news.cn/sports/20250404/9b6d2457ca41488e87ddbe494c2e3ee1/c.html
 https://0din.ai/blog/clone-this-repo-and-i-own-your-machine
 https://1password.com/blog/why-ai-generated-patches-still-require-human-review
 https://1password.com/files/resources/frontier-models-vulnerability-patches-flawed.pdf
+https://6abc.com/post/anthropic-ai-model-submitted-false-tip-unsolved-murder-philadelphia-police-say/19925243/
 https://9to5google.com/2026/09/19/google-confirms-gemini-hacked-into-three-companies-during-cybersecurity-test-months-ago/
 https://abcnews.com/Business/openai-reveals-hack-government-agency-australia/story?id=136945837
 https://accomplish.ai/blog/escaping-the-openai-codex-sandbox-twice/
@@ -10,7 +11,6 @@ https://adnanthekhan.com/posts/clinejection/#pre-publication
 https://adversa.ai/blog/ai-coding-agent-incidents/
 https://adversa.ai/blog/cryptographic-context-injection-github-copilot/
 https://adversa.ai/blog/cryptographic-context-injection-grok-data-theft/
-https://adversa.ai/blog/openclaw-security-101-vulnerabilities-hardening-2026/
 https://adversa.ai/blog/opensource-ai-coding-agents-shell-injection-vulnerability/
 https://adversa.ai/blog/trustfall-coding-agent-security-flaw-rce-claude-cursor-gemini-cli-copilot/
 https://advisories.gitlab.com/npm/cline/CVE-2026-44211/
@@ -109,6 +109,7 @@ https://cybersecuritynews.com/openclaw-control-panels-exposed/
 https://cybersecuritynews.com/plugin4shell-zero-click-rce/
 https://dailyjus.com/legal-tech/2026/07/prompt-injection-are-invisible-instructions-the-next-ai-risk-in-disputes
 https://darioamodei.com/post/we-must-pace-the-frontier
+https://darkreading.com/cloud-security/agentcorruption-aws-environments-at-risk-single-prompt
 https://databreaches.net/2026/09/25/divd-dutch-institute-for-vulnerability-disclosure-investigating-agentic-ai-powered-attack/
 https://deploymentsafety.openai.com/gpt-5-2/cybersecurity
 https://deploymentsafety.openai.com/gpt-5-3-codex/disallowed-content-evaluations
@@ -285,6 +286,7 @@ https://safedep.io/megalodon-mass-github-repo-backdooring-ci-workflows/
 https://safedep.io/memtensor-sckit-worm-npm-pypi/
 https://safedep.io/miasma-worm-ai-coding-agent-config-injection/
 https://santageai.com/news/2026/09/12/senate-ai-duty-of-care-bill
+https://securityaffairs.com/188749/hacking/clawjacked-flaw-exposed-openclaw-users-to-data-theft.html
 https://securityaffairs.com/194081/hacking/difytap-four-bugs-put-over-1-million-ai-apps-at-risk.html
 https://securityaffairs.com/194822/ai/hidden-web-prompts-trick-ai-agents-into-sending-money.html
 https://securityaffairs.com/198270/hacking/hackers-target-langflow-in-cve-2026-0768-attacks/
@@ -380,6 +382,7 @@ https://thehackernews.com/2026/10/poellm-malware-infects-3400-servers-to.html
 https://thehackernews.com/2026/10/tensorlake-npm-package-compromised-to.html
 https://thehackernews.com/2026/10/threatsday-ransomware-affiliate.html
 https://thenewstack.io/agentjacking-sentry-mcp-attack/
+https://thenextweb.com/news/aws-agentcore-zenity-agentcorruption-one-prompt-agents
 https://thenextweb.com/news/meta-muse-facebook-marketplace-address-buyer-robb
 https://theori.io/ko/blog/2026-h1-hot-security-issue-case
 https://therecord.media/irregular-ai-security-company-incidents
@@ -450,6 +453,7 @@ https://www.bleepingcomputer.com/news/security/amazon-ai-assisted-hacker-breache
 https://www.bleepingcomputer.com/news/security/amazon-ai-coding-agent-hacked-to-inject-data-wiping-commands/
 https://www.bleepingcomputer.com/news/security/automated-ai-agent-used-to-breach-cybersecurity-nonprofit-divd/
 https://www.bleepingcomputer.com/news/security/bragjack-attacks-hijack-ai-browser-agents-through-malicious-extensions/
+https://www.bleepingcomputer.com/news/security/clawjacked-attack-let-malicious-websites-hijack-openclaw-to-steal-data/
 https://www.bleepingcomputer.com/news/security/critical-langflow-flaw-exploited-to-steal-openai-and-aws-keys/
 https://www.bleepingcomputer.com/news/security/cursor-codex-gemini-cli-antigravity-hit-by-sandbox-escapes/
 https://www.bleepingcomputer.com/news/security/fake-openai-repository-on-hugging-face-pushes-infostealer-malware/
@@ -547,6 +551,7 @@ https://www.infosecurity-magazine.com/news/attackers-hide-ai-prompt/
 https://www.infosecurity-magazine.com/news/indirect-prompt-injection-web/
 https://www.infosecurity-magazine.com/news/rathat-android-malware-ai-steal/
 https://www.infosecurity-magazine.com/news/x47c-botnet-ai-api-draining-18/
+https://www.inquirer.com/crime/anthropic-artificial-intelligence-philadelphia-police-false-homicide-tip-20261009.html
 https://www.ipa.go.jp/digital/ai/security/ai-security-bulletin.html
 https://www.irregular.com/research/assessing-gpt-5.6-sol
 https://www.ithome.com/1/003/876.htm
@@ -555,6 +560,7 @@ https://www.kodemsecurity.com/resources/aws-kiro-agentic-ide-rce-prompt-injectio
 https://www.koi.ai/blog
 https://www.koi.ai/blog/clawhavoc-341-malicious-clawedbot-skills-found-by-the-bot-they-were-targeting
 https://www.koi.ai/blog/urban-vpn-browser-extension-ai-conversations-data-collection
+https://www.ksl.com/article/51634619/anthropic-ai-model-submits-false-homicide-tip-to-police-website
 https://www.latimes.com/world-nation/story/2026-09-19/lawsuit-says-anthropic-openai-spacexai-google-made-illegal-agreement-on-ai-slowdown
 https://www.legitsecurity.com/blog/camoleak-critical-github-copilot-vulnerability-leaks-private-source-code
 https://www.legitsecurity.com/blog/remote-prompt-injection-in-gitlab-duo
@@ -579,6 +585,7 @@ https://www.nbcnews.com/politics/white-house/artificial-intelligence-task-force-
 https://www.newsguardtech.com/special-reports/anthropic-ai-chatbot-claude-russia-iran-propaganda/
 https://www.nine.com.au/australia-news/openai-hack-australian-government-website-medicare-portal-explained-everything-you-need-to-know-20260924-p6102a.html
 https://www.oasis.security/blog/claude-ai-prompt-injection-data-exfiltration-vulnerability
+https://www.oasis.security/blog/openclaw-vulnerability
 https://www.oasis.security/resources/reports/claude-ai-prompt-injection-vulnerability-technical-report
 https://www.okta.com/blog/threat-intelligence/signing_in_without_actually_signing_in/
 https://www.oligo.security/blog/critical-rce-vulnerability-in-anthropic-mcp-inspector-cve-2025-49596
@@ -713,4 +720,5 @@ https://x.com/aaronp613/status/2049986504617820551
 https://x.com/lifeof_jer/status/2048103471019434248
 https://x.com/theonejvo/status/2015401219746128322
 https://yasashii-cybersecurity.com/ai-three-incidents-2026-09/
+https://zenity.io/press-release/zenity-labs-discloses-agentcorruption-a-chain-of-aws-agentcore-flaws
 https://zimperium.com/blog/rathat-ai-powered-mobile-threat-is-here-for-your-credentials-bank-accounts

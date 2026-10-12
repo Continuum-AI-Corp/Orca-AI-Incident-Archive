@@ -2,14 +2,14 @@
 id: 2026-02-25-openclaw-clawjacked
 lang: zh
 source: incidents/2026-02/2026-02-25-openclaw-clawjacked.md
-title: "OpenClaw ClawJacked（CVE-2026-25253）"
+title: "OpenClaw ClawJacked"
 summary: |
   Oasis Security：跨源 WebSocket 连本地网关，无速率限制、无设备批准 → 完全控制 agent（交互、导出配置、枚举已连设备、读日志）。披露时 **42,665 个实例暴露**（SecurityScorecard 另称 40,214 台，35.4% 存在漏洞）
 ---
 
-# OpenClaw ClawJacked（CVE-2026-25253）
+# OpenClaw ClawJacked
 
-<sub>OpenClaw ClawJacked (CVE-2026-25253)</sub>
+<sub>OpenClaw ClawJacked</sub>
 
 ![severity: high](https://img.shields.io/badge/severity-high-B23B40?style=flat-square) ![confidence: A](https://img.shields.io/badge/confidence-A-157A41?style=flat-square) ![real harm: no](https://img.shields.io/badge/real_harm-no-7A868C?style=flat-square) ![AI involvement: confirmed](https://img.shields.io/badge/AI_involvement-confirmed-1F9D55?style=flat-square) ![kind: incident](https://img.shields.io/badge/kind-incident-48545A?style=flat-square) ![type: INFRA](https://img.shields.io/badge/type-INFRA-B08528?style=flat-square)
 
@@ -34,8 +34,9 @@ flowchart LR
 
 | # | 来源 | 链接 |
 |---|---|---|
-| 1 | Rafter 时间线 | <https://rafter.so/blog/incidents/ai-agent-security-timeline-2025-2026> |
-| 2 | adversa | <https://adversa.ai/blog/openclaw-security-101-vulnerabilities-hardening-2026/> |
+| 1 | Oasis Security——ClawJacked（发现者） | <https://www.oasis.security/blog/openclaw-vulnerability> |
+| 2 | BleepingComputer | <https://www.bleepingcomputer.com/news/security/clawjacked-attack-let-malicious-websites-hijack-openclaw-to-steal-data/> |
+| 3 | Security Affairs | <https://securityaffairs.com/188749/hacking/clawjacked-flaw-exposed-openclaw-users-to-data-theft.html> |
 
 ## 元数据
 
@@ -45,7 +46,7 @@ flowchart LR
 | 性质 | 真实事故 `incident` |
 | 类型 | [`INFRA`](../../../../taxonomy/types.md#infra) agent 基础设施暴露 |
 | 严重度 | **高** `high` |
-| 可信度 | **A** — 一手来源（厂商 / 受害方 / 执法 / 官方报告） |
+| 可信度 | **A** — Oasis Security 通报（发现者）+ 独立报道 |
 | 真实伤害 | 否 |
 | AI 参与 | 已确认 `confirmed` |
 | 地区 | [全球](../../../../regions/global.md) |

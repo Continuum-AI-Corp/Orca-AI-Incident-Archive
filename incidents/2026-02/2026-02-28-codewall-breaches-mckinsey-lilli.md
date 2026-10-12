@@ -105,7 +105,7 @@ flowchart LR
 - `2026-02-20` [AI-augmented actor compromises 600+ FortiGate devices](2026-02-20-fortigate-600-devices-compromised.md)<br>  <sub>AI-augmented actor compromises 600+ FortiGate devices</sub>
 - `2026-02-25` [Nine Mexican government agencies breached](2026-02-25-mexico-nine-agencies-breached.md)<br>  <sub>Nine Mexican government agencies breached</sub>
 - `2026-02-10` [15,200 OpenClaw control panels exposed](2026-02-10-openclaw-kong-zhi-mian-ban.md)<br>  <sub>15,200 OpenClaw control panels exposed</sub>
-- `2026-02-25` [OpenClaw ClawJacked (CVE-2026-25253)](2026-02-25-openclaw-clawjacked.md)<br>  <sub>OpenClaw ClawJacked (CVE-2026-25253)</sub>
+- `2026-02-25` [OpenClaw ClawJacked](2026-02-25-openclaw-clawjacked.md)<br>  <sub>OpenClaw ClawJacked</sub>
 
 ---
 

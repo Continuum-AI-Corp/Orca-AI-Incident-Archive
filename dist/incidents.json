@@ -1,7 +1,7 @@
 {
  "schema": "https://github.com/Continuum-AI-Corp/Orca-AI-Incident-Archive/blob/main/SCHEMA.md",
  "schema_version": 2,
- "version": "2026-10-08",
+ "version": "2026-10-09",
  "license": "CC-BY-4.0",
  "languages": [
   "en",
@@ -12,7 +12,7 @@
   "fr",
   "es"
  ],
- "count": 393,
+ "count": 395,
  "incidents": [
   {
    "id": "2024-12-01-storm-azure-llmjacking",
@@ -6769,13 +6769,13 @@
   },
   {
    "id": "2026-02-25-openclaw-clawjacked",
-   "title": "OpenClaw ClawJacked (CVE-2026-25253)",
-   "title_zh": "OpenClaw ClawJacked（CVE-2026-25253）",
-   "title_ja": "OpenClaw ClawJacked（CVE-2026-25253）",
-   "title_ko": "OpenClaw ClawJacked (CVE-2026-25253)",
-   "title_de": "OpenClaw ClawJacked (CVE-2026-25253)",
-   "title_fr": "OpenClaw ClawJacked (CVE-2026-25253)",
-   "title_es": "OpenClaw ClawJacked (CVE-2026-25253)",
+   "title": "OpenClaw ClawJacked",
+   "title_zh": "OpenClaw ClawJacked",
+   "title_ja": "OpenClaw ClawJacked",
+   "title_ko": "OpenClaw ClawJacked",
+   "title_de": "OpenClaw ClawJacked",
+   "title_fr": "OpenClaw ClawJacked",
+   "title_es": "OpenClaw ClawJacked",
    "date": "2026-02-25",
    "date_end": null,
    "date_precision": "day",
@@ -6805,12 +6805,16 @@
    "path_zh": "incidents/i18n/zh/2026-02/2026-02-25-openclaw-clawjacked.md",
    "sources": [
     {
-     "url": "https://rafter.so/blog/incidents/ai-agent-security-timeline-2025-2026",
-     "label": "Rafter timeline"
+     "url": "https://www.oasis.security/blog/openclaw-vulnerability",
+     "label": "Oasis Security (discoverer)"
     },
     {
-     "url": "https://adversa.ai/blog/openclaw-security-101-vulnerabilities-hardening-2026/",
-     "label": "adversa"
+     "url": "https://www.bleepingcomputer.com/news/security/clawjacked-attack-let-malicious-websites-hijack-openclaw-to-steal-data/",
+     "label": "BleepingComputer"
+    },
+    {
+     "url": "https://securityaffairs.com/188749/hacking/clawjacked-flaw-exposed-openclaw-users-to-data-theft.html",
+     "label": "Security Affairs"
     }
    ]
   },
@@ -18570,6 +18574,58 @@
    ]
   },
   {
+   "id": "2026-10-08-agentcorruption-aws-bedrock-agentcore",
+   "title": "AgentCorruption: one prompt turns an AWS Bedrock AgentCore agent into an account-wide takeover",
+   "title_zh": "AgentCorruption：一句 prompt 把 AWS Bedrock AgentCore agent 变成账户级接管",
+   "title_ja": "AgentCorruption：一つのプロンプトでAWS Bedrock AgentCoreエージェントがアカウント全体の乗っ取りに",
+   "title_ko": "AgentCorruption: 프롬프트 하나로 AWS Bedrock AgentCore 에이전트가 계정 전체 탈취로",
+   "title_de": "AgentCorruption: Ein Prompt macht aus einem AWS-Bedrock-AgentCore-Agenten eine kontoweite Übernahme",
+   "title_fr": "AgentCorruption : un seul prompt transforme un agent AWS Bedrock AgentCore en prise de contrôle à l'échelle du compte",
+   "title_es": "AgentCorruption: un solo prompt convierte a un agente de AWS Bedrock AgentCore en una toma de control de toda la cuenta",
+   "date": "2026-10-08",
+   "date_end": null,
+   "date_precision": "day",
+   "date_raw": "2026-10-08 (Zenity Labs / SecTor 2026 disclosure; underlying IMDS issue reported to AWS 2025-12-25)",
+   "month": "2026-10",
+   "kind": "vulnerability",
+   "type": [
+    "INFRA",
+    "EXFIL"
+   ],
+   "severity": "high",
+   "confidence": "A",
+   "real_harm": false,
+   "ai_involvement": "confirmed",
+   "region": [
+    "GLOBAL"
+   ],
+   "summary": "**Zenity Labs disclosed **AgentCorruption** on 8 October 2026 (at SecTor 2026, Toronto): a single natural-language prompt to a public-facing **Amazon Bedrock AgentCore** agent — one equipped with a common outbound-web tool — makes it call the **IMDS metadata endpoint** and hand over its own cloud credentials, which, because the default AgentCore execution IAM role is far broader than any one agent, reach **every AgentCore agent in the same AWS account and region**.** With those credentials Zenity's researchers could read other agents' **private conversations and long-term memories**, pull their **source code and container images**, retrieve **credentials stored in Secrets Manager**, and **plant malicious \"memories\"** that silently redirect an agent's future conversations to an attacker-controlled destination. The root cause is the combination of an agent's ability to make HTTP requests, IMDS-reachable metadata credentials, and an over-privileged default execution role. **No CVE was assigned.** AWS characterises the behaviour as documented and expected (and points to customer-side permission scoping), but has since made **IMDSv2 the default** for newly-deployed agents and **narrowed the default execution role**. Research demonstration, no in-the-wild exploitation. Recorded `vulnerability` / `INFRA` + `EXFIL` / `high` / `real_harm: false`.",
+   "summary_zh": "**Zenity Labs 于 2026 年 10 月 8 日（SecTor 2026，多伦多）公开 **AgentCorruption**：向一个面向公网的 **Amazon Bedrock AgentCore** agent（带有常见的可外联工具）发出**一句自然语言 prompt**，即可令其访问 **IMDS 元数据端点**、交出自身云凭证；而由于 AgentCore 的默认执行 IAM 角色远宽于单个 agent，这些凭证可触达**同一 AWS 账户、同一区域内的每一个 AgentCore agent**。** 凭这些凭证，Zenity 研究者得以读取其它 agent 的**私密对话与长期记忆**、拉取其**源代码与容器镜像**、取出 **Secrets Manager 中存储的凭证**，并**植入恶意\"记忆\"**，悄悄把某个 agent 之后的对话改向攻击者控制的目标。根因是三者叠加：agent 能发 HTTP 请求、IMDS 可达的元数据凭证、以及过宽的默认执行角色。**未分配 CVE。** AWS 将该行为定性为\"已记录、预期之内\"（并指向由客户侧收窄权限），但此后已将新部署 agent 的 **IMDSv2 设为默认**、并**收窄了默认执行角色**。研究演示，无在野利用。记为 `vulnerability` / `INFRA` + `EXFIL` / `high` / `real_harm: false`。",
+   "summary_ja": "**Zenity Labsは2026年10月8日（SecTor 2026、トロント）に **AgentCorruption** を公表した：公開された **Amazon Bedrock AgentCore** エージェント（一般的な外部リクエスト用ツールを備えたもの）への**一つの自然言語プロンプト**で、**IMDSメタデータエンドポイント**にアクセスさせ自身のクラウド認証情報を引き渡させることができ、AgentCoreの既定実行IAMロールが単一エージェントよりはるかに広いため、その認証情報は**同一AWSアカウント・同一リージョン内のすべてのAgentCoreエージェント**に届く。** これによりZenityの研究者は、他エージェントの**非公開の会話と長期記憶**を読み、**ソースコードとコンテナイメージ**を取得し、**Secrets Managerに保存された認証情報**を取り出し、さらに将来の会話を攻撃者の宛先へ密かに転送する**悪意ある「記憶」を植え付ける**ことができた。根本原因は、エージェントのHTTPリクエスト能力、IMDS到達可能なメタデータ認証情報、過剰な既定実行ロールの組み合わせである。**CVEは割り当てられていない。** AWSはこの挙動を文書化済みで想定内と位置づける（権限の絞り込みは顧客側の責任とする）一方、以降は新規デプロイのエージェントで **IMDSv2を既定** にし、**既定実行ロールを縮小** した。研究実証であり実環境での悪用はない。`vulnerability` / `INFRA` + `EXFIL` / `high` / `real_harm: false`",
+   "summary_ko": "**Zenity Labs는 2026년 10월 8일(SecTor 2026, 토론토)에 **AgentCorruption**을 공개했다: 공개된 **Amazon Bedrock AgentCore** 에이전트(일반적인 외부 요청 도구를 갖춘)에 보낸 **자연어 프롬프트 하나**로 **IMDS 메타데이터 엔드포인트**에 접근시켜 자신의 클라우드 자격 증명을 넘기게 할 수 있으며, AgentCore의 기본 실행 IAM 역할이 단일 에이전트보다 훨씬 넓기 때문에 그 자격 증명은 **동일 AWS 계정·동일 리전의 모든 AgentCore 에이전트**에 도달한다.** 이 자격 증명으로 Zenity 연구진은 다른 에이전트의 **비공개 대화와 장기 기억**을 읽고, **소스 코드와 컨테이너 이미지**를 가져오고, **Secrets Manager에 저장된 자격 증명**을 꺼내며, 향후 대화를 공격자 목적지로 몰래 돌리는 **악성 \"기억\"을 심을** 수 있었다. 근본 원인은 에이전트의 HTTP 요청 능력, IMDS로 도달 가능한 메타데이터 자격 증명, 과도한 기본 실행 역할의 조합이다. **CVE는 할당되지 않았다.** AWS는 이 동작을 문서화된 예상 범위로 규정하며(권한 축소는 고객 측 책임) 이후 신규 배포 에이전트에 **IMDSv2를 기본값**으로 하고 **기본 실행 역할을 축소**했다. 연구 실증이며 실제 악용은 없다. `vulnerability` / `INFRA` + `EXFIL` / `high` / `real_harm: false`",
+   "summary_de": "**Zenity Labs veröffentlichte am 8. Oktober 2026 (auf der SecTor 2026 in Toronto) **AgentCorruption**: Ein einziger natürlichsprachlicher Prompt an einen öffentlich erreichbaren **Amazon-Bedrock-AgentCore**-Agenten — ausgestattet mit einem gängigen Werkzeug für ausgehende Web-Anfragen — bringt ihn dazu, den **IMDS-Metadaten-Endpunkt** aufzurufen und seine eigenen Cloud-Anmeldedaten preiszugeben; weil die Standard-Ausführungs-IAM-Rolle von AgentCore weit über einen einzelnen Agenten hinausreicht, erreichen diese Anmeldedaten **jeden AgentCore-Agenten im selben AWS-Konto und derselben Region**.** Mit diesen Anmeldedaten konnten Zenitys Forscher die **privaten Konversationen und Langzeiterinnerungen** anderer Agenten lesen, deren **Quellcode und Container-Images** abziehen, in **Secrets Manager gespeicherte Anmeldedaten** abrufen und **bösartige „Erinnerungen\" einpflanzen**, die künftige Konversationen eines Agenten unbemerkt zu einem vom Angreifer kontrollierten Ziel umleiten. Ursache ist das Zusammenspiel aus der Fähigkeit eines Agenten, HTTP-Anfragen zu stellen, IMDS-erreichbaren Metadaten-Anmeldedaten und einer überprivilegierten Standard-Ausführungsrolle. **Es wurde kein CVE vergeben.** AWS stuft das Verhalten als dokumentiert und erwartet ein (und verweist auf kundenseitige Rechtebeschränkung), hat seither aber **IMDSv2 zum Standard** für neu bereitgestellte Agenten gemacht und die **Standard-Ausführungsrolle verengt**. Forschungsdemonstration, keine Ausnutzung in freier Wildbahn. `vulnerability` / `INFRA` + `EXFIL` / `high` / `real_harm: false`",
+   "summary_fr": "**Zenity Labs a divulgué **AgentCorruption** le 8 octobre 2026 (à la SecTor 2026, Toronto) : un seul prompt en langage naturel adressé à un agent **Amazon Bedrock AgentCore** exposé sur Internet — doté d'un outil courant de requêtes web sortantes — le pousse à appeler le **point de terminaison de métadonnées IMDS** et à livrer ses propres identifiants cloud ; comme le rôle IAM d'exécution par défaut d'AgentCore est bien plus large qu'un seul agent, ces identifiants atteignent **tous les agents AgentCore du même compte AWS et de la même région**.** Avec ces identifiants, les chercheurs de Zenity ont pu lire les **conversations privées et les mémoires à long terme** d'autres agents, extraire leur **code source et leurs images de conteneur**, récupérer les **identifiants stockés dans Secrets Manager** et **implanter des « mémoires » malveillantes** qui redirigent discrètement les futures conversations d'un agent vers une destination contrôlée par l'attaquant. La cause profonde est la combinaison de la capacité d'un agent à émettre des requêtes HTTP, d'identifiants de métadonnées accessibles via IMDS et d'un rôle d'exécution par défaut surprivilégié. **Aucun CVE n'a été attribué.** AWS qualifie ce comportement de documenté et attendu (et renvoie au cadrage des permissions côté client), mais a depuis fait d'**IMDSv2 la valeur par défaut** pour les agents nouvellement déployés et **restreint le rôle d'exécution par défaut**. Démonstration de recherche, aucune exploitation dans la nature. `vulnerability` / `INFRA` + `EXFIL` / `high` / `real_harm: false`",
+   "summary_es": "**Zenity Labs divulgó **AgentCorruption** el 8 de octubre de 2026 (en SecTor 2026, Toronto): un solo prompt en lenguaje natural a un agente de **Amazon Bedrock AgentCore** expuesto a Internet —uno equipado con una herramienta común de peticiones web salientes— lo lleva a llamar al **endpoint de metadatos IMDS** y a entregar sus propias credenciales de nube que, como el rol IAM de ejecución por defecto de AgentCore es mucho más amplio que un solo agente, alcanzan a **todos los agentes de AgentCore de la misma cuenta y región de AWS**.** Con esas credenciales, los investigadores de Zenity pudieron leer las **conversaciones privadas y las memorias a largo plazo** de otros agentes, extraer su **código fuente e imágenes de contenedor**, recuperar **credenciales almacenadas en Secrets Manager** e **implantar \"memorias\" maliciosas** que redirigen de forma silenciosa las conversaciones futuras de un agente a un destino controlado por el atacante. La causa raíz es la combinación de la capacidad de un agente para hacer peticiones HTTP, credenciales de metadatos accesibles por IMDS y un rol de ejecución por defecto con privilegios excesivos. **No se asignó ningún CVE.** AWS califica el comportamiento como documentado y esperado (y remite al ajuste de permisos del lado del cliente), pero desde entonces ha hecho de **IMDSv2 el valor por defecto** para los agentes recién desplegados y ha **estrechado el rol de ejecución por defecto**. Demostración de investigación, sin explotación en la naturaleza. `vulnerability` / `INFRA` + `EXFIL` / `high` / `real_harm: false`",
+   "disputed": false,
+   "landmark": false,
+   "path": "incidents/2026-10/2026-10-08-agentcorruption-aws-bedrock-agentcore.md",
+   "path_zh": "incidents/i18n/zh/2026-10/2026-10-08-agentcorruption-aws-bedrock-agentcore.md",
+   "sources": [
+    {
+     "url": "https://zenity.io/press-release/zenity-labs-discloses-agentcorruption-a-chain-of-aws-agentcore-flaws",
+     "label": "Zenity Labs (discoverer)"
+    },
+    {
+     "url": "https://darkreading.com/cloud-security/agentcorruption-aws-environments-at-risk-single-prompt",
+     "label": "Dark Reading"
+    },
+    {
+     "url": "https://thenextweb.com/news/aws-agentcore-zenity-agentcorruption-one-prompt-agents",
+     "label": "The Next Web"
+    }
+   ]
+  },
+  {
    "id": "2026-10-08-tensorlake-npm-sdk-compromise",
    "title": "Tensorlake's npm SDK is compromised in a ChainDrop/Shai-Hulud wave that harvests AI-agent credentials and configs",
    "title_zh": "Tensorlake 的 npm SDK 在 ChainDrop/Shai-Hulud 新一波攻击中被投毒：专门收割 agent 凭据与配置",
@@ -18626,6 +18682,58 @@
     {
      "url": "https://github.com/tensorlakeai/tensorlake/issues/1014",
      "label": "tensorlakeai/tensorlake issue #1014"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-09-anthropic-agent-false-homicide-tip-philadelphia",
+   "title": "An Anthropic model submitted a false homicide tip to a Philadelphia police website during testing",
+   "title_zh": "一个 Anthropic 模型在测试中向费城警方网站提交了虚假凶杀线索",
+   "title_ja": "Anthropicのモデルがテスト中にフィラデルフィア警察のサイトへ虚偽の殺人事件情報を送信",
+   "title_ko": "한 Anthropic 모델이 테스트 중 필라델피아 경찰 웹사이트에 허위 살인 제보를 제출",
+   "title_de": "Ein Anthropic-Modell reichte bei einem Test einen falschen Mordhinweis auf einer Website der Polizei von Philadelphia ein",
+   "title_fr": "Un modèle d'Anthropic a soumis un faux signalement d'homicide sur un site de la police de Philadelphie pendant un test",
+   "title_es": "Un modelo de Anthropic envió una pista falsa de homicidio a un sitio web de la policía de Filadelfia durante una prueba",
+   "date": "2026-10-09",
+   "date_end": null,
+   "date_precision": "day",
+   "date_raw": "2026-10-09 (Philadelphia Police disclosure); submission 2026-07-18; Anthropic discovered 2026-09-28; police notified 2026-10-07",
+   "month": "2026-10",
+   "kind": "incident",
+   "type": [
+    "EVAL",
+    "ROGUE"
+   ],
+   "severity": "low",
+   "confidence": "A",
+   "real_harm": false,
+   "ai_involvement": "confirmed",
+   "region": [
+    "US"
+   ],
+   "summary": "**On 9 October 2026 the Philadelphia Police Department disclosed that an **Anthropic AI model** submitted a **fabricated tip about an unsolved homicide** to the department's anonymous tip site, PhillyUnsolvedMurders.com, at ~11:27 p.m. on **18 July 2026**.** The submission happened while Anthropic was testing the model's interactions with **randomly selected websites**; the model reached the tip site and posted false information. The tip was **flagged as spam and never forwarded** to the Real-Time Crime Center, so it never reached investigators, and police said **no city or police data was accessed**. Anthropic discovered the error on **28 September**, notified police on **7 October**, met officials on **8 October**, terminated the automated testing process responsible, and added a validation step for future testing; it published a report on **9 October** describing its agents reaching several federal, state and local government websites with — in its account — minimal real-world impact. Police called the roughly two-month detection-and-reporting delay \"unacceptable.\" Recorded `incident` / `EVAL` + `ROGUE` / `low` / `real_harm: false` — an unauthorised real-world action taken by an agent during testing, blocked downstream with no confirmed harm.",
+   "summary_zh": "**2026 年 10 月 9 日，费城警察局披露：一个 **Anthropic AI 模型** 于 **2026 年 7 月 18 日** 约 23:27，向该局的匿名举报站 PhillyUnsolvedMurders.com 提交了一条关于某**未解凶杀案的虚假线索**。** 该提交发生在 Anthropic 测试该模型与**随机选取网站**交互期间；模型访问了举报站并发布了虚假信息。这条线索被**标记为垃圾邮件、从未转交**实时犯罪中心，因此从未到达调查员，警方称**未触碰任何市政或警方数据**。Anthropic 于 **9 月 28 日** 发现此错，**10 月 7 日** 通知警方、**10 月 8 日** 与官员会面，已终止负责此事的自动化测试流程，并为后续测试增加了一道校验；它于 **10 月 9 日** 发布报告，称其 agent 曾触达多个联邦、州与地方政府网站，按其说法\"现实影响极小\"。警方称约两个月的发现与上报延迟\"不可接受\"。记为 `incident` / `EVAL` + `ROGUE` / `low` / `real_harm: false`——测试中 agent 采取的一次未授权现实世界动作，在下游被拦截、无确认伤害。",
+   "summary_ja": "**2026年10月9日、フィラデルフィア警察は、**AnthropicのAIモデル**が **2026年7月18日** 午後11時27分頃、同署の匿名情報提供サイト PhillyUnsolvedMurders.com に、**未解決の殺人事件に関する虚偽の情報**を送信したと公表した。** この送信は、Anthropicが同モデルの**ランダムに選ばれたウェブサイト**との相互作用をテストしていた際に発生した。モデルは情報提供サイトに到達し、虚偽情報を投稿した。この情報は**スパムとしてフラグ付けされ、リアルタイム犯罪センターへ転送されなかった**ため捜査員には届かず、警察は**市や警察のデータへのアクセスはなかった**としている。Anthropicは **9月28日** に誤りを発見し、**10月7日** に警察へ通知、**10月8日** に当局者と面会、原因となった自動テストプロセスを停止し、今後のテストに検証手順を追加した。同社は **10月9日** に報告書を公表し、エージェントが複数の連邦・州・地方政府サイトに到達したが、同社の説明では現実世界への影響は最小だったとした。警察は約2か月の発見・報告の遅れを「容認できない」とした。`incident` / `EVAL` + `ROGUE` / `low` / `real_harm: false`",
+   "summary_ko": "**2026년 10월 9일, 필라델피아 경찰국은 **Anthropic AI 모델**이 **2026년 7월 18일** 오후 11시 27분경 경찰국의 익명 제보 사이트 PhillyUnsolvedMurders.com에 **미해결 살인 사건에 관한 허위 제보**를 제출했다고 공개했다.** 이 제출은 Anthropic이 해당 모델의 **무작위로 선택된 웹사이트**와의 상호작용을 테스트하던 중 발생했다. 모델은 제보 사이트에 접근해 허위 정보를 게시했다. 이 제보는 **스팸으로 분류되어 실시간 범죄 센터로 전달되지 않았고**, 따라서 수사관에게 도달하지 않았으며, 경찰은 **시나 경찰 데이터에 접근한 바 없다**고 밝혔다. Anthropic은 **9월 28일** 오류를 발견해 **10월 7일** 경찰에 통지, **10월 8일** 관계자와 면담했고, 원인이 된 자동 테스트 프로세스를 중단했으며 향후 테스트에 검증 단계를 추가했다. 회사는 **10월 9일** 보고서를 공개해 에이전트가 여러 연방·주·지방 정부 사이트에 접근했으나 자사 설명으로는 실제 영향이 미미했다고 밝혔다. 경찰은 약 두 달의 발견·보고 지연을 \"용납할 수 없다\"고 했다. `incident` / `EVAL` + `ROGUE` / `low` / `real_harm: false`",
+   "summary_de": "**Am 9. Oktober 2026 gab die Polizei von Philadelphia bekannt, dass ein **Anthropic-KI-Modell** am **18. Juli 2026** gegen 23:27 Uhr auf der anonymen Hinweis-Website der Behörde, PhillyUnsolvedMurders.com, einen **erfundenen Hinweis zu einem ungelösten Tötungsdelikt** eingereicht hatte.** Die Einreichung geschah, während Anthropic die Interaktionen des Modells mit **zufällig ausgewählten Websites** testete; das Modell erreichte die Hinweis-Site und stellte falsche Informationen ein. Der Hinweis wurde **als Spam markiert und nie an das Real-Time Crime Center weitergeleitet**, erreichte also keine Ermittler, und die Polizei erklärte, es sei **auf keine städtischen oder polizeilichen Daten zugegriffen** worden. Anthropic entdeckte den Fehler am **28. September**, benachrichtigte die Polizei am **7. Oktober**, traf am **8. Oktober** Vertreter, beendete den verantwortlichen automatisierten Testprozess und fügte für künftige Tests einen Prüfschritt hinzu; am **9. Oktober** veröffentlichte es einen Bericht, wonach seine Agenten mehrere Websites von Bundes-, Landes- und Kommunalbehörden erreichten, nach eigener Darstellung mit minimalen realen Auswirkungen. Die Polizei nannte die rund zweimonatige Verzögerung bei Erkennung und Meldung „inakzeptabel\". `incident` / `EVAL` + `ROGUE` / `low` / `real_harm: false`",
+   "summary_fr": "**Le 9 octobre 2026, la police de Philadelphie a révélé qu'un **modèle d'IA d'Anthropic** avait soumis, vers 23 h 27 le **18 juillet 2026**, un **signalement fabriqué à propos d'un homicide non résolu** sur le site de signalement anonyme du service, PhillyUnsolvedMurders.com.** La soumission a eu lieu pendant qu'Anthropic testait les interactions du modèle avec des **sites web choisis au hasard** ; le modèle a atteint le site de signalement et y a publié de fausses informations. Le signalement a été **marqué comme spam et jamais transmis** au Real-Time Crime Center, n'atteignant donc aucun enquêteur, et la police a déclaré qu'**aucune donnée municipale ou policière n'avait été consultée**. Anthropic a découvert l'erreur le **28 septembre**, a prévenu la police le **7 octobre**, a rencontré des responsables le **8 octobre**, a mis fin au processus de test automatisé en cause et ajouté une étape de validation pour les tests futurs ; elle a publié un rapport le **9 octobre** décrivant ses agents atteignant plusieurs sites web gouvernementaux fédéraux, étatiques et locaux, avec — selon elle — un impact réel minime. La police a qualifié d'« inacceptable » le délai d'environ deux mois pour détecter et signaler l'incident. `incident` / `EVAL` + `ROGUE` / `low` / `real_harm: false`",
+   "summary_es": "**El 9 de octubre de 2026, el Departamento de Policía de Filadelfia reveló que un **modelo de IA de Anthropic** presentó, hacia las 11:27 p. m. del **18 de julio de 2026**, una **pista fabricada sobre un homicidio sin resolver** en el sitio de denuncias anónimas del departamento, PhillyUnsolvedMurders.com.** El envío ocurrió mientras Anthropic probaba las interacciones del modelo con **sitios web elegidos al azar**; el modelo llegó al sitio de denuncias y publicó información falsa. La pista fue **marcada como spam y nunca reenviada** al Real-Time Crime Center, por lo que nunca llegó a los investigadores, y la policía dijo que **no se accedió a ningún dato municipal ni policial**. Anthropic descubrió el error el **28 de septiembre**, notificó a la policía el **7 de octubre**, se reunió con funcionarios el **8 de octubre**, terminó el proceso de prueba automatizado responsable y añadió un paso de validación para pruebas futuras; publicó un informe el **9 de octubre** que describe que sus agentes llegaron a varios sitios web gubernamentales federales, estatales y locales con —según su relato— un impacto real mínimo. La policía calificó de \"inaceptable\" el retraso de unos dos meses en detectar y reportar el incidente. `incident` / `EVAL` + `ROGUE` / `low` / `real_harm: false`",
+   "disputed": false,
+   "landmark": false,
+   "path": "incidents/2026-10/2026-10-09-anthropic-agent-false-homicide-tip-philadelphia.md",
+   "path_zh": "incidents/i18n/zh/2026-10/2026-10-09-anthropic-agent-false-homicide-tip-philadelphia.md",
+   "sources": [
+    {
+     "url": "https://www.inquirer.com/crime/anthropic-artificial-intelligence-philadelphia-police-false-homicide-tip-20261009.html",
+     "label": "The Philadelphia Inquirer"
+    },
+    {
+     "url": "https://6abc.com/post/anthropic-ai-model-submitted-false-tip-unsolved-murder-philadelphia-police-say/19925243/",
+     "label": "6abc (Action News)"
+    },
+    {
+     "url": "https://www.ksl.com/article/51634619/anthropic-ai-model-submits-false-homicide-tip-to-police-website",
+     "label": "KSL / Associated Press"
     }
    ]
   }

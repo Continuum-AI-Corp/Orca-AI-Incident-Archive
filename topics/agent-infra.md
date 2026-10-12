@@ -26,7 +26,7 @@ The role Langflow / LiteLLM / Flowise / OpenClaw play in 2026 is the one Fortine
 ---
 
 <!-- BEGIN:incidents -->
-## All records (106)
+## All records (107)
 
 | Date | Record | Type | Severity | Confidence | Real harm |
 |---|---|---|---|---|---|
@@ -57,7 +57,7 @@ The role Langflow / LiteLLM / Flowise / OpenClaw play in 2026 is the one Fortine
 | `2026-01-31` | [Step Finance treasury drained](../incidents/2026-01/2026-01-31-step-finance-jin-ku-dao.md) ⚠️ | `CRED` | **High** | D | ✅ |
 | `2026-02-01` | [Infostealers start harvesting OpenClaw configs and gateway tokens](../incidents/2026-02/2026-02-01-openclaw-xin-xi-qie-qu.md) | `CRED` | **High** | B | ✅ |
 | `2026-02-10` | [15,200 OpenClaw control panels exposed](../incidents/2026-02/2026-02-10-openclaw-kong-zhi-mian-ban.md) | `INFRA` | **High** | A | ✅ |
-| `2026-02-25` | [OpenClaw ClawJacked (CVE-2026-25253)](../incidents/2026-02/2026-02-25-openclaw-clawjacked.md) | `INFRA` | **High** | A | — |
+| `2026-02-25` | [OpenClaw ClawJacked](../incidents/2026-02/2026-02-25-openclaw-clawjacked.md) | `INFRA` | **High** | A | — |
 | `2026-02-27` | [Check Point publishes two Claude Code CVEs](../incidents/2026-02/2026-02-27-check-point-claude-code.md) ⚠️ | `SANDBOX` `CRED` | **High** | A | — |
 | `2026-02-28` | ★ [CodeWall breaches McKinsey's internal "Lilli" AI platform](../incidents/2026-02/2026-02-28-codewall-breaches-mckinsey-lilli.md) | `WEAPON` `INFRA` | **Critical** | A | ✅ |
 | `2026-03-01` | ★ [Hades: a sustained campaign turning AI coding assistants into the attack surface](../incidents/2026-03/2026-03-01-hades-campaign-ai-coding-assistants.md) | `SUPPLY` `CRED` | **Critical** | A | ✅ |
@@ -135,6 +135,7 @@ The role Langflow / LiteLLM / Flowise / OpenClaw play in 2026 is the one Fortine
 | `2026-09-25` | [OpenAI's agents reached US government websites - SEC and Census data, and a failed hack of the Education Department](../incidents/2026-09/2026-09-25-openai-agents-us-government-sites.md) | `EVAL` `CRED` | Medium | A | — |
 | `2026-10-02` | [GitLab Duo AI Gateway: a prompt-template sandbox escape runs commands on the host (CVE-2026-90970)](../incidents/2026-10/2026-10-02-gitlab-duo-ai-gateway-rce.md) | `INFRA` `SANDBOX` | **High** | A | — |
 | `2026-10-07` | [PoeLLM: a botnet hides its C2 in a GitHub poem and turns exposed AI servers into mining proxies](../incidents/2026-10/2026-10-07-poellm-canto-incognito-botnet.md) | `INFRA` `WEAPON` | **High** | A | ✅ |
+| `2026-10-08` | [AgentCorruption: one prompt turns an AWS Bedrock AgentCore agent into an account-wide takeover](../incidents/2026-10/2026-10-08-agentcorruption-aws-bedrock-agentcore.md) | `INFRA` `EXFIL` | **High** | A | — |
 | `2026-10-08` | [Tensorlake's npm SDK is compromised in a ChainDrop/Shai-Hulud wave that harvests AI-agent credentials and configs](../incidents/2026-10/2026-10-08-tensorlake-npm-sdk-compromise.md) | `SUPPLY` `CRED` | **High** | A | — |
 <!-- END:incidents -->
 

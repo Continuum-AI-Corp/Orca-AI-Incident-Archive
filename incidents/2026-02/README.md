@@ -33,7 +33,7 @@ pie showData
 | `02-20` | ★ [AI-augmented actor compromises 600+ FortiGate devices](2026-02-20-fortigate-600-devices-compromised.md) | `WEAPON` | **Critical** | A | ✅ |
 | `02-23` | [OpenClaw deletes mail despite repeated stop commands](2026-02-23-openclaw-shi-ting-zhi-zhi.md) | `ROGUE` | **High** | A | ✅ |
 | `02-25` | ★ [Nine Mexican government agencies breached](2026-02-25-mexico-nine-agencies-breached.md) | `WEAPON` | **Critical** | A | ✅ |
-| `02-25` | [OpenClaw ClawJacked (CVE-2026-25253)](2026-02-25-openclaw-clawjacked.md) | `INFRA` | **High** | A | — |
+| `02-25` | [OpenClaw ClawJacked](2026-02-25-openclaw-clawjacked.md) | `INFRA` | **High** | A | — |
 | `02-26` | ★ [Claude Code runs terraform destroy on all of DataTalks.Club's production](2026-02-26-claude-code-terraform-destroy-datatalks.md) | `ROGUE` | **Critical** | A | ✅ |
 | `02-27` | [Check Point publishes two Claude Code CVEs](2026-02-27-check-point-claude-code.md) ⚠️ | `SANDBOX` `CRED` | **High** | A | — |
 | `02-28` | ★ [CodeWall breaches McKinsey's internal "Lilli" AI platform](2026-02-28-codewall-breaches-mckinsey-lilli.md) | `WEAPON` `INFRA` | **Critical** | A | ✅ |
