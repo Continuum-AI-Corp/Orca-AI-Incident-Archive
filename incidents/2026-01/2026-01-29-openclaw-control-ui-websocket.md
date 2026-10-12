@@ -104,7 +104,7 @@ flowchart LR
 - `2026-01-26` [Clawdbot gateways exposed at scale](2026-01-26-clawdbot-wang-guan-gui-mo.md)<br>  <sub>Clawdbot gateways exposed at scale</sub>
 - `2026-02-28` [CodeWall breaches McKinsey's internal "Lilli" AI platform](../2026-02/2026-02-28-codewall-breaches-mckinsey-lilli.md)<br>  <sub>CodeWall breaches McKinsey's internal "Lilli" AI platform</sub>
 - `2026-02-10` [15,200 OpenClaw control panels exposed](../2026-02/2026-02-10-openclaw-kong-zhi-mian-ban.md)<br>  <sub>15,200 OpenClaw control panels exposed</sub>
-- `2026-02-25` [OpenClaw ClawJacked (CVE-2026-25253)](../2026-02/2026-02-25-openclaw-clawjacked.md)<br>  <sub>OpenClaw ClawJacked (CVE-2026-25253)</sub>
+- `2026-02-25` [OpenClaw ClawJacked](../2026-02/2026-02-25-openclaw-clawjacked.md)<br>  <sub>OpenClaw ClawJacked</sub>
 
 ---
 

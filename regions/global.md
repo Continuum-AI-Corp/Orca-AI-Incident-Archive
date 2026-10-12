@@ -8,7 +8,7 @@ vendor policy moves all sit here. It is the largest group in the archive; the
 high share follows from that rule, not from a lack of geography.
 
 <!-- BEGIN:incidents -->
-## All records (320)
+## All records (321)
 
 | Date | Record | Type | Severity | Confidence | Real harm |
 |---|---|---|---|---|---|
@@ -136,7 +136,7 @@ high share follows from that rule, not from a lack of geography.
 | `2026-02-18` | [Microsoft 365 Copilot summarises confidential mail it shouldn't see](../incidents/2026-02/2026-02-18-microsoft-copilot-yue-quan-zong.md) | `ROGUE` | **High** | A | ✅ |
 | `2026-02-19` | [Microsoft: don't run OpenClaw on ordinary work machines](../incidents/2026-02/2026-02-19-openclaw-wei-ruan-pu-tong.md) | `GOV` | Info | A | · |
 | `2026-02-20` | ★ [AI-augmented actor compromises 600+ FortiGate devices](../incidents/2026-02/2026-02-20-fortigate-600-devices-compromised.md) | `WEAPON` | **Critical** | A | ✅ |
-| `2026-02-25` | [OpenClaw ClawJacked (CVE-2026-25253)](../incidents/2026-02/2026-02-25-openclaw-clawjacked.md) | `INFRA` | **High** | A | — |
+| `2026-02-25` | [OpenClaw ClawJacked](../incidents/2026-02/2026-02-25-openclaw-clawjacked.md) | `INFRA` | **High** | A | — |
 | `2026-02-26` | ★ [Claude Code runs terraform destroy on all of DataTalks.Club's production](../incidents/2026-02/2026-02-26-claude-code-terraform-destroy-datatalks.md) | `ROGUE` | **Critical** | A | ✅ |
 | `2026-02-27` | [Check Point publishes two Claude Code CVEs](../incidents/2026-02/2026-02-27-check-point-claude-code.md) ⚠️ | `SANDBOX` `CRED` | **High** | A | — |
 | `2026-03-01` | [Claudy Day: a three-flaw chain in claude.ai](../incidents/2026-03/2026-03-01-claudy-day-claude-ai.md) | `IPI` `EXFIL` | **High** | A | — |
@@ -331,6 +331,7 @@ high share follows from that rule, not from a lack of geography.
 | `2026-10-06` | [Cryptographic Context Injection: encrypted web instructions make GitHub Copilot CLI leak local secrets](../incidents/2026-10/2026-10-06-copilot-cli-cryptographic-context-injection.md) | `IPI` `EXFIL` | Medium | A | — |
 | `2026-10-07` | [Barracuda: one phishing email now targets both the human recipient and their email AI assistant](../incidents/2026-10/2026-10-07-barracuda-dual-target-email-phishing.md) | `IPI` | Medium | A | — |
 | `2026-10-07` | [PoeLLM: a botnet hides its C2 in a GitHub poem and turns exposed AI servers into mining proxies](../incidents/2026-10/2026-10-07-poellm-canto-incognito-botnet.md) | `INFRA` `WEAPON` | **High** | A | ✅ |
+| `2026-10-08` | [AgentCorruption: one prompt turns an AWS Bedrock AgentCore agent into an account-wide takeover](../incidents/2026-10/2026-10-08-agentcorruption-aws-bedrock-agentcore.md) | `INFRA` `EXFIL` | **High** | A | — |
 | `2026-10-08` | [Tensorlake's npm SDK is compromised in a ChainDrop/Shai-Hulud wave that harvests AI-agent credentials and configs](../incidents/2026-10/2026-10-08-tensorlake-npm-sdk-compromise.md) | `SUPPLY` `CRED` | **High** | A | — |
 <!-- END:incidents -->
 

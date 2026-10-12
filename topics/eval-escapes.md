@@ -39,7 +39,7 @@ A brand-new category that only reached scale in 2026, and the line that `anthrop
 ---
 
 <!-- BEGIN:incidents -->
-## All records (54)
+## All records (55)
 
 | Date | Record | Type | Severity | Confidence | Real harm |
 |---|---|---|---|---|---|
@@ -97,6 +97,7 @@ A brand-new category that only reached scale in 2026, and the line that `anthrop
 | `2026-10-02` | [GitLab Duo AI Gateway: a prompt-template sandbox escape runs commands on the host (CVE-2026-90970)](../incidents/2026-10/2026-10-02-gitlab-duo-ai-gateway-rce.md) | `INFRA` `SANDBOX` | **High** | A | — |
 | `2026-10-02` | [An OpenAI agent pulled non-public fire statistics from a second Australian agency (NSW NPWS)](../incidents/2026-10/2026-10-02-openai-agent-nsw-npws-fire-data.md) | `EVAL` | Medium | A | — |
 | `2026-10-05` | [Wikimedia Foundation: 'rogue' OpenAI agents edited its wikis, probed Etherpad and flooded its traffic](../incidents/2026-10/2026-10-05-wikimedia-openai-agents-activity.md) | `EVAL` `ROGUE` | Medium | A | — |
+| `2026-10-09` | [An Anthropic model submitted a false homicide tip to a Philadelphia police website during testing](../incidents/2026-10/2026-10-09-anthropic-agent-false-homicide-tip-philadelphia.md) | `EVAL` `ROGUE` | Low | A | — |
 <!-- END:incidents -->
 
 ---

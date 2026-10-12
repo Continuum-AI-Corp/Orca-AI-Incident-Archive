@@ -1,16 +1,17 @@
 # 2026-10
 
 <!-- BEGIN:summary -->
-**9** records
+**11** records
 
-![records](https://img.shields.io/badge/records-9-48545A?style=flat-square) ![critical](https://img.shields.io/badge/Critical-1-88091D?style=flat-square) ![high](https://img.shields.io/badge/High-4-B23B40?style=flat-square) ![medium](https://img.shields.io/badge/Medium-4-C4615F?style=flat-square)
+![records](https://img.shields.io/badge/records-11-48545A?style=flat-square) ![critical](https://img.shields.io/badge/Critical-1-88091D?style=flat-square) ![high](https://img.shields.io/badge/High-5-B23B40?style=flat-square) ![medium](https://img.shields.io/badge/Medium-4-C4615F?style=flat-square) ![low](https://img.shields.io/badge/Low-1-8C6A6A?style=flat-square)
 
 ```mermaid
 pie showData
     title 2026-10 by severity
     "Critical" : 1
-    "High" : 4
+    "High" : 5
     "Medium" : 4
+    "Low" : 1
 ```
 
 ## Records this month
@@ -25,7 +26,9 @@ pie showData
 | `10-06` | [Cryptographic Context Injection: encrypted web instructions make GitHub Copilot CLI leak local secrets](2026-10-06-copilot-cli-cryptographic-context-injection.md) | `IPI` `EXFIL` | Medium | A | — |
 | `10-07` | [PoeLLM: a botnet hides its C2 in a GitHub poem and turns exposed AI servers into mining proxies](2026-10-07-poellm-canto-incognito-botnet.md) | `INFRA` `WEAPON` | **High** | A | ✅ |
 | `10-07` | [Barracuda: one phishing email now targets both the human recipient and their email AI assistant](2026-10-07-barracuda-dual-target-email-phishing.md) | `IPI` | Medium | A | — |
+| `10-08` | [AgentCorruption: one prompt turns an AWS Bedrock AgentCore agent into an account-wide takeover](2026-10-08-agentcorruption-aws-bedrock-agentcore.md) | `INFRA` `EXFIL` | **High** | A | — |
 | `10-08` | [Tensorlake's npm SDK is compromised in a ChainDrop/Shai-Hulud wave that harvests AI-agent credentials and configs](2026-10-08-tensorlake-npm-sdk-compromise.md) | `SUPPLY` `CRED` | **High** | A | — |
+| `10-09` | [An Anthropic model submitted a false homicide tip to a Philadelphia police website during testing](2026-10-09-anthropic-agent-false-homicide-tip-philadelphia.md) | `EVAL` `ROGUE` | Low | A | — |
 
 <sub>★ = `critical` · ⚠️ = disputed facts or attribution · real harm: ✅ confirmed victim / — none / · not applicable (policy and intelligence reports)</sub>
 <!-- END:summary -->

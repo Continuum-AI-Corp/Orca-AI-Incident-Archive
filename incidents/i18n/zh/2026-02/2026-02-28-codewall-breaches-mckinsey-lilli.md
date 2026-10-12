@@ -62,7 +62,7 @@ flowchart LR
 - `2026-02-20` [AI 增强型威胁方批量攻陷 600+ FortiGate](../../../2026-02/2026-02-20-fortigate-600-devices-compromised.md)<br>  <sub>AI-augmented actor compromises 600+ FortiGate devices</sub>
 - `2026-02-25` [墨西哥 9 个政府机构被攻陷](../../../2026-02/2026-02-25-mexico-nine-agencies-breached.md)<br>  <sub>Nine Mexican government agencies breached</sub>
 - `2026-02-10` [15,200 个 OpenClaw 控制面板裸奔](../../../2026-02/2026-02-10-openclaw-kong-zhi-mian-ban.md)<br>  <sub>15,200 OpenClaw control panels exposed</sub>
-- `2026-02-25` [OpenClaw ClawJacked（CVE-2026-25253）](../../../2026-02/2026-02-25-openclaw-clawjacked.md)<br>  <sub>OpenClaw ClawJacked (CVE-2026-25253)</sub>
+- `2026-02-25` [OpenClaw ClawJacked](../../../2026-02/2026-02-25-openclaw-clawjacked.md)<br>  <sub>OpenClaw ClawJacked</sub>
 
 ---
 

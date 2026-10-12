@@ -1,12 +1,12 @@
 ---
 id: 2026-02-25-openclaw-clawjacked
-title: "OpenClaw ClawJacked (CVE-2026-25253)"
-title_zh: "OpenClaw ClawJacked（CVE-2026-25253）"
-title_ja: "OpenClaw ClawJacked（CVE-2026-25253）"
-title_ko: "OpenClaw ClawJacked (CVE-2026-25253)"
-title_de: "OpenClaw ClawJacked (CVE-2026-25253)"
-title_fr: "OpenClaw ClawJacked (CVE-2026-25253)"
-title_es: "OpenClaw ClawJacked (CVE-2026-25253)"
+title: "OpenClaw ClawJacked"
+title_zh: "OpenClaw ClawJacked"
+title_ja: "OpenClaw ClawJacked"
+title_ko: "OpenClaw ClawJacked"
+title_de: "OpenClaw ClawJacked"
+title_fr: "OpenClaw ClawJacked"
+title_es: "OpenClaw ClawJacked"
 date: 2026-02-25
 date_precision: day
 date_raw: "2026-02-25"
@@ -43,10 +43,12 @@ summary_es: |
   Oasis Security: un WebSocket de origen cruzado puede conectarse al gateway local sin límite de tasa y sin aprobación de dispositivo → control total del agente (interactuar, exportar la configuración, enumerar dispositivos conectados, leer registros). En el momento de la divulgación **42,665 instancias estaban expuestas** (SecurityScorecard da una cifra distinta, 40,214, de las cuales el 35.4% eran vulnerables)
 
 sources:
-  - url: https://rafter.so/blog/incidents/ai-agent-security-timeline-2025-2026
-    label: Rafter timeline
-  - url: https://adversa.ai/blog/openclaw-security-101-vulnerabilities-hardening-2026/
-    label: adversa
+  - url: https://www.oasis.security/blog/openclaw-vulnerability
+    label: Oasis Security (discoverer)
+  - url: https://www.bleepingcomputer.com/news/security/clawjacked-attack-let-malicious-websites-hijack-openclaw-to-steal-data/
+    label: BleepingComputer
+  - url: https://securityaffairs.com/188749/hacking/clawjacked-flaw-exposed-openclaw-users-to-data-theft.html
+    label: Security Affairs
 
 disputed: false
 landmark: false
@@ -54,8 +56,7 @@ scan_month: 2026-02
 scan_ref: "SCAN.md §6 2026-02"
 ---
 
-# OpenClaw ClawJacked (CVE-2026-25253)
-
+# OpenClaw ClawJacked
 ![severity: high](https://img.shields.io/badge/severity-high-B23B40?style=flat-square) ![confidence: A](https://img.shields.io/badge/confidence-A-157A41?style=flat-square) ![real harm: no](https://img.shields.io/badge/real_harm-no-7A868C?style=flat-square) ![AI involvement: confirmed](https://img.shields.io/badge/AI_involvement-confirmed-1F9D55?style=flat-square) ![kind: incident](https://img.shields.io/badge/kind-incident-48545A?style=flat-square) ![type: INFRA](https://img.shields.io/badge/type-INFRA-B08528?style=flat-square)
 
 ## Summary
@@ -79,8 +80,9 @@ flowchart LR
 
 | # | Source | Link |
 |---|---|---|
-| 1 | Rafter timeline | <https://rafter.so/blog/incidents/ai-agent-security-timeline-2025-2026> |
-| 2 | adversa | <https://adversa.ai/blog/openclaw-security-101-vulnerabilities-hardening-2026/> |
+| 1 | Oasis Security — ClawJacked (discoverer) | <https://www.oasis.security/blog/openclaw-vulnerability> |
+| 2 | BleepingComputer | <https://www.bleepingcomputer.com/news/security/clawjacked-attack-let-malicious-websites-hijack-openclaw-to-steal-data/> |
+| 3 | Security Affairs | <https://securityaffairs.com/188749/hacking/clawjacked-flaw-exposed-openclaw-users-to-data-theft.html> |
 
 ## Metadata
 
@@ -90,7 +92,7 @@ flowchart LR
 | Kind | Incident `incident` |
 | Type | [`INFRA`](../../taxonomy/types.md#infra) Agent infrastructure exposure |
 | Severity | **High** `high` |
-| Confidence | **A** — primary source (vendor / victim / law enforcement / official report) |
+| Confidence | **A** — Oasis Security advisory (discoverer) + independent reporting |
 | Real harm | No |
 | AI involvement | Confirmed `confirmed` |
 | Region | [Global](../../regions/global.md) |
