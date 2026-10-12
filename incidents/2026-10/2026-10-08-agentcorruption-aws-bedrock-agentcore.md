@@ -51,7 +51,7 @@ sources:
 disputed: false
 landmark: false
 scan_month: 2026-10
-scan_ref: "SCAN.md §13.28"
+scan_ref: "SCAN.md §13.29"
 ---
 
 # AgentCorruption: one prompt turns an AWS Bedrock AgentCore agent into an account-wide takeover
