@@ -42,6 +42,7 @@ https://australiancybersecuritymagazine.com.au/openai-agent-breached-australian-
 https://avd.aliyun.com/detail?id=AVD-2026-90898
 https://aws.amazon.com/jp/blogs/security/ai-augmented-threat-actor-accesses-fortigate-devices-at-scale/
 https://aws.amazon.com/security/security-bulletins/2026-075-aws/
+https://aws.amazon.com/security/security-bulletins/2026-124-aws/
 https://badhost.org/
 https://baijiahao.baidu.com/s?id=1877097087157468477
 https://beam.ai/agentic-insights/ai-agent-security-breaches-2026-lessons
@@ -136,6 +137,7 @@ https://fortune.com/2026/03/26/anthropic-says-testing-mythos-powerful-new-ai-mod
 https://freefable.org/
 https://futurism.com/artificial-intelligence/metas-muse-ai-giving-users-home-addresses
 https://gambit.security/blog-posts/autonomous-ai-agents-online-retailers-25-a-company
+https://gbhackers.com/aws-fixes-ai-agent-flaws/
 https://gbhackers.com/hackers-use-morse-code-to-trick-grok-and-bankrbot/
 https://genai.owasp.org/2025/03/06/owasp-gen-ai-incident-exploit-round-up-jan-feb-2025/
 https://genai.owasp.org/2025/07/14/owasp-gen-ai-incident-exploit-round-up-q225/
@@ -162,6 +164,7 @@ https://github.com/advisories/GHSA-xrxf-jgv3-qmrm
 https://github.com/anthropics/mythos-5-incident-transcript
 https://github.com/aquasecurity/trivy/security/advisories/GHSA-69fq-xp46-6x23
 https://github.com/asset-group/ghostsplice
+https://github.com/awslabs/loom/security/advisories/GHSA-vgmj-998f-r8mp
 https://github.com/axios/axios/issues/10636
 https://github.com/discourse/discourse/security/advisories/GHSA-vhm9-85gw-x335
 https://github.com/invariantlabs-ai/mcp-injection-experiments
@@ -233,6 +236,7 @@ https://news.un.org/en/story/2026/09/1168380
 https://noma.security/blog/forcedleak-agent-risks-exposed-in-salesforce-agentforce
 https://noma.security/blog/gitlost-how-we-tricked-githubs-ai-agent-into-leaking-private-repos/
 https://noma.security/noma-labs/workflow-identity-hijacking-the-silent-backdoor-in-ai-workflows
+https://nvd.nist.gov/vuln/detail/CVE-2026-103956
 https://nvd.nist.gov/vuln/detail/CVE-2026-18875
 https://nvd.nist.gov/vuln/detail/CVE-2026-26118
 https://nvd.nist.gov/vuln/detail/CVE-2026-30615
@@ -295,6 +299,7 @@ https://securityaffairs.com/200661/hacking/ai-driven-tool-artex-used-in-attacks-
 https://securityboulevard.com/2026/01/vulnerability-in-anthropics-claude-code-shows-up-in-cowork/
 https://securityboulevard.com/2026/03/amazon-lost-6-3-million-orders-to-vibe-coding-your-soc-is-next/
 https://securitylabs.datadoghq.com/articles/shai-hulud-2.0-npm-worm/
+https://securityonline.info/loom-for-aws-sagemaker-flaws/
 https://services.google.com/fh/files/misc/advances-in-threat-actor-usage-of-ai-tools-en.pdf
 https://siliconangle.com/2025/02/12/ai-aggregator-omnigpt-reportedly-breached-sensitive-user-data-leaked-online/
 https://simonw.substack.com/p/the-lethal-trifecta-for-ai-agents
