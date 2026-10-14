@@ -12,7 +12,7 @@
   "fr",
   "es"
  ],
- "count": 395,
+ "count": 396,
  "incidents": [
   {
    "id": "2024-12-01-storm-azure-llmjacking",
@@ -18252,6 +18252,66 @@
     {
      "url": "https://securityaffairs.com/200283/hacking/cve-2026-90970-critical-gitlab-ai-gateway-flaw-fixed.html",
      "label": "Security Affairs"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-02-loom-aws-agent-control-plane-cve-2026-103956",
+   "title": "Loom for AWS: missing authentication hands any client super-admin over the agent control plane (CVE-2026-103956)",
+   "title_zh": "Loom for AWS：缺失认证让任意客户端取得 agent 控制面的超级管理员权限（CVE-2026-103956）",
+   "title_ja": "Loom for AWS：認証欠落により任意のクライアントがエージェント制御プレーンのスーパー管理者権限を取得（CVE-2026-103956）",
+   "title_ko": "Loom for AWS: 인증 누락으로 임의의 클라이언트가 에이전트 컨트롤 플레인의 슈퍼 관리자 권한 획득 (CVE-2026-103956)",
+   "title_de": "Loom for AWS: Fehlende Authentifizierung verschafft jedem Client Super-Admin über die Agent-Control-Plane (CVE-2026-103956)",
+   "title_fr": "Loom for AWS : l'absence d'authentification donne à tout client les droits de super-administrateur sur le plan de contrôle des agents (CVE-2026-103956)",
+   "title_es": "Loom for AWS: la falta de autenticación otorga a cualquier cliente privilegios de superadministrador sobre el plano de control de agentes (CVE-2026-103956)",
+   "date": "2026-10-02",
+   "date_end": null,
+   "date_precision": "day",
+   "date_raw": "2026-10-02 (AWS Security Bulletin 2026-124-AWS / NVD); fix in Loom 1.6.1 released 2026-08-04",
+   "month": "2026-10",
+   "kind": "vulnerability",
+   "type": [
+    "INFRA",
+    "CRED"
+   ],
+   "severity": "high",
+   "confidence": "A",
+   "real_harm": false,
+   "ai_involvement": "confirmed",
+   "region": [
+    "GLOBAL"
+   ],
+   "summary": "**AWS disclosed **CVE-2026-103956** (CVSS **10.0**, critical) on 2 October 2026 (Security Bulletin 2026-124-AWS): **Loom for AWS** — an AWS Labs open-source platform for orchestrating AI agents on **Amazon Bedrock AgentCore Runtime** — grants **super-admin over the agent control plane to any unauthenticated network request when no identity provider is configured**.** The flaw (CWE-306, missing authentication for a critical function) lets a remote client **register tool servers, read stored integration credentials, and rewrite the IAM role policies attached to managed agent roles** — i.e. full takeover of the agents the platform manages. AWS fixed it in **Loom 1.6.1** (released 4 August 2026) and the advisory recommends configuring an Amazon Cognito user pool or an external IdP (and never setting `LOOM_ALLOW_UNAUTHENTICATED_LOCAL_DEV` outside dev) before exposing the backend beyond loopback. The same bulletin also covers CVE-2026-103957 / -103958 (SSRF in Loom, fixed in 1.7.0) and CVE-2026-104019 (command injection in SageMaker Unified Studio). **No confirmed in-the-wild exploitation** (not in CISA KEV; a public-PoC claim is unverified). Recorded `vulnerability` / `INFRA` + `CRED` / `high` / `real_harm: false` — a CVSS-10 agent-orchestration-platform flaw with no known exploitation.",
+   "summary_zh": "**AWS 于 2026 年 10 月 2 日（安全公告 2026-124-AWS）披露 **CVE-2026-103956**（CVSS **10.0**，严重）：**Loom for AWS**——AWS Labs 的开源平台，用于在 **Amazon Bedrock AgentCore Runtime** 上编排 AI agent——在**未配置身份提供方（IdP）时，会把 agent 控制面的超级管理员权限授予任意未认证的网络请求**。** 该缺陷（CWE-306，关键功能缺失认证）让远程客户端得以**注册工具服务器、读取已存的集成凭证、改写受管 agent 角色上的 IAM 策略**——即完全接管该平台所管理的 agent。AWS 已在 **Loom 1.6.1**（2026 年 8 月 4 日发布）修复，通告建议在把后端暴露到 loopback 之外前先配置 Amazon Cognito 用户池或外部 IdP（且切勿在非开发环境设置 `LOOM_ALLOW_UNAUTHENTICATED_LOCAL_DEV`）。同一公告还涵盖 CVE-2026-103957／-103958（Loom 的 SSRF，1.7.0 修复）与 CVE-2026-104019（SageMaker Unified Studio 命令注入）。**无确认的在野利用**（不在 CISA KEV；公开 PoC 之说未经证实）。记为 `vulnerability` / `INFRA` + `CRED` / `high` / `real_harm: false`——一个 CVSS 10、位于 agent 编排平台、无已知利用的缺陷。",
+   "summary_ja": "**AWSは2026年10月2日（セキュリティ速報2026-124-AWS）に **CVE-2026-103956**（CVSS **10.0**、クリティカル）を公表した。**Loom for AWS**（**Amazon Bedrock AgentCore Runtime** 上でAIエージェントをオーケストレーションするAWS Labsのオープンソース基盤）は、**IDプロバイダー（IdP）が未設定の場合、認証されていない任意のネットワークリクエストにエージェント制御プレーンのスーパー管理者権限を付与する**。** 当欠陥（CWE-306、重要機能の認証欠落）により、遠隔のクライアントが**ツールサーバーの登録、保存済み連携認証情報の読み取り、管理対象エージェントロールに付与されたIAMロールポリシーの書き換え**を行える——すなわち基盤が管理するエージェントの完全乗っ取りである。AWSは **Loom 1.6.1**（2026年8月4日公開）で修正し、勧告はバックエンドをloopback外に公開する前にAmazon Cognitoユーザープールまたは外部IdPの設定を（かつ非開発環境では `LOOM_ALLOW_UNAUTHENTICATED_LOCAL_DEV` を設定しないことを）推奨する。同速報はCVE-2026-103957／-103958（LoomのSSRF、1.7.0で修正）とCVE-2026-104019（SageMaker Unified Studioのコマンドインジェクション）も扱う。**実環境での悪用は確認されていない**（CISA KEV未掲載、公開PoCの主張は未検証）。`vulnerability` / `INFRA` + `CRED` / `high` / `real_harm: false`",
+   "summary_ko": "**AWS는 2026년 10월 2일(보안 공지 2026-124-AWS)에 **CVE-2026-103956**(CVSS **10.0**, 심각)을 공개했다: **Amazon Bedrock AgentCore Runtime**에서 AI 에이전트를 오케스트레이션하는 AWS Labs 오픈소스 플랫폼 **Loom for AWS**는 **ID 공급자(IdP)가 구성되지 않은 경우 인증되지 않은 임의의 네트워크 요청에 에이전트 컨트롤 플레인의 슈퍼 관리자 권한을 부여한다**.** 이 결함(CWE-306, 핵심 기능의 인증 누락)으로 원격 클라이언트가 **도구 서버 등록, 저장된 통합 자격 증명 읽기, 관리 대상 에이전트 역할에 연결된 IAM 역할 정책 재작성**을 할 수 있다——즉 플랫폼이 관리하는 에이전트의 완전 장악이다. AWS는 **Loom 1.6.1**(2026년 8월 4일 공개)에서 수정했고, 권고는 백엔드를 loopback 외부로 노출하기 전에 Amazon Cognito 사용자 풀 또는 외부 IdP를 구성하고(비개발 환경에서 `LOOM_ALLOW_UNAUTHENTICATED_LOCAL_DEV`를 설정하지 말 것을) 권장한다. 같은 공지는 CVE-2026-103957／-103958(Loom의 SSRF, 1.7.0에서 수정)과 CVE-2026-104019(SageMaker Unified Studio 명령 주입)도 다룬다. **확인된 실제 악용은 없다**(CISA KEV 미등재, 공개 PoC 주장은 미검증). `vulnerability` / `INFRA` + `CRED` / `high` / `real_harm: false`",
+   "summary_de": "**AWS legte am 2. Oktober 2026 (Security Bulletin 2026-124-AWS) **CVE-2026-103956** (CVSS **10.0**, kritisch) offen: **Loom for AWS** — eine Open-Source-Plattform von AWS Labs zur Orchestrierung von KI-Agenten auf **Amazon Bedrock AgentCore Runtime** — gewährt **jeder nicht authentifizierten Netzwerkanfrage Super-Admin über die Agent-Control-Plane, wenn kein Identity Provider konfiguriert ist**.** Der Fehler (CWE-306, fehlende Authentifizierung einer kritischen Funktion) erlaubt einem entfernten Client, **Tool-Server zu registrieren, gespeicherte Integrations-Anmeldedaten zu lesen und die IAM-Rollenrichtlinien der verwalteten Agent-Rollen umzuschreiben** — also die vollständige Übernahme der von der Plattform verwalteten Agenten. AWS behob es in **Loom 1.6.1** (veröffentlicht am 4. August 2026); das Advisory empfiehlt, vor dem Freigeben des Backends über Loopback hinaus einen Amazon-Cognito-User-Pool oder einen externen IdP zu konfigurieren (und `LOOM_ALLOW_UNAUTHENTICATED_LOCAL_DEV` außerhalb der Entwicklung nie zu setzen). Dasselbe Bulletin behandelt auch CVE-2026-103957 / -103958 (SSRF in Loom, behoben in 1.7.0) und CVE-2026-104019 (Command Injection in SageMaker Unified Studio). **Keine bestätigte Ausnutzung in freier Wildbahn** (nicht in CISA KEV; eine Public-PoC-Behauptung ist unbestätigt). `vulnerability` / `INFRA` + `CRED` / `high` / `real_harm: false`",
+   "summary_fr": "**AWS a divulgué **CVE-2026-103956** (CVSS **10.0**, critique) le 2 octobre 2026 (Security Bulletin 2026-124-AWS) : **Loom for AWS** — une plateforme open source d'AWS Labs pour orchestrer des agents d'IA sur **Amazon Bedrock AgentCore Runtime** — accorde **les droits de super-administrateur sur le plan de contrôle des agents à toute requête réseau non authentifiée lorsqu'aucun fournisseur d'identité n'est configuré**.** La faille (CWE-306, absence d'authentification pour une fonction critique) permet à un client distant d'**enregistrer des serveurs d'outils, de lire les identifiants d'intégration stockés et de réécrire les politiques de rôle IAM attachées aux rôles d'agent gérés** — soit la prise de contrôle totale des agents gérés par la plateforme. AWS l'a corrigée dans **Loom 1.6.1** (publiée le 4 août 2026) ; l'avis recommande de configurer un pool d'utilisateurs Amazon Cognito ou un IdP externe (et de ne jamais définir `LOOM_ALLOW_UNAUTHENTICATED_LOCAL_DEV` hors développement) avant d'exposer le backend au-delà de loopback. Le même bulletin couvre aussi CVE-2026-103957 / -103958 (SSRF dans Loom, corrigées en 1.7.0) et CVE-2026-104019 (injection de commande dans SageMaker Unified Studio). **Aucune exploitation confirmée dans la nature** (absente du KEV de la CISA ; une revendication de PoC public est non vérifiée). `vulnerability` / `INFRA` + `CRED` / `high` / `real_harm: false`",
+   "summary_es": "**AWS divulgó **CVE-2026-103956** (CVSS **10.0**, crítica) el 2 de octubre de 2026 (Boletín de seguridad 2026-124-AWS): **Loom for AWS** —una plataforma de código abierto de AWS Labs para orquestar agentes de IA en **Amazon Bedrock AgentCore Runtime**— otorga **privilegios de superadministrador sobre el plano de control de agentes a cualquier solicitud de red no autenticada cuando no hay un proveedor de identidad configurado**.** El fallo (CWE-306, falta de autenticación en una función crítica) permite a un cliente remoto **registrar servidores de herramientas, leer credenciales de integración almacenadas y reescribir las políticas de rol de IAM asociadas a los roles de agente gestionados** —es decir, la toma de control total de los agentes que gestiona la plataforma. AWS lo corrigió en **Loom 1.6.1** (publicada el 4 de agosto de 2026); el aviso recomienda configurar un grupo de usuarios de Amazon Cognito o un IdP externo (y nunca establecer `LOOM_ALLOW_UNAUTHENTICATED_LOCAL_DEV` fuera de desarrollo) antes de exponer el backend más allá de loopback. El mismo boletín cubre además CVE-2026-103957 / -103958 (SSRF en Loom, corregidas en 1.7.0) y CVE-2026-104019 (inyección de comandos en SageMaker Unified Studio). **Sin explotación confirmada en la naturaleza** (no está en el KEV de CISA; una afirmación de PoC público no está verificada). `vulnerability` / `INFRA` + `CRED` / `high` / `real_harm: false`",
+   "disputed": false,
+   "landmark": false,
+   "path": "incidents/2026-10/2026-10-02-loom-aws-agent-control-plane-cve-2026-103956.md",
+   "path_zh": "incidents/i18n/zh/2026-10/2026-10-02-loom-aws-agent-control-plane-cve-2026-103956.md",
+   "sources": [
+    {
+     "url": "https://github.com/awslabs/loom/security/advisories/GHSA-vgmj-998f-r8mp",
+     "label": "AWS Labs — Loom security advisory (primary)"
+    },
+    {
+     "url": "https://aws.amazon.com/security/security-bulletins/2026-124-aws/",
+     "label": "AWS Security Bulletin 2026-124-AWS"
+    },
+    {
+     "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-103956",
+     "label": "NVD (CVE-2026-103956)"
+    },
+    {
+     "url": "https://gbhackers.com/aws-fixes-ai-agent-flaws/",
+     "label": "Cyber Security News"
+    },
+    {
+     "url": "https://securityonline.info/loom-for-aws-sagemaker-flaws/",
+     "label": "Security Online"
     }
    ]
   },

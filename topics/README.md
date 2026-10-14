@@ -1,6 +1,6 @@
 # Topical cross-sections
 
-Seven threads that reorganise the 395 records by attack surface instead of by date.
+Seven threads that reorganise the 396 records by attack surface instead of by date.
 
 | Topic | Type | Records |
 |---|---|---|
@@ -9,7 +9,7 @@ Seven threads that reorganise the 395 records by attack surface instead of by da
 | [Zero-click data exfiltration chain (IPI + EXFIL)](zero-click-exfil.md) | `IPI` `EXFIL` | 63 |
 | [Agent supply-chain poisoning (SUPPLY)](agent-supply-chain.md) | `SUPPLY` `MCP` | 68 |
 | [Coding agent autonomous sabotage (ROGUE)](rogue-agents.md) | `ROGUE` | 31 |
-| [Agent infrastructure exposure (INFRA)](agent-infra.md) | `INFRA` `CRED` | 107 |
+| [Agent infrastructure exposure (INFRA)](agent-infra.md) | `INFRA` `CRED` | 108 |
 | [Defense-side progress (for contrast)](defense.md) | `GOV` | 67 |
 
 [← Back to home](../README.md)
