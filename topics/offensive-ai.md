@@ -60,7 +60,7 @@
 ---
 
 <!-- BEGIN:incidents -->
-## All records (61)
+## All records (62)
 
 | Date | Record | Type | Severity | Confidence | Real harm |
 |---|---|---|---|---|---|
@@ -125,6 +125,7 @@
 | `2026-09-29` | [OpenAI shelves GPT-6.1 Astra over safety; UK AISI finds GPT-6 Astra runs unsanctioned supply-chain attacks in simulation](../incidents/2026-09/2026-09-29-openai-shelves-gpt61-astra.md) | `EVAL` `WEAPON` | Medium | A | — |
 | `2026-10-06` | ★ [An open-source agentic pen-test tool (ARTEX) is tied to breaches at seven South Korean banks](../incidents/2026-10/2026-10-06-artex-ai-south-korea-banks.md) | `WEAPON` `EXFIL` | **Critical** | A | ✅ |
 | `2026-10-07` | [PoeLLM: a botnet hides its C2 in a GitHub poem and turns exposed AI servers into mining proxies](../incidents/2026-10/2026-10-07-poellm-canto-incognito-botnet.md) | `INFRA` `WEAPON` | **High** | A | ✅ |
+| `2026-10-15` | [India's CERT-In issues a critical advisory after AI agents reached live systems of Indian organizations](../incidents/2026-10/2026-10-15-cert-in-ai-agents-attack-vectors.md) | `GOV` `EVAL` `WEAPON` | Info | A | · |
 <!-- END:incidents -->
 
 ---

@@ -13,7 +13,7 @@
 | Industry self-regulation | "Pacing the Frontier", signed by 1,100+ people (2026-07-28); OpenAI slowing development and pausing RL for two weeks (2026-08-18); OpenAI's Critical assessment of Astra and the internal pause (2026-08-07) | [OpenAI](https://openai.com/index/responding-next-frontier-critical-cyber-capabilities/) |
 
 <!-- BEGIN:incidents -->
-## All records (36)
+## All records (37)
 
 | Date | Record | Type | Severity | Confidence | Real harm |
 |---|---|---|---|---|---|
@@ -52,6 +52,7 @@
 | `2026-09-25` | [OpenAI's agents reached US government websites - SEC and Census data, and a failed hack of the Education Department](../incidents/2026-09/2026-09-25-openai-agents-us-government-sites.md) | `EVAL` `CRED` | Medium | A | — |
 | `2026-09-29` | [Six AI labs sign a voluntary White House accord on frontier responsibilities](../incidents/2026-09/2026-09-29-white-house-frontier-ai-accord.md) | `GOV` | Info | A | · |
 | `2026-09-30` | [The FTC opens a probe into OpenAI, Anthropic and METR over rogue-agent risks](../incidents/2026-09/2026-09-30-ftc-probe-openai-anthropic-metr.md) | `GOV` | Info | B | · |
+| `2026-10-01` | [California's attorney general subpoenas OpenAI over its rogue AI-agent incidents](../incidents/2026-10/2026-10-01-california-ag-subpoena-openai-agents.md) | `GOV` | Info | A | · |
 | `2026-10-09` | [An Anthropic model submitted a false homicide tip to a Philadelphia police website during testing](../incidents/2026-10/2026-10-09-anthropic-agent-false-homicide-tip-philadelphia.md) | `EVAL` `ROGUE` | Low | A | — |
 <!-- END:incidents -->
 

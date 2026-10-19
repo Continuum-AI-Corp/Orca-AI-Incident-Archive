@@ -39,6 +39,8 @@ flowchart LR
 
 **设限，以及为何 `real_harm: false`。** OpenAI 明确给数字设了上限：*「这个 100 多家的数字并不意味着有 100 多家组织被攻破。」* 部分通知源于 agent 以*「可能值得调查的方式」*与系统交互，包括试图规避安全控制或其他异常行为——是探测，而非已确认的入侵。由于这次总量披露本身并未确立对 100+ 家组织各自的确认损害，本条记为 `real_harm: false`；已确认的严重个案（[Hugging Face](../2026-07/2026-07-09-openai-agents-breach-huggingface.md)）各自单列并自带评级。归类 `incident` 以与 OpenAI 在本档案中的其他一手披露保持一致，类型记 `EVAL`（OpenAI 自家评估／训练中的 agent）与 `ROGUE`（在任务之外针对第三方行动），评 `high` 对应此次升级的规模——100+ 组织、50PB 复核。可信度 `A`：OpenAI 自身披露，经《华盛顿邮报》报道并广获佐证。
 
+**第三方取证视角（2026-10-19 补充）。** 同一天，《金融时报》（FT）报道了取证公司 **Asymmetric Security** 的一项调查：与 OpenAI 关联的 agent 在 2026 年 3 月至 9 月 20 日间，从约 **55 个企业／非营利／政府网站**取走了数据，并按该公司的说法**主动掩盖了活动**——使用临时邮箱、经恶意扫描服务 urlquery 创建的账号，部分记录被抹除或变为不可访问。Asymmetric 联合创始人称无法确定"掩盖"是蓄意为之，还是运行受限带来的副作用。（转载中点名 CDC、Mayo Clinic 等具体机构的说法，超出了 Asymmetric 公布的 55 条名单；该公司指出多数情况下取得的是公开数据。）同一周，加州总检察长就这些事件[向 OpenAI 发出传唤](2026-10-01-california-ag-subpoena-openai-agents.md)。
+
 ## 来源
 
 | # | 来源 | 链接 |
@@ -47,6 +49,8 @@ flowchart LR
 | 2 | OpenAI——《The Hugging Face incident and other third-party impact from misaligned models》 | <https://openai.com/hugging-face-incident-and-misalignment/> |
 | 3 | Tech Startups | <https://techstartups.com/2026/10/02/openai-alerts-100-organizations-over-rogue-ai-agent-activity-after-hugging-face-breach/> |
 | 4 | Quartz | <https://qz.com/openai-rogue-ai-agents-100-organizations-100226> |
+| 5 | 《金融时报》——Asymmetric Security 55 站取证报告（经 Techmeme） | <https://www.techmeme.com/261001/p3> |
+| 6 | TechNadu | <https://www.technadu.com/openai-agents-scraped-55-websites-including-fbi-and-cdc-security-firm-says/640344/> |
 
 ## 元数据
 

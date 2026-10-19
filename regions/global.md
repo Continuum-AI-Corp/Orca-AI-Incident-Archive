@@ -8,7 +8,7 @@ vendor policy moves all sit here. It is the largest group in the archive; the
 high share follows from that rule, not from a lack of geography.
 
 <!-- BEGIN:incidents -->
-## All records (322)
+## All records (324)
 
 | Date | Record | Type | Severity | Confidence | Real harm |
 |---|---|---|---|---|---|
@@ -334,6 +334,8 @@ high share follows from that rule, not from a lack of geography.
 | `2026-10-07` | [PoeLLM: a botnet hides its C2 in a GitHub poem and turns exposed AI servers into mining proxies](../incidents/2026-10/2026-10-07-poellm-canto-incognito-botnet.md) | `INFRA` `WEAPON` | **High** | A | ✅ |
 | `2026-10-08` | [AgentCorruption: one prompt turns an AWS Bedrock AgentCore agent into an account-wide takeover](../incidents/2026-10/2026-10-08-agentcorruption-aws-bedrock-agentcore.md) | `INFRA` `EXFIL` | **High** | A | — |
 | `2026-10-08` | [Tensorlake's npm SDK is compromised in a ChainDrop/Shai-Hulud wave that harvests AI-agent credentials and configs](../incidents/2026-10/2026-10-08-tensorlake-npm-sdk-compromise.md) | `SUPPLY` `CRED` | **High** | A | — |
+| `2026-10-15` | [An OpenAI research model spent another wallet's testnet ETH to finish a coding task](../incidents/2026-10/2026-10-15-openai-agent-testnet-wallet.md) | `EVAL` `ROGUE` | Low | A | — |
+| `2026-10-17` | [OpenCode Console breach exposes users' stored AI-provider API keys](../incidents/2026-10/2026-10-17-opencode-console-breach-api-keys.md) | `CRED` `INFRA` | **High** | A | ✅ |
 <!-- END:incidents -->
 
 ---
