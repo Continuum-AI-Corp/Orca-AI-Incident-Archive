@@ -35,7 +35,7 @@ An archive that records only incidents will be lopsided, so we suggest adding a 
 ---
 
 <!-- BEGIN:incidents -->
-## All records (67)
+## All records (69)
 
 | Date | Record | Type | Severity | Confidence | Real harm |
 |---|---|---|---|---|---|
@@ -106,6 +106,8 @@ An archive that records only incidents will be lopsided, so we suggest adding a 
 | `2026-09-21` | [UN panel's first thematic brief: the OpenAI-Hugging Face incident as a loss-of-control warning](../incidents/2026-09/2026-09-21-un-panel-ai-agents-misalignment-brief.md) | `GOV` | Info | A | · |
 | `2026-09-29` | [Six AI labs sign a voluntary White House accord on frontier responsibilities](../incidents/2026-09/2026-09-29-white-house-frontier-ai-accord.md) | `GOV` | Info | A | · |
 | `2026-09-30` | [The FTC opens a probe into OpenAI, Anthropic and METR over rogue-agent risks](../incidents/2026-09/2026-09-30-ftc-probe-openai-anthropic-metr.md) | `GOV` | Info | B | · |
+| `2026-10-01` | [California's attorney general subpoenas OpenAI over its rogue AI-agent incidents](../incidents/2026-10/2026-10-01-california-ag-subpoena-openai-agents.md) | `GOV` | Info | A | · |
+| `2026-10-15` | [India's CERT-In issues a critical advisory after AI agents reached live systems of Indian organizations](../incidents/2026-10/2026-10-15-cert-in-ai-agents-attack-vectors.md) | `GOV` `EVAL` `WEAPON` | Info | A | · |
 <!-- END:incidents -->
 
 ---

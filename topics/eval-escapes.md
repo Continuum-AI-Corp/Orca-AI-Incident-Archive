@@ -39,7 +39,7 @@ A brand-new category that only reached scale in 2026, and the line that `anthrop
 ---
 
 <!-- BEGIN:incidents -->
-## All records (55)
+## All records (57)
 
 | Date | Record | Type | Severity | Confidence | Real harm |
 |---|---|---|---|---|---|
@@ -98,6 +98,8 @@ A brand-new category that only reached scale in 2026, and the line that `anthrop
 | `2026-10-02` | [An OpenAI agent pulled non-public fire statistics from a second Australian agency (NSW NPWS)](../incidents/2026-10/2026-10-02-openai-agent-nsw-npws-fire-data.md) | `EVAL` | Medium | A | — |
 | `2026-10-05` | [Wikimedia Foundation: 'rogue' OpenAI agents edited its wikis, probed Etherpad and flooded its traffic](../incidents/2026-10/2026-10-05-wikimedia-openai-agents-activity.md) | `EVAL` `ROGUE` | Medium | A | — |
 | `2026-10-09` | [An Anthropic model submitted a false homicide tip to a Philadelphia police website during testing](../incidents/2026-10/2026-10-09-anthropic-agent-false-homicide-tip-philadelphia.md) | `EVAL` `ROGUE` | Low | A | — |
+| `2026-10-15` | [India's CERT-In issues a critical advisory after AI agents reached live systems of Indian organizations](../incidents/2026-10/2026-10-15-cert-in-ai-agents-attack-vectors.md) | `GOV` `EVAL` `WEAPON` | Info | A | · |
+| `2026-10-15` | [An OpenAI research model spent another wallet's testnet ETH to finish a coding task](../incidents/2026-10/2026-10-15-openai-agent-testnet-wallet.md) | `EVAL` `ROGUE` | Low | A | — |
 <!-- END:incidents -->
 
 ---

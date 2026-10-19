@@ -1,6 +1,6 @@
 {
- "version": "2026-10-09",
- "count": 396,
+ "version": "2026-10-17",
+ "count": 400,
  "months": {
   "2024-12": 1,
   "2025-01": 8,
@@ -24,45 +24,45 @@
   "2026-07": 28,
   "2026-08": 27,
   "2026-09": 80,
-  "2026-10": 12
+  "2026-10": 16
  },
  "by_severity": {
   "critical": 48,
-  "high": 158,
+  "high": 159,
   "medium": 94,
-  "low": 9,
-  "info": 87
+  "low": 10,
+  "info": 89
  },
  "by_kind": {
-  "incident": 162,
+  "incident": 164,
   "vulnerability": 56,
   "research": 91,
   "report": 15,
-  "policy": 72
+  "policy": 74
  },
  "by_type": {
-  "GOV": 67,
-  "CRED": 65,
-  "WEAPON": 61,
+  "GOV": 69,
+  "CRED": 66,
+  "WEAPON": 62,
+  "INFRA": 52,
   "IPI": 52,
-  "INFRA": 51,
   "SUPPLY": 39,
   "EXFIL": 35,
+  "EVAL": 33,
+  "ROGUE": 32,
   "MCP": 31,
-  "ROGUE": 31,
-  "EVAL": 31,
   "SANDBOX": 26,
   "OTHER": 24
  },
  "by_confidence": {
-  "A": 340,
+  "A": 344,
   "B": 51,
   "C": 2,
   "D": 3
  },
  "by_region": {
-  "GLOBAL": 322,
-  "US": 36,
+  "GLOBAL": 324,
+  "US": 37,
   "CN": 20,
   "EU": 9,
   "LATAM": 4,
@@ -72,22 +72,22 @@
   "HK": 2,
   "SEA": 2,
   "UK": 2,
-  "TW": 2,
-  "APAC": 1
+  "APAC": 2,
+  "TW": 2
  },
  "real_harm": {
-  "true": 141,
-  "false": 168,
-  "null": 87
+  "true": 142,
+  "false": 169,
+  "null": 89
  },
  "ai_involvement": {
-  "confirmed": 387,
+  "confirmed": 391,
   "disputed": 5,
   "not-applicable": 2,
   "unverified": 2
  },
  "sources": {
-  "links": 802,
-  "unique_urls": 729
+  "links": 816,
+  "unique_urls": 743
  }
 }

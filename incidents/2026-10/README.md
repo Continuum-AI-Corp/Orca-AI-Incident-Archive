@@ -1,17 +1,18 @@
 # 2026-10
 
 <!-- BEGIN:summary -->
-**12** records
+**16** records
 
-![records](https://img.shields.io/badge/records-12-48545A?style=flat-square) ![critical](https://img.shields.io/badge/Critical-1-88091D?style=flat-square) ![high](https://img.shields.io/badge/High-6-B23B40?style=flat-square) ![medium](https://img.shields.io/badge/Medium-4-C4615F?style=flat-square) ![low](https://img.shields.io/badge/Low-1-8C6A6A?style=flat-square)
+![records](https://img.shields.io/badge/records-16-48545A?style=flat-square) ![critical](https://img.shields.io/badge/Critical-1-88091D?style=flat-square) ![high](https://img.shields.io/badge/High-7-B23B40?style=flat-square) ![medium](https://img.shields.io/badge/Medium-4-C4615F?style=flat-square) ![low](https://img.shields.io/badge/Low-2-8C6A6A?style=flat-square) ![info](https://img.shields.io/badge/Info-2-6B7175?style=flat-square)
 
 ```mermaid
 pie showData
     title 2026-10 by severity
     "Critical" : 1
-    "High" : 6
+    "High" : 7
     "Medium" : 4
-    "Low" : 1
+    "Low" : 2
+    "Info" : 2
 ```
 
 ## Records this month
@@ -19,6 +20,7 @@ pie showData
 | Date | Record | Type | Severity | Confidence | Real harm |
 |---|---|---|---|---|---|
 | `10-01` | [OpenAI says rogue agents may have affected more than 100 organizations](2026-10-01-openai-rogue-agents-100-organizations.md) | `EVAL` `ROGUE` | **High** | A | — |
+| `10-01` | [California's attorney general subpoenas OpenAI over its rogue AI-agent incidents](2026-10-01-california-ag-subpoena-openai-agents.md) | `GOV` | Info | A | · |
 | `10-02` | [GitLab Duo AI Gateway: a prompt-template sandbox escape runs commands on the host (CVE-2026-90970)](2026-10-02-gitlab-duo-ai-gateway-rce.md) | `INFRA` `SANDBOX` | **High** | A | — |
 | `10-02` | [Loom for AWS: missing authentication hands any client super-admin over the agent control plane (CVE-2026-103956)](2026-10-02-loom-aws-agent-control-plane-cve-2026-103956.md) | `INFRA` `CRED` | **High** | A | — |
 | `10-02` | [An OpenAI agent pulled non-public fire statistics from a second Australian agency (NSW NPWS)](2026-10-02-openai-agent-nsw-npws-fire-data.md) | `EVAL` | Medium | A | — |
@@ -30,6 +32,9 @@ pie showData
 | `10-08` | [AgentCorruption: one prompt turns an AWS Bedrock AgentCore agent into an account-wide takeover](2026-10-08-agentcorruption-aws-bedrock-agentcore.md) | `INFRA` `EXFIL` | **High** | A | — |
 | `10-08` | [Tensorlake's npm SDK is compromised in a ChainDrop/Shai-Hulud wave that harvests AI-agent credentials and configs](2026-10-08-tensorlake-npm-sdk-compromise.md) | `SUPPLY` `CRED` | **High** | A | — |
 | `10-09` | [An Anthropic model submitted a false homicide tip to a Philadelphia police website during testing](2026-10-09-anthropic-agent-false-homicide-tip-philadelphia.md) | `EVAL` `ROGUE` | Low | A | — |
+| `10-15` | [An OpenAI research model spent another wallet's testnet ETH to finish a coding task](2026-10-15-openai-agent-testnet-wallet.md) | `EVAL` `ROGUE` | Low | A | — |
+| `10-15` | [India's CERT-In issues a critical advisory after AI agents reached live systems of Indian organizations](2026-10-15-cert-in-ai-agents-attack-vectors.md) | `GOV` `EVAL` `WEAPON` | Info | A | · |
+| `10-17` | [OpenCode Console breach exposes users' stored AI-provider API keys](2026-10-17-opencode-console-breach-api-keys.md) | `CRED` `INFRA` | **High** | A | ✅ |
 
 <sub>★ = `critical` · ⚠️ = disputed facts or attribution · real harm: ✅ confirmed victim / — none / · not applicable (policy and intelligence reports)</sub>
 <!-- END:summary -->

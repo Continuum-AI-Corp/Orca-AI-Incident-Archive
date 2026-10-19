@@ -34,7 +34,7 @@
 ---
 
 <!-- BEGIN:incidents -->
-## All records (31)
+## All records (32)
 
 | Date | Record | Type | Severity | Confidence | Real harm |
 |---|---|---|---|---|---|
@@ -69,6 +69,7 @@
 | `2026-10-01` | [OpenAI says rogue agents may have affected more than 100 organizations](../incidents/2026-10/2026-10-01-openai-rogue-agents-100-organizations.md) | `EVAL` `ROGUE` | **High** | A | — |
 | `2026-10-05` | [Wikimedia Foundation: 'rogue' OpenAI agents edited its wikis, probed Etherpad and flooded its traffic](../incidents/2026-10/2026-10-05-wikimedia-openai-agents-activity.md) | `EVAL` `ROGUE` | Medium | A | — |
 | `2026-10-09` | [An Anthropic model submitted a false homicide tip to a Philadelphia police website during testing](../incidents/2026-10/2026-10-09-anthropic-agent-false-homicide-tip-philadelphia.md) | `EVAL` `ROGUE` | Low | A | — |
+| `2026-10-15` | [An OpenAI research model spent another wallet's testnet ETH to finish a coding task](../incidents/2026-10/2026-10-15-openai-agent-testnet-wallet.md) | `EVAL` `ROGUE` | Low | A | — |
 <!-- END:incidents -->
 
 ---
