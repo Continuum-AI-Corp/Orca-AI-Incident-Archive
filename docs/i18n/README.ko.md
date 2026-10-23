@@ -13,11 +13,11 @@
 </p>
 
 <!-- BEGIN:badges -->
-<p align="center"><img alt="레코드" src="https://img.shields.io/badge/%EB%A0%88%EC%BD%94%EB%93%9C-400-48545A?style=flat-square"> <img alt="대상 개월" src="https://img.shields.io/badge/%EB%8C%80%EC%83%81_%EA%B0%9C%EC%9B%94-23-48545A?style=flat-square"> <img alt="심각" src="https://img.shields.io/badge/%EC%8B%AC%EA%B0%81-48-88091D?style=flat-square"> <img alt="실제 피해" src="https://img.shields.io/badge/%EC%8B%A4%EC%A0%9C_%ED%94%BC%ED%95%B4-142-B23B40?style=flat-square"> <img alt="1차 출처" src="https://img.shields.io/badge/1%EC%B0%A8_%EC%B6%9C%EC%B2%98-743_URL-157A41?style=flat-square"> <img alt="라이선스" src="https://img.shields.io/badge/%EB%9D%BC%EC%9D%B4%EC%84%A0%EC%8A%A4-CC_BY_4.0-2359A8?style=flat-square"></p>
+<p align="center"><img alt="레코드" src="https://img.shields.io/badge/%EB%A0%88%EC%BD%94%EB%93%9C-403-48545A?style=flat-square"> <img alt="대상 개월" src="https://img.shields.io/badge/%EB%8C%80%EC%83%81_%EA%B0%9C%EC%9B%94-23-48545A?style=flat-square"> <img alt="심각" src="https://img.shields.io/badge/%EC%8B%AC%EA%B0%81-49-88091D?style=flat-square"> <img alt="실제 피해" src="https://img.shields.io/badge/%EC%8B%A4%EC%A0%9C_%ED%94%BC%ED%95%B4-144-B23B40?style=flat-square"> <img alt="1차 출처" src="https://img.shields.io/badge/1%EC%B0%A8_%EC%B6%9C%EC%B2%98-752_URL-157A41?style=flat-square"> <img alt="라이선스" src="https://img.shields.io/badge/%EB%9D%BC%EC%9D%B4%EC%84%A0%EC%8A%A4-CC_BY_4.0-2359A8?style=flat-square"></p>
 <!-- END:badges -->
 
 <!-- BEGIN:thesis -->
-수록 범위는 **2025-01**부터 **2026-10-17**까지입니다. AI 에이전트와 관련된 보안 사건 400건을 월별로 정리했습니다(2024-12-01까지 거슬러 올라가는 선행 사건 1건 포함). 각 레코드는 YAML 헤더, 공격 체인 도식, 그리고 **클릭할 수 있는 1차 출처 최소 1개**를 갖춘 Markdown 파일입니다. 400건 중 확인된 피해자가 있는 것은 **142건**뿐입니다.
+수록 범위는 **2025-01**부터 **2026-10-21**까지입니다. AI 에이전트와 관련된 보안 사건 403건을 월별로 정리했습니다(2024-12-01까지 거슬러 올라가는 선행 사건 1건 포함). 각 레코드는 YAML 헤더, 공격 체인 도식, 그리고 **클릭할 수 있는 1차 출처 최소 1개**를 갖춘 Markdown 파일입니다. 403건 중 확인된 피해자가 있는 것은 **144건**뿐입니다.
 <!-- END:thesis -->
 
 이 아카이브는 대부분의 사고 목록이 뭉개버리는 한 가지 구분을 지키기 위해 존재합니다.
@@ -75,11 +75,11 @@
 |---|---|---|---|---|---|---|---|---|---|---|---|
 | `8` ★1 | `6` | `6` | `6` | `7` | `11` | `10` ★2 | `15` ★2 | `10` ★1 | `15` | `13` ★3 | `14` |
 
-**2026년**(278건)
+**2026년**(281건)
 
 | [01](../../incidents/2026-01/README.md) | [02](../../incidents/2026-02/README.md) | [03](../../incidents/2026-03/README.md) | [04](../../incidents/2026-04/README.md) | [05](../../incidents/2026-05/README.md) | [06](../../incidents/2026-06/README.md) | [07](../../incidents/2026-07/README.md) | [08](../../incidents/2026-08/README.md) | [09](../../incidents/2026-09/README.md) | [10](../../incidents/2026-10/README.md) |
 |---|---|---|---|---|---|---|---|---|---|
-| `13` ★1 | `19` ★5 | `16` ★3 | `22` ★2 | `26` ★5 | `31` ★3 | `28` ★7 | `27` ★4 | `80` ★8 | `16` ★1 |
+| `13` ★1 | `19` ★5 | `16` ★3 | `22` ★2 | `26` ★5 | `31` ★3 | `28` ★7 | `27` ★4 | `80` ★8 | `19` ★2 |
 
 <sub>`n` = 해당 월 건수, ★ = 그중 `critical` 건수</sub>
 <!-- END:months -->
@@ -139,6 +139,7 @@
 | `2026-09-22` | [Gambit: 세 개의 AI 하네스가 온라인 소매업체에서 60만 건의 카드 기록을 탈취](../../incidents/2026-09/2026-09-22-gambit-ai-agent-retail-card-theft.md)<br><sub>Gambit: three AI harnesses stole 600,000 card records from online retailers</sub> | `WEAPON` | 전 세계 |
 | `2026-09-24` | [OpenAI 에이전트가 호주 Medicare 포털에 침입했다 — 정부가 침해된 첫 사례](../../incidents/2026-09/2026-09-24-openai-agent-australia-medicare.md)<br><sub>An OpenAI agent crossed into Australia's Medicare portal - the first government breached</sub> | `EVAL` | 호주 |
 | `2026-10-06` | [오픈소스 agentic 침투테스트 도구(ARTEX)가 한국 7개 은행 침해와 연관됐다](../../incidents/2026-10/2026-10-06-artex-ai-south-korea-banks.md)<br><sub>An open-source agentic pen-test tool (ARTEX) is tied to breaches at seven South Korean banks</sub> | `WEAPON` `EXFIL` | 한국 |
+| `2026-10-21` | [마이크로소프트, ConnectWise 공급망 침해를 ARTEX agentic AI 프레임워크로 공격을 구동한 Storm-0940에 귀속](../../incidents/2026-10/2026-10-21-storm-0940-artex-connectwise-supply-chain.md)<br><sub>Microsoft ties the ConnectWise supply-chain compromise to Storm-0940 driving attacks with the ARTEX agentic AI framework</sub> | `WEAPON` `SUPPLY` | 전 세계 |
 <!-- END:critical -->
 
 ## 무엇을 레코드로 보는가
@@ -164,9 +165,9 @@
 <!-- BEGIN:quality -->
 |  |  |
 |---|---|
-| 출처 링크 | 816개 / 고유 URL 743개 |
+| 출처 링크 | 825개 / 고유 URL 752개 |
 | 출처 없는 레코드 | **0** — 출처가 없으면 수록하지 않음 |
-| 등급 A(1차 출처) | 344건 |
+| 등급 A(1차 출처) | 347건 |
 | 분쟁 표시 | 15건 |
 | 검증 회차 | 4회 |
 <!-- END:quality -->
@@ -182,7 +183,7 @@
 @misc{orca_ai_incident_archive,
   title  = {Orca AI Incident Archive: An open database of real-world AI agent incidents},
   year   = {2026},
-  note   = {400건, 2025-01~2026-10, 142건은 확인된 실제 피해},
+  note   = {403건, 2025-01~2026-10, 144건은 확인된 실제 피해},
   url    = {https://github.com/Continuum-AI-Corp/Orca-AI-Incident-Archive}
 }
 ```
@@ -208,4 +209,4 @@
 
 ---
 
-<sub><!-- BEGIN:footer -->빌드 2026-10-17 · 400건 · 23개월<!-- END:footer --></sub> · <sub>구조: [SCHEMA.md](../../SCHEMA.md) · 데이터: [dist/](../../dist/README.md)</sub>
+<sub><!-- BEGIN:footer -->빌드 2026-10-21 · 403건 · 23개월<!-- END:footer --></sub> · <sub>구조: [SCHEMA.md](../../SCHEMA.md) · 데이터: [dist/](../../dist/README.md)</sub>

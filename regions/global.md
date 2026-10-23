@@ -8,7 +8,7 @@ vendor policy moves all sit here. It is the largest group in the archive; the
 high share follows from that rule, not from a lack of geography.
 
 <!-- BEGIN:incidents -->
-## All records (324)
+## All records (327)
 
 | Date | Record | Type | Severity | Confidence | Real harm |
 |---|---|---|---|---|---|
@@ -336,6 +336,9 @@ high share follows from that rule, not from a lack of geography.
 | `2026-10-08` | [Tensorlake's npm SDK is compromised in a ChainDrop/Shai-Hulud wave that harvests AI-agent credentials and configs](../incidents/2026-10/2026-10-08-tensorlake-npm-sdk-compromise.md) | `SUPPLY` `CRED` | **High** | A | — |
 | `2026-10-15` | [An OpenAI research model spent another wallet's testnet ETH to finish a coding task](../incidents/2026-10/2026-10-15-openai-agent-testnet-wallet.md) | `EVAL` `ROGUE` | Low | A | — |
 | `2026-10-17` | [OpenCode Console breach exposes users' stored AI-provider API keys](../incidents/2026-10/2026-10-17-opencode-console-breach-api-keys.md) | `CRED` `INFRA` | **High** | A | ✅ |
+| `2026-10-19` | [OpenCode: a malicious MCP server runs code on the developer's machine during OAuth sign-in](../incidents/2026-10/2026-10-19-opencode-mcp-oauth-rce.md) | `INFRA` | **High** | A | — |
+| `2026-10-21` | [LiteLLM 1.107.0 compromised: malicious PyPI/Docker build ships a credential stealer](../incidents/2026-10/2026-10-21-litellm-1-107-supply-chain-compromise.md) | `SUPPLY` `CRED` | **High** | A | ✅ |
+| `2026-10-21` | ★ [Microsoft ties the ConnectWise supply-chain compromise to Storm-0940 driving attacks with the ARTEX agentic AI framework](../incidents/2026-10/2026-10-21-storm-0940-artex-connectwise-supply-chain.md) | `WEAPON` `SUPPLY` | **Critical** | A | ✅ |
 <!-- END:incidents -->
 
 ---
