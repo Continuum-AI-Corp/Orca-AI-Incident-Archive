@@ -13,11 +13,11 @@
 </p>
 
 <!-- BEGIN:badges -->
-<p align="center"><img alt="条目" src="https://img.shields.io/badge/%E6%9D%A1%E7%9B%AE-400-48545A?style=flat-square"> <img alt="覆盖月份" src="https://img.shields.io/badge/%E8%A6%86%E7%9B%96%E6%9C%88%E4%BB%BD-23-48545A?style=flat-square"> <img alt="严重" src="https://img.shields.io/badge/%E4%B8%A5%E9%87%8D-48-88091D?style=flat-square"> <img alt="真实伤害" src="https://img.shields.io/badge/%E7%9C%9F%E5%AE%9E%E4%BC%A4%E5%AE%B3-142-B23B40?style=flat-square"> <img alt="一手来源" src="https://img.shields.io/badge/%E4%B8%80%E6%89%8B%E6%9D%A5%E6%BA%90-743_URL-157A41?style=flat-square"> <img alt="授权" src="https://img.shields.io/badge/%E6%8E%88%E6%9D%83-CC_BY_4.0-2359A8?style=flat-square"></p>
+<p align="center"><img alt="条目" src="https://img.shields.io/badge/%E6%9D%A1%E7%9B%AE-403-48545A?style=flat-square"> <img alt="覆盖月份" src="https://img.shields.io/badge/%E8%A6%86%E7%9B%96%E6%9C%88%E4%BB%BD-23-48545A?style=flat-square"> <img alt="严重" src="https://img.shields.io/badge/%E4%B8%A5%E9%87%8D-49-88091D?style=flat-square"> <img alt="真实伤害" src="https://img.shields.io/badge/%E7%9C%9F%E5%AE%9E%E4%BC%A4%E5%AE%B3-144-B23B40?style=flat-square"> <img alt="一手来源" src="https://img.shields.io/badge/%E4%B8%80%E6%89%8B%E6%9D%A5%E6%BA%90-752_URL-157A41?style=flat-square"> <img alt="授权" src="https://img.shields.io/badge/%E6%8E%88%E6%9D%83-CC_BY_4.0-2359A8?style=flat-square"></p>
 <!-- END:badges -->
 
 <!-- BEGIN:thesis -->
-收录范围从 **2025-01** 到 **2026-10-17**，按月整理 400 条与 AI agent 有关的安全事件（另含 1 条可追到 2024-12-01 的前序事件）。每条一个 Markdown 文件，带 YAML frontmatter、攻击链示意图和**至少一条可点开的来源**。400 条里只有 **142 条**有确认的受害方。
+收录范围从 **2025-01** 到 **2026-10-21**，按月整理 403 条与 AI agent 有关的安全事件（另含 1 条可追到 2024-12-01 的前序事件）。每条一个 Markdown 文件，带 YAML frontmatter、攻击链示意图和**至少一条可点开的来源**。403 条里只有 **144 条**有确认的受害方。
 <!-- END:thesis -->
 
 这个档案存在，是为了守住一个大多数事故清单都糊掉的区分：
@@ -75,11 +75,11 @@
 |---|---|---|---|---|---|---|---|---|---|---|---|
 | `8` ★1 | `6` | `6` | `6` | `7` | `11` | `10` ★2 | `15` ★2 | `10` ★1 | `15` | `13` ★3 | `14` |
 
-**2026**（278 条）
+**2026**（281 条）
 
 | [01](../../incidents/2026-01/README.md) | [02](../../incidents/2026-02/README.md) | [03](../../incidents/2026-03/README.md) | [04](../../incidents/2026-04/README.md) | [05](../../incidents/2026-05/README.md) | [06](../../incidents/2026-06/README.md) | [07](../../incidents/2026-07/README.md) | [08](../../incidents/2026-08/README.md) | [09](../../incidents/2026-09/README.md) | [10](../../incidents/2026-10/README.md) |
 |---|---|---|---|---|---|---|---|---|---|
-| `13` ★1 | `19` ★5 | `16` ★3 | `22` ★2 | `26` ★5 | `31` ★3 | `28` ★7 | `27` ★4 | `80` ★8 | `16` ★1 |
+| `13` ★1 | `19` ★5 | `16` ★3 | `22` ★2 | `26` ★5 | `31` ★3 | `28` ★7 | `27` ★4 | `80` ★8 | `19` ★2 |
 
 <sub>`n` = 当月条目数，★ = 其中 `critical` 的条数</sub>
 <!-- END:months -->
@@ -139,6 +139,7 @@
 | `2026-09-22` | [Gambit：三个 AI harness 从在线零售商窃取 60 万条信用卡记录](../../incidents/2026-09/2026-09-22-gambit-ai-agent-retail-card-theft.md)<br><sub>Gambit: three AI harnesses stole 600,000 card records from online retailers</sub> | `WEAPON` | 全球 |
 | `2026-09-24` | [OpenAI 智能体越入澳大利亚 Medicare 门户——首例政府被 AI 代理入侵](../../incidents/2026-09/2026-09-24-openai-agent-australia-medicare.md)<br><sub>An OpenAI agent crossed into Australia's Medicare portal - the first government breached</sub> | `EVAL` | 澳大利亚 |
 | `2026-10-06` | [一款开源 agentic 渗透测试工具（ARTEX）被关联到韩国七家银行的入侵](../../incidents/2026-10/2026-10-06-artex-ai-south-korea-banks.md)<br><sub>An open-source agentic pen-test tool (ARTEX) is tied to breaches at seven South Korean banks</sub> | `WEAPON` `EXFIL` | 韩国 |
+| `2026-10-21` | [微软将 ConnectWise 供应链入侵归因于用 ARTEX agentic AI 框架驱动攻击的 Storm-0940](../../incidents/2026-10/2026-10-21-storm-0940-artex-connectwise-supply-chain.md)<br><sub>Microsoft ties the ConnectWise supply-chain compromise to Storm-0940 driving attacks with the ARTEX agentic AI framework</sub> | `WEAPON` `SUPPLY` | 全球 |
 <!-- END:critical -->
 
 ## 什么算一条记录
@@ -164,9 +165,9 @@
 <!-- BEGIN:quality -->
 |  |  |
 |---|---|
-| 来源链接 | 816 条，743 个唯一 URL |
+| 来源链接 | 825 条，752 个唯一 URL |
 | 无来源条目 | **0** —— 没有来源的条目不进库 |
-| 可信度 A（一手源） | 344 条 |
+| 可信度 A（一手源） | 347 条 |
 | 标记为争议 | 15 条 |
 | 复核轮次 | 4 轮 |
 <!-- END:quality -->
@@ -182,7 +183,7 @@
 @misc{orca_ai_incident_archive,
   title  = {Orca AI Incident Archive: An open database of real-world AI agent incidents},
   year   = {2026},
-  note   = {400 条，2025-01 至 2026-10；142 条有确认的真实伤害},
+  note   = {403 条，2025-01 至 2026-10；144 条有确认的真实伤害},
   url    = {https://github.com/Continuum-AI-Corp/Orca-AI-Incident-Archive}
 }
 ```
@@ -208,4 +209,4 @@
 
 ---
 
-<sub><!-- BEGIN:footer -->构建于 2026-10-17 · 400 条 · 23 个月<!-- END:footer --></sub> · <sub>结构见 [SCHEMA.md](../../SCHEMA.md) · 数据在 [dist/](../../dist/README.md)</sub>
+<sub><!-- BEGIN:footer -->构建于 2026-10-21 · 403 条 · 23 个月<!-- END:footer --></sub> · <sub>结构见 [SCHEMA.md](../../SCHEMA.md) · 数据在 [dist/](../../dist/README.md)</sub>

@@ -62,6 +62,7 @@ https://blogs.microsoft.com/on-the-issues/2025/02/27/disrupting-cybercrime-abusi
 https://blogs.microsoft.com/on-the-issues/2026/09/22/disrupting-eviltokens-the-ai-chatbot-built-for-cybercrime/
 https://blogs.nvidia.com/blog/open-secure-ai-alliance-contributions/
 https://blogs.nvidia.com/blog/open-secure-ai-alliance/
+https://brandefense.io/security-news/storm-0940-artex-connectwise-supply-chain-attack/
 https://brave.com/blog/comet-prompt-injection/
 https://breached.company/the-lethal-trifecta-strikes-four-major-ai-agent-vulnerabilities-in-five-days/
 https://californianewswire.com/calif-gov-newsom-issues-an-executive-order-to-accelerate-third-party-oversight-advance-creation-of-an-ai-kill-switch/
@@ -95,6 +96,7 @@ https://cyberinsider.com/experiment-shows-ai-agents-can-escape-secure-vms-using-
 https://cybernews.com/chatgpt-ai-humanoid-robot-shot-human/
 https://cybernews.com/security/openais-rogue-agents-used-at-least-10-more-sites/
 https://cyberscoop.com/claude-chrome-extension-allows-plugins-to-hijack-ai/
+https://cyberscoop.com/microsoft-attributes-connectwise-supply-chain-attack-china-storm-0940/
 https://cyberscoop.com/near-autonomous-ai-attack-government-target-taiwan/
 https://cyberscoop.com/poellm-malware-botnet-poem-lumen-black-lotus-labs/
 https://cyberscoop.com/servicenow-fixes-critical-ai-vulnerability-cve-2025-12420/
@@ -286,6 +288,7 @@ https://red.anthropic.com/2026/n-days/
 https://red.anthropic.com/2026/zero-days/
 https://research.checkpoint.com/2025/ai-evasion-prompt-injection/
 https://research.checkpoint.com/2026/rce-and-api-token-exfiltration-through-claude-code-project-files-cve-2025-59536/
+https://research.jfrog.com/post/litellm-hijacked-again/
 https://research.jfrog.com/vulnerabilities/bifrost-is-vulnerable-to-unauthenticated-remote-code-execution-via-a-custom-plugin-http-path-on-dynamically-linked-builds-cve-2026-86242-jfsa-2026-001684572/
 https://research.jfrog.com/vulnerabilities/bifrost-is-vulnerable-to-unauthenticated-remote-code-execution-via-mcp-stdio-client-registration-cve-2026-90898/
 https://research.perplexity.ai/articles/securing-agents-across-perplexity%E2%80%99s-client-endpoints-with-numbat
@@ -391,6 +394,8 @@ https://thehackernews.com/2026/09/researchers-use-claude-to-port-pre-auth.html
 https://thehackernews.com/2026/09/russia-aligned-uac-0099-plants-nuclear.html
 https://thehackernews.com/2026/10/artex-ai-pentesting-tool-used-in-data.html
 https://thehackernews.com/2026/10/gitlab-patches-critical-self-hosted-ai.html
+https://thehackernews.com/2026/10/litellm-compromised-in-supply-chain.html
+https://thehackernews.com/2026/10/opencode-flaw-lets-malicious-mcp.html
 https://thehackernews.com/2026/10/poellm-malware-infects-3400-servers-to.html
 https://thehackernews.com/2026/10/tensorlake-npm-package-compromised-to.html
 https://thehackernews.com/2026/10/threatsday-ransomware-affiliate.html
@@ -565,6 +570,7 @@ https://www.infoq.cn/article/CEphwKjzAe7LzbOriLcq
 https://www.infosecurity-magazine.com/news/abuse-cursor-agent-ransomware/
 https://www.infosecurity-magazine.com/news/attackers-hide-ai-prompt/
 https://www.infosecurity-magazine.com/news/indirect-prompt-injection-web/
+https://www.infosecurity-magazine.com/news/opencode-quietly-patched-critical/
 https://www.infosecurity-magazine.com/news/rathat-android-malware-ai-steal/
 https://www.infosecurity-magazine.com/news/x47c-botnet-ai-api-draining-18/
 https://www.inquirer.com/crime/anthropic-artificial-intelligence-philadelphia-police-false-homicide-tip-20261009.html
@@ -594,6 +600,7 @@ https://www.microsoft.com/en-us/security/blog/2026/06/24/stealc-and-amadey-break
 https://www.microsoft.com/en-us/security/blog/2026/08/04/chaindrop-supply-chain-compromise-anatomy-self-propagating-worm/
 https://www.microsoft.com/en-us/security/blog/2026/09/22/unmasking-eviltokens-getting-to-the-root-of-device-code-phishing/
 https://www.microsoft.com/en-us/security/blog/2026/09/25/storm-3168-agentic-driven-cloud-attacks-using-compromised-service-principals/
+https://www.microsoft.com/en-us/security/blog/2026/10/21/storm-0940-uses-artex-agentic-ai-connectwise-supply-chain-compromise/
 https://www.morningstar.com/news/business-wire/20260924811082/zenity-labs-uncovers-salesbleed-3-salesforce-agentforce-flaws-enabling-zero-click-crm-data-theft-and-ai-agent-impersonation
 https://www.morphisec.com/blog/when-your-ai-coding-assistant-becomes-the-attack-the-hades-supply-chain-campaign/
 https://www.n-able.com/blog/n-central-security-update-august-2-2026
@@ -615,6 +622,7 @@ https://www.permissionprotocol.com/agent-incident-tracker
 https://www.picussecurity.com/resource/blog/cve-2026-33032-mcpwn-how-a-missing-middleware-call-in-nginx-ui-hands-attackers-full-web-server-takeover
 https://www.pillar.security/blog/deadbugz-currently-active-mcp-supply-chain-campaign
 https://www.pillar.security/blog/new-vulnerability-in-github-copilot-and-cursor-how-hackers-can-weaponize-code-agents
+https://www.pillar.security/blog/open-and-shut-remote-code-execution-in-opencode-via-mcp-oauth
 https://www.pillar.security/blog/the-agent-security-paradox-when-trusted-commands-in-cursor-become-attack-vectors
 https://www.pillar.security/blog/the-week-of-sandbox-escapes
 https://www.politico.com/news/2026/09/18/anthropic-openai-spacexai-google-sued-over-calls-to-pace-ai-development-01085023
@@ -719,6 +727,7 @@ https://www.wiz.io/blog/agentic-browser-security-2025-year-end-review
 https://www.wiz.io/blog/exposed-moltbook-database-reveals-millions-of-api-keys
 https://www.wiz.io/blog/ghostapproval-a-trust-boundary-gap-in-ai-coding-assistants
 https://www.wiz.io/blog/keyv-and-cacheable-npm-supply-chain-attack
+https://www.wiz.io/blog/litellm-compromised-steals-credentials
 https://www.wiz.io/blog/off-guard-breaking-litellm-from-authentication-bypass-to-cloud-compromise
 https://www.wiz.io/blog/red-agent-snowflake-copilot-cicd-bug
 https://www.wiz.io/blog/s1ngularity-supply-chain-attack

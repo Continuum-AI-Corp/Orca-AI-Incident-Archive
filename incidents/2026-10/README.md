@@ -1,15 +1,15 @@
 # 2026-10
 
 <!-- BEGIN:summary -->
-**16** records
+**19** records
 
-![records](https://img.shields.io/badge/records-16-48545A?style=flat-square) ![critical](https://img.shields.io/badge/Critical-1-88091D?style=flat-square) ![high](https://img.shields.io/badge/High-7-B23B40?style=flat-square) ![medium](https://img.shields.io/badge/Medium-4-C4615F?style=flat-square) ![low](https://img.shields.io/badge/Low-2-8C6A6A?style=flat-square) ![info](https://img.shields.io/badge/Info-2-6B7175?style=flat-square)
+![records](https://img.shields.io/badge/records-19-48545A?style=flat-square) ![critical](https://img.shields.io/badge/Critical-2-88091D?style=flat-square) ![high](https://img.shields.io/badge/High-9-B23B40?style=flat-square) ![medium](https://img.shields.io/badge/Medium-4-C4615F?style=flat-square) ![low](https://img.shields.io/badge/Low-2-8C6A6A?style=flat-square) ![info](https://img.shields.io/badge/Info-2-6B7175?style=flat-square)
 
 ```mermaid
 pie showData
     title 2026-10 by severity
-    "Critical" : 1
-    "High" : 7
+    "Critical" : 2
+    "High" : 9
     "Medium" : 4
     "Low" : 2
     "Info" : 2
@@ -35,6 +35,9 @@ pie showData
 | `10-15` | [An OpenAI research model spent another wallet's testnet ETH to finish a coding task](2026-10-15-openai-agent-testnet-wallet.md) | `EVAL` `ROGUE` | Low | A | — |
 | `10-15` | [India's CERT-In issues a critical advisory after AI agents reached live systems of Indian organizations](2026-10-15-cert-in-ai-agents-attack-vectors.md) | `GOV` `EVAL` `WEAPON` | Info | A | · |
 | `10-17` | [OpenCode Console breach exposes users' stored AI-provider API keys](2026-10-17-opencode-console-breach-api-keys.md) | `CRED` `INFRA` | **High** | A | ✅ |
+| `10-19` | [OpenCode: a malicious MCP server runs code on the developer's machine during OAuth sign-in](2026-10-19-opencode-mcp-oauth-rce.md) | `INFRA` | **High** | A | — |
+| `10-21` | ★ [Microsoft ties the ConnectWise supply-chain compromise to Storm-0940 driving attacks with the ARTEX agentic AI framework](2026-10-21-storm-0940-artex-connectwise-supply-chain.md) | `WEAPON` `SUPPLY` | **Critical** | A | ✅ |
+| `10-21` | [LiteLLM 1.107.0 compromised: malicious PyPI/Docker build ships a credential stealer](2026-10-21-litellm-1-107-supply-chain-compromise.md) | `SUPPLY` `CRED` | **High** | A | ✅ |
 
 <sub>★ = `critical` · ⚠️ = disputed facts or attribution · real harm: ✅ confirmed victim / — none / · not applicable (policy and intelligence reports)</sub>
 <!-- END:summary -->

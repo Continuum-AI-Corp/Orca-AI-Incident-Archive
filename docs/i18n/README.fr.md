@@ -13,11 +13,11 @@
 </p>
 
 <!-- BEGIN:badges -->
-<p align="center"><img alt="entrées" src="https://img.shields.io/badge/entr%C3%A9es-400-48545A?style=flat-square"> <img alt="mois" src="https://img.shields.io/badge/mois-23-48545A?style=flat-square"> <img alt="critiques" src="https://img.shields.io/badge/critiques-48-88091D?style=flat-square"> <img alt="préjudice réel" src="https://img.shields.io/badge/pr%C3%A9judice_r%C3%A9el-142-B23B40?style=flat-square"> <img alt="sources primaires" src="https://img.shields.io/badge/sources_primaires-743_URL-157A41?style=flat-square"> <img alt="licence" src="https://img.shields.io/badge/licence-CC_BY_4.0-2359A8?style=flat-square"></p>
+<p align="center"><img alt="entrées" src="https://img.shields.io/badge/entr%C3%A9es-403-48545A?style=flat-square"> <img alt="mois" src="https://img.shields.io/badge/mois-23-48545A?style=flat-square"> <img alt="critiques" src="https://img.shields.io/badge/critiques-49-88091D?style=flat-square"> <img alt="préjudice réel" src="https://img.shields.io/badge/pr%C3%A9judice_r%C3%A9el-144-B23B40?style=flat-square"> <img alt="sources primaires" src="https://img.shields.io/badge/sources_primaires-752_URL-157A41?style=flat-square"> <img alt="licence" src="https://img.shields.io/badge/licence-CC_BY_4.0-2359A8?style=flat-square"></p>
 <!-- END:badges -->
 
 <!-- BEGIN:thesis -->
-La couverture va de **2025-01** à **2026-10-17** — 400 entrées d'événements de sécurité liés aux agents IA, mois par mois, plus un précurseur remontant à 2024-12-01. Chaque entrée est un fichier Markdown unique avec un en-tête YAML, un schéma de chaîne d'attaque et **au moins une source primaire cliquable**. Sur ces 400 entrées, seules **142 ont une victime confirmée**.
+La couverture va de **2025-01** à **2026-10-21** — 403 entrées d'événements de sécurité liés aux agents IA, mois par mois, plus un précurseur remontant à 2024-12-01. Chaque entrée est un fichier Markdown unique avec un en-tête YAML, un schéma de chaîne d'attaque et **au moins une source primaire cliquable**. Sur ces 403 entrées, seules **144 ont une victime confirmée**.
 <!-- END:thesis -->
 
 Cette archive repose sur une distinction que la plupart des listes d'incidents aplatissent :
@@ -75,11 +75,11 @@ Chaque entrée répond d'abord à trois questions — y a-t-il eu une victime co
 |---|---|---|---|---|---|---|---|---|---|---|---|
 | `8` ★1 | `6` | `6` | `6` | `7` | `11` | `10` ★2 | `15` ★2 | `10` ★1 | `15` | `13` ★3 | `14` |
 
-**2026** (278 entrées)
+**2026** (281 entrées)
 
 | [01](../../incidents/2026-01/README.md) | [02](../../incidents/2026-02/README.md) | [03](../../incidents/2026-03/README.md) | [04](../../incidents/2026-04/README.md) | [05](../../incidents/2026-05/README.md) | [06](../../incidents/2026-06/README.md) | [07](../../incidents/2026-07/README.md) | [08](../../incidents/2026-08/README.md) | [09](../../incidents/2026-09/README.md) | [10](../../incidents/2026-10/README.md) |
 |---|---|---|---|---|---|---|---|---|---|
-| `13` ★1 | `19` ★5 | `16` ★3 | `22` ★2 | `26` ★5 | `31` ★3 | `28` ★7 | `27` ★4 | `80` ★8 | `16` ★1 |
+| `13` ★1 | `19` ★5 | `16` ★3 | `22` ★2 | `26` ★5 | `31` ★3 | `28` ★7 | `27` ★4 | `80` ★8 | `19` ★2 |
 
 <sub>`n` = entrées du mois, ★ = dont `critical`</sub>
 <!-- END:months -->
@@ -139,6 +139,7 @@ L'un de ces trois déclencheurs suffit : ① des dommages **confirmés** touchan
 | `2026-09-22` | [Gambit : trois harnais IA ont volé 600 000 enregistrements de cartes chez des détaillants en ligne](../../incidents/2026-09/2026-09-22-gambit-ai-agent-retail-card-theft.md)<br><sub>Gambit: three AI harnesses stole 600,000 card records from online retailers</sub> | `WEAPON` | Mondial |
 | `2026-09-24` | [Un agent OpenAI s'est introduit dans le portail Medicare australien - premier gouvernement touché](../../incidents/2026-09/2026-09-24-openai-agent-australia-medicare.md)<br><sub>An OpenAI agent crossed into Australia's Medicare portal - the first government breached</sub> | `EVAL` | Australie |
 | `2026-10-06` | [Un outil de pentest agentique open-source (ARTEX) est lié à des intrusions chez sept banques sud-coréennes](../../incidents/2026-10/2026-10-06-artex-ai-south-korea-banks.md)<br><sub>An open-source agentic pen-test tool (ARTEX) is tied to breaches at seven South Korean banks</sub> | `WEAPON` `EXFIL` | Corée du Sud |
+| `2026-10-21` | [Microsoft attribue la compromission de la chaîne d'approvisionnement ConnectWise à Storm-0940, qui pilote ses attaques avec le cadre d'IA agentique ARTEX](../../incidents/2026-10/2026-10-21-storm-0940-artex-connectwise-supply-chain.md)<br><sub>Microsoft ties the ConnectWise supply-chain compromise to Storm-0940 driving attacks with the ARTEX agentic AI framework</sub> | `WEAPON` `SUPPLY` | Mondial |
 <!-- END:critical -->
 
 ## Qu'est-ce qui compte comme entrée
@@ -164,9 +165,9 @@ Critères complets : [docs/scope.md](../../docs/scope.md).
 <!-- BEGIN:quality -->
 |  |  |
 |---|---|
-| Liens sources | 816 liens sur 743 URL uniques |
+| Liens sources | 825 liens sur 752 URL uniques |
 | Entrées sans source | **0** — pas de source, pas d'entrée |
-| Grade A (source primaire) | 344 |
+| Grade A (source primaire) | 347 |
 | Marquées comme contestées | 15 |
 | Cycles de vérification | 4 |
 <!-- END:quality -->
@@ -182,7 +183,7 @@ Ces quatre tours ont supprimé deux entrées fabriquées, corrigé le « domaine
 @misc{orca_ai_incident_archive,
   title  = {Orca AI Incident Archive: An open database of real-world AI agent incidents},
   year   = {2026},
-  note   = {400 entrées, de 2025-01 à 2026-10 ; 142 avec préjudice réel confirmé},
+  note   = {403 entrées, de 2025-01 à 2026-10 ; 144 avec préjudice réel confirmé},
   url    = {https://github.com/Continuum-AI-Corp/Orca-AI-Incident-Archive}
 }
 ```
@@ -208,4 +209,4 @@ Cette archive ne consigne que des **événements rendus publics**. Elle ne conti
 
 ---
 
-<sub><!-- BEGIN:footer -->Généré le 2026-10-17 · 400 entrées · 23 mois<!-- END:footer --></sub> · <sub>Structure : [SCHEMA.md](../../SCHEMA.md) · Données : [dist/](../../dist/README.md)</sub>
+<sub><!-- BEGIN:footer -->Généré le 2026-10-21 · 403 entrées · 23 mois<!-- END:footer --></sub> · <sub>Structure : [SCHEMA.md](../../SCHEMA.md) · Données : [dist/](../../dist/README.md)</sub>
