@@ -13,11 +13,11 @@
 </p>
 
 <!-- BEGIN:badges -->
-<p align="center"><img alt="records" src="https://img.shields.io/badge/records-403-48545A?style=flat-square"> <img alt="months" src="https://img.shields.io/badge/months-23-48545A?style=flat-square"> <img alt="critical" src="https://img.shields.io/badge/critical-49-88091D?style=flat-square"> <img alt="with real harm" src="https://img.shields.io/badge/with_real_harm-144-B23B40?style=flat-square"> <img alt="primary sources" src="https://img.shields.io/badge/primary_sources-752_URL-157A41?style=flat-square"> <img alt="license" src="https://img.shields.io/badge/license-CC_BY_4.0-2359A8?style=flat-square"></p>
+<p align="center"><img alt="records" src="https://img.shields.io/badge/records-405-48545A?style=flat-square"> <img alt="months" src="https://img.shields.io/badge/months-23-48545A?style=flat-square"> <img alt="critical" src="https://img.shields.io/badge/critical-49-88091D?style=flat-square"> <img alt="with real harm" src="https://img.shields.io/badge/with_real_harm-144-B23B40?style=flat-square"> <img alt="primary sources" src="https://img.shields.io/badge/primary_sources-758_URL-157A41?style=flat-square"> <img alt="license" src="https://img.shields.io/badge/license-CC_BY_4.0-2359A8?style=flat-square"></p>
 <!-- END:badges -->
 
 <!-- BEGIN:thesis -->
-Coverage runs from **2025-01** to **2026-10-21** — 403 records of AI agent security events arranged month by month, plus one precursor traceable to 2024-12-01. Each record is a single Markdown file with a YAML header, an attack-chain diagram and **at least one primary source you can click**. Of the 403, only **144 have a confirmed victim**.
+Coverage runs from **2025-01** to **2026-10-23** — 405 records of AI agent security events arranged month by month, plus one precursor traceable to 2024-12-01. Each record is a single Markdown file with a YAML header, an attack-chain diagram and **at least one primary source you can click**. Of the 405, only **144 have a confirmed victim**.
 <!-- END:thesis -->
 
 This archive exists for one distinction that most incident lists collapse:
@@ -75,11 +75,11 @@ Every record answers three questions before anything else — was there a confir
 |---|---|---|---|---|---|---|---|---|---|---|---|
 | `8` ★1 | `6` | `6` | `6` | `7` | `11` | `10` ★2 | `15` ★2 | `10` ★1 | `15` | `13` ★3 | `14` |
 
-**2026** (281 records)
+**2026** (283 records)
 
 | [01](incidents/2026-01/README.md) | [02](incidents/2026-02/README.md) | [03](incidents/2026-03/README.md) | [04](incidents/2026-04/README.md) | [05](incidents/2026-05/README.md) | [06](incidents/2026-06/README.md) | [07](incidents/2026-07/README.md) | [08](incidents/2026-08/README.md) | [09](incidents/2026-09/README.md) | [10](incidents/2026-10/README.md) |
 |---|---|---|---|---|---|---|---|---|---|
-| `13` ★1 | `19` ★5 | `16` ★3 | `22` ★2 | `26` ★5 | `31` ★3 | `28` ★7 | `27` ★4 | `80` ★8 | `19` ★2 |
+| `13` ★1 | `19` ★5 | `16` ★3 | `22` ★2 | `26` ★5 | `31` ★3 | `28` ★7 | `27` ★4 | `80` ★8 | `21` ★2 |
 
 <sub>`n` = records that month, ★ = of which `critical`</sub>
 <!-- END:months -->
@@ -165,9 +165,9 @@ Full criteria: [docs/scope.md](docs/scope.md).
 <!-- BEGIN:quality -->
 |  |  |
 |---|---|
-| Source links | 825 links across 752 unique URLs |
+| Source links | 831 links across 758 unique URLs |
 | Records with no source | **0** — no source, no entry |
-| Grade A (primary source) | 347 |
+| Grade A (primary source) | 349 |
 | Flagged as disputed | 15 |
 | Verification rounds | 4 |
 <!-- END:quality -->
@@ -183,7 +183,7 @@ Those four rounds deleted two fabricated entries, corrected PaperCut's "domain a
 @misc{orca_ai_incident_archive,
   title  = {Orca AI Incident Archive: An open database of real-world AI agent incidents},
   year   = {2026},
-  note   = {403 records, 2025-01 to 2026-10; 144 with confirmed real-world harm},
+  note   = {405 records, 2025-01 to 2026-10; 144 with confirmed real-world harm},
   url    = {https://github.com/Continuum-AI-Corp/Orca-AI-Incident-Archive}
 }
 ```
@@ -209,4 +209,4 @@ This archive records **only publicly disclosed events**. It contains no undisclo
 
 ---
 
-<sub><!-- BEGIN:footer -->Built 2026-10-21 · 403 records · 23 months<!-- END:footer --></sub> · <sub>Structure: [SCHEMA.md](SCHEMA.md) · Data: [dist/](dist/README.md)</sub>
+<sub><!-- BEGIN:footer -->Built 2026-10-23 · 405 records · 23 months<!-- END:footer --></sub> · <sub>Structure: [SCHEMA.md](SCHEMA.md) · Data: [dist/](dist/README.md)</sub>
