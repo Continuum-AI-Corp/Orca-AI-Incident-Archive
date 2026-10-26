@@ -108,6 +108,7 @@ https://cybersecuritynews.com/github-copilot-cli-vulnerability/
 https://cybersecuritynews.com/gitlab-fixes-claude-ai-agent-flaw/
 https://cybersecuritynews.com/hackers-exploit-copilot-studios-new-connected-agents-feature/
 https://cybersecuritynews.com/hackers-use-llm-agent-to-move-from-marimo-rce/
+https://cybersecuritynews.com/openai-ai-agents-bypass-security/
 https://cybersecuritynews.com/openclaw-chain-vulnerabilities/
 https://cybersecuritynews.com/openclaw-control-panels-exposed/
 https://cybersecuritynews.com/plugin4shell-zero-click-rce/
@@ -279,6 +280,7 @@ https://phoenix.security/trapdoor-supply-chain-ai-poisoning-npm-pypi-crates/
 https://ppc.land/comet-browser-faces-multiple-security-vulnerabilities-from-prompt-injection/
 https://qrator.net/blog/details/x47.c-botnet
 https://qz.com/ftc-investigation-openai-anthropic-ai-safety-093026
+https://qz.com/openai-ai-agents-weakened-safety-monitoring-coding-tasks-102126
 https://qz.com/openai-rogue-ai-agents-100-organizations-100226
 https://rafter.so/blog/incidents/ai-agent-security-timeline-2025-2026
 https://rebora.io/blog/spyder-and-maxss-chrome-extension-vulnerabilities-put-millions-at-risk
@@ -324,6 +326,7 @@ https://socket.dev/blog/tensorlake-compromise
 https://socket.dev/blog/unauthorized-ai-agent-execution-code-published-to-openvsx-in-aqua-trivy-vs-code-extension
 https://socradar.io/blog/mexican-government-breach-claude-chatgpt/
 https://socradar.io/blog/sharedroot-sandbox-escape-claude-cowork/
+https://startupfortune.com/openai-reveals-its-red-teaming-agents-found-a-hardware-level-covert-channel/
 https://startupfortune.com/opencode-breach-exposes-stored-openai-and-anthropic-keys-prompts-urgent-key-rotation/
 https://status.rubygems.org/incidents/cytf062tkwtt
 https://tech.yahoo.com/ai/chatgpt/articles/openai-model-helped-itself-testnet-191341818.html
@@ -511,6 +514,7 @@ https://www.coindesk.com/business/2026/01/31/solana-based-defi-platform-step-fin
 https://www.coindesk.com/tech/2026/09/30/openai-google-and-meta-pledge-outside-ai-audits-under-voluntary-white-house-deal
 https://www.coindesk.com/tech/2026/10/16/an-openai-agent-ran-out-of-ethereum-funds-and-took-from-a-wallet-it-did-not-own
 https://www.coloradopolitics.com/2026/10/01/rob-bonta-subpoenas-openai-over-hugging-face-hack/
+https://www.crowdfundinsider.com/2026/10/319896-openais-gpt-6-astra-agent-removed-a-safety-monitor-from-user-code-then-denied-doing-so/
 https://www.crowdstrike.com/en-us/blog/crowdstrike-2026-threat-hunting-report/
 https://www.crowdstrike.com/en-us/blog/unknown-threat-actor-uses-artex-to-target-south-korean-finance/
 https://www.csa.gov.sg/alerts-and-advisories/advisories/ad-2026-009/
@@ -582,6 +586,7 @@ https://www.kodemsecurity.com/resources/aws-kiro-agentic-ide-rce-prompt-injectio
 https://www.koi.ai/blog
 https://www.koi.ai/blog/clawhavoc-341-malicious-clawedbot-skills-found-by-the-bot-they-were-targeting
 https://www.koi.ai/blog/urban-vpn-browser-extension-ai-conversations-data-collection
+https://www.koreatimes.co.kr/world/20261022/openai-says-its-ai-agents-disabled-their-own-safety-monitors
 https://www.ksl.com/article/51634619/anthropic-ai-model-submits-false-homicide-tip-to-police-website
 https://www.latimes.com/world-nation/story/2026-09-19/lawsuit-says-anthropic-openai-spacexai-google-made-illegal-agreement-on-ai-slowdown
 https://www.legitsecurity.com/blog/camoleak-critical-github-copilot-vulnerability-leaks-private-source-code
@@ -705,6 +710,7 @@ https://www.threatdown.com/blog/carbonato/
 https://www.threatops.tech/threat-pulse/gtig-adversarial-ai-agent-enabled-operations-september-2026
 https://www.tomshardware.com/tech-industry/artificial-intelligence/claude-code-deletes-developers-production-setup-including-its-database-and-snapshots-2-5-years-of-records-were-nuked-in-an-instant
 https://www.tomshardware.com/tech-industry/artificial-intelligence/claude-powered-ai-coding-agent-deletes-entire-company-database-in-9-seconds-backups-zapped-after-cursor-tool-powered-by-anthropics-claude-goes-rogue
+https://www.tomshardware.com/tech-industry/artificial-intelligence/openais-isolated-red-team-ai-agents-built-a-hidden-cpu-cache-channel-to-talk-with-no-network-or-shared-files-exploited-cpu-cache-timing-to-bypass-microvm-sandboxes
 https://www.tomshardware.com/tech-industry/cyber-security/researchers-uncover-critical-ai-ide-flaws-exposing-developers-to-data-theft-and-rce
 https://www.trendmicro.com/en/research/26/f/claudeai-shared-chat-abused-in-malvertising.html
 https://www.trendmicro.com/en_us/research/26/d/vercel-breach-oauth-supply-chain.html
