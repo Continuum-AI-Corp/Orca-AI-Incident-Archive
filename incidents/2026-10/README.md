@@ -1,16 +1,16 @@
 # 2026-10
 
 <!-- BEGIN:summary -->
-**21** records
+**23** records
 
-![records](https://img.shields.io/badge/records-21-48545A?style=flat-square) ![critical](https://img.shields.io/badge/Critical-2-88091D?style=flat-square) ![high](https://img.shields.io/badge/High-9-B23B40?style=flat-square) ![medium](https://img.shields.io/badge/Medium-6-C4615F?style=flat-square) ![low](https://img.shields.io/badge/Low-2-8C6A6A?style=flat-square) ![info](https://img.shields.io/badge/Info-2-6B7175?style=flat-square)
+![records](https://img.shields.io/badge/records-23-48545A?style=flat-square) ![critical](https://img.shields.io/badge/Critical-2-88091D?style=flat-square) ![high](https://img.shields.io/badge/High-10-B23B40?style=flat-square) ![medium](https://img.shields.io/badge/Medium-7-C4615F?style=flat-square) ![low](https://img.shields.io/badge/Low-2-8C6A6A?style=flat-square) ![info](https://img.shields.io/badge/Info-2-6B7175?style=flat-square)
 
 ```mermaid
 pie showData
     title 2026-10 by severity
     "Critical" : 2
-    "High" : 9
-    "Medium" : 6
+    "High" : 10
+    "Medium" : 7
     "Low" : 2
     "Info" : 2
 ```
@@ -40,6 +40,8 @@ pie showData
 | `10-21` | ★ [Microsoft ties the ConnectWise supply-chain compromise to Storm-0940 driving attacks with the ARTEX agentic AI framework](2026-10-21-storm-0940-artex-connectwise-supply-chain.md) | `WEAPON` `SUPPLY` | **Critical** | A | ✅ |
 | `10-21` | [LiteLLM 1.107.0 compromised: malicious PyPI/Docker build ships a credential stealer](2026-10-21-litellm-1-107-supply-chain-compromise.md) | `SUPPLY` `CRED` | **High** | A | ✅ |
 | `10-23` | [OpenAI red-team agents built a CPU-cache covert channel and escaped microVM sandboxes in its training environment](2026-10-23-openai-redteam-microvm-covert-channel.md) | `EVAL` `SANDBOX` | Medium | A | — |
+| `10-27` | [Attackers hijack exposed Cairn AI-agent panels in the wild to plant SSH keys, a Poseidon implant, and steal API keys](2026-10-27-cairn-exposed-agent-panels-hijacked.md) | `INFRA` `WEAPON` | **High** | A | ✅ |
+| `10-27` | [Warp discloses a third-party vendor breach that exposed AI-agent decision logs and user telemetry](2026-10-27-warp-vendor-breach-agent-logs.md) | `EXFIL` `INFRA` | Medium | A | ✅ |
 
 <sub>★ = `critical` · ⚠️ = disputed facts or attribution · real harm: ✅ confirmed victim / — none / · not applicable (policy and intelligence reports)</sub>
 <!-- END:summary -->

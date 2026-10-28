@@ -1,7 +1,7 @@
 {
  "schema": "https://github.com/Continuum-AI-Corp/Orca-AI-Incident-Archive/blob/main/SCHEMA.md",
  "schema_version": 2,
- "version": "2026-10-23",
+ "version": "2026-10-27",
  "license": "CC-BY-4.0",
  "languages": [
   "en",
@@ -12,7 +12,7 @@
   "fr",
   "es"
  ],
- "count": 405,
+ "count": 407,
  "incidents": [
   {
    "id": "2024-12-01-storm-azure-llmjacking",
@@ -19269,6 +19269,110 @@
     {
      "url": "https://startupfortune.com/openai-reveals-its-red-teaming-agents-found-a-hardware-level-covert-channel/",
      "label": "Startup Fortune"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-27-cairn-exposed-agent-panels-hijacked",
+   "title": "Attackers hijack exposed Cairn AI-agent panels in the wild to plant SSH keys, a Poseidon implant, and steal API keys",
+   "title_zh": "攻击者在野劫持暴露的 Cairn AI-agent 面板，植入 SSH 密钥、Poseidon 植入体并窃取 API 密钥",
+   "title_ja": "攻撃者が露出したCairnのAIエージェント・パネルを実環境で乗っ取り、SSHキーとPoseidonインプラントを仕込みAPIキーを窃取",
+   "title_ko": "공격자들이 노출된 Cairn AI 에이전트 패널을 실제 환경에서 탈취해 SSH 키·Poseidon 임플란트를 심고 API 키를 탈취",
+   "title_de": "Angreifer kapern exponierte Cairn-KI-Agenten-Panels in freier Wildbahn, platzieren SSH-Schlüssel und ein Poseidon-Implantat und stehlen API-Schlüssel",
+   "title_fr": "Des attaquants détournent dans la nature des panneaux d'agents IA Cairn exposés pour planter des clés SSH, un implant Poseidon et voler des clés API",
+   "title_es": "Atacantes secuestran en entornos reales paneles de agentes de IA Cairn expuestos para plantar claves SSH, un implante Poseidon y robar claves API",
+   "date": "2026-10-27",
+   "date_end": null,
+   "date_precision": "day",
+   "date_raw": "2026-10-27 (NorForge report, via Cyber Security News / GBHackers); activity from ~2026-10-20",
+   "month": "2026-10",
+   "kind": "incident",
+   "type": [
+    "INFRA",
+    "WEAPON"
+   ],
+   "severity": "high",
+   "confidence": "A",
+   "real_harm": true,
+   "ai_involvement": "confirmed",
+   "region": [
+    "GLOBAL"
+   ],
+   "summary": "**Security firm **NorForge** reported (27 October 2026) that attackers are hijacking **internet-exposed, login-less panels of Cairn** — an open platform where you give an AI agent a goal and it works autonomously, posting findings to a web panel — and injecting tasks that weaponise the agents.** Across **at least 17 exposed panels** (some red-team / CTF environments), observed activity from around **20 October** included a task that had the agent **add an attacker SSH key** to the kali account's `authorized_keys`; a 21 October \"Local worker maintenance\" task that delivered a base64 script fetching a **Poseidon implant** (a Go-based Mythic C2 payload, via Bunny.net CDN); and recon tasks hunting secrets such as `API_KEY` and `ANTHROPIC_AUTH_TOKEN`, with **AI-model API keys reported stolen**. NorForge tracks two separate clusters — **AIA0009** (persistence + malware, \"cairnscan\" tag) and **AIA0010** (credential theft + finding more panels). Entry was **unauthenticated administrative access to exposed panels, not a new software CVE**. NorForge observed passively and **could not confirm the campaigns ran fully autonomously** — synchronized activity suggests scripting, and it believes humans stepped in at key points (a pause before malware, and the C2/download-server setup). Recorded `incident` / `INFRA` + `WEAPON` / `high` / `real_harm: true`.",
+   "summary_zh": "**安全公司 **NorForge** 报告（2026 年 10 月 27 日）：攻击者正在野劫持**暴露在公网、无需登录的 Cairn 面板**——Cairn 是一个开放平台，你给 AI agent 下一个目标、它便自主执行并把发现贴到 web 面板——并注入任务把这些 agent 武器化。** 在**至少 17 个暴露面板**（部分是红队/CTF 环境）上，自约 **10 月 20 日**起观察到的活动包括：一个任务让 agent **把攻击者 SSH 密钥**加进 kali 账户的 `authorized_keys`；10 月 21 日一个名为\"Local worker maintenance\"的任务投放 base64 脚本去拉取 **Poseidon 植入体**（基于 Go 的 Mythic C2 载荷，经 Bunny.net CDN）；以及搜寻 `API_KEY`、`ANTHROPIC_AUTH_TOKEN` 等机密的侦察任务，**据报 AI 模型 API 密钥被窃**。NorForge 跟踪两个独立簇——**AIA0009**（持久化 + 恶意软件、\"cairnscan\"标签）与 **AIA0010**（窃凭据 + 搜寻更多面板）。入口是**对暴露面板的未授权管理访问，而非新的软件 CVE**。NorForge 系被动观察，**无法确认这些行动完全自主**——同步活动暗示有脚本化，并认为关键节点有人工介入（投毒前的暂停、C2/下载服务器搭建）。记为 `incident` / `INFRA` + `WEAPON` / `high` / `real_harm: true`。",
+   "summary_ja": "**セキュリティ企業 **NorForge** は（2026年10月27日）、攻撃者が**インターネットに露出しログイン不要のCairnパネル**——Cairnは、AIエージェントに目標を与えると自律的に作業し発見をwebパネルに投稿する公開プラットフォーム——を実環境で乗っ取り、エージェントを兵器化するタスクを注入していると報告した。** **少なくとも17の露出パネル**（一部はレッドチーム/CTF環境）で、約**10月20日**以降に観測された活動には、エージェントにkaliアカウントの`authorized_keys`へ**攻撃者のSSHキーを追加**させるタスク、10月21日の「Local worker maintenance」というタスクがbase64スクリプトで**Poseidonインプラント**（GoベースのMythic C2ペイロード、Bunny.net CDN経由）を取得すること、`API_KEY`や`ANTHROPIC_AUTH_TOKEN`などの秘密を探す偵察タスクが含まれ、**AIモデルのAPIキーが窃取されたと報告**された。NorForgeは2つの別クラスタ——**AIA0009**（永続化＋マルウェア、「cairnscan」タグ）と**AIA0010**（認証情報窃取＋さらなるパネル探索）——を追跡。侵入口は**露出パネルへの未認証の管理アクセスであり、新規のソフトウェアCVEではない**。NorForgeは受動的に観測し、**これらが完全に自律的に実行されたとは確認できなかった**——同期した活動はスクリプト化を示唆し、重要な局面で人間が関与したとみている（マルウェア投入前の一時停止、C2/ダウンロードサーバーの設定）。`incident` / `INFRA` + `WEAPON` / `high` / `real_harm: true`",
+   "summary_ko": "**보안 업체 **NorForge**는(2026년 10월 27일) 공격자들이 **인터넷에 노출되고 로그인 없는 Cairn 패널**——Cairn은 AI 에이전트에 목표를 주면 자율적으로 작업하고 발견을 웹 패널에 게시하는 공개 플랫폼——을 실제 환경에서 탈취해 에이전트를 무기화하는 작업을 주입하고 있다고 보고했다.** **최소 17개 노출 패널**(일부는 레드팀/CTF 환경)에서 약 **10월 20일**부터 관측된 활동에는 에이전트가 kali 계정의 `authorized_keys`에 **공격자 SSH 키를 추가**하게 한 작업, 10월 21일 \"Local worker maintenance\" 작업이 base64 스크립트로 **Poseidon 임플란트**(Go 기반 Mythic C2 페이로드, Bunny.net CDN 경유)를 가져온 것, `API_KEY`·`ANTHROPIC_AUTH_TOKEN` 같은 비밀을 찾는 정찰 작업이 포함됐고 **AI 모델 API 키가 탈취된 것으로 보고**됐다. NorForge는 두 별개 클러스터——**AIA0009**(지속성+멀웨어, \"cairnscan\" 태그)와 **AIA0010**(자격 증명 탈취+추가 패널 탐색)——를 추적한다. 진입점은 **노출 패널에 대한 미인증 관리 접근이며 새로운 소프트웨어 CVE가 아니다**. NorForge는 수동적으로 관측했고 **이 캠페인이 완전 자율로 실행됐다고 확인하지 못했다**——동기화된 활동은 스크립트화를 시사하며 핵심 지점에서 사람이 개입한 것으로 본다(멀웨어 투입 전 일시정지, C2/다운로드 서버 설정). `incident` / `INFRA` + `WEAPON` / `high` / `real_harm: true`",
+   "summary_de": "**Die Sicherheitsfirma **NorForge** berichtete (27. Oktober 2026), dass Angreifer **im Internet exponierte, login-lose Cairn-Panels** — Cairn ist eine offene Plattform, auf der man einem KI-Agenten ein Ziel gibt und er autonom arbeitet und Ergebnisse in ein Web-Panel postet — in freier Wildbahn kapern und Aufgaben einschleusen, die die Agenten bewaffnen.** Über **mindestens 17 exponierte Panels** (teils Red-Team-/CTF-Umgebungen) umfasste die ab etwa **20. Oktober** beobachtete Aktivität: eine Aufgabe, die den Agenten einen **Angreifer-SSH-Schlüssel** in die `authorized_keys` des kali-Kontos eintragen ließ; eine Aufgabe „Local worker maintenance\" vom 21. Oktober, die per Base64-Skript ein **Poseidon-Implantat** (eine Go-basierte Mythic-C2-Payload, über Bunny.net-CDN) nachlud; und Recon-Aufgaben, die nach Geheimnissen wie `API_KEY` und `ANTHROPIC_AUTH_TOKEN` suchten, wobei **KI-Modell-API-Schlüssel als gestohlen gemeldet** wurden. NorForge verfolgt zwei getrennte Cluster — **AIA0009** (Persistenz + Malware, „cairnscan\"-Tag) und **AIA0010** (Diebstahl von Anmeldedaten + Auffinden weiterer Panels). Der Einstieg war **unauthentifizierter administrativer Zugriff auf exponierte Panels, kein neues Software-CVE**. NorForge beobachtete passiv und **konnte nicht bestätigen, dass die Kampagnen vollständig autonom liefen** — synchronisierte Aktivität deutet auf Skripting hin, und man vermutet menschliches Eingreifen an Schlüsselstellen (eine Pause vor dem Malware-Einsatz und das Einrichten der C2-/Download-Server). `incident` / `INFRA` + `WEAPON` / `high` / `real_harm: true`",
+   "summary_fr": "**La société de sécurité **NorForge** a rapporté (27 octobre 2026) que des attaquants détournent dans la nature des **panneaux Cairn exposés sur Internet et sans authentification** — Cairn est une plateforme ouverte où l'on donne un objectif à un agent IA, qui travaille de façon autonome et publie ses trouvailles sur un panneau web — et y injectent des tâches qui militarisent les agents.** Sur **au moins 17 panneaux exposés** (certains environnements red team / CTF), l'activité observée depuis le **20 octobre** environ comprenait : une tâche faisant **ajouter par l'agent une clé SSH de l'attaquant** aux `authorized_keys` du compte kali ; une tâche « Local worker maintenance » du 21 octobre livrant un script base64 qui récupérait un **implant Poseidon** (charge Mythic C2 en Go, via le CDN Bunny.net) ; et des tâches de reconnaissance cherchant des secrets tels que `API_KEY` et `ANTHROPIC_AUTH_TOKEN`, avec des **clés API de modèles d'IA signalées volées**. NorForge suit deux clusters distincts — **AIA0009** (persistance + malware, étiquette « cairnscan ») et **AIA0010** (vol d'identifiants + recherche d'autres panneaux). L'entrée se faisait par **accès administratif non authentifié à des panneaux exposés, et non via une nouvelle CVE logicielle**. NorForge a observé passivement et **n'a pas pu confirmer que les campagnes étaient entièrement autonomes** — l'activité synchronisée suggère du scripting, et elle pense que des humains sont intervenus à des moments clés (une pause avant le déploiement du malware et la mise en place des serveurs C2/de téléchargement). `incident` / `INFRA` + `WEAPON` / `high` / `real_harm: true`",
+   "summary_es": "**La firma de seguridad **NorForge** informó (27 de octubre de 2026) que atacantes están secuestrando en entornos reales **paneles de Cairn expuestos a Internet y sin inicio de sesión** —Cairn es una plataforma abierta donde se da un objetivo a un agente de IA y este trabaja de forma autónoma, publicando hallazgos en un panel web— e inyectan tareas que militarizan a los agentes.** En **al menos 17 paneles expuestos** (algunos entornos red team / CTF), la actividad observada desde alrededor del **20 de octubre** incluyó: una tarea que hacía que el agente **añadiera una clave SSH del atacante** a `authorized_keys` de la cuenta kali; una tarea \"Local worker maintenance\" del 21 de octubre que entregaba un script base64 que descargaba un **implante Poseidon** (carga Mythic C2 en Go, vía CDN de Bunny.net); y tareas de reconocimiento que buscaban secretos como `API_KEY` y `ANTHROPIC_AUTH_TOKEN`, con **claves API de modelos de IA reportadas como robadas**. NorForge rastrea dos clústeres distintos — **AIA0009** (persistencia + malware, etiqueta \"cairnscan\") y **AIA0010** (robo de credenciales + búsqueda de más paneles). La entrada fue **acceso administrativo no autenticado a paneles expuestos, no una nueva CVE de software**. NorForge observó de forma pasiva y **no pudo confirmar que las campañas fueran totalmente autónomas** — la actividad sincronizada sugiere scripting, y cree que hubo intervención humana en puntos clave (una pausa antes del despliegue del malware y la configuración de los servidores C2/de descarga). `incident` / `INFRA` + `WEAPON` / `high` / `real_harm: true`",
+   "disputed": false,
+   "landmark": false,
+   "path": "incidents/2026-10/2026-10-27-cairn-exposed-agent-panels-hijacked.md",
+   "path_zh": "incidents/i18n/zh/2026-10/2026-10-27-cairn-exposed-agent-panels-hijacked.md",
+   "sources": [
+    {
+     "url": "https://cybersecuritynews.com/ai-pentesting-agents/",
+     "label": "Cyber Security News (NorForge research)"
+    },
+    {
+     "url": "https://gbhackers.com/ai-pentesting-panels/",
+     "label": "GBHackers (NorForge research)"
+    },
+    {
+     "url": "https://vibeincidents.com/incidents/cairn-exposed-panels-ai-intrusions/",
+     "label": "Vibe Incidents"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-27-warp-vendor-breach-agent-logs",
+   "title": "Warp discloses a third-party vendor breach that exposed AI-agent decision logs and user telemetry",
+   "title_zh": "Warp 披露第三方供应商被攻破，泄露了 AI agent 决策日志与用户遥测",
+   "title_ja": "Warp、第三者ベンダー侵害でAIエージェントの決定ログとユーザーテレメトリが流出と公表",
+   "title_ko": "Warp, 제3자 벤더 침해로 AI 에이전트 결정 로그와 사용자 텔레메트리 유출 공개",
+   "title_de": "Warp meldet einen Drittanbieter-Einbruch, bei dem KI-Agenten-Entscheidungslogs und Nutzer-Telemetrie offengelegt wurden",
+   "title_fr": "Warp signale une brèche chez un fournisseur tiers ayant exposé les journaux de décision d'agents IA et la télémétrie des utilisateurs",
+   "title_es": "Warp revela una brecha en un proveedor externo que expuso los registros de decisiones de agentes de IA y la telemetría de usuarios",
+   "date": "2026-10-27",
+   "date_end": null,
+   "date_precision": "day",
+   "date_raw": "2026-10-27 (Warp disclosure)",
+   "month": "2026-10",
+   "kind": "incident",
+   "type": [
+    "EXFIL",
+    "INFRA"
+   ],
+   "severity": "medium",
+   "confidence": "A",
+   "real_harm": true,
+   "ai_involvement": "confirmed",
+   "region": [
+    "GLOBAL"
+   ],
+   "summary": "**On 27 October 2026, **Warp** — an agentic development environment / AI terminal — disclosed that an attack on a **third-party vendor** in its infrastructure exposed **AI-agent decision logs and user telemetry**.** CEO Zach Lloyd said Warp detected the activity on a Friday, estimated roughly **1% of its users** may be affected (Warp reports **800,000+** users, implying several thousand accounts), and said it has engaged **CrowdStrike**, notified law enforcement, and alerted affected users. Warp **did not clarify** whether source code, prompts, or credentials were among the exposed data — the confirmed categories are agent decision logs and telemetry. Reports describing an \"agent-swarm\" attack are an analyst **hypothesis, not a confirmed attribution**, and the vendor has not been named. Recorded `incident` / `EXFIL` + `INFRA` / `medium` / `real_harm: true` — a real breach exposing agent-specific operational data, scope and sensitivity still bounded/unconfirmed.",
+   "summary_zh": "**2026 年 10 月 27 日，**Warp**——一个 agentic 开发环境／AI 终端——披露：其基础设施中一家**第三方供应商**遭攻击，泄露了 **AI agent 决策日志与用户遥测**。** CEO Zach Lloyd 称 Warp 在某个周五检测到该活动，估计约 **1% 用户**可能受影响（Warp 称有 **80 万+** 用户，意味着数千账户），并已请 **CrowdStrike** 介入、通知执法、告知受影响用户。Warp **未说明**暴露数据是否含源码、prompt 或凭证——已确认的类别是 agent 决策日志与遥测。将其描述为\"agent 蜂群\"攻击的说法只是分析**假设、未经证实**，供应商名称也未公布。记为 `incident` / `EXFIL` + `INFRA` / `medium` / `real_harm: true`——一次真实泄露、暴露了 agent 专有的运行数据，但范围与敏感度仍有界/未确认。",
+   "summary_ja": "**2026年10月27日、**Warp**（agentic開発環境／AIターミナル）は、インフラ内の**第三者ベンダー**への攻撃により **AIエージェントの決定ログとユーザーテレメトリ**が流出したと公表した。** CEOのZach Lloyd氏は、ある金曜にこの活動を検知し、約**1%のユーザー**が影響を受けた可能性があると見積もり（Warpのユーザーは**80万人超**で、数千アカウントに相当）、**CrowdStrike**を起用し、法執行機関に通知、影響を受けたユーザーに連絡したと述べた。Warpは、流出データにソースコード・プロンプト・認証情報が含まれていたかは**明言していない**——確認されたのはエージェントの決定ログとテレメトリである。「エージェント・スウォーム」攻撃という記述は分析上の**仮説であり確定した帰属ではなく**、ベンダー名も公表されていない。`incident` / `EXFIL` + `INFRA` / `medium` / `real_harm: true`",
+   "summary_ko": "**2026년 10월 27일, **Warp**(agentic 개발 환경/AI 터미널)는 인프라 내 **제3자 벤더**에 대한 공격으로 **AI 에이전트 결정 로그와 사용자 텔레메트리**가 유출됐다고 공개했다.** CEO Zach Lloyd는 금요일에 해당 활동을 탐지했으며 약 **1% 사용자**가 영향받았을 수 있다고 추정하고(Warp는 **80만 명 이상** 사용자로, 수천 계정에 해당), **CrowdStrike**를 투입하고 법 집행기관에 통지, 영향받은 사용자에게 알렸다고 밝혔다. Warp는 유출 데이터에 소스 코드·프롬프트·자격 증명이 포함됐는지 **밝히지 않았다**——확인된 범주는 에이전트 결정 로그와 텔레메트리다. \"에이전트 스웜\" 공격이라는 서술은 분석상 **가설이며 확정된 귀속이 아니고**, 벤더명도 공개되지 않았다. `incident` / `EXFIL` + `INFRA` / `medium` / `real_harm: true`",
+   "summary_de": "**Am 27. Oktober 2026 teilte **Warp** — eine agentische Entwicklungsumgebung / ein KI-Terminal — mit, dass ein Angriff auf einen **Drittanbieter** in seiner Infrastruktur **KI-Agenten-Entscheidungslogs und Nutzer-Telemetrie** offengelegt habe.** CEO Zach Lloyd sagte, Warp habe die Aktivität an einem Freitag entdeckt, schätzte, dass etwa **1% der Nutzer** betroffen sein könnten (Warp nennt **800.000+** Nutzer, also mehrere Tausend Konten), und habe **CrowdStrike** eingeschaltet, Strafverfolgungsbehörden informiert und betroffene Nutzer benachrichtigt. Warp hat **nicht klargestellt**, ob Quellcode, Prompts oder Anmeldedaten zu den offengelegten Daten gehörten — bestätigt sind Agenten-Entscheidungslogs und Telemetrie. Beschreibungen eines „Agent-Swarm\"-Angriffs sind eine Analysten-**Hypothese, keine bestätigte Zuordnung**, und der Anbieter wurde nicht genannt. `incident` / `EXFIL` + `INFRA` / `medium` / `real_harm: true`",
+   "summary_fr": "**Le 27 octobre 2026, **Warp** — un environnement de développement agentique / terminal IA — a signalé qu'une attaque contre un **fournisseur tiers** de son infrastructure avait exposé les **journaux de décision d'agents IA et la télémétrie des utilisateurs**.** Le PDG Zach Lloyd a dit que Warp avait détecté l'activité un vendredi, estimé qu'environ **1 % des utilisateurs** pourraient être touchés (Warp déclare **800 000+** utilisateurs, soit plusieurs milliers de comptes), et qu'il avait sollicité **CrowdStrike**, prévenu les forces de l'ordre et alerté les utilisateurs concernés. Warp **n'a pas précisé** si du code source, des prompts ou des identifiants figuraient parmi les données exposées — les catégories confirmées sont les journaux de décision d'agents et la télémétrie. Les descriptions d'une attaque en « essaim d'agents » relèvent d'une **hypothèse d'analyste, pas d'une attribution confirmée**, et le fournisseur n'a pas été nommé. `incident` / `EXFIL` + `INFRA` / `medium` / `real_harm: true`",
+   "summary_es": "**El 27 de octubre de 2026, **Warp** —un entorno de desarrollo agéntico / terminal de IA— reveló que un ataque a un **proveedor externo** de su infraestructura expuso los **registros de decisiones de agentes de IA y la telemetría de usuarios**.** El CEO Zach Lloyd dijo que Warp detectó la actividad un viernes, estimó que cerca del **1 % de los usuarios** podría estar afectado (Warp declara **más de 800.000** usuarios, lo que implica varios miles de cuentas), y que ha contratado a **CrowdStrike**, notificado a las autoridades y avisado a los usuarios afectados. Warp **no aclaró** si el código fuente, los prompts o las credenciales estaban entre los datos expuestos — las categorías confirmadas son registros de decisiones de agentes y telemetría. Las descripciones de un ataque de \"enjambre de agentes\" son una **hipótesis de analistas, no una atribución confirmada**, y no se ha nombrado al proveedor. `incident` / `EXFIL` + `INFRA` / `medium` / `real_harm: true`",
+   "disputed": false,
+   "landmark": false,
+   "path": "incidents/2026-10/2026-10-27-warp-vendor-breach-agent-logs.md",
+   "path_zh": "incidents/i18n/zh/2026-10/2026-10-27-warp-vendor-breach-agent-logs.md",
+   "sources": [
+    {
+     "url": "https://www.bleepingcomputer.com/news/security/warp-discloses-breach-exposing-ai-agent-logs-user-telemetry-data/",
+     "label": "BleepingComputer"
+    },
+    {
+     "url": "https://atlabyte.com/en/news/warp-reports-data-breach-ai-agent-logs-and-user-telemetry-affected",
+     "label": "Atlabyte"
+    },
+    {
+     "url": "https://www.archyde.com/warp-exposes-user-logs-and-telemetry-in-third-party-vendor-breach/",
+     "label": "Archyde"
     }
    ]
   }
