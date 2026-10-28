@@ -26,7 +26,7 @@ The role Langflow / LiteLLM / Flowise / OpenClaw play in 2026 is the one Fortine
 ---
 
 <!-- BEGIN:incidents -->
-## All records (111)
+## All records (113)
 
 | Date | Record | Type | Severity | Confidence | Real harm |
 |---|---|---|---|---|---|
@@ -141,6 +141,8 @@ The role Langflow / LiteLLM / Flowise / OpenClaw play in 2026 is the one Fortine
 | `2026-10-17` | [OpenCode Console breach exposes users' stored AI-provider API keys](../incidents/2026-10/2026-10-17-opencode-console-breach-api-keys.md) | `CRED` `INFRA` | **High** | A | ✅ |
 | `2026-10-19` | [OpenCode: a malicious MCP server runs code on the developer's machine during OAuth sign-in](../incidents/2026-10/2026-10-19-opencode-mcp-oauth-rce.md) | `INFRA` | **High** | A | — |
 | `2026-10-21` | [LiteLLM 1.107.0 compromised: malicious PyPI/Docker build ships a credential stealer](../incidents/2026-10/2026-10-21-litellm-1-107-supply-chain-compromise.md) | `SUPPLY` `CRED` | **High** | A | ✅ |
+| `2026-10-27` | [Attackers hijack exposed Cairn AI-agent panels in the wild to plant SSH keys, a Poseidon implant, and steal API keys](../incidents/2026-10/2026-10-27-cairn-exposed-agent-panels-hijacked.md) | `INFRA` `WEAPON` | **High** | A | ✅ |
+| `2026-10-27` | [Warp discloses a third-party vendor breach that exposed AI-agent decision logs and user telemetry](../incidents/2026-10/2026-10-27-warp-vendor-breach-agent-logs.md) | `EXFIL` `INFRA` | Medium | A | ✅ |
 <!-- END:incidents -->
 
 ---

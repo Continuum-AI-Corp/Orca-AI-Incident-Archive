@@ -36,6 +36,7 @@ https://arxiv.org/abs/2601.04603v1
 https://arxiv.org/abs/2602.15001v2
 https://arxiv.org/abs/2608.00150
 https://asset-group.github.io/disclosures/ghostsplice/
+https://atlabyte.com/en/news/warp-reports-data-breach-ai-agent-logs-and-user-telemetry-affected
 https://attack.mitre.org/campaigns/C0062/
 https://au.news.yahoo.com/curtailing-ai-illusion-eu-despite-094308427.html
 https://australiancybersecuritymagazine.com.au/openai-agent-breached-australian-medicare-statistics-portal-prime-minister-says/
@@ -100,6 +101,7 @@ https://cyberscoop.com/microsoft-attributes-connectwise-supply-chain-attack-chin
 https://cyberscoop.com/near-autonomous-ai-attack-government-target-taiwan/
 https://cyberscoop.com/poellm-malware-botnet-poem-lumen-black-lotus-labs/
 https://cyberscoop.com/servicenow-fixes-critical-ai-vulnerability-cve-2025-12420/
+https://cybersecuritynews.com/ai-pentesting-agents/
 https://cybersecuritynews.com/anthropics-claude-oceanus-v1-p/
 https://cybersecuritynews.com/bragjack-ai-agent-hijacking/
 https://cybersecuritynews.com/clawdbot-chats-exposed/
@@ -143,6 +145,7 @@ https://fortune.com/2026/03/26/anthropic-says-testing-mythos-powerful-new-ai-mod
 https://freefable.org/
 https://futurism.com/artificial-intelligence/metas-muse-ai-giving-users-home-addresses
 https://gambit.security/blog-posts/autonomous-ai-agents-online-retailers-25-a-company
+https://gbhackers.com/ai-pentesting-panels/
 https://gbhackers.com/aws-fixes-ai-agent-flaws/
 https://gbhackers.com/hackers-use-morse-code-to-trick-grok-and-bankrbot/
 https://genai.owasp.org/2025/03/06/owasp-gen-ai-incident-exploit-round-up-jan-feb-2025/
@@ -420,6 +423,7 @@ https://venturebeat.com/infrastructure/anthropic-launches-claude-for-chrome-in-l
 https://venturebeat.com/security/claude-mexico-breach-four-blind-domains-security-stack
 https://venturebeat.com/security/microsoft-salesforce-copilot-agentforce-prompt-injection-cve-agent-remediation-playbook
 https://vercel.com/kb/bulletin/vercel-april-2026-security-incident
+https://vibeincidents.com/incidents/cairn-exposed-panels-ai-intrusions/
 https://wikimediafoundation.org/news/2026/10/05/openai-rogue-agent-activities-found-on-wikimedia-projects/
 https://www-cdn.anthropic.com/4263b940cabb546aa0e3283f35b686f4f3b2ff47.pdf
 https://www-cdn.anthropic.com/b2a76c6f6992465c09a6f2fce282f6c0cea8c200.pdf
@@ -458,6 +462,7 @@ https://www.anthropic.com/research/measuring-agent-autonomy
 https://www.anthropic.com/research/next-generation-constitutional-classifiers
 https://www.anthropic.com/threat-intelligence
 https://www.anthropic.com/threat-intelligence-report-september-2026
+https://www.archyde.com/warp-exposes-user-logs-and-telemetry-in-third-party-vendor-breach/
 https://www.armosec.io/blog/cve-2026-32922-openclaw-privilege-escalation-cloud-security/
 https://www.axios.com/2026/08/06/openai-hugging-face-black-hat
 https://www.axios.com/2026/09/10/openai-hugging-face-senate-investigation-hawley
@@ -488,6 +493,7 @@ https://www.bleepingcomputer.com/news/security/new-rathat-android-malware-uses-a
 https://www.bleepingcomputer.com/news/security/researchers-escape-openai-codex-sandbox-to-run-commands-on-host/
 https://www.bleepingcomputer.com/news/security/spain-reports-first-alleged-ai-powered-data-theft-attack/
 https://www.bleepingcomputer.com/news/security/transunion-suffers-data-breach-impacting-over-44-million-people/
+https://www.bleepingcomputer.com/news/security/warp-discloses-breach-exposing-ai-agent-logs-user-telemetry-data/
 https://www.bloomberg.com/jp/news/articles/2026-04-10/TD95ABT9NJMP00
 https://www.bloomberg.com/news/articles/2026-02-25/hacker-used-anthropic-s-claude-to-steal-sensitive-mexican-data
 https://www.bloomberg.com/news/articles/2026-04-21/anthropic-s-mythos-model-is-being-accessed-by-unauthorized-users

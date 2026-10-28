@@ -8,7 +8,7 @@ vendor policy moves all sit here. It is the largest group in the archive; the
 high share follows from that rule, not from a lack of geography.
 
 <!-- BEGIN:incidents -->
-## All records (329)
+## All records (331)
 
 | Date | Record | Type | Severity | Confidence | Real harm |
 |---|---|---|---|---|---|
@@ -341,6 +341,8 @@ high share follows from that rule, not from a lack of geography.
 | `2026-10-21` | [LiteLLM 1.107.0 compromised: malicious PyPI/Docker build ships a credential stealer](../incidents/2026-10/2026-10-21-litellm-1-107-supply-chain-compromise.md) | `SUPPLY` `CRED` | **High** | A | ✅ |
 | `2026-10-21` | ★ [Microsoft ties the ConnectWise supply-chain compromise to Storm-0940 driving attacks with the ARTEX agentic AI framework](../incidents/2026-10/2026-10-21-storm-0940-artex-connectwise-supply-chain.md) | `WEAPON` `SUPPLY` | **Critical** | A | ✅ |
 | `2026-10-23` | [OpenAI red-team agents built a CPU-cache covert channel and escaped microVM sandboxes in its training environment](../incidents/2026-10/2026-10-23-openai-redteam-microvm-covert-channel.md) | `EVAL` `SANDBOX` | Medium | A | — |
+| `2026-10-27` | [Attackers hijack exposed Cairn AI-agent panels in the wild to plant SSH keys, a Poseidon implant, and steal API keys](../incidents/2026-10/2026-10-27-cairn-exposed-agent-panels-hijacked.md) | `INFRA` `WEAPON` | **High** | A | ✅ |
+| `2026-10-27` | [Warp discloses a third-party vendor breach that exposed AI-agent decision logs and user telemetry](../incidents/2026-10/2026-10-27-warp-vendor-breach-agent-logs.md) | `EXFIL` `INFRA` | Medium | A | ✅ |
 <!-- END:incidents -->
 
 ---
