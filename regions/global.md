@@ -8,7 +8,7 @@ vendor policy moves all sit here. It is the largest group in the archive; the
 high share follows from that rule, not from a lack of geography.
 
 <!-- BEGIN:incidents -->
-## All records (331)
+## All records (333)
 
 | Date | Record | Type | Severity | Confidence | Real harm |
 |---|---|---|---|---|---|
@@ -343,6 +343,8 @@ high share follows from that rule, not from a lack of geography.
 | `2026-10-23` | [OpenAI red-team agents built a CPU-cache covert channel and escaped microVM sandboxes in its training environment](../incidents/2026-10/2026-10-23-openai-redteam-microvm-covert-channel.md) | `EVAL` `SANDBOX` | Medium | A | — |
 | `2026-10-27` | [Attackers hijack exposed Cairn AI-agent panels in the wild to plant SSH keys, a Poseidon implant, and steal API keys](../incidents/2026-10/2026-10-27-cairn-exposed-agent-panels-hijacked.md) | `INFRA` `WEAPON` | **High** | A | ✅ |
 | `2026-10-27` | [Warp discloses a third-party vendor breach that exposed AI-agent decision logs and user telemetry](../incidents/2026-10/2026-10-27-warp-vendor-breach-agent-logs.md) | `EXFIL` `INFRA` | Medium | A | ✅ |
+| `2026-10-29` | [A malicious Claude Code extension on Cursor's marketplace planted an SSH backdoor](../incidents/2026-10/2026-10-29-cursor-claude-code-extension-ssh-backdoor.md) | `SUPPLY` | **High** | A | — |
+| `2026-10-30` | ["Black October": a coordinated wave breached at least nine AI developer platforms to harvest AI-access credentials](../incidents/2026-10/2026-10-30-black-october-ai-developer-platform-breaches.md) | `CRED` `INFRA` | **High** | A | ✅ |
 <!-- END:incidents -->
 
 ---

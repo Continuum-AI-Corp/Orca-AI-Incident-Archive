@@ -1,7 +1,7 @@
 {
  "schema": "https://github.com/Continuum-AI-Corp/Orca-AI-Incident-Archive/blob/main/SCHEMA.md",
  "schema_version": 2,
- "version": "2026-10-27",
+ "version": "2026-10-30",
  "license": "CC-BY-4.0",
  "languages": [
   "en",
@@ -12,7 +12,7 @@
   "fr",
   "es"
  ],
- "count": 407,
+ "count": 409,
  "incidents": [
   {
    "id": "2024-12-01-storm-azure-llmjacking",
@@ -19373,6 +19373,117 @@
     {
      "url": "https://www.archyde.com/warp-exposes-user-logs-and-telemetry-in-third-party-vendor-breach/",
      "label": "Archyde"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-29-cursor-claude-code-extension-ssh-backdoor",
+   "title": "A malicious Claude Code extension on Cursor's marketplace planted an SSH backdoor",
+   "title_zh": "Cursor 市场上架的恶意 Claude Code 扩展植入 SSH 后门",
+   "title_ja": "Cursorのマーケットプレイスに出回った悪意あるClaude Code拡張がSSHバックドアを設置",
+   "title_ko": "Cursor 마켓플레이스에 올라온 악성 Claude Code 확장이 SSH 백도어를 심어",
+   "title_de": "Eine bösartige Claude-Code-Erweiterung in Cursors Marketplace setzte eine SSH-Backdoor",
+   "title_fr": "Une extension Claude Code malveillante sur la marketplace de Cursor a installé une porte dérobée SSH",
+   "title_es": "Una extensión maliciosa de Claude Code en la marketplace de Cursor plantó una puerta trasera SSH",
+   "date": "2026-10-29",
+   "date_end": null,
+   "date_precision": "day",
+   "date_raw": "2026-10-29 (malicious versions live on Cursor marketplace; disclosed 2026-10-29→30)",
+   "month": "2026-10",
+   "kind": "incident",
+   "type": [
+    "SUPPLY"
+   ],
+   "severity": "high",
+   "confidence": "A",
+   "real_harm": false,
+   "ai_involvement": "confirmed",
+   "region": [
+    "GLOBAL"
+   ],
+   "summary": "**On 29 October 2026, maliciously modified versions (2.1.312 and 2.1.313) of Anthropic's official Claude Code VS Code extension were served from the **Cursor** VS Code Extension Marketplace for roughly 11 hours (≈2:27am–1:35pm PT), exposing up to ~5,000 developers.** A JavaScript loader prepended to `extension.js` **ran automatically when the extension loaded** (no interaction needed): it collected host/user recon (hostname, OS, Git email, public IP, and environment-variable **names** matching `KEY|TOKEN|SECRET|PASS|AWS|GCP`), appended an attacker SSH key (`svc-telemetry`) to `authorized_keys`, tried to open a persistent reverse SSH tunnel to `134.209.82[.]225`, and installed persistence (macOS LaunchAgent / Windows scheduled task). Crucially, **the SSH backdoor largely failed** due to coding errors (a macOS privilege check that misreads its own failure; a Windows path that invokes `/bin/sh`), so remote access \"would fail\" on most systems; the beacon sent only env-var **names, not secret values**. Cursor says the versions **were not developed by Anthropic**; Anthropic says its own systems were not compromised; the marketplace-publishing vector remains unexplained. No confirmed victims. Recorded `incident` / `SUPPLY` / `high` / `real_harm: false` — a live, in-the-wild marketplace trojanization of a major coding agent's extension, caught within ~11 hours with no confirmed successful compromise.",
+   "summary_zh": "**2026 年 10 月 29 日，Anthropic 官方 Claude Code VS Code 扩展的被篡改版本（2.1.312 与 2.1.313）在 **Cursor** 的 VS Code 扩展市场上架约 11 小时（约 2:27–13:35 PT），最多暴露约 5,000 名开发者。** 被植入 `extension.js` 开头的 JavaScript loader **在扩展加载时自动执行**（无需交互）：收集主机/用户侦察信息（主机名、OS、Git 邮箱、公网 IP，以及匹配 `KEY|TOKEN|SECRET|PASS|AWS|GCP` 的环境变量**名**），把攻击者 SSH 公钥（`svc-telemetry`）追加进 `authorized_keys`，尝试向 `134.209.82[.]225` 打开持久反向 SSH 隧道，并安装持久化（macOS LaunchAgent／Windows 计划任务）。关键在于，**SSH 后门因代码错误大多失败**（macOS 权限检查误读自身失败；Windows 路径误调 `/bin/sh`），故在多数系统上远程访问\"会失败\"；beacon 只回传环境变量**名、而非密钥值**。Cursor 称这些版本**并非 Anthropic 开发**；Anthropic 称自身系统未被攻破；上架市场的途径仍未解释。无确认受害者。记为 `incident` / `SUPPLY` / `high` / `real_harm: false`——一次在野、针对主流编码 agent 官方扩展的市场投毒，约 11 小时内被发现、无确认的成功入侵。",
+   "summary_ja": "**2026年10月29日、Anthropic公式のClaude Code VS Code拡張の改ざん版（2.1.312と2.1.313）が **Cursor** のVS Code拡張マーケットプレイスで約11時間（約2:27–13:35 PT）配信され、最大約5,000人の開発者がさらされた。** `extension.js`の先頭に仕込まれたJavaScriptローダーは**拡張の読み込み時に自動実行**され（操作不要）、ホスト/ユーザー偵察情報（ホスト名、OS、Gitメール、公開IP、`KEY|TOKEN|SECRET|PASS|AWS|GCP`に一致する環境変数**名**）を収集し、攻撃者のSSH鍵（`svc-telemetry`）を`authorized_keys`に追記し、`134.209.82[.]225`への永続的なリバースSSHトンネルを試み、永続化（macOS LaunchAgent／Windowsスケジュールタスク）を設置した。重要なのは、**SSHバックドアはコードの不具合で大半が失敗**し、多くの環境で遠隔アクセスは「失敗する」ことだ。ビーコンは環境変数**名のみ（値は送らない）**。Cursorはこれらが**Anthropic製ではない**とし、Anthropicは自社システムは侵害されていないとする。確認された被害者はいない。`incident` / `SUPPLY` / `high` / `real_harm: false`",
+   "summary_ko": "**2026년 10월 29일, Anthropic 공식 Claude Code VS Code 확장의 변조판(2.1.312·2.1.313)이 **Cursor**의 VS Code 확장 마켓플레이스에서 약 11시간(약 2:27–13:35 PT) 제공돼 최대 약 5,000명 개발자가 노출됐다.** `extension.js` 앞에 삽입된 자바스크립트 로더가 **확장 로드 시 자동 실행**됐고(상호작용 불필요), 호스트/사용자 정찰 정보(호스트명, OS, Git 이메일, 공인 IP, `KEY|TOKEN|SECRET|PASS|AWS|GCP`에 일치하는 환경 변수 **이름**)를 수집하고, 공격자 SSH 키(`svc-telemetry`)를 `authorized_keys`에 추가하고, `134.209.82[.]225`로 지속적 리버스 SSH 터널을 시도하고, 지속성(macOS LaunchAgent／Windows 예약 작업)을 설치했다. 핵심은 **SSH 백도어가 코드 오류로 대부분 실패**해 대다수 시스템에서 원격 접근이 \"실패\"했다는 점이며, 비콘은 환경 변수 **이름만(값은 아님)** 전송했다. Cursor는 이 버전이 **Anthropic이 개발한 것이 아니라** 밝혔고, Anthropic은 자사 시스템은 침해되지 않았다고 했다. 확인된 피해자는 없다. `incident` / `SUPPLY` / `high` / `real_harm: false`",
+   "summary_de": "**Am 29. Oktober 2026 wurden bösartig modifizierte Versionen (2.1.312 und 2.1.313) von Anthropics offizieller Claude-Code-VS-Code-Erweiterung rund 11 Stunden lang (ca. 2:27–13:35 PT) über den **Cursor**-VS-Code-Extension-Marketplace ausgeliefert und setzten bis zu ~5.000 Entwickler dem Risiko aus.** Ein `extension.js` vorangestellter JavaScript-Loader **lief automatisch beim Laden der Erweiterung** (keine Interaktion nötig): Er sammelte Host-/Nutzer-Recon (Hostname, OS, Git-E-Mail, öffentliche IP sowie Umgebungsvariablen-**Namen** passend zu `KEY|TOKEN|SECRET|PASS|AWS|GCP`), hängte einen Angreifer-SSH-Schlüssel (`svc-telemetry`) an `authorized_keys` an, versuchte einen persistenten Reverse-SSH-Tunnel zu `134.209.82[.]225` und richtete Persistenz ein (macOS LaunchAgent / Windows-Task). Entscheidend: **Die SSH-Backdoor scheiterte weitgehend** an Code-Fehlern; der Beacon sendete nur Variablen-**Namen, keine Geheimwerte**. Cursor sagt, die Versionen stammten **nicht von Anthropic**; Anthropic sagt, die eigenen Systeme seien nicht kompromittiert. Keine bestätigten Opfer. `incident` / `SUPPLY` / `high` / `real_harm: false`",
+   "summary_fr": "**Le 29 octobre 2026, des versions malicieusement modifiées (2.1.312 et 2.1.313) de l'extension officielle Claude Code VS Code d'Anthropic ont été distribuées pendant environ 11 heures (≈2:27–13:35 PT) depuis la marketplace d'extensions VS Code de **Cursor**, exposant jusqu'à ~5 000 développeurs.** Un loader JavaScript ajouté en tête de `extension.js` **s'exécutait automatiquement au chargement de l'extension** (sans interaction) : il collectait de la reconnaissance hôte/utilisateur (nom d'hôte, OS, e-mail Git, IP publique, et **noms** de variables d'environnement correspondant à `KEY|TOKEN|SECRET|PASS|AWS|GCP`), ajoutait une clé SSH d'attaquant (`svc-telemetry`) à `authorized_keys`, tentait un tunnel SSH inverse persistant vers `134.209.82[.]225`, et installait de la persistance (LaunchAgent macOS / tâche planifiée Windows). Point clé : **la porte dérobée SSH a largement échoué** à cause d'erreurs de code ; la balise n'envoyait que les **noms** de variables, pas les valeurs secrètes. Cursor affirme que ces versions **n'ont pas été développées par Anthropic** ; Anthropic affirme que ses propres systèmes n'ont pas été compromis. Aucune victime confirmée. `incident` / `SUPPLY` / `high` / `real_harm: false`",
+   "summary_es": "**El 29 de octubre de 2026, versiones maliciosamente modificadas (2.1.312 y 2.1.313) de la extensión oficial Claude Code VS Code de Anthropic se sirvieron durante unas 11 horas (≈2:27–13:35 PT) desde la marketplace de extensiones VS Code de **Cursor**, exponiendo hasta ~5.000 desarrolladores.** Un loader de JavaScript antepuesto a `extension.js` **se ejecutaba automáticamente al cargar la extensión** (sin interacción): recopilaba reconocimiento de host/usuario (hostname, SO, correo de Git, IP pública y **nombres** de variables de entorno que coincidían con `KEY|TOKEN|SECRET|PASS|AWS|GCP`), añadía una clave SSH del atacante (`svc-telemetry`) a `authorized_keys`, intentaba un túnel SSH inverso persistente a `134.209.82[.]225` e instalaba persistencia (LaunchAgent de macOS / tarea programada de Windows). Clave: **la puerta trasera SSH falló en gran medida** por errores de código; la baliza solo enviaba **nombres** de variables, no los valores secretos. Cursor dice que esas versiones **no las desarrolló Anthropic**; Anthropic dice que sus propios sistemas no fueron comprometidos. Sin víctimas confirmadas. `incident` / `SUPPLY` / `high` / `real_harm: false`",
+   "disputed": false,
+   "landmark": false,
+   "path": "incidents/2026-10/2026-10-29-cursor-claude-code-extension-ssh-backdoor.md",
+   "path_zh": "incidents/i18n/zh/2026-10/2026-10-29-cursor-claude-code-extension-ssh-backdoor.md",
+   "sources": [
+    {
+     "url": "https://cursor.com/blog/claude-code-extension-security-notice",
+     "label": "Cursor (official security notice)"
+    },
+    {
+     "url": "https://www.bleepingcomputer.com/news/security/malicious-claude-code-extension-on-cursor-planted-ssh-backdoors/",
+     "label": "BleepingComputer"
+    },
+    {
+     "url": "https://phorion.io/blog/offical-claude-code-vsx-compromise/",
+     "label": "Phorion (technical advisory)"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-30-black-october-ai-developer-platform-breaches",
+   "title": "\"Black October\": a coordinated wave breached at least nine AI developer platforms to harvest AI-access credentials",
+   "title_zh": "\"Black October\"：一场协同攻击在一个月内攻破至少九家 AI 开发平台、收割可解锁 AI 的凭证",
+   "title_ja": "「Black October」：協調的な攻撃がひと月で少なくとも9つのAI開発プラットフォームを侵害し、AIアクセス用の認証情報を収集",
+   "title_ko": "\"Black October\": 한 달 새 최소 9개 AI 개발 플랫폼을 침해해 AI 접근용 자격 증명을 수집한 공조 공격",
+   "title_de": "„Black October\": Eine koordinierte Welle kompromittierte mindestens neun KI-Entwicklerplattformen, um KI-Zugangs-Credentials abzugreifen",
+   "title_fr": "« Black October » : une vague coordonnée a compromis au moins neuf plateformes de développement IA pour récolter des identifiants d'accès à l'IA",
+   "title_es": "\"Black October\": una oleada coordinada vulneró al menos nueve plataformas de desarrollo de IA para robar credenciales de acceso a IA",
+   "date": "2026-10-30",
+   "date_end": null,
+   "date_precision": "day",
+   "date_raw": "2026-10-30 (Wiz \"Black October\" synthesis; campaign activity ~2026-10-06 to 2026-10-30)",
+   "month": "2026-10",
+   "kind": "incident",
+   "type": [
+    "CRED",
+    "INFRA"
+   ],
+   "severity": "high",
+   "confidence": "A",
+   "real_harm": true,
+   "ai_involvement": "confirmed",
+   "region": [
+    "GLOBAL"
+   ],
+   "summary": "**On 30 October 2026, Wiz published \"Black October,\" documenting a coordinated wave in which at least nine AI developer platforms disclosed security incidents in a single month, with attackers \"explicitly hunting stored environment variables, with a focus on those granting AI access.\"** The nine: Fireworks AI (Oct 6), Andromeda (Oct 9), Zeabur (Oct 14), Lightning AI (Oct 15), OpenCode (Oct 16–17), Railway (Oct 20), Warp (Oct 23), CommandCode (Oct 28), and Northflank (Oct 30). Several victims (Fireworks, OpenCode, Warp) reported indications of an **\"agent-swarm\"** attack. Stolen keys were abused **within ~30 minutes** for AWS Bedrock `InvokeModel` calls from residential IPs, and downstream resale operations (\"momo\", \"Xingjiabi\") were observed — though Wiz says it cannot definitively link the resellers to the initial compromise. Independently, **Zeabur's own report** confirms ~**3.2M environment-variable records** read (and the company is shutting down), and **Railway's own report** confirms encrypted env vars were accessed (third parties cite up to 100k workspaces; an alleged $371k crypto theft is unverified). Recorded `incident` / `CRED` + `INFRA` / `high` / `real_harm: true` — a confirmed, cross-platform campaign targeting AI credentials; attribution is loose (Wiz does not tie it to one actor) and several per-platform investigations are ongoing.",
+   "summary_zh": "**2026 年 10 月 30 日，Wiz 发布《Black October》报告：记录了一个月内至少九家 AI 开发平台相继披露安全事件的协同攻击浪潮，攻击者\"明确地猎取存储的环境变量，尤其是能授予 AI 访问权限的那些\"。** 九家为：Fireworks AI（10-6）、Andromeda（10-9）、Zeabur（10-14）、Lightning AI（10-15）、OpenCode（10-16/17）、Railway（10-20）、Warp（10-23）、CommandCode（10-28）、Northflank（10-30）。数家受害方（Fireworks、OpenCode、Warp）报告有 **\"agent 蜂群\"** 攻击迹象。被窃的 key **在约 30 分钟内**即被用于从住宅 IP 发起 AWS Bedrock `InvokeModel` 调用，并观察到下游转售团伙（\"momo\"、\"Xingjiabi\"）——不过 Wiz 称无法确证转售方与最初入侵的直接关联。独立地，**Zeabur 自己的报告**确认约 **320 万条环境变量记录**被读取（且公司将关停），**Railway 自己的报告**确认加密环境变量被访问（第三方称涉最多 10 万 workspace；所称 $37.1 万加密货币被盗未经证实）。记为 `incident` / `CRED` + `INFRA` / `high` / `real_harm: true`——一场已确认、跨平台、瞄准 AI 凭证的战役；归因松散（Wiz 未归于单一 actor），多家平台的调查仍在进行。",
+   "summary_ja": "**2026年10月30日、Wizは「Black October」を公開し、ひと月で少なくとも9つのAI開発プラットフォームが相次いでセキュリティ事案を公表した協調的な攻撃の波を記録した。攻撃者は「保存された環境変数、とりわけAIアクセスを与えるものを明確に狙った」。** 9社：Fireworks AI（10/6）、Andromeda（10/9）、Zeabur（10/14）、Lightning AI（10/15）、OpenCode（10/16–17）、Railway（10/20）、Warp（10/23）、CommandCode（10/28）、Northflank（10/30）。複数の被害者（Fireworks、OpenCode、Warp）は「エージェント・スウォーム」攻撃の兆候を報告した。盗まれた鍵は**約30分以内**に住宅IPからのAWS Bedrock `InvokeModel`呼び出しに悪用され、下流の転売組織（「momo」「Xingjiabi」）も観測された（ただしWizは転売と初期侵害の直接的関連は断定できないとする）。独立して、**Zeabur自身の報告**は約**320万件の環境変数レコード**の読み取りを確認し（同社は事業を停止）、**Railway自身の報告**は暗号化環境変数へのアクセスを確認した。`incident` / `CRED` + `INFRA` / `high` / `real_harm: true`",
+   "summary_ko": "**2026년 10월 30일, Wiz는 \"Black October\"를 공개해 한 달 새 최소 9개 AI 개발 플랫폼이 잇따라 보안 사고를 공개한 공조 공격 물결을 기록했다. 공격자는 \"저장된 환경 변수, 특히 AI 접근을 부여하는 변수를 명시적으로 노렸다.\"** 9곳: Fireworks AI(10/6), Andromeda(10/9), Zeabur(10/14), Lightning AI(10/15), OpenCode(10/16–17), Railway(10/20), Warp(10/23), CommandCode(10/28), Northflank(10/30). 여러 피해자(Fireworks, OpenCode, Warp)가 **\"에이전트 스웜\"** 공격 정황을 보고했다. 탈취된 키는 **약 30분 이내**에 주거용 IP에서 AWS Bedrock `InvokeModel` 호출에 악용됐고, 하류 재판매 조직(\"momo\", \"Xingjiabi\")도 관측됐다(단 Wiz는 재판매와 최초 침해의 직접 연관은 단정할 수 없다고 밝힘). 독립적으로 **Zeabur 자체 보고서**는 약 **320만 건의 환경 변수 레코드** 열람을 확인했고(회사는 서비스 종료 예정), **Railway 자체 보고서**는 암호화 환경 변수 접근을 확인했다. `incident` / `CRED` + `INFRA` / `high` / `real_harm: true`",
+   "summary_de": "**Am 30. Oktober 2026 veröffentlichte Wiz „Black October\" und dokumentierte eine koordinierte Angriffswelle, bei der in einem einzigen Monat mindestens neun KI-Entwicklerplattformen Sicherheitsvorfälle meldeten — die Angreifer „jagten gezielt gespeicherte Umgebungsvariablen, mit Fokus auf solche, die KI-Zugang gewähren\".** Die neun: Fireworks AI (6.10.), Andromeda (9.10.), Zeabur (14.10.), Lightning AI (15.10.), OpenCode (16.–17.10.), Railway (20.10.), Warp (23.10.), CommandCode (28.10.) und Northflank (30.10.). Mehrere Opfer (Fireworks, OpenCode, Warp) meldeten Hinweise auf einen „Agent-Swarm\"-Angriff. Gestohlene Schlüssel wurden **binnen ~30 Minuten** für AWS-Bedrock-`InvokeModel`-Aufrufe von Residential-IPs missbraucht, und nachgelagerte Wiederverkaufs-Operationen („momo\", „Xingjiabi\") wurden beobachtet. Unabhängig bestätigt **Zeaburs eigener Bericht** ~**3,2 Mio. Umgebungsvariablen-Datensätze** als gelesen (das Unternehmen stellt den Betrieb ein), und **Railways eigener Bericht** bestätigt Zugriff auf verschlüsselte Umgebungsvariablen. `incident` / `CRED` + `INFRA` / `high` / `real_harm: true`",
+   "summary_fr": "**Le 30 octobre 2026, Wiz a publié « Black October », documentant une vague coordonnée au cours de laquelle au moins neuf plateformes de développement IA ont signalé des incidents de sécurité en un seul mois — les attaquants « traquant explicitement les variables d'environnement stockées, en ciblant celles qui donnent accès à l'IA ».** Les neuf : Fireworks AI (6 oct.), Andromeda (9 oct.), Zeabur (14 oct.), Lightning AI (15 oct.), OpenCode (16–17 oct.), Railway (20 oct.), Warp (23 oct.), CommandCode (28 oct.) et Northflank (30 oct.). Plusieurs victimes (Fireworks, OpenCode, Warp) ont signalé des indices d'une attaque en « essaim d'agents ». Les clés volées ont été exploitées **en ~30 minutes** pour des appels AWS Bedrock `InvokeModel` depuis des IP résidentielles, et des opérations de revente en aval (« momo », « Xingjiabi ») ont été observées. Indépendamment, **le rapport de Zeabur** confirme ~**3,2 M d'enregistrements de variables d'environnement** lus (l'entreprise ferme), et **le rapport de Railway** confirme l'accès à des variables d'environnement chiffrées. `incident` / `CRED` + `INFRA` / `high` / `real_harm: true`",
+   "summary_es": "**El 30 de octubre de 2026, Wiz publicó \"Black October\", documentando una oleada coordinada en la que al menos nueve plataformas de desarrollo de IA revelaron incidentes de seguridad en un solo mes — con los atacantes \"cazando explícitamente variables de entorno almacenadas, centrándose en las que otorgan acceso a IA\".** Las nueve: Fireworks AI (6 oct), Andromeda (9 oct), Zeabur (14 oct), Lightning AI (15 oct), OpenCode (16–17 oct), Railway (20 oct), Warp (23 oct), CommandCode (28 oct) y Northflank (30 oct). Varias víctimas (Fireworks, OpenCode, Warp) reportaron indicios de un ataque de \"enjambre de agentes\". Las claves robadas se abusaron **en ~30 minutos** para llamadas AWS Bedrock `InvokeModel` desde IP residenciales, y se observaron operaciones de reventa (\"momo\", \"Xingjiabi\"). De forma independiente, **el propio informe de Zeabur** confirma la lectura de ~**3,2 M de registros de variables de entorno** (la empresa cierra), y **el informe de Railway** confirma el acceso a variables de entorno cifradas. `incident` / `CRED` + `INFRA` / `high` / `real_harm: true`",
+   "disputed": false,
+   "landmark": false,
+   "path": "incidents/2026-10/2026-10-30-black-october-ai-developer-platform-breaches.md",
+   "path_zh": "incidents/i18n/zh/2026-10/2026-10-30-black-october-ai-developer-platform-breaches.md",
+   "sources": [
+    {
+     "url": "https://wiz.io/blog/black-october-for-ai-developer-platforms",
+     "label": "Wiz Research (\"Black October\")"
+    },
+    {
+     "url": "https://zeabur.com/blogs/october-2026-security-incident",
+     "label": "Zeabur (preliminary incident report)"
+    },
+    {
+     "url": "https://www.bleepingcomputer.com/news/security/zeabur-shutting-down-after-second-security-breach-in-two-months/",
+     "label": "BleepingComputer (Zeabur)"
+    },
+    {
+     "url": "https://blog.railway.com/p/preliminary-report-october-security-incident",
+     "label": "Railway (preliminary incident report)"
+    },
+    {
+     "url": "https://www.axios.com/2026/10/28/cybersecurity-black-october-ai-hacks",
+     "label": "Axios"
     }
    ]
   }
