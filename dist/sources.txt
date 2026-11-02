@@ -55,6 +55,7 @@ https://blog.google/innovation-and-ai/products/gemini-app/next-evolution-gemini-
 https://blog.google/innovation-and-ai/technology/safety-security/combatting-ai-scams/
 https://blog.google/intl/ja-jp/products/explore-get-answers/google-shopping-cart/
 https://blog.nsfocus.net/cnvd-2025-04094/
+https://blog.railway.com/p/preliminary-report-october-security-incident
 https://blog.rubygems.org/2026/09/11/update-may-spam-publishing-campaign.html
 https://blog.talosintelligence.com/microsoft-patch-tuesday-for-august-2026/
 https://blog.trailofbits.com/2026/08/26/vms-wont-contain-cyber-capable-agents/
@@ -91,6 +92,7 @@ https://composio.dev/blog/composio-may-2026-security-incident
 https://copy.fail/
 https://cryptobriefing.com/opencode-distillation-attack-api-key-breach/
 https://csirt.divd.nl/2026/09/24/when-not-if/
+https://cursor.com/blog/claude-code-extension-security-notice
 https://cyberandramen.net/2026/02/21/llms-in-the-kill-chain-inside-a-custom-mcp-targeting-fortigate-devices-across-continents/
 https://cyberinsider.com/ai-agents-steal-600000-credit-cards-in-attacks-on-online-retailers/
 https://cyberinsider.com/experiment-shows-ai-agents-can-escape-secure-vms-using-zero-days/
@@ -280,6 +282,7 @@ https://orca.security/resources/blog/hades-pypi-supply-chain-attack/
 https://orca.security/resources/blog/roguepilot-github-copilot-vulnerability/
 https://osv.dev/vulnerability/PYSEC-2026-3479
 https://phoenix.security/trapdoor-supply-chain-ai-poisoning-npm-pypi-crates/
+https://phorion.io/blog/offical-claude-code-vsx-compromise/
 https://ppc.land/comet-browser-faces-multiple-security-vulnerabilities-from-prompt-injection/
 https://qrator.net/blog/details/x47.c-botnet
 https://qz.com/ftc-investigation-openai-anthropic-ai-safety-093026
@@ -425,6 +428,7 @@ https://venturebeat.com/security/microsoft-salesforce-copilot-agentforce-prompt-
 https://vercel.com/kb/bulletin/vercel-april-2026-security-incident
 https://vibeincidents.com/incidents/cairn-exposed-panels-ai-intrusions/
 https://wikimediafoundation.org/news/2026/10/05/openai-rogue-agent-activities-found-on-wikimedia-projects/
+https://wiz.io/blog/black-october-for-ai-developer-platforms
 https://www-cdn.anthropic.com/4263b940cabb546aa0e3283f35b686f4f3b2ff47.pdf
 https://www-cdn.anthropic.com/b2a76c6f6992465c09a6f2fce282f6c0cea8c200.pdf
 https://www-cdn.anthropic.com/d00db56fa754a1b115b6dd7cb2e3c342ee809620.pdf
@@ -469,6 +473,7 @@ https://www.axios.com/2026/09/10/openai-hugging-face-senate-investigation-hawley
 https://www.axios.com/2026/09/15/anthropic-dario-ai-agents-safety-botnet
 https://www.axios.com/2026/09/19/trump-ai-czar-space-force-safety
 https://www.axios.com/2026/09/30/ftc-openai-anthropic-ai-safety-investigation
+https://www.axios.com/2026/10/28/cybersecurity-black-october-ai-hacks
 https://www.benzinga.com/markets/private-markets/26/09/62091626/openai-anthropic-face-new-ftc-probe-over-ai-agent-risks
 https://www.betterclaw.io/blog/openclaw-security-2026
 https://www.bitdefender.com/en-us/blog/hotforsecurity/pixelleak-ai-coding-agents-github-screenshots
@@ -486,6 +491,7 @@ https://www.bleepingcomputer.com/news/security/fake-openai-repository-on-hugging
 https://www.bleepingcomputer.com/news/security/hackers-abused-claude-to-extract-secrets-from-18m-android-apps/
 https://www.bleepingcomputer.com/news/security/jadepuffer-agentic-ai-attacks-target-azure-destroy-cloud-resources/
 https://www.bleepingcomputer.com/news/security/malicious-ai-agents-steal-600k-credit-cards-infect-100-plus-sites-with-skimmers/
+https://www.bleepingcomputer.com/news/security/malicious-claude-code-extension-on-cursor-planted-ssh-backdoors/
 https://www.bleepingcomputer.com/news/security/new-bioshocking-attack-manipulates-ai-browser-into-data-theft/
 https://www.bleepingcomputer.com/news/security/new-carbonato-malware-uses-ai-agents-to-hijack-exposed-docker-hosts/
 https://www.bleepingcomputer.com/news/security/new-closedquorum-windows-malware-uses-ai-for-attack-decisions/
@@ -494,6 +500,7 @@ https://www.bleepingcomputer.com/news/security/researchers-escape-openai-codex-s
 https://www.bleepingcomputer.com/news/security/spain-reports-first-alleged-ai-powered-data-theft-attack/
 https://www.bleepingcomputer.com/news/security/transunion-suffers-data-breach-impacting-over-44-million-people/
 https://www.bleepingcomputer.com/news/security/warp-discloses-breach-exposing-ai-agent-logs-user-telemetry-data/
+https://www.bleepingcomputer.com/news/security/zeabur-shutting-down-after-second-security-breach-in-two-months/
 https://www.bloomberg.com/jp/news/articles/2026-04-10/TD95ABT9NJMP00
 https://www.bloomberg.com/news/articles/2026-02-25/hacker-used-anthropic-s-claude-to-steal-sensitive-mexican-data
 https://www.bloomberg.com/news/articles/2026-04-21/anthropic-s-mythos-model-is-being-accessed-by-unauthorized-users
@@ -760,5 +767,6 @@ https://x.com/aaronp613/status/2049986504617820551
 https://x.com/lifeof_jer/status/2048103471019434248
 https://x.com/theonejvo/status/2015401219746128322
 https://yasashii-cybersecurity.com/ai-three-incidents-2026-09/
+https://zeabur.com/blogs/october-2026-security-incident
 https://zenity.io/press-release/zenity-labs-discloses-agentcorruption-a-chain-of-aws-agentcore-flaws
 https://zimperium.com/blog/rathat-ai-powered-mobile-threat-is-here-for-your-credentials-bank-accounts
