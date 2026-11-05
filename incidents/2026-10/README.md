@@ -51,5 +51,5 @@ pie showData
 <!-- BEGIN:nav -->
 ---
 
-[← 2026-09](../2026-09/README.md) · [Archive index](../../README.md) · [By type](../../taxonomy/types.md)
+[← 2026-09](../2026-09/README.md) · [Archive index](../../README.md) · [By type](../../taxonomy/types.md) · [2026-11 →](../2026-11/README.md)
 <!-- END:nav -->

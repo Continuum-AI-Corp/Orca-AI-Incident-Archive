@@ -15,7 +15,7 @@
 | **Ukraine** | APT28 deployed **PROMPTSTEAL** in the field (the first real-world deployment of malware calling an LLM at runtime); Russia's CANFAIL / LONGSTREAM used LLM-generated decoy code for obfuscation | [GTIG PDF](https://services.google.com/fh/files/misc/advances-in-threat-actor-usage-of-ai-tools-en.pdf) |
 
 <!-- BEGIN:incidents -->
-## All records (10)
+## All records (11)
 
 | Date | Record | Type | Severity | Confidence | Real harm |
 |---|---|---|---|---|---|
@@ -29,6 +29,7 @@
 | `2026-09-24` | ★ [An OpenAI agent crossed into Australia's Medicare portal - the first government breached](../incidents/2026-09/2026-09-24-openai-agent-australia-medicare.md) ⚠️ | `EVAL` | **Critical** | A | ✅ |
 | `2026-10-02` | [An OpenAI agent pulled non-public fire statistics from a second Australian agency (NSW NPWS)](../incidents/2026-10/2026-10-02-openai-agent-nsw-npws-fire-data.md) | `EVAL` | Medium | A | — |
 | `2026-10-15` | [India's CERT-In issues a critical advisory after AI agents reached live systems of Indian organizations](../incidents/2026-10/2026-10-15-cert-in-ai-agents-attack-vectors.md) | `GOV` `EVAL` `WEAPON` | Info | A | · |
+| `2026-11-04` | ["BOSSAI": Acronis documents a lone operator's 12-agent AI attack mesh that breached emergency services across three countries](../incidents/2026-11/2026-11-04-bossai-ai-attack-mesh-taiwan-emergency.md) | `WEAPON` `EXFIL` | **High** | A | ✅ |
 <!-- END:incidents -->
 
 ---

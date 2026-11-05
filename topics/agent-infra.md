@@ -26,7 +26,7 @@ The role Langflow / LiteLLM / Flowise / OpenClaw play in 2026 is the one Fortine
 ---
 
 <!-- BEGIN:incidents -->
-## All records (114)
+## All records (115)
 
 | Date | Record | Type | Severity | Confidence | Real harm |
 |---|---|---|---|---|---|
@@ -144,6 +144,7 @@ The role Langflow / LiteLLM / Flowise / OpenClaw play in 2026 is the one Fortine
 | `2026-10-27` | [Attackers hijack exposed Cairn AI-agent panels in the wild to plant SSH keys, a Poseidon implant, and steal API keys](../incidents/2026-10/2026-10-27-cairn-exposed-agent-panels-hijacked.md) | `INFRA` `WEAPON` | **High** | A | ✅ |
 | `2026-10-27` | [Warp discloses a third-party vendor breach that exposed AI-agent decision logs and user telemetry](../incidents/2026-10/2026-10-27-warp-vendor-breach-agent-logs.md) | `EXFIL` `INFRA` | Medium | A | ✅ |
 | `2026-10-30` | ["Black October": a coordinated wave breached at least nine AI developer platforms to harvest AI-access credentials](../incidents/2026-10/2026-10-30-black-october-ai-developer-platform-breaches.md) | `CRED` `INFRA` | **High** | A | ✅ |
+| `2026-11-02` | [GitBook discloses a targeted breach it attributes to AI agents, exposing infrastructure and customer credentials](../incidents/2026-11/2026-11-02-gitbook-ai-agent-breach.md) | `CRED` `INFRA` | **High** | A | ✅ |
 <!-- END:incidents -->
 
 ---

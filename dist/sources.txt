@@ -112,6 +112,7 @@ https://cybersecuritynews.com/github-copilot-cli-vulnerability/
 https://cybersecuritynews.com/gitlab-fixes-claude-ai-agent-flaw/
 https://cybersecuritynews.com/hackers-exploit-copilot-studios-new-connected-agents-feature/
 https://cybersecuritynews.com/hackers-use-llm-agent-to-move-from-marimo-rce/
+https://cybersecuritynews.com/one-hacker-uses-12-ai-agents/
 https://cybersecuritynews.com/openai-ai-agents-bypass-security/
 https://cybersecuritynews.com/openclaw-chain-vulnerabilities/
 https://cybersecuritynews.com/openclaw-control-panels-exposed/
@@ -122,6 +123,7 @@ https://darkreading.com/cloud-security/agentcorruption-aws-environments-at-risk-
 https://databreaches.net/2026/09/25/divd-dutch-institute-for-vulnerability-disclosure-investigating-agentic-ai-powered-attack/
 https://dealroom.co/news/163473-opencode-breach-drains-users-ai-keys-as-platforms-holding-customer-crede/
 https://decrypt.co/379998/california-subpoena-openai-ai-models-hack
+https://decrypt.co/382465/crypto-docs-gitbook-ai-agent-security-breach
 https://deploymentsafety.openai.com/gpt-5-2/cybersecurity
 https://deploymentsafety.openai.com/gpt-5-3-codex/disallowed-content-evaluations
 https://devops.com/teampcp-supply-chain-attack-leads-to-crowdsec-source-code-being-stolen/
@@ -142,6 +144,7 @@ https://forest.watch.impress.co.jp/docs/news/2105656.html
 https://forever.security/blog/bragjack-attack-hijacks-every-browser-agent
 https://forever.security/blog/bragjack-hijacking-5-browsers-via-built-in-ai-assistants
 https://forkast.news/anthropic-ceo-warns-agent-swarms-could-take-over-the-internet-within-12-months/
+https://forklog.com/en/hackers-breach-gitbook-using-ai-agents/
 https://fortune.com/2025/07/23/ai-coding-tool-replit-wiped-database-called-it-a-catastrophic-failure/
 https://fortune.com/2026/03/26/anthropic-says-testing-mythos-powerful-new-ai-model-after-data-leak-reveals-its-existence-step-change-in-capabilities/
 https://freefable.org/
@@ -439,6 +442,7 @@ https://www.404media.co/hackers-simply-asked-meta-ai-to-give-them-access-to-high
 https://www.51cto.com/article/856012.html
 https://www.51cto.com/article/856105.html
 https://www.abc.net.au/news/2026-08-10/ai-assistant-hacks-gym-website-aus-cyber-attack/107007986
+https://www.acronis.com/en/tru/posts/bossai-inside-the-ai-attack-mesh-that-targeted-taiwans-emergency-services/
 https://www.aepd.es/prensa-y-comunicacion/blog/primera-notiviacion-brecha-datos-personales-causada-por-ataque-ejecutado-mediante-agente-ia
 https://www.aibase.com/news/16138
 https://www.aikido.dev/blog/tensorlake-npm-package-compromised
@@ -567,6 +571,7 @@ https://www.freebuf.com/articles/502543.html
 https://www.gate.com/zh/news/detail/senate-committee-launches-investigation-into-openai-over-hugging-face-24168426
 https://www.gendigital.com/blog/insights/research/infostealers-your-ai-agent
 https://www.gibsondunn.com/eu-ai-act-omnibus-agreement-postponed-high-risk-deadlines-and-other-key-changes/
+https://www.gitbook.com/status/security-incident-2026-11-03
 https://www.globenewswire.com/news-release/2025/10/22/3171164/0/en/Operant-AI-Discovers-Shadow-Escape-The-First-Zero-Click-Agentic-Attack-via-MCP.html
 https://www.glow.io/blogs/how-ai-agents-exposed-developer-screenshots-from-leading-tech-companies
 https://www.gov.ca.gov/2026/09/18/governor-newsom-issues-executive-order-to-accelerate-independent-oversight-and-advance-the-creation-of-an-ai-kill-switch/
