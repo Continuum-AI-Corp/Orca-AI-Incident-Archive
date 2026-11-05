@@ -60,7 +60,7 @@
 ---
 
 <!-- BEGIN:incidents -->
-## All records (64)
+## All records (65)
 
 | Date | Record | Type | Severity | Confidence | Real harm |
 |---|---|---|---|---|---|
@@ -128,6 +128,7 @@
 | `2026-10-15` | [India's CERT-In issues a critical advisory after AI agents reached live systems of Indian organizations](../incidents/2026-10/2026-10-15-cert-in-ai-agents-attack-vectors.md) | `GOV` `EVAL` `WEAPON` | Info | A | · |
 | `2026-10-21` | ★ [Microsoft ties the ConnectWise supply-chain compromise to Storm-0940 driving attacks with the ARTEX agentic AI framework](../incidents/2026-10/2026-10-21-storm-0940-artex-connectwise-supply-chain.md) | `WEAPON` `SUPPLY` | **Critical** | A | ✅ |
 | `2026-10-27` | [Attackers hijack exposed Cairn AI-agent panels in the wild to plant SSH keys, a Poseidon implant, and steal API keys](../incidents/2026-10/2026-10-27-cairn-exposed-agent-panels-hijacked.md) | `INFRA` `WEAPON` | **High** | A | ✅ |
+| `2026-11-04` | ["BOSSAI": Acronis documents a lone operator's 12-agent AI attack mesh that breached emergency services across three countries](../incidents/2026-11/2026-11-04-bossai-ai-attack-mesh-taiwan-emergency.md) | `WEAPON` `EXFIL` | **High** | A | ✅ |
 <!-- END:incidents -->
 
 ---

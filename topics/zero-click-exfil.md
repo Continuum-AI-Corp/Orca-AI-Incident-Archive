@@ -29,7 +29,7 @@ The same pattern was replicated 13 times over 15 months, across 6 vendors. **Thi
 ---
 
 <!-- BEGIN:incidents -->
-## All records (64)
+## All records (65)
 
 | Date | Record | Type | Severity | Confidence | Real harm |
 |---|---|---|---|---|---|
@@ -97,6 +97,7 @@ The same pattern was replicated 13 times over 15 months, across 6 vendors. **Thi
 | `2026-10-07` | [Barracuda: one phishing email now targets both the human recipient and their email AI assistant](../incidents/2026-10/2026-10-07-barracuda-dual-target-email-phishing.md) | `IPI` | Medium | A | — |
 | `2026-10-08` | [AgentCorruption: one prompt turns an AWS Bedrock AgentCore agent into an account-wide takeover](../incidents/2026-10/2026-10-08-agentcorruption-aws-bedrock-agentcore.md) | `INFRA` `EXFIL` | **High** | A | — |
 | `2026-10-27` | [Warp discloses a third-party vendor breach that exposed AI-agent decision logs and user telemetry](../incidents/2026-10/2026-10-27-warp-vendor-breach-agent-logs.md) | `EXFIL` `INFRA` | Medium | A | ✅ |
+| `2026-11-04` | ["BOSSAI": Acronis documents a lone operator's 12-agent AI attack mesh that breached emergency services across three countries](../incidents/2026-11/2026-11-04-bossai-ai-attack-mesh-taiwan-emergency.md) | `WEAPON` `EXFIL` | **High** | A | ✅ |
 <!-- END:incidents -->
 
 ---
