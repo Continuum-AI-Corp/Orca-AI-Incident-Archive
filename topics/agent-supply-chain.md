@@ -32,7 +32,7 @@
 ---
 
 <!-- BEGIN:incidents -->
-## All records (71)
+## All records (72)
 
 | Date | Record | Type | Severity | Confidence | Real harm |
 |---|---|---|---|---|---|
@@ -107,6 +107,7 @@
 | `2026-10-21` | [LiteLLM 1.107.0 compromised: malicious PyPI/Docker build ships a credential stealer](../incidents/2026-10/2026-10-21-litellm-1-107-supply-chain-compromise.md) | `SUPPLY` `CRED` | **High** | A | ✅ |
 | `2026-10-21` | ★ [Microsoft ties the ConnectWise supply-chain compromise to Storm-0940 driving attacks with the ARTEX agentic AI framework](../incidents/2026-10/2026-10-21-storm-0940-artex-connectwise-supply-chain.md) | `WEAPON` `SUPPLY` | **Critical** | A | ✅ |
 | `2026-10-29` | [A malicious Claude Code extension on Cursor's marketplace planted an SSH backdoor](../incidents/2026-10/2026-10-29-cursor-claude-code-extension-ssh-backdoor.md) | `SUPPLY` | **High** | A | — |
+| `2026-11-05` | [AgentScope MCP Workspace API: unauthenticated OS command injection (CVE-2026-123022)](../incidents/2026-11/2026-11-05-agentscope-mcp-command-injection-cve-2026-123022.md) | `INFRA` `MCP` | **High** | B | — |
 <!-- END:incidents -->
 
 ---

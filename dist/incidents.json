@@ -1,7 +1,7 @@
 {
  "schema": "https://github.com/Continuum-AI-Corp/Orca-AI-Incident-Archive/blob/main/SCHEMA.md",
  "schema_version": 2,
- "version": "2026-11-04",
+ "version": "2026-11-05",
  "license": "CC-BY-4.0",
  "languages": [
   "en",
@@ -12,7 +12,7 @@
   "fr",
   "es"
  ],
- "count": 411,
+ "count": 415,
  "incidents": [
   {
    "id": "2024-12-01-storm-azure-llmjacking",
@@ -19488,6 +19488,110 @@
    ]
   },
   {
+   "id": "2026-10-30-spycloud-ai-coding-tool-token-theft",
+   "title": "SpyCloud: infostealers now harvest AI coding-tool tokens and API keys — WardenStealer and Aoki target Claude Code and Codex",
+   "title_zh": "SpyCloud：窃密软件开始收割 AI 编码工具的令牌与 API 密钥——WardenStealer 与 Aoki 盯上 Claude Code 与 Codex",
+   "title_ja": "SpyCloud：インフォスティーラーがAIコーディングツールのトークンとAPIキーを収集——WardenStealerとAokiがClaude CodeとCodexを標的に",
+   "title_ko": "SpyCloud: 인포스틸러가 이제 AI 코딩 도구의 토큰과 API 키를 수집——WardenStealer와 Aoki가 Claude Code와 Codex를 노린다",
+   "title_de": "SpyCloud: Infostealer sammeln jetzt Tokens und API-Schlüssel von KI-Coding-Tools — WardenStealer und Aoki zielen auf Claude Code und Codex",
+   "title_fr": "SpyCloud : les infostealers récoltent désormais les jetons et clés d'API des outils de codage IA — WardenStealer et Aoki visent Claude Code et Codex",
+   "title_es": "SpyCloud: los infostealers ahora recolectan tokens y claves de API de herramientas de codificación con IA — WardenStealer y Aoki apuntan a Claude Code y Codex",
+   "date": "2026-10-30",
+   "date_end": null,
+   "date_precision": "day",
+   "date_raw": "2026-10-30 (SpyCloud report; WardenStealer first seen 2026-08-03, Aoki 2026-10-04)",
+   "month": "2026-10",
+   "kind": "research",
+   "type": [
+    "CRED",
+    "EXFIL"
+   ],
+   "severity": "medium",
+   "confidence": "A",
+   "real_harm": false,
+   "ai_involvement": "confirmed",
+   "region": [
+    "GLOBAL"
+   ],
+   "summary": "**On 30 October 2026, SpyCloud (Trevor Hilligoss) reported that infostealer malware now harvests credentials from AI coding tools, naming two families — WardenStealer and Aoki — that pull tokens and API keys from local Claude Code, Codex, Copilot, Cursor and desktop AI apps.** SpyCloud first saw **WardenStealer** on **3 August 2026** and has ingested **130,000+** unique infections; **Aoki** (a Go stealer) appeared in its recaptured data on **4 October 2026** (Symantec published on Aoki 15 October). What they take is **account access and context**: Claude Code's **OAuth access and refresh tokens**, tokens for connected **MCP servers**, the account config (user/machine IDs) and the `CLAUDE.md` instruction file; Codex's auth file with an **OpenAI API key** plus access/refresh tokens; Copilot and Cursor token files; and desktop-app cookies. A criminal market has adjusted in step — a **$100 Codex or Claude API credit advertised for $8.94**, AI subscriptions at 40–60% below list, a Telegram bot at up to 91% off, and a wholesaler paying suppliers 35% of billings for Anthropic/AWS-Bedrock Claude keys. **SpyCloud is explicit that it cannot confirm abuse of these specific credentials** (and that not all material being sold was necessarily taken by these stealers), so this is recorded `research` / `CRED` + `EXFIL` / `medium` / `real_harm: false` — the escalation of the trend first recorded for Gen Digital on 8 September 2026.",
+   "summary_zh": "**2026 年 10 月 30 日，SpyCloud（Trevor Hilligoss）报告称：窃密软件如今开始从 AI 编码工具收割凭据，并点名两个家族——WardenStealer 与 Aoki——它们从本地的 Claude Code、Codex、Copilot、Cursor 及桌面 AI 应用中抽取令牌与 API 密钥。** SpyCloud 首次见到 **WardenStealer** 是在 **2026 年 8 月 3 日**,已摄入 **13 万+** 个唯一感染；**Aoki**（一款 Go 窃密木马）于 **2026 年 10 月 4 日** 出现在其回捕数据中（Symantec 于 10 月 15 日发布对 Aoki 的分析）。它们拿走的是**账户访问权与上下文**：Claude Code 的 **OAuth 访问与刷新令牌**、所连 **MCP server** 的令牌、账户配置（用户/机器 ID）与 `CLAUDE.md` 指令文件；Codex 的认证文件（含一个 **OpenAI API 密钥** 及访问/刷新令牌）；Copilot 与 Cursor 的令牌文件；以及桌面应用的 cookie。地下市场随之调整——**标价 $100 的 Codex 或 Claude API 额度只卖 $8.94**、AI 订阅低至 4–6 折、某 Telegram 机器人低至 9.1 折，以及某批发商按 Anthropic/AWS-Bedrock Claude 密钥计费额的 35% 向供货方付费。**SpyCloud 明确表示无法确认这些具体凭据被滥用**（且在售材料未必全部由这些窃密木马取得），故记为 `research` / `CRED` + `EXFIL` / `medium` / `real_harm: false`——这是 2026 年 9 月 8 日 Gen Digital 首次记录的那条趋势的升级。",
+   "summary_ja": "**2026年10月30日、SpyCloud（Trevor Hilligoss）は、インフォスティーラーがAIコーディングツールから資格情報を収集するようになったと報告し、二つのファミリー——WardenStealerとAoki——を名指しした。これらはローカルのClaude Code、Codex、Copilot、Cursorおよびデスクトップ版AIアプリからトークンとAPIキーを抜き取る。** SpyCloudが **WardenStealer** を初めて確認したのは **2026年8月3日** で、**13万超**の固有感染を取り込んだ。**Aoki**（Go製スティーラー）は **2026年10月4日** に回収データに現れた（Symantecは10月15日にAokiを公表）。奪われるのは**アカウントアクセスと文脈**だ——Claude Codeの **OAuthアクセス/リフレッシュトークン**、接続された **MCPサーバー** のトークン、アカウント設定（ユーザー/マシンID）と `CLAUDE.md` 指示ファイル；Codexの認証ファイル（**OpenAI APIキー** とアクセス/リフレッシュトークン入り）；CopilotとCursorのトークンファイル；デスクトップアプリのクッキー。地下市場も歩調を合わせた——**$100分のCodexまたはClaude APIクレジットが$8.94** で出回り、AIサブスクが定価の4〜6割引、あるTelegramボットは最大91%引き、ある卸はAnthropic/AWS-Bedrock Claudeキーの請求額の35%を供給者に支払う。**SpyCloudはこれら特定の資格情報の悪用を確認できないと明言**している（売られている素材すべてがこれらのスティーラーで取得されたとは限らない）ため、`research` / `CRED` + `EXFIL` / `medium` / `real_harm: false` として記録する——2026年9月8日にGen Digitalで初めて記録された傾向の激化である。",
+   "summary_ko": "**2026년 10월 30일, SpyCloud(Trevor Hilligoss)는 인포스틸러 악성코드가 이제 AI 코딩 도구에서 자격 증명을 수집한다고 보고하며 두 계열——WardenStealer와 Aoki——을 지목했다. 이들은 로컬의 Claude Code, Codex, Copilot, Cursor 및 데스크톱 AI 앱에서 토큰과 API 키를 빼낸다.** SpyCloud가 **WardenStealer**를 처음 본 것은 **2026년 8월 3일**이며 **13만 개 이상**의 고유 감염을 수집했다. **Aoki**(Go 기반 스틸러)는 **2026년 10월 4일** 회수 데이터에 나타났다(Symantec은 10월 15일 Aoki를 공개). 이들이 가져가는 것은 **계정 접근권과 맥락**이다——Claude Code의 **OAuth 액세스·리프레시 토큰**, 연결된 **MCP 서버** 토큰, 계정 구성(사용자/머신 ID)과 `CLAUDE.md` 지시 파일; Codex의 인증 파일(**OpenAI API 키**와 액세스/리프레시 토큰 포함); Copilot과 Cursor의 토큰 파일; 데스크톱 앱 쿠키. 지하 시장도 발맞춰 조정됐다——**$100짜리 Codex 또는 Claude API 크레딧이 $8.94**에 광고되고, AI 구독이 정가 대비 40–60% 할인, 한 Telegram 봇은 최대 91% 할인, 한 도매상은 Anthropic/AWS-Bedrock Claude 키 청구액의 35%를 공급자에게 지급한다. **SpyCloud는 이 특정 자격 증명들의 악용을 확인할 수 없다고 명시**한다(판매 중인 자료가 모두 이 스틸러로 취득된 것은 아니다). 따라서 `research` / `CRED` + `EXFIL` / `medium` / `real_harm: false`로 기록한다——2026년 9월 8일 Gen Digital에서 처음 기록된 추세의 심화다.",
+   "summary_de": "**Am 30. Oktober 2026 berichtete SpyCloud (Trevor Hilligoss), dass Infostealer-Malware nun Anmeldedaten aus KI-Coding-Tools abgreift, und nannte zwei Familien — WardenStealer und Aoki —, die Tokens und API-Schlüssel aus lokalem Claude Code, Codex, Copilot, Cursor und Desktop-KI-Apps ziehen.** SpyCloud sah **WardenStealer** erstmals am **3. August 2026** und hat **über 130.000** eindeutige Infektionen erfasst; **Aoki** (ein Go-Stealer) tauchte am **4. Oktober 2026** in den wiedererlangten Daten auf (Symantec veröffentlichte am 15. Oktober zu Aoki). Entwendet werden **Kontozugang und Kontext**: Claude Codes **OAuth-Access- und Refresh-Tokens**, Tokens verbundener **MCP-Server**, die Kontokonfiguration (Nutzer-/Maschinen-IDs) und die `CLAUDE.md`-Anweisungsdatei; Codex' Auth-Datei mit einem **OpenAI-API-Schlüssel** samt Access-/Refresh-Tokens; Copilot- und Cursor-Token-Dateien; sowie Desktop-App-Cookies. Ein krimineller Markt hat nachgezogen — ein **für 8,94 $ beworbenes 100-$-Codex- oder -Claude-API-Guthaben**, KI-Abos 40–60 % unter Listenpreis, ein Telegram-Bot mit bis zu 91 % Rabatt und ein Großhändler, der Lieferanten 35 % der Abrechnung für Anthropic/AWS-Bedrock-Claude-Schlüssel zahlt. **SpyCloud stellt ausdrücklich klar, dass es den Missbrauch dieser konkreten Anmeldedaten nicht bestätigen kann** (und dass nicht alles verkaufte Material zwangsläufig von diesen Stealern stammt), daher `research` / `CRED` + `EXFIL` / `medium` / `real_harm: false` — die Eskalation des Trends, der am 8. September 2026 für Gen Digital erstmals erfasst wurde.",
+   "summary_fr": "**Le 30 octobre 2026, SpyCloud (Trevor Hilligoss) a signalé que les infostealers récoltent désormais des identifiants dans les outils de codage IA, nommant deux familles — WardenStealer et Aoki — qui extraient jetons et clés d'API de Claude Code, Codex, Copilot, Cursor et des applis IA de bureau en local.** SpyCloud a vu **WardenStealer** pour la première fois le **3 août 2026** et a ingéré **plus de 130 000** infections uniques ; **Aoki** (un stealer en Go) est apparu dans ses données récupérées le **4 octobre 2026** (Symantec a publié sur Aoki le 15 octobre). Ce qui est pris, c'est l'**accès au compte et le contexte** : les **jetons OAuth d'accès et de rafraîchissement** de Claude Code, les jetons des **serveurs MCP** connectés, la config du compte (ID utilisateur/machine) et le fichier d'instructions `CLAUDE.md` ; le fichier d'auth de Codex avec une **clé d'API OpenAI** et des jetons d'accès/rafraîchissement ; les fichiers de jetons de Copilot et Cursor ; et les cookies des applis de bureau. Un marché criminel s'est ajusté — un **crédit d'API Codex ou Claude de 100 $ annoncé à 8,94 $**, des abonnements IA 40–60 % sous le prix courant, un bot Telegram jusqu'à 91 % de remise, et un grossiste payant aux fournisseurs 35 % de la facturation pour des clés Claude Anthropic/AWS-Bedrock. **SpyCloud précise explicitement qu'il ne peut confirmer l'abus de ces identifiants précis** (et que tout le matériel vendu n'a pas nécessairement été pris par ces stealers), d'où un enregistrement `research` / `CRED` + `EXFIL` / `medium` / `real_harm: false` — l'escalade de la tendance enregistrée pour la première fois chez Gen Digital le 8 septembre 2026.",
+   "summary_es": "**El 30 de octubre de 2026, SpyCloud (Trevor Hilligoss) informó que el malware infostealer ahora recolecta credenciales de herramientas de codificación con IA, nombrando dos familias — WardenStealer y Aoki — que extraen tokens y claves de API de Claude Code, Codex, Copilot, Cursor y apps de IA de escritorio en local.** SpyCloud vio **WardenStealer** por primera vez el **3 de agosto de 2026** y ha ingerido **más de 130.000** infecciones únicas; **Aoki** (un stealer en Go) apareció en sus datos recuperados el **4 de octubre de 2026** (Symantec publicó sobre Aoki el 15 de octubre). Lo que se llevan es el **acceso a la cuenta y el contexto**: los **tokens OAuth de acceso y de actualización** de Claude Code, los tokens de los **servidores MCP** conectados, la configuración de la cuenta (ID de usuario/máquina) y el archivo de instrucciones `CLAUDE.md`; el archivo de autenticación de Codex con una **clave de API de OpenAI** más tokens de acceso/actualización; los archivos de tokens de Copilot y Cursor; y las cookies de apps de escritorio. Un mercado criminal se ha ajustado — un **crédito de API de Codex o Claude de 100 $ anunciado por 8,94 $**, suscripciones de IA un 40–60 % por debajo del precio de lista, un bot de Telegram con hasta un 91 % de descuento, y un mayorista que paga a los proveedores el 35 % de la facturación por claves de Claude de Anthropic/AWS-Bedrock. **SpyCloud es explícito en que no puede confirmar el abuso de estas credenciales concretas** (y que no todo el material en venta fue necesariamente tomado por estos stealers), por lo que se registra como `research` / `CRED` + `EXFIL` / `medium` / `real_harm: false` — la escalada de la tendencia registrada por primera vez para Gen Digital el 8 de septiembre de 2026.",
+   "disputed": false,
+   "landmark": false,
+   "path": "incidents/2026-10/2026-10-30-spycloud-ai-coding-tool-token-theft.md",
+   "path_zh": "incidents/i18n/zh/2026-10/2026-10-30-spycloud-ai-coding-tool-token-theft.md",
+   "sources": [
+    {
+     "url": "https://spycloud.com/blog/infostealers-now-target-ai-tokens-and-api-keys/",
+     "label": "SpyCloud (\"Infostealers now target AI tokens and API keys\")"
+    },
+    {
+     "url": "https://www.infosecurity-magazine.com/news/aoki-infostealer-ai-coding/",
+     "label": "Infosecurity Magazine (Aoki / Symantec)"
+    },
+    {
+     "url": "https://cybersecuritynews.com/hackers-use-new-infostealer-malware/",
+     "label": "Cyber Security News"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-02-cyberstrikeai-education-latam-africa",
+   "title": "CyberStrikeAI in the wild: an LLM-orchestrated intrusion reaches domain admin at education targets in Latin America and Africa",
+   "title_zh": "CyberStrikeAI 实战：LLM 编排的入侵在拉美与非洲教育目标处拿下域管理员",
+   "title_ja": "CyberStrikeAIの実戦投入：LLMが編成する侵入がラテンアメリカとアフリカの教育機関でドメイン管理者を掌握",
+   "title_ko": "실전의 CyberStrikeAI: LLM이 편성한 침입이 라틴아메리카·아프리카 교육 표적에서 도메인 관리자를 장악",
+   "title_de": "CyberStrikeAI im Einsatz: ein LLM-orchestrierter Einbruch erlangt Domänen-Admin bei Bildungszielen in Lateinamerika und Afrika",
+   "title_fr": "CyberStrikeAI en conditions réelles : une intrusion orchestrée par LLM atteint l'admin de domaine chez des cibles éducatives d'Amérique latine et d'Afrique",
+   "title_es": "CyberStrikeAI en la práctica: una intrusión orquestada por LLM alcanza el administrador de dominio en objetivos educativos de América Latina y África",
+   "date": "2026-11-02",
+   "date_end": null,
+   "date_precision": "day",
+   "date_raw": "2026-11-02 (Kaspersky press release / Securelist report; intrusions observed Sept–Oct 2026)",
+   "month": "2026-11",
+   "kind": "incident",
+   "type": [
+    "WEAPON",
+    "CRED"
+   ],
+   "severity": "high",
+   "confidence": "A",
+   "real_harm": true,
+   "ai_involvement": "confirmed",
+   "region": [
+    "GLOBAL"
+   ],
+   "summary": "**On 2 November 2026, Kaspersky (press release + a Securelist report, \"CyberStrikeAI in the wild\") documented real-world intrusions at education-sector organizations across several countries in Latin America and Africa, in which an LLM orchestrator drove the post-exploitation.** CyberStrikeAI is an open-source, Go-based AI penetration-testing framework; in these attacks the **LLM ran on the attacker's C2 server** (selecting tools, writing commands, reading results) while the on-host **implant carried no AI and simply executed tasks**. Kaspersky reconstructed one case: a human operator first breached a likely-exposed **Microsoft SQL Server** (`sqlservr.exe` 16.0.1000) over ~24h, **paused ~2 weeks**, then deployed the CyberStrikeAI beacon — which set **persistence** (a `SystemUpdate` scheduled task) within **~2 minutes**, ran LDAP **domain recon** (~5h), moved laterally over SMB/WMI, dumped registry hives and **lsass via comsvcs.dll**, and ran **DCSync + Golden Ticket** with a renamed Mimikatz. **Domain controllers were compromised within 3–4 days of implant deployment**; the final stage was data collection (database records from the SQL server, files from network resources). Kaspersky does **not** attribute the activity to a known group and cannot confirm a single operator across infrastructure; Chinese-language script comments, use of Chinese services (DNSLog.cn) and UTC+8 restart timing **suggest** a Chinese-speaking operator. Recorded `incident` / `WEAPON` + `CRED` / `high` / `real_harm: true`.",
+   "summary_zh": "**2026 年 11 月 2 日，Kaspersky（新闻稿 + Securelist 报告《CyberStrikeAI in the wild》）记录了拉美与非洲数国教育行业机构遭遇的真实入侵——其后利用阶段由一个 LLM 编排器驱动。** CyberStrikeAI 是一款基于 Go 的开源 AI 渗透测试框架；在这些攻击中，**LLM 跑在攻击者的 C2 服务器上**（选择工具、编写命令、解析结果），而落地主机上的**植入体不含 AI、只负责执行任务**。Kaspersky 还原了其中一例：人工操作者先在约 24 小时内攻破一台很可能暴露在外的 **Microsoft SQL Server**（`sqlservr.exe` 16.0.1000），**停歇约 2 周**，随后投放 CyberStrikeAI beacon——该 beacon 在 **约 2 分钟** 内建立**持久化**（一个名为 `SystemUpdate` 的计划任务）、做 LDAP **域侦察**（约 5 小时）、经 SMB/WMI 横向移动、转储注册表 hive 并**用 comsvcs.dll 掏 lsass**、再以改名的 Mimikatz 执行 **DCSync + Golden Ticket**。**在植入体部署后 3–4 天内域控被攻陷**；最后阶段是数据采集（从 SQL server 取库记录、从网络资源取文件）。Kaspersky **未**将该活动归于任何已知团伙，也无法确认各基础设施背后是同一操作者；脚本中的中文注释、对中文服务（DNSLog.cn）的使用、以及 UTC+8 的重启时间**暗示**是一名中文使用者。记为 `incident` / `WEAPON` + `CRED` / `high` / `real_harm: true`。",
+   "summary_ja": "**2026年11月2日、Kaspersky（プレスリリース＋Securelistレポート「CyberStrikeAI in the wild」）は、ラテンアメリカとアフリカの複数国の教育機関で起きた実世界の侵入を記録した。ポストエクスプロイトはLLMオーケストレーターが駆動した。** CyberStrikeAIはGo製のオープンソースAIペネトレーションテスト基盤で、これらの攻撃では**LLMが攻撃者のC2サーバー上で動作**（ツール選択・コマンド生成・結果解析）し、ホスト上の**インプラントはAIを持たず単にタスクを実行**した。Kasperskyは一例を再構成した——人のオペレーターがまず露出していたとみられる**Microsoft SQL Server**（`sqlservr.exe` 16.0.1000）を約24時間で侵害し、**約2週間休止**した後にCyberStrikeAIビーコンを投下。ビーコンは**約2分**で**永続化**（`SystemUpdate`というスケジュールタスク）を設定し、LDAPで**ドメイン偵察**（約5時間）、SMB/WMIで横移動、レジストリハイブのダンプと**comsvcs.dll経由のlsass**抽出、改名したMimikatzで**DCSync＋Golden Ticket**を実行した。**インプラント展開から3〜4日でドメインコントローラーが侵害**され、最終段はデータ収集（SQLサーバーからのDBレコード、ネットワーク資源からのファイル）だった。Kasperskyは活動を既知グループに**帰属せず**、インフラ全体で単一オペレーターとも断定できないとする。スクリプトの中国語コメント、中国系サービス（DNSLog.cn）の利用、UTC+8の再起動タイミングは中国語話者を**示唆**する。`incident` / `WEAPON` + `CRED` / `high` / `real_harm: true`。",
+   "summary_ko": "**2026년 11월 2일, Kaspersky(보도자료 + Securelist 보고서 \"CyberStrikeAI in the wild\")는 라틴아메리카와 아프리카 여러 나라의 교육 부문 기관에서 벌어진 실제 침입을 기록했다. 사후 공격 단계는 LLM 오케스트레이터가 주도했다.** CyberStrikeAI는 Go 기반의 오픈소스 AI 침투 테스트 하네스로, 이 공격들에서 **LLM은 공격자의 C2 서버에서 동작**(도구 선택·명령 생성·결과 분석)했고 호스트의 **임플란트는 AI가 없이 단지 작업을 실행**했다. Kaspersky는 한 사례를 재구성했다——사람 운영자가 먼저 노출되었을 가능성이 큰 **Microsoft SQL Server**(`sqlservr.exe` 16.0.1000)를 약 24시간에 걸쳐 침해하고 **약 2주 쉰 뒤** CyberStrikeAI 비컨을 투입했다. 비컨은 **약 2분** 만에 **지속성**(`SystemUpdate` 예약 작업)을 설정하고 LDAP로 **도메인 정찰**(약 5시간), SMB/WMI 측면 이동, 레지스트리 하이브 덤프와 **comsvcs.dll을 통한 lsass** 추출, 이름을 바꾼 Mimikatz로 **DCSync + Golden Ticket**을 실행했다. **임플란트 배포 후 3~4일 내 도메인 컨트롤러가 침해**됐고, 마지막 단계는 데이터 수집(SQL 서버의 DB 레코드, 네트워크 자원의 파일)이었다. Kaspersky는 활동을 알려진 그룹에 **귀속하지 않으며** 인프라 전반의 단일 운영자도 확신할 수 없다고 한다. 스크립트의 중국어 주석, 중국계 서비스(DNSLog.cn) 사용, UTC+8 재시작 타이밍은 중국어 사용자를 **시사**한다. `incident` / `WEAPON` + `CRED` / `high` / `real_harm: true`.",
+   "summary_de": "**Am 2. November 2026 dokumentierte Kaspersky (Pressemitteilung + ein Securelist-Bericht, „CyberStrikeAI in the wild\") reale Einbrüche bei Bildungseinrichtungen in mehreren Ländern Lateinamerikas und Afrikas, bei denen ein LLM-Orchestrator die Post-Exploitation steuerte.** CyberStrikeAI ist ein quelloffenes, in Go geschriebenes KI-Pentesting-Gerüst; bei diesen Angriffen **lief das LLM auf dem C2-Server des Angreifers** (Toolauswahl, Befehlserzeugung, Ergebnisanalyse), während der **Implantat** auf dem Host **keine KI enthielt und nur Aufgaben ausführte**. Kaspersky rekonstruierte einen Fall: Ein menschlicher Operator kompromittierte zunächst über ~24 h einen vermutlich exponierten **Microsoft SQL Server** (`sqlservr.exe` 16.0.1000), **pausierte ~2 Wochen** und setzte dann das CyberStrikeAI-Beacon ein — das binnen **~2 Minuten** **Persistenz** (eine geplante Aufgabe `SystemUpdate`) einrichtete, per LDAP **Domänen-Aufklärung** (~5 h) betrieb, sich über SMB/WMI seitlich bewegte, Registry-Hives und **lsass via comsvcs.dll** auslas und mit einem umbenannten Mimikatz **DCSync + Golden Ticket** ausführte. **Domänencontroller wurden binnen 3–4 Tagen nach Implantat-Einsatz kompromittiert**; die letzte Phase war Datensammlung (Datenbankdatensätze vom SQL-Server, Dateien aus Netzwerkressourcen). Kaspersky **ordnet** die Aktivität keiner bekannten Gruppe zu und kann keinen einzelnen Operator über die Infrastruktur hinweg bestätigen; chinesischsprachige Skriptkommentare, die Nutzung chinesischer Dienste (DNSLog.cn) und UTC+8-Neustartzeiten **deuten** auf einen chinesischsprachigen Operator hin. `incident` / `WEAPON` + `CRED` / `high` / `real_harm: true`.",
+   "summary_fr": "**Le 2 novembre 2026, Kaspersky (communiqué + un rapport Securelist, « CyberStrikeAI in the wild ») a documenté des intrusions réelles chez des établissements du secteur éducatif dans plusieurs pays d'Amérique latine et d'Afrique, où un orchestrateur LLM pilotait la post-exploitation.** CyberStrikeAI est un harnais open source de test d'intrusion assisté par IA, écrit en Go ; dans ces attaques, **le LLM tournait sur le serveur C2 de l'attaquant** (choix des outils, génération de commandes, analyse des résultats) tandis que l'**implant** sur l'hôte **ne contenait aucune IA et se contentait d'exécuter les tâches**. Kaspersky a reconstitué un cas : un opérateur humain a d'abord compromis en ~24 h un **Microsoft SQL Server** probablement exposé (`sqlservr.exe` 16.0.1000), a **marqué une pause de ~2 semaines**, puis a déployé la balise CyberStrikeAI — qui a établi la **persistance** (une tâche planifiée `SystemUpdate`) en **~2 minutes**, mené une **reconnaissance de domaine** LDAP (~5 h), s'est déplacée latéralement via SMB/WMI, a extrait les ruches de registre et **lsass via comsvcs.dll**, puis exécuté **DCSync + Golden Ticket** avec un Mimikatz renommé. **Les contrôleurs de domaine ont été compromis en 3–4 jours après le déploiement de l'implant** ; la dernière étape a été la collecte de données (enregistrements de base de données depuis le serveur SQL, fichiers depuis les ressources réseau). Kaspersky **n'attribue pas** l'activité à un groupe connu et ne peut confirmer un opérateur unique sur l'ensemble de l'infrastructure ; les commentaires de script en chinois, l'usage de services chinois (DNSLog.cn) et les horaires de redémarrage en UTC+8 **suggèrent** un opérateur sinophone. `incident` / `WEAPON` + `CRED` / `high` / `real_harm: true`.",
+   "summary_es": "**El 2 de noviembre de 2026, Kaspersky (nota de prensa + un informe de Securelist, \"CyberStrikeAI in the wild\") documentó intrusiones reales en organizaciones del sector educativo de varios países de América Latina y África, en las que un orquestador LLM impulsó la post-explotación.** CyberStrikeAI es un marco de código abierto, escrito en Go, para pruebas de penetración con IA; en estos ataques **el LLM se ejecutaba en el servidor C2 del atacante** (selección de herramientas, generación de comandos, análisis de resultados), mientras que el **implante** en el host **no contenía IA y solo ejecutaba tareas**. Kaspersky reconstruyó un caso: un operador humano comprometió primero, en ~24 h, un **Microsoft SQL Server** probablemente expuesto (`sqlservr.exe` 16.0.1000), **hizo una pausa de ~2 semanas** y luego desplegó la baliza de CyberStrikeAI — que estableció **persistencia** (una tarea programada `SystemUpdate`) en **~2 minutos**, realizó **reconocimiento de dominio** por LDAP (~5 h), se movió lateralmente por SMB/WMI, volcó las colmenas del registro y **lsass mediante comsvcs.dll**, y ejecutó **DCSync + Golden Ticket** con un Mimikatz renombrado. **Los controladores de dominio fueron comprometidos en 3–4 días tras el despliegue del implante**; la etapa final fue la recolección de datos (registros de base de datos del servidor SQL, archivos de recursos de red). Kaspersky **no atribuye** la actividad a un grupo conocido ni puede confirmar un único operador en toda la infraestructura; los comentarios de script en chino, el uso de servicios chinos (DNSLog.cn) y los horarios de reinicio en UTC+8 **sugieren** un operador sinohablante. `incident` / `WEAPON` + `CRED` / `high` / `real_harm: true`.",
+   "disputed": false,
+   "landmark": false,
+   "path": "incidents/2026-11/2026-11-02-cyberstrikeai-education-latam-africa.md",
+   "path_zh": "incidents/i18n/zh/2026-11/2026-11-02-cyberstrikeai-education-latam-africa.md",
+   "sources": [
+    {
+     "url": "https://securelist.com/cyberstrikeai-attacks/121715/",
+     "label": "Securelist / Kaspersky (\"CyberStrikeAI in the wild\")"
+    },
+    {
+     "url": "https://www.kaspersky.com/about/press-releases/kaspersky-uncovers-ai-driven-attacks-on-educational-organizations-in-latin-america-and-africa",
+     "label": "Kaspersky press release"
+    },
+    {
+     "url": "https://securityonline.info/cyberstrikeai-framework-attacks",
+     "label": "Security Online"
+    }
+   ]
+  },
+  {
    "id": "2026-11-02-gitbook-ai-agent-breach",
    "title": "GitBook discloses a targeted breach it attributes to AI agents, exposing infrastructure and customer credentials",
    "title_zh": "GitBook 披露一起归因于 AI agents 的定向攻击，基础设施与客户凭证遭泄露",
@@ -19586,6 +19690,110 @@
     {
      "url": "https://cybersecuritynews.com/one-hacker-uses-12-ai-agents/",
      "label": "Cyber Security News"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-05-agentscope-mcp-command-injection-cve-2026-123022",
+   "title": "AgentScope MCP Workspace API: unauthenticated OS command injection (CVE-2026-123022)",
+   "title_zh": "AgentScope MCP Workspace API：未认证的 OS 命令注入（CVE-2026-123022）",
+   "title_ja": "AgentScope MCP Workspace API：認証不要のOSコマンドインジェクション（CVE-2026-123022）",
+   "title_ko": "AgentScope MCP Workspace API: 인증 없는 OS 명령 주입 (CVE-2026-123022)",
+   "title_de": "AgentScope MCP Workspace API: nicht authentifizierte OS-Command-Injection (CVE-2026-123022)",
+   "title_fr": "API MCP Workspace d'AgentScope : injection de commandes OS non authentifiée (CVE-2026-123022)",
+   "title_es": "API MCP Workspace de AgentScope: inyección de comandos del SO no autenticada (CVE-2026-123022)",
+   "date": "2026-11-05",
+   "date_end": null,
+   "date_precision": "day",
+   "date_raw": "2026-11-05 (CVE-2026-123022 published; NVD analysis 'Deferred'); fix in AgentScope PR #3448",
+   "month": "2026-11",
+   "kind": "vulnerability",
+   "type": [
+    "INFRA",
+    "MCP"
+   ],
+   "severity": "high",
+   "confidence": "B",
+   "real_harm": false,
+   "ai_involvement": "confirmed",
+   "region": [
+    "GLOBAL"
+   ],
+   "summary": "**CVE-2026-123022, published 5 November 2026, is an OS command-injection flaw (CWE-78) in the MCP Workspace API of **AgentScope** — an open-source multi-agent framework — that trackers describe as **unauthenticated process execution**.** The workspace component passes an attacker-influenceable value into `subprocess.Popen` (in `_config.py`), so a remote request to an exposed AgentScope MCP stdio workspace can run arbitrary OS commands on the host. Affected versions run through **2.0.11** (listed as 2.0.0–2.0.11; one tracker narrows it to 2.0.4–2.0.11); the fix is **PR #3448** on `agentscope-ai/agentscope`. Severity ratings disagree — **CVSS v3.1 7.3 (High)**, CVSS v4.0 6.9, and one vendor (Red Hat) labels it Critical — and at time of recording the **NVD entry is still \"Deferred\"** with **no official GitHub Security Advisory (GHSA)**, so this is confidence `B`, not `A`. It is distinct from the earlier AgentScope code-injection issues (CVE-2026-6603, in `execute_shell_command`/`execute_python_code` ≤1.0.18) and the authorization flaw CVE-2026-123023. No confirmed in-the-wild exploitation. Recorded `vulnerability` / `INFRA` + `MCP` / `high` / `real_harm: false`.",
+   "summary_zh": "**CVE-2026-123022 于 2026 年 11 月 5 日发布，是 **AgentScope**（一款开源多 agent 框架）的 MCP Workspace API 中的一个 OS 命令注入缺陷（CWE-78），各漏洞库将其描述为**未认证的进程执行**。** 该 workspace 组件把一个可受攻击者影响的值传给 `subprocess.Popen`（位于 `_config.py`），因此对暴露在外的 AgentScope MCP stdio workspace 发出的远程请求即可在主机上执行任意 OS 命令。受影响版本涵盖至 **2.0.11**（标注为 2.0.0–2.0.11；另一来源收窄为 2.0.4–2.0.11）；修复为 `agentscope-ai/agentscope` 上的 **PR #3448**。严重度评级存在分歧——**CVSS v3.1 7.3（高）**、CVSS v4.0 6.9，某厂商（Red Hat）标为 Critical——且记录时 **NVD 条目仍为\"Deferred\"**、**无官方 GitHub 安全公告（GHSA）**,故可信度取 `B` 而非 `A`。它不同于更早的 AgentScope 代码注入问题（CVE-2026-6603，位于 `execute_shell_command`/`execute_python_code` ≤1.0.18）与授权缺陷 CVE-2026-123023。无确认的在野利用。记为 `vulnerability` / `INFRA` + `MCP` / `high` / `real_harm: false`。",
+   "summary_ja": "**2026年11月5日に公表されたCVE-2026-123022は、オープンソースのマルチエージェント基盤**AgentScope**のMCP Workspace APIにおけるOSコマンドインジェクション欠陥（CWE-78）で、各トラッカーは**認証不要のプロセス実行**と記す。** ワークスペース・コンポーネントは攻撃者が影響できる値を（`_config.py`内の）`subprocess.Popen`に渡すため、露出したAgentScope MCP stdioワークスペースへの遠隔リクエストでホスト上で任意のOSコマンドを実行できる。影響版は**2.0.11**まで（2.0.0〜2.0.11と記載。別のトラッカーは2.0.4〜2.0.11に絞る）、修正は`agentscope-ai/agentscope`の**PR #3448**。深刻度の評価は分かれ——**CVSS v3.1 7.3（High）**、CVSS v4.0 6.9、あるベンダー（Red Hat）はCriticalと表記——記録時点で**NVDエントリはなお「Deferred」**、**公式のGitHub Security Advisory（GHSA）は存在しない**ため、信頼度は`A`ではなく`B`とする。これは以前のAgentScopeコードインジェクション（CVE-2026-6603、`execute_shell_command`/`execute_python_code` ≤1.0.18）や認可欠陥CVE-2026-123023とは別物である。実環境での悪用は確認されていない。`vulnerability` / `INFRA` + `MCP` / `high` / `real_harm: false`。",
+   "summary_ko": "**2026년 11월 5일 공개된 CVE-2026-123022는 오픈소스 멀티 에이전트 프레임워크 **AgentScope**의 MCP Workspace API에 존재하는 OS 명령 주입 결함(CWE-78)으로, 각 트래커는 이를 **인증 없는 프로세스 실행**으로 설명한다.** 워크스페이스 구성요소가 공격자가 영향을 줄 수 있는 값을 (`_config.py`의) `subprocess.Popen`에 전달하므로, 노출된 AgentScope MCP stdio 워크스페이스에 대한 원격 요청으로 호스트에서 임의의 OS 명령을 실행할 수 있다. 영향 버전은 **2.0.11**까지(2.0.0–2.0.11로 표기; 다른 트래커는 2.0.4–2.0.11로 좁힘), 수정은 `agentscope-ai/agentscope`의 **PR #3448**이다. 심각도 평가는 엇갈린다——**CVSS v3.1 7.3(High)**, CVSS v4.0 6.9, 한 벤더(Red Hat)는 Critical로 표기——그리고 기록 시점에 **NVD 항목이 여전히 \"Deferred\"**이고 **공식 GitHub 보안 권고(GHSA)가 없어** 신뢰도는 `A`가 아닌 `B`로 둔다. 이는 이전의 AgentScope 코드 주입 문제(CVE-2026-6603, `execute_shell_command`/`execute_python_code` ≤1.0.18) 및 권한 결함 CVE-2026-123023과는 별개다. 확인된 실제 악용은 없다. `vulnerability` / `INFRA` + `MCP` / `high` / `real_harm: false`.",
+   "summary_de": "**CVE-2026-123022, veröffentlicht am 5. November 2026, ist eine OS-Command-Injection-Schwachstelle (CWE-78) in der MCP Workspace API von **AgentScope** — einem quelloffenen Multi-Agenten-Framework —, die Tracker als **nicht authentifizierte Prozessausführung** beschreiben.** Die Workspace-Komponente übergibt einen vom Angreifer beeinflussbaren Wert an `subprocess.Popen` (in `_config.py`), sodass eine entfernte Anfrage an einen exponierten AgentScope-MCP-stdio-Workspace beliebige OS-Befehle auf dem Host ausführen kann. Betroffene Versionen reichen bis **2.0.11** (angegeben als 2.0.0–2.0.11; ein Tracker grenzt auf 2.0.4–2.0.11 ein); der Fix ist **PR #3448** in `agentscope-ai/agentscope`. Die Schweregrad-Bewertungen widersprechen sich — **CVSS v3.1 7.3 (High)**, CVSS v4.0 6.9, und ein Anbieter (Red Hat) stuft es als Critical ein — und zum Zeitpunkt der Erfassung ist der **NVD-Eintrag noch „Deferred\"** ohne **offizielles GitHub Security Advisory (GHSA)**, daher Konfidenz `B`, nicht `A`. Sie ist verschieden von den früheren AgentScope-Code-Injection-Problemen (CVE-2026-6603 in `execute_shell_command`/`execute_python_code` ≤1.0.18) und der Autorisierungslücke CVE-2026-123023. Keine bestätigte Ausnutzung in freier Wildbahn. `vulnerability` / `INFRA` + `MCP` / `high` / `real_harm: false`.",
+   "summary_fr": "**CVE-2026-123022, publiée le 5 novembre 2026, est une faille d'injection de commandes OS (CWE-78) dans l'API MCP Workspace d'**AgentScope** — un framework multi-agents open source — que les trackers décrivent comme une **exécution de processus non authentifiée**.** Le composant workspace passe une valeur influençable par l'attaquant à `subprocess.Popen` (dans `_config.py`), de sorte qu'une requête distante vers un workspace stdio MCP d'AgentScope exposé peut exécuter des commandes OS arbitraires sur l'hôte. Les versions affectées vont jusqu'à **2.0.11** (indiquées 2.0.0–2.0.11 ; un tracker restreint à 2.0.4–2.0.11) ; le correctif est la **PR #3448** sur `agentscope-ai/agentscope`. Les notes de gravité divergent — **CVSS v3.1 7.3 (High)**, CVSS v4.0 6.9, et un éditeur (Red Hat) la qualifie de Critical — et au moment de l'enregistrement l'**entrée NVD est encore « Deferred »** sans **avis de sécurité GitHub officiel (GHSA)**, d'où une confiance `B`, pas `A`. Elle est distincte des problèmes d'injection de code AgentScope antérieurs (CVE-2026-6603, dans `execute_shell_command`/`execute_python_code` ≤1.0.18) et de la faille d'autorisation CVE-2026-123023. Aucune exploitation confirmée dans la nature. `vulnerability` / `INFRA` + `MCP` / `high` / `real_harm: false`.",
+   "summary_es": "**CVE-2026-123022, publicada el 5 de noviembre de 2026, es un fallo de inyección de comandos del SO (CWE-78) en la API MCP Workspace de **AgentScope** —un marco multiagente de código abierto— que los rastreadores describen como **ejecución de procesos no autenticada**.** El componente workspace pasa un valor influenciable por el atacante a `subprocess.Popen` (en `_config.py`), de modo que una solicitud remota a un workspace stdio MCP de AgentScope expuesto puede ejecutar comandos del SO arbitrarios en el host. Las versiones afectadas llegan hasta la **2.0.11** (indicadas como 2.0.0–2.0.11; un rastreador la acota a 2.0.4–2.0.11); la corrección es la **PR #3448** en `agentscope-ai/agentscope`. Las calificaciones de gravedad discrepan — **CVSS v3.1 7.3 (Alta)**, CVSS v4.0 6.9, y un proveedor (Red Hat) la etiqueta como Crítica — y al momento de registrarla la **entrada de NVD sigue en \"Deferred\"** sin un **aviso de seguridad oficial de GitHub (GHSA)**, de ahí la confianza `B`, no `A`. Es distinta de los problemas de inyección de código anteriores de AgentScope (CVE-2026-6603, en `execute_shell_command`/`execute_python_code` ≤1.0.18) y del fallo de autorización CVE-2026-123023. Sin explotación confirmada en la naturaleza. `vulnerability` / `INFRA` + `MCP` / `high` / `real_harm: false`.",
+   "disputed": false,
+   "landmark": false,
+   "path": "incidents/2026-11/2026-11-05-agentscope-mcp-command-injection-cve-2026-123022.md",
+   "path_zh": "incidents/i18n/zh/2026-11/2026-11-05-agentscope-mcp-command-injection-cve-2026-123022.md",
+   "sources": [
+    {
+     "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-123022",
+     "label": "NVD — CVE-2026-123022"
+    },
+    {
+     "url": "https://github.com/agentscope-ai/agentscope/pull/3448",
+     "label": "AgentScope — fix (PR #3448)"
+    },
+    {
+     "url": "https://app.opencve.io/cve/CVE-2026-123022",
+     "label": "OpenCVE — CVE-2026-123022"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-05-artex-hacking-on-autopilot-cybercrime",
+   "title": "\"Hacking on Autopilot\": Check Point reconstructs ARTEX cybercrime campaigns from recovered operator consoles",
+   "title_zh": "\"自动驾驶式黑客\"：Check Point 从缴获的操作者控制台还原 ARTEX 网络犯罪战役",
+   "title_ja": "「オートパイロットのハッキング」：Check Pointが押収したオペレーターのコンソールからARTEXサイバー犯罪キャンペーンを再構成",
+   "title_ko": "\"오토파일럿 해킹\": Check Point, 확보한 운영자 콘솔에서 ARTEX 사이버범죄 캠페인을 재구성",
+   "title_de": "\"Hacking on Autopilot\": Check Point rekonstruiert ARTEX-Cybercrime-Kampagnen aus geborgenen Operator-Konsolen",
+   "title_fr": "« Hacking on Autopilot » : Check Point reconstitue des campagnes cybercriminelles ARTEX à partir de consoles d'opérateurs récupérées",
+   "title_es": "\"Hacking on Autopilot\": Check Point reconstruye campañas cibercriminales con ARTEX a partir de consolas de operadores recuperadas",
+   "date": "2026-11-05",
+   "date_end": null,
+   "date_precision": "day",
+   "date_raw": "2026-11-05 (Check Point Research report; campaigns observed 2026-10-14 → 2026-10-29)",
+   "month": "2026-11",
+   "kind": "incident",
+   "type": [
+    "WEAPON",
+    "EXFIL"
+   ],
+   "severity": "high",
+   "confidence": "A",
+   "real_harm": true,
+   "ai_involvement": "confirmed",
+   "region": [
+    "GLOBAL"
+   ],
+   "summary": "**On 5 November 2026, Check Point Research published \"Hacking on Autopilot: Inside ARTEX Cybercrime Campaigns,\" a forensic look at how criminals abuse ARTEX — a Chinese open-source AI penetration-testing harness — after finding that operators had left their consoles exposed.** Check Point counted **2,557** systems that hosted or had hosted ARTEX panels (**1,608** live and publicly reachable at research time; the report's own Key Points says \">1,800\") and read the **full databases of 10** misconfigured servers. The recovered logs document financially motivated campaigns that ran largely on their own — the report states \"most attacks were fully autonomous besides the initial goal setup.\" Three stand out: (1) **Apple code-signing-certificate theft** (14–29 Oct, DeepSeek v4.1 Flash + Kimi K3.1 Pro, ~36B tokens / $700–1,500) hit 10 gray-market iOS signing shops and took **300+ `.p12` certificates and passwords** (3 validated as usable); (2) a **crypto-payment theft attempt** (4 days, DeepSeek v4 Pro, 292 crypto-payment domains, **400,791 agent messages**) that netted **$0** — the agents **hallucinated** exploitable findings and judged success only from API responses; (3) **gaming-account harvesting** (~5 days, 13 sites, DeepSeek-V4.1-Flash via a relay) that recovered **190,000+ Honor of Kings credential sets** (~3.3% still valid, ~6,000; 29 confirmed live). This sits inside a wider early-November ARTEX wave (CrowdStrike's human-directed VAPOR PANDA against 200+ orgs; Censys's 1,465 exposed consoles) — but Google's GTIG cautions there is still no evidence of fully human-out-of-the-loop hacking. Recorded `incident` / `WEAPON` + `EXFIL` / `high` / `real_harm: true`.",
+   "summary_zh": "**2026 年 11 月 5 日，Check Point Research 发布《Hacking on Autopilot：深入 ARTEX 网络犯罪战役》,在发现操作者把控制台暴露在公网后，取证还原了犯罪分子如何滥用 ARTEX——一款中国开源的 AI 渗透测试框架。** Check Point 统计到 **2,557** 台曾托管 ARTEX 面板的系统（研究时 **1,608** 台在线且可公开访问；报告自己的 Key Points 又写\">1,800\"），并读取了 **10** 台错配服务器的**完整数据库**。恢复到的日志记录了几场基本自主运行的逐利战役——报告称\"除最初的目标设定外，多数攻击是完全自主的\"。其中三场最突出：（1）**Apple 代码签名证书盗窃**（10-14→29，DeepSeek v4.1 Flash + Kimi K3.1 Pro，约 360 亿 token / $700–1,500）打了 10 家灰产 iOS 签名店、取走 **300+ 个 `.p12` 证书及密码**（3 个验证可用）；（2）一场**加密支付盗窃尝试**（4 天，DeepSeek v4 Pro，292 个加密支付域，**40 万 791 条 agent 消息**）最终**颗粒无收（$0）**——agent **凭空\"幻觉\"出可利用的漏洞**、仅凭 API 响应就判定成功；（3）**游戏账号收割**（约 5 天，13 个站点，经中转的 DeepSeek-V4.1-Flash）恢复出 **19 万+《王者荣耀》凭据**（约 3.3% 仍有效、约 6,000 个；29 个确认可用）。这处在 11 月初更大的 ARTEX 浪潮之中（CrowdStrike 记录的人工指挥的 VAPOR PANDA 打了 200+ 机构；Censys 发现 1,465 台暴露控制台）——但 Google GTIG 提醒：目前仍无\"人完全不在回路\"的全自主黑客证据。记为 `incident` / `WEAPON` + `EXFIL` / `high` / `real_harm: true`。",
+   "summary_ja": "**2026年11月5日、Check Point Researchは「Hacking on Autopilot: Inside ARTEX Cybercrime Campaigns」を公開し、オペレーターがコンソールを露出させていたのを発見した後、犯罪者が中国発のオープンソースAIペネトレーションテスト基盤ARTEXをどう悪用するかをフォレンジックに再構成した。** Check PointはARTEXパネルをホストした（している）システムを**2,557**台（調査時点で**1,608**台が稼働・公開。報告のKey Pointsは「1,800超」とも記す）数え、**10**台の誤設定サーバーの**完全なデータベース**を読み取った。復元されたログは、ほぼ自律的に走った金銭目的のキャンペーンを記録する——報告は「最初の目標設定を除けば、ほとんどの攻撃は完全自律だった」と述べる。特に三つ：（1）**Appleコード署名証明書の窃取**（10/14〜29、DeepSeek v4.1 Flash + Kimi K3.1 Pro、約360億トークン/$700〜1,500）は灰色市場のiOS署名店10軒を襲い、**300超の`.p12`証明書とパスワード**を取得（3件が使用可能と検証）；（2）**暗号決済の窃取試行**（4日間、DeepSeek v4 Pro、292の暗号決済ドメイン、**40万791件のエージェントメッセージ**）は**$0**に終わり——エージェントは悪用可能な「発見」を**幻覚**し、APIレスポンスのみで成功と判定した；（3）**ゲームアカウント収集**（約5日間、13サイト、中継経由のDeepSeek-V4.1-Flash）は**19万超のHonor of King 資格情報セット**を復元（約3.3%が有効、約6,000；29件が稼働確認）。これは11月初旬のより大きなARTEXの波（CrowdStrikeの人手主導VAPOR PANDAが200超の組織を攻撃；Censysが1,465台の露出コンソールを検出）の中にある——ただしGoogleのGTIGは、完全に人が回路の外に出た自律ハッキングの証拠はまだないと注意する。`incident` / `WEAPON` + `EXFIL` / `high` / `real_harm: true`。",
+   "summary_ko": "**2026년 11월 5일, Check Point Research는 \"Hacking on Autopilot: Inside ARTEX Cybercrime Campaigns\"를 공개해, 운영자들이 콘솔을 공개망에 노출한 것을 발견한 뒤 범죄자들이 중국산 오픈소스 AI 침투 테스트 하네스 ARTEX를 어떻게 악용하는지 포렌식으로 재구성했다.** Check Point는 ARTEX 패널을 호스팅했(거나 하는) 시스템 **2,557**대(조사 시점 **1,608**대가 가동·공개. 보고서의 Key Points는 \"1,800대 초과\"로도 기재)를 집계하고, 잘못 구성된 서버 **10**대의 **전체 데이터베이스**를 읽었다. 복원된 로그는 대체로 스스로 돌아간 금전 목적 캠페인을 기록한다——보고서는 \"최초 목표 설정을 제외하면 대부분의 공격이 완전 자율이었다\"고 말한다. 특히 셋: (1) **Apple 코드 서명 인증서 탈취**(10/14〜29, DeepSeek v4.1 Flash + Kimi K3.1 Pro, 약 360억 토큰/$700〜1,500)는 회색시장 iOS 서명 상점 10곳을 노려 **300개 이상의 `.p12` 인증서와 비밀번호**를 가져갔다(3개가 사용 가능으로 검증); (2) **암호화폐 결제 탈취 시도**(4일, DeepSeek v4 Pro, 292개 암호결제 도메인, **40만 791건의 에이전트 메시지**)는 **$0**로 끝났다——에이전트는 악용 가능한 \"발견\"을 **환각**하고 API 응답만으로 성공을 판정했다; (3) **게임 계정 수집**(약 5일, 13개 사이트, 중계를 거친 DeepSeek-V4.1-Flash)은 **19만 개 이상의 Honor of Kings 자격 증명 세트**를 복원했다(약 3.3%가 여전히 유효, 약 6,000개; 29개 가동 확인). 이는 11월 초의 더 큰 ARTEX 물결(CrowdStrike가 기록한 인간 지휘 VAPOR PANDA가 200여 조직 공격; Censys가 1,465대의 노출 콘솔 발견) 안에 있다——다만 Google GTIG는 사람이 완전히 루프 밖으로 나간 자율 해킹의 증거는 아직 없다고 주의를 준다. `incident` / `WEAPON` + `EXFIL` / `high` / `real_harm: true`.",
+   "summary_de": "**Am 5. November 2026 veröffentlichte Check Point Research „Hacking on Autopilot: Inside ARTEX Cybercrime Campaigns\" — eine forensische Analyse, wie Kriminelle ARTEX missbrauchen (ein chinesisches Open-Source-KI-Pentesting-Gerüst), nachdem Betreiber ihre Konsolen offen ins Netz gestellt hatten.** Check Point zählte **2.557** Systeme, die ARTEX-Panels hosten oder gehostet hatten (**1.608** zur Untersuchungszeit live und öffentlich erreichbar; die Key Points des Berichts nennen „>1.800\"), und las die **vollständigen Datenbanken von 10** falsch konfigurierten Servern. Die geborgenen Logs dokumentieren finanziell motivierte Kampagnen, die weitgehend von selbst liefen — der Bericht sagt, „die meisten Angriffe waren abgesehen von der anfänglichen Zielsetzung vollständig autonom\". Drei stechen hervor: (1) **Diebstahl von Apple-Code-Signatur-Zertifikaten** (14.–29. Okt., DeepSeek v4.1 Flash + Kimi K3.1 Pro, ~36 Mrd. Token / 700–1.500 $) traf 10 Grau­markt-iOS-Signaturshops und entwendete **über 300 `.p12`-Zertifikate und Passwörter** (3 als nutzbar verifiziert); (2) ein **Krypto-Zahlungsdiebstahl-Versuch** (4 Tage, DeepSeek v4 Pro, 292 Krypto-Zahlungsdomains, **400.791 Agenten-Nachrichten**) brachte **0 $** — die Agenten **halluzinierten** ausnutzbare Funde und bewerteten Erfolg allein anhand von API-Antworten; (3) **Abgreifen von Gaming-Konten** (~5 Tage, 13 Seiten, DeepSeek-V4.1-Flash über ein Relay) barg **über 190.000 Honor-of-Kings-Zugangsdatensätze** (~3,3 % noch gültig, ~6.000; 29 als aktiv bestätigt). Das liegt innerhalb einer größeren ARTEX-Welle Anfang November (CrowdStrikes menschlich gesteuertes VAPOR PANDA gegen 200+ Organisationen; Censys' 1.465 offene Konsolen) — doch Googles GTIG mahnt, es gebe noch keinen Beleg für vollständig menschenfreies autonomes Hacking. `incident` / `WEAPON` + `EXFIL` / `high` / `real_harm: true`.",
+   "summary_fr": "**Le 5 novembre 2026, Check Point Research a publié « Hacking on Autopilot: Inside ARTEX Cybercrime Campaigns », une analyse forensique de la façon dont des criminels abusent d'ARTEX — un harnais open source chinois de test d'intrusion assisté par IA — après avoir découvert que des opérateurs avaient laissé leurs consoles exposées.** Check Point a dénombré **2 557** systèmes ayant hébergé des panneaux ARTEX (**1 608** actifs et accessibles publiquement au moment de la recherche ; les Key Points du rapport indiquent « >1 800 ») et a lu les **bases de données complètes de 10** serveurs mal configurés. Les journaux récupérés documentent des campagnes à motivation financière qui tournaient en grande partie seules — le rapport indique que « la plupart des attaques étaient entièrement autonomes hormis la définition initiale de l'objectif ». Trois ressortent : (1) le **vol de certificats de signature de code Apple** (14–29 oct., DeepSeek v4.1 Flash + Kimi K3.1 Pro, ~36 Md de jetons / 700–1 500 $) a visé 10 boutiques de signature iOS du marché gris et dérobé **plus de 300 certificats `.p12` et mots de passe** (3 validés comme utilisables) ; (2) une **tentative de vol de paiements crypto** (4 jours, DeepSeek v4 Pro, 292 domaines de paiement crypto, **400 791 messages d'agents**) n'a rapporté **0 $** — les agents ont **halluciné** des découvertes exploitables et jugeaient le succès uniquement d'après les réponses d'API ; (3) la **récolte de comptes de jeu** (~5 jours, 13 sites, DeepSeek-V4.1-Flash via un relais) a récupéré **plus de 190 000 jeux d'identifiants Honor of Kings** (~3,3 % encore valides, ~6 000 ; 29 confirmés actifs). Cela s'inscrit dans une vague ARTEX plus large début novembre (le VAPOR PANDA dirigé par des humains de CrowdStrike contre 200+ organisations ; les 1 465 consoles exposées de Censys) — mais le GTIG de Google rappelle qu'il n'existe toujours aucune preuve d'un piratage pleinement autonome sans humain dans la boucle. `incident` / `WEAPON` + `EXFIL` / `high` / `real_harm: true`.",
+   "summary_es": "**El 5 de noviembre de 2026, Check Point Research publicó \"Hacking on Autopilot: Inside ARTEX Cybercrime Campaigns\", un análisis forense de cómo los delincuentes abusan de ARTEX —un marco chino de código abierto para pruebas de penetración con IA— tras descubrir que los operadores habían dejado sus consolas expuestas.** Check Point contó **2.557** sistemas que alojaban o habían alojado paneles de ARTEX (**1.608** activos y accesibles públicamente al momento de la investigación; los Key Points del informe dicen \">1.800\") y leyó las **bases de datos completas de 10** servidores mal configurados. Los registros recuperados documentan campañas con fines económicos que corrían en gran medida solas —el informe afirma que \"la mayoría de los ataques fueron totalmente autónomos salvo la definición inicial del objetivo\". Tres destacan: (1) el **robo de certificados de firma de código de Apple** (14–29 oct., DeepSeek v4.1 Flash + Kimi K3.1 Pro, ~36 mil millones de tokens / 700–1.500 $) golpeó a 10 tiendas de firma de iOS del mercado gris y se llevó **más de 300 certificados `.p12` y contraseñas** (3 validados como utilizables); (2) un **intento de robo de pagos cripto** (4 días, DeepSeek v4 Pro, 292 dominios de pago cripto, **400.791 mensajes de agentes**) no obtuvo **nada ($0)** —los agentes **alucinaron** hallazgos explotables y juzgaban el éxito solo por las respuestas de la API—; (3) la **recolección de cuentas de juego** (~5 días, 13 sitios, DeepSeek-V4.1-Flash vía un relé) recuperó **más de 190.000 conjuntos de credenciales de Honor of Kings** (~3,3 % aún válidas, ~6.000; 29 confirmadas activas). Esto se enmarca en una ola ARTEX más amplia a comienzos de noviembre (el VAPOR PANDA dirigido por humanos de CrowdStrike contra 200+ organizaciones; las 1.465 consolas expuestas de Censys) —pero el GTIG de Google advierte que aún no hay pruebas de un hackeo totalmente autónomo sin humano en el bucle. `incident` / `WEAPON` + `EXFIL` / `high` / `real_harm: true`.",
+   "disputed": false,
+   "landmark": false,
+   "path": "incidents/2026-11/2026-11-05-artex-hacking-on-autopilot-cybercrime.md",
+   "path_zh": "incidents/i18n/zh/2026-11/2026-11-05-artex-hacking-on-autopilot-cybercrime.md",
+   "sources": [
+    {
+     "url": "https://research.checkpoint.com/2026/hacking-on-autopilot-inside-artex-cybercrime-campaigns/",
+     "label": "Check Point Research (\"Hacking on Autopilot\")"
+    },
+    {
+     "url": "https://www.infosecurity-magazine.com/news/artex-activity-exceeds-reported/",
+     "label": "Infosecurity Magazine (Censys exposure)"
+    },
+    {
+     "url": "https://www.itnews.com.au/news/artex-ai-hacking-framework-spreads-to-another-china-linked-group-630045",
+     "label": "iTnews (CrowdStrike VAPOR PANDA / GTIG)"
     }
    ]
   }
