@@ -1,16 +1,16 @@
 # 2026-10
 
 <!-- BEGIN:summary -->
-**25** records
+**26** records
 
-![records](https://img.shields.io/badge/records-25-48545A?style=flat-square) ![critical](https://img.shields.io/badge/Critical-2-88091D?style=flat-square) ![high](https://img.shields.io/badge/High-12-B23B40?style=flat-square) ![medium](https://img.shields.io/badge/Medium-7-C4615F?style=flat-square) ![low](https://img.shields.io/badge/Low-2-8C6A6A?style=flat-square) ![info](https://img.shields.io/badge/Info-2-6B7175?style=flat-square)
+![records](https://img.shields.io/badge/records-26-48545A?style=flat-square) ![critical](https://img.shields.io/badge/Critical-2-88091D?style=flat-square) ![high](https://img.shields.io/badge/High-12-B23B40?style=flat-square) ![medium](https://img.shields.io/badge/Medium-8-C4615F?style=flat-square) ![low](https://img.shields.io/badge/Low-2-8C6A6A?style=flat-square) ![info](https://img.shields.io/badge/Info-2-6B7175?style=flat-square)
 
 ```mermaid
 pie showData
     title 2026-10 by severity
     "Critical" : 2
     "High" : 12
-    "Medium" : 7
+    "Medium" : 8
     "Low" : 2
     "Info" : 2
 ```
@@ -44,6 +44,7 @@ pie showData
 | `10-27` | [Warp discloses a third-party vendor breach that exposed AI-agent decision logs and user telemetry](2026-10-27-warp-vendor-breach-agent-logs.md) | `EXFIL` `INFRA` | Medium | A | ✅ |
 | `10-29` | [A malicious Claude Code extension on Cursor's marketplace planted an SSH backdoor](2026-10-29-cursor-claude-code-extension-ssh-backdoor.md) | `SUPPLY` | **High** | A | — |
 | `10-30` | ["Black October": a coordinated wave breached at least nine AI developer platforms to harvest AI-access credentials](2026-10-30-black-october-ai-developer-platform-breaches.md) | `CRED` `INFRA` | **High** | A | ✅ |
+| `10-30` | [SpyCloud: infostealers now harvest AI coding-tool tokens and API keys — WardenStealer and Aoki target Claude Code and Codex](2026-10-30-spycloud-ai-coding-tool-token-theft.md) | `CRED` `EXFIL` | Medium | A | — |
 
 <sub>★ = `critical` · ⚠️ = disputed facts or attribution · real harm: ✅ confirmed victim / — none / · not applicable (policy and intelligence reports)</sub>
 <!-- END:summary -->

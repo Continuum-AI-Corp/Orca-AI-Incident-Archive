@@ -8,7 +8,7 @@ vendor policy moves all sit here. It is the largest group in the archive; the
 high share follows from that rule, not from a lack of geography.
 
 <!-- BEGIN:incidents -->
-## All records (334)
+## All records (338)
 
 | Date | Record | Type | Severity | Confidence | Real harm |
 |---|---|---|---|---|---|
@@ -345,7 +345,11 @@ high share follows from that rule, not from a lack of geography.
 | `2026-10-27` | [Warp discloses a third-party vendor breach that exposed AI-agent decision logs and user telemetry](../incidents/2026-10/2026-10-27-warp-vendor-breach-agent-logs.md) | `EXFIL` `INFRA` | Medium | A | ✅ |
 | `2026-10-29` | [A malicious Claude Code extension on Cursor's marketplace planted an SSH backdoor](../incidents/2026-10/2026-10-29-cursor-claude-code-extension-ssh-backdoor.md) | `SUPPLY` | **High** | A | — |
 | `2026-10-30` | ["Black October": a coordinated wave breached at least nine AI developer platforms to harvest AI-access credentials](../incidents/2026-10/2026-10-30-black-october-ai-developer-platform-breaches.md) | `CRED` `INFRA` | **High** | A | ✅ |
+| `2026-10-30` | [SpyCloud: infostealers now harvest AI coding-tool tokens and API keys — WardenStealer and Aoki target Claude Code and Codex](../incidents/2026-10/2026-10-30-spycloud-ai-coding-tool-token-theft.md) | `CRED` `EXFIL` | Medium | A | — |
+| `2026-11-02` | [CyberStrikeAI in the wild: an LLM-orchestrated intrusion reaches domain admin at education targets in Latin America and Africa](../incidents/2026-11/2026-11-02-cyberstrikeai-education-latam-africa.md) | `WEAPON` `CRED` | **High** | A | ✅ |
 | `2026-11-02` | [GitBook discloses a targeted breach it attributes to AI agents, exposing infrastructure and customer credentials](../incidents/2026-11/2026-11-02-gitbook-ai-agent-breach.md) | `CRED` `INFRA` | **High** | A | ✅ |
+| `2026-11-05` | [AgentScope MCP Workspace API: unauthenticated OS command injection (CVE-2026-123022)](../incidents/2026-11/2026-11-05-agentscope-mcp-command-injection-cve-2026-123022.md) | `INFRA` `MCP` | **High** | B | — |
+| `2026-11-05` | ["Hacking on Autopilot": Check Point reconstructs ARTEX cybercrime campaigns from recovered operator consoles](../incidents/2026-11/2026-11-05-artex-hacking-on-autopilot-cybercrime.md) | `WEAPON` `EXFIL` | **High** | A | ✅ |
 <!-- END:incidents -->
 
 ---

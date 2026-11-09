@@ -23,6 +23,7 @@ https://aiweekly.co/alerts/deepmind-opens-institute-to-publish-essays-on-agi-saf
 https://alignment.openai.com/misalignment-reports/
 https://alignment.openai.com/misalignment-reports/an-agent-used-dns-to-reach-an-external-chatbot/
 https://anthropic.com/claude-opus-5-5-system-card
+https://app.opencve.io/cve/CVE-2026-123022
 https://app.opencve.io/cve/CVE-2026-18252
 https://app.opencve.io/cve/CVE-2026-62830
 https://app.opencve.io/cve/CVE-2026-75130
@@ -112,6 +113,7 @@ https://cybersecuritynews.com/github-copilot-cli-vulnerability/
 https://cybersecuritynews.com/gitlab-fixes-claude-ai-agent-flaw/
 https://cybersecuritynews.com/hackers-exploit-copilot-studios-new-connected-agents-feature/
 https://cybersecuritynews.com/hackers-use-llm-agent-to-move-from-marimo-rce/
+https://cybersecuritynews.com/hackers-use-new-infostealer-malware/
 https://cybersecuritynews.com/one-hacker-uses-12-ai-agents/
 https://cybersecuritynews.com/openai-ai-agents-bypass-security/
 https://cybersecuritynews.com/openclaw-chain-vulnerabilities/
@@ -175,6 +177,7 @@ https://github.com/advisories/GHSA-4fgq-fpq9-mr3g
 https://github.com/advisories/GHSA-7f8r-222p-6f5g
 https://github.com/advisories/GHSA-wj2m-jvpr-64cq
 https://github.com/advisories/GHSA-xrxf-jgv3-qmrm
+https://github.com/agentscope-ai/agentscope/pull/3448
 https://github.com/anthropics/mythos-5-incident-transcript
 https://github.com/aquasecurity/trivy/security/advisories/GHSA-69fq-xp46-6x23
 https://github.com/asset-group/ghostsplice
@@ -252,6 +255,7 @@ https://noma.security/blog/forcedleak-agent-risks-exposed-in-salesforce-agentfor
 https://noma.security/blog/gitlost-how-we-tricked-githubs-ai-agent-into-leaking-private-repos/
 https://noma.security/noma-labs/workflow-identity-hijacking-the-silent-backdoor-in-ai-workflows
 https://nvd.nist.gov/vuln/detail/CVE-2026-103956
+https://nvd.nist.gov/vuln/detail/CVE-2026-123022
 https://nvd.nist.gov/vuln/detail/CVE-2026-18875
 https://nvd.nist.gov/vuln/detail/CVE-2026-26118
 https://nvd.nist.gov/vuln/detail/CVE-2026-30615
@@ -298,6 +302,7 @@ https://red.anthropic.com/2026/mythos-preview/
 https://red.anthropic.com/2026/n-days/
 https://red.anthropic.com/2026/zero-days/
 https://research.checkpoint.com/2025/ai-evasion-prompt-injection/
+https://research.checkpoint.com/2026/hacking-on-autopilot-inside-artex-cybercrime-campaigns/
 https://research.checkpoint.com/2026/rce-and-api-token-exfiltration-through-claude-code-project-files-cve-2025-59536/
 https://research.jfrog.com/post/litellm-hijacked-again/
 https://research.jfrog.com/vulnerabilities/bifrost-is-vulnerable-to-unauthenticated-remote-code-execution-via-a-custom-plugin-http-path-on-dynamically-linked-builds-cve-2026-86242-jfsa-2026-001684572/
@@ -309,6 +314,7 @@ https://safedep.io/megalodon-mass-github-repo-backdooring-ci-workflows/
 https://safedep.io/memtensor-sckit-worm-npm-pypi/
 https://safedep.io/miasma-worm-ai-coding-agent-config-injection/
 https://santageai.com/news/2026/09/12/senate-ai-duty-of-care-bill
+https://securelist.com/cyberstrikeai-attacks/121715/
 https://securityaffairs.com/188749/hacking/clawjacked-flaw-exposed-openclaw-users-to-data-theft.html
 https://securityaffairs.com/194081/hacking/difytap-four-bugs-put-over-1-million-ai-apps-at-risk.html
 https://securityaffairs.com/194822/ai/hidden-web-prompts-trick-ai-agents-into-sending-money.html
@@ -318,6 +324,7 @@ https://securityaffairs.com/200661/hacking/ai-driven-tool-artex-used-in-attacks-
 https://securityboulevard.com/2026/01/vulnerability-in-anthropics-claude-code-shows-up-in-cowork/
 https://securityboulevard.com/2026/03/amazon-lost-6-3-million-orders-to-vibe-coding-your-soc-is-next/
 https://securitylabs.datadoghq.com/articles/shai-hulud-2.0-npm-worm/
+https://securityonline.info/cyberstrikeai-framework-attacks
 https://securityonline.info/loom-for-aws-sagemaker-flaws/
 https://services.google.com/fh/files/misc/advances-in-threat-actor-usage-of-ai-tools-en.pdf
 https://siliconangle.com/2025/02/12/ai-aggregator-omnigpt-reportedly-breached-sensitive-user-data-leaked-online/
@@ -335,6 +342,7 @@ https://socket.dev/blog/tensorlake-compromise
 https://socket.dev/blog/unauthorized-ai-agent-execution-code-published-to-openvsx-in-aqua-trivy-vs-code-extension
 https://socradar.io/blog/mexican-government-breach-claude-chatgpt/
 https://socradar.io/blog/sharedroot-sandbox-escape-claude-cowork/
+https://spycloud.com/blog/infostealers-now-target-ai-tokens-and-api-keys/
 https://startupfortune.com/openai-reveals-its-red-teaming-agents-found-a-hardware-level-covert-channel/
 https://startupfortune.com/opencode-breach-exposes-stored-openai-and-anthropic-keys-prompts-urgent-key-rotation/
 https://status.rubygems.org/incidents/cytf062tkwtt
@@ -590,6 +598,8 @@ https://www.ibm.com/support/pages/node/7288641
 https://www.implicator.ai/moltbook-left-every-ai-agents-api-keys-in-an-open-database-security-researcher-finds/
 https://www.infoq.cn/article/CEphwKjzAe7LzbOriLcq
 https://www.infosecurity-magazine.com/news/abuse-cursor-agent-ransomware/
+https://www.infosecurity-magazine.com/news/aoki-infostealer-ai-coding/
+https://www.infosecurity-magazine.com/news/artex-activity-exceeds-reported/
 https://www.infosecurity-magazine.com/news/attackers-hide-ai-prompt/
 https://www.infosecurity-magazine.com/news/indirect-prompt-injection-web/
 https://www.infosecurity-magazine.com/news/opencode-quietly-patched-critical/
@@ -599,6 +609,8 @@ https://www.inquirer.com/crime/anthropic-artificial-intelligence-philadelphia-po
 https://www.ipa.go.jp/digital/ai/security/ai-security-bulletin.html
 https://www.irregular.com/research/assessing-gpt-5.6-sol
 https://www.ithome.com/1/003/876.htm
+https://www.itnews.com.au/news/artex-ai-hacking-framework-spreads-to-another-china-linked-group-630045
+https://www.kaspersky.com/about/press-releases/kaspersky-uncovers-ai-driven-attacks-on-educational-organizations-in-latin-america-and-africa
 https://www.kiteworks.com/cybersecurity-risk-management/ai-agent-security-incidents-2026/
 https://www.kodemsecurity.com/resources/aws-kiro-agentic-ide-rce-prompt-injection-mcp-config-vulnerability
 https://www.koi.ai/blog
