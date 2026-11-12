@@ -29,7 +29,7 @@ The same pattern was replicated 13 times over 15 months, across 6 vendors. **Thi
 ---
 
 <!-- BEGIN:incidents -->
-## All records (67)
+## All records (69)
 
 | Date | Record | Type | Severity | Confidence | Real harm |
 |---|---|---|---|---|---|
@@ -100,6 +100,8 @@ The same pattern was replicated 13 times over 15 months, across 6 vendors. **Thi
 | `2026-10-30` | [SpyCloud: infostealers now harvest AI coding-tool tokens and API keys — WardenStealer and Aoki target Claude Code and Codex](../incidents/2026-10/2026-10-30-spycloud-ai-coding-tool-token-theft.md) | `CRED` `EXFIL` | Medium | A | — |
 | `2026-11-04` | ["BOSSAI": Acronis documents a lone operator's 12-agent AI attack mesh that breached emergency services across three countries](../incidents/2026-11/2026-11-04-bossai-ai-attack-mesh-taiwan-emergency.md) | `WEAPON` `EXFIL` | **High** | A | ✅ |
 | `2026-11-05` | ["Hacking on Autopilot": Check Point reconstructs ARTEX cybercrime campaigns from recovered operator consoles](../incidents/2026-11/2026-11-05-artex-hacking-on-autopilot-cybercrime.md) | `WEAPON` `EXFIL` | **High** | A | ✅ |
+| `2026-11-06` | [WorkOS traces a customer-data breach to a security researcher's escaped ARTEX AI agent](../incidents/2026-11/2026-11-06-workos-escaped-artex-agent-breach.md) | `ROGUE` `EXFIL` | **High** | A | ✅ |
+| `2026-11-08` | [Operation Snowball: Malbear Labs reports a jailbroken DeepSeek agent autonomously intruding a European telecom, reconstructed from a recovered attacker workspace](../incidents/2026-11/2026-11-08-operation-snowball-deepseek-agent-telecom.md) ⚠️ | `WEAPON` `EXFIL` | **High** | B | ✅ |
 <!-- END:incidents -->
 
 ---

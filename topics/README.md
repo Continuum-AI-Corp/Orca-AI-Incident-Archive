@@ -1,14 +1,14 @@
 # Topical cross-sections
 
-Seven threads that reorganise the 415 records by attack surface instead of by date.
+Seven threads that reorganise the 417 records by attack surface instead of by date.
 
 | Topic | Type | Records |
 |---|---|---|
 | [Frontier model autonomous overreach (EVAL)](eval-escapes.md) | `EVAL` `SANDBOX` | 59 |
-| [Offensive AI capability evolution (WEAPON)](offensive-ai.md) | `WEAPON` | 67 |
-| [Zero-click data exfiltration chain (IPI + EXFIL)](zero-click-exfil.md) | `IPI` `EXFIL` | 67 |
+| [Offensive AI capability evolution (WEAPON)](offensive-ai.md) | `WEAPON` | 68 |
+| [Zero-click data exfiltration chain (IPI + EXFIL)](zero-click-exfil.md) | `IPI` `EXFIL` | 69 |
 | [Agent supply-chain poisoning (SUPPLY)](agent-supply-chain.md) | `SUPPLY` `MCP` | 72 |
-| [Coding agent autonomous sabotage (ROGUE)](rogue-agents.md) | `ROGUE` | 33 |
+| [Coding agent autonomous sabotage (ROGUE)](rogue-agents.md) | `ROGUE` | 34 |
 | [Agent infrastructure exposure (INFRA)](agent-infra.md) | `INFRA` `CRED` | 118 |
 | [Defense-side progress (for contrast)](defense.md) | `GOV` | 69 |
 
