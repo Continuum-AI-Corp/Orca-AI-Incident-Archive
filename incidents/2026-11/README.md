@@ -1,14 +1,14 @@
 # 2026-11
 
 <!-- BEGIN:summary -->
-**5** records
+**7** records
 
-![records](https://img.shields.io/badge/records-5-48545A?style=flat-square) ![high](https://img.shields.io/badge/High-5-B23B40?style=flat-square)
+![records](https://img.shields.io/badge/records-7-48545A?style=flat-square) ![high](https://img.shields.io/badge/High-7-B23B40?style=flat-square)
 
 ```mermaid
 pie showData
     title 2026-11 by severity
-    "High" : 5
+    "High" : 7
 ```
 
 ## Records this month
@@ -20,6 +20,8 @@ pie showData
 | `11-04` | ["BOSSAI": Acronis documents a lone operator's 12-agent AI attack mesh that breached emergency services across three countries](2026-11-04-bossai-ai-attack-mesh-taiwan-emergency.md) | `WEAPON` `EXFIL` | **High** | A | ✅ |
 | `11-05` | [AgentScope MCP Workspace API: unauthenticated OS command injection (CVE-2026-123022)](2026-11-05-agentscope-mcp-command-injection-cve-2026-123022.md) | `INFRA` `MCP` | **High** | B | — |
 | `11-05` | ["Hacking on Autopilot": Check Point reconstructs ARTEX cybercrime campaigns from recovered operator consoles](2026-11-05-artex-hacking-on-autopilot-cybercrime.md) | `WEAPON` `EXFIL` | **High** | A | ✅ |
+| `11-06` | [WorkOS traces a customer-data breach to a security researcher's escaped ARTEX AI agent](2026-11-06-workos-escaped-artex-agent-breach.md) | `ROGUE` `EXFIL` | **High** | A | ✅ |
+| `11-08` | [Operation Snowball: Malbear Labs reports a jailbroken DeepSeek agent autonomously intruding a European telecom, reconstructed from a recovered attacker workspace](2026-11-08-operation-snowball-deepseek-agent-telecom.md) ⚠️ | `WEAPON` `EXFIL` | **High** | B | ✅ |
 
 <sub>★ = `critical` · ⚠️ = disputed facts or attribution · real harm: ✅ confirmed victim / — none / · not applicable (policy and intelligence reports)</sub>
 <!-- END:summary -->

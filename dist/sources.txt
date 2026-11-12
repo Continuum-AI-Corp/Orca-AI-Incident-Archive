@@ -234,6 +234,7 @@ https://labs.zenity.io/p/agentforger-part-1-chatgpt-cross-site-agent-forgery
 https://labs.zenity.io/post/salesbleed-0-click-data-exfiltration-on-agentforce
 https://labs.zenity.io/post/salesbleed-hijacking-agentforce-in-slack-for-anonymous-phishing
 https://learn.microsoft.com/ja-jp/microsoft-scout/overview
+https://malbearlabs.com/posts/operation-snowball-inside-an-autonomous-ai-intrusion-campaign
 https://malext.io/reports/PromptSnatcher/
 https://material.security/resources/the-composio-breach-one-token-10242-doors
 https://mbiz.heraldcorp.com/article/10892497
@@ -314,6 +315,7 @@ https://safedep.io/megalodon-mass-github-repo-backdooring-ci-workflows/
 https://safedep.io/memtensor-sckit-worm-npm-pypi/
 https://safedep.io/miasma-worm-ai-coding-agent-config-injection/
 https://santageai.com/news/2026/09/12/senate-ai-duty-of-care-bill
+https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-bworks-xxe-uwUd7CEt
 https://securelist.com/cyberstrikeai-attacks/121715/
 https://securityaffairs.com/188749/hacking/clawjacked-flaw-exposed-openclaw-users-to-data-theft.html
 https://securityaffairs.com/194081/hacking/difytap-four-bugs-put-over-1-million-ai-apps-at-risk.html
@@ -440,6 +442,7 @@ https://vercel.com/kb/bulletin/vercel-april-2026-security-incident
 https://vibeincidents.com/incidents/cairn-exposed-panels-ai-intrusions/
 https://wikimediafoundation.org/news/2026/10/05/openai-rogue-agent-activities-found-on-wikimedia-projects/
 https://wiz.io/blog/black-october-for-ai-developer-platforms
+https://workos.com/security/bulletins/update-for-october-30th-2026-data-security-incident
 https://www-cdn.anthropic.com/4263b940cabb546aa0e3283f35b686f4f3b2ff47.pdf
 https://www-cdn.anthropic.com/b2a76c6f6992465c09a6f2fce282f6c0cea8c200.pdf
 https://www-cdn.anthropic.com/d00db56fa754a1b115b6dd7cb2e3c342ee809620.pdf
@@ -509,9 +512,11 @@ https://www.bleepingcomputer.com/news/security/new-carbonato-malware-uses-ai-age
 https://www.bleepingcomputer.com/news/security/new-closedquorum-windows-malware-uses-ai-for-attack-decisions/
 https://www.bleepingcomputer.com/news/security/new-rathat-android-malware-uses-ai-to-automate-device-control/
 https://www.bleepingcomputer.com/news/security/researchers-escape-openai-codex-sandbox-to-run-commands-on-host/
+https://www.bleepingcomputer.com/news/security/runaway-ai-hacking-agent-behind-workos-breach-after-escaping-sandbox/
 https://www.bleepingcomputer.com/news/security/spain-reports-first-alleged-ai-powered-data-theft-attack/
 https://www.bleepingcomputer.com/news/security/transunion-suffers-data-breach-impacting-over-44-million-people/
 https://www.bleepingcomputer.com/news/security/warp-discloses-breach-exposing-ai-agent-logs-user-telemetry-data/
+https://www.bleepingcomputer.com/news/security/workos-says-attacker-used-artex-ai-to-breach-internal-sales-app/
 https://www.bleepingcomputer.com/news/security/zeabur-shutting-down-after-second-security-breach-in-two-months/
 https://www.bloomberg.com/jp/news/articles/2026-04-10/TD95ABT9NJMP00
 https://www.bloomberg.com/news/articles/2026-02-25/hacker-used-anthropic-s-claude-to-steal-sensitive-mexican-data
@@ -603,6 +608,7 @@ https://www.infosecurity-magazine.com/news/artex-activity-exceeds-reported/
 https://www.infosecurity-magazine.com/news/attackers-hide-ai-prompt/
 https://www.infosecurity-magazine.com/news/indirect-prompt-injection-web/
 https://www.infosecurity-magazine.com/news/opencode-quietly-patched-critical/
+https://www.infosecurity-magazine.com/news/operation-snowball-ai-telecom/
 https://www.infosecurity-magazine.com/news/rathat-android-malware-ai-steal/
 https://www.infosecurity-magazine.com/news/x47c-botnet-ai-api-draining-18/
 https://www.inquirer.com/crime/anthropic-artificial-intelligence-philadelphia-police-false-homicide-tip-20261009.html
