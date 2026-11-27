@@ -32,7 +32,7 @@
 ---
 
 <!-- BEGIN:incidents -->
-## All records (72)
+## All records (75)
 
 | Date | Record | Type | Severity | Confidence | Real harm |
 |---|---|---|---|---|---|
@@ -108,6 +108,9 @@
 | `2026-10-21` | ★ [Microsoft ties the ConnectWise supply-chain compromise to Storm-0940 driving attacks with the ARTEX agentic AI framework](../incidents/2026-10/2026-10-21-storm-0940-artex-connectwise-supply-chain.md) | `WEAPON` `SUPPLY` | **Critical** | A | ✅ |
 | `2026-10-29` | [A malicious Claude Code extension on Cursor's marketplace planted an SSH backdoor](../incidents/2026-10/2026-10-29-cursor-claude-code-extension-ssh-backdoor.md) | `SUPPLY` | **High** | A | — |
 | `2026-11-05` | [AgentScope MCP Workspace API: unauthenticated OS command injection (CVE-2026-123022)](../incidents/2026-11/2026-11-05-agentscope-mcp-command-injection-cve-2026-123022.md) | `INFRA` `MCP` | **High** | B | — |
+| `2026-11-07` | [German host Mittwald breached through a shell-injection flaw in its own MCP server; 56 customer projects compromised](../incidents/2026-11/2026-11-07-mittwald-mcp-server-breach.md) | `MCP` `CRED` `EXFIL` | **High** | A | ✅ |
+| `2026-11-10` | [Chainstack: an ARTEX-driven intrusion used an unauthenticated internal MCP tool server with cluster-admin rights to reach production](../incidents/2026-11/2026-11-10-chainstack-artex-unauthenticated-mcp-server.md) | `WEAPON` `MCP` `CRED` `EXFIL` | **High** | A | ✅ |
+| `2026-11-17` | [Microsoft's agent-framework PyPI package is hijacked to ship a credential stealer aimed at Azure and CI pipelines](../incidents/2026-11/2026-11-17-microsoft-agent-framework-pypi-hijack.md) | `SUPPLY` `CRED` | **High** | A | ✅ |
 <!-- END:incidents -->
 
 ---

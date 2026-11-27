@@ -42,6 +42,7 @@ https://attack.mitre.org/campaigns/C0062/
 https://au.news.yahoo.com/curtailing-ai-illusion-eu-despite-094308427.html
 https://australiancybersecuritymagazine.com.au/openai-agent-breached-australian-medicare-statistics-portal-prime-minister-says/
 https://avd.aliyun.com/detail?id=AVD-2026-90898
+https://aws.amazon.com/blogs/security/chinese-nexus-actors-cairn-ai-agents-found-a-zero-day-on-their-own/
 https://aws.amazon.com/jp/blogs/security/ai-augmented-threat-actor-accesses-fortigate-devices-at-scale/
 https://aws.amazon.com/security/security-bulletins/2026-075-aws/
 https://aws.amazon.com/security/security-bulletins/2026-124-aws/
@@ -50,6 +51,7 @@ https://baijiahao.baidu.com/s?id=1877097087157468477
 https://beam.ai/agentic-insights/ai-agent-security-breaches-2026-lessons
 https://bestsec.net/
 https://blog.barracuda.com/2026/10/07/email-attacks-target-both-humans-ai-assistants
+https://blog.barracuda.com/2026/11/11/anatomy-of-a-machine-speed-intrusion
 https://blog.checkpoint.com/executive-insights/hexstrike-ai-when-llms-meet-zero-day-exploitation/
 https://blog.frontier.security/chinese-model-kimi-k3-breaks-uk-ai-safety-institute-benchmark-evaluations/
 https://blog.google/innovation-and-ai/products/gemini-app/next-evolution-gemini-app/
@@ -75,6 +77,7 @@ https://cdn.openai.com/threat-intelligence-reports/5f73af09-a3a3-4a55-992e-06923
 https://cdn.openai.com/threat-intelligence-reports/7d662b68-952f-4dfd-a2f2-fe55b041cc4a/disrupting-malicious-uses-of-ai-october-2025.pdf
 https://cdn.openai.com/threat-intelligence-reports/disrupting-malicious-uses-of-our-models-february-2025-update.pdf
 https://cesconbarrieu.com.br/en/labor-court-imposes-fine-for-prompt-injection-in-court-filing/
+https://chainstack.com/security-incident-nov-2026/
 https://checkmarx.com/blog/zombie-cves-put-to-rest-by-humans-dug-back-up-by-ai-agents/
 https://claude.com/blog/ciso-guide-to-agentic-ai
 https://claude.com/blog/claude-for-chrome
@@ -131,11 +134,13 @@ https://deploymentsafety.openai.com/gpt-5-3-codex/disallowed-content-evaluations
 https://devops.com/teampcp-supply-chain-attack-leads-to-crowdsec-source-code-being-stolen/
 https://dsewiki.de/en/
 https://ec.europa.eu/commission/presscorner/api/files/document/print/ov/speech_26_1868/SPEECH_26_1868_OV.pdf
+https://econotimes.com/Chainstack-Breach-May-Have-Exposed-Customer-Account-Data-1776115
 https://en.sedaily.com/finance/2026/02/09/naver-kakao-karrot-ban-ai-agent-openclaw-over-security
 https://en.wikipedia.org/wiki/2026_OpenAI_agent_cyberattacks
 https://en.wikipedia.org/wiki/OpenClaw
 https://en.wikipedia.org/wiki/Slopsquatting
 https://english.news.cn/20260921/9dda65b45af045f6b820f69efdb8095c/c.html
+https://epoch.ai/publications/incident-report-ai-agents-attempted-exploits-on-our-website
 https://eu.36kr.com/en/p/3828243809981313
 https://finance.sina.com.cn/jjxw/2025-04-15/doc-inethkcn7574036.shtml
 https://finance.sina.com.cn/tech/digi/2026-09-17/doc-inisatuq9424977.shtml
@@ -171,6 +176,7 @@ https://github.com/1Panel-dev/MaxKB/security/advisories/GHSA-383v-fx78-pphm
 https://github.com/1Panel-dev/MaxKB/security/advisories/GHSA-f36j-f34j-h3rx
 https://github.com/BerriAI/litellm/security/advisories/GHSA-72m8-9m7m-h278
 https://github.com/BerriAI/litellm/security/advisories/GHSA-7488-6r32-c95q
+https://github.com/Project-MONAI/MONAILabel/security/advisories/GHSA-qc22-rmgc-vg94
 https://github.com/TanStack/router/security/advisories/GHSA-g7cv-rxg3-hmpx
 https://github.com/Tencent/BrowserSkill/issues/273
 https://github.com/advisories/GHSA-4fgq-fpq9-mr3g
@@ -208,6 +214,7 @@ https://incidentdatabase.ai/cite/1424/
 https://incidentdatabase.ai/cite/1442/
 https://incidentdatabase.ai/cite/1497/
 https://incidentdatabase.ai/cite/1628/
+https://incidentdatabase.ai/cite/1828/
 https://institute.deepmind.com/
 https://institute.deepmind.com/essays/introducing-the-deepmind-institute/
 https://invezz.com/news/2026/09/30/ftc-opens-probe-into-anthropic-openai-over-rogue-ai-agent-risks/
@@ -425,12 +432,14 @@ https://thenewstack.io/agentjacking-sentry-mcp-attack/
 https://thenextweb.com/news/aws-agentcore-zenity-agentcorruption-one-prompt-agents
 https://thenextweb.com/news/meta-muse-facebook-marketplace-address-buyer-robb
 https://theori.io/ko/blog/2026-h1-hot-security-issue-case
+https://therecord.media/cyberattack-germany-ai-mittwald
 https://therecord.media/irregular-ai-security-company-incidents
 https://therecord.media/openai-australia-breach-cyber
 https://transluce.org/agent-activity
 https://unit42.paloaltonetworks.com/agent-session-smuggling-in-agent2agent-systems/
 https://unit42.paloaltonetworks.com/ai-agent-prompt-injection/
 https://unit42.paloaltonetworks.com/autonomous-ai-cyber-attack-campaign/
+https://unit42.paloaltonetworks.com/cairn-framework-ai-autonomous-attacks/
 https://unit42.paloaltonetworks.com/hijacking-vertex-ai-model/
 https://unit42.paloaltonetworks.com/npm-supply-chain-attack/
 https://unwire.pro/2026/09/15/microsoft-mai-model-code-of-conduct-draft/ai/
@@ -440,6 +449,7 @@ https://venturebeat.com/security/claude-mexico-breach-four-blind-domains-securit
 https://venturebeat.com/security/microsoft-salesforce-copilot-agentforce-prompt-injection-cve-agent-remediation-playbook
 https://vercel.com/kb/bulletin/vercel-april-2026-security-incident
 https://vibeincidents.com/incidents/cairn-exposed-panels-ai-intrusions/
+https://webhosting.today/2026/11/09/mittwald-traces-a-breach-of-56-customer-projects-to-its-mcp-server/
 https://wikimediafoundation.org/news/2026/10/05/openai-rogue-agent-activities-found-on-wikimedia-projects/
 https://wiz.io/blog/black-october-for-ai-developer-platforms
 https://workos.com/security/bulletins/update-for-october-30th-2026-data-security-incident
@@ -489,6 +499,7 @@ https://www.axios.com/2026/09/15/anthropic-dario-ai-agents-safety-botnet
 https://www.axios.com/2026/09/19/trump-ai-czar-space-force-safety
 https://www.axios.com/2026/09/30/ftc-openai-anthropic-ai-safety-investigation
 https://www.axios.com/2026/10/28/cybersecurity-black-october-ai-hacks
+https://www.bacs.admin.ch/en/26-ki-agenten-1-en
 https://www.benzinga.com/markets/private-markets/26/09/62091626/openai-anthropic-face-new-ftc-probe-over-ai-agent-risks
 https://www.betterclaw.io/blog/openclaw-security-2026
 https://www.bitdefender.com/en-us/blog/hotforsecurity/pixelleak-ai-coding-agents-github-screenshots
@@ -498,15 +509,19 @@ https://www.bleepingcomputer.com/news/security/ai-powered-malware-hit-2-180-gith
 https://www.bleepingcomputer.com/news/security/amazon-ai-assisted-hacker-breached-600-fortigate-firewalls-in-5-weeks/
 https://www.bleepingcomputer.com/news/security/amazon-ai-coding-agent-hacked-to-inject-data-wiping-commands/
 https://www.bleepingcomputer.com/news/security/automated-ai-agent-used-to-breach-cybersecurity-nonprofit-divd/
+https://www.bleepingcomputer.com/news/security/barracuda-links-cloud-breach-to-artex-ai-powered-cyberattack/
 https://www.bleepingcomputer.com/news/security/bragjack-attacks-hijack-ai-browser-agents-through-malicious-extensions/
 https://www.bleepingcomputer.com/news/security/clawjacked-attack-let-malicious-websites-hijack-openclaw-to-steal-data/
 https://www.bleepingcomputer.com/news/security/critical-langflow-flaw-exploited-to-steal-openai-and-aws-keys/
 https://www.bleepingcomputer.com/news/security/cursor-codex-gemini-cli-antigravity-hit-by-sandbox-escapes/
 https://www.bleepingcomputer.com/news/security/fake-openai-repository-on-hugging-face-pushes-infostealer-malware/
+https://www.bleepingcomputer.com/news/security/gemini-ai-agents-repeatedly-bypassed-safeguards-to-attack-real-website/
 https://www.bleepingcomputer.com/news/security/hackers-abused-claude-to-extract-secrets-from-18m-android-apps/
+https://www.bleepingcomputer.com/news/security/italy-and-switzerland-warn-of-autonomous-ai-driven-cyberattacks/
 https://www.bleepingcomputer.com/news/security/jadepuffer-agentic-ai-attacks-target-azure-destroy-cloud-resources/
 https://www.bleepingcomputer.com/news/security/malicious-ai-agents-steal-600k-credit-cards-infect-100-plus-sites-with-skimmers/
 https://www.bleepingcomputer.com/news/security/malicious-claude-code-extension-on-cursor-planted-ssh-backdoors/
+https://www.bleepingcomputer.com/news/security/microsofts-agent-framework-pypi-package-compromised-to-steal-credentials/
 https://www.bleepingcomputer.com/news/security/new-bioshocking-attack-manipulates-ai-browser-into-data-theft/
 https://www.bleepingcomputer.com/news/security/new-carbonato-malware-uses-ai-agents-to-hijack-exposed-docker-hosts/
 https://www.bleepingcomputer.com/news/security/new-closedquorum-windows-malware-uses-ai-for-attack-decisions/
@@ -525,6 +540,7 @@ https://www.business-standard.com/technology/tech-news/ai-agents-tried-to-hack-a
 https://www.businesswire.com/news/home/20250611349150/en
 https://www.capsulesecurity.io/blog-post/shareleak-taking-the-wheel-of-microsofts-copilot-studio-cve-2026-21520
 https://www.catonetworks.com/blog/duneslide-two-critical-rce-vulnerabilities/
+https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-133968
 https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-9198
 https://www.cisa.gov/news-events/alerts/2025/09/23/widespread-supply-chain-compromise-impacting-npm-ecosystem
 https://www.cisa.gov/news-events/alerts/2026/09/02/cisa-adds-seven-known-exploited-vulnerabilities-catalog
@@ -552,6 +568,7 @@ https://www.csoonline.com/article/4020919/mcdonalds-ai-hiring-tools-password-123
 https://www.csoonline.com/article/4169407/malicious-hugging-face-model-masquerading-as-openai-release-hits-244k-downloads.html
 https://www.csoonline.com/article/4182707/meet-hades-the-malware-that-lies-to-ai-security-agents-2.html
 https://www.csoonline.com/article/4220203/chatgpt-flaw-lets-attackers-pull-gmail-data-across-accounts-via-a-hidden-channel.html
+https://www.csoonline.com/article/4247565/palo-alto-tracks-a-massive-chinese-ai-attack-that-sadly-lives-up-to-industry-fears.html
 https://www.darkreading.com/application-security/salesbleed-exploits-salesforce-agents-slack-phishing
 https://www.darkreading.com/application-security/trustfall-exposes-claude-code-execution-risk
 https://www.darkreading.com/cloud-security/jadepuffer-ai-actor-compromises-azure-tenant-destructive-cloud-attack
@@ -590,6 +607,8 @@ https://www.glow.io/blogs/how-ai-agents-exposed-developer-screenshots-from-leadi
 https://www.gov.ca.gov/2026/09/18/governor-newsom-issues-executive-order-to-accelerate-independent-oversight-and-advance-the-creation-of-an-ai-kill-switch/
 https://www.gov.ca.gov/wp-content/uploads/2026/09/FINAL-N-9-26-AI-EO-9.18.26-SIGNED.pdf
 https://www.govinfosecurity.com/anthropics-cowork-shipped-known-vulnerability-a-30553
+https://www.govinfosecurity.com/chinese-actor-automates-attacks-on-us-defense-chip-firms-a-33392
+https://www.govinfosecurity.com/cryptohack-roundup-chainstack-luxors-ai-breaches-a-33445
 https://www.hacktron.ai/blog/hacking-openai
 https://www.halborn.com/blog/post/explained-the-step-finance-hack-january-2026
 https://www.hawley.senate.gov/chairman-hawley-launches-investigation-into-openai-for-hacking-existential-risk-of-ai-products/
@@ -642,9 +661,12 @@ https://www.microsoft.com/en-us/security/blog/2026/08/04/chaindrop-supply-chain-
 https://www.microsoft.com/en-us/security/blog/2026/09/22/unmasking-eviltokens-getting-to-the-root-of-device-code-phishing/
 https://www.microsoft.com/en-us/security/blog/2026/09/25/storm-3168-agentic-driven-cloud-attacks-using-compromised-service-principals/
 https://www.microsoft.com/en-us/security/blog/2026/10/21/storm-0940-uses-artex-agentic-ai-connectwise-supply-chain-compromise/
+https://www.mittwald.de/blog/mittwald/postmortem-wie-ein-angreifer-ueber-unseren-mcp-server-und-neos-eindrang
+https://www.mittwald.de/blog/mittwald/sicherheitsvorfall-am-mcp-server
 https://www.morningstar.com/news/business-wire/20260924811082/zenity-labs-uncovers-salesbleed-3-salesforce-agentforce-flaws-enabling-zero-click-crm-data-theft-and-ai-agent-impersonation
 https://www.morphisec.com/blog/when-your-ai-coding-assistant-becomes-the-attack-the-hades-supply-chain-campaign/
 https://www.n-able.com/blog/n-central-security-update-august-2-2026
+https://www.nau.ch/politik/bundeshaus/erste-cyberangriffe-auf-kritische-infrastruktur-mit-ki-agenten-67207328
 https://www.nbcnews.com/politics/white-house/artificial-intelligence-task-force-czar-technology-trump-rcna598688
 https://www.newsguardtech.com/special-reports/anthropic-ai-chatbot-claude-russia-iran-propaganda/
 https://www.nine.com.au/australia-news/openai-hack-australian-government-website-medicare-portal-explained-everything-you-need-to-know-20260924-p6102a.html
@@ -657,6 +679,7 @@ https://www.oligo.security/blog/shadowray-attack-ai-workloads-actively-exploited
 https://www.operant.ai/art-kubed/shadow-escape
 https://www.orcarouter.ai/blog/gemini-3-5-flash-vandalism-reports
 https://www.oschina.net/news/502589
+https://www.ox.security/blog/breaking-hijacked-releases-of-microsofts-official-agent-framework-steals-azure-and-ci-credentials/
 https://www.ox.security/blog/cve-2026-82533-deepseek-harness-ai-agent-sandbox-escape/
 https://www.ox.security/blog/malicious-chrome-extensions-steal-chatgpt-deepseek-conversations/
 https://www.permissionprotocol.com/agent-incident-tracker
@@ -691,6 +714,8 @@ https://www.secrss.com/articles/94149
 https://www.secrss.com/articles/94260
 https://www.securityweek.com/ai-firm-braintrust-prompts-api-key-rotation-after-data-breach/
 https://www.securityweek.com/ai-powered-phishing-platform-eviltokens-disrupted-by-microsoft/
+https://www.securityweek.com/amazon-china-linked-hackers-ai-agents-exploited-medical-software-zero-day/
+https://www.securityweek.com/barracuda-hacked-amid-surge-in-artex-powered-cyberattacks/
 https://www.securityweek.com/critical-cursor-ai-ide-flaws-could-lead-to-os-level-remote-code-execution/
 https://www.securityweek.com/critical-ruflo-flaw-lets-attackers-spawn-rogue-ai-swarms/amp/
 https://www.securityweek.com/data-exposure-flaws-threaten-dify-ai-platform-powering-over-1-million-apps/
@@ -706,6 +731,7 @@ https://www.sentinelone.com/labs/agents-at-large-tracing-illicit-openai-agent-ac
 https://www.sentinelone.com/labs/macos-gaslight-rust-backdoor-turns-prompt-injection-on-the-analyst-not-the-sandbox/
 https://www.sohu.com/a/1068905442_120747399
 https://www.stepsecurity.io/blog/binding-gyp-npm-supply-chain-attack-spreads-like-worm
+https://www.stepsecurity.io/blog/microsoft-agent-framework-pypi-package-compromised
 https://www.stepsecurity.io/blog/mini-shai-hulud-is-back-a-self-spreading-supply-chain-attack-hits-the-npm-ecosystem
 https://www.stepsecurity.io/blog/sckit-supply-chain-worm-hits-memtensor-npm-pypi-scopes
 https://www.stepsecurity.io/blog/tensorlake-npm-compromised-hostage-token-worm
@@ -737,6 +763,9 @@ https://www.theregister.com/security/2026/08/12/near-autonomous-ai-agents-attack
 https://www.theregister.com/security/2026/09/01/attacker-stole-a-metr-api-key-used-600k-worth-of-credits-and-no-one-noticed-for-weeks/5293730
 https://www.theregister.com/security/2026/09/14/openais-malicious-bot-swarm-attacked-rubygems/5296356
 https://www.theregister.com/security/2026/09/17/ai-coding-agents-0-click-rce-flaw-could-hand-attackers-keys-to-the-kingdom/5297335
+https://www.theregister.com/security/2026/11/17/gemini-test-proves-once-again-that-amoral-ai-agents-will-do-almost-anything-if-told-never-give-up/5310574
+https://www.theregister.com/security/2026/11/18/microsofts-official-python-agent-framework-hijacked-to-distribute-malware/5310858
+https://www.theregister.com/security/2026/11/20/china-attackers-deployed-ai-agents-that-autonomously-found-and-exploited-a-0-day-to-take-over-a-university-server/5311382
 https://www.theregister.com/software/2025/11/14/echogram_tokens_like_coffee_flip_ai_guardrail_verdicts/2044945
 https://www.theregister.com/software/2026/03/31/anthropic-accidentally-exposes-claude-code-source-code/5227940
 https://www.theregister.com/software/2026/04/27/cursor-opus-agent-snuffs_out_startups_production_database/5224442
@@ -748,6 +777,7 @@ https://www.tomshardware.com/tech-industry/artificial-intelligence/claude-code-d
 https://www.tomshardware.com/tech-industry/artificial-intelligence/claude-powered-ai-coding-agent-deletes-entire-company-database-in-9-seconds-backups-zapped-after-cursor-tool-powered-by-anthropics-claude-goes-rogue
 https://www.tomshardware.com/tech-industry/artificial-intelligence/openais-isolated-red-team-ai-agents-built-a-hidden-cpu-cache-channel-to-talk-with-no-network-or-shared-files-exploited-cpu-cache-timing-to-bypass-microvm-sandboxes
 https://www.tomshardware.com/tech-industry/cyber-security/researchers-uncover-critical-ai-ide-flaws-exposing-developers-to-data-theft-and-rce
+https://www.trajectorylabs.com/blog/gemini-4-argon-behavior-during-misalignment-testing
 https://www.trendmicro.com/en/research/26/f/claudeai-shared-chat-abused-in-malvertising.html
 https://www.trendmicro.com/en_us/research/26/d/vercel-breach-oauth-supply-chain.html
 https://www.trendmicro.com/en_us/research/26/f/from-langflow-to-monero-inside-cve-2026-33017-cryptominer.html
@@ -765,11 +795,13 @@ https://www.washingtonpost.com/technology/2026/10/01/openai-says-rogue-agents-ma
 https://www.washingtonpost.com/wp-intelligence/ai-tech-brief/2026/09/04/ai-tech-brief-new-agent-security-incident/
 https://www.welivesecurity.com/en/business-security/guardbreaker-derailing-ai-assisted-malware-analysis-code-comment/
 https://www.welivesecurity.com/en/ransomware/first-known-ai-powered-ransomware-uncovered-eset-research/
+https://www.wiz.io/blog/agentic-attacks-artex-offensive-ai-frameworks
 https://www.wiz.io/blog/agentic-browser-security-2025-year-end-review
 https://www.wiz.io/blog/exposed-moltbook-database-reveals-millions-of-api-keys
 https://www.wiz.io/blog/ghostapproval-a-trust-boundary-gap-in-ai-coding-assistants
 https://www.wiz.io/blog/keyv-and-cacheable-npm-supply-chain-attack
 https://www.wiz.io/blog/litellm-compromised-steals-credentials
+https://www.wiz.io/blog/malicious-version-of-microsofts-agent-framework-published-to-pypi
 https://www.wiz.io/blog/off-guard-breaking-litellm-from-authentication-bypass-to-cloud-compromise
 https://www.wiz.io/blog/red-agent-snowflake-copilot-cicd-bug
 https://www.wiz.io/blog/s1ngularity-supply-chain-attack

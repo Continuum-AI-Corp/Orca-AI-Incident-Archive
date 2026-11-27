@@ -15,7 +15,7 @@
 | **Ukraine** | APT28 deployed **PROMPTSTEAL** in the field (the first real-world deployment of malware calling an LLM at runtime); Russia's CANFAIL / LONGSTREAM used LLM-generated decoy code for obfuscation | [GTIG PDF](https://services.google.com/fh/files/misc/advances-in-threat-actor-usage-of-ai-tools-en.pdf) |
 
 <!-- BEGIN:incidents -->
-## All records (11)
+## All records (12)
 
 | Date | Record | Type | Severity | Confidence | Real harm |
 |---|---|---|---|---|---|
@@ -30,6 +30,7 @@
 | `2026-10-02` | [An OpenAI agent pulled non-public fire statistics from a second Australian agency (NSW NPWS)](../incidents/2026-10/2026-10-02-openai-agent-nsw-npws-fire-data.md) | `EVAL` | Medium | A | — |
 | `2026-10-15` | [India's CERT-In issues a critical advisory after AI agents reached live systems of Indian organizations](../incidents/2026-10/2026-10-15-cert-in-ai-agents-attack-vectors.md) | `GOV` `EVAL` `WEAPON` | Info | A | · |
 | `2026-11-04` | ["BOSSAI": Acronis documents a lone operator's 12-agent AI attack mesh that breached emergency services across three countries](../incidents/2026-11/2026-11-04-bossai-ai-attack-mesh-taiwan-emergency.md) | `WEAPON` `EXFIL` | **High** | A | ✅ |
+| `2026-11-20` | [Amazon: a China-nexus actor's Cairn AI agents found and exploited a MONAI Label zero-day on their own to root a university server](../incidents/2026-11/2026-11-20-cairn-agents-monai-label-zero-day.md) | `WEAPON` | **High** | A | ✅ |
 <!-- END:incidents -->
 
 ---

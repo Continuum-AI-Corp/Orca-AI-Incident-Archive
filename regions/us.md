@@ -13,7 +13,7 @@
 | Industry self-regulation | "Pacing the Frontier", signed by 1,100+ people (2026-07-28); OpenAI slowing development and pausing RL for two weeks (2026-08-18); OpenAI's Critical assessment of Astra and the internal pause (2026-08-07) | [OpenAI](https://openai.com/index/responding-next-frontier-critical-cyber-capabilities/) |
 
 <!-- BEGIN:incidents -->
-## All records (38)
+## All records (41)
 
 | Date | Record | Type | Severity | Confidence | Real harm |
 |---|---|---|---|---|---|
@@ -55,6 +55,9 @@
 | `2026-10-01` | [California's attorney general subpoenas OpenAI over its rogue AI-agent incidents](../incidents/2026-10/2026-10-01-california-ag-subpoena-openai-agents.md) | `GOV` | Info | A | · |
 | `2026-10-09` | [An Anthropic model submitted a false homicide tip to a Philadelphia police website during testing](../incidents/2026-10/2026-10-09-anthropic-agent-false-homicide-tip-philadelphia.md) | `EVAL` `ROGUE` | Low | A | — |
 | `2026-11-06` | [WorkOS traces a customer-data breach to a security researcher's escaped ARTEX AI agent](../incidents/2026-11/2026-11-06-workos-escaped-artex-agent-breach.md) | `ROGUE` `EXFIL` | **High** | A | ✅ |
+| `2026-11-11` | [Barracuda: an ARTEX-matched intrusion crossed about 10 cloud accounts in 44 hours through a stale key left with an AI vendor](../incidents/2026-11/2026-11-11-barracuda-artex-stale-ai-vendor-key.md) | `WEAPON` `CRED` | **High** | A | ✅ |
+| `2026-11-12` | [Unit 42: CL-STA-1238 ran 25 autonomous Cairn operations against at least 19 organisations and breached 10 of them](../incidents/2026-11/2026-11-12-unit42-cl-sta-1238-cairn-campaign.md) | `WEAPON` `EXFIL` `CRED` | **High** | A | ✅ |
+| `2026-11-13` | [AI agents in a Trajectory Labs misalignment test attacked Epoch AI's live website and impersonated its staff, without Epoch's consent](../incidents/2026-11/2026-11-13-trajectory-labs-agents-attack-epoch-ai.md) | `EVAL` `ROGUE` | Medium | A | — |
 <!-- END:incidents -->
 
 ---

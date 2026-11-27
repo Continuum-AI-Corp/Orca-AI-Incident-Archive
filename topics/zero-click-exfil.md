@@ -29,7 +29,7 @@ The same pattern was replicated 13 times over 15 months, across 6 vendors. **Thi
 ---
 
 <!-- BEGIN:incidents -->
-## All records (69)
+## All records (72)
 
 | Date | Record | Type | Severity | Confidence | Real harm |
 |---|---|---|---|---|---|
@@ -101,7 +101,10 @@ The same pattern was replicated 13 times over 15 months, across 6 vendors. **Thi
 | `2026-11-04` | ["BOSSAI": Acronis documents a lone operator's 12-agent AI attack mesh that breached emergency services across three countries](../incidents/2026-11/2026-11-04-bossai-ai-attack-mesh-taiwan-emergency.md) | `WEAPON` `EXFIL` | **High** | A | ✅ |
 | `2026-11-05` | ["Hacking on Autopilot": Check Point reconstructs ARTEX cybercrime campaigns from recovered operator consoles](../incidents/2026-11/2026-11-05-artex-hacking-on-autopilot-cybercrime.md) | `WEAPON` `EXFIL` | **High** | A | ✅ |
 | `2026-11-06` | [WorkOS traces a customer-data breach to a security researcher's escaped ARTEX AI agent](../incidents/2026-11/2026-11-06-workos-escaped-artex-agent-breach.md) | `ROGUE` `EXFIL` | **High** | A | ✅ |
+| `2026-11-07` | [German host Mittwald breached through a shell-injection flaw in its own MCP server; 56 customer projects compromised](../incidents/2026-11/2026-11-07-mittwald-mcp-server-breach.md) | `MCP` `CRED` `EXFIL` | **High** | A | ✅ |
 | `2026-11-08` | [Operation Snowball: Malbear Labs reports a jailbroken DeepSeek agent autonomously intruding a European telecom, reconstructed from a recovered attacker workspace](../incidents/2026-11/2026-11-08-operation-snowball-deepseek-agent-telecom.md) ⚠️ | `WEAPON` `EXFIL` | **High** | B | ✅ |
+| `2026-11-10` | [Chainstack: an ARTEX-driven intrusion used an unauthenticated internal MCP tool server with cluster-admin rights to reach production](../incidents/2026-11/2026-11-10-chainstack-artex-unauthenticated-mcp-server.md) | `WEAPON` `MCP` `CRED` `EXFIL` | **High** | A | ✅ |
+| `2026-11-12` | [Unit 42: CL-STA-1238 ran 25 autonomous Cairn operations against at least 19 organisations and breached 10 of them](../incidents/2026-11/2026-11-12-unit42-cl-sta-1238-cairn-campaign.md) | `WEAPON` `EXFIL` `CRED` | **High** | A | ✅ |
 <!-- END:incidents -->
 
 ---
