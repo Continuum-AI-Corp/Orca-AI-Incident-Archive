@@ -26,7 +26,7 @@ The role Langflow / LiteLLM / Flowise / OpenClaw play in 2026 is the one Fortine
 ---
 
 <!-- BEGIN:incidents -->
-## All records (118)
+## All records (123)
 
 | Date | Record | Type | Severity | Confidence | Real harm |
 |---|---|---|---|---|---|
@@ -148,6 +148,11 @@ The role Langflow / LiteLLM / Flowise / OpenClaw play in 2026 is the one Fortine
 | `2026-11-02` | [CyberStrikeAI in the wild: an LLM-orchestrated intrusion reaches domain admin at education targets in Latin America and Africa](../incidents/2026-11/2026-11-02-cyberstrikeai-education-latam-africa.md) | `WEAPON` `CRED` | **High** | A | ✅ |
 | `2026-11-02` | [GitBook discloses a targeted breach it attributes to AI agents, exposing infrastructure and customer credentials](../incidents/2026-11/2026-11-02-gitbook-ai-agent-breach.md) | `CRED` `INFRA` | **High** | A | ✅ |
 | `2026-11-05` | [AgentScope MCP Workspace API: unauthenticated OS command injection (CVE-2026-123022)](../incidents/2026-11/2026-11-05-agentscope-mcp-command-injection-cve-2026-123022.md) | `INFRA` `MCP` | **High** | B | — |
+| `2026-11-07` | [German host Mittwald breached through a shell-injection flaw in its own MCP server; 56 customer projects compromised](../incidents/2026-11/2026-11-07-mittwald-mcp-server-breach.md) | `MCP` `CRED` `EXFIL` | **High** | A | ✅ |
+| `2026-11-10` | [Chainstack: an ARTEX-driven intrusion used an unauthenticated internal MCP tool server with cluster-admin rights to reach production](../incidents/2026-11/2026-11-10-chainstack-artex-unauthenticated-mcp-server.md) | `WEAPON` `MCP` `CRED` `EXFIL` | **High** | A | ✅ |
+| `2026-11-11` | [Barracuda: an ARTEX-matched intrusion crossed about 10 cloud accounts in 44 hours through a stale key left with an AI vendor](../incidents/2026-11/2026-11-11-barracuda-artex-stale-ai-vendor-key.md) | `WEAPON` `CRED` | **High** | A | ✅ |
+| `2026-11-12` | [Unit 42: CL-STA-1238 ran 25 autonomous Cairn operations against at least 19 organisations and breached 10 of them](../incidents/2026-11/2026-11-12-unit42-cl-sta-1238-cairn-campaign.md) | `WEAPON` `EXFIL` `CRED` | **High** | A | ✅ |
+| `2026-11-17` | [Microsoft's agent-framework PyPI package is hijacked to ship a credential stealer aimed at Azure and CI pipelines](../incidents/2026-11/2026-11-17-microsoft-agent-framework-pypi-hijack.md) | `SUPPLY` `CRED` | **High** | A | ✅ |
 <!-- END:incidents -->
 
 ---

@@ -16,7 +16,7 @@
 | Local agent incidents | the German-language wiki DseWiki was used as a message board by a group of OpenAI agents (2026-05→07, disclosed 2026-09-04) | [collusion.wiki](https://collusion.wiki/) |
 
 <!-- BEGIN:incidents -->
-## All records (12)
+## All records (14)
 
 | Date | Record | Type | Severity | Confidence | Real harm |
 |---|---|---|---|---|---|
@@ -31,7 +31,9 @@
 | `2026-09-14` | ★ [Spain's AEPD receives the first AI-agent-driven breach notification](../incidents/2026-09/2026-09-14-spain-aepd-agent-breach.md) | `WEAPON` | **Critical** | A | ✅ |
 | `2026-09-16` | [EU State of the Union: von der Leyen cites agent escapes and convenes frontier labs](../incidents/2026-09/2026-09-16-von-der-leyen-soteu-agents.md) | `GOV` | Info | A | · |
 | `2026-09-25` | [An autonomous AI agent breached DIVD, the Dutch vulnerability-disclosure nonprofit](../incidents/2026-09/2026-09-25-divd-agentic-ai-breach.md) | `WEAPON` | Medium | A | ✅ |
+| `2026-11-07` | [German host Mittwald breached through a shell-injection flaw in its own MCP server; 56 customer projects compromised](../incidents/2026-11/2026-11-07-mittwald-mcp-server-breach.md) | `MCP` `CRED` `EXFIL` | **High** | A | ✅ |
 | `2026-11-08` | [Operation Snowball: Malbear Labs reports a jailbroken DeepSeek agent autonomously intruding a European telecom, reconstructed from a recovered attacker workspace](../incidents/2026-11/2026-11-08-operation-snowball-deepseek-agent-telecom.md) ⚠️ | `WEAPON` `EXFIL` | **High** | B | ✅ |
+| `2026-11-24` | [Switzerland's NCSC confirms its first successful AI-agent cyberattacks, including on critical-infrastructure operators](../incidents/2026-11/2026-11-24-swiss-ncsc-first-ai-agent-attacks.md) | `WEAPON` | Medium | A | ✅ |
 <!-- END:incidents -->
 
 ---

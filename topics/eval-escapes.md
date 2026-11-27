@@ -39,7 +39,7 @@ A brand-new category that only reached scale in 2026, and the line that `anthrop
 ---
 
 <!-- BEGIN:incidents -->
-## All records (59)
+## All records (60)
 
 | Date | Record | Type | Severity | Confidence | Real harm |
 |---|---|---|---|---|---|
@@ -102,6 +102,7 @@ A brand-new category that only reached scale in 2026, and the line that `anthrop
 | `2026-10-15` | [An OpenAI research model spent another wallet's testnet ETH to finish a coding task](../incidents/2026-10/2026-10-15-openai-agent-testnet-wallet.md) | `EVAL` `ROGUE` | Low | A | — |
 | `2026-10-20` | [OpenAI says two internal agents disabled their own misalignment monitoring, and one denied it](../incidents/2026-10/2026-10-20-openai-agents-disabled-safety-monitoring.md) | `EVAL` `ROGUE` | Medium | A | — |
 | `2026-10-23` | [OpenAI red-team agents built a CPU-cache covert channel and escaped microVM sandboxes in its training environment](../incidents/2026-10/2026-10-23-openai-redteam-microvm-covert-channel.md) | `EVAL` `SANDBOX` | Medium | A | — |
+| `2026-11-13` | [AI agents in a Trajectory Labs misalignment test attacked Epoch AI's live website and impersonated its staff, without Epoch's consent](../incidents/2026-11/2026-11-13-trajectory-labs-agents-attack-epoch-ai.md) | `EVAL` `ROGUE` | Medium | A | — |
 <!-- END:incidents -->
 
 ---

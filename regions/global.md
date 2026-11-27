@@ -8,7 +8,7 @@ vendor policy moves all sit here. It is the largest group in the archive; the
 high share follows from that rule, not from a lack of geography.
 
 <!-- BEGIN:incidents -->
-## All records (338)
+## All records (341)
 
 | Date | Record | Type | Severity | Confidence | Real harm |
 |---|---|---|---|---|---|
@@ -350,6 +350,9 @@ high share follows from that rule, not from a lack of geography.
 | `2026-11-02` | [GitBook discloses a targeted breach it attributes to AI agents, exposing infrastructure and customer credentials](../incidents/2026-11/2026-11-02-gitbook-ai-agent-breach.md) | `CRED` `INFRA` | **High** | A | ✅ |
 | `2026-11-05` | [AgentScope MCP Workspace API: unauthenticated OS command injection (CVE-2026-123022)](../incidents/2026-11/2026-11-05-agentscope-mcp-command-injection-cve-2026-123022.md) | `INFRA` `MCP` | **High** | B | — |
 | `2026-11-05` | ["Hacking on Autopilot": Check Point reconstructs ARTEX cybercrime campaigns from recovered operator consoles](../incidents/2026-11/2026-11-05-artex-hacking-on-autopilot-cybercrime.md) | `WEAPON` `EXFIL` | **High** | A | ✅ |
+| `2026-11-10` | [Chainstack: an ARTEX-driven intrusion used an unauthenticated internal MCP tool server with cluster-admin rights to reach production](../incidents/2026-11/2026-11-10-chainstack-artex-unauthenticated-mcp-server.md) | `WEAPON` `MCP` `CRED` `EXFIL` | **High** | A | ✅ |
+| `2026-11-12` | [Unit 42: CL-STA-1238 ran 25 autonomous Cairn operations against at least 19 organisations and breached 10 of them](../incidents/2026-11/2026-11-12-unit42-cl-sta-1238-cairn-campaign.md) | `WEAPON` `EXFIL` `CRED` | **High** | A | ✅ |
+| `2026-11-17` | [Microsoft's agent-framework PyPI package is hijacked to ship a credential stealer aimed at Azure and CI pipelines](../incidents/2026-11/2026-11-17-microsoft-agent-framework-pypi-hijack.md) | `SUPPLY` `CRED` | **High** | A | ✅ |
 <!-- END:incidents -->
 
 ---

@@ -60,7 +60,7 @@
 ---
 
 <!-- BEGIN:incidents -->
-## All records (68)
+## All records (73)
 
 | Date | Record | Type | Severity | Confidence | Real harm |
 |---|---|---|---|---|---|
@@ -132,6 +132,11 @@
 | `2026-11-04` | ["BOSSAI": Acronis documents a lone operator's 12-agent AI attack mesh that breached emergency services across three countries](../incidents/2026-11/2026-11-04-bossai-ai-attack-mesh-taiwan-emergency.md) | `WEAPON` `EXFIL` | **High** | A | ✅ |
 | `2026-11-05` | ["Hacking on Autopilot": Check Point reconstructs ARTEX cybercrime campaigns from recovered operator consoles](../incidents/2026-11/2026-11-05-artex-hacking-on-autopilot-cybercrime.md) | `WEAPON` `EXFIL` | **High** | A | ✅ |
 | `2026-11-08` | [Operation Snowball: Malbear Labs reports a jailbroken DeepSeek agent autonomously intruding a European telecom, reconstructed from a recovered attacker workspace](../incidents/2026-11/2026-11-08-operation-snowball-deepseek-agent-telecom.md) ⚠️ | `WEAPON` `EXFIL` | **High** | B | ✅ |
+| `2026-11-10` | [Chainstack: an ARTEX-driven intrusion used an unauthenticated internal MCP tool server with cluster-admin rights to reach production](../incidents/2026-11/2026-11-10-chainstack-artex-unauthenticated-mcp-server.md) | `WEAPON` `MCP` `CRED` `EXFIL` | **High** | A | ✅ |
+| `2026-11-11` | [Barracuda: an ARTEX-matched intrusion crossed about 10 cloud accounts in 44 hours through a stale key left with an AI vendor](../incidents/2026-11/2026-11-11-barracuda-artex-stale-ai-vendor-key.md) | `WEAPON` `CRED` | **High** | A | ✅ |
+| `2026-11-12` | [Unit 42: CL-STA-1238 ran 25 autonomous Cairn operations against at least 19 organisations and breached 10 of them](../incidents/2026-11/2026-11-12-unit42-cl-sta-1238-cairn-campaign.md) | `WEAPON` `EXFIL` `CRED` | **High** | A | ✅ |
+| `2026-11-20` | [Amazon: a China-nexus actor's Cairn AI agents found and exploited a MONAI Label zero-day on their own to root a university server](../incidents/2026-11/2026-11-20-cairn-agents-monai-label-zero-day.md) | `WEAPON` | **High** | A | ✅ |
+| `2026-11-24` | [Switzerland's NCSC confirms its first successful AI-agent cyberattacks, including on critical-infrastructure operators](../incidents/2026-11/2026-11-24-swiss-ncsc-first-ai-agent-attacks.md) | `WEAPON` | Medium | A | ✅ |
 <!-- END:incidents -->
 
 ---
